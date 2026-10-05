@@ -76,7 +76,7 @@ Requer Node.js 20 ou mais recente.
 cd financas
 npm install
 npm run dev        # desenvolvimento em http://localhost:5173
-npm test           # 59 testes: leitura de extratos, cálculos, traduções
+npm test           # 57 testes: leitura de extratos, cálculos, traduções
 npm run build      # versão final em dist/
 npm run preview    # serve a versão final
 ```
