@@ -24,12 +24,16 @@ export async function extractPdfItems(bytes: Uint8Array, password?: string): Pro
   const worker = await import('pdfjs-dist/legacy/build/pdf.worker.min.mjs?url');
   pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
   let doc;
-  try {
-    doc = await pdfjs.getDocument({ data: bytes.slice(), password }).promise;
-  } catch (e) {
-    const err = e as { name?: string; code?: number };
-    if (err?.name === 'PasswordException') throw new PdfPasswordError(err.code === 2);
-    throw e;
+  // 2 tentativas: em alguns alojamentos o processo de leitura do pdf.js falha ao arrancar pela primeira vez
+  for (let attempt = 0; ; attempt++) {
+    try {
+      doc = await pdfjs.getDocument({ data: bytes.slice(), password }).promise;
+      break;
+    } catch (e) {
+      const err = e as { name?: string; code?: number };
+      if (err?.name === 'PasswordException') throw new PdfPasswordError(err.code === 2);
+      if (attempt >= 1) throw e;
+    }
   }
   const items: PdfItem[] = [];
   for (let p = 1; p <= doc.numPages; p++) {
