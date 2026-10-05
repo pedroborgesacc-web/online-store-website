@@ -173,7 +173,9 @@ export const useStore = create<State>()(
           s.page = page;
           s.txFilter = filter ?? null;
         });
-        if (typeof location !== 'undefined' && location.hash !== `#/${page}`) history.replaceState(null, '', `#/${page}`);
+        try {
+          if (typeof location !== 'undefined' && location.hash !== `#/${page}`) history.replaceState(null, '', `#/${page}`);
+        } catch { /* ambientes embebidos podem bloquear o histórico */ }
         if (typeof window !== 'undefined') window.scrollTo({ top: 0 });
       },
       setMonth(ym) { set(s => { s.month = ym; }); },

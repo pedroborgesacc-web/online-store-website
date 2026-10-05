@@ -11,7 +11,8 @@ createRoot(document.getElementById('root')!).render(
 );
 
 // Funciona offline e pode ser instalada como app (PWA)
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+// (só quando a app é a página principal; dentro de uma moldura/iframe não se aplica)
+if ('serviceWorker' in navigator && import.meta.env.PROD && window.top === window) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(() => { /* sem service worker: a app funciona na mesma */ });
   });
