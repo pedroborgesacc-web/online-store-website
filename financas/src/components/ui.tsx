@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import { create } from 'zustand';
-import { X } from 'lucide-react';
+import { Info, X } from 'lucide-react';
 import { useStore } from '../store';
 import { useT } from '../i18n';
 
@@ -171,7 +171,7 @@ export function Toasts() {
 
 /* ---------- Menu simples ---------- */
 export function useOutside(onOut: () => void) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   useEffect(() => {
     const h = (e: MouseEvent) => { if (ref.current && !ref.current.contains(e.target as Node)) onOut(); };
     document.addEventListener('mousedown', h);
@@ -202,4 +202,18 @@ export function Avatar({ name, id }: { name: string; id: string }) {
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   const initials = name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]!.toUpperCase()).join('');
   return <span className="avatar" style={{ background: AVATAR_COLORS[h % AVATAR_COLORS.length] }} aria-hidden>{initials || '?'}</span>;
+}
+
+/* ---------- Ajuda contextual (ⓘ) ---------- */
+export function InfoTip({ text, label }: { text: ReactNode; label?: string }) {
+  const [open, setOpen] = useState(false);
+  const ref = useOutside(() => setOpen(false));
+  return (
+    <span ref={ref as React.RefObject<HTMLSpanElement>} style={{ position: 'relative', display: 'inline-flex' }}>
+      <button type="button" className="info-btn" aria-label={label ?? 'Info'} aria-expanded={open} onClick={e => { e.stopPropagation(); setOpen(!open); }}>
+        <Info size={14} />
+      </button>
+      {open && <span className="popover" role="tooltip" style={{ top: 22, left: -8 }} onClick={e => e.stopPropagation()}>{text}</span>}
+    </span>
+  );
 }

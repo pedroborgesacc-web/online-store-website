@@ -1,4 +1,4 @@
-import type { AppData, Category, IncomeSource, Settings } from '../types';
+import type { AppData, Appearance, Category, IncomeSource, Settings } from '../types';
 import { fallbackRates } from '../lib/fx';
 
 export const DATA_VERSION = 1;
@@ -106,11 +106,16 @@ export const TRANSFER_HINTS = ['TRANSF', 'TRF', 'TRANSFER', 'TOP-UP', 'TOP UP', 
 
 export const ACCOUNT_COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#4a3aa7', '#e34948'];
 
+export const DEFAULT_APPEARANCE: Appearance = { accent: '#2a78d6', background: 'plain', font: 'inter', fontSize: 'md', radius: 'round', density: 'comfortable' };
+
+export const ACCENTS = ['#2a78d6', '#1baf7a', '#7c5cdb', '#e0567a', '#eb6834', '#c98500', '#0f8a8a', '#3d4451'];
+
 export function defaultSettings(locale: 'en' | 'pt' = 'en'): Settings {
   return {
     locale,
     displayCurrency: 'USD',
     theme: 'system',
+    appearance: { ...DEFAULT_APPEARANCE },
     userName: '',
     savingsMode: 'percent',
     savingsPercent: 20,

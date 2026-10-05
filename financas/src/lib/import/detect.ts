@@ -261,7 +261,8 @@ export function detect(rows: string[][], hint?: { dateOrder?: Order; currency?: 
   // Débito / crédito em colunas separadas
   const deb = pick(byHeader(H.debit, s => s.numFrac >= 0.5 || s.filled < data.length));
   const cred = pick(byHeader(H.credit, s => s.numFrac >= 0.5 || s.filled < data.length));
-  if (deb >= 0 && cred >= 0 && deb !== cred && st[deb]!.numFrac >= 0.5 && st[cred]!.numFrac >= 0.5) {
+  const numOrEmpty = (x: ColStats) => x.numFrac >= 0.5 || x.filled === 0;
+  if (deb >= 0 && cred >= 0 && deb !== cred && numOrEmpty(st[deb]!) && numOrEmpty(st[cred]!) && st[deb]!.filled + st[cred]!.filled > 0) {
     d.map.debit = deb; d.map.credit = cred; used.add(deb); used.add(cred);
   } else {
     const amt = pick([...byHeader(H.amount, s => s.numFrac >= 0.6), ...st.map((s, i) => ({ s, i })).filter(x => x.s.numFrac >= 0.8).sort((a, b) => b.s.negFrac - a.s.negFrac).map(x => x.i)]);

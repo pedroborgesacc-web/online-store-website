@@ -619,7 +619,7 @@ export const useStore = create<State>()(
         set(s => {
           const keep = s.data.settings;
           s.data = emptyData(keep.locale);
-          s.data.settings = { ...s.data.settings, locale: keep.locale, displayCurrency: keep.displayCurrency, theme: keep.theme, rates: keep.rates, onboarded: false };
+          s.data.settings = { ...s.data.settings, locale: keep.locale, displayCurrency: keep.displayCurrency, theme: keep.theme, appearance: keep.appearance, rates: keep.rates, onboarded: false };
         });
       },
       loadDemo() {
@@ -628,6 +628,7 @@ export const useStore = create<State>()(
           s.data = buildDemo(keep.locale, keep.displayCurrency);
           s.data.settings.rates = keep.rates;
           s.data.settings.theme = keep.theme;
+          s.data.settings.appearance = keep.appearance;
         });
       }
     };

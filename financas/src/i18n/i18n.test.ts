@@ -45,13 +45,18 @@ describe('traduções', () => {
       freq: ['weekly', 'biweekly', 'monthly', 'quarterly', 'yearly'],
       goalKind: ['emergency', 'travel', 'purchase', 'home', 'debt', 'education', 'retirement', 'other'],
       goalStatus: ['done', 'onTrack', 'behind', 'noDeadline', 'overdue'],
-      'import.err': ['empty', 'legacyXls', 'pdf', 'unreadable', 'noTransactions'],
+      'import.err': ['empty', 'legacyXls', 'pdfPassword', 'pdfWrongPassword', 'pdfScanned', 'unreadable', 'noTransactions'],
       'import.filter': ['all', 'new', 'dups', 'transfers', 'uncat'],
       'import.step': ['pick', 'files', 'review', 'done'],
       'import.via': ['learned', 'rule'],
       'income.filter': ['all', 'open', 'overdue', 'planned', 'paid'],
       'income.payer': ['boss', 'client', 'gift'],
-      'settings.tab': ['general', 'categories', 'rules', 'contacts', 'data'],
+      'settings.tab': ['general', 'appearance', 'categories', 'rules', 'contacts', 'data'],
+      navHelp: ['overview', 'transactions', 'income', 'budget', 'goals', 'shared', 'reports', 'accounts', 'import', 'settings'],
+      navGroup: ['daily', 'plan', 'insight'],
+      'look.bg': ['plain', 'warm', 'cool', 'mint', 'lavender', 'gradient', 'dots'],
+      'look.font': ['inter', 'rounded', 'system', 'serif'],
+      'home.step': ['balance', 'balanceHelp', 'balanceGo', 'import', 'importHelp', 'importGo', 'income', 'incomeHelp', 'incomeGo', 'bills', 'billsHelp', 'billsGo', 'goal', 'goalHelp', 'goalGo'],
       nav: ['overview', 'transactions', 'income', 'budget', 'goals', 'shared', 'reports', 'accounts', 'import', 'settings']
     };
     const missing = Object.entries(fam).flatMap(([p, ks]) => ks.map(k => `${p}.${k}`)).filter(k => !has(en, k) || !has(pt, k));

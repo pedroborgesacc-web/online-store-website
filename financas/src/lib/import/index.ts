@@ -4,8 +4,9 @@ import { CURRENCIES } from '../fx';
 import { decodeText, parseDelimited, type Order } from './parse';
 import { parseHtmlTables, parseOFX, parseQIF, parseXlsx } from './formats';
 import { detect, extract, type Detection, type ExtractedRow } from './detect';
+import { extractPdfItems, itemsToLines, linesToRows, linesToTable, pdfText, PdfPasswordError, type PdfItem, type PdfLine } from './pdf';
 
-export type FileFormat = 'csv' | 'xlsx' | 'html' | 'ofx' | 'qif';
+export type FileFormat = 'csv' | 'xlsx' | 'html' | 'ofx' | 'qif' | 'pdf';
 
 export interface ParsedFile {
   fileName: string;
@@ -15,7 +16,7 @@ export interface ParsedFile {
   detection?: Detection;
   rows: ExtractedRow[];
   skipped: number;
-  error?: 'empty' | 'legacyXls' | 'pdf' | 'unreadable' | 'noTransactions';
+  error?: 'empty' | 'legacyXls' | 'pdfPassword' | 'pdfWrongPassword' | 'pdfScanned' | 'unreadable' | 'noTransactions';
   hints: { currency?: string; bankName?: string; accountNumber?: string };
   /** balanço final declarado no ficheiro */
   closingBalance?: { amount: number; date: ISODate };
@@ -75,7 +76,7 @@ export function readStatement(bytes: Uint8Array, fileName: string, opts: ReadOpt
   if (!bytes.length) return { ...base, format: 'csv', error: 'empty' };
   const kind = sniff(bytes, fileName);
   if (kind === 'legacyXls') return { ...base, format: 'xlsx', error: 'legacyXls' };
-  if (kind === 'pdf') return { ...base, format: 'csv', error: 'pdf' };
+  if (kind === 'pdf') return { ...base, format: 'pdf', error: 'unreadable' }; // os PDF são lidos em readFile (assíncrono)
 
   try {
     if (kind === 'ofx' || kind === 'qif') {
@@ -112,20 +113,24 @@ export function readStatement(bytes: Uint8Array, fileName: string, opts: ReadOpt
     }
     if (!best) return { ...base, format: kind, hints, error: 'empty' };
     if (!best.rows.length) best.error = 'noTransactions';
-    // saldo final: a linha mais recente com saldo
-    const withBal = best.rows.filter(r => r.balance !== undefined);
-    if (withBal.length) {
-      const latestDate = withBal.reduce((m, r) => (r.date > m ? r.date : m), withBal[0]!.date);
-      const sameDay = withBal.filter(r => r.date === latestDate);
-      // em extratos por ordem decrescente, a primeira linha do dia é a mais recente
-      const first = best.rows.indexOf(withBal[0]!), last = best.rows.indexOf(withBal[withBal.length - 1]!);
-      const desc = best.rows[first]!.date >= best.rows[last]!.date;
-      const pick = desc ? sameDay[0]! : sameDay[sameDay.length - 1]!;
-      best.closingBalance = { amount: pick.balance!, date: latestDate };
-    }
+    setClosingBalance(best);
     return best;
   } catch {
     return { ...base, format: kind, error: 'unreadable' };
+  }
+}
+
+function setClosingBalance(best: ParsedFile): void {
+  // saldo final: a linha mais recente com saldo
+  const withBal = best.rows.filter(r => r.balance !== undefined);
+  if (withBal.length) {
+    const latestDate = withBal.reduce((m, r) => (r.date > m ? r.date : m), withBal[0]!.date);
+    const sameDay = withBal.filter(r => r.date === latestDate);
+    // em extratos por ordem decrescente, a primeira linha do dia é a mais recente
+    const first = best.rows.indexOf(withBal[0]!), last = best.rows.indexOf(withBal[withBal.length - 1]!);
+    const desc = best.rows[first]!.date >= best.rows[last]!.date;
+    const pick = desc ? sameDay[0]! : sameDay[sameDay.length - 1]!;
+    best.closingBalance = { amount: pick.balance!, date: latestDate };
   }
 }
 
@@ -136,9 +141,44 @@ export function reextract(pf: ParsedFile, detection: Detection): ParsedFile {
   return { ...pf, detection, rows, skipped, error: rows.length ? undefined : 'noTransactions' };
 }
 
-export async function readFile(file: File, opts?: ReadOptions): Promise<ParsedFile> {
+export async function readFile(file: File, opts?: ReadOptions, password?: string): Promise<ParsedFile> {
   const buf = new Uint8Array(await file.arrayBuffer());
+  if (buf[0] === 0x25 && buf[1] === 0x50 && buf[2] === 0x44 && buf[3] === 0x46) return readPdf(buf, file.name, opts, password);
   return readStatement(buf, file.name, opts);
+}
+
+/** Extratos em PDF (com texto; PDFs digitalizados como imagem não têm texto para ler). */
+export async function readPdf(bytes: Uint8Array, fileName: string, opts: ReadOptions = {}, password?: string): Promise<ParsedFile> {
+  const base: ParsedFile = { fileName, format: 'pdf', rows: [], skipped: 0, hints: {}, signature: '' };
+  let items: PdfItem[];
+  try {
+    items = await extractPdfItems(bytes, password);
+  } catch (e) {
+    if (e instanceof PdfPasswordError) return { ...base, error: e.wrong ? 'pdfWrongPassword' : 'pdfPassword' };
+    return { ...base, error: 'unreadable' };
+  }
+  if (items.length < 5) return { ...base, error: 'pdfScanned' };
+  const lines = itemsToLines(items);
+  return parsePdfLines(lines, fileName, opts);
+}
+
+/** Parte pura (testável) da leitura de PDF, a partir das linhas já reconstruídas. */
+export function parsePdfLines(lines: PdfLine[], fileName: string, opts: ReadOptions = {}): ParsedFile {
+  const text = pdfText(lines);
+  const hints = guessHints(text, fileName);
+  const base: ParsedFile = { fileName, format: 'pdf', rows: [], skipped: 0, hints, signature: `pdf:${hints.bankName ?? ''}` };
+  const table = linesToTable(lines);
+  let best: ParsedFile | null = null;
+  if (table) {
+    const detection = detect(table, { dateOrder: opts.dateOrder, currency: opts.currency ?? hints.currency, accountType: opts.accountType });
+    const { rows, skipped } = extract(table, detection);
+    best = { ...base, table, detection, rows, skipped, signature: `pdf:${hints.bankName ?? ''}:${detection.headers.map(norm).join('|')}` };
+  }
+  const fallback = linesToRows(lines, opts.dateOrder);
+  if (!best || fallback.length > best.rows.length * 1.2) best = { ...base, rows: fallback };
+  if (!best.rows.length) best.error = 'noTransactions';
+  setClosingBalance(best);
+  return best;
 }
 
 export type { Detection, ExtractedRow } from './detect';

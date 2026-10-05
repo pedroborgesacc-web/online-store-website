@@ -39,7 +39,7 @@ Funciona em português e inglês, em computador e telemóvel (pode ser instalada
 ### Importação de extratos (vários bancos de uma vez)
 ![Importar](docs/importar.jpg)
 
-- **Formatos**: CSV, TSV, TXT, Excel `.xlsx`, “.xls” em HTML, **OFX/QFX** e **QIF**.
+- **Formatos**: **PDF** (incluindo PDFs com palavra-passe e tabelas em várias páginas), CSV, TSV, TXT, Excel `.xlsx`, “.xls” em HTML, **OFX/QFX** e **QIF**. Os PDF digitalizados como imagem (sem texto) não são suportados.
 - Deteta o **separador**, a **codificação** (UTF-8, UTF-16, Windows-1252), a **linha de cabeçalho** (ignora preâmbulos e rodapés), as **colunas** (data, descrição, valor ou débito/crédito, saldo, moeda, estado), o **formato da data** (DD/MM vs MM/DD, pela coluna inteira) e o **formato dos números** (1.234,56 vs 1,234.56).
 - Perfis próprios para Revolut, Wise, Monzo, N26, Nubank (conta e cartão), PayPal, Chase, Capital One e Bank of America. Funciona com a CGD, Millennium, Santander, Novo Banco, BPI, ActivoBank, Itaú, Inter e a generalidade dos bancos.
 - **Duplicados ignorados**, mesmo entre extratos sobrepostos e entre vários ficheiros da mesma conta.
@@ -60,7 +60,9 @@ Funciona em português e inglês, em computador e telemóvel (pode ser instalada
 - **Análise**: rendimentos vs. despesas, taxa de poupança, evolução por categoria, onde gastas mais, exportação CSV.
 - **Contas e património**: contas à ordem, poupança, cartões de crédito, numerário e investimentos, em várias moedas.
 - **Dados**: cópia de segurança **cifrada com palavra-passe** (AES-256), restauro, exportação CSV, dados de demonstração.
-- **PWA**: instala-se no telemóvel e funciona offline. Tema claro e escuro.
+- **Aparência à medida**: tema claro/escuro/automático, cor principal (8 cores ou qualquer outra), fundo (simples, quente, frio, menta, lavanda, gradiente, pontos), tipo de letra, tamanho do texto, cantos e espaçamento.
+- **Fácil de começar**: guia de primeiros passos no Início, explicações (ⓘ) em cada número e botão “Como é calculado?”.
+- **PWA**: instala-se no telemóvel e funciona offline.
 
 <img src="docs/telemovel.jpg" width="280" alt="Versão telemóvel" />
 
@@ -74,12 +76,12 @@ Requer Node.js 20 ou mais recente.
 cd financas
 npm install
 npm run dev        # desenvolvimento em http://localhost:5173
-npm test           # 52 testes: leitura de extratos, cálculos, traduções
+npm test           # 59 testes: leitura de extratos, cálculos, traduções
 npm run build      # versão final em dist/
 npm run preview    # serve a versão final
 ```
 
-Para experimentar a importação, usa os ficheiros em `samples/`: CGD, Revolut, Chase, cartão Nubank e um OFX do Banco Inter.
+Para experimentar a importação, usa os ficheiros em `samples/`: CGD, Revolut, Chase, cartão Nubank, um OFX do Banco Inter e dois PDF (extrato Millennium e cartão Chase).
 
 ## Como publicar
 
@@ -138,5 +140,5 @@ Toda a lógica de duplicados, transferências, classificação e ligação a rec
 ### Outras ideias
 - Lembretes por email ou notificação para pagamentos em atraso, com uma mensagem pronta para enviar ao chefe ou cliente.
 - Faturas e recibos em PDF a partir de uma receita.
-- Leitura de extratos em PDF.
+- Leitura de PDFs digitalizados (OCR).
 - Partilha de orçamento a dois (casal / casa partilhada).

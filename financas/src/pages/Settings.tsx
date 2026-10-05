@@ -10,23 +10,27 @@ import { downloadText, toCSV } from '../lib/download';
 import { today } from '../lib/dates';
 import { txUSD } from '../lib/calc';
 import { CategorySelect, CurrencySelect, parseInput } from '../components/inputs';
-import { Badge, Card, Field, Modal, Segmented, confirmDialog, cx } from '../components/ui';
+import { Badge, Card, Field, Modal, Segmented, Stat, confirmDialog, cx, useLocalState } from '../components/ui';
+import { ACCENTS, DEFAULT_APPEARANCE } from '../data/defaults';
+import type { Appearance } from '../types';
+import { Check, RotateCcw } from 'lucide-react';
 import { APP_NAME, APP_VERSION } from '../config';
 
-type Tab = 'general' | 'categories' | 'rules' | 'contacts' | 'data';
+type Tab = 'appearance' | 'general' | 'categories' | 'rules' | 'contacts' | 'data';
 const GROUPS: CategoryGroup[] = ['income', 'fixed', 'essential', 'lifestyle', 'savings', 'transfer'];
 const KINDS: ContactKind[] = ['employer', 'client', 'agency', 'friend', 'family', 'other'];
 
 export default function Settings() {
   const f = useFmt();
   const t = f.t;
-  const [tab, setTab] = useState<Tab>('general');
+  const [tab, setTab] = useLocalState<Tab>('settings-tab', 'general');
   return (
     <div className="stack" style={{ gap: 18 }}>
       <div className="pill-tabs">
-        <Segmented<Tab> value={tab} onChange={setTab} options={(['general', 'categories', 'rules', 'contacts', 'data'] as Tab[]).map(v => ({ value: v, label: t(`settings.tab.${v}`) }))} />
+        <Segmented<Tab> value={tab} onChange={setTab} options={(['general', 'appearance', 'categories', 'rules', 'contacts', 'data'] as Tab[]).map(v => ({ value: v, label: t(`settings.tab.${v}`) }))} />
       </div>
       {tab === 'general' && <General />}
+      {tab === 'appearance' && <AppearanceTab />}
       {tab === 'categories' && <Categories />}
       {tab === 'rules' && <Rules />}
       {tab === 'contacts' && <Contacts />}
@@ -354,6 +358,118 @@ function DataTab() {
           {err && <div className="callout bad small mt-s">{err}</div>}
         </Modal>
       )}
+    </div>
+  );
+}
+
+const BGS: Appearance['background'][] = ['plain', 'warm', 'cool', 'mint', 'lavender', 'gradient', 'dots'];
+const BG_PREVIEW: Record<Appearance['background'], string> = {
+  plain: 'var(--bg-base)',
+  warm: 'color-mix(in srgb, #e8a35a 14%, var(--bg-base))',
+  cool: 'color-mix(in srgb, #4f8fe6 13%, var(--bg-base))',
+  mint: 'color-mix(in srgb, #2fb59a 13%, var(--bg-base))',
+  lavender: 'color-mix(in srgb, #8b7be8 14%, var(--bg-base))',
+  gradient: 'radial-gradient(circle at 0 0, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%), radial-gradient(circle at 100% 0, color-mix(in srgb, var(--s3) 30%, transparent), transparent 70%), var(--bg-base)',
+  dots: 'radial-gradient(color-mix(in srgb, var(--ink) 22%, transparent) 1px, transparent 1.4px) 0 0 / 8px 8px, var(--bg-base)'
+};
+const FONTS: { v: Appearance['font']; css: string }[] = [
+  { v: 'inter', css: "'Inter Variable', sans-serif" },
+  { v: 'rounded', css: "'Nunito Variable', sans-serif" },
+  { v: 'system', css: 'system-ui, sans-serif' },
+  { v: 'serif', css: "'Iowan Old Style', Georgia, serif" }
+];
+
+function AppearanceTab() {
+  const s = useStore(x => x.data.settings);
+  const st = useStore.getState;
+  const f = useFmt();
+  const t = f.t;
+  const a = s.appearance;
+  const set = (patch: Partial<Appearance>) => st().setSettings({ appearance: { ...a, ...patch } });
+  const opt = <T extends string>(value: T, current: T, onPick: (v: T) => void, label: string, preview?: React.ReactNode) => (
+    <button key={value} type="button" className={cx('option', value === current && 'on')} onClick={() => onPick(value)} aria-pressed={value === current}>
+      {preview}
+      <span className="row between">{label}{value === current && <Check size={15} />}</span>
+    </button>
+  );
+  const themePrev = (mode: 'light' | 'dark' | 'system') => {
+    const L = { bg: '#f6f6f3', side: '#fcfcfb', card: '#ffffff', line: '#e1e0d9' };
+    const D = { bg: '#0d0d0d', side: '#1a1a19', card: '#232321', line: '#383835' };
+    const c = mode === 'dark' ? D : L;
+    const style = mode === 'system' ? { background: `linear-gradient(135deg, ${L.bg} 50%, ${D.bg} 50%)` } : { background: c.bg };
+    return (
+      <span className="prev theme-prev" style={style}>
+        <i style={{ background: mode === 'system' ? L.side : c.side }} />
+        <span style={{ display: 'grid', gap: 4 }}>
+          <i style={{ height: 10, background: a.accent, width: '60%' }} />
+          <i style={{ height: 14, background: mode === 'system' ? D.card : c.card, border: `1px solid ${c.line}` }} />
+        </span>
+      </span>
+    );
+  };
+  return (
+    <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', alignItems: 'start' }}>
+      <div className="stack" style={{ gap: 16 }}>
+        <Card title={t('look.mode')}>
+          <div className="option-grid">
+            {(['system', 'light', 'dark'] as const).map(m => opt(m, s.theme, v => st().setSettings({ theme: v }), t(`look.mode.${m}`), themePrev(m)))}
+          </div>
+        </Card>
+        <Card title={t('look.accent')} sub={t('look.accentSub')}>
+          <div className="row wrap" style={{ gap: 10 }}>
+            {ACCENTS.map(c => <button key={c} type="button" className={cx('swatch', a.accent.toLowerCase() === c && 'on')} style={{ background: c }} onClick={() => set({ accent: c })} aria-label={c} />)}
+            <label className="row small ink2" style={{ gap: 8, marginLeft: 6 }}>
+              <input type="color" value={a.accent} onChange={e => set({ accent: e.target.value })} style={{ width: 38, height: 34, border: 0, background: 'none', padding: 0, cursor: 'pointer' }} />
+              {t('look.custom')}
+            </label>
+          </div>
+        </Card>
+        <Card title={t('look.background')}>
+          <div className="option-grid">
+            {BGS.map(b => opt(b, a.background, v => set({ background: v }), t(`look.bg.${b}`), <span className="prev" style={{ background: BG_PREVIEW[b] }} />))}
+          </div>
+        </Card>
+        <Card title={t('look.font')}>
+          <div className="option-grid">
+            {FONTS.map(x => opt(x.v, a.font, v => set({ font: v }), t(`look.font.${x.v}`), <span className="prev" style={{ display: 'grid', placeItems: 'center', fontFamily: x.css, fontSize: 22, fontWeight: 650, background: 'var(--surface-2)' }}>Aa 123</span>))}
+          </div>
+        </Card>
+        <Card title={t('look.layout')}>
+          <div className="stack">
+            <Field label={t('look.size')}>
+              <Segmented value={a.fontSize} onChange={v => set({ fontSize: v })} options={(['sm', 'md', 'lg', 'xl'] as const).map(v => ({ value: v, label: t(`look.size.${v}`) }))} />
+            </Field>
+            <Field label={t('look.radius')}>
+              <Segmented value={a.radius} onChange={v => set({ radius: v })} options={(['round', 'soft', 'square'] as const).map(v => ({ value: v, label: t(`look.radius.${v}`) }))} />
+            </Field>
+            <Field label={t('look.density')}>
+              <Segmented value={a.density} onChange={v => set({ density: v })} options={(['comfortable', 'compact'] as const).map(v => ({ value: v, label: t(`look.density.${v}`) }))} />
+            </Field>
+            <div><button className="btn" onClick={() => st().setSettings({ appearance: { ...DEFAULT_APPEARANCE }, theme: 'system' })}><RotateCcw size={15} />{t('look.reset')}</button></div>
+          </div>
+        </Card>
+      </div>
+      <div className="stack" style={{ position: 'sticky', top: 90, gap: 12 }}>
+        <div className="section-title" style={{ margin: 0 }}>{t('look.preview')}</div>
+        <div className="hero-answer">
+          <div>
+            <div className="eyebrow">{t('home.canSpend')}</div>
+            <div className="big tnum">{f.money(412.5)}</div>
+            <div className="line">{t('home.perDay', { amount: f.money(15.3), n: 27 })}</div>
+          </div>
+        </div>
+        <div className="grid g2">
+          <Stat label={t('home.in')} value={f.money(2140)} />
+          <Stat label={t('home.out')} value={f.money(1386)} />
+        </div>
+        <Card title={t('look.sampleCard')}>
+          <div className="stack tight">
+            <div className="row"><span className="icon-bubble">🛒</span><span className="grow">Continente</span><b className="tnum">{f.money(-42.3)}</b></div>
+            <div className="row"><span className="icon-bubble">🎪</span><span className="grow">{t('look.sampleGig')}</span><Badge tone="warn">{t('status.awaiting')}</Badge></div>
+            <div className="row wrap mt-s"><button className="btn primary">{t('common.save')}</button><button className="btn">{t('common.cancel')}</button><span className="chip on">{t('common.all')}</span></div>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 }

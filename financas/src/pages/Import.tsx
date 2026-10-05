@@ -20,10 +20,11 @@ interface FileState {
   parsed?: ParsedFile;
   accountId: ID;
   reading: boolean;
+  password?: string;
 }
 
 type Step = 'pick' | 'files' | 'review' | 'done';
-const ACCEPT = '.csv,.txt,.tsv,.xlsx,.xls,.ofx,.qfx,.qif,.htm,.html';
+const ACCEPT = '.pdf,.csv,.txt,.tsv,.xlsx,.xls,.ofx,.qfx,.qif,.htm,.html';
 let seq = 0;
 
 export default function ImportPage() {
@@ -62,7 +63,7 @@ export default function ImportPage() {
       const accountId = guessAccount(parsed);
       let final = parsed;
       const acc = data.accounts.find(a => a.id === accountId);
-      if (acc && (acc.dateOrder || acc.type === 'credit')) final = await readFile(fs.file, { dateOrder: acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type });
+      if (acc && !parsed.error && (acc.dateOrder || acc.type === 'credit')) final = await readFile(fs.file, { dateOrder: acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type });
       setFiles(prev => prev.map(x => (x.key === fs.key ? { ...x, parsed: final, accountId, reading: false } : x)));
     }
   };
@@ -71,10 +72,19 @@ export default function ImportPage() {
     const fs = files.find(x => x.key === key);
     const acc = data.accounts.find(a => a.id === accountId) ?? useStore.getState().data.accounts.find(a => a.id === accountId);
     setFiles(prev => prev.map(x => (x.key === key ? { ...x, accountId } : x)));
-    if (fs && acc && fs.parsed?.table) {
-      const parsed = await readFile(fs.file, { dateOrder: acc.dateOrder && acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type });
+    if (fs && acc && fs.parsed && !fs.parsed.error) {
+      const parsed = await readFile(fs.file, { dateOrder: acc.dateOrder && acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type }, fs.password);
       setFiles(prev => prev.map(x => (x.key === key ? { ...x, parsed } : x)));
     }
+  };
+
+  const unlock = async (key: number, password: string) => {
+    const fs = files.find(x => x.key === key);
+    if (!fs) return;
+    setFiles(prev => prev.map(x => (x.key === key ? { ...x, reading: true } : x)));
+    const parsed = await readFile(fs.file, undefined, password);
+    const accountId = parsed.error ? '' : guessAccount(parsed);
+    setFiles(prev => prev.map(x => (x.key === key ? { ...x, parsed, password, accountId, reading: false } : x)));
   };
 
   const updateDetection = (key: number, d: Detection) => {
@@ -134,7 +144,7 @@ export default function ImportPage() {
             <h3 style={{ margin: '8px 0 4px' }}>{t('import.dropTitle')}</h3>
             <div className="ink2 small">{t('import.dropText')}</div>
             <div className="row wrap mt" style={{ justifyContent: 'center' }}>
-              {['CSV', 'Excel (.xlsx)', 'OFX / QFX', 'QIF', 'TXT'].map(x => <Badge key={x}>{x}</Badge>)}
+              {['PDF', 'CSV', 'Excel (.xlsx)', 'OFX / QFX', 'QIF', 'TXT'].map(x => <Badge key={x}>{x}</Badge>)}
             </div>
             <input ref={input} type="file" multiple accept={ACCEPT} hidden onChange={e => { if (e.target.files) void addFiles(e.target.files); e.target.value = ''; }} />
           </div>
@@ -162,6 +172,7 @@ export default function ImportPage() {
               onAccount={id => void setAccount(fs.key, id)}
               onCreate={() => setCreatingFor(fs)}
               onRemove={() => setFiles(files.filter(x => x.key !== fs.key))}
+              onUnlock={pw => void unlock(fs.key, pw)}
               onDetection={d => updateDetection(fs.key, d)} />
           ))}
           <div className="row wrap">
@@ -218,12 +229,13 @@ function Steps({ step }: { step: Step }) {
   );
 }
 
-function FileCard({ fs, accounts, onAccount, onCreate, onRemove, onDetection }: {
-  fs: FileState; accounts: Account[]; onAccount: (id: ID) => void; onCreate: () => void; onRemove: () => void; onDetection: (d: Detection) => void;
+function FileCard({ fs, accounts, onAccount, onCreate, onRemove, onDetection, onUnlock }: {
+  fs: FileState; accounts: Account[]; onAccount: (id: ID) => void; onCreate: () => void; onRemove: () => void; onDetection: (d: Detection) => void; onUnlock: (pw: string) => void;
 }) {
   const f = useFmt();
   const t = f.t;
   const [adv, setAdv] = useState(false);
+  const [pw, setPw] = useState('');
   const p = fs.parsed;
   const dates = p?.rows.map(r => r.date).sort() ?? [];
   const d = p?.detection;
@@ -234,7 +246,15 @@ function FileCard({ fs, accounts, onAccount, onCreate, onRemove, onDetection }: 
         <div className="grow" style={{ minWidth: 200 }}>
           <b className="ellipsis" style={{ display: 'block' }}>{fs.file.name}</b>
           {fs.reading ? <div className="small muted">{t('import.reading')}</div> : p?.error ? (
-            <div className="small neg">{t(`import.err.${p.error}`)}</div>
+            <div className="stack tight">
+              <div className="small neg">{t(`import.err.${p.error}`)}</div>
+              {(p.error === 'pdfPassword' || p.error === 'pdfWrongPassword') && (
+                <form className="row" onSubmit={e => { e.preventDefault(); if (pw) onUnlock(pw); }}>
+                  <input className="input sm" type="password" autoFocus value={pw} onChange={e => setPw(e.target.value)} placeholder={t('import.pdfPasswordPh')} style={{ maxWidth: 240 }} aria-label={t('import.pdfPasswordPh')} />
+                  <button className="btn sm primary" disabled={!pw}>{t('import.unlock')}</button>
+                </form>
+              )}
+            </div>
           ) : p && (
             <div className="row wrap small ink2" style={{ gap: 6, marginTop: 3 }}>
               <Badge tone="good">{t('import.found', { n: p.rows.length })}</Badge>

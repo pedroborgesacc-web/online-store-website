@@ -221,10 +221,23 @@ export interface Rates {
 
 export type SavingsMode = 'percent' | 'fixed' | 'goals';
 
+export interface Appearance {
+  /** cor principal (botões, destaques) */
+  accent: string;
+  background: 'plain' | 'warm' | 'cool' | 'mint' | 'lavender' | 'gradient' | 'dots';
+  font: 'inter' | 'rounded' | 'system' | 'serif';
+  fontSize: 'sm' | 'md' | 'lg' | 'xl';
+  radius: 'round' | 'soft' | 'square';
+  density: 'comfortable' | 'compact';
+}
+
 export interface Settings {
   locale: Locale;
   displayCurrency: Currency;
   theme: 'system' | 'light' | 'dark';
+  appearance: Appearance;
+  /** guia de primeiros passos escondido pelo utilizador */
+  hideChecklist?: boolean;
   userName: string;
   savingsMode: SavingsMode;
   savingsPercent: number;

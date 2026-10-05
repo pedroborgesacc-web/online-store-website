@@ -1,5 +1,5 @@
-import { useMemo } from 'react';
-import { AlertTriangle, ArrowRight, CalendarClock, CheckCircle2, PiggyBank, Sparkles, TrendingUp, Wallet } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { AlertTriangle, ArrowRight, CalendarClock, Check, CheckCircle2, HelpCircle, PiggyBank, Sparkles, TrendingUp, Wallet } from 'lucide-react';
 import { useStore } from '../store';
 import { useFmt } from '../lib/format';
 import { addDays, lastMonths, today as todayISO, ymOf } from '../lib/dates';
@@ -8,7 +8,7 @@ import { billOccurrences } from '../lib/bills';
 import { buildInsights } from '../lib/insights';
 import { goalProgress } from '../lib/goals';
 import { accountBalance, netWorthUSD, sum, summarizeMonth } from '../lib/calc';
-import { Badge, Card, Empty, Progress, Stat, cx } from '../components/ui';
+import { Badge, Card, Empty, InfoTip, Modal, Progress, Stat, cx } from '../components/ui';
 import { BarChart, HBars, LineChart } from '../components/charts';
 
 export function Overview() {
@@ -18,6 +18,10 @@ export function Overview() {
   const setMonth = useStore(s => s.setMonth);
   const markBillPaid = useStore(s => s.markBillPaid);
   const toast = useStore(s => s.toast);
+  const setSettings = useStore(s => s.setSettings);
+  const loadDemo = useStore(s => s.loadDemo);
+  const [explain, setExplain] = useState(false);
+  const [allInsights, setAllInsights] = useState(false);
   const f = useFmt();
   const t = f.t;
   const today = todayISO();
@@ -45,32 +49,47 @@ export function Overview() {
   const hour = new Date().getHours();
   const greet = hour < 12 ? t('overview.morning') : hour < 19 ? t('overview.afternoon') : t('overview.evening');
 
+  const checklist = [
+    { key: 'balance', done: data.accounts.some(a => a.balanceDate), page: 'accounts' },
+    { key: 'import', done: data.imports.length > 0 || data.transactions.some(x => x.source === 'import' || x.source === 'demo'), page: 'import' },
+    { key: 'income', done: data.incomes.length > 0 || data.bills.some(x => x.kind === 'income'), page: 'income' },
+    { key: 'bills', done: data.bills.some(x => x.kind === 'expense'), page: 'budget' },
+    { key: 'goal', done: data.goals.length > 0, page: 'goals' }
+  ] as const;
+  const doneCount = checklist.filter(c => c.done).length;
+  const showChecklist = !data.settings.hideChecklist && doneCount < checklist.length;
+  const checklistCard = (
+    <Card title={t('home.startTitle')} sub={t('home.startSub', { n: doneCount, total: checklist.length })}
+      actions={!empty && <button className="btn sm ghost" onClick={() => setSettings({ hideChecklist: true })}>{t('home.hide')}</button>}>
+      <Progress value={doneCount / checklist.length} label={t('home.startTitle')} />
+      <div className="checklist mt-s">
+        {checklist.map(c => (
+          <div key={c.key} className={cx('step', c.done && 'done')}>
+            <span className={cx('tick', c.done && 'done')}>{c.done && <Check size={14} />}</span>
+            <div className="grow"><div className="label" style={{ fontWeight: 600 }}>{t(`home.step.${c.key}`)}</div><div className="xs muted">{t(`home.step.${c.key}Help`)}</div></div>
+            {!c.done && <button className="btn sm" onClick={() => go(c.page)}>{t(`home.step.${c.key}Go`)}</button>}
+          </div>
+        ))}
+      </div>
+      {empty && <div className="row mt" style={{ justifyContent: 'center' }}><button className="btn ghost" onClick={() => loadDemo()}>{t('onboard.demo')}</button></div>}
+    </Card>
+  );
+
   if (empty) {
     return (
-      <Card>
-        <Empty icon="👋" title={t('overview.welcomeTitle')} text={t('overview.welcomeText')}
-          action={<div className="row wrap" style={{ justifyContent: 'center' }}>
-            <button className="btn primary" onClick={() => go('import')}>{t('overview.ctaImport')}</button>
-            <button className="btn" onClick={() => go('income')}>{t('overview.ctaIncome')}</button>
-            <button className="btn" onClick={() => go('budget')}>{t('overview.ctaBills')}</button>
-          </div>} />
-      </Card>
+      <div className="stack" style={{ gap: 18 }}>
+        <div>
+          <div style={{ fontSize: 22, fontWeight: 700 }}>{greet}{data.settings.userName ? `, ${data.settings.userName}` : ''} 👋</div>
+          <div className="ink2 small">{t('home.emptySub')}</div>
+        </div>
+        {checklistCard}
+      </div>
     );
   }
 
-  const income = (
-    <Stat label={t('overview.income')} icon={<TrendingUp size={15} />} value={f.money(cur ? plan.incomeTotal : s.income)}
-      hint={cur || plan.when === 'future' ? t('overview.incomeHint', { received: f.money(s.income), pending: f.money(plan.incomeExpectedRemaining) }) : t('overview.incomeReceived')} onClick={() => go('income')} />
-  );
   // poupança prevista no fim do mês se gastares apenas o que é seguro
   const projected = plan.incomeTotal - (s.spending + plan.billsPendingOut + plan.essentialRemaining) - Math.max(0, plan.safeToSpend);
-  const saved = plan.when === 'past' ? (
-    <Stat label={t('overview.saved')} icon={<PiggyBank size={15} />} value={f.money(s.net)} tone={s.net < 0 ? 'bad' : undefined}
-      hint={s.income > 0 ? t('overview.savingsRate', { pct: f.pct(s.savingsRate), target: f.money(plan.savingsTarget) }) : t('overview.savingsTarget', { target: f.money(plan.savingsTarget) })} />
-  ) : (
-    <Stat label={t('overview.projectedSaving')} icon={<PiggyBank size={15} />} value={f.money(projected)} tone={projected < 0 ? 'bad' : projected >= plan.savingsTarget - 0.5 ? 'good' : 'warn'}
-      hint={t('overview.projectedHint', { now: f.money(s.net), pct: plan.incomeTotal > 0 ? f.pct(projected / plan.incomeTotal) : '—' })} />
-  );
+  const over = plan.safeToSpend < 0;
 
   return (
     <div className="stack" style={{ gap: 18 }}>
@@ -84,26 +103,42 @@ export function Overview() {
 
       {plan.when === 'past' ? (
         <div className="grid g4">
-          {income}
-          <Stat label={t('overview.spending')} icon={<Wallet size={15} />} value={f.money(s.spending)} hint={t('overview.spendingSplit', { fixed: f.money(s.fixed), variable: f.money(s.essential + s.lifestyle) })} />
-          {saved}
+          <Stat label={t('home.in')} icon={<TrendingUp size={15} />} value={f.money(s.income)} onClick={() => go('income')} />
+          <Stat label={t('home.out')} icon={<Wallet size={15} />} value={f.money(s.spending)} hint={t('overview.spendingSplit', { fixed: f.money(s.fixed), variable: f.money(s.essential + s.lifestyle) })} />
+          <Stat label={t('overview.saved')} icon={<PiggyBank size={15} />} value={f.money(s.net)} tone={s.net < 0 ? 'bad' : undefined}
+            hint={s.income > 0 ? t('overview.savingsRate', { pct: f.pct(s.savingsRate), target: f.money(plan.savingsTarget) }) : undefined} />
           <Stat label={t('overview.uncategorized')} value={s.uncategorized} hint={t('overview.txCount', { n: s.count })} onClick={() => go('transactions', { uncategorized: true })} />
         </div>
       ) : (
-        <div className="grid g4">
-          <Stat tone={plan.safeToSpend < 0 ? 'bad' : 'hero'} label={<><Sparkles size={15} />{t('overview.safeToSpend')}</>} value={f.money(plan.safeToSpend)}
-            hint={plan.safeToSpend < 0 ? t('overview.overPlan') : plan.daysLeft > 0 ? t('overview.perDay', { amount: f.money(plan.dailyAllowance), n: plan.daysLeft }) : ''} />
-          <Stat tone={plan.shortfall > 0 ? 'bad' : 'good'} label={<>{plan.shortfall > 0 ? <AlertTriangle size={15} /> : <CheckCircle2 size={15} />}{t('overview.needToCover')}</>}
-            value={plan.shortfall > 0 ? f.money(plan.shortfall) : t('overview.covered')}
-            hint={plan.shortfall > 0 ? t('overview.shortfallHint') : plan.shortfallWithSavings > 0 ? t('overview.savingsGap', { amount: f.money(plan.shortfallWithSavings) }) : t('overview.toPay', { amount: f.money(plan.billsPendingOut + plan.essentialRemaining) })} />
-          {income}
-          {saved}
-        </div>
+        <>
+          <div className={cx('hero-answer', over && 'bad')}>
+            <div style={{ minWidth: 0 }}>
+              <div className="eyebrow"><Sparkles size={15} />{cur ? t('home.canSpend') : t('home.canSpendFuture', { month: f.month(month) })}</div>
+              <div className="big tnum">{f.money(plan.safeToSpend)}</div>
+              <div className="line">{over ? t('home.overBy', { amount: f.money(-plan.safeToSpend) }) : plan.daysLeft > 0 ? t('home.perDay', { amount: f.money(plan.dailyAllowance), n: plan.daysLeft }) : ''}</div>
+              <div className="status">
+                {plan.shortfall > 0 ? <AlertTriangle size={15} /> : <CheckCircle2 size={15} />}
+                {plan.shortfall > 0 ? t('home.short', { amount: f.money(plan.shortfall) }) : t('home.covered', { amount: f.money(plan.billsPendingOut + plan.essentialRemaining) })}
+              </div>
+            </div>
+            <div><button className="btn sm" onClick={() => setExplain(true)}><HelpCircle size={15} />{t('home.how')}</button></div>
+          </div>
+          <div className="grid g3">
+            <Stat label={<>{t('home.in')}<InfoTip text={t('home.inHelp')} /></>} icon={<TrendingUp size={15} />} value={f.money(s.income)}
+              hint={plan.incomeExpectedRemaining > 0 ? t('home.toCome', { amount: f.money(plan.incomeExpectedRemaining) }) : undefined} onClick={() => go('income')} />
+            <Stat label={<>{t('home.out')}<InfoTip text={t('home.outHelp')} /></>} icon={<Wallet size={15} />} value={f.money(s.spending)}
+              hint={plan.billsPendingOut > 0 ? t('home.billsLeft', { amount: f.money(plan.billsPendingOut) }) : t('overview.spendingSplit', { fixed: f.money(s.fixed), variable: f.money(s.essential + s.lifestyle) })} onClick={() => go('transactions')} />
+            <Stat label={<>{t('home.save')}<InfoTip text={t('home.saveHelp')} /></>} icon={<PiggyBank size={15} />} value={f.money(projected)} tone={projected < 0 ? 'bad' : undefined}
+              hint={t('home.saveHint', { target: f.money(plan.savingsTarget) })} onClick={() => go('goals')} />
+          </div>
+        </>
       )}
+
+      {showChecklist && checklistCard}
 
       {insights.length > 0 && cur && (
         <div className="stack tight">
-          {insights.slice(0, 4).map(i => {
+          {insights.slice(0, allInsights ? insights.length : 2).map(i => {
             const vars: Record<string, string | number> = { ...i.vars };
             if (typeof vars.cat === 'string') vars.cat = f.catName(data.categories.find(c => c.id === vars.cat));
             if (typeof vars.date === 'string') vars.date = f.date(vars.date as string, 'weekday');
@@ -116,6 +151,11 @@ export function Overview() {
               </div>
             );
           })}
+          {insights.length > 2 && (
+            <button className="btn sm ghost" style={{ alignSelf: 'flex-start' }} onClick={() => setAllInsights(!allInsights)}>
+              {allInsights ? t('home.lessAlerts') : t('home.moreAlerts', { n: insights.length - 2 })}
+            </button>
+          )}
         </div>
       )}
 
@@ -139,26 +179,7 @@ export function Overview() {
         </Card>
       )}
 
-      <div className="grid g2">
-        {plan.when !== 'past' && (
-          <Card title={t('overview.planTitle')} sub={t('overview.planSub')}>
-            <table className="table">
-              <tbody>
-                <PlanRow label={t('overview.planIncome')} value={f.money(plan.incomeTotal)} />
-                <PlanRow label={t('overview.planFixed')} value={f.money(-(s.fixed + plan.billsPendingOut))} />
-                <PlanRow label={t('overview.planEssential')} value={f.money(-(s.essential + plan.essentialRemaining))} />
-                <PlanRow label={t('overview.planSavings')} value={f.money(-Math.max(plan.savingsTarget, s.savedOut))} />
-                <PlanRow strong label={t('overview.planLifestyle')} value={f.money(plan.lifestylePlan)} />
-                <PlanRow label={t('overview.planLifestyleSpent')} value={f.money(-s.lifestyle)} />
-                <PlanRow strong label={t('overview.planSafe')} value={f.money(plan.lifestylePlan - s.lifestyle)} neg={plan.lifestylePlan - s.lifestyle < 0} />
-              </tbody>
-            </table>
-            {plan.cashFree !== null && plan.cashFree < plan.lifestylePlan - s.lifestyle && (
-              <div className="callout warn mt-s small">{t('overview.cashLimited', { amount: f.money(plan.cashFree) })}</div>
-            )}
-          </Card>
-        )}
-
+      <div className="grid">
         <Card title={t('overview.upcoming')} sub={t('overview.next21')} actions={<button className="btn sm ghost" onClick={() => go('budget')}>{t('common.manage')}</button>}>
           {upcoming.length ? (
             <div className="list">
@@ -226,6 +247,26 @@ export function Overview() {
 
       {plan.when !== 'past' && s.count === 0 && month > ymOf(today) && (
         <div className="callout small">{t('overview.futureNote')}</div>
+      )}
+      {explain && (
+        <Modal title={t('home.howTitle')} onClose={() => setExplain(false)}>
+          <p className="small ink2" style={{ marginTop: 0 }}>{t('home.howText')}</p>
+          <table className="table">
+            <tbody>
+              <PlanRow label={t('overview.planIncome')} value={f.money(plan.incomeTotal)} />
+              <PlanRow label={t('overview.planFixed')} value={f.money(-(s.fixed + plan.billsPendingOut))} />
+              <PlanRow label={t('overview.planEssential')} value={f.money(-(s.essential + plan.essentialRemaining))} />
+              <PlanRow label={t('overview.planSavings')} value={f.money(-Math.max(plan.savingsTarget, s.savedOut))} />
+              <PlanRow strong label={t('overview.planLifestyle')} value={f.money(plan.lifestylePlan)} />
+              <PlanRow label={t('overview.planLifestyleSpent')} value={f.money(-s.lifestyle)} />
+              <PlanRow strong label={t('overview.planSafe')} value={f.money(plan.lifestylePlan - s.lifestyle)} neg={plan.lifestylePlan - s.lifestyle < 0} />
+            </tbody>
+          </table>
+          {plan.cashFree !== null && plan.cashFree < plan.lifestylePlan - s.lifestyle && (
+            <div className="callout warn mt-s small">{t('overview.cashLimited', { amount: f.money(plan.cashFree) })}</div>
+          )}
+          <div className="small muted mt">{t('home.howTip')}</div>
+        </Modal>
       )}
     </div>
   );

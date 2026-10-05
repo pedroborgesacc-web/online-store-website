@@ -1,6 +1,6 @@
 import { createStore, get, set } from 'idb-keyval';
 import type { AppData } from '../types';
-import { DATA_VERSION, DEFAULT_CATEGORIES, emptyData, defaultSettings } from '../data/defaults';
+import { DATA_VERSION, DEFAULT_APPEARANCE, DEFAULT_CATEGORIES, emptyData, defaultSettings } from '../data/defaults';
 
 const KEY = 'florin-data';
 let idbStore: ReturnType<typeof createStore> | null = null;
@@ -49,6 +49,7 @@ export function migrate(raw: Partial<AppData>): AppData {
   const d: AppData = { ...base, ...raw, version: DATA_VERSION } as AppData;
   d.settings = { ...defaultSettings(d.settings?.locale ?? 'en'), ...(raw.settings ?? {}) };
   d.settings.rates = raw.settings?.rates?.rates ? raw.settings.rates : base.settings.rates;
+  d.settings.appearance = { ...DEFAULT_APPEARANCE, ...(raw.settings?.appearance ?? {}) };
   for (const k of ['accounts', 'transactions', 'incomes', 'contacts', 'bills', 'goals', 'debts', 'rules', 'imports'] as const) {
     if (!Array.isArray(d[k])) (d as unknown as Record<string, unknown[]>)[k] = [];
   }
