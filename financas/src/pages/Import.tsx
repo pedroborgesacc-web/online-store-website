@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
-import { ArrowLeftRight, CheckCircle2, FileSpreadsheet, Lock, Settings2, UploadCloud, X } from 'lucide-react';
+import { ArrowLeftRight, CheckCircle2, ClipboardPaste, FileSpreadsheet, Lock, Settings2, UploadCloud, X } from 'lucide-react';
 import type { Account, ID } from '../types';
 import { useStore } from '../store';
 import { useFmt } from '../lib/format';
@@ -11,7 +11,7 @@ import { kindForCategory } from '../lib/categorize';
 import { norm } from '../lib/text';
 import { sum, txUSD } from '../lib/calc';
 import { CategorySelect } from '../components/inputs';
-import { Badge, Card, Segmented, cx } from '../components/ui';
+import { Badge, Card, Modal, Segmented, cx } from '../components/ui';
 import { AccountForm } from './Accounts';
 
 interface FileState {
@@ -21,10 +21,15 @@ interface FileState {
   accountId: ID;
   reading: boolean;
   password?: string;
+  /** secção do ficheiro (ex.: "EUR" num extrato Revolut com várias moedas) */
+  part?: string;
 }
 
+/** Num extrato com várias contas/moedas, a parte que corresponde a este cartão. */
+const pickPart = (p: ParsedFile, part?: string): ParsedFile => (part && p.parts?.find(x => x.part === part)) || p;
+
 type Step = 'pick' | 'files' | 'review' | 'done';
-const ACCEPT = '.pdf,.csv,.txt,.tsv,.xlsx,.xls,.ofx,.qfx,.qif,.htm,.html';
+const ACCEPT = '.pdf,.csv,.txt,.tsv,.xlsx,.xls,.ods,.ofx,.qfx,.qif,.htm,.html';
 let seq = 0;
 
 export default function ImportPage() {
@@ -40,13 +45,17 @@ export default function ImportPage() {
   const [result, setResult] = useState<{ added: number; transfers: number; bills: number; incomes: number } | null>(null);
   const [fxNote, setFxNote] = useState('');
   const [creatingFor, setCreatingFor] = useState<FileState | null>(null);
+  const [pasting, setPasting] = useState(false);
+  const [pasted, setPasted] = useState('');
   const input = useRef<HTMLInputElement>(null);
 
   const guessAccount = (p: ParsedFile): ID => {
     const bySig = data.accounts.find(a => !a.archived && a.importSignature && a.importSignature === p.signature);
     if (bySig) return bySig.id;
     if (p.hints.bankName) {
-      const byBank = data.accounts.filter(a => !a.archived && norm(`${a.institution ?? ''} ${a.name}`).includes(norm(p.hints.bankName!)));
+      let byBank = data.accounts.filter(a => !a.archived && norm(`${a.institution ?? ''} ${a.name}`).includes(norm(p.hints.bankName!)));
+      // vários cartões/contas no mesmo banco (ex.: Revolut EUR e USD): escolhe pela moeda
+      if ((byBank.length > 1 || p.part) && p.hints.currency) byBank = byBank.filter(a => a.currency === p.hints.currency);
       if (byBank.length === 1) return byBank[0]!.id;
     }
     return '';
@@ -59,21 +68,27 @@ export default function ImportPage() {
     setFiles(prev => [...prev, ...fresh]);
     setStep('files');
     for (const fs of fresh) {
-      const parsed = await readFile(fs.file);
-      const accountId = guessAccount(parsed);
-      let final = parsed;
-      const acc = data.accounts.find(a => a.id === accountId);
-      if (acc && !parsed.error && (acc.dateOrder || acc.type === 'credit')) final = await readFile(fs.file, { dateOrder: acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type });
-      setFiles(prev => prev.map(x => (x.key === fs.key ? { ...x, parsed: final, accountId, reading: false } : x)));
+      const all = await readFile(fs.file);
+      const states = await Promise.all(splitParts(all).map(async (parsed, i): Promise<FileState> => {
+        const accountId = guessAccount(parsed);
+        let final = parsed;
+        const acc = data.accounts.find(a => a.id === accountId);
+        if (acc && !parsed.error && (acc.dateOrder || acc.type === 'credit')) final = pickPart(await readFile(fs.file, { dateOrder: acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type }), parsed.part);
+        return { ...fs, key: i ? ++seq : fs.key, parsed: final, accountId, reading: false, part: parsed.part };
+      }));
+      setFiles(prev => prev.flatMap(x => (x.key === fs.key ? states : [x])));
     }
   };
+
+  /** extratos com várias contas/moedas aparecem como um cartão por conta */
+  const splitParts = (p: ParsedFile): ParsedFile[] => (p.parts && p.parts.length > 1 ? p.parts : [p]);
 
   const setAccount = async (key: number, accountId: ID) => {
     const fs = files.find(x => x.key === key);
     const acc = data.accounts.find(a => a.id === accountId) ?? useStore.getState().data.accounts.find(a => a.id === accountId);
     setFiles(prev => prev.map(x => (x.key === key ? { ...x, accountId } : x)));
     if (fs && acc && fs.parsed && !fs.parsed.error) {
-      const parsed = await readFile(fs.file, { dateOrder: acc.dateOrder && acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type }, fs.password);
+      const parsed = pickPart(await readFile(fs.file, { dateOrder: acc.dateOrder && acc.dateOrder !== 'auto' ? acc.dateOrder as never : undefined, currency: acc.currency, accountType: acc.type }, fs.password), fs.part);
       setFiles(prev => prev.map(x => (x.key === key ? { ...x, parsed } : x)));
     }
   };
@@ -82,9 +97,9 @@ export default function ImportPage() {
     const fs = files.find(x => x.key === key);
     if (!fs) return;
     setFiles(prev => prev.map(x => (x.key === key ? { ...x, reading: true } : x)));
-    const parsed = await readFile(fs.file, undefined, password);
-    const accountId = parsed.error ? '' : guessAccount(parsed);
-    setFiles(prev => prev.map(x => (x.key === key ? { ...x, parsed, password, accountId, reading: false } : x)));
+    const all = await readFile(fs.file, undefined, password);
+    const states = splitParts(all).map((parsed, i): FileState => ({ ...fs, key: i ? ++seq : fs.key, parsed, password, accountId: parsed.error ? '' : guessAccount(parsed), reading: false, part: parsed.part }));
+    setFiles(prev => prev.flatMap(x => (x.key === key ? states : [x])));
   };
 
   const updateDetection = (key: number, d: Detection) => {
@@ -144,9 +159,12 @@ export default function ImportPage() {
             <h3 style={{ margin: '8px 0 4px' }}>{t('import.dropTitle')}</h3>
             <div className="ink2 small">{t('import.dropText')}</div>
             <div className="row wrap mt" style={{ justifyContent: 'center' }}>
-              {['PDF', 'CSV', 'Excel (.xlsx)', 'OFX / QFX', 'QIF', 'TXT'].map(x => <Badge key={x}>{x}</Badge>)}
+              {['PDF', 'CSV', 'Excel (.xlsx / .xls)', 'ODS', 'OFX / QFX', 'QIF', 'TXT'].map(x => <Badge key={x}>{x}</Badge>)}
             </div>
             <input ref={input} type="file" multiple accept={ACCEPT} hidden onChange={e => { if (e.target.files) void addFiles(e.target.files); e.target.value = ''; }} />
+          </div>
+          <div className="row" style={{ justifyContent: 'center' }}>
+            <button className="btn" onClick={() => setPasting(true)}><ClipboardPaste size={16} />{t('import.paste')}</button>
           </div>
           <div className="grid g2">
             <Card title={t('import.howTitle')}>
@@ -177,6 +195,7 @@ export default function ImportPage() {
           ))}
           <div className="row wrap">
             <button className="btn" onClick={() => input.current?.click()}>＋ {t('import.addMore')}</button>
+            <button className="btn" onClick={() => setPasting(true)}><ClipboardPaste size={16} />{t('import.paste')}</button>
             <input ref={input} type="file" multiple accept={ACCEPT} hidden onChange={e => { if (e.target.files) void addFiles(e.target.files); e.target.value = ''; }} />
             <span className="grow" />
             <button className="btn ghost" onClick={reset}>{t('common.cancel')}</button>
@@ -204,9 +223,18 @@ export default function ImportPage() {
           </div>
         </Card>
       )}
+      {pasting && (
+        <Modal title={t('import.pasteTitle')} onClose={() => setPasting(false)} wide
+          footer={<><button className="btn ghost" onClick={() => setPasting(false)}>{t('common.cancel')}</button>
+            <button className="btn primary" disabled={!pasted.trim()} onClick={() => { void addFiles([new File([pasted], `${t('import.paste')}.txt`, { type: 'text/plain' })]); setPasted(''); setPasting(false); }}>{t('import.pasteRead')}</button></>}>
+          <p className="small ink2" style={{ marginTop: 0 }}>{t('import.pasteHelp')}</p>
+          <textarea className="input" rows={12} value={pasted} onChange={e => setPasted(e.target.value)} style={{ width: '100%', fontFamily: 'ui-monospace, monospace', fontSize: 13 }}
+            placeholder={'02/09/2026   COMPRA PINGO DOCE   -23,45   1.476,55\n03/09/2026   TRF RECEBIDA JOAO   +150,00   1.626,55'} />
+        </Modal>
+      )}
       {creatingFor && (
         <AccountForm onClose={() => setCreatingFor(null)}
-          preset={{ name: creatingFor.parsed?.hints.bankName ?? creatingFor.file.name.replace(/\.[^.]+$/, ''), institution: creatingFor.parsed?.hints.bankName, currency: creatingFor.parsed?.hints.currency ?? (creatingFor.parsed?.rows.find(r => r.currency)?.currency) ?? f.currency, type: creatingFor.parsed?.detection?.preset?.includes('cart') ? 'credit' : 'checking' }}
+          preset={{ name: [creatingFor.parsed?.hints.bankName ?? creatingFor.file.name.replace(/\.[^.]+$/, ''), creatingFor.part && creatingFor.part !== '—' ? creatingFor.part : ''].filter(Boolean).join(' '), institution: creatingFor.parsed?.hints.bankName, currency: creatingFor.parsed?.hints.currency ?? (creatingFor.parsed?.rows.find(r => r.currency)?.currency) ?? f.currency, type: creatingFor.parsed?.detection?.preset?.includes('cart') ? 'credit' : 'checking' }}
           onCreated={id => { const k = creatingFor.key; setCreatingFor(null); setTimeout(() => void setAccount(k, id), 0); }} />
       )}
     </div>
@@ -257,12 +285,14 @@ function FileCard({ fs, accounts, onAccount, onCreate, onRemove, onDetection, on
             </div>
           ) : p && (
             <div className="row wrap small ink2" style={{ gap: 6, marginTop: 3 }}>
+              {fs.part && fs.part !== '—' && <Badge tone="info">{fs.part}</Badge>}
               <Badge tone="good">{t('import.found', { n: p.rows.length })}</Badge>
               <Badge>{p.format.toUpperCase()}</Badge>
               {d?.preset && <Badge tone="info">{d.preset}</Badge>}
               {p.hints.bankName && !d?.preset && <Badge tone="info">{p.hints.bankName}</Badge>}
               {dates.length > 0 && <span>{f.date(dates[0]!, 'short')} – {f.date(dates[dates.length - 1]!)}</span>}
               {p.skipped > 0 && <span className="muted">· {t('import.skipped', { n: p.skipped })}</span>}
+              {fs.part && <span className="muted" style={{ flexBasis: '100%' }}>{t('import.multiPart')}</span>}
             </div>
           )}
         </div>

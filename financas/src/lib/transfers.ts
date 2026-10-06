@@ -4,6 +4,10 @@ import { diffDays } from './dates';
 import { norm } from './text';
 import { txUSD } from './calc';
 
+// troca de moeda entre contas próprias ("Exchanged to USD", "Câmbio", "Conversão")
+const FX_HINTS = ['EXCHANGE', 'CAMBIO', 'CONVERS', 'CONVERTED', 'FX '];
+const fxHint = (t: Transaction) => { const d = norm(t.description) + ' '; return FX_HINTS.some(h => d.includes(h)); };
+
 export interface TransferPair { outId: ID; inId: ID; score: number }
 
 const hint = (t: Transaction) => {
@@ -34,7 +38,9 @@ export function detectTransfers(fresh: Transaction[], all: Transaction[]): Trans
         ok = Math.abs(o.amount + i.amount) < 0.01 && (hinted || dd <= 1);
       } else {
         const a = Math.abs(txUSD(o)), b = Math.abs(txUSD(i));
-        ok = hinted && Math.abs(a - b) <= Math.max(0.5, a * 0.03);
+        // o câmbio do banco difere do de referência (comissões, fim de semana, taxas aproximadas offline)
+        const tol = fxHint(o) || fxHint(i) ? 0.06 : 0.03;
+        ok = hinted && Math.abs(a - b) <= Math.max(0.5, a * tol);
       }
       if (!ok) continue;
       pairs.push({ outId: o.id, inId: i.id, score: (hinted ? 3 : 0) + (4 - dd) + (o.currency === i.currency ? 1 : 0) });

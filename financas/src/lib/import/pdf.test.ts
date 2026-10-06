@@ -89,3 +89,52 @@ describe('extratos de conta americanos (estilo Chase)', () => {
     expect(rows.map(x => x.date)).toEqual(['2025-12-20', '2026-01-05']);
   });
 });
+
+describe('extrato consolidado com várias contas e moedas (estilo Revolut)', () => {
+  // cabeçalho em 3 linhas ("Money in" / "Date … Balance … Fees" / "/out"), uma tabela por conta,
+  // valor equivalente noutra moeda por baixo, totais e várias colunas de impostos/taxas
+  const head = (p: number, y: number): PdfItem[] => [
+    ...line(p, y + 6, [[343, 'Money in'], [428, 'Tax'], [470, 'Other']]),
+    ...line(p, y, [[40, 'Date'], [125, 'Description'], [258, 'Category'], [385, 'Balance'], [537, 'Fees']]),
+    ...line(p, y - 6, [[343, '/out'], [428, 'withheld'], [470, 'taxes']])
+  ];
+  const tx = (p: number, y: number, date: string, desc: string, cat: string, amt: string, bal: string, z = '€0.00'): PdfItem[] =>
+    line(p, y, [[40, date], [125, desc], [258, cat], [343, amt], [385, bal], [428, z], [470, z], [554, z, 'r']]);
+  const items: PdfItem[] = [
+    ...line(1, 757, [[384, 'Custom Statement']]),
+    ...line(1, 744, [[463, 'Sep 1, 2026 - Oct 6, 2026']]),
+    ...line(1, 537, [[40, 'Personal Account (EUR)']]),
+    ...line(1, 279, [[301, 'Opening balance'], [556, '€200.00', 'r']]),
+    ...line(2, 650, [[40, 'Personal Account (EUR)']]),
+    ...line(2, 620, [[40, 'Transactions from Sep 1, 2026 to Oct 6, 2026']]),
+    ...head(2, 590),
+    ...tx(2, 565, 'Sep 1, 2026', 'Coffee Shop', 'Merchant', '-€9.50', '€190.50'),
+    ...tx(2, 546, 'Sep 3, 2026', 'Top-up by *1234', 'Deposit', '€50.00', '€240.50'),
+    ...tx(2, 527, 'Sep 4, 2026', 'Exchanged to USD', 'Exchange', '-€100.00', '€140.50'),
+    ...line(2, 500, [[40, 'Total'], [343, '-€59.50'], [428, '€0.00'], [470, '€0.00'], [554, '€0.00', 'r']]),
+    ...line(3, 688, [[40, 'Personal Account (USD)']]),
+    ...head(3, 628),
+    ...tx(3, 603, 'Sep 4, 2026', 'Exchanged to USD', 'Exchange', '$110.00', '$110.00', '$0.00'),
+    ...line(3, 595, [[343, '€100.00'], [385, '€100.00'], [428, '€0.00'], [470, '€0.00'], [554, '€0.00', 'r']]),
+    ...tx(3, 580, 'Sep 9, 2026', 'Grocery Store', 'Merchant', '-$25.30', '$84.70', '$0.00'),
+    ...line(3, 560, [[40, 'Total'], [343, '$84.70'], [428, '$0.00'], [470, '$0.00'], [554, '$0.00', 'r']]),
+    ...line(4, 688, [[40, 'Holiday Vault (EUR)']]),
+    ...head(4, 628),
+    ...tx(4, 603, 'Sep 20, 2026', 'Deposit to vault', 'Transfer', '€30.00', '€30.00'),
+    ...line(5, 600, [[40, 'Revolut Bank UAB is a bank licensed in the Republic of Lithuania.']])
+  ];
+
+  it('separa cada conta/moeda e lê cabeçalhos em várias linhas', () => {
+    const r = parsePdfLines(itemsToLines(items), 'consolidated-statement.pdf');
+    expect(r.parts?.map(p => [p.part, p.hints.currency, p.rows.map(x => [x.date, x.description, x.amount, x.balance])])).toEqual([
+      ['Personal Account · EUR', 'EUR', [
+        ['2026-09-01', 'Coffee Shop', -9.5, 190.5], ['2026-09-03', 'Top-up by *1234', 50, 240.5], ['2026-09-04', 'Exchanged to USD', -100, 140.5]
+      ]],
+      ['USD', 'USD', [['2026-09-04', 'Exchanged to USD', 110, 110], ['2026-09-09', 'Grocery Store', -25.3, 84.7]]],
+      ['Holiday Vault · EUR', 'EUR', [['2026-09-20', 'Deposit to vault', 30, 30]]]
+    ]);
+    expect(r.parts![0]!.rows[0]!.bankCategory).toBe('Merchant');
+    expect(r.parts![1]!.closingBalance).toEqual({ amount: 84.7, date: '2026-09-09' });
+    expect(new Set(r.parts!.map(p => p.signature)).size).toBe(3);
+  });
+});

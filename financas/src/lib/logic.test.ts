@@ -107,6 +107,12 @@ describe('transferências entre contas', () => {
     const pairs = detectTransfers([out, inn, other], [out, inn, other]);
     expect(pairs).toEqual([expect.objectContaining({ outId: out.id, inId: inn.id })]);
   });
+
+  it('troca de moeda entre contas próprias (EUR → USD) com câmbio do banco diferente do de referência', () => {
+    const out = tx({ accountId: 'a2', date: '2026-10-02', amount: -70, currency: 'EUR', fx: 1 / 0.86, categoryId: 'uncategorized', description: 'Exchanged to USD' });
+    const inn = tx({ date: '2026-10-02', amount: 78.4, currency: 'USD', fx: 1, categoryId: 'other-income', description: 'Exchanged to USD' });
+    expect(detectTransfers([out, inn], [out, inn])).toEqual([expect.objectContaining({ outId: out.id, inId: inn.id })]);
+  });
 });
 
 describe('receitas', () => {

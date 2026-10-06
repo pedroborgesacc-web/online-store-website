@@ -105,9 +105,9 @@ export function itemsToLines(items: PdfItem[]): PdfLine[] {
 }
 
 const HEAD = {
-  date: ['DATA', 'DATE', 'FECHA', 'DT', 'DIA', 'DATA MOV', 'DATA LANC', 'DATA OPER', 'POSTING DATE', 'TRANSACTION DATE'],
-  desc: ['DESCRICAO', 'DESCRIPTION', 'DESCRITIVO', 'MOVIMENTO', 'HISTORICO', 'DETALHE', 'DETAILS', 'DESIGNACAO', 'LANCAMENTO', 'TRANSACTION', 'CONCEITO', 'NARRATIVE', 'PARTICULARS'],
-  num: ['VALOR', 'MONTANTE', 'AMOUNT', 'IMPORTANCIA', 'IMPORTE', 'DEBITO', 'DEBIT', 'CREDITO', 'CREDIT', 'SALDO', 'BALANCE', 'WITHDRAWALS', 'DEPOSITS', 'PAID OUT', 'PAID IN', 'MONEY OUT', 'MONEY IN', 'SAIDAS', 'ENTRADAS']
+  date: ['DATA', 'DATE', 'FECHA', 'DT', 'DIA', 'DATA MOV', 'DATA LANC', 'DATA OPER', 'POSTING DATE', 'TRANSACTION DATE', 'BUCHUNGSTAG', 'DATUM', 'FECHA OPERACION', 'DATE OPERATION', 'DATA OPERAZIONE', 'POSTED'],
+  desc: ['DESCRICAO', 'DESCRIPTION', 'DESCRITIVO', 'MOVIMENTO', 'HISTORICO', 'DETALHE', 'DETAILS', 'DESIGNACAO', 'LANCAMENTO', 'TRANSACTION', 'CONCEITO', 'NARRATIVE', 'PARTICULARS', 'VERWENDUNGSZWECK', 'BUCHUNGSTEXT', 'LIBELLE', 'DESCRIZIONE', 'BESCHREIBUNG', 'CONCEPTO', 'MERCHANT', 'PAYEE'],
+  num: ['VALOR', 'MONTANTE', 'AMOUNT', 'IMPORTANCIA', 'IMPORTE', 'DEBITO', 'DEBIT', 'CREDITO', 'CREDIT', 'SALDO', 'BALANCE', 'WITHDRAWALS', 'DEPOSITS', 'PAID OUT', 'PAID IN', 'MONEY OUT', 'MONEY IN', 'SAIDAS', 'ENTRADAS', 'BETRAG', 'SOLL', 'HABEN', 'MONTANT', 'IMPORTO', 'CARGO', 'ABONO', 'SOLDE', 'KONTOSTAND', 'CHARGES', 'PAYMENTS']
 };
 const has = (t: string, keys: string[]) => keys.some(k => t === k || t.startsWith(k + ' ') || t.startsWith(k + '.') || t.endsWith(' ' + k) || (k.length >= 5 && t.includes(k)));
 
@@ -119,60 +119,161 @@ function headerScore(l: PdfLine): number {
   return d && n && l.chunks.length >= 3 ? d + s + n : 0;
 }
 
-const DATE_RE = /^(\d{1,2}[-/.]\d{1,2}([-/.]\d{2,4})?|\d{4}-\d{2}-\d{2}|\d{1,2}\s?[A-Za-zÀ-ÿ]{3,9}\.?(\s?\d{2,4})?)$/;
+/** Célula/linha que começa por uma data ("01-09-2026", "1 Set", "Sep 1, 2026", "2026-09-01"). */
+const DATE_START = /^(\d{1,2}[-/.]\d{1,2}([-/.]\d{2,4})?|\d{4}-\d{2}-\d{2}|\d{1,2}\s?[A-Za-zÀ-ÿ]{3,9}\.?(\s?\d{2,4})?|[A-Za-z]{3,9}\.?\s\d{1,2},?(\s\d{4})?)(\s|$)/;
 const isNum = (s: string) => /\d/.test(s) && Number.isFinite(parseAmount(s));
 
+export interface PdfSegment {
+  /** cabeçalho + linhas, já alinhadas às colunas do cabeçalho */
+  table: string[][];
+  /** moeda da secção (ex.: "Personal Account (EUR)"), se indicada */
+  currency?: string;
+  /** título da secção, quando existe */
+  title?: string;
+}
+
+const CODE_RE = /\(([A-Z]{3})\)\s*$|\b(?:CURRENCY|MOEDA|DIVISA|WAHRUNG)\s*:?\s*([A-Z]{3})\b/;
+/** Moeda indicada numa linha de título de secção (ex.: "Personal Account (USD)"). */
+export function sectionCurrency(text: string): string | undefined {
+  const m = text.match(CODE_RE) ?? norm(text).match(CODE_RE);
+  const c = m?.[1] ?? m?.[2];
+  return c && c !== 'PDF' ? c : undefined;
+}
+
+/** Moeda pelo símbolo de um valor (ex.: "-€9.52", "R$ 10,00", "12.00 CZK"). */
+export function currencyOfToken(tok: string, dollarDefault = 'USD'): string | undefined {
+  if (/R\$/.test(tok)) return 'BRL';
+  if (/€/.test(tok)) return 'EUR';
+  if (/£/.test(tok)) return 'GBP';
+  if (/US\$/.test(tok)) return 'USD';
+  if (/\$/.test(tok)) return dollarDefault;
+  const m = tok.match(/\b([A-Z]{3})\b/);
+  return m ? m[1] : undefined;
+}
+
+function dominant(list: (string | undefined)[]): string | undefined {
+  const n = new Map<string, number>();
+  for (const c of list) if (c) n.set(c, (n.get(c) ?? 0) + 1);
+  return [...n.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
+}
+
+const headerish = (l: PdfLine) => !l.chunks.some(c => isNum(c.text) || DATE_START.test(c.text)) && l.chunks.every(c => c.text.length <= 30);
+
 /**
- * Converte as linhas numa tabela, usando o cabeçalho para definir as colunas.
- * Devolve null se não houver um cabeçalho reconhecível.
+ * Encontra todas as tabelas do documento (pode haver uma por conta/moeda) e alinha
+ * as linhas às colunas de cada cabeçalho. Cabeçalhos escritos em várias linhas
+ * ("Money in" / "Date … Balance" / "/out") são juntos numa só linha de colunas.
  */
-export function linesToTable(lines: PdfLine[]): string[][] | null {
-  let best = -1, bestScore = 0;
-  lines.forEach((l, i) => { const s = headerScore(l); if (s > bestScore) { bestScore = s; best = i; } });
-  if (best < 0 || bestScore < 2) return null;
-  const head = lines[best]!;
+export function linesToSegments(lines: PdfLine[]): PdfSegment[] {
+  const heads: number[] = [];
+  lines.forEach((l, i) => { if (headerScore(l) >= 2) heads.push(i); });
+  if (!heads.length) return [];
   const isKey = (s: string) => { const n = norm(s); return has(n, HEAD.date) || has(n, HEAD.desc) || has(n, HEAD.num); };
-  const cols: Chunk[] = [];
-  for (const c of head.chunks) {
-    let cur: Chunk | null = null;
-    for (const p of c.parts ?? [{ text: c.text, x0: c.x0, x1: c.x1 }]) {
-      const startsNew = !cur || isKey(p.text);
-      if (startsNew || !cur) { cur = { text: p.text, x0: p.x0, x1: p.x1 }; cols.push(cur); }
-      else { cur.text = `${cur.text} ${p.text}`; cur.x1 = p.x1; }
+  const segments: PdfSegment[] = [];
+  let lastCurrency: string | undefined;
+  let lastTitle: string | undefined;
+  let prevEnd = 0;
+  heads.forEach((hi, k) => {
+    const head = lines[hi]!;
+    // título/moeda da secção: linhas entre a tabela anterior e este cabeçalho
+    for (let j = prevEnd; j < hi; j++) {
+      const c = sectionCurrency(lines[j]!.text);
+      if (c) { lastCurrency = c; lastTitle = lines[j]!.text; }
     }
-  }
-  const headKey = norm(head.text);
-  const dateCol = cols.findIndex(c => has(norm(c.text), HEAD.date));
-  const table: string[][] = [cols.map(c => c.text)];
-  const width = cols.length;
-  for (let i = best + 1; i < lines.length; i++) {
-    const l = lines[i]!;
-    if (norm(l.text) === headKey) continue; // cabeçalho repetido noutra página
-    const row: string[] = Array(width).fill('');
-    for (const ch of l.chunks) {
-      let bi = 0, bv = -Infinity;
-      cols.forEach((c, j) => {
-        const overlap = Math.min(c.x1, ch.x1) - Math.max(c.x0, ch.x0);
-        // números costumam estar alinhados à direita: compara também as margens direitas
-        const right = isNum(ch.text) ? -Math.abs(c.x1 - ch.x1) * 0.5 : 0;
-        const dist = -Math.abs((c.x0 + c.x1) / 2 - (ch.x0 + ch.x1) / 2) * 0.1;
-        const v = (overlap > 0 ? overlap : overlap * 2) + right + dist;
-        if (v > bv) { bv = v; bi = j; }
-      });
-      row[bi] = row[bi] ? `${row[bi]} ${ch.text}` : ch.text;
+    // colunas do cabeçalho principal (separando títulos colados)
+    const cols: Chunk[] = [];
+    for (const c of head.chunks) {
+      let cur: Chunk | null = null;
+      for (const p of c.parts ?? [{ text: c.text, x0: c.x0, x1: c.x1 }]) {
+        if (!cur || isKey(p.text)) { cur = { text: p.text, x0: p.x0, x1: p.x1 }; cols.push(cur); }
+        else { cur.text = `${cur.text} ${p.text}`; cur.x1 = p.x1; }
+      }
     }
-    const prev = table[table.length - 1];
-    const hasDate = dateCol >= 0 && DATE_RE.test(row[dateCol]!.split(' ')[0] ?? '') && !/[-/.]$/.test(row[dateCol]!);
-    const hasNumber = row.some((c, j) => j !== dateCol && c && isNum(c) && /[.,]\d{2}\b/.test(c));
-    // linha de continuação da descrição (sem data nem valores)
-    if (!hasDate && !hasNumber && prev && table.length > 1) {
-      // datas partidas ("01-09-" + "2026") juntam-se sem espaço
-      row.forEach((c, j) => { if (c) prev[j] = prev[j] ? (/[-/.]$/.test(prev[j]!) ? `${prev[j]}${c}` : `${prev[j]} ${c}`) : c; });
-      continue;
+    // linhas de cabeçalho por cima e por baixo (cabeçalhos em várias linhas)
+    const lh = 9;
+    const extra: number[] = [];
+    for (const dir of [-1, 1]) {
+      for (let j = hi + dir; j >= 0 && j < lines.length; j += dir) {
+        const l = lines[j]!;
+        if (l.page !== head.page || Math.abs(l.y - head.y) > lh * 1.8 || !headerish(l) || sectionCurrency(l.text)) break;
+        extra.push(j);
+      }
     }
-    table.push(row);
-  }
-  return table;
+    for (const j of extra.sort((a, b) => a - b)) {
+      for (const ch of lines[j]!.chunks) {
+        const over = cols.find(c => Math.min(c.x1, ch.x1) - Math.max(c.x0, ch.x0) > 0);
+        if (over) over.text = lines[j]!.y > head.y ? `${ch.text} ${over.text}` : `${over.text} ${ch.text}`;
+        else cols.push({ text: ch.text, x0: ch.x0, x1: ch.x1 });
+      }
+    }
+    // texto das colunas na ordem vertical correta: linha de cima, linha do meio, linha de baixo
+    for (const c of cols) c.text = c.text.replace(/\s+/g, ' ').trim();
+    cols.sort((a, b) => a.x0 - b.x0);
+    const startBody = Math.max(hi, ...extra) + 1;
+    const nextHead = k + 1 < heads.length ? heads[k + 1]! : lines.length;
+    const headKey = norm(head.text);
+    const dateCol = cols.findIndex(c => has(norm(c.text), HEAD.date));
+    const table: string[][] = [cols.map(c => c.text)];
+    const width = cols.length;
+    let stopAt = nextHead;
+    let lastLine: PdfLine | undefined;
+    for (let i = startBody; i < nextHead; i++) {
+      const l = lines[i]!;
+      if (norm(l.text) === headKey || extra.includes(i)) continue;
+      // um novo título de secção (outra conta/moeda) termina esta tabela
+      if (sectionCurrency(l.text) && !l.chunks.some(c => isNum(c.text))) { stopAt = i; break; }
+      if (headerish(l) && lines[i + 1] && headerScore(lines[i + 1]!) >= 2) continue; // 1.ª linha de um cabeçalho seguinte
+      const row: string[] = Array(width).fill('');
+      for (const ch of l.chunks) {
+        let bi = 0, bv = -Infinity;
+        cols.forEach((c, j) => {
+          const overlap = Math.min(c.x1, ch.x1) - Math.max(c.x0, ch.x0);
+          // números costumam estar alinhados à direita (ou à esquerda): compara as duas margens
+          const edge = isNum(ch.text) ? -Math.min(Math.abs(c.x1 - ch.x1), Math.abs(c.x0 - ch.x0)) * 0.5 : 0;
+          const dist = -Math.abs((c.x0 + c.x1) / 2 - (ch.x0 + ch.x1) / 2) * 0.1;
+          const v = (overlap > 0 ? overlap : overlap * 2) + edge + dist;
+          if (v > bv) { bv = v; bi = j; }
+        });
+        row[bi] = row[bi] ? `${row[bi]} ${ch.text}` : ch.text;
+      }
+      const prev = table[table.length - 1];
+      const hasDate = dateCol >= 0 && DATE_START.test(row[dateCol]!) && !/[-/.]$/.test(row[dateCol]!);
+      const hasNumber = row.some((c, j) => j !== dateCol && c && isNum(c) && /[.,]\d{2}\b/.test(c));
+      // linha de continuação da descrição (sem data nem valores)
+      if (!hasDate && !hasNumber && prev && table.length > 1) {
+        // só linhas logo abaixo, na mesma página (não rodapés nem avisos legais)
+        const near = lastLine && lastLine.page === l.page && Math.abs(lastLine.y - l.y) < 30 && l.text.length <= 90;
+        if (!near) continue;
+        lastLine = l;
+        // datas partidas ("01-09-" + "2026") juntam-se sem espaço
+        row.forEach((c, j) => { if (c) prev[j] = prev[j] ? (/[-/.]$/.test(prev[j]!) ? `${prev[j]}${c}` : `${prev[j]} ${c}`) : c; });
+        continue;
+      }
+      table.push(row);
+      lastLine = l;
+    }
+    prevEnd = stopAt;
+    // sem título de secção: a moeda pelos símbolos dos valores (€, £, R$…)
+    const currency = lastCurrency ?? dominant(table.slice(1).flat().filter(isNum).map(c => currencyOfToken(c)));
+    for (let i = table.length - 1; i >= 1; i--) {
+      const r = table[i]!;
+      const nums = r.filter(c => c && isNum(c));
+      // linhas de totais, e linhas sem data com o valor equivalente noutra moeda ("€69.84" por baixo de "$78.40")
+      const total = /^(TOTAL|TOTAIS|SUBTOTAL|SOMA)\b/.test(norm(r.find(c => c) ?? ''));
+      const otherCur = dateCol >= 0 && !r[dateCol] && currency && nums.length > 0 && nums.every(c => { const k = currencyOfToken(c); return k && k !== currency; });
+      if (total || otherCur) table.splice(i, 1);
+    }
+    // tabelas com o mesmo cabeçalho e a mesma moeda (continuação noutra página) juntam-se
+    const prevSeg = segments[segments.length - 1];
+    if (prevSeg && prevSeg.currency === currency && prevSeg.title === lastTitle && prevSeg.table[0]!.join('|') === table[0]!.join('|')) prevSeg.table.push(...table.slice(1));
+    else segments.push({ table, currency, title: lastTitle });
+  });
+  return segments;
+}
+
+/** Compatibilidade: a primeira tabela do documento. */
+export function linesToTable(lines: PdfLine[]): string[][] | null {
+  return linesToSegments(lines)[0]?.table ?? null;
 }
 
 const BALANCE_WORDS = ['SALDO ANTERIOR', 'SALDO INICIAL', 'SALDO FINAL', 'SALDO DISPONIVEL', 'SALDO CONTABILISTICO', 'OPENING BALANCE', 'CLOSING BALANCE', 'BALANCE BROUGHT FORWARD', 'BALANCE CARRIED FORWARD', 'PREVIOUS BALANCE', 'NEW BALANCE', 'TOTAL'];
@@ -189,9 +290,13 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
   const periodEnd = statementEnd(lines);
   const endYear = Number((periodEnd ?? new Date().toISOString()).slice(0, 4));
 
-  type Raw = { dateTok: string; desc: string; nums: string[]; line: number };
+  type Raw = { dateTok: string; desc: string; nums: string[]; line: number; currency?: string; section?: string };
   const raws: Raw[] = [];
+  // secções por conta/moeda ("Personal Account (EUR)")
+  let section: string | undefined, title: string | undefined;
   lines.forEach((l, li) => {
+    const sc = sectionCurrency(l.text);
+    if (sc && !l.chunks.some(c => isNum(c.text))) { section = sc; title = l.text; return; }
     const tokens = l.chunks.flatMap(c => (AMOUNT_TOKEN.test(c.text) ? [c.text] : c.text.split(/\s{2,}/)));
     const first = l.chunks[0]!.text;
     const m = first.match(/^(\d{1,2}[-/.]\d{1,2}(?:[-/.]\d{2,4})?|\d{4}-\d{2}-\d{2}|\d{1,2}\s?[A-Za-zÀ-ÿ]{3,9}\.?(?:\s?\d{4})?|[A-Za-z]{3,9}\.?\s\d{1,2},?(?:\s\d{4})?)\b\s*(.*)$/);
@@ -213,7 +318,7 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
     // segunda data (data-valor) no início da descrição
     let desc = parts.join(' ');
     desc = desc.replace(/^(\d{1,2}[-/.]\d{1,2}(?:[-/.]\d{2,4})?)\s+/, '');
-    raws.push({ dateTok: m[1]!, desc: desc.trim(), nums, line: li });
+    raws.push({ dateTok: m[1]!, desc: desc.trim(), nums, line: li, currency: section ?? currencyOfToken(nums[0]!), section: title });
   });
   if (!raws.length) return [];
 
@@ -231,8 +336,9 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
   for (const r of raws) {
     const date = withDate(r.dateTok, order);
     if (!date) continue;
-    const amountTok = r.nums.length >= 2 ? r.nums[r.nums.length - 2]! : r.nums[0]!;
-    const balanceTok = r.nums.length >= 2 ? r.nums[r.nums.length - 1] : undefined;
+    // primeiro número = valor do movimento; segundo = saldo (as restantes colunas são impostos, taxas…)
+    const amountTok = r.nums[0]!;
+    const balanceTok = r.nums.length >= 2 ? r.nums[1] : undefined;
     // linhas de saldo inicial/final: não são movimentos, mas ajudam a deduzir o sinal
     if (BALANCE_WORDS.some(w => norm(r.desc).includes(w))) {
       const b = parseAmount(r.nums[r.nums.length - 1]!);
@@ -243,7 +349,7 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
     if (!Number.isFinite(v) || v === 0) continue;
     const explicit = /^\(|-|\b(D|DR)$/i.test(amountTok.trim()) || /\b(C|CR)$|^\+/i.test(amountTok.trim());
     const bal = balanceTok ? parseAmount(balanceTok) : NaN;
-    rows.push({ date, description: r.desc || '—', amount: v, abs: Math.abs(v), explicit, balance: Number.isFinite(bal) ? bal : undefined, line: r.line + 1 });
+    rows.push({ date, description: r.desc || '—', amount: v, abs: Math.abs(v), explicit, balance: Number.isFinite(bal) ? bal : undefined, line: r.line + 1, currency: r.currency, section: r.section });
   }
   // sinal pela variação do saldo (na ordem cronológica do documento)
   // se o documento usa sinais (−) nas saídas, os valores sem sinal são entradas
@@ -253,7 +359,7 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
     const r = rows[i]!;
     if (r.explicit) continue;
     const prev = asc ? rows[i - 1] : rows[i + 1];
-    if (r.balance !== undefined && prev?.balance !== undefined) {
+    if (r.balance !== undefined && prev?.balance !== undefined && prev.currency === r.currency) {
       const up = Math.abs(prev.balance + r.abs - r.balance), down = Math.abs(prev.balance - r.abs - r.balance);
       if (Math.min(up, down) < 0.011) { r.amount = up < down ? r.abs : -r.abs; continue; }
     }

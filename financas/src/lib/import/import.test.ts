@@ -145,8 +145,36 @@ describe('extratos reais', () => {
     expect(r.rows[0]!.description).toBe('Farmácia & Cia');
   });
 
-  it('rejeita PDF e .xls antigo com mensagem clara', () => {
+  it('.xls danificado ou protegido: mensagem clara', () => {
     expect(readStatement(new Uint8Array([0xd0, 0xcf, 0x11, 0xe0, 0, 0]), 'a.xls').error).toBe('legacyXls');
+  });
+
+  it('Excel 97–2003 (.xls): datas, acentos, débito/crédito e muitas linhas', () => {
+    const r = readStatement(sample('extrato-excel-antigo.xls'), 'extrato-excel-antigo.xls');
+    expect(r.format).toBe('xls');
+    expect(r.error).toBeUndefined();
+    expect(r.rows).toHaveLength(400);
+    expect(r.rows[0]).toMatchObject({ date: '2026-01-02', description: 'Netflix — ref 0000 nº 3471', amount: -47.98, balance: 1452.02 });
+    expect(r.rows.some(x => x.description.startsWith('Farmácia São João'))).toBe(true);
+    expect(Math.round(r.rows.reduce((a, x) => a + x.amount, 0) * 100) / 100).toBe(-5428.82);
+  });
+
+  it('OpenDocument (.ods), com milhares de células vazias repetidas', () => {
+    const r = readStatement(sample('extrato-libreoffice.ods'), 'extrato-libreoffice.ods');
+    expect(r.format).toBe('ods');
+    expect(r.rows).toHaveLength(60);
+    expect(r.closingBalance).toEqual({ amount: 1119.68, date: '2026-01-31' });
+    expect(Math.round(r.rows.reduce((a, x) => a + x.amount, 0) * 100) / 100).toBe(-380.32);
+  });
+
+  it('texto copiado do site do banco (sem separadores)', () => {
+    const txt = 'Movimentos da conta\n\n02/09/2026   COMPRA PINGO DOCE LISBOA      -23,45    1.476,55\n03/09/2026   TRF RECEBIDA JOAO SILVA       +150,00   1.626,55\n05/09/2026   PAGAMENTO EDP                 -61,20    1.565,35\n';
+    const r = readStatement(strToU8(txt), 'colado.txt');
+    expect(r.format).toBe('text');
+    expect(r.rows.map(x => [x.date, x.description, x.amount])).toEqual([
+      ['2026-09-02', 'COMPRA PINGO DOCE LISBOA', -23.45], ['2026-09-03', 'TRF RECEBIDA JOAO SILVA', 150], ['2026-09-05', 'PAGAMENTO EDP', -61.2]
+    ]);
+    expect(r.closingBalance?.amount).toBe(1565.35);
   });
 
   it('coluna D/C com valores sem sinal', () => {

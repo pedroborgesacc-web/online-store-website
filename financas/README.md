@@ -39,7 +39,9 @@ Funciona em português e inglês, em computador e telemóvel (pode ser instalada
 ### Importação de extratos (vários bancos de uma vez)
 ![Importar](docs/importar.jpg)
 
-- **Formatos**: **PDF** (incluindo PDFs com palavra-passe e tabelas em várias páginas), CSV, TSV, TXT, Excel `.xlsx`, “.xls” em HTML, **OFX/QFX** e **QIF**. Os PDF digitalizados como imagem (sem texto) não são suportados.
+- **Formatos**: **PDF** (incluindo PDFs com palavra-passe, tabelas em várias páginas e cabeçalhos em várias linhas), CSV, TSV, Excel `.xlsx` e **`.xls` antigo (97–2003)**, **LibreOffice/Google Sheets `.ods`**, “.xls” em HTML, **OFX/QFX**, **QIF** e **texto colado** (copiado do site ou da app do banco). Os PDF digitalizados como imagem (sem texto) não são suportados.
+- **Extratos com várias contas ou moedas** (ex.: extrato consolidado da Revolut com EUR, USD e cofres): cada conta/moeda aparece em separado e vai para a sua própria conta na app. As trocas de moeda entre as tuas contas são reconhecidas como transferências.
+- Quando não há cabeçalho reconhecível, lê linha a linha: cada linha que começa por uma data é um movimento, e o sinal vem do texto ou da variação do saldo. Cabeçalhos em português, inglês, espanhol, francês, alemão, italiano e neerlandês.
 - Deteta o **separador**, a **codificação** (UTF-8, UTF-16, Windows-1252), a **linha de cabeçalho** (ignora preâmbulos e rodapés), as **colunas** (data, descrição, valor ou débito/crédito, saldo, moeda, estado), o **formato da data** (DD/MM vs MM/DD, pela coluna inteira) e o **formato dos números** (1.234,56 vs 1,234.56).
 - Perfis próprios para Revolut, Wise, Monzo, N26, Nubank (conta e cartão), PayPal, Chase, Capital One e Bank of America. Funciona com a CGD, Millennium, Santander, Novo Banco, BPI, ActivoBank, Itaú, Inter e a generalidade dos bancos.
 - **Duplicados ignorados**, mesmo entre extratos sobrepostos e entre vários ficheiros da mesma conta.
@@ -76,12 +78,12 @@ Requer Node.js 20 ou mais recente.
 cd financas
 npm install
 npm run dev        # desenvolvimento em http://localhost:5173
-npm test           # 57 testes: leitura de extratos, cálculos, traduções
+npm test           # 64 testes: leitura de extratos, cálculos, traduções
 npm run build      # versão final em dist/
 npm run preview    # serve a versão final
 ```
 
-Para experimentar a importação, usa os ficheiros em `samples/`: CGD, Revolut, Chase, cartão Nubank, um OFX do Banco Inter e dois PDF (extrato Millennium e cartão Chase).
+Para experimentar a importação, usa os ficheiros em `samples/`: CGD, Revolut, Chase, cartão Nubank, um OFX do Banco Inter, dois PDF (extrato Millennium e cartão Chase), um Excel antigo `.xls` e um `.ods`. Todos os dados são fictícios.
 
 ## Como publicar
 
@@ -94,12 +96,12 @@ O resultado de `npm run build` é um site estático (pasta `dist/`) que funciona
 
 ```
 src/
-  lib/import/      leitura de extratos (CSV, XLSX, OFX, QIF, HTML) e deteção de colunas
+  lib/import/      leitura de extratos (PDF, CSV, XLSX, XLS, ODS, OFX, QIF, HTML, texto) e deteção de colunas
   lib/             cálculos: plano do mês, previsão, receitas, contas fixas, transferências,
                    objetivos, avisos, câmbios, cópias de segurança
   pages/           ecrãs (Visão geral, Movimentos, Receitas, Orçamento, Objetivos, …)
   components/      componentes de interface, gráficos e formulários
-  i18n/            textos em inglês e português (815 textos cada)
+  i18n/            textos em inglês e português (935 textos cada)
   data/            categorias, dicionário de comerciantes e dados de demonstração
   store.ts         estado da app e gravação automática (IndexedDB)
 samples/           extratos de exemplo de vários bancos

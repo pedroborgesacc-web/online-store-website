@@ -2,11 +2,12 @@ import type { ISODate } from '../../types';
 import { norm } from '../text';
 import { CURRENCIES } from '../fx';
 import { decodeText, parseDelimited, type Order } from './parse';
-import { parseHtmlTables, parseOFX, parseQIF, parseXlsx } from './formats';
+import { parseHtmlTables, parseOFX, parseQIF, parseXlsx, type Sheet } from './formats';
+import { isOds, parseOds, parseXls } from './legacy';
 import { detect, extract, type Detection, type ExtractedRow } from './detect';
-import { extractPdfItems, itemsToLines, linesToRows, linesToTable, pdfText, PdfPasswordError, type PdfItem, type PdfLine } from './pdf';
+import { extractPdfItems, itemsToLines, linesToRows, linesToSegments, pdfText, PdfPasswordError, type PdfItem, type PdfLine } from './pdf';
 
-export type FileFormat = 'csv' | 'xlsx' | 'html' | 'ofx' | 'qif' | 'pdf';
+export type FileFormat = 'csv' | 'xlsx' | 'xls' | 'ods' | 'html' | 'ofx' | 'qif' | 'pdf' | 'text';
 
 export interface ParsedFile {
   fileName: string;
@@ -21,6 +22,10 @@ export interface ParsedFile {
   /** balanço final declarado no ficheiro */
   closingBalance?: { amount: number; date: ISODate };
   signature: string;
+  /** secção do ficheiro (ex.: moeda "EUR"), quando o extrato tem várias contas/moedas */
+  part?: string;
+  /** extratos com várias contas/moedas (ex.: Revolut consolidado): um ParsedFile por secção */
+  parts?: ParsedFile[];
 }
 
 const BANKS = [
@@ -75,7 +80,6 @@ export function readStatement(bytes: Uint8Array, fileName: string, opts: ReadOpt
   const base: Omit<ParsedFile, 'format'> = { fileName, rows: [], skipped: 0, hints: {}, signature: '' };
   if (!bytes.length) return { ...base, format: 'csv', error: 'empty' };
   const kind = sniff(bytes, fileName);
-  if (kind === 'legacyXls') return { ...base, format: 'xlsx', error: 'legacyXls' };
   if (kind === 'pdf') return { ...base, format: 'pdf', error: 'unreadable' }; // os PDF são lidos em readFile (assíncrono)
 
   try {
@@ -93,8 +97,16 @@ export function readStatement(bytes: Uint8Array, fileName: string, opts: ReadOpt
 
     let tables: string[][][] = [];
     let rawText = '';
-    if (kind === 'xlsx') {
-      const sheets = parseXlsx(bytes);
+    let format: FileFormat = kind === 'legacyXls' ? 'xls' : kind;
+    if (kind === 'xlsx' || kind === 'legacyXls') {
+      // .xlsx, .ods (LibreOffice/Google Sheets) ou Excel 97–2003
+      let sheets: Sheet[];
+      if (kind === 'legacyXls') {
+        try { sheets = parseXls(bytes); } catch { sheets = []; }
+        // protegido com palavra-passe ou danificado
+        if (!sheets.some(x => x.rows.length)) return { ...base, format: 'xls', error: 'legacyXls' };
+      } else if (isOds(bytes)) { sheets = parseOds(bytes); format = 'ods'; }
+      else sheets = parseXlsx(bytes);
       tables = sheets.map(s => s.rows);
       rawText = sheets.flatMap(s => s.rows.slice(0, 30).map(r => r.join(' '))).join('\n');
     } else {
@@ -107,17 +119,53 @@ export function readStatement(bytes: Uint8Array, fileName: string, opts: ReadOpt
       if (!table.length) continue;
       const detection = detect(table, { dateOrder: opts.dateOrder, currency: opts.currency ?? hints.currency, accountType: opts.accountType });
       const { rows, skipped } = extract(table, detection);
-      const signature = `${kind === 'html' ? 'csv' : kind}:${detection.headers.map(norm).join('|')}`;
-      const pf: ParsedFile = { ...base, format: kind, table, detection, rows, skipped, hints, signature };
+      const signature = `${format === 'html' ? 'csv' : format}:${detection.headers.map(norm).join('|')}`;
+      const pf: ParsedFile = { ...base, format, table, detection, rows, skipped, hints, signature };
       if (!best || rows.length > best.rows.length) best = pf;
     }
-    if (!best) return { ...base, format: kind, hints, error: 'empty' };
+    // texto sem colunas (ex.: copiado do site do banco): lê linha a linha, como nos PDF
+    if (kind === 'csv') {
+      const viaText = parseTextLines(rawText, fileName, opts);
+      if (quality(viaText) > quality(best) * 1.2) return viaText;
+    }
+    if (!best) return { ...base, format, hints, error: 'empty' };
     if (!best.rows.length) best.error = 'noTransactions';
     setClosingBalance(best);
     return best;
   } catch {
-    return { ...base, format: kind, error: 'unreadable' };
+    return { ...base, format: kind === 'legacyXls' ? 'xls' : kind, error: 'unreadable' };
   }
+}
+
+/** Texto corrido (sem separadores fixos): cada linha é partida nos espaços largos/tabulações e lida como num PDF. */
+export function parseTextLines(text: string, fileName: string, opts: ReadOptions = {}): ParsedFile {
+  const lines: PdfLine[] = [];
+  text.split(/\r?\n/).forEach((raw, i) => {
+    const t = raw.replace(/\u00a0/g, ' ').trimEnd();
+    if (!t.trim()) return;
+    const chunks: PdfLine['chunks'] = [];
+    let x = 0;
+    for (const piece of t.split(/(\t+|\s{2,}|;)/)) {
+      if (piece && !/^(\t+|\s{2,}|;)$/.test(piece) && piece.trim()) {
+        // valores colados ("12,50 1.300,20") separam-se como nos PDF
+        for (const tok of /^[\s\d.,€$£R()+-]+$/.test(piece) && /\d[.,]\d{2}\s+\S/.test(piece) ? piece.trim().split(/\s+/) : [piece.trim()]) {
+          chunks.push({ text: tok, x0: x, x1: x + tok.length * 5, parts: [{ text: tok, x0: x, x1: x + tok.length * 5 }] });
+          x += tok.length * 5 + 15;
+        }
+      } else x += piece.length * 5;
+    }
+    if (chunks.length) lines.push({ page: 1, y: -i * 10, chunks, text: chunks.map(c => c.text).join('  ') });
+  });
+  const pf = parsePdfLines(lines, fileName, opts);
+  const relabel = (p: ParsedFile): ParsedFile => ({ ...p, format: 'text', signature: p.signature.replace(/^pdf/, 'text') });
+  return { ...relabel(pf), parts: pf.parts?.map(relabel) };
+}
+
+/** Quantos movimentos "bons" (com descrição) uma leitura encontrou: para escolher entre duas leituras. */
+function quality(p: ParsedFile | null): number {
+  if (!p || p.error) return 0;
+  const all = p.parts ?? [p];
+  return all.reduce((n, x) => n + x.rows.filter(r => r.description && r.description !== '—' && /[A-Za-zÀ-ÿ]{2}/.test(r.description)).length, 0);
 }
 
 function setClosingBalance(best: ParsedFile): void {
@@ -167,18 +215,65 @@ export function parsePdfLines(lines: PdfLine[], fileName: string, opts: ReadOpti
   const text = pdfText(lines);
   const hints = guessHints(text, fileName);
   const base: ParsedFile = { fileName, format: 'pdf', rows: [], skipped: 0, hints, signature: `pdf:${hints.bankName ?? ''}` };
-  const table = linesToTable(lines);
-  let best: ParsedFile | null = null;
-  if (table) {
-    const detection = detect(table, { dateOrder: opts.dateOrder, currency: opts.currency ?? hints.currency, accountType: opts.accountType });
-    const { rows, skipped } = extract(table, detection);
-    best = { ...base, table, detection, rows, skipped, signature: `pdf:${hints.bankName ?? ''}:${detection.headers.map(norm).join('|')}` };
+
+  // 1) tabelas com cabeçalho (uma ou mais: uma por conta/moeda)
+  const segments = linesToSegments(lines);
+  const tableRows: ExtractedRow[] = [];
+  let table: string[][] | undefined, detection: Detection | undefined, skipped = 0;
+  for (const seg of segments) {
+    const det = detect(seg.table, { dateOrder: opts.dateOrder, currency: opts.currency ?? seg.currency ?? hints.currency, accountType: opts.accountType });
+    const ex = extract(seg.table, det);
+    if (!ex.rows.length) continue;
+    // o mapeamento mostrado/ajustável é o da maior tabela
+    if (!table || ex.rows.length > (table.length - 1)) { table = seg.table; detection = det; }
+    for (const r of ex.rows) tableRows.push({ ...r, currency: r.currency ?? seg.currency, section: seg.title });
+    skipped += ex.skipped;
   }
+  // 2) modo alternativo: linhas que começam por uma data
   const fallback = linesToRows(lines, opts.dateOrder);
-  if (!best || fallback.length > best.rows.length * 1.2) best = { ...base, rows: fallback };
-  if (!best.rows.length) best.error = 'noTransactions';
-  setClosingBalance(best);
-  return best;
+  const useFallback = fallback.length > tableRows.length * 1.2;
+  const rows = useFallback ? fallback : tableRows;
+  const sig = !useFallback && detection ? `pdf:${hints.bankName ?? ''}:${detection.headers.map(norm).join('|')}` : base.signature;
+  const make = (rs: ExtractedRow[], currency: string | undefined, part?: string): ParsedFile => {
+    const pf: ParsedFile = {
+      ...base,
+      // só com uma tabela se pode ajustar o mapeamento das colunas
+      ...(!useFallback && segments.length === 1 ? { table, detection } : {}),
+      rows: rs.map(({ currency: _c, section: _s, ...r }) => { void _c; void _s; return r; }),
+      skipped: useFallback ? 0 : skipped,
+      hints: { ...hints, currency: currency ?? hints.currency },
+      signature: part ? `${sig}:${part}` : sig,
+      part
+    };
+    if (!pf.rows.length) pf.error = 'noTransactions';
+    setClosingBalance(pf);
+    return pf;
+  };
+
+  // várias contas/moedas no mesmo extrato (ex.: Revolut: EUR, USD, cofres): uma parte por secção
+  const known = new Set(rows.map(r => r.currency).filter(Boolean));
+  const groups = new Map<string, { currency?: string; title?: string; rows: ExtractedRow[] }>();
+  for (const r of rows) {
+    // linhas sem moeda identificada ficam com a única moeda conhecida
+    const currency = r.currency ?? (known.size === 1 ? [...known][0]! : undefined);
+    const k = `${currency ?? ''}|${r.section ?? ''}`;
+    let g = groups.get(k);
+    if (!g) groups.set(k, (g = { currency, title: r.section, rows: [] }));
+    g.rows.push(r);
+  }
+  if (groups.size <= 1) {
+    const only = [...groups.values()][0]?.currency;
+    // o símbolo "$" não distingue USD de CAD/AUD…: a moeda mencionada no texto prevalece
+    return make(rows, only && !(only === 'USD' && hints.currency && hints.currency !== 'USD' && !/US\$|\bUSD\b/.test(text)) ? only : hints.currency);
+  }
+  const list = [...groups.values()];
+  const parts = list.map(g => {
+    // nome da parte: a moeda, ou o título da secção quando há várias secções na mesma moeda
+    const sameCur = list.filter(x => x.currency === g.currency).length > 1;
+    const label = (sameCur ? g.title?.replace(/\s*\([A-Z]{3}\)\s*$/, '') : undefined) ?? g.currency ?? '—';
+    return make(g.rows, g.currency ?? hints.currency, sameCur && g.currency ? `${label} · ${g.currency}` : label);
+  });
+  return { ...parts[0]!, parts };
 }
 
 export type { Detection, ExtractedRow } from './detect';
