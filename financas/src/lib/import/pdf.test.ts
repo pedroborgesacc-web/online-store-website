@@ -63,3 +63,29 @@ describe('PDF sem cabeçalho', () => {
     expect(rows.map(r => [r.date, r.amount])).toEqual([['2026-10-03', -4.5], ['2026-10-04', 2100]]);
   });
 });
+
+describe('extratos de conta americanos (estilo Chase)', () => {
+  it('datas sem ano, sinal separado por espaço e código de barras na margem', () => {
+    const items: PdfItem[] = [
+      ...line(1, 800, [[300, 'August 15, 2026 through September 15, 2026']]),
+      ...line(1, 760, [[30, 'DATE'], [80, 'DESCRIPTION'], [440, 'AMOUNT', 'r'], [540, 'BALANCE', 'r']]),
+      ...line(1, 740, [[80, 'Beginning Balance'], [540, '$401.76', 'r']]),
+      ...line(1, 720, [[30, '09/12'], [80, 'Zelle Payment From Lars 123'], [440, '40.00', 'r'], [540, '441.76', 'r']]),
+      ...line(1, 700, [[30, '09/14'], [80, 'Card Purchase'], [160, '09/12 Ross Stores #302 Aventura FL Card 8173'], [440, '- 11.60', 'r'], [540, '430.16', 'r'], [640, '10171080202000000062', 'r']]),
+      ...line(1, 680, [[30, '09/14'], [80, "Card Purchase With Pin 09/13 Wendy's #1713"], [440, '- 33.80', 'r'], [540, '396.36', 'r']])
+    ];
+    const r = parsePdfLines(itemsToLines(items), 'chase.pdf');
+    expect(r.rows.map(x => [x.date, x.amount])).toEqual([['2026-09-12', 40], ['2026-09-14', -11.6], ['2026-09-14', -33.8]]);
+    expect(r.rows[1]!.description).not.toMatch(/-$/);
+  });
+
+  it('extrato de dezembro a janeiro põe as datas de dezembro no ano anterior', () => {
+    const items: PdfItem[] = [
+      ...line(1, 800, [[300, 'December 15, 2025 through January 14, 2026']]),
+      ...line(1, 720, [[30, '12/20'], [80, 'Coffee'], [440, '-4.00', 'r'], [540, '96.00', 'r']]),
+      ...line(1, 700, [[30, '01/05'], [80, 'Payroll'], [440, '500.00', 'r'], [540, '596.00', 'r']])
+    ];
+    const rows = linesToRows(itemsToLines(items));
+    expect(rows.map(x => x.date)).toEqual(['2025-12-20', '2026-01-05']);
+  });
+});

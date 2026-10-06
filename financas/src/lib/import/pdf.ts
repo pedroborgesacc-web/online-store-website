@@ -1,5 +1,5 @@
 import { norm } from '../text';
-import { detectDateOrder, parseAmount, parseDateAs, type Order } from './parse';
+import { detectDateOrder, parseAmount, parseDate, parseDateAs, type Order } from './parse';
 import type { ExtractedRow } from './detect';
 
 /* ---------------------------------------------------------------------------
@@ -21,8 +21,9 @@ export class PdfPasswordError extends Error {
 export async function extractPdfItems(bytes: Uint8Array, password?: string): Promise<PdfItem[]> {
   // versão "legacy": funciona também em browsers e telemóveis mais antigos
   const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
-  const worker = await import('pdfjs-dist/legacy/build/pdf.worker.min.mjs?url');
-  pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
+  // a leitura corre na própria página (sem processo à parte): funciona em qualquer alojamento,
+  // mesmo onde os "web workers" estão bloqueados
+  await import('pdfjs-dist/legacy/build/pdf.worker.mjs');
   let doc;
   // 2 tentativas: em alguns alojamentos o processo de leitura do pdf.js falha ao arrancar pela primeira vez
   for (let attempt = 0; ; attempt++) {
@@ -87,7 +88,7 @@ export function itemsToLines(items: PdfItem[]): PdfLine[] {
         const last = chunks[chunks.length - 1];
         const gap = last ? it.x - last.x1 : Infinity;
         // dois valores seguidos (ex.: crédito e saldo) nunca se juntam
-        const bothAmounts = !!last && AMOUNT_TOKEN.test(last.text.trim()) && AMOUNT_TOKEN.test(it.str.trim());
+        const bothAmounts = !!last && AMOUNT_TOKEN.test(last.text.trim()) && (AMOUNT_TOKEN.test(it.str.trim()) || /^\d{8,}$/.test(it.str.trim()));
         const part = { text: it.str.trim(), x0: it.x, x1: it.x + it.w };
         if (last && !bothAmounts && gap < Math.max(4, charW * 1.6)) {
           last.text += (gap > charW * 0.25 && !last.text.endsWith(' ') && !it.str.startsWith(' ') ? ' ' : '') + it.str;
@@ -184,8 +185,9 @@ const CREDIT_WORDS = ['TRF DE', 'TRANSF DE', 'TRANSFERENCIA DE', 'TRANSFERENCIA 
  */
 export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
   // ano por omissão: a data completa mais frequente no documento
-  const fullYears = lines.flatMap(l => [...l.text.matchAll(/\b\d{1,2}[-/.]\d{1,2}[-/.](\d{4})\b|\b(\d{4})-\d{2}-\d{2}\b/g)].map(m => m[1] ?? m[2]!));
-  const year = fullYears.sort((a, b) => fullYears.filter(y => y === b).length - fullYears.filter(y => y === a).length)[0] ?? String(new Date().getFullYear());
+  // datas sem ano (ex.: "08/17"): usar o período do extrato ("August 15, 2026 through September 15, 2026")
+  const periodEnd = statementEnd(lines);
+  const endYear = Number((periodEnd ?? new Date().toISOString()).slice(0, 4));
 
   type Raw = { dateTok: string; desc: string; nums: string[]; line: number };
   const raws: Raw[] = [];
@@ -201,7 +203,10 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
       return;
     }
     const rest = [m[2]!, ...l.chunks.slice(1).map(c => c.text)].join('  ').trim();
-    const parts = rest.split(/\s{2,}|\s(?=\(?[-+]?(?:R\$|[€$£])?\s?(?:\d{1,3}(?:[.,\s']\d{3})+|\d+)[.,]\d{2}\)?(?:\s?(?:-|D|C|DR|CR))?(?:\s|$))/).map(s => s.trim()).filter(Boolean);
+    const parts = rest.split(/\s{2,}|(?<![-+])\s(?=\(?[-+]?(?:R\$|[€$£])?\s?(?:\d{1,3}(?:[.,\s']\d{3})+|\d+)[.,]\d{2}\)?(?:\s?(?:-|D|C|DR|CR))?(?:\s|$))/).map(s => s.trim()).filter(Boolean);
+    // códigos de barras / referências longas impressos na margem, no fim da linha
+    while (parts.length && /^\d{8,}$/.test(parts[parts.length - 1]!)) parts.pop();
+    if (parts.length) parts[parts.length - 1] = parts[parts.length - 1]!.replace(/\s+\d{8,}$/, '');
     const nums: string[] = [];
     while (parts.length && AMOUNT_TOKEN.test(parts[parts.length - 1]!)) nums.unshift(parts.pop()!);
     if (!nums.length) return;
@@ -212,11 +217,19 @@ export function linesToRows(lines: PdfLine[], hint?: Order): ExtractedRow[] {
   });
   if (!raws.length) return [];
 
-  const withYear = (s: string) => (/^\d{1,2}[-/.]\d{1,2}$/.test(s) ? `${s}/${year}` : /^(\d{1,2}\s?[A-Za-zÀ-ÿ]{3,9}\.?|[A-Za-z]{3,9}\.?\s\d{1,2},?)$/.test(s) ? `${s.replace(/,$/, '')} ${year}` : s);
-  const order = detectDateOrder(raws.map(r => withYear(r.dateTok)), hint).order;
+  const noYear = (s: string) => /^\d{1,2}[-/.]\d{1,2}$/.test(s) || /^(\d{1,2}\s?[A-Za-zÀ-ÿ]{3,9}\.?|[A-Za-z]{3,9}\.?\s\d{1,2},?)$/.test(s);
+  const addYear = (s: string, y: number) => (/^\d{1,2}[-/.]\d{1,2}$/.test(s) ? `${s}/${y}` : `${s.replace(/,$/, '')} ${y}`);
+  const order = detectDateOrder(raws.map(r => (noYear(r.dateTok) ? addYear(r.dateTok, endYear) : r.dateTok)), hint).order;
+  const limit = periodEnd ? addDaysISO(periodEnd, 7) : undefined;
+  const withDate = (s: string, o: Order) => {
+    if (!noYear(s)) return parseDateAs(s, o);
+    const d = parseDateAs(addYear(s, endYear), o);
+    // extrato de dezembro a janeiro: as datas de dezembro são do ano anterior
+    return d && limit && d > limit ? parseDateAs(addYear(s, endYear - 1), o) : d;
+  };
   const rows: (ExtractedRow & { abs: number; explicit: boolean; anchor?: boolean })[] = [];
   for (const r of raws) {
-    const date = parseDateAs(withYear(r.dateTok), order);
+    const date = withDate(r.dateTok, order);
     if (!date) continue;
     const amountTok = r.nums.length >= 2 ? r.nums[r.nums.length - 2]! : r.nums[0]!;
     const balanceTok = r.nums.length >= 2 ? r.nums[r.nums.length - 1] : undefined;
@@ -255,3 +268,28 @@ export function pdfText(lines: PdfLine[]): string {
   return lines.map(l => l.text).join('\n');
 }
 
+
+function addDaysISO(iso: string, n: number): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+/** Última data completa (com ano) mencionada no documento: normalmente o fim do período do extrato. */
+export function statementEnd(lines: PdfLine[]): string | undefined {
+  const found: string[] = [];
+  const res = [
+    /\b\d{1,2}[-/.]\d{1,2}[-/.]\d{4}\b/g,
+    /\b\d{4}-\d{2}-\d{2}\b/g,
+    /\b[A-Za-z]{3,9}\.?\s+\d{1,2},?\s+\d{4}\b/g,
+    /\b\d{1,2}(?:\s+de)?\s+[A-Za-zÀ-ÿ]{3,9}\.?(?:\s+de)?\s+\d{4}\b/g
+  ];
+  for (const l of lines.slice(0, 400)) {
+    for (const re of res) for (const m of l.text.matchAll(re)) {
+      const d = parseDate(m[0].replace(',', ''));
+      if (d) found.push(d);
+    }
+  }
+  const max = new Date(Date.now() + 40 * 86400000).toISOString().slice(0, 10);
+  return found.filter(d => d <= max && d >= '1990-01-01').sort().pop();
+}
