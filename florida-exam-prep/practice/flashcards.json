@@ -1,0 +1,3217 @@
+[
+ {
+  "id": "F-001",
+  "l": "L01-1",
+  "t": "distinction",
+  "f": "Statute vs administrative rule: what is the difference, with one Florida real estate example of each?",
+  "b": "A statute is passed by the Legislature (Chapter 475 F.S., the license law). A rule is adopted by an agency under a statute's authority (Rule 61J2 F.A.C., e.g., escrow deposit deadlines adopted by FREC)."
+ },
+ {
+  "id": "F-002",
+  "l": "L01-1",
+  "t": "distinction",
+  "f": "DBPR vs FREC — who investigates, who disciplines, who issues licenses?",
+  "b": "DBPR issues licenses and investigates complaints. FREC adopts rules and disciplines (final orders). Courts handle crimes and civil damages.",
+  "chk": [
+   "dbpr",
+   "frec"
+  ]
+ },
+ {
+  "id": "F-003",
+  "l": "L02-1",
+  "t": "rule-app",
+  "f": "The three elements that require a real estate license.",
+  "b": "A real estate service, for another, for compensation (paid, promised or expected).",
+  "chk": [
+   "another",
+   "compensation"
+  ]
+ },
+ {
+  "id": "F-004",
+  "l": "L02-2",
+  "t": "scenario",
+  "f": "A builder's salaried employee sells the builder's homes. Then she's paid per closing. License needed?",
+  "b": "Salaried only: exempt. Paid per closing: license required — the exemption depends on no commission/transaction-based pay."
+ },
+ {
+  "id": "F-005",
+  "l": "L02-3",
+  "t": "distinction",
+  "f": "Mutual recognition: who can use it, and what exam do they take?",
+  "b": "Only applicants who are NOT Florida residents when they apply, licensed in a state with an agreement. They take a 40-question Florida law exam and need 30 correct."
+ },
+ {
+  "id": "F-006",
+  "l": "L03-3",
+  "t": "distinction",
+  "f": "Missed post-license education vs missed continuing education: consequences?",
+  "b": "Post-license (45 hrs) missed before first renewal → license null and void. CE (14 hrs) missed at a later renewal → involuntary inactive (recoverable for 2 years).",
+  "chk": [
+   "void",
+   "inactive"
+  ]
+ },
+ {
+  "id": "F-007",
+  "l": "L03-3",
+  "t": "trigger",
+  "f": "Involuntary inactive for 18 months. What does reactivation require?",
+  "b": "The 28-hour commission-prescribed reactivation course (more than 12 but less than 24 months). ≤12 months: 14 hours. >24 months: license expired.",
+  "chk": [
+   "28"
+  ]
+ },
+ {
+  "id": "F-008",
+  "l": "L03-4",
+  "t": "trigger",
+  "f": "What event starts a 10-day clock and what event starts a 30-day clock for a licensee's duty to notify DBPR?",
+  "b": "10 days: change of mailing address. 30 days: conviction, guilty plea or nolo contendere plea."
+ },
+ {
+  "id": "F-009",
+  "l": "L03-2",
+  "t": "distinction",
+  "f": "Group license vs multiple licenses.",
+  "b": "Group license: a sales associate (or broker associate) works for several CONNECTED entities of one owner-developer. Multiple licenses: a BROKER holds separate licenses for unconnected brokerages."
+ },
+ {
+  "id": "F-010",
+  "l": "L04-1",
+  "t": "rule-app",
+  "f": "Presumed brokerage relationship in Florida?",
+  "b": "Transaction broker (unless single agent or no brokerage relationship is established in writing).",
+  "chk": [
+   "transaction"
+  ]
+ },
+ {
+  "id": "F-011",
+  "l": "L04-2",
+  "t": "distinction",
+  "f": "Name the four duties owed ONLY by a single agent.",
+  "b": "Loyalty, obedience, (full) confidentiality, full disclosure.",
+  "chk": [
+   "loyalty",
+   "obedience"
+  ]
+ },
+ {
+  "id": "F-012",
+  "l": "L04-2",
+  "t": "def-term",
+  "f": "Transaction-broker duty not to reveal that the seller will take less, the buyer will pay more, a party's motivation, or facts a party asks to keep confidential.",
+  "b": "Limited confidentiality.",
+  "chk": [
+   "limited",
+   "confidentiality"
+  ]
+ },
+ {
+  "id": "F-013",
+  "l": "L04-3",
+  "t": "trigger",
+  "f": "When must the No Brokerage Relationship Notice be given?",
+  "b": "Before showing the property."
+ },
+ {
+  "id": "F-014",
+  "l": "L04-3",
+  "t": "trigger",
+  "f": "When must the Single Agent Notice be given?",
+  "b": "Before or at the time of entering into a listing or representation agreement, or before showing property — whichever comes first."
+ },
+ {
+  "id": "F-015",
+  "l": "L04-3",
+  "t": "rule-app",
+  "f": "List four situations where brokerage disclosure is NOT required.",
+  "b": "Any four of: party already represented; bona fide open house/model showing; unanticipated casual encounter; general factual questions about advertised property; general info about qualifications/firm; auctions; appraisals; leases without an option to buy ≤4 units; nonresidential/commercial; business enterprises (except ≤4 residential units)."
+ },
+ {
+  "id": "F-016",
+  "l": "L04-4",
+  "t": "distinction",
+  "f": "Latent defect vs stigma: which must be disclosed in Florida?",
+  "b": "Known latent material defects (hidden roof leak, flooding) must be disclosed. Death on the property and HIV/AIDS status are declared not material."
+ },
+ {
+  "id": "F-017",
+  "l": "L04-4",
+  "t": "rule-app",
+  "f": "Which duties survive termination of a brokerage relationship?",
+  "b": "Confidentiality and accounting for funds.",
+  "chk": [
+   "confidential",
+   "account"
+  ]
+ },
+ {
+  "id": "F-018",
+  "l": "L05-1",
+  "t": "trigger",
+  "f": "Deposit received Wednesday (no holidays). Associate's deadline? Broker's deadline?",
+  "b": "Associate → broker: end of Thursday (next business day). Broker deposits: end of Monday (Thu 1, Fri 2, Mon 3).",
+  "chk": [
+   "thursday",
+   "monday"
+  ]
+ },
+ {
+  "id": "F-019",
+  "l": "L05-1",
+  "t": "distinction",
+  "f": "Commingling vs conversion.",
+  "b": "Commingling: mixing personal and escrow funds. Conversion: using escrow funds for personal or unauthorized purposes (more serious)."
+ },
+ {
+  "id": "F-020",
+  "l": "L05-2",
+  "t": "rule-app",
+  "f": "Four escrow dispute settlement procedures (M.A.L.E.).",
+  "b": "Mediation (all consent, 90 days), Arbitration (all consent, binding), Litigation (interpleader), Escrow disbursement order from FREC (only if the broker holds the funds)."
+ },
+ {
+  "id": "F-021",
+  "l": "L05-2",
+  "t": "rule-app",
+  "f": "Two statutory situations where a broker may return a deposit to the buyer without notifying FREC.",
+  "b": "A residential condo buyer cancels under s. 718.503; the buyer in good faith fails to satisfy the contract's financing clause."
+ },
+ {
+  "id": "F-022",
+  "l": "L05-3",
+  "t": "def-term",
+  "f": "An ad by a licensee that omits the registered brokerage name.",
+  "b": "Blind ad.",
+  "chk": [
+   "blind"
+  ]
+ },
+ {
+  "id": "F-023",
+  "l": "L05-4",
+  "t": "rule-app",
+  "f": "Who may pay a sales associate for real estate services?",
+  "b": "Only the sales associate's employing broker (or owner-developer employer)."
+ },
+ {
+  "id": "F-024",
+  "l": "L06-1",
+  "t": "rule-app",
+  "f": "Put in order: final order, probable cause, investigation, formal complaint, hearing, complaint, appeal.",
+  "b": "Complaint → investigation → probable cause → formal complaint → hearing → final order → appeal (30 days)."
+ },
+ {
+  "id": "F-025",
+  "l": "L06-2",
+  "t": "distinction",
+  "f": "Misrepresentation vs culpable negligence.",
+  "b": "Misrepresentation: a false statement (or concealment) of material fact. Culpable negligence: reckless indifference to others' rights — beyond simple carelessness, without intent to deceive."
+ },
+ {
+  "id": "F-026",
+  "l": "L06-3",
+  "t": "rule-app",
+  "f": "Who cannot recover from the Real Estate Recovery Fund?",
+  "b": "A licensee who acted as a licensee in the transaction (e.g., commission disputes); also excluded: amounts above caps, treble damages, court costs, attorney's fees, interest."
+ },
+ {
+  "id": "F-027",
+  "l": "L07-1",
+  "t": "distinction",
+  "f": "Steering vs blockbusting vs redlining.",
+  "b": "Steering: guiding buyers toward/away from areas by protected class. Blockbusting: scaring owners into selling because a protected class is moving in. Redlining: lender refusing or varying loans by area."
+ },
+ {
+  "id": "F-028",
+  "l": "L07-1",
+  "t": "distinction",
+  "f": "Reasonable modification vs reasonable accommodation.",
+  "b": "Modification: physical change to the unit (usually tenant pays). Accommodation: change in rules/policies (e.g., service animal despite no-pets rule)."
+ },
+ {
+  "id": "F-029",
+  "l": "L07-3",
+  "t": "trigger",
+  "f": "TILA's 3-business-day right of rescission applies to which loans?",
+  "b": "Refinances and home-equity loans on the borrower's principal residence — not purchase loans, not investment property."
+ },
+ {
+  "id": "F-030",
+  "l": "L07-2",
+  "t": "distinction",
+  "f": "Match: housing / credit / public accommodations / lending data.",
+  "b": "Fair Housing Act / ECOA / ADA / HMDA."
+ },
+ {
+  "id": "F-031",
+  "l": "L07-4",
+  "t": "trigger",
+  "f": "Security deposit timeline after the tenant moves out.",
+  "b": "15 days to return if no claim; certified-mail notice of claim within 30 days; tenant has 15 days to object. Missing the 30-day notice forfeits the claim.",
+  "chk": [
+   "15",
+   "30"
+  ]
+ },
+ {
+  "id": "F-032",
+  "l": "L08-1",
+  "t": "distinction",
+  "f": "Remainder vs reversion.",
+  "b": "Remainder: future interest goes to a third party (remainderman). Reversion: it returns to the grantor or heirs."
+ },
+ {
+  "id": "F-033",
+  "l": "L08-2",
+  "t": "distinction",
+  "f": "Assignment vs sublease.",
+  "b": "Assignment: the ENTIRE remaining term; assignee pays landlord; original tenant secondarily liable unless released. Sublease: part of the term or space; subtenant pays tenant; tenant stays primarily liable."
+ },
+ {
+  "id": "F-034",
+  "l": "L08-3",
+  "t": "scenario",
+  "f": "Married couple, deed silent. Unmarried pair, deed silent. How is title held in each case?",
+  "b": "Married: tenancy by the entireties. Unmarried: tenancy in common."
+ },
+ {
+  "id": "F-035",
+  "l": "L08-4",
+  "t": "distinction",
+  "f": "Florida homestead: name the three separate legal effects.",
+  "b": "(1) Protection from forced sale by most creditors; (2) restrictions on transfer and devise when there is a spouse/minor child (spouse joins deeds and mortgages); (3) property-tax exemption."
+ },
+ {
+  "id": "F-036",
+  "l": "L08-5",
+  "t": "distinction",
+  "f": "Condominium vs cooperative ownership.",
+  "b": "Condo: deed to a unit (real property) + undivided share of common elements. Co-op: shares in the corporation + proprietary lease (personal property)."
+ },
+ {
+  "id": "F-037",
+  "l": "L09-2",
+  "t": "distinction",
+  "f": "General warranty vs special warranty deed.",
+  "b": "General: grantor warrants against defects from any time. Special: only defects arising during the grantor's ownership."
+ },
+ {
+  "id": "F-038",
+  "l": "L09-2",
+  "t": "rule-app",
+  "f": "What makes a Florida deed valid, and what is needed only for recording?",
+  "b": "Valid: writing, competent grantor, identifiable grantee, consideration, words of conveyance, legal description, grantor's signature + 2 witnesses, delivery and acceptance. Recording: notary acknowledgment."
+ },
+ {
+  "id": "F-039",
+  "l": "L09-4",
+  "t": "distinction",
+  "f": "Easement appurtenant vs easement in gross.",
+  "b": "Appurtenant: benefits an adjacent parcel (dominant/servient), runs with the land. In gross: benefits a person or company (utility), no dominant estate."
+ },
+ {
+  "id": "F-040",
+  "l": "L09-4",
+  "t": "distinction",
+  "f": "Adverse possession vs easement by prescription (Florida periods).",
+  "b": "Adverse possession (title): 7 years + color of title or payment of taxes. Prescription (easement): 20 years of adverse use.",
+  "chk": [
+   "7",
+   "20"
+  ]
+ },
+ {
+  "id": "F-041",
+  "l": "L09-5",
+  "t": "distinction",
+  "f": "Accretion vs avulsion.",
+  "b": "Accretion: gradual deposit of soil — owner gains land, boundary moves. Avulsion: sudden change — boundary does not move."
+ },
+ {
+  "id": "F-042",
+  "l": "L09-5",
+  "t": "rule-app",
+  "f": "Four tests for whether an item is a fixture.",
+  "b": "Intent (most important), method of annexation, adaptation to the property, relationship of the parties. Trade fixtures stay the tenant's."
+ },
+ {
+  "id": "F-043",
+  "l": "L10-2",
+  "t": "formula",
+  "f": "Acreage of an aliquot description.",
+  "b": "640 ÷ (product of the denominators). Use AND to add separate parcels."
+ },
+ {
+  "id": "F-044",
+  "l": "L10-2",
+  "t": "rule-app",
+  "f": "Where is section 1, section 6, section 31, section 36?",
+  "b": "1 = NE corner; 6 = NW; 31 = SW; 36 = SE (serpentine numbering from the NE)."
+ },
+ {
+  "id": "F-045",
+  "l": "L14-1",
+  "t": "formula",
+  "f": "The percent triangle.",
+  "b": "Part = Total × Rate; Total = Part ÷ Rate; Rate = Part ÷ Total."
+ },
+ {
+  "id": "F-046",
+  "l": "L14-1",
+  "t": "formula",
+  "f": "Percentage change.",
+  "b": "(New − Old) ÷ Old. The base is always the starting value."
+ },
+ {
+  "id": "F-047",
+  "l": "L14-3",
+  "t": "formula",
+  "f": "Sale price needed to net the seller a given amount.",
+  "b": "Price = (Net + fixed costs) ÷ (1 − commission rate). Never multiply the net by (1 + rate)."
+ },
+ {
+  "id": "F-048",
+  "l": "L14-4",
+  "t": "formula",
+  "f": "Recover the original cost from a sale price and profit %.",
+  "b": "Cost = Sale ÷ (1 + profit%). For a loss: Cost = Sale ÷ (1 − loss%)."
+ },
+ {
+  "id": "F-049",
+  "l": "L14-5",
+  "t": "formula",
+  "f": "Loan-to-value ratio.",
+  "b": "LTV = loan ÷ lesser of sale price or appraised value."
+ },
+ {
+  "id": "F-050",
+  "l": "L14-5",
+  "t": "formula",
+  "f": "First month's interest on an amortized loan.",
+  "b": "Balance × annual rate ÷ 12. Principal = payment − interest."
+ },
+ {
+  "id": "F-051",
+  "l": "L14-6",
+  "t": "formula",
+  "f": "Deed stamps, note stamps, intangible tax — formulas and who customarily pays.",
+  "b": "Deed: round price UP to $100 → ÷100 × $0.70 (seller). Note: round loan UP → ÷100 × $0.35 (buyer; new and assumed). Intangible: new loan × 0.002 (buyer)."
+ },
+ {
+  "id": "F-052",
+  "l": "L14-7",
+  "t": "rule-app",
+  "f": "Proration of unpaid property taxes: which party is debited?",
+  "b": "Debit seller, credit buyer (taxes paid in arrears)."
+ },
+ {
+  "id": "F-053",
+  "l": "L14-7",
+  "t": "rule-app",
+  "f": "Proration of rent collected in advance by the seller: which party is credited?",
+  "b": "Credit buyer, debit seller, for the buyer's days (including the closing day)."
+ },
+ {
+  "id": "F-054",
+  "l": "L14-8",
+  "t": "rule-app",
+  "f": "Single or double entry? Binder deposit; new mortgage; assumed mortgage; seller's payoff.",
+  "b": "Deposit: credit buyer (single). New mortgage: credit buyer (single). Assumed mortgage: debit seller + credit buyer (double). Payoff: debit seller (single)."
+ },
+ {
+  "id": "F-055",
+  "l": "L12-3",
+  "t": "formula",
+  "f": "Housing ratio and total obligations ratio.",
+  "b": "Housing = PITI ÷ gross monthly income. Total = (PITI + recurring debts) ÷ gross monthly income. Course benchmarks: 28/36 conventional; 31/43 FHA."
+ },
+ {
+  "id": "F-056",
+  "l": "L16-4",
+  "t": "formula",
+  "f": "IRV and how to build NOI.",
+  "b": "Value = NOI ÷ cap rate. NOI = PGI − vacancy & collection loss − operating expenses (NOT debt service or depreciation)."
+ },
+ {
+  "id": "F-057",
+  "l": "L16-4",
+  "t": "formula",
+  "f": "GRM vs GIM.",
+  "b": "GRM = price ÷ MONTHLY gross rent (1–4 units). GIM = price ÷ ANNUAL gross income."
+ },
+ {
+  "id": "F-058",
+  "l": "L16-3",
+  "t": "formula",
+  "f": "Cost approach.",
+  "b": "Value = land value + (cost new − accrued depreciation)."
+ },
+ {
+  "id": "F-059",
+  "l": "L16-2",
+  "t": "rule-app",
+  "f": "Sales comparison adjustment direction.",
+  "b": "Adjust the comparable, never the subject. Comparable better → subtract; comparable inferior → add (CBS / CIA)."
+ },
+ {
+  "id": "F-060",
+  "l": "L18-2",
+  "t": "formula",
+  "f": "Property tax with homestead exemptions.",
+  "b": "School tax = (assessed − 25,000) × school mills ÷ 1,000. Non-school = (assessed − 50,000*) × other mills ÷ 1,000. (*second exemption is up to $25,000, CPI-indexed since 2025.)"
+ },
+ {
+  "id": "F-061",
+  "l": "L17-1",
+  "t": "formula",
+  "f": "Cash flow and cap rate.",
+  "b": "Cash flow = NOI − debt service. Cap rate = NOI ÷ price."
+ },
+ {
+  "id": "F-062",
+  "l": "L12-2",
+  "t": "distinction",
+  "f": "Assumption vs 'subject to'.",
+  "b": "Assumption: buyer becomes personally liable (seller stays secondarily liable unless novation). Subject to: buyer pays but has no personal liability."
+ },
+ {
+  "id": "F-063",
+  "l": "L13-1",
+  "t": "distinction",
+  "f": "FHA vs VA: role and borrower charge.",
+  "b": "FHA insures (borrower pays MIP). VA guarantees (borrower pays funding fee). Neither lends."
+ },
+ {
+  "id": "F-064",
+  "l": "L13-3",
+  "t": "distinction",
+  "f": "Primary vs secondary mortgage market.",
+  "b": "Primary: originates loans (banks, credit unions, mortgage bankers/brokers). Secondary: buys existing loans (Fannie Mae, Freddie Mac; Ginnie Mae guarantees FHA/VA securities)."
+ },
+ {
+  "id": "F-065",
+  "l": "L11-1",
+  "t": "distinction",
+  "f": "Void vs voidable vs unenforceable.",
+  "b": "Void: no contract at all. Voidable: one party may cancel (minor, fraud, duress). Unenforceable: valid but a court won't enforce (no required writing, time-barred)."
+ },
+ {
+  "id": "F-066",
+  "l": "L11-3",
+  "t": "distinction",
+  "f": "Exclusive right of sale vs exclusive agency: owner sells to her neighbour herself.",
+  "b": "Exclusive right of sale: commission owed. Exclusive agency: no commission."
+ },
+ {
+  "id": "F-067",
+  "l": "L11-2",
+  "t": "rule-app",
+  "f": "Effect of a counteroffer on the original offer.",
+  "b": "It rejects and terminates the original offer permanently."
+ },
+ {
+  "id": "F-068",
+  "l": "L19-1",
+  "t": "distinction",
+  "f": "Variance vs special exception.",
+  "b": "Variance: deviation from a dimensional rule due to hardship unique to the parcel. Special exception: a use the code allows with case-by-case approval."
+ },
+ {
+  "id": "F-069",
+  "l": "L19-1",
+  "t": "distinction",
+  "f": "Police power vs eminent domain.",
+  "b": "Police power: regulation (zoning, codes), no compensation. Eminent domain: taking for public use, just compensation required."
+ },
+ {
+  "id": "F-070",
+  "l": "L18-3",
+  "t": "distinction",
+  "f": "1031 exchange vs principal-residence exclusion.",
+  "b": "1031: investment/business real property exchanged for like-kind; gain deferred; boot taxable. Residence: exclude $250k/$500k gain if owned and used 2 of last 5 years."
+ },
+ {
+  "id": "F-N-001",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-001",
+  "f": "Pre-license course (sales associate) — state the exact rule.",
+  "b": "63 hours (50-minute hours), including the end-of-course exam\nConditions: Course completion is valid for 2 years for purposes of taking the state exam.\nQualifications: Mutual-recognition nonresidents skip the course (see N-007)."
+ },
+ {
+  "id": "F-N-002",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-002",
+  "f": "Applicant minimum age / education — state the exact rule.",
+  "b": "18 years old; high school diploma or equivalent; U.S. Social Security number\nQualifications: U.S. citizenship and Florida residency are NOT required."
+ },
+ {
+  "id": "F-N-003",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-003",
+  "f": "State exam passing score — state the exact rule.",
+  "b": "75 correct out of 100 (75%)\nQualifications: Mutual recognition law exam: 30 of 40 (N-007)."
+ },
+ {
+  "id": "F-N-004",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-004",
+  "f": "Exam time limit — state the exact rule.",
+  "b": "3.5 hours"
+ },
+ {
+  "id": "F-N-005",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-005",
+  "f": "Application validity — state the exact rule.",
+  "b": "2 years"
+ },
+ {
+  "id": "F-N-006",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-006",
+  "f": "Reapplying after denial for dishonesty — state the exact rule.",
+  "b": "May reapply after 2 years (manual statement)"
+ },
+ {
+  "id": "F-N-007",
+  "l": "L02-3",
+  "t": "number",
+  "src": "N-007",
+  "f": "Mutual recognition law exam — state the exact rule.",
+  "b": "40 questions; 30 correct to pass (75%)\nConditions: Must hold an active license in good standing in that state.\nQualifications: Florida residents cannot use mutual recognition. Official lists of states disagree — do not memorize the list (V-22)."
+ },
+ {
+  "id": "F-N-008",
+  "l": "L03-3",
+  "t": "number",
+  "src": "N-008",
+  "f": "Post-license education (sales associate) — state the exact rule.",
+  "b": "45 hours, completed before the FIRST renewal\nQualifications: Missing it makes the license NULL AND VOID; must requalify from the 63-hour course."
+ },
+ {
+  "id": "F-N-009",
+  "l": "L03-3",
+  "t": "number",
+  "src": "N-009",
+  "f": "Continuing education — state the exact rule.",
+  "b": "14 hours per 2-year renewal period (after the first renewal)\nConditions: Applies to active and voluntary-inactive licensees.\nQualifications: Missing renewal → involuntary inactive (not void)."
+ },
+ {
+  "id": "F-N-010",
+  "l": "L03-3",
+  "t": "number",
+  "src": "N-010",
+  "f": "First renewal timing — state the exact rule.",
+  "b": "18–24 months after initial licensure"
+ },
+ {
+  "id": "F-N-011",
+  "l": "L03-3",
+  "t": "number",
+  "src": "N-011",
+  "f": "Reactivation from involuntary inactive — state the exact rule.",
+  "b": "≤12 months: 14 hours CE. More than 12 but less than 24 months: 28-hour reactivation course. More than 24 months: license expires (null and void).\nQualifications: Voluntary inactive can be renewed indefinitely with 14 hours CE per cycle."
+ },
+ {
+  "id": "F-N-012",
+  "l": "L03-4",
+  "t": "number",
+  "src": "N-012",
+  "f": "Change of mailing address — state the exact rule.",
+  "b": "Notify DBPR within 10 days"
+ },
+ {
+  "id": "F-N-013",
+  "l": "L03-4",
+  "t": "number",
+  "src": "N-013",
+  "f": "Reporting a conviction or plea — state the exact rule.",
+  "b": "Within 30 days, including pleas of guilty or nolo contendere\nConditions: Applies whether or not adjudication is withheld."
+ },
+ {
+  "id": "F-N-014",
+  "l": "L03-2",
+  "t": "number",
+  "src": "N-014",
+  "f": "Broker license prerequisites — state the exact rule.",
+  "b": "24 months active sales associate license during the preceding 5 years; 72-hour broker course; broker exam"
+ },
+ {
+  "id": "F-N-015",
+  "l": "L03-2",
+  "t": "number",
+  "src": "N-015",
+  "f": "Broker post-license education — state the exact rule.",
+  "b": "60 hours (two 30-hour courses) before first broker renewal\nQualifications: Missing it voids the broker license."
+ },
+ {
+  "id": "F-N-020",
+  "l": "L03-1",
+  "t": "number",
+  "src": "N-020",
+  "f": "FREC membership — state the exact rule.",
+  "b": "7 members: 4 brokers (active 5 preceding years), 1 broker or sales associate (active 2 preceding years), 2 consumer members (never licensed); at least 1 member 60 or older"
+ },
+ {
+  "id": "F-N-021",
+  "l": "L03-1",
+  "t": "number",
+  "src": "N-021",
+  "f": "FREC terms — state the exact rule.",
+  "b": "4-year terms (manual: maximum two consecutive terms; quorum 4 — not verified)"
+ },
+ {
+  "id": "F-N-030",
+  "l": "L04-2",
+  "t": "number",
+  "src": "N-030",
+  "f": "Duties: no brokerage relationship — state the exact rule.",
+  "b": "3 duties: deal honestly and fairly; disclose known facts materially affecting value of residential property not readily observable; account for all funds"
+ },
+ {
+  "id": "F-N-031",
+  "l": "L04-2",
+  "t": "number",
+  "src": "N-031",
+  "f": "Duties: transaction broker — state the exact rule.",
+  "b": "7 duties: the 3 above + use skill, care and diligence; present all offers and counteroffers timely (unless directed otherwise in writing); limited confidentiality (unless waived in writing); any additional duties mutually agreed\nQualifications: Not a fiduciary."
+ },
+ {
+  "id": "F-N-032",
+  "l": "L04-2",
+  "t": "number",
+  "src": "N-032",
+  "f": "Duties: single agent — state the exact rule.",
+  "b": "9 duties: honesty/fairness; loyalty; confidentiality; obedience; full disclosure; accounting; skill, care and diligence; presenting offers; disclosing material facts\nConditions: Obedience covers lawful instructions only.\nQualifications: Florida prohibits single agency for both buyer and seller in the same transaction."
+ },
+ {
+  "id": "F-N-033",
+  "l": "L04-3",
+  "t": "number",
+  "src": "N-033",
+  "f": "Residential sale (disclosure scope) — state the exact rule.",
+  "b": "Improved residential property of 4 units or fewer; unimproved residential property intended for 4 units or fewer; agricultural property of 10 acres or fewer\nQualifications: Not: commercial, leases/rentals (unless an option to buy ≤4 units), auctions, appraisals, business enterprises (except ≤4 residential units), open houses, casual encounters, general factual questions, parties already represented."
+ },
+ {
+  "id": "F-N-034",
+  "l": "L04-4",
+  "t": "number",
+  "src": "N-034",
+  "f": "Designated sales associates — state the exact rule.",
+  "b": "Nonresidential transaction; buyer and seller each have assets of $1 million or more\nConditions: Requested in writing; disclosures signed.\nQualifications: Never in residential transactions."
+ },
+ {
+  "id": "F-N-040",
+  "l": "L05-1",
+  "t": "number",
+  "src": "N-040",
+  "f": "Sales associate delivers deposit to broker — state the exact rule.",
+  "b": "No later than the end of the next business day"
+ },
+ {
+  "id": "F-N-041",
+  "l": "L05-1",
+  "t": "number",
+  "src": "N-041",
+  "f": "Broker deposits escrow funds ('immediately') — state the exact rule.",
+  "b": "No later than the end of the third business day after the brokerage receives the funds"
+ },
+ {
+  "id": "F-N-042",
+  "l": "L05-1",
+  "t": "number",
+  "src": "N-042",
+  "f": "Broker's own money in escrow — state the exact rule.",
+  "b": "Up to $1,000 in a sales escrow account; up to $5,000 in a property management escrow account\nQualifications: More than that = commingling."
+ },
+ {
+  "id": "F-N-043",
+  "l": "L05-2",
+  "t": "number",
+  "src": "N-043",
+  "f": "Conflicting demands: notice to FREC — state the exact rule.",
+  "b": "Within 15 business days after the last demand (or after good-faith doubt arises)\nConditions: Only when the broker holds the funds.\nQualifications: Condo buyer cancels under s. 718.503; buyer's good-faith financing failure."
+ },
+ {
+  "id": "F-N-044",
+  "l": "L05-2",
+  "t": "number",
+  "src": "N-044",
+  "f": "Conflicting demands: start a settlement procedure — state the exact rule.",
+  "b": "Within 30 business days after the last demand"
+ },
+ {
+  "id": "F-N-045",
+  "l": "L05-2",
+  "t": "number",
+  "src": "N-045",
+  "f": "Mediation time limit — state the exact rule.",
+  "b": "Must be completed within 90 days after the last demand; otherwise promptly use another procedure"
+ },
+ {
+  "id": "F-N-046",
+  "l": "L05-2",
+  "t": "number",
+  "src": "N-046",
+  "f": "Dispute settles before EDO issues — state the exact rule.",
+  "b": "Notify FREC within 10 business days"
+ },
+ {
+  "id": "F-N-047",
+  "l": "L05-4",
+  "t": "number",
+  "src": "N-047",
+  "f": "Rental information for a fee: refunds — state the exact rule.",
+  "b": "75% back if no rental obtained; 100% back if the information was not current or accurate; demand within 30 days of the contract"
+ },
+ {
+  "id": "F-N-048",
+  "l": "L06-2",
+  "t": "number",
+  "src": "N-048",
+  "f": "Record keeping — state the exact rule.",
+  "b": "Brokers keep books, records and escrow records for at least 5 years; if litigation, at least 2 years after it ends (manual statement)"
+ },
+ {
+  "id": "F-N-050",
+  "l": "L06-2",
+  "t": "number",
+  "src": "N-050",
+  "f": "Administrative fine — state the exact rule.",
+  "b": "Up to $5,000 per violation (count)"
+ },
+ {
+  "id": "F-N-051",
+  "l": "L06-2",
+  "t": "number",
+  "src": "N-051",
+  "f": "Suspension — state the exact rule.",
+  "b": "Up to 10 years"
+ },
+ {
+  "id": "F-N-052",
+  "l": "L06-2",
+  "t": "number",
+  "src": "N-052",
+  "f": "Unlicensed practice — state the exact rule.",
+  "b": "Third-degree felony (up to 5 years in prison and a $5,000 fine under the general sentencing statutes)"
+ },
+ {
+  "id": "F-N-053",
+  "l": "L06-1",
+  "t": "number",
+  "src": "N-053",
+  "f": "Appeal of a final order — state the exact rule.",
+  "b": "Within 30 days to the District Court of Appeal"
+ },
+ {
+  "id": "F-N-054",
+  "l": "L06-3",
+  "t": "number",
+  "src": "N-054",
+  "f": "Recovery Fund caps — state the exact rule.",
+  "b": "$50,000 per transaction (all claimants combined); $150,000 aggregate per licensee\nQualifications: No treble damages, court costs, attorney's fees or interest."
+ },
+ {
+  "id": "F-N-060",
+  "l": "L07-1",
+  "t": "number",
+  "src": "N-060",
+  "f": "Fair housing protected classes — state the exact rule.",
+  "b": "1866: race (all property, no exceptions). 1968: race, color, religion, national origin. 1974: sex. 1988: familial status and handicap."
+ },
+ {
+  "id": "F-N-061",
+  "l": "L07-1",
+  "t": "number",
+  "src": "N-061",
+  "f": "Housing for older persons — state the exact rule.",
+  "b": "55+: at least 80% of units occupied by at least one person 55 or older; or 62+: all occupants 62 or older"
+ },
+ {
+  "id": "F-N-062",
+  "l": "L07-1",
+  "t": "number",
+  "src": "N-062",
+  "f": "Fair housing exemptions — state the exact rule.",
+  "b": "Owner of no more than 3 single-family homes selling/renting without a broker or discriminatory ads; owner-occupied building of no more than 4 units ('Mrs. Murphy'); religious organizations and private clubs (members, non-commercial)\nConditions: Lost if a broker is used or a discriminatory ad is published.\nQualifications: Never for race (1866 Act)."
+ },
+ {
+  "id": "F-N-063",
+  "l": "L07-1",
+  "t": "number",
+  "src": "N-063",
+  "f": "Fair housing complaints — state the exact rule.",
+  "b": "To HUD within 1 year (manual); court action also possible"
+ },
+ {
+  "id": "F-N-064",
+  "l": "L07-2",
+  "t": "number",
+  "src": "N-064",
+  "f": "Do Not Call established business relationship — state the exact rule.",
+  "b": "Up to 18 months after a purchase/transaction; up to 3 months after an inquiry\nConditions: A specific request not to be called overrides it.\nQualifications: Written permission also allows calls."
+ },
+ {
+  "id": "F-N-065",
+  "l": "L07-2",
+  "t": "number",
+  "src": "N-065",
+  "f": "CAN-SPAM opt-out — state the exact rule.",
+  "b": "Honored within 10 business days"
+ },
+ {
+  "id": "F-N-066",
+  "l": "L07-3",
+  "t": "number",
+  "src": "N-066",
+  "f": "TRID timing — state the exact rule.",
+  "b": "Loan Estimate within 3 business days of application; Closing Disclosure at least 3 business days before closing"
+ },
+ {
+  "id": "F-N-067",
+  "l": "L07-3",
+  "t": "number",
+  "src": "N-067",
+  "f": "TILA right of rescission — state the exact rule.",
+  "b": "3 business days\nQualifications: Not for purchase-money loans or investment property."
+ },
+ {
+  "id": "F-N-068",
+  "l": "L07-4",
+  "t": "number",
+  "src": "N-068",
+  "f": "Security deposit: notice of how held — state the exact rule.",
+  "b": "Within 30 days of receipt"
+ },
+ {
+  "id": "F-N-069",
+  "l": "L07-4",
+  "t": "number",
+  "src": "N-069",
+  "f": "Security deposit after move-out — state the exact rule.",
+  "b": "Return within 15 days if no claim; otherwise certified-mail notice of claim within 30 days; tenant has 15 days to object\nQualifications: Missing the 30-day notice forfeits the right to impose a claim."
+ },
+ {
+  "id": "F-N-070",
+  "l": "L07-4",
+  "t": "number",
+  "src": "N-070",
+  "f": "Notice to end a tenancy without a specific term — state the exact rule.",
+  "b": "Year-to-year 60 days; quarter-to-quarter 30 days; month-to-month 30 days; week-to-week 7 days\nConditions: Written notice before the end of the period.\nQualifications: Manual and older books: month 15 days, quarter 45 days — outdated/incorrect (V-04)."
+ },
+ {
+  "id": "F-N-080",
+  "l": "L08-4",
+  "t": "number",
+  "src": "N-080",
+  "f": "Homestead size (creditor protection) — state the exact rule.",
+  "b": "1/2 acre of contiguous land within a municipality; 160 contiguous acres outside a municipality"
+ },
+ {
+  "id": "F-N-081",
+  "l": "L08-5",
+  "t": "number",
+  "src": "N-081",
+  "f": "Condominium cancellation rights — state the exact rule.",
+  "b": "Developer sale: 15 days. Resale: 3 business days (older texts) — 2025 statute text appears to say 7 days excluding weekends/holidays (unresolved)."
+ },
+ {
+  "id": "F-N-082",
+  "l": "L08-5",
+  "t": "number",
+  "src": "N-082",
+  "f": "Timeshare cancellation — state the exact rule.",
+  "b": "10 days; cannot be waived"
+ },
+ {
+  "id": "F-N-090",
+  "l": "L09-1",
+  "t": "number",
+  "src": "N-090",
+  "f": "Adverse possession (Florida) — state the exact rule.",
+  "b": "7 years of open, notorious, continuous, hostile possession plus color of title OR payment of taxes"
+ },
+ {
+  "id": "F-N-091",
+  "l": "L09-4",
+  "t": "number",
+  "src": "N-091",
+  "f": "Easement by prescription (Florida) — state the exact rule.",
+  "b": "20 years of open, continuous, adverse use"
+ },
+ {
+  "id": "F-N-092",
+  "l": "L09-2",
+  "t": "number",
+  "src": "N-092",
+  "f": "Deed witnesses — state the exact rule.",
+  "b": "Grantor signs in the presence of 2 witnesses\nConditions: Notary acknowledgment needed for recording, not validity.\nQualifications: Leases: no witnesses required (V-05)."
+ },
+ {
+  "id": "F-N-100",
+  "l": "L10-2",
+  "t": "number",
+  "src": "N-100",
+  "f": "Township — state the exact rule.",
+  "b": "6 miles × 6 miles = 36 square miles = 36 sections"
+ },
+ {
+  "id": "F-N-101",
+  "l": "L10-2",
+  "t": "number",
+  "src": "N-101",
+  "f": "Section — state the exact rule.",
+  "b": "1 mile × 1 mile = 1 square mile = 640 acres"
+ },
+ {
+  "id": "F-N-102",
+  "l": "L14-2",
+  "t": "number",
+  "src": "N-102",
+  "f": "Acre — state the exact rule.",
+  "b": "43,560 square feet"
+ },
+ {
+  "id": "F-N-103",
+  "l": "L14-2",
+  "t": "number",
+  "src": "N-103",
+  "f": "Mile — state the exact rule.",
+  "b": "5,280 feet"
+ },
+ {
+  "id": "F-N-104",
+  "l": "L14-2",
+  "t": "number",
+  "src": "N-104",
+  "f": "Square yard — state the exact rule.",
+  "b": "9 square feet (3 ft × 3 ft)"
+ },
+ {
+  "id": "F-N-105",
+  "l": "L10-1",
+  "t": "number",
+  "src": "N-105",
+  "f": "Florida principal meridian and base line — state the exact rule.",
+  "b": "Intersect in Tallahassee"
+ },
+ {
+  "id": "F-N-110",
+  "l": "L11-1",
+  "t": "number",
+  "src": "N-110",
+  "f": "Statute of limitations (Florida) — state the exact rule.",
+  "b": "Written contract: 5 years. Oral contract: 4 years."
+ },
+ {
+  "id": "F-N-111",
+  "l": "L11-1",
+  "t": "number",
+  "src": "N-111",
+  "f": "Statute of frauds — state the exact rule.",
+  "b": "Contracts for the sale of real property, and contracts not performable within 1 year, must be in writing and signed by the party to be charged\nQualifications: Leases of 1 year or less may be oral."
+ },
+ {
+  "id": "F-N-112",
+  "l": "L11-3",
+  "t": "number",
+  "src": "N-112",
+  "f": "Written listing agreement rules — state the exact rule.",
+  "b": "Definite expiration date; no automatic renewal; copy to the person signing within 24 hours"
+ },
+ {
+  "id": "F-N-113",
+  "l": "L19-2",
+  "t": "number",
+  "src": "N-113",
+  "f": "Lead-based paint — state the exact rule.",
+  "b": "Housing built before 1978: disclose known hazards, give EPA pamphlet, 10-day inspection opportunity (buyer may waive)"
+ },
+ {
+  "id": "F-N-120",
+  "l": "L12-1",
+  "t": "number",
+  "src": "N-120",
+  "f": "Satisfaction of mortgage — state the exact rule.",
+  "b": "Lender records within 60 days of full payment"
+ },
+ {
+  "id": "F-N-121",
+  "l": "L12-3",
+  "t": "number",
+  "src": "N-121",
+  "f": "Florida usury — state the exact rule.",
+  "b": "18% per year simple interest on loans of $500,000 or less; 25% on larger loans; above 25% is criminal usury"
+ },
+ {
+  "id": "F-N-122",
+  "l": "L12-3",
+  "t": "number",
+  "src": "N-122",
+  "f": "Qualifying ratios (course convention) — state the exact rule.",
+  "b": "Conventional 28% housing / 36% total; FHA 31% / 43%\nConditions: Teaching benchmarks, not statutes."
+ },
+ {
+  "id": "F-N-123",
+  "l": "L13-1",
+  "t": "number",
+  "src": "N-123",
+  "f": "PMI trigger (conventional) — state the exact rule.",
+  "b": "Required when LTV is above 80%"
+ },
+ {
+  "id": "F-N-124",
+  "l": "L13-1",
+  "t": "number",
+  "src": "N-124",
+  "f": "FHA minimum down payment — state the exact rule.",
+  "b": "3.5% (with qualifying credit)"
+ },
+ {
+  "id": "F-N-125",
+  "l": "L13-3",
+  "t": "number",
+  "src": "N-125",
+  "f": "Discount point — state the exact rule.",
+  "b": "1 point = 1% of the loan amount; each point raises the lender's yield by about 1/8%\nConditions: 1/8% is a rule of thumb used in the course."
+ },
+ {
+  "id": "F-N-126",
+  "l": "L13-2",
+  "t": "number",
+  "src": "N-126",
+  "f": "Reverse mortgage age — state the exact rule.",
+  "b": "62 or older"
+ },
+ {
+  "id": "F-N-130",
+  "l": "L14-6",
+  "t": "number",
+  "src": "N-130",
+  "f": "Documentary stamp tax on deeds — state the exact rule.",
+  "b": "$0.70 per $100 or portion thereof of total consideration (round UP to the next $100); Miami-Dade: $0.60 per $100 for single-family residences (other property: $0.60 + $0.45 surtax, manual)"
+ },
+ {
+  "id": "F-N-131",
+  "l": "L14-6",
+  "t": "number",
+  "src": "N-131",
+  "f": "Documentary stamp tax on notes — state the exact rule.",
+  "b": "$0.35 per $100 or portion thereof"
+ },
+ {
+  "id": "F-N-132",
+  "l": "L14-6",
+  "t": "number",
+  "src": "N-132",
+  "f": "Nonrecurring intangible tax — state the exact rule.",
+  "b": "2 mills (0.002) × the amount of the NEW mortgage; no rounding\nQualifications: Not on assumed mortgages."
+ },
+ {
+  "id": "F-N-133",
+  "l": "L14-7",
+  "t": "number",
+  "src": "N-133",
+  "f": "Proration conventions (Florida course) — state the exact rule.",
+  "b": "365-day year (actual days in each month); the buyer is responsible for the day of closing\nConditions: Follow the question if it states another method."
+ },
+ {
+  "id": "F-N-140",
+  "l": "L18-2",
+  "t": "number",
+  "src": "N-140",
+  "f": "Homestead tax exemptions — state the exact rule.",
+  "b": "First $25,000 of assessed value: all taxes. Additional up to $25,000 (CPI-indexed since 2025: $25,722 for 2025) on assessed value above $50,000: non-school taxes only.\nConditions: Must own and occupy as permanent residence on January 1."
+ },
+ {
+  "id": "F-N-141",
+  "l": "L18-2",
+  "t": "number",
+  "src": "N-141",
+  "f": "Widow/widower, blind, totally and permanently disabled exemption — state the exact rule.",
+  "b": "$5,000\nConditions: Florida resident.\nQualifications: Older books: $500."
+ },
+ {
+  "id": "F-N-142",
+  "l": "L18-2",
+  "t": "number",
+  "src": "N-142",
+  "f": "Save Our Homes cap — state the exact rule.",
+  "b": "Assessed value of a homestead rises no more than 3% per year or the CPI change, whichever is less; benefit portable to a new Florida homestead (limits apply)\nQualifications: Resets to just value on change of ownership."
+ },
+ {
+  "id": "F-N-143",
+  "l": "L18-1",
+  "t": "number",
+  "src": "N-143",
+  "f": "Property tax calendar — state the exact rule.",
+  "b": "Assessment date January 1; TRIM notice in August; bills from November 1 with discounts of 4% (Nov), 3% (Dec), 2% (Jan), 1% (Feb); delinquent April 1"
+ },
+ {
+  "id": "F-N-144",
+  "l": "L18-2",
+  "t": "number",
+  "src": "N-144",
+  "f": "Mill — state the exact rule.",
+  "b": "1 mill = $1 per $1,000 of taxable value = 0.001"
+ },
+ {
+  "id": "F-N-145",
+  "l": "L18-3",
+  "t": "number",
+  "src": "N-145",
+  "f": "Depreciation (cost recovery) — state the exact rule.",
+  "b": "Residential rental: 27.5 years. Nonresidential: 39 years. Land never depreciates."
+ },
+ {
+  "id": "F-N-146",
+  "l": "L18-3",
+  "t": "number",
+  "src": "N-146",
+  "f": "Principal residence gain exclusion — state the exact rule.",
+  "b": "$250,000 single; $500,000 married filing jointly; owned and used as main home 2 of the last 5 years"
+ },
+ {
+  "id": "F-G001",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Florida Statutes (F.S.)",
+  "b": "Laws passed by the Florida Legislature, organized by chapter and section (e.g., s. 475.25)."
+ },
+ {
+  "id": "F-G002",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Chapter 475, F.S.",
+  "b": "Florida's real estate license law: brokers, sales associates, schools, appraisers (Part II)."
+ },
+ {
+  "id": "F-G003",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Chapter 455, F.S.",
+  "b": "General law for all professions regulated by the DBPR (applications, investigations, discipline procedures)."
+ },
+ {
+  "id": "F-G004",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Florida Administrative Code (F.A.C.)",
+  "b": "Rules adopted by state agencies under authority given by a statute. FREC's rules are Chapter 61J2.\nNote: A rule has the force of law but must stay within its statute."
+ },
+ {
+  "id": "F-G005",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Rule 61J2",
+  "b": "The FREC's rule chapter in the Florida Administrative Code (escrow, advertising, education, offices)."
+ },
+ {
+  "id": "F-G006",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Case law",
+  "b": "Law made by court decisions that interpret statutes or develop common law; e.g., Johnson v. Davis (seller must disclose known latent defects).\nNote: Florida (like most of the US) is a common-law system; Portugal is a civil-law system."
+ },
+ {
+  "id": "F-G007",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: Common law",
+  "b": "Legal rules developed by courts over time, rather than written in a code."
+ },
+ {
+  "id": "F-G008",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: FREC",
+  "b": "Florida Real Estate Commission: 7 members appointed by the Governor; makes rules and disciplines licensees."
+ },
+ {
+  "id": "F-G009",
+  "l": "L01-1",
+  "t": "term-def",
+  "f": "Define: DBPR",
+  "b": "Florida Department of Business and Professional Regulation; its Division of Real Estate provides FREC's administrative services, issues licenses and investigates complaints."
+ },
+ {
+  "id": "F-G010",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Real estate",
+  "b": "Land plus everything permanently attached to it (improvements), and the rights that go with ownership."
+ },
+ {
+  "id": "F-G011",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Real property",
+  "b": "Real estate together with the bundle of legal rights of ownership."
+ },
+ {
+  "id": "F-G012",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Personal property",
+  "b": "Movable items not attached to land (chattels); co-op shares are personal property."
+ },
+ {
+  "id": "F-G013",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: REALTOR®",
+  "b": "A registered trademark identifying members of the National Association of REALTORS® (NAR), who agree to its Code of Ethics.\nNote: Not a license. A licensee need not be a REALTOR®."
+ },
+ {
+  "id": "F-G014",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: NAR",
+  "b": "National Association of REALTORS®, the largest US trade association for real estate professionals."
+ },
+ {
+  "id": "F-G015",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Realtist",
+  "b": "Member of the National Association of Real Estate Brokers (NAREB)."
+ },
+ {
+  "id": "F-G016",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Property management",
+  "b": "Specialty of managing property for owners: leasing, rent collection, maintenance."
+ },
+ {
+  "id": "F-G017",
+  "l": "L01-2",
+  "t": "term-def",
+  "f": "Define: Special-purpose property",
+  "b": "Property with a unique use, such as churches, schools, hospitals."
+ },
+ {
+  "id": "F-G018",
+  "l": "L02-1",
+  "t": "term-def",
+  "f": "Define: Sales associate",
+  "b": "Person licensed to perform real estate services for compensation, but only under the direction of an employing broker or owner-developer.\nNote: Florida term for what other states call a salesperson."
+ },
+ {
+  "id": "F-G019",
+  "l": "L02-1",
+  "t": "term-def",
+  "f": "Define: Broker",
+  "b": "Person licensed to perform real estate services for others for compensation in their own name; may open an office and hold escrow."
+ },
+ {
+  "id": "F-G020",
+  "l": "L03-2",
+  "t": "term-def",
+  "f": "Define: Broker associate",
+  "b": "A person with a broker license who chooses to work under another broker."
+ },
+ {
+  "id": "F-G021",
+  "l": "L02-1",
+  "t": "term-def",
+  "f": "Define: Compensation",
+  "b": "Anything of value — money, gifts, property — paid or promised, or even expected, for a real estate service."
+ },
+ {
+  "id": "F-G022",
+  "l": "L02-2",
+  "t": "term-def",
+  "f": "Define: Attorney in fact",
+  "b": "Person authorized by a power of attorney to sign for another; exempt only for executing contracts or conveyances.\nNote: Not the same as an attorney at law (lawyer)."
+ },
+ {
+  "id": "F-G023",
+  "l": "L03-4",
+  "t": "term-def",
+  "f": "Define: Nolo contendere",
+  "b": "Plea of 'no contest': the defendant does not admit guilt but accepts the penalty. Must be reported within 30 days like a guilty plea."
+ },
+ {
+  "id": "F-G024",
+  "l": "L02-3",
+  "t": "term-def",
+  "f": "Define: Mutual recognition",
+  "b": "Agreement letting nonresident licensees of certain states obtain a Florida license by passing a 40-question Florida law exam.\nNote: Not 'reciprocity' — the exam uses the precise term."
+ },
+ {
+  "id": "F-G025",
+  "l": "L03-1",
+  "t": "term-def",
+  "f": "Define: Quasi-legislative",
+  "b": "Rule-making power exercised by an agency (FREC adopting 61J2 rules)."
+ },
+ {
+  "id": "F-G026",
+  "l": "L03-1",
+  "t": "term-def",
+  "f": "Define: Quasi-judicial",
+  "b": "Power of an agency to decide disputes and impose discipline (FREC final orders)."
+ },
+ {
+  "id": "F-G027",
+  "l": "L03-2",
+  "t": "term-def",
+  "f": "Define: Registration",
+  "b": "Recording a licensee's name, address, employer and status in DBPR records."
+ },
+ {
+  "id": "F-G028",
+  "l": "L03-2",
+  "t": "term-def",
+  "f": "Define: Licensure",
+  "b": "DBPR's certification that a person has met the qualifications to hold a license."
+ },
+ {
+  "id": "F-G029",
+  "l": "L03-2",
+  "t": "term-def",
+  "f": "Define: Group license",
+  "b": "Registration allowing a sales associate to work for several connected entities of one owner-developer."
+ },
+ {
+  "id": "F-G030",
+  "l": "L03-2",
+  "t": "term-def",
+  "f": "Define: Multiple licenses",
+  "b": "Separate licenses a BROKER may hold for separate, unconnected brokerages.\nNote: Sales associates cannot hold multiple licenses."
+ },
+ {
+  "id": "F-G031",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Active license",
+  "b": "License whose holder is registered with an employing broker (or, for a broker, an office) and may practice."
+ },
+ {
+  "id": "F-G032",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Voluntary inactive",
+  "b": "Status chosen by the licensee; may be renewed indefinitely with CE."
+ },
+ {
+  "id": "F-G033",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Involuntary inactive",
+  "b": "Status caused by failure to renew; expires (void) after 2 years."
+ },
+ {
+  "id": "F-G034",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Null and void",
+  "b": "The license has ceased to exist; the person must requalify."
+ },
+ {
+  "id": "F-G035",
+  "l": "L03-4",
+  "t": "term-def",
+  "f": "Define: Ineffective license",
+  "b": "A license that exists but cannot be used, e.g., a sales associate with no employing broker."
+ },
+ {
+  "id": "F-G036",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Post-licensing education",
+  "b": "45-hour course a sales associate must complete before the first renewal."
+ },
+ {
+  "id": "F-G037",
+  "l": "L03-3",
+  "t": "term-def",
+  "f": "Define: Continuing education (CE)",
+  "b": "14 hours every renewal period after the first."
+ },
+ {
+  "id": "F-G038",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Transaction broker",
+  "b": "A licensee providing limited representation to a buyer, seller or both; not a fiduciary. Presumed in Florida."
+ },
+ {
+  "id": "F-G039",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Single agent",
+  "b": "A broker who represents one party (the principal) as a fiduciary."
+ },
+ {
+  "id": "F-G040",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: No brokerage relationship",
+  "b": "A licensee works with a party without representing them; owes 3 duties."
+ },
+ {
+  "id": "F-G041",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Dual agency",
+  "b": "Acting as fiduciary agent for both buyer and seller in one transaction; prohibited in Florida."
+ },
+ {
+  "id": "F-G042",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Fiduciary",
+  "b": "A person in a relationship of trust who must put the principal's interests first."
+ },
+ {
+  "id": "F-G043",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Principal",
+  "b": "The person a single agent represents."
+ },
+ {
+  "id": "F-G044",
+  "l": "L04-1",
+  "t": "term-def",
+  "f": "Define: Customer",
+  "b": "A party a licensee works with but does not represent as a fiduciary."
+ },
+ {
+  "id": "F-G045",
+  "l": "L04-2",
+  "t": "term-def",
+  "f": "Define: Limited confidentiality",
+  "b": "Transaction-broker duty not to reveal that the seller will accept less, the buyer will pay more, a party's motivation, or other information a party asks to keep confidential."
+ },
+ {
+  "id": "F-G046",
+  "l": "L04-3",
+  "t": "term-def",
+  "f": "Define: Consent to Transition",
+  "b": "Signed consent of a principal allowing the single agent to become a transaction broker."
+ },
+ {
+  "id": "F-G047",
+  "l": "L04-3",
+  "t": "term-def",
+  "f": "Define: Residential sale",
+  "b": "Sale of ≤4 residential units, unimproved land for ≤4 units, or agricultural property ≤10 acres."
+ },
+ {
+  "id": "F-G048",
+  "l": "L04-4",
+  "t": "term-def",
+  "f": "Define: Material fact",
+  "b": "A fact that would affect a reasonable person's decision or the property's value."
+ },
+ {
+  "id": "F-G049",
+  "l": "L04-4",
+  "t": "term-def",
+  "f": "Define: Latent defect",
+  "b": "A hidden defect not discoverable by ordinary inspection."
+ },
+ {
+  "id": "F-G050",
+  "l": "L04-4",
+  "t": "term-def",
+  "f": "Define: Designated sales associate",
+  "b": "Associate appointed as single agent for one party in a nonresidential deal where each party has $1M+ in assets."
+ },
+ {
+  "id": "F-G051",
+  "l": "L05-1",
+  "t": "term-def",
+  "f": "Define: Escrow (trust) account",
+  "b": "Account holding money belonging to others (deposits, rents)."
+ },
+ {
+  "id": "F-G052",
+  "l": "L05-1",
+  "t": "term-def",
+  "f": "Define: Earnest money / binder deposit",
+  "b": "Deposit a buyer gives to show good faith, usually held in escrow.\nNote: Not the Portuguese 'sinal' — no automatic double-return rule."
+ },
+ {
+  "id": "F-G053",
+  "l": "L05-1",
+  "t": "term-def",
+  "f": "Define: Commingling",
+  "b": "Mixing personal or business funds with escrow funds."
+ },
+ {
+  "id": "F-G054",
+  "l": "L05-1",
+  "t": "term-def",
+  "f": "Define: Conversion",
+  "b": "Using escrow funds for personal or unauthorized purposes."
+ },
+ {
+  "id": "F-G055",
+  "l": "L05-2",
+  "t": "term-def",
+  "f": "Define: Escrow Disbursement Order (EDO)",
+  "b": "Order from FREC deciding who receives disputed escrow funds held by a broker."
+ },
+ {
+  "id": "F-G056",
+  "l": "L05-2",
+  "t": "term-def",
+  "f": "Define: Interpleader",
+  "b": "Lawsuit in which the broker deposits disputed funds with the court and asks it to decide who is entitled."
+ },
+ {
+  "id": "F-G057",
+  "l": "L05-2",
+  "t": "term-def",
+  "f": "Define: Mediation",
+  "b": "Non-binding process with a neutral third party; requires all parties' written consent."
+ },
+ {
+  "id": "F-G058",
+  "l": "L05-2",
+  "t": "term-def",
+  "f": "Define: Arbitration",
+  "b": "Binding decision by a neutral arbitrator; requires all parties' consent."
+ },
+ {
+  "id": "F-G059",
+  "l": "L05-3",
+  "t": "term-def",
+  "f": "Define: Blind ad",
+  "b": "Advertisement that fails to include the brokerage's registered name."
+ },
+ {
+  "id": "F-G060",
+  "l": "L05-4",
+  "t": "term-def",
+  "f": "Define: Kickback",
+  "b": "Payment for referring business; restricted by Chapter 475 and prohibited by RESPA in most residential financed deals."
+ },
+ {
+  "id": "F-G061",
+  "l": "L05-4",
+  "t": "term-def",
+  "f": "Define: Price fixing",
+  "b": "Competitors agreeing on commission rates; illegal under antitrust law."
+ },
+ {
+  "id": "F-G062",
+  "l": "L05-4",
+  "t": "term-def",
+  "f": "Define: Branch office",
+  "b": "Additional location where the broker conducts business; must be registered."
+ },
+ {
+  "id": "F-G063",
+  "l": "L06-1",
+  "t": "term-def",
+  "f": "Define: Legally sufficient complaint",
+  "b": "A complaint alleging facts that, if true, would violate a statute or rule."
+ },
+ {
+  "id": "F-G064",
+  "l": "L06-1",
+  "t": "term-def",
+  "f": "Define: Probable cause panel",
+  "b": "Panel that decides whether the investigation supports filing a formal complaint."
+ },
+ {
+  "id": "F-G065",
+  "l": "L06-1",
+  "t": "term-def",
+  "f": "Define: Administrative law judge (ALJ)",
+  "b": "Judge from the Division of Administrative Hearings who conducts formal hearings and recommends an order."
+ },
+ {
+  "id": "F-G066",
+  "l": "L06-1",
+  "t": "term-def",
+  "f": "Define: Final order",
+  "b": "FREC's decision on discipline."
+ },
+ {
+  "id": "F-G067",
+  "l": "L06-2",
+  "t": "term-def",
+  "f": "Define: Citation",
+  "b": "Fixed fine for a listed minor violation, offered instead of formal proceedings."
+ },
+ {
+  "id": "F-G068",
+  "l": "L06-2",
+  "t": "term-def",
+  "f": "Define: Notice of noncompliance",
+  "b": "Written notice for a first minor violation, letting the licensee correct it."
+ },
+ {
+  "id": "F-G069",
+  "l": "L06-2",
+  "t": "term-def",
+  "f": "Define: Culpable negligence",
+  "b": "Reckless indifference to others' rights — more than simple carelessness."
+ },
+ {
+  "id": "F-G070",
+  "l": "L06-2",
+  "t": "term-def",
+  "f": "Define: Misrepresentation",
+  "b": "False statement or concealment of a material fact."
+ },
+ {
+  "id": "F-G071",
+  "l": "L06-3",
+  "t": "term-def",
+  "f": "Define: Real Estate Recovery Fund",
+  "b": "State fund that pays consumers who cannot collect a judgment against a licensee arising from a brokerage transaction."
+ },
+ {
+  "id": "F-G072",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Steering",
+  "b": "Directing buyers or renters toward or away from areas based on a protected class."
+ },
+ {
+  "id": "F-G073",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Blockbusting (panic peddling)",
+  "b": "Inducing owners to sell by suggesting a protected class is moving in."
+ },
+ {
+  "id": "F-G074",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Redlining",
+  "b": "A lender refusing loans or changing terms in certain areas for discriminatory reasons."
+ },
+ {
+  "id": "F-G075",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Familial status",
+  "b": "Households with children under 18, pregnant women, or people obtaining custody."
+ },
+ {
+  "id": "F-G076",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Reasonable modification",
+  "b": "Physical change to a unit for a person with a disability, generally at the tenant's expense."
+ },
+ {
+  "id": "F-G077",
+  "l": "L07-1",
+  "t": "term-def",
+  "f": "Define: Reasonable accommodation",
+  "b": "Change in rules or policies for a person with a disability (e.g., assistance animal despite a no-pets rule)."
+ },
+ {
+  "id": "F-G078",
+  "l": "L07-3",
+  "t": "term-def",
+  "f": "Define: RESPA",
+  "b": "Real Estate Settlement Procedures Act: closing disclosures and anti-kickback rules for federally related residential loans."
+ },
+ {
+  "id": "F-G079",
+  "l": "L07-3",
+  "t": "term-def",
+  "f": "Define: TILA / Regulation Z",
+  "b": "Truth in Lending Act: disclosure of credit costs, APR, advertising trigger terms, right of rescission."
+ },
+ {
+  "id": "F-G080",
+  "l": "L07-3",
+  "t": "term-def",
+  "f": "Define: APR",
+  "b": "Annual percentage rate: the yearly cost of credit including interest and certain fees."
+ },
+ {
+  "id": "F-G081",
+  "l": "L07-3",
+  "t": "term-def",
+  "f": "Define: Trigger term",
+  "b": "Specific credit term in an ad (down payment amount, payment amount, number of payments, finance charge) that requires full disclosure."
+ },
+ {
+  "id": "F-G082",
+  "l": "L07-3",
+  "t": "term-def",
+  "f": "Define: TRID",
+  "b": "TILA-RESPA Integrated Disclosure rule: Loan Estimate and Closing Disclosure."
+ },
+ {
+  "id": "F-G083",
+  "l": "L07-2",
+  "t": "term-def",
+  "f": "Define: ECOA",
+  "b": "Equal Credit Opportunity Act: no credit discrimination by race, color, religion, national origin, sex, marital status, age, or public assistance income."
+ },
+ {
+  "id": "F-G084",
+  "l": "L07-2",
+  "t": "term-def",
+  "f": "Define: ADA",
+  "b": "Americans with Disabilities Act: accessibility of public accommodations and commercial facilities."
+ },
+ {
+  "id": "F-G085",
+  "l": "L07-2",
+  "t": "term-def",
+  "f": "Define: HMDA",
+  "b": "Home Mortgage Disclosure Act: lenders report lending data that reveals patterns like redlining."
+ },
+ {
+  "id": "F-G086",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Bundle of rights",
+  "b": "Ownership rights: possession, control, enjoyment, exclusion, disposition."
+ },
+ {
+  "id": "F-G087",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Freehold estate",
+  "b": "Ownership of indeterminate duration (fee simple, life estate)."
+ },
+ {
+  "id": "F-G088",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Fee simple absolute",
+  "b": "The most complete ownership, inheritable and unconditional."
+ },
+ {
+  "id": "F-G089",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Fee simple defeasible",
+  "b": "Ownership that can be lost if a stated condition occurs or is breached."
+ },
+ {
+  "id": "F-G090",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Life estate",
+  "b": "Ownership limited to the life of a person.\nNote: Similar in purpose to usufruto, but a distinct legal form."
+ },
+ {
+  "id": "F-G091",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Pur autre vie",
+  "b": "Life estate measured by the life of someone other than the life tenant."
+ },
+ {
+  "id": "F-G092",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Remainder / remainderman",
+  "b": "Future interest passing to a third party when a life estate ends."
+ },
+ {
+  "id": "F-G093",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Reversion",
+  "b": "Future interest returning to the grantor (or heirs) when a life estate ends."
+ },
+ {
+  "id": "F-G094",
+  "l": "L08-1",
+  "t": "term-def",
+  "f": "Define: Waste",
+  "b": "Damage or neglect by a life tenant that harms the future interest."
+ },
+ {
+  "id": "F-G095",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Leasehold (nonfreehold) estate",
+  "b": "Right of possession under a lease, without ownership."
+ },
+ {
+  "id": "F-G096",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Estate for years",
+  "b": "Lease for a fixed term (any length); ends without notice."
+ },
+ {
+  "id": "F-G097",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Periodic tenancy",
+  "b": "Lease renewing period to period (week, month, quarter, year) until notice."
+ },
+ {
+  "id": "F-G098",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Tenancy at will",
+  "b": "Tenancy of indefinite duration terminable by proper notice."
+ },
+ {
+  "id": "F-G099",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Tenancy at sufferance",
+  "b": "Holdover tenant who stays without the landlord's consent."
+ },
+ {
+  "id": "F-G100",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Gross lease",
+  "b": "Tenant pays fixed rent; landlord pays operating expenses."
+ },
+ {
+  "id": "F-G101",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Net lease",
+  "b": "Tenant pays rent plus some or all property expenses (triple net: taxes, insurance, maintenance)."
+ },
+ {
+  "id": "F-G102",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Percentage lease",
+  "b": "Rent includes a percentage of the tenant's gross sales, usually above a base rent."
+ },
+ {
+  "id": "F-G103",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Ground lease",
+  "b": "Long-term lease of land on which the tenant builds."
+ },
+ {
+  "id": "F-G104",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Assignment",
+  "b": "Transfer of the ENTIRE remaining lease term."
+ },
+ {
+  "id": "F-G105",
+  "l": "L08-2",
+  "t": "term-def",
+  "f": "Define: Sublease",
+  "b": "Transfer of part of the remaining term or part of the space."
+ },
+ {
+  "id": "F-G106",
+  "l": "L08-3",
+  "t": "term-def",
+  "f": "Define: Tenancy in common",
+  "b": "Co-ownership with undivided, possibly unequal shares and no survivorship."
+ },
+ {
+  "id": "F-G107",
+  "l": "L08-3",
+  "t": "term-def",
+  "f": "Define: Joint tenancy with right of survivorship",
+  "b": "Co-ownership with the four unities; deceased owner's share passes to survivors."
+ },
+ {
+  "id": "F-G108",
+  "l": "L08-3",
+  "t": "term-def",
+  "f": "Define: Tenancy by the entireties",
+  "b": "Ownership by a married couple as one unit; survivorship; protected from one spouse's creditors."
+ },
+ {
+  "id": "F-G109",
+  "l": "L08-3",
+  "t": "term-def",
+  "f": "Define: PITT (four unities)",
+  "b": "Possession, Interest, Time, Title."
+ },
+ {
+  "id": "F-G110",
+  "l": "L08-3",
+  "t": "term-def",
+  "f": "Define: Partition",
+  "b": "Court action to divide co-owned property or force its sale."
+ },
+ {
+  "id": "F-G111",
+  "l": "L08-4",
+  "t": "term-def",
+  "f": "Define: Homestead",
+  "b": "A Florida owner's primary residence, with creditor protection, transfer restrictions, and tax exemption."
+ },
+ {
+  "id": "F-G112",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: Condominium",
+  "b": "Ownership of a unit in fee simple plus an undivided share of common elements, created by a recorded declaration."
+ },
+ {
+  "id": "F-G113",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: Common elements",
+  "b": "Parts of a condominium owned in common (lobby, pool, roof)."
+ },
+ {
+  "id": "F-G114",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: Cooperative",
+  "b": "A corporation owns the building; residents own shares and hold proprietary leases (personal property)."
+ },
+ {
+  "id": "F-G115",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: Proprietary lease",
+  "b": "Lease giving a co-op shareholder the right to occupy a unit."
+ },
+ {
+  "id": "F-G116",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: Timeshare",
+  "b": "Right to use a unit for a set period each year."
+ },
+ {
+  "id": "F-G117",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: HOA",
+  "b": "Homeowners' association: mandatory-membership community governed by recorded covenants."
+ },
+ {
+  "id": "F-G118",
+  "l": "L08-5",
+  "t": "term-def",
+  "f": "Define: CDD",
+  "b": "Community Development District: special-purpose local government that finances community infrastructure through assessments."
+ },
+ {
+  "id": "F-G119",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Title",
+  "b": "Ownership and the evidence of it."
+ },
+ {
+  "id": "F-G120",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Escheat",
+  "b": "Property passing to the state when an owner dies without a will or heirs."
+ },
+ {
+  "id": "F-G121",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Eminent domain",
+  "b": "Government's power to take private property for public use with just compensation (condemnation)."
+ },
+ {
+  "id": "F-G122",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Adverse possession",
+  "b": "Acquiring title by open, notorious, hostile, continuous possession for 7 years in Florida plus color of title or payment of taxes."
+ },
+ {
+  "id": "F-G123",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Color of title",
+  "b": "A document that appears to give title but is defective."
+ },
+ {
+  "id": "F-G124",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Testate / intestate",
+  "b": "Dying with / without a valid will."
+ },
+ {
+  "id": "F-G125",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Devise / devisee",
+  "b": "Gift of real property by will / its recipient."
+ },
+ {
+  "id": "F-G126",
+  "l": "L09-1",
+  "t": "term-def",
+  "f": "Define: Descent",
+  "b": "Transfer of an intestate's property to heirs under statute."
+ },
+ {
+  "id": "F-G127",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Grantor / grantee",
+  "b": "The person conveying / receiving title by deed."
+ },
+ {
+  "id": "F-G128",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: General warranty deed",
+  "b": "Grantor warrants title against defects from any time."
+ },
+ {
+  "id": "F-G129",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Special warranty deed",
+  "b": "Grantor warrants only against defects arising during their ownership."
+ },
+ {
+  "id": "F-G130",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Bargain and sale deed",
+  "b": "Implies the grantor owns the property but gives no warranties."
+ },
+ {
+  "id": "F-G131",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Quitclaim deed",
+  "b": "Conveys whatever interest the grantor has, with no warranties."
+ },
+ {
+  "id": "F-G132",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Cloud on title",
+  "b": "A claim or defect that impairs title."
+ },
+ {
+  "id": "F-G133",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Acknowledgment",
+  "b": "Formal declaration before a notary that the signer signed voluntarily; needed to record."
+ },
+ {
+  "id": "F-G134",
+  "l": "L09-2",
+  "t": "term-def",
+  "f": "Define: Seisin",
+  "b": "Covenant that the grantor owns the property and has the right to convey it."
+ },
+ {
+  "id": "F-G135",
+  "l": "L09-3",
+  "t": "term-def",
+  "f": "Define: Constructive notice",
+  "b": "Notice the law presumes from public records or visible possession."
+ },
+ {
+  "id": "F-G136",
+  "l": "L09-3",
+  "t": "term-def",
+  "f": "Define: Actual notice",
+  "b": "What a person actually knows."
+ },
+ {
+  "id": "F-G137",
+  "l": "L09-3",
+  "t": "term-def",
+  "f": "Define: Abstract of title",
+  "b": "Summary of all recorded documents affecting a property's title."
+ },
+ {
+  "id": "F-G138",
+  "l": "L09-3",
+  "t": "term-def",
+  "f": "Define: Title insurance",
+  "b": "Policy protecting against losses from title defects existing before the policy date."
+ },
+ {
+  "id": "F-G139",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Encumbrance",
+  "b": "Any claim or limitation on title (lien, easement, restriction, encroachment)."
+ },
+ {
+  "id": "F-G140",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Lien",
+  "b": "A claim against property as security for a debt."
+ },
+ {
+  "id": "F-G141",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Specific lien",
+  "b": "Lien on one property (mortgage, property tax, construction lien)."
+ },
+ {
+  "id": "F-G142",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: General lien",
+  "b": "Lien on all the debtor's property (judgment, IRS lien)."
+ },
+ {
+  "id": "F-G143",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Subordination",
+  "b": "A lienholder agreeing to a lower priority."
+ },
+ {
+  "id": "F-G144",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Easement appurtenant",
+  "b": "Easement benefiting an adjoining parcel (dominant) over a burdened parcel (servient); runs with the land."
+ },
+ {
+  "id": "F-G145",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Easement in gross",
+  "b": "Easement benefiting a person or company (e.g., utility), not a parcel."
+ },
+ {
+  "id": "F-G146",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Easement by prescription",
+  "b": "Easement acquired by 20 years of open, continuous, adverse use in Florida."
+ },
+ {
+  "id": "F-G147",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: License (land use)",
+  "b": "Revocable personal permission to use land; not an interest in land.\nNote: Different meaning from a real estate license."
+ },
+ {
+  "id": "F-G148",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Encroachment",
+  "b": "A structure or improvement extending onto another's land."
+ },
+ {
+  "id": "F-G149",
+  "l": "L09-4",
+  "t": "term-def",
+  "f": "Define: Deed restriction (restrictive covenant)",
+  "b": "Private limitation on use recorded in a deed or plat."
+ },
+ {
+  "id": "F-G150",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Fixture",
+  "b": "Personal property attached to real property so that it becomes part of it."
+ },
+ {
+  "id": "F-G151",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Trade fixture",
+  "b": "Item a business tenant installs for its trade; remains the tenant's personal property."
+ },
+ {
+  "id": "F-G152",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Emblements",
+  "b": "Annual crops produced by labor; personal property."
+ },
+ {
+  "id": "F-G153",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Riparian rights",
+  "b": "Rights of owners along rivers and streams."
+ },
+ {
+  "id": "F-G154",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Littoral rights",
+  "b": "Rights of owners along oceans, seas and large lakes."
+ },
+ {
+  "id": "F-G155",
+  "l": "L09-5",
+  "t": "term-def",
+  "f": "Define: Accretion / avulsion",
+  "b": "Gradual addition of land by water deposits (owner gains) / sudden loss or change (boundary does not move)."
+ },
+ {
+  "id": "F-G156",
+  "l": "L10-1",
+  "t": "term-def",
+  "f": "Define: Metes and bounds",
+  "b": "Description using a point of beginning, directions (courses) and distances, returning to the POB."
+ },
+ {
+  "id": "F-G157",
+  "l": "L10-1",
+  "t": "term-def",
+  "f": "Define: Point of beginning (POB)",
+  "b": "Starting and ending point of a metes-and-bounds description."
+ },
+ {
+  "id": "F-G158",
+  "l": "L10-1",
+  "t": "term-def",
+  "f": "Define: Lot and block",
+  "b": "Description by lot and block numbers on a recorded plat."
+ },
+ {
+  "id": "F-G159",
+  "l": "L10-1",
+  "t": "term-def",
+  "f": "Define: Plat",
+  "b": "Recorded map of a subdivision."
+ },
+ {
+  "id": "F-G160",
+  "l": "L10-1",
+  "t": "term-def",
+  "f": "Define: Government (rectangular) survey",
+  "b": "System of townships and sections measured from principal meridians and base lines."
+ },
+ {
+  "id": "F-G161",
+  "l": "L10-2",
+  "t": "term-def",
+  "f": "Define: Township",
+  "b": "6 × 6 mile square, 36 sections."
+ },
+ {
+  "id": "F-G162",
+  "l": "L10-2",
+  "t": "term-def",
+  "f": "Define: Section",
+  "b": "1 square mile, 640 acres."
+ },
+ {
+  "id": "F-G163",
+  "l": "L14-2",
+  "t": "term-def",
+  "f": "Define: Front foot",
+  "b": "A foot of frontage along a street or water; the first dimension given."
+ },
+ {
+  "id": "F-G164",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Bilateral contract",
+  "b": "Promise for a promise (e.g., sale contract)."
+ },
+ {
+  "id": "F-G165",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Unilateral contract",
+  "b": "Promise for an act (e.g., option, reward)."
+ },
+ {
+  "id": "F-G166",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Executory / executed",
+  "b": "Obligations still to perform / fully performed."
+ },
+ {
+  "id": "F-G167",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Void / voidable / unenforceable",
+  "b": "No contract at all / one party may cancel / valid but courts won't enforce."
+ },
+ {
+  "id": "F-G168",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Statute of frauds",
+  "b": "Law requiring certain contracts (sale of real estate, >1 year) to be written and signed."
+ },
+ {
+  "id": "F-G169",
+  "l": "L11-1",
+  "t": "term-def",
+  "f": "Define: Consideration",
+  "b": "Something of value exchanged; mutual promises suffice."
+ },
+ {
+  "id": "F-G170",
+  "l": "L11-2",
+  "t": "term-def",
+  "f": "Define: Counteroffer",
+  "b": "A response that changes the terms; it rejects and terminates the original offer."
+ },
+ {
+  "id": "F-G171",
+  "l": "L11-2",
+  "t": "term-def",
+  "f": "Define: Option",
+  "b": "Contract giving the optionee the right to buy at set terms during a period; optionor is bound."
+ },
+ {
+  "id": "F-G172",
+  "l": "L11-2",
+  "t": "term-def",
+  "f": "Define: Equitable title",
+  "b": "Buyer's interest under a signed sale contract before closing."
+ },
+ {
+  "id": "F-G173",
+  "l": "L11-2",
+  "t": "term-def",
+  "f": "Define: Specific performance",
+  "b": "Court order to perform the contract as agreed."
+ },
+ {
+  "id": "F-G174",
+  "l": "L11-2",
+  "t": "term-def",
+  "f": "Define: Liquidated damages",
+  "b": "Damages agreed in advance (often the deposit)."
+ },
+ {
+  "id": "F-G175",
+  "l": "L11-3",
+  "t": "term-def",
+  "f": "Define: Procuring cause",
+  "b": "The broker whose efforts started an uninterrupted chain of events leading to the sale."
+ },
+ {
+  "id": "F-G176",
+  "l": "L11-3",
+  "t": "term-def",
+  "f": "Define: Open listing",
+  "b": "Listing given to several brokers; only the procuring broker is paid; owner may sell free."
+ },
+ {
+  "id": "F-G177",
+  "l": "L11-3",
+  "t": "term-def",
+  "f": "Define: Exclusive agency listing",
+  "b": "One brokerage; owner keeps the right to sell without commission."
+ },
+ {
+  "id": "F-G178",
+  "l": "L11-3",
+  "t": "term-def",
+  "f": "Define: Exclusive right of sale",
+  "b": "One brokerage earns the commission no matter who sells."
+ },
+ {
+  "id": "F-G179",
+  "l": "L11-3",
+  "t": "term-def",
+  "f": "Define: Net listing",
+  "b": "Broker keeps any amount above the seller's net price."
+ },
+ {
+  "id": "F-G180",
+  "l": "L11-4",
+  "t": "term-def",
+  "f": "Define: Effective date",
+  "b": "Date the last party signs or initials the final offer/counteroffer and it is communicated; contract deadlines run from it."
+ },
+ {
+  "id": "F-G181",
+  "l": "L11-4",
+  "t": "term-def",
+  "f": "Define: Time is of the essence",
+  "b": "Clause making contract deadlines strict."
+ },
+ {
+  "id": "F-G182",
+  "l": "L11-4",
+  "t": "term-def",
+  "f": "Define: AS IS contract",
+  "b": "Seller makes no repairs; buyer may inspect and cancel within the inspection period."
+ },
+ {
+  "id": "F-G183",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Promissory note",
+  "b": "The borrower's written promise to repay the debt."
+ },
+ {
+  "id": "F-G184",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Mortgage",
+  "b": "Security instrument pledging property for a debt.\nNote: In US usage 'mortgage' is the document, not the loan."
+ },
+ {
+  "id": "F-G185",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Mortgagor / mortgagee",
+  "b": "Borrower (gives the mortgage) / lender (receives it)."
+ },
+ {
+  "id": "F-G186",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Lien theory",
+  "b": "The borrower keeps title; the lender holds a lien (Florida)."
+ },
+ {
+  "id": "F-G187",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Acceleration clause",
+  "b": "Lets the lender demand the entire balance on default."
+ },
+ {
+  "id": "F-G188",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Due-on-sale (alienation) clause",
+  "b": "Balance becomes due if the property is transferred."
+ },
+ {
+  "id": "F-G189",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Defeasance clause",
+  "b": "The mortgage is defeated (cancelled) when the debt is paid."
+ },
+ {
+  "id": "F-G190",
+  "l": "L12-1",
+  "t": "term-def",
+  "f": "Define: Exculpatory clause",
+  "b": "Borrower not personally liable; lender looks only to the property."
+ },
+ {
+  "id": "F-G191",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Assumption",
+  "b": "Buyer takes over the loan and becomes personally liable."
+ },
+ {
+  "id": "F-G192",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Novation",
+  "b": "Substitution of a new party that releases the original borrower."
+ },
+ {
+  "id": "F-G193",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Subject to",
+  "b": "Buyer takes title and pays the loan without personal liability."
+ },
+ {
+  "id": "F-G194",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Equity of redemption",
+  "b": "Borrower's right to pay off the debt and stop foreclosure until the sale."
+ },
+ {
+  "id": "F-G195",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Deficiency judgment",
+  "b": "Judgment for the unpaid balance after a foreclosure sale."
+ },
+ {
+  "id": "F-G196",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Short sale",
+  "b": "Sale where the lender accepts less than the amount owed."
+ },
+ {
+  "id": "F-G197",
+  "l": "L12-2",
+  "t": "term-def",
+  "f": "Define: Deed in lieu of foreclosure",
+  "b": "Borrower deeds the property to the lender to avoid foreclosure; junior liens survive."
+ },
+ {
+  "id": "F-G198",
+  "l": "L12-3",
+  "t": "term-def",
+  "f": "Define: PITI",
+  "b": "Principal, interest, taxes, insurance — the monthly housing payment."
+ },
+ {
+  "id": "F-G199",
+  "l": "L12-3",
+  "t": "term-def",
+  "f": "Define: Usury",
+  "b": "Charging interest above the legal maximum."
+ },
+ {
+  "id": "F-G200",
+  "l": "L14-5",
+  "t": "term-def",
+  "f": "Define: LTV",
+  "b": "Loan-to-value ratio: loan ÷ lesser of price or appraised value."
+ },
+ {
+  "id": "F-G201",
+  "l": "L13-1",
+  "t": "term-def",
+  "f": "Define: FHA",
+  "b": "Federal Housing Administration (HUD): insures loans; borrower pays MIP."
+ },
+ {
+  "id": "F-G202",
+  "l": "L13-1",
+  "t": "term-def",
+  "f": "Define: VA",
+  "b": "Department of Veterans Affairs: guarantees loans to eligible veterans."
+ },
+ {
+  "id": "F-G203",
+  "l": "L13-1",
+  "t": "term-def",
+  "f": "Define: PMI",
+  "b": "Private mortgage insurance on conventional loans above 80% LTV."
+ },
+ {
+  "id": "F-G204",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Amortized loan",
+  "b": "Level payments covering interest and principal until fully repaid."
+ },
+ {
+  "id": "F-G205",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Balloon payment",
+  "b": "Large final payment on a partially amortized loan."
+ },
+ {
+  "id": "F-G206",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: ARM",
+  "b": "Adjustable-rate mortgage: rate = index + margin, limited by caps."
+ },
+ {
+  "id": "F-G207",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Package mortgage",
+  "b": "Covers real and personal property."
+ },
+ {
+  "id": "F-G208",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Blanket mortgage",
+  "b": "Covers several parcels; release clause frees parcels as paid."
+ },
+ {
+  "id": "F-G209",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Wraparound mortgage",
+  "b": "New junior loan that includes an existing loan."
+ },
+ {
+  "id": "F-G210",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Purchase-money mortgage",
+  "b": "Seller finances part of the price."
+ },
+ {
+  "id": "F-G211",
+  "l": "L13-2",
+  "t": "term-def",
+  "f": "Define: Reverse mortgage",
+  "b": "Lender pays an owner aged 62+; repaid on sale, move-out or death."
+ },
+ {
+  "id": "F-G212",
+  "l": "L13-3",
+  "t": "term-def",
+  "f": "Define: Primary market",
+  "b": "Lenders who originate loans."
+ },
+ {
+  "id": "F-G213",
+  "l": "L13-3",
+  "t": "term-def",
+  "f": "Define: Secondary market",
+  "b": "Buyers of existing loans (Fannie Mae, Freddie Mac, Ginnie Mae guarantees)."
+ },
+ {
+  "id": "F-G214",
+  "l": "L13-3",
+  "t": "term-def",
+  "f": "Define: Disintermediation",
+  "b": "Depositors withdrawing funds for higher yields elsewhere, reducing mortgage money."
+ },
+ {
+  "id": "F-G215",
+  "l": "L13-3",
+  "t": "term-def",
+  "f": "Define: Discount points",
+  "b": "Prepaid interest: 1 point = 1% of the loan."
+ },
+ {
+  "id": "F-G216",
+  "l": "L14-7",
+  "t": "term-def",
+  "f": "Define: Proration",
+  "b": "Dividing an expense or income between buyer and seller as of closing."
+ },
+ {
+  "id": "F-G217",
+  "l": "L14-7",
+  "t": "term-def",
+  "f": "Define: In arrears",
+  "b": "Paid at the end of the period (Florida property taxes, mortgage interest)."
+ },
+ {
+  "id": "F-G218",
+  "l": "L14-7",
+  "t": "term-def",
+  "f": "Define: In advance",
+  "b": "Paid at the start of the period (rent, insurance premiums)."
+ },
+ {
+  "id": "F-G219",
+  "l": "L14-8",
+  "t": "term-def",
+  "f": "Define: Debit",
+  "b": "An amount a party owes at closing."
+ },
+ {
+  "id": "F-G220",
+  "l": "L14-8",
+  "t": "term-def",
+  "f": "Define: Credit",
+  "b": "An amount a party receives at closing."
+ },
+ {
+  "id": "F-G221",
+  "l": "L14-6",
+  "t": "term-def",
+  "f": "Define: Documentary stamp tax",
+  "b": "Florida excise tax on deeds ($0.70/$100) and notes ($0.35/$100)."
+ },
+ {
+  "id": "F-G222",
+  "l": "L14-6",
+  "t": "term-def",
+  "f": "Define: Intangible tax",
+  "b": "Florida one-time tax of 2 mills on new mortgages."
+ },
+ {
+  "id": "F-G223",
+  "l": "L15-1",
+  "t": "term-def",
+  "f": "Define: CMA",
+  "b": "Comparative market analysis by a licensee to suggest a price range."
+ },
+ {
+  "id": "F-G224",
+  "l": "L15-1",
+  "t": "term-def",
+  "f": "Define: BPO",
+  "b": "Broker price opinion, often for lenders; chargeable but not an appraisal."
+ },
+ {
+  "id": "F-G225",
+  "l": "L16-1",
+  "t": "term-def",
+  "f": "Define: Market value",
+  "b": "Most probable price in an arm's-length sale between informed parties under no unusual pressure."
+ },
+ {
+  "id": "F-G226",
+  "l": "L16-1",
+  "t": "term-def",
+  "f": "Define: Highest and best use",
+  "b": "Legally permissible, physically possible, financially feasible, maximally productive use."
+ },
+ {
+  "id": "F-G227",
+  "l": "L16-1",
+  "t": "term-def",
+  "f": "Define: Substitution",
+  "b": "A buyer won't pay more than the cost of an equally desirable substitute."
+ },
+ {
+  "id": "F-G228",
+  "l": "L16-1",
+  "t": "term-def",
+  "f": "Define: Plottage / assemblage",
+  "b": "Value increase from combining parcels / the act of combining them."
+ },
+ {
+  "id": "F-G229",
+  "l": "L16-4",
+  "t": "term-def",
+  "f": "Define: Reconciliation",
+  "b": "Weighing the approaches to reach a final value estimate (not averaging)."
+ },
+ {
+  "id": "F-G230",
+  "l": "L16-3",
+  "t": "term-def",
+  "f": "Define: Reproduction cost",
+  "b": "Cost of an exact replica."
+ },
+ {
+  "id": "F-G231",
+  "l": "L16-3",
+  "t": "term-def",
+  "f": "Define: Replacement cost",
+  "b": "Cost of a building with equal utility using current materials."
+ },
+ {
+  "id": "F-G232",
+  "l": "L16-3",
+  "t": "term-def",
+  "f": "Define: Functional obsolescence",
+  "b": "Loss from outdated design or features."
+ },
+ {
+  "id": "F-G233",
+  "l": "L16-3",
+  "t": "term-def",
+  "f": "Define: External (economic) obsolescence",
+  "b": "Loss from factors outside the property; always incurable."
+ },
+ {
+  "id": "F-G234",
+  "l": "L16-4",
+  "t": "term-def",
+  "f": "Define: NOI",
+  "b": "Net operating income: effective gross income minus operating expenses."
+ },
+ {
+  "id": "F-G235",
+  "l": "L16-4",
+  "t": "term-def",
+  "f": "Define: Capitalization rate",
+  "b": "NOI ÷ value."
+ },
+ {
+  "id": "F-G236",
+  "l": "L16-4",
+  "t": "term-def",
+  "f": "Define: GRM / GIM",
+  "b": "Gross rent multiplier (price ÷ monthly rent) / gross income multiplier (price ÷ annual income)."
+ },
+ {
+  "id": "F-G237",
+  "l": "L16-4",
+  "t": "term-def",
+  "f": "Define: USPAP",
+  "b": "Uniform Standards of Professional Appraisal Practice."
+ },
+ {
+  "id": "F-G238",
+  "l": "L17-1",
+  "t": "term-def",
+  "f": "Define: Leverage",
+  "b": "Using borrowed money to increase return on equity."
+ },
+ {
+  "id": "F-G239",
+  "l": "L17-1",
+  "t": "term-def",
+  "f": "Define: Cash flow",
+  "b": "NOI minus debt service."
+ },
+ {
+  "id": "F-G240",
+  "l": "L17-2",
+  "t": "term-def",
+  "f": "Define: Business opportunity brokerage",
+  "b": "Selling a business (goodwill, inventory, fixtures, possibly real estate)."
+ },
+ {
+  "id": "F-G241",
+  "l": "L17-2",
+  "t": "term-def",
+  "f": "Define: Goodwill",
+  "b": "Intangible value of a business's reputation and customer base."
+ },
+ {
+  "id": "F-G242",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: Ad valorem",
+  "b": "According to value."
+ },
+ {
+  "id": "F-G243",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: Just value",
+  "b": "Florida's term for market value used by the property appraiser."
+ },
+ {
+  "id": "F-G244",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: TRIM notice",
+  "b": "Truth in Millage notice showing proposed assessments and rates (August)."
+ },
+ {
+  "id": "F-G245",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: Value Adjustment Board (VAB)",
+  "b": "County board that hears property assessment appeals."
+ },
+ {
+  "id": "F-G246",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: Tax certificate",
+  "b": "Lien sold to an investor to collect delinquent property taxes."
+ },
+ {
+  "id": "F-G247",
+  "l": "L18-1",
+  "t": "term-def",
+  "f": "Define: Special assessment",
+  "b": "Charge on properties specially benefited by a public improvement."
+ },
+ {
+  "id": "F-G248",
+  "l": "L18-2",
+  "t": "term-def",
+  "f": "Define: Millage",
+  "b": "Tax rate in mills (1 mill = $1 per $1,000 of taxable value)."
+ },
+ {
+  "id": "F-G249",
+  "l": "L18-2",
+  "t": "term-def",
+  "f": "Define: Save Our Homes",
+  "b": "Cap on annual homestead assessment increases (3% or CPI, whichever is less)."
+ },
+ {
+  "id": "F-G250",
+  "l": "L18-3",
+  "t": "term-def",
+  "f": "Define: Basis / adjusted basis",
+  "b": "Cost of property / cost plus improvements minus depreciation."
+ },
+ {
+  "id": "F-G251",
+  "l": "L18-3",
+  "t": "term-def",
+  "f": "Define: 1031 exchange",
+  "b": "Tax-deferred exchange of like-kind investment or business real property."
+ },
+ {
+  "id": "F-G252",
+  "l": "L18-3",
+  "t": "term-def",
+  "f": "Define: Boot",
+  "b": "Non-like-kind value received in an exchange; taxable to the extent of gain."
+ },
+ {
+  "id": "F-G253",
+  "l": "L18-3",
+  "t": "term-def",
+  "f": "Define: Installment sale",
+  "b": "Seller receives payments over time and reports gain as received."
+ },
+ {
+  "id": "F-G254",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Police power",
+  "b": "Government power to regulate for health, safety and welfare; no compensation owed."
+ },
+ {
+  "id": "F-G255",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Inverse condemnation",
+  "b": "Owner's lawsuit claiming a regulation amounts to a taking."
+ },
+ {
+  "id": "F-G256",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Comprehensive plan",
+  "b": "Local government's long-range land-use plan; zoning implements it."
+ },
+ {
+  "id": "F-G257",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Variance",
+  "b": "Permission to deviate from a dimensional rule because of hardship unique to the parcel."
+ },
+ {
+  "id": "F-G258",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Special exception (conditional use)",
+  "b": "Use allowed in a zone with case-by-case approval."
+ },
+ {
+  "id": "F-G259",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Nonconforming use",
+  "b": "Lawful use that predates current zoning ('grandfathered')."
+ },
+ {
+  "id": "F-G260",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: PUD",
+  "b": "Planned unit development mixing uses with clustered density and open space."
+ },
+ {
+  "id": "F-G261",
+  "l": "L19-1",
+  "t": "term-def",
+  "f": "Define: Certificate of occupancy",
+  "b": "Document allowing a building to be occupied after final inspection."
+ },
+ {
+  "id": "F-G262",
+  "l": "L19-2",
+  "t": "term-def",
+  "f": "Define: CERCLA (Superfund)",
+  "b": "Federal law imposing strict, joint and several liability for cleaning up contaminated sites."
+ },
+ {
+  "id": "F-G263",
+  "l": "L19-2",
+  "t": "term-def",
+  "f": "Define: Brownfield",
+  "b": "Abandoned or underused contaminated site being redeveloped."
+ },
+ {
+  "id": "F-G264",
+  "l": "L19-2",
+  "t": "term-def",
+  "f": "Define: Radon",
+  "b": "Naturally occurring radioactive gas; Florida requires a disclosure in sale and lease contracts."
+ },
+ {
+  "id": "F-PT-01",
+  "l": "L01-1",
+  "t": "pt-fl",
+  "src": "PT-01",
+  "f": "A licensed Florida brokerage hires an unlicensed assistant and pays $150 for every buyer she shows a home to. Lawful?",
+  "b": "No. Showing property for compensation per transaction is a real estate service for another for compensation; she needs a license. A salary for clerical work only would be lawful."
+ },
+ {
+  "id": "F-PT-02",
+  "l": "L01-1",
+  "t": "pt-fl",
+  "src": "PT-02",
+  "f": "Who issues a Florida real estate license, and who may revoke it?",
+  "b": "The DBPR issues it; the FREC may revoke it (after due process)."
+ },
+ {
+  "id": "F-PT-03",
+  "l": "L02-3",
+  "t": "pt-fl",
+  "src": "PT-03",
+  "f": "A licensee misses the 45-hour post-license course before the first renewal. Result?",
+  "b": "The license becomes null and void; to practice again they must requalify from the 63-hour course and exam."
+ },
+ {
+  "id": "F-PT-04",
+  "l": "L04-1",
+  "t": "pt-fl",
+  "src": "PT-04",
+  "f": "A Florida broker acts as single agent for a seller and wants to work with a buyer on the same property. What is required?",
+  "b": "The seller's written consent to transition to transaction broker before the change; the broker then acts as transaction broker for both parties."
+ },
+ {
+  "id": "F-PT-05",
+  "l": "L11-3",
+  "t": "pt-fl",
+  "src": "PT-05",
+  "f": "Which three requirements apply to every written listing in Florida?",
+  "b": "A definite expiration date; no automatic renewal clause; a copy delivered to the person signing within 24 hours."
+ },
+ {
+  "id": "F-PT-06",
+  "l": "L11-3",
+  "t": "pt-fl",
+  "src": "PT-06",
+  "f": "May a Florida sales associate sue the buyer directly for an unpaid commission?",
+  "b": "No. The associate's claim is against the employing broker; only the broker can sue the party who owes the brokerage fee."
+ },
+ {
+  "id": "F-PT-07",
+  "l": "L05-1",
+  "t": "pt-fl",
+  "src": "PT-07",
+  "f": "The buyer defaults on a Florida contract. Does the seller receive double the deposit?",
+  "b": "No. The seller's remedy depends on the contract (often the deposit as liquidated damages). The broker releases escrowed funds only per the contract, written agreement, or a settlement procedure."
+ },
+ {
+  "id": "F-PT-08",
+  "l": "L11-2",
+  "t": "pt-fl",
+  "src": "PT-08",
+  "f": "What does a buyer hold between contract and closing?",
+  "b": "Equitable title."
+ },
+ {
+  "id": "F-PT-09",
+  "l": "L14-6",
+  "t": "pt-fl",
+  "src": "PT-09",
+  "f": "Who customarily pays deed stamps in Florida, and on what amount?",
+  "b": "The seller, on the full purchase price (including any mortgage assumed), at $0.70 per $100 or portion."
+ },
+ {
+  "id": "F-PT-10",
+  "l": "L18-1",
+  "t": "pt-fl",
+  "src": "PT-10",
+  "f": "Why can a homestead's school taxable value be higher than its non-school taxable value?",
+  "b": "The additional homestead exemption applies only to non-school levies."
+ },
+ {
+  "id": "F-PT-11",
+  "l": "L09-3",
+  "t": "pt-fl",
+  "src": "PT-11",
+  "f": "Is recording required for a Florida deed to be valid between grantor and grantee?",
+  "b": "No. Delivery and acceptance make it valid; recording gives constructive notice to the world."
+ },
+ {
+  "id": "F-PT-12",
+  "l": "L09-2",
+  "t": "pt-fl",
+  "src": "PT-12",
+  "f": "Which deed best cures a cloud on title?",
+  "b": "A quitclaim deed."
+ },
+ {
+  "id": "F-PT-13",
+  "l": "L08-3",
+  "t": "pt-fl",
+  "src": "PT-13",
+  "f": "A married couple takes title 'John and Mary Smith, husband and wife'. John dies. Who owns the property?",
+  "b": "Mary, automatically, by survivorship under tenancy by the entireties."
+ },
+ {
+  "id": "F-PT-14",
+  "l": "L08-5",
+  "t": "pt-fl",
+  "src": "PT-14",
+  "f": "Which buyer owns real property: the condo buyer or the co-op buyer?",
+  "b": "The condo buyer."
+ },
+ {
+  "id": "F-PT-15",
+  "l": "L08-1",
+  "t": "pt-fl",
+  "src": "PT-15",
+  "f": "A life tenant leases the property for 10 years and dies after 2. What happens to the lease?",
+  "b": "It ends at the life tenant's death; the life tenant could only convey what she had."
+ },
+ {
+  "id": "F-PT-16",
+  "l": "L08-4",
+  "t": "pt-fl",
+  "src": "PT-16",
+  "f": "Which creditor can force the sale of a Florida homestead: a credit-card judgment creditor or the county for unpaid property taxes?",
+  "b": "The county for unpaid property taxes."
+ },
+ {
+  "id": "F-PT-17",
+  "l": "L14-2",
+  "t": "pt-fl",
+  "src": "PT-17",
+  "f": "How many acres is a 435,600 sq ft parcel?",
+  "b": "10 acres (435,600 ÷ 43,560)."
+ },
+ {
+  "id": "F-PT-18",
+  "l": "L12-3",
+  "t": "pt-fl",
+  "src": "PT-18",
+  "f": "Which income figure do qualifying ratios use?",
+  "b": "Gross monthly income."
+ },
+ {
+  "id": "F-PT-19",
+  "l": "L12-2",
+  "t": "pt-fl",
+  "src": "PT-19",
+  "f": "Does a deed in lieu of foreclosure wipe out a second mortgage?",
+  "b": "No. The lender takes title subject to junior liens; only foreclosure can eliminate them."
+ },
+ {
+  "id": "F-PT-20",
+  "l": "L07-1",
+  "t": "pt-fl",
+  "src": "PT-20",
+  "f": "A landlord with a 4-unit building who lives in one unit refuses to rent to a family with children and uses no broker or ads. Which exemption might apply?",
+  "b": "The 'Mrs. Murphy' owner-occupied (≤4 units) exemption under the federal FHA — but never for race, and lost if a broker or discriminatory ad is used."
+ },
+ {
+  "id": "F-PT-21",
+  "l": "L05-3",
+  "t": "pt-fl",
+  "src": "PT-21",
+  "f": "Does a sales associate's personal Facebook ad for a listing need the brokerage name?",
+  "b": "Yes."
+ },
+ {
+  "id": "F-PT-22",
+  "l": "L07-4",
+  "t": "pt-fl",
+  "src": "PT-22",
+  "f": "How much notice ends a quarter-to-quarter tenancy without a specific term?",
+  "b": "At least 30 days before the end of the quarter."
+ },
+ {
+  "id": "F-PT-23",
+  "l": "L11-4",
+  "t": "pt-fl",
+  "src": "PT-23",
+  "f": "Is a Florida seller required to obtain an energy rating of the home before listing?",
+  "b": "No. The requirement is to provide the energy-efficiency information brochure to the buyer."
+ }
+]
