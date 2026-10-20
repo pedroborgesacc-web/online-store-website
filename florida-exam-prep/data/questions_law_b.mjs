@@ -49,9 +49,9 @@ export const questions = [
   // ── L05-3 Advertising ──
   { id: "Q0503-01", l: "L05-3", o: 0, d: 1, t: "mcq",
     q: "An advertisement for a listed property that does not include the brokerage firm's registered name is a:",
-    c: ["net advertisement", "blind advertisement", "lawful ad if the associate's phone number appears", "citation-free violation"],
+    c: ["net advertisement", "blind advertisement", "lawful ad if the associate's phone number appears", "lawful ad if the property address appears"],
     a: 1, ex: "Omitting the registered brokerage name makes it a blind ad, in any medium.",
-    w: { 0: ["CONFUSED", "'Net' refers to a listing type."], 2: ["RULE", "The brokerage name is required regardless of other contact information."], 3: ["RULE", "Blind ads are violations."] } },
+    w: { 0: ["CONFUSED", "'Net' refers to a listing type."], 2: ["RULE", "The brokerage name is required regardless of other contact information."], 3: ["RULE", "The brokerage name is required whatever else the ad shows."] } },
   { id: "Q0503-02", l: "L05-3", o: 1, d: 2, t: "scn",
     q: "A homeowner (not a licensee) posts her own house for sale on social media with her phone number. Must the ad include a brokerage name?",
     c: ["Yes, every real estate advertisement must include a brokerage name","No, an owner advertising her own property has no brokerage to name","Yes, unless the asking price is under $500,000, when owners are exempt","Only if she plans to pay a commission to a buyer's broker at closing"],
@@ -80,7 +80,7 @@ export const questions = [
     a: 1, ex: "A broker may rebate part of the commission to a party to the transaction with disclosure. Payments to unlicensed persons for real estate services are unlawful; an associate cannot pay or receive compensation except through the broker.",
     w: { 0: ["QUALIFIER", "Per-closing pay to an unlicensed person is compensation for real estate services."], 2: ["RULE", "Compensation must flow through the employing broker."], 3: ["RULE", "Paying unlicensed persons for referrals of business is not allowed."] } },
   { id: "Q0504-04", l: "L05-4", o: 2, d: 2, t: "mcq", num: ["N-047"], v: "V-21",
-    q: "A prospective tenant paid $200 for a rental list but did not obtain a rental. She demands a refund within 30 days. How much must be returned (the list was accurate)?",
+    q: "A prospective tenant paid $200 for a rental list but did not obtain a rental. She asks for a refund. How much must be returned (the list was accurate)?",
     c: ["$0", "$50", "$150", "$200"],
     a: 2, ex: "If no rental is obtained, the tenant gets back any amount over 25% of the fee: 75% × $200 = $150. If the list was inaccurate, the full fee is refundable.",
     w: { 0: ["RULE", "A refund is required when no rental is obtained."], 1: ["CONFUSED", "$50 is the 25% the broker may keep."], 3: ["CONFUSED", "The full fee is refundable only if the information was inaccurate."] } },
@@ -187,7 +187,7 @@ export const questions = [
   { id: "Q0702-02", l: "L07-2", o: 1, d: 2, t: "scn", num: ["N-064"],
     q: "Which call to a number on the National Do Not Call Registry is permitted?",
     c: ["Calling an expired listing of another brokerage", "Calling a customer who closed a purchase with you 14 months ago", "Calling someone who inquired about a listing 6 months ago", "Calling a FSBO seller you have never met"],
-    a: 1, ex: "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule states the same windows as 540 days and 90 days).",
+    a: 1, ex: "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule uses roughly equivalent windows of 540 days and 90 days).",
     w: { 0: ["RULE", "You have no business relationship with another brokerage's expired listing."], 2: ["NUMBER", "An inquiry creates a relationship for only 3 months."], 3: ["RULE", "No relationship or permission exists."] } },
   { id: "Q0702-03", l: "L07-2", o: 0, d: 2, t: "mcq",
     q: "Under ECOA, a lender may NOT deny credit because the applicant:",
@@ -219,7 +219,7 @@ export const questions = [
 
   // ── L07-4 Landlord & tenant ──
   { id: "Q0704-01", l: "L07-4", o: 1, d: 1, t: "mcq", num: ["N-069"],
-    q: "A landlord intends to keep part of a tenant's security deposit. Within how many days after the tenant moves out must the landlord send notice by certified mail?",
+    q: "A landlord intends to keep part of a tenant's security deposit. Within how many days after the rental agreement ends must the landlord send written notice of the claim?",
     c: ["7", "15", "30", "60"],
     a: 2, ex: "Return within 15 days if no claim; send notice of a claim within 30 days (by certified mail, or by e-mail if both parties signed the e-mail addendum, since July 1, 2025); the tenant has 15 days to object.",
     w: { 0: ["NUMBER", "It is 30 days."], 1: ["CONFUSED", "15 days is the return deadline when no claim is made, and the tenant's objection window."], 3: ["NUMBER", "It is 30 days."] } },

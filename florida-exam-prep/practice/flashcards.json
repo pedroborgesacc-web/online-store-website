@@ -3099,8 +3099,8 @@
   "l": "L05-1",
   "t": "pt-fl",
   "src": "PT-07",
-  "f": "The buyer defaults on a Florida contract. Does the seller receive double the deposit?",
-  "b": "No. The seller's remedy depends on the contract (often the deposit as liquidated damages). The broker releases escrowed funds only per the contract, written agreement, or a settlement procedure."
+  "f": "The seller defaults on a Florida contract. Does the buyer automatically receive double the deposit?",
+  "b": "No. Florida has no automatic double-deposit rule. What the buyer recovers depends on the contract's default clause, and the broker releases escrowed funds only per the contract, a written agreement of the parties, or a settlement procedure."
  },
  {
   "id": "F-PT-08",

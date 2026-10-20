@@ -74,7 +74,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L03-1 · FREC and DBPR: structure and powers
 
-- Type: legal · Priority: high · ~25 min · Content: core
+- Type: legal · Priority: high · ~25 min · Content: full
 - Manual: M1 §FREC and DBPR
 - Prerequisites: L01-1
 - Objectives:
@@ -85,7 +85,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L03-2 · License types, registration, group and multiple licenses
 
-- Type: legal · Priority: medium · ~25 min · Content: core
+- Type: legal · Priority: medium · ~25 min · Content: full
 - Manual: M1 §License categories
 - Prerequisites: L03-1
 - Objectives:
@@ -96,7 +96,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L03-3 · Keeping the license: post-license, renewal, CE and license status
 
-- Type: legal · Priority: high · ~35 min · Content: core
+- Type: legal · Priority: high · ~35 min · Content: full
 - Manual: M1 §Keeping the license alive; §Status map
 - Prerequisites: L03-2
 - Objectives:
@@ -108,7 +108,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L03-4 · Licensee duties to the DBPR: address, convictions, changing brokers
 
-- Type: legal · Priority: high · ~20 min · Content: core
+- Type: legal · Priority: high · ~20 min · Content: full
 - Manual: M1 §Keeping the license alive; §Status map
 - Prerequisites: L03-3
 - Objectives:
@@ -123,7 +123,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L04-1 · The three brokerage relationships and the transaction-broker presumption
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M2 §The three relationships
 - Prerequisites: L03-2
 - Objectives:
@@ -134,7 +134,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L04-2 · The duty lists: 3, 7 and 9
 
-- Type: legal · Priority: high · ~35 min · Content: core
+- Type: legal · Priority: high · ~35 min · Content: full
 - Manual: M2 §The duty lists
 - Prerequisites: L04-1
 - Objectives:
@@ -146,7 +146,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L04-3 · Disclosure notices: timing, transitions, scope and exceptions
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M2 §Disclosures, transitions
 - Prerequisites: L04-2
 - Objectives:
@@ -158,7 +158,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L04-4 · Material facts, designated sales associates, and ending relationships
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M2 §Duties that never go away; §Designated sales associates; §How relationships begin and end
 - Prerequisites: L04-2
 - Objectives:
@@ -173,7 +173,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L05-1 · Escrow accounts and the deposit clock
 
-- Type: legal · Priority: high · ~35 min · Content: core
+- Type: legal · Priority: high · ~35 min · Content: full
 - Manual: M3 §Escrow accounts
 - Prerequisites: L03-2
 - Objectives:
@@ -184,7 +184,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L05-2 · Conflicting demands and settlement procedures
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M3 §Conflicting demands
 - Prerequisites: L05-1
 - Objectives:
@@ -195,7 +195,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L05-3 · Advertising rules
 
-- Type: legal · Priority: high · ~20 min · Content: core
+- Type: legal · Priority: high · ~20 min · Content: full
 - Manual: M3 §Advertising
 - Prerequisites: L05-1
 - Objectives:
@@ -205,7 +205,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L05-4 · Offices, signs, compensation, kickbacks and rental lists
 
-- Type: legal · Priority: medium · ~30 min · Content: core
+- Type: legal · Priority: medium · ~30 min · Content: full
 - Manual: M3 §Offices, signs; §Rental lists, kickbacks
 - Prerequisites: L05-1
 - Objectives:
@@ -221,7 +221,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L06-1 · The complaint process
 
-- Type: legal · Priority: high · ~25 min · Content: core
+- Type: legal · Priority: high · ~25 min · Content: full
 - Manual: M4 §The complaint pipeline
 - Prerequisites: L03-1
 - Objectives:
@@ -232,7 +232,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L06-2 · Penalties and the violation vocabulary
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M4 §The penalty menu; §Violation vocabulary
 - Prerequisites: L06-1
 - Objectives:
@@ -244,7 +244,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L06-3 · The Real Estate Recovery Fund
 
-- Type: legal · Priority: high · ~20 min · Content: core
+- Type: legal · Priority: high · ~20 min · Content: full
 - Manual: M4 §The Real Estate Recovery Fund
 - Prerequisites: L06-2
 - Objectives:
@@ -259,7 +259,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L07-1 · Fair housing
 
-- Type: legal · Priority: high · ~35 min · Content: core
+- Type: legal · Priority: high · ~35 min · Content: full
 - Manual: M5 §Fair housing
 - Prerequisites: L01-1
 - Objectives:
@@ -271,7 +271,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L07-2 · ADA, ECOA, HMDA and marketing rules (Do Not Call, CAN-SPAM, fax)
 
-- Type: legal · Priority: medium · ~25 min · Content: core
+- Type: legal · Priority: medium · ~25 min · Content: full
 - Manual: M5 §Telemarketing; §ECOA, ADA
 - Prerequisites: L07-1
 - Objectives:
@@ -282,7 +282,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L07-3 · RESPA and TILA (TRID)
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M5 §RESPA and TILA
 - Prerequisites: L07-1
 - Objectives:
@@ -293,7 +293,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L07-4 · Florida Residential Landlord and Tenant Act
 
-- Type: legal · Priority: high · ~25 min · Content: core
+- Type: legal · Priority: high · ~25 min · Content: full
 - Manual: M5 §Florida Residential Landlord and Tenant Act
 - Prerequisites: L07-1
 - Objectives:
@@ -309,7 +309,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L08-1 · Freehold estates and the bundle of rights
 
-- Type: conceptual · Priority: high · ~30 min · Content: core
+- Type: conceptual · Priority: high · ~30 min · Content: full
 - Manual: M6 §Freehold estates; M7 §bundle of rights
 - Prerequisites: L01-1
 - Objectives:
@@ -320,7 +320,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L08-2 · Leasehold estates, lease types, assignment and sublease
 
-- Type: conceptual · Priority: medium · ~30 min · Content: core
+- Type: conceptual · Priority: medium · ~30 min · Content: full
 - Manual: M6 §Freehold estates (leasehold); §Leases as instruments
 - Prerequisites: L08-1
 - Objectives:
@@ -331,7 +331,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L08-3 · Co-ownership: tenancy in common, joint tenancy, tenancy by the entireties
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M6 §Co-ownership
 - Prerequisites: L08-1
 - Objectives:
@@ -342,7 +342,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L08-4 · Florida homestead: creditor protection and transfer restrictions
 
-- Type: legal · Priority: high · ~25 min · Content: core
+- Type: legal · Priority: high · ~25 min · Content: full
 - Manual: M6 §Florida homestead
 - Prerequisites: L08-3
 - Objectives:
@@ -353,7 +353,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L08-5 · Condominiums, cooperatives, timeshares, HOAs and CDDs
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M6 §Condominiums, cooperatives, timeshares, HOAs
 - Prerequisites: L08-1
 - Objectives:
@@ -368,7 +368,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L09-1 · Acquiring and losing title
 
-- Type: legal · Priority: medium · ~25 min · Content: core
+- Type: legal · Priority: medium · ~25 min · Content: full
 - Manual: M7 §Acquiring and conveying title; §Wills
 - Prerequisites: L08-1
 - Objectives:
@@ -379,7 +379,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L09-2 · Deeds: types and requirements
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M7 §Deeds
 - Prerequisites: L09-1
 - Objectives:
@@ -390,7 +390,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L09-3 · Notice, recording and title evidence
 
-- Type: legal · Priority: medium · ~20 min · Content: core
+- Type: legal · Priority: medium · ~20 min · Content: full
 - Manual: M7 §Notice, recording, and title evidence
 - Prerequisites: L09-2
 - Objectives:
@@ -400,7 +400,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L09-4 · Encumbrances: liens, easements, encroachments and restrictions
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M7 §Encumbrances
 - Prerequisites: L09-3
 - Objectives:
@@ -411,7 +411,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L09-5 · Fixtures and water rights
 
-- Type: conceptual · Priority: medium · ~20 min · Content: core
+- Type: conceptual · Priority: medium · ~20 min · Content: full
 - Manual: M7 §Wills, water, and what is part of the land
 - Prerequisites: L08-1
 - Objectives:
@@ -425,7 +425,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L10-1 · The three legal description systems
 
-- Type: conceptual · Priority: high · ~25 min · Content: core
+- Type: conceptual · Priority: high · ~25 min · Content: full
 - Manual: M7 §Legal descriptions
 - Prerequisites: L09-2
 - Objectives:
@@ -435,7 +435,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L10-2 · Townships, sections and land measurement
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M7 §Legal descriptions and section arithmetic
 - Prerequisites: L10-1, L14-1
 - Objectives:
@@ -450,7 +450,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L11-1 · Contract essentials, classifications and enforceability
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M8 §Formation and enforceability
 - Prerequisites: L01-1
 - Objectives:
@@ -461,7 +461,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L11-2 · Offers, counteroffers, options, equitable title and remedies
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M8 §Offers, counteroffers, options
 - Prerequisites: L11-1
 - Objectives:
@@ -472,7 +472,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L11-3 · Listing agreements
 
-- Type: legal · Priority: high · ~25 min · Content: core
+- Type: legal · Priority: high · ~25 min · Content: full
 - Manual: M8 §Listings
 - Prerequisites: L11-1, L04-1
 - Objectives:
@@ -483,7 +483,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L11-4 · Florida contract forms and required disclosures
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M8 §Inside the Florida contract forms
 - Prerequisites: L11-2
 - Objectives:
@@ -498,7 +498,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L12-1 · The note, the mortgage and mortgage clauses
 
-- Type: conceptual · Priority: high · ~30 min · Content: core
+- Type: conceptual · Priority: high · ~30 min · Content: full
 - Manual: M9 §The documents and Florida's theory
 - Prerequisites: L11-1
 - Objectives:
@@ -509,7 +509,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L12-2 · Assumption, default and foreclosure
 
-- Type: legal · Priority: high · ~30 min · Content: core
+- Type: legal · Priority: high · ~30 min · Content: full
 - Manual: M9 §Transfers, default & foreclosure
 - Prerequisites: L12-1
 - Objectives:
@@ -520,7 +520,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L12-3 · Qualifying the borrower, usury and predatory lending
 
-- Type: calculation · Priority: high · ~30 min · Content: core
+- Type: calculation · Priority: high · ~30 min · Content: full
 - Manual: M9 §Qualifying the borrower
 - Prerequisites: L12-1, L14-1
 - Objectives:
@@ -570,7 +570,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-1 · Math foundations: decimals, fractions, percentages and the percent triangle
 
-- Type: calculation · Priority: high · ~40 min · Content: core
+- Type: calculation · Priority: high · ~40 min · Content: full
 - Manual: M10 §The twelve patterns (pattern 1)
 - Prerequisites: none
 - Objectives:
@@ -581,7 +581,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-2 · Area, perimeter and unit conversions
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M10 §pattern 11
 - Prerequisites: L14-1
 - Objectives:
@@ -591,7 +591,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-3 · Commissions and net to seller
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M10 §patterns 2–3
 - Prerequisites: L14-1
 - Objectives:
@@ -601,7 +601,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-4 · Profit, loss and appreciation
 
-- Type: calculation · Priority: high · ~30 min · Content: core
+- Type: calculation · Priority: high · ~30 min · Content: full
 - Manual: M10 §pattern 4; §Percentage of change
 - Prerequisites: L14-1
 - Objectives:

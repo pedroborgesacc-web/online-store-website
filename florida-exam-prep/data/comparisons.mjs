@@ -88,8 +88,8 @@ export const comparisons = [
     ex: "Buyer gives your associate a $20,000 check on Friday. Associate must deliver it to the broker by end of Monday; broker must deposit it by end of Wednesday (no holidays).",
     exam: "Count BUSINESS days. Do not apply the double-deposit rule.",
     aid: "Sinal doubles in Portugal; escrow clocks run in Florida.",
-    pq: "The buyer defaults on a Florida contract. Does the seller receive double the deposit?",
-    pa: "No. The seller's remedy depends on the contract (often the deposit as liquidated damages). The broker releases escrowed funds only per the contract, written agreement, or a settlement procedure.",
+    pq: "The seller defaults on a Florida contract. Does the buyer automatically receive double the deposit?",
+    pa: "No. Florida has no automatic double-deposit rule. What the buyer recovers depends on the contract's default clause, and the broker releases escrowed funds only per the contract, a written agreement of the parties, or a settlement procedure.",
     ptv: "verified: Código Civil art. 442 (diariodarepublica.pt)",
   },
   {

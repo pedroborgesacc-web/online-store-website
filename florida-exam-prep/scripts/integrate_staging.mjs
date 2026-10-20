@@ -1,5 +1,5 @@
 // Replaces lesson blocks in lessons/chNN.md with full lessons from staging/<LessonId>.md.
-// Usage: node scripts/integrate_staging.mjs [--dry]
+// Usage: node scripts/integrate_staging.mjs [--dry] [--only L03-1,L03-2,...]
 // A staged file must start with "<!-- lesson: <id> | content: full -->" and is only
 // used when the lesson currently exists in a chapter file.
 import fs from "node:fs";
@@ -7,12 +7,15 @@ import path from "node:path";
 
 const ROOT = path.dirname(path.dirname(new URL(import.meta.url).pathname));
 const dry = process.argv.includes("--dry");
+const oi = process.argv.indexOf("--only");
+const only = oi > 0 ? new Set(process.argv[oi + 1].split(",")) : null;
 const MARK = /<!--\s*lesson:\s*([A-Z0-9-]+)\s*\|\s*content:\s*(full|core)\s*-->/g;
 const stageDir = path.join(ROOT, "staging");
 const staged = new Map();
 for (const f of fs.existsSync(stageDir) ? fs.readdirSync(stageDir) : []) {
   if (!f.endsWith(".md")) continue;
   const id = f.slice(0, -3);
+  if (only && !only.has(id)) continue;
   const text = fs.readFileSync(path.join(stageDir, f), "utf8").trim();
   const first = text.split("\n")[0];
   if (first !== `<!-- lesson: ${id} | content: full -->`) { console.error(`skip ${f}: bad first line: ${first}`); continue; }

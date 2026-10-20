@@ -162,11 +162,11 @@ No. The associate's claim is against the employing broker; only the broker can s
 
 **Memory aid.** Sinal doubles in Portugal; escrow clocks run in Florida.
 
-**Practice question.** The buyer defaults on a Florida contract. Does the seller receive double the deposit?
+**Practice question.** The seller defaults on a Florida contract. Does the buyer automatically receive double the deposit?
 
 <details><summary>Answer</summary>
 
-No. The seller's remedy depends on the contract (often the deposit as liquidated damages). The broker releases escrowed funds only per the contract, written agreement, or a settlement procedure.
+No. Florida has no automatic double-deposit rule. What the buyer recovers depends on the contract's default clause, and the broker releases escrowed funds only per the contract, a written agreement of the parties, or a settlement procedure.
 
 </details>
 

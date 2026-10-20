@@ -1413,7 +1413,7 @@
   "d": 2,
   "t": "mcq",
   "v": "V-20",
-  "q": "Which situation does NOT require a brokerage relationship disclosure?",
+  "q": "The brokerage relationship disclosure requirements apply to residential sales. In which situation do they NOT apply at all?",
   "c": [
    "Showing a buyer a single-family home after she called the office about the listing",
    "Answering general questions at a bona fide open house, with no confidential or price talk",
@@ -1421,7 +1421,7 @@
    "Showing a buyer an unimproved lot that is zoned for one single-family home"
   ],
   "a": 1,
-  "ex": "Bona fide open houses with no confidential information, offer, or representation agreement are exempt. The other choices are residential sales activities.",
+  "ex": "Bona fide open houses with no confidential information, offer, or representation agreement are exempt. The other choices are residential sales activities, where the rules apply (a notice is then needed if the licensee acts as a single agent or with no brokerage relationship; the transaction-broker default needs none).",
   "w": {
    "0": [
     "RULE",
@@ -1858,7 +1858,7 @@
    "net advertisement",
    "blind advertisement",
    "lawful ad if the associate's phone number appears",
-   "citation-free violation"
+   "lawful ad if the property address appears"
   ],
   "a": 1,
   "ex": "Omitting the registered brokerage name makes it a blind ad, in any medium.",
@@ -1873,7 +1873,7 @@
    ],
    "3": [
     "RULE",
-    "Blind ads are violations."
+    "The brokerage name is required whatever else the ad shows."
    ]
   }
  },
@@ -2037,7 +2037,7 @@
    "N-047"
   ],
   "v": "V-21",
-  "q": "A prospective tenant paid $200 for a rental list but did not obtain a rental. She demands a refund within 30 days. How much must be returned (the list was accurate)?",
+  "q": "A prospective tenant paid $200 for a rental list but did not obtain a rental. She asks for a refund. How much must be returned (the list was accurate)?",
   "c": [
    "$0",
    "$50",
@@ -2638,7 +2638,7 @@
    "Calling a FSBO seller you have never met"
   ],
   "a": 1,
-  "ex": "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule states the same windows as 540 days and 90 days).",
+  "ex": "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule uses roughly equivalent windows of 540 days and 90 days).",
   "w": {
    "0": [
     "RULE",
@@ -2819,7 +2819,7 @@
   "num": [
    "N-069"
   ],
-  "q": "A landlord intends to keep part of a tenant's security deposit. Within how many days after the tenant moves out must the landlord send notice by certified mail?",
+  "q": "A landlord intends to keep part of a tenant's security deposit. Within how many days after the rental agreement ends must the landlord send written notice of the claim?",
   "c": [
    "7",
    "15",
@@ -3347,7 +3347,7 @@
    "Nothing, if the loan is under $100,000"
   ],
   "a": 1,
-  "ex": "When the owner is married, the spouse must join in any conveyance or mortgage of the homestead.",
+  "ex": "When the owner is married, the spouse must join in any conveyance or mortgage of the homestead (manual statement; not yet verified against the constitution's text).",
   "w": {
    "0": [
     "QUALIFIER",
@@ -3443,7 +3443,7 @@
    "15 days"
   ],
   "a": 2,
-  "ex": "10 days, and the right cannot be waived.",
+  "ex": "Until midnight of the 10th calendar day after the later of signing the contract or receiving the last required document; the right cannot be waived (s. 721.10).",
   "w": {
    "0": [
     "NUMBER",
@@ -3925,7 +3925,7 @@
   "o": 0,
   "d": 2,
   "t": "scn",
-  "q": "A restaurant tenant bolted its pizza ovens to the floor. The lease ends and the building is sold. Who owns the ovens?",
+  "q": "A restaurant tenant bolted its pizza ovens to the floor. Before the lease ends, the landlord sells the building. Who owns the ovens?",
   "c": [
    "The landlord, because the ovens are bolted to the floor",
    "The building buyer, because fixtures pass with the deed",
@@ -4538,7 +4538,7 @@
    "The listing price"
   ],
   "a": 1,
-  "ex": "Written listings must have a definite expiration date and may not contain automatic renewal; a copy goes to the seller within 24 hours.",
+  "ex": "Written listings must have a definite expiration date and may not require the seller to give notice to cancel after it (no automatic renewal); a copy goes to the person signing within 24 hours.",
   "w": {
    "0": [
     "MISREAD",
@@ -4563,7 +4563,7 @@
   "num": [
    "N-112"
   ],
-  "q": "After a seller signs a written listing agreement, a copy must be given to the seller within:",
+  "q": "After a seller signs a written listing agreement, a copy must be given to the person signing within:",
   "c": [
    "24 hours",
    "3 business days",
@@ -4571,7 +4571,7 @@
    "10 days"
   ],
   "a": 0,
-  "ex": "Within 24 hours.",
+  "ex": "Within 24 hours of obtaining the written listing agreement (s. 475.25(1)(r)).",
   "w": {
    "1": [
     "CONFUSED",
@@ -4717,15 +4717,15 @@
   "o": 1,
   "d": 1,
   "t": "mcq",
-  "q": "Florida's radon gas disclosure must appear:",
+  "q": "Florida's radon gas notice is required:",
   "c": [
-   "only in contracts for homes built before 1978",
-   "in contracts for the sale or rental of any building",
-   "only in condominium contracts",
+   "only for homes built before 1978",
+   "for the sale or rental of any building",
+   "only for condominium units",
    "only when radon has been detected"
   ],
   "a": 1,
-  "ex": "Florida requires a radon notice at or before contract for the sale or rental of any building.",
+  "ex": "s. 404.056(5): the statutory radon notice must appear on at least one document signed at or before the sale contract or rental agreement for any building.",
   "w": {
    "0": [
     "CONFUSED",
@@ -5415,14 +5415,14 @@
   "o": 1,
   "d": 2,
   "t": "num",
-  "q": "A broker earned a $9,450 commission at a 6% rate. What was the sale price?",
-  "ans": 157500,
+  "q": "A broker earned an $11,340 commission at a 6% rate. What was the sale price?",
+  "ans": 189000,
   "tol": 0.5,
   "unit": "$",
-  "calc": "9450/0.06",
+  "calc": "11340/0.06",
   "steps": [
    "Part = Total × Rate, so Total = Part ÷ Rate.",
-   "$9,450 ÷ 0.06 = $157,500."
+   "$11,340 ÷ 0.06 = $189,000."
   ],
   "ex": "When the rate is applied to the unknown, divide.",
   "w": {}
@@ -5433,14 +5433,14 @@
   "o": 2,
   "d": 2,
   "t": "num",
-  "q": "A lot bought for $80,000 sells for $92,000. What is the percentage gain?",
-  "ans": 15,
+  "q": "A lot bought for $75,000 sells for $87,000. What is the percentage gain?",
+  "ans": 16,
   "tol": 0.01,
   "unit": "%",
-  "calc": "(92000-80000)/80000*100",
+  "calc": "(87000-75000)/75000*100",
   "steps": [
-   "Change = $92,000 − $80,000 = $12,000.",
-   "Divide by the ORIGINAL value: $12,000 ÷ $80,000 = 0.15 = 15%."
+   "Change = $87,000 − $75,000 = $12,000.",
+   "Divide by the ORIGINAL value: $12,000 ÷ $75,000 = 0.16 = 16%."
   ],
   "ex": "Percentage change always uses the starting value as the base.",
   "w": {}
@@ -5595,7 +5595,7 @@
   "o": 1,
   "d": 3,
   "t": "num",
-  "q": "A seller wants to net $300,000 after paying a 6% commission and $4,500 of other closing costs. What is the minimum sale price (to the nearest dollar)?",
+  "q": "A seller wants to net $300,000 after paying a 6% commission and $4,500 of other closing costs. What sale price is needed, rounded to the nearest dollar?",
   "ans": 323936,
   "tol": 1,
   "unit": "$",
@@ -5603,7 +5603,7 @@
   "steps": [
    "Add costs that are NOT a percentage of the price to the net: $300,000 + $4,500 = $304,500.",
    "Divide by (1 − commission rate): $304,500 ÷ 0.94 = $323,936.17.",
-   "Check: $323,936 × 0.06 = $19,436; $323,936 − $19,436 − $4,500 = $300,000."
+   "Check: $323,936.17 × 0.94 = $304,500; $304,500 − $4,500 = $300,000. (Rounded to $323,936, the net is a few cents short; a strict minimum would be $323,937.)"
   ],
   "ex": "Price = (Net + fixed costs) ÷ (1 − rate). Never multiply the net by 1.06.",
   "w": {}
@@ -5633,15 +5633,15 @@
   "o": 1,
   "d": 2,
   "t": "mcq",
-  "q": "A seller wants to net $188,000 after a 6% commission (no other costs). What is the minimum sale price?",
+  "q": "A seller wants to net $253,800 after a 6% commission (no other costs). What is the minimum sale price?",
   "c": [
-   "$176,720",
-   "$199,280",
-   "$200,000",
-   "$194,000"
+   "$238,572",
+   "$269,028",
+   "$270,000",
+   "$239,434"
   ],
   "a": 2,
-  "ex": "Price = $188,000 ÷ (1 − 0.06) = $188,000 ÷ 0.94 = $200,000. Check: $200,000 − $12,000 = $188,000.",
+  "ex": "Price = $253,800 ÷ (1 − 0.06) = $253,800 ÷ 0.94 = $270,000. Check: $270,000 − $16,200 = $253,800.",
   "w": {
    "0": [
     "FORMULA",
@@ -5653,7 +5653,7 @@
    ],
    "3": [
     "FORMULA",
-    "This adds a flat $6,000 instead of computing the commission on the price."
+    "Dividing by 1.06 uses the wrong factor; divide by what the seller keeps (0.94)."
    ]
   }
  },
@@ -5663,17 +5663,17 @@
   "o": 1,
   "d": 2,
   "t": "num",
-  "q": "An investor sold a property for $276,000, a 15% profit on what she paid. What did she pay?",
-  "ans": 240000,
+  "q": "An investor sold a property for $299,000, a 15% profit on what she paid. What did she pay?",
+  "ans": 260000,
   "tol": 0.5,
   "unit": "$",
-  "calc": "276000/1.15",
+  "calc": "299000/1.15",
   "steps": [
    "Sale = Cost × (1 + profit %).",
-   "Cost = $276,000 ÷ 1.15 = $240,000.",
-   "Check: $240,000 × 1.15 = $276,000."
+   "Cost = $299,000 ÷ 1.15 = $260,000.",
+   "Check: $260,000 × 1.15 = $299,000."
   ],
-  "ex": "Divide by 1.15. Multiplying $276,000 by 0.85 gives the wrong base.",
+  "ex": "Divide by 1.15. Multiplying $299,000 by 0.85 gives the wrong base.",
   "w": {}
  },
  {
@@ -7451,7 +7451,7 @@
    "60 days"
   ],
   "a": 2,
-  "ex": "Within 30 days of receipt, the landlord gives written notice of the manner in which the deposit is held (separate account, interest-bearing account, or surety bond).",
+  "ex": "In the lease or within 30 days of receipt, the landlord discloses in writing where the deposit is held (or that a surety bond was posted) and whether interest is paid (s. 83.49(2)). Landlords who rent fewer than 5 units are exempt.",
   "w": {
    "0": [
     "NUMBER",
@@ -7481,7 +7481,7 @@
    "Only if the buyer asks for it in writing"
   ],
   "a": 0,
-  "ex": "The HOA disclosure summary must be provided before the contract is executed (manual: if not, the buyer may void the contract).",
+  "ex": "The HOA disclosure summary must be provided before the contract is executed. If it was not, the buyer may void the contract within 3 days after receiving it or before closing, whichever occurs first; the right cannot be waived and ends at closing (s. 720.401).",
   "w": {
    "1": [
     "NUMBER",
