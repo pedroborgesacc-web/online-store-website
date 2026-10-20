@@ -26,6 +26,8 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 | 2026-10-20 07:16 | Verification results integrated into `data/` (V-27 to V-80, official exam weights, numbers, questions); committed `7b95787`. Step 1 ticked. |
 | 2026-10-20 ~07:50 | Task `wabygq9tf` stopped on the session limit again (reset 12:00 UTC). Staged and structurally complete but NOT reviewed: L03-1 … L08-3 (22 lessons, batches ch03–ch08a). |
 | 2026-10-20 12:20 | New, cheaper workflow `wf_60ae246e-c60` (task `wx5kdt4vf`): agents read one compact context pack per batch (`staging/_ctx/<batch>.md`, built by `scripts/context_packs.mjs` from `scripts/workflows/lesson_batches.json`) instead of the whole manual and data files. Stages: write (13 missing batches) → adversarial review that fixes in place → independent fact audit. Script copy `scripts/workflows/lessons_from_packs.js`, args `scripts/workflows/lessons_from_packs.args.json`. |
+| 2026-10-20 ~13:15 | Task `wx5kdt4vf` stopped on the session limit (reset 17:10 UTC) after writing 10 batches (ch08b–ch15-17) plus L16-1 and L18-1. Not yet written: L16-2–4, L18-2–3, L19-1–2. No batch reviewed yet. About 175K agent tokens per writer even with context packs; the account limit allows roughly 10 agents per window. |
+| 2026-10-20 17:15 | Drafts committed under `staging/` (only `staging/_ctx/`, which contains manual text, stays ignored) so a container reset cannot lose them. They are NOT used by the app until reviewed and integrated. New run: write the 7 missing lessons, then ONE combined adversarial review + fact audit per batch (cuts the remaining agents from 41 to 22). |
 
 ## Resume rules
 
