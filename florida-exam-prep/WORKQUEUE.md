@@ -17,6 +17,8 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 
 | When (UTC) | Event |
 |---|---|
+| 2026-10-20 02:01 | Hourly routine `trig_01JxxExmx4TmaxfNt7GUBUtr` created (first wake 03:00 UTC). |
+| 2026-10-20 02:02 | Workflow run `wf_f059b2e6-5ac` (task `wpbd3ank5`) launched for steps 1–2. Script copy: `scripts/workflows/verify_and_expand.js`. Resume in this session with `Workflow({scriptPath, resumeFromRunId: "wf_f059b2e6-5ac"})`; in a fresh container, re-run the script copy with the same args (lesson batches and verification items listed in the script's call in the session transcript). |
 
 ## Resume rules
 
