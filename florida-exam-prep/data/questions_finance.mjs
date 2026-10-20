@@ -28,7 +28,7 @@ export const questions = [
   // ── L12-2 Assumption & foreclosure ──
   { id: "Q1202-01", l: "L12-2", o: 0, d: 2, t: "scn",
     q: "A buyer takes title 'subject to' the seller's existing mortgage and later stops paying. The lender forecloses and the sale leaves a deficiency. Who is personally liable for the deficiency?",
-    c: ["The buyer", "The original borrower (seller)", "Both equally", "Neither"],
+    c: ["The buyer, who took title","The original borrower (seller)","Buyer and seller equally","Neither, since the loan was foreclosed"],
     a: 1, ex: "Taking 'subject to' a mortgage creates no personal liability for the buyer; the original borrower remains liable.",
     w: { 0: ["CONFUSED", "That would be true of an assumption."], 2: ["CONFUSED", "Only the original borrower signed the note."], 3: ["RULE", "The original borrower remains liable."] } },
   { id: "Q1202-02", l: "L12-2", o: 1, d: 2, t: "mcq",
@@ -65,7 +65,7 @@ export const questions = [
     ex: "Include PITI plus recurring debts.", w: {} },
   { id: "Q1203-04", l: "L12-3", o: 2, d: 2, t: "mcq", num: ["N-121"],
     q: "Under Florida law, the maximum interest rate on a loan of $400,000 (without triggering civil usury) is:",
-    c: ["10% per year", "18% per year simple interest", "25% per year", "There is no limit"],
+    c: ["10% per year simple interest","18% per year simple interest","25% per year simple interest","No limit for loans of this size"],
     a: 1, ex: "18% per year simple interest for loans of $500,000 or less; 25% for larger loans; above 25% is criminal usury.",
     w: { 0: ["NUMBER", "It is 18%."], 2: ["CONFUSED", "25% applies to loans over $500,000."], 3: ["RULE", "Florida has usury limits."] } },
 
@@ -89,9 +89,9 @@ export const questions = [
   // ── L13-2 Loan types ──
   { id: "Q1302-01", l: "L13-2", o: 1, d: 1, t: "mcq",
     q: "A developer finances several lots under one mortgage with a clause freeing each lot when it is sold and paid down. This is a:",
-    c: ["package mortgage", "blanket mortgage with a release clause", "wraparound mortgage", "reverse mortgage"],
+    c: ["package mortgage with a release clause","blanket mortgage with a release clause","wraparound mortgage with a release clause","purchase-money mortgage"],
     a: 1, ex: "A blanket mortgage covers several parcels; the partial release clause frees lots as they are paid off.",
-    w: { 0: ["CONFUSED", "A package mortgage covers real and personal property."], 2: ["CONFUSED", "A wraparound includes an existing loan."], 3: ["CONFUSED", "A reverse mortgage pays the owner."] } },
+    w: { 0: ["CONFUSED", "A package mortgage covers real and personal property."], 2: ["CONFUSED", "A wraparound includes an existing loan."], 3: ["CONFUSED","A purchase-money mortgage is seller financing."] } },
   { id: "Q1302-02", l: "L13-2", o: 1, d: 1, t: "mcq",
     q: "A furnished condo is financed with one mortgage covering the unit and its furniture. This is a:",
     c: ["package mortgage", "blanket mortgage", "purchase-money mortgage", "construction loan"],
