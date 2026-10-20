@@ -23,10 +23,15 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 | 2026-10-20 02:25 | Script patched (targeted skeptics capped at 12 searches each with an honest `checked` flag; exam-specs batch retried, capped at 20; lesson agents forbidden to search) and run resumed as task `wvb7dw2nk` (run `wf_f059b2e6-5ac`). Exact args saved in `scripts/workflows/verify_and_expand.args.json`. |
 | 2026-10-20 02:40 | Task `wvb7dw2nk` ended: verification (64 items: 5 corrected, 56 confirmed, 3 unresolved) and all 7 skeptic re-checks completed and are cached; all 19 lesson writers failed on the account's session limit (reset 06:20 UTC). Partial drafts of L03-1, L03-2, L04-1 were discarded. |
 | 2026-10-20 07:12 | After the reset, run `wf_f059b2e6-5ac` resumed as task `wabygq9tf` (verification cached; writers, reviewers and fixers run live). Integration of the verification results into `data/` started in parallel (lesson files untouched until staging is complete). |
+| 2026-10-20 07:16 | Verification results integrated into `data/` (V-27 to V-80, official exam weights, numbers, questions); committed `7b95787`. Step 1 ticked. |
+| 2026-10-20 ~07:50 | Task `wabygq9tf` stopped on the session limit again (reset 12:00 UTC). Staged and structurally complete but NOT reviewed: L03-1 … L08-3 (22 lessons, batches ch03–ch08a). |
+| 2026-10-20 12:20 | New, cheaper workflow `wf_60ae246e-c60` (task `wx5kdt4vf`): agents read one compact context pack per batch (`staging/_ctx/<batch>.md`, built by `scripts/context_packs.mjs` from `scripts/workflows/lesson_batches.json`) instead of the whole manual and data files. Stages: write (13 missing batches) → adversarial review that fixes in place → independent fact audit. Script copy `scripts/workflows/lessons_from_packs.js`, args `scripts/workflows/lessons_from_packs.args.json`. |
 
 ## Resume rules
 
-- If the workflow run in the run log is still running, do nothing.
-- If it stopped early, resume it with `resumeFromRunId`, passing exactly the args in `scripts/workflows/verify_and_expand.args.json` (identical args keep completed agents cached).
+- If the latest workflow run in the run log is still running, do nothing.
+- If it stopped early, resume the LATEST run (`wf_60ae246e-c60`) with `resumeFromRunId`, its script path, and exactly the args in `scripts/workflows/lessons_from_packs.args.json` (identical prompts keep completed agents cached). The older run `wf_f059b2e6-5ac` is finished with: its verification results are integrated.
+- If the context packs are missing (fresh container), rebuild them first: `node scripts/context_packs.mjs <manual_expanded.md> scripts/workflows/lesson_batches.json`.
+- Integrate only batches that finished all three stages (write/review/audit): `node scripts/integrate_staging.mjs` replaces core blocks with whatever is staged, so first move unreviewed drafts out of `staging/`.
 - Web search budget: 200 calls per turn shared by every agent. Never schedule more searching agents than that budget allows; lesson agents must not search. Staging files are written by agents, so any chapter whose `staging/` files are missing after a resume must be re-run, not resumed from cache.
 - The study manual text lives in the session scratchpad (`sources/manual_expanded.md`). If the container was replaced, re-read the Google Doc "FL-Study-Manual-Expanded" (Drive file id `1Kp2wPX_zqN7AogaJV2fAQcZ45kg3A5M4mWKsbGFtx7k`).

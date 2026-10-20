@@ -1,0 +1,519 @@
+[
+ {
+  "name": "ch03",
+  "files": [
+   "ch03.md"
+  ],
+  "lessons": [
+   {
+    "id": "L03-1",
+    "title": "FREC and DBPR: structure and powers",
+    "type": "legal"
+   },
+   {
+    "id": "L03-2",
+    "title": "License types, registration, group and multiple licenses",
+    "type": "legal"
+   },
+   {
+    "id": "L03-3",
+    "title": "Keeping the license: post-license, renewal, CE and license status",
+    "type": "legal"
+   },
+   {
+    "id": "L03-4",
+    "title": "Licensee duties to the DBPR: address, convictions, changing brokers",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   1
+  ]
+ },
+ {
+  "name": "ch04",
+  "files": [
+   "ch04.md"
+  ],
+  "lessons": [
+   {
+    "id": "L04-1",
+    "title": "The three brokerage relationships and the transaction-broker presumption",
+    "type": "legal"
+   },
+   {
+    "id": "L04-2",
+    "title": "The duty lists: 3, 7 and 9",
+    "type": "legal"
+   },
+   {
+    "id": "L04-3",
+    "title": "Disclosure notices: timing, transitions, scope and exceptions",
+    "type": "legal"
+   },
+   {
+    "id": "L04-4",
+    "title": "Material facts, designated sales associates, and ending relationships",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   2
+  ]
+ },
+ {
+  "name": "ch05",
+  "files": [
+   "ch05.md"
+  ],
+  "lessons": [
+   {
+    "id": "L05-1",
+    "title": "Escrow accounts and the deposit clock",
+    "type": "legal"
+   },
+   {
+    "id": "L05-2",
+    "title": "Conflicting demands and settlement procedures",
+    "type": "legal"
+   },
+   {
+    "id": "L05-3",
+    "title": "Advertising rules",
+    "type": "legal"
+   },
+   {
+    "id": "L05-4",
+    "title": "Offices, signs, compensation, kickbacks and rental lists",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   3
+  ]
+ },
+ {
+  "name": "ch06",
+  "files": [
+   "ch06.md"
+  ],
+  "lessons": [
+   {
+    "id": "L06-1",
+    "title": "The complaint process",
+    "type": "legal"
+   },
+   {
+    "id": "L06-2",
+    "title": "Penalties and the violation vocabulary",
+    "type": "legal"
+   },
+   {
+    "id": "L06-3",
+    "title": "The Real Estate Recovery Fund",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   4
+  ]
+ },
+ {
+  "name": "ch07",
+  "files": [
+   "ch07.md"
+  ],
+  "lessons": [
+   {
+    "id": "L07-1",
+    "title": "Fair housing",
+    "type": "legal"
+   },
+   {
+    "id": "L07-2",
+    "title": "ADA, ECOA, HMDA and marketing rules (Do Not Call, CAN-SPAM, fax)",
+    "type": "legal"
+   },
+   {
+    "id": "L07-3",
+    "title": "RESPA and TILA (TRID)",
+    "type": "legal"
+   },
+   {
+    "id": "L07-4",
+    "title": "Florida Residential Landlord and Tenant Act",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   5
+  ]
+ },
+ {
+  "name": "ch08a",
+  "files": [
+   "ch08.md"
+  ],
+  "lessons": [
+   {
+    "id": "L08-1",
+    "title": "Freehold estates and the bundle of rights",
+    "type": "conceptual"
+   },
+   {
+    "id": "L08-2",
+    "title": "Leasehold estates, lease types, assignment and sublease",
+    "type": "conceptual"
+   },
+   {
+    "id": "L08-3",
+    "title": "Co-ownership: tenancy in common, joint tenancy, tenancy by the entireties",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   6,
+   7
+  ]
+ },
+ {
+  "name": "ch08b",
+  "files": [
+   "ch08.md"
+  ],
+  "lessons": [
+   {
+    "id": "L08-4",
+    "title": "Florida homestead: creditor protection and transfer restrictions",
+    "type": "legal"
+   },
+   {
+    "id": "L08-5",
+    "title": "Condominiums, cooperatives, timeshares, HOAs and CDDs",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   6
+  ]
+ },
+ {
+  "name": "ch09a",
+  "files": [
+   "ch09.md"
+  ],
+  "lessons": [
+   {
+    "id": "L09-1",
+    "title": "Acquiring and losing title",
+    "type": "legal"
+   },
+   {
+    "id": "L09-2",
+    "title": "Deeds: types and requirements",
+    "type": "legal"
+   },
+   {
+    "id": "L09-3",
+    "title": "Notice, recording and title evidence",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   7
+  ]
+ },
+ {
+  "name": "ch09b",
+  "files": [
+   "ch09.md"
+  ],
+  "lessons": [
+   {
+    "id": "L09-4",
+    "title": "Encumbrances: liens, easements, encroachments and restrictions",
+    "type": "legal"
+   },
+   {
+    "id": "L09-5",
+    "title": "Fixtures and water rights",
+    "type": "conceptual"
+   }
+  ],
+  "manualChapters": [
+   7
+  ]
+ },
+ {
+  "name": "ch10",
+  "files": [
+   "ch10.md"
+  ],
+  "lessons": [
+   {
+    "id": "L10-1",
+    "title": "The three legal description systems",
+    "type": "conceptual"
+   },
+   {
+    "id": "L10-2",
+    "title": "Townships, sections and land measurement",
+    "type": "calculation"
+   }
+  ],
+  "manualChapters": [
+   7
+  ]
+ },
+ {
+  "name": "ch11",
+  "files": [
+   "ch11.md"
+  ],
+  "lessons": [
+   {
+    "id": "L11-1",
+    "title": "Contract essentials, classifications and enforceability",
+    "type": "legal"
+   },
+   {
+    "id": "L11-2",
+    "title": "Offers, counteroffers, options, equitable title and remedies",
+    "type": "legal"
+   },
+   {
+    "id": "L11-3",
+    "title": "Listing agreements",
+    "type": "legal"
+   },
+   {
+    "id": "L11-4",
+    "title": "Florida contract forms and required disclosures",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   8
+  ]
+ },
+ {
+  "name": "ch12",
+  "files": [
+   "ch12.md"
+  ],
+  "lessons": [
+   {
+    "id": "L12-1",
+    "title": "The note, the mortgage and mortgage clauses",
+    "type": "conceptual"
+   },
+   {
+    "id": "L12-2",
+    "title": "Assumption, default and foreclosure",
+    "type": "legal"
+   },
+   {
+    "id": "L12-3",
+    "title": "Qualifying the borrower, usury and predatory lending",
+    "type": "calculation"
+   }
+  ],
+  "manualChapters": [
+   9
+  ]
+ },
+ {
+  "name": "ch13",
+  "files": [
+   "ch13.md"
+  ],
+  "lessons": [
+   {
+    "id": "L13-1",
+    "title": "FHA, VA and conventional loans",
+    "type": "conceptual"
+   },
+   {
+    "id": "L13-2",
+    "title": "Loan types by repayment and purpose",
+    "type": "conceptual"
+   },
+   {
+    "id": "L13-3",
+    "title": "Primary and secondary markets, the Fed, and discount points",
+    "type": "conceptual"
+   }
+  ],
+  "manualChapters": [
+   9
+  ]
+ },
+ {
+  "name": "ch14a",
+  "files": [
+   "ch14.md"
+  ],
+  "lessons": [
+   {
+    "id": "L14-1",
+    "title": "Math foundations: decimals, fractions, percentages and the percent triangle",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-2",
+    "title": "Area, perimeter and unit conversions",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-3",
+    "title": "Commissions and net to seller",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-4",
+    "title": "Profit, loss and appreciation",
+    "type": "calculation"
+   }
+  ],
+  "manualChapters": [
+   10
+  ]
+ },
+ {
+  "name": "ch14b",
+  "files": [
+   "ch14.md"
+  ],
+  "lessons": [
+   {
+    "id": "L14-5",
+    "title": "Interest, amortization, LTV and points",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-6",
+    "title": "Florida transfer taxes: documentary stamps and intangible tax",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-7",
+    "title": "Prorations",
+    "type": "calculation"
+   },
+   {
+    "id": "L14-8",
+    "title": "The closing statement: debits and credits",
+    "type": "calculation"
+   }
+  ],
+  "manualChapters": [
+   10
+  ]
+ },
+ {
+  "name": "ch15-17",
+  "files": [
+   "ch15.md",
+   "ch17.md"
+  ],
+  "lessons": [
+   {
+    "id": "L15-1",
+    "title": "Real estate markets, supply and demand, and pricing tools",
+    "type": "conceptual"
+   },
+   {
+    "id": "L17-1",
+    "title": "Investment analysis",
+    "type": "conceptual"
+   },
+   {
+    "id": "L17-2",
+    "title": "Business opportunity brokerage",
+    "type": "conceptual"
+   }
+  ],
+  "manualChapters": [
+   11,
+   12
+  ]
+ },
+ {
+  "name": "ch16",
+  "files": [
+   "ch16.md"
+  ],
+  "lessons": [
+   {
+    "id": "L16-1",
+    "title": "Value: characteristics and principles",
+    "type": "conceptual"
+   },
+   {
+    "id": "L16-2",
+    "title": "Sales comparison approach",
+    "type": "calculation"
+   },
+   {
+    "id": "L16-3",
+    "title": "Cost approach and depreciation",
+    "type": "calculation"
+   },
+   {
+    "id": "L16-4",
+    "title": "Income approach, reconciliation and who may appraise",
+    "type": "calculation"
+   }
+  ],
+  "manualChapters": [
+   11
+  ]
+ },
+ {
+  "name": "ch18",
+  "files": [
+   "ch18.md"
+  ],
+  "lessons": [
+   {
+    "id": "L18-1",
+    "title": "Florida property taxation: process and calendar",
+    "type": "legal"
+   },
+   {
+    "id": "L18-2",
+    "title": "Exemptions, Save Our Homes and tax computation",
+    "type": "calculation"
+   },
+   {
+    "id": "L18-3",
+    "title": "Income taxes and real estate",
+    "type": "conceptual"
+   }
+  ],
+  "manualChapters": [
+   12
+  ]
+ },
+ {
+  "name": "ch19",
+  "files": [
+   "ch19.md"
+  ],
+  "lessons": [
+   {
+    "id": "L19-1",
+    "title": "Planning, zoning and land-use controls",
+    "type": "legal"
+   },
+   {
+    "id": "L19-2",
+    "title": "Environmental hazards and regulation",
+    "type": "legal"
+   }
+  ],
+  "manualChapters": [
+   12
+  ]
+ }
+]
