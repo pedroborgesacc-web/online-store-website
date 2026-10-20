@@ -6,7 +6,7 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 
 ## Steps
 
-- [ ] **1. Verification sweep.** Check every rule still marked "not yet verified" (V-26 list) plus the unresolved entries V-02, V-07, V-08, V-22 and V-25 against official sources, with an independent skeptic re-check of each result.
+- [x] **1. Verification sweep.** Check every rule still marked "not yet verified" (V-26 list) plus the unresolved entries V-02, V-07, V-08, V-22 and V-25 against official sources, with an independent skeptic re-check of each result.
 - [ ] **2. Full lessons.** Expand the 61 core lessons (L03-1 … L19-2) into full 14-section lessons. Each one is written, adversarially reviewed against the manual, the numbers database and the verification log, then fixed. Output: `staging/<LessonId>.md`.
 - [ ] **3. Integrate.** Apply verification results to `data/verification.mjs` (new V-entries) and `data/numbers.mjs`; update any question or lesson that a correction affects; replace the core lessons in `lessons/chNN.md` with the staged full lessons.
 - [ ] **4. Validate.** `node scripts/build.mjs` and `node tests/app.test.mjs` must both pass.
@@ -21,6 +21,8 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 | 2026-10-20 02:02 | Workflow run `wf_f059b2e6-5ac` (task `wpbd3ank5`) launched for steps 1–2. Script copy: `scripts/workflows/verify_and_expand.js`. Resume in this session with `Workflow({scriptPath, resumeFromRunId: "wf_f059b2e6-5ac"})`; in a fresh container, re-run the script copy with the same args (lesson batches and verification items listed in the script's call in the session transcript). |
 | 2026-10-20 02:20 | Container restart stopped task `wpbd3ank5`. Journal kept 7 research batches (64 verdicts, cached) and 3 skeptic checks. Those skeptics could not search: **WebSearch is capped at 200 calls per turn, shared by all agents**, and the 7 researchers used it all. |
 | 2026-10-20 02:25 | Script patched (targeted skeptics capped at 12 searches each with an honest `checked` flag; exam-specs batch retried, capped at 20; lesson agents forbidden to search) and run resumed as task `wvb7dw2nk` (run `wf_f059b2e6-5ac`). Exact args saved in `scripts/workflows/verify_and_expand.args.json`. |
+| 2026-10-20 02:40 | Task `wvb7dw2nk` ended: verification (64 items: 5 corrected, 56 confirmed, 3 unresolved) and all 7 skeptic re-checks completed and are cached; all 19 lesson writers failed on the account's session limit (reset 06:20 UTC). Partial drafts of L03-1, L03-2, L04-1 were discarded. |
+| 2026-10-20 07:12 | After the reset, run `wf_f059b2e6-5ac` resumed as task `wabygq9tf` (verification cached; writers, reviewers and fixers run live). Integration of the verification results into `data/` started in parallel (lesson files untouched until staging is complete). |
 
 ## Resume rules
 

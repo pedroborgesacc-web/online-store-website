@@ -472,7 +472,7 @@
    "Still valid — it remains valid until the student takes the exam"
   ],
   "a": 1,
-  "ex": "Pre-license course completion is valid for 2 years for purposes of taking the state exam. At 26 months it has expired.",
+  "ex": "s. 475.181(2): the course completion becomes invalid if the state exam is not passed within 2 years after completing the course. At 26 months without a pass it has expired.",
   "w": {
    "0": [
     "NUMBER",
@@ -484,7 +484,7 @@
    ],
    "3": [
     "RULE",
-    "It expires after 2 years whether or not the exam has been taken."
+    "It expires after 2 years unless the exam has been passed; taking it is not enough."
    ]
   }
  },
@@ -857,7 +857,7 @@
    "60"
   ],
   "a": 0,
-  "ex": "14 hours of CE every 2-year renewal period after the first.",
+  "ex": "14 hours of CE every 2-year renewal period after the first: 3 hours Core Law, 3 hours Ethics and Business Practices, 8 hours specialty.",
   "w": {
    "1": [
     "CONFUSED",
@@ -2638,7 +2638,7 @@
    "Calling a FSBO seller you have never met"
   ],
   "a": 1,
-  "ex": "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry.",
+  "ex": "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule states the same windows as 540 days and 90 days).",
   "w": {
    "0": [
     "RULE",
@@ -2668,7 +2668,7 @@
    "lacks funds for the required down payment"
   ],
   "a": 1,
-  "ex": "ECOA prohibits discrimination based on race, color, religion, national origin, sex, marital status, age, or receipt of public assistance income.",
+  "ex": "ECOA prohibits discrimination based on race, color, religion, national origin, sex, marital status, age (if able to contract), receipt of public assistance income, or good-faith exercise of consumer credit rights.",
   "w": {
    "0": [
     "RULE",
@@ -2827,7 +2827,7 @@
    "60"
   ],
   "a": 2,
-  "ex": "Return within 15 days if no claim; send certified-mail notice of a claim within 30 days; the tenant has 15 days to object.",
+  "ex": "Return within 15 days if no claim; send notice of a claim within 30 days (by certified mail, or by e-mail if both parties signed the e-mail addendum, since July 1, 2025); the tenant has 15 days to object.",
   "w": {
    "0": [
     "NUMBER",
@@ -3404,17 +3404,17 @@
   ],
   "q": "A buyer signs a contract to buy a new condominium unit from the developer. The buyer may cancel within:",
   "c": [
-   "3 business days",
+   "7 days, excluding weekends and holidays",
    "10 days",
    "15 days",
    "30 days"
   ],
   "a": 2,
-  "ex": "Developer sales: 15 days after signing and receiving the required documents. Timeshares: 10 days. Resales: see the flagged resale rule (3 business days in older texts; 7 days in the 2025 statute text).",
+  "ex": "Developer sales: 15 days after signing and receiving the required documents. Resales: 7 days excluding Saturdays, Sundays and legal holidays (since July 1, 2025; older books say 3 business days). Timeshares: 10 days.",
   "w": {
    "0": [
     "CONFUSED",
-    "3 business days is the older resale rule."
+    "7 days (excluding weekends and holidays) is the resale rule."
    ],
    "1": [
     "CONFUSED",
@@ -7587,6 +7587,210 @@
    "3": [
     "NUMBER",
     "Not the course figures."
+   ]
+  }
+ },
+ {
+  "id": "Q0303-07",
+  "l": "L03-3",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "num": [
+   "N-009"
+  ],
+  "v": "V-28",
+  "q": "A sales associate's 14 hours of continuing education each renewal period must consist of:",
+  "c": [
+   "3 hours Core Law, 3 hours Ethics and Business Practices, 8 hours specialty",
+   "14 hours of any FREC-approved courses, chosen freely by the licensee",
+   "3 hours Core Law and 11 hours of specialty education of any kind",
+   "7 hours Core Law and 7 hours Ethics and Business Practices courses"
+  ],
+  "a": 0,
+  "ex": "The 14 hours are split 3 Core Law + 3 Ethics and Business Practices + 8 specialty (mandatory for licenses expiring on or after March 31, 2025).",
+  "w": {
+   "1": [
+    "RULE",
+    "The hours are split into required categories."
+   ],
+   "2": [
+    "RULE",
+    "3 of the hours must be Ethics and Business Practices."
+   ],
+   "3": [
+    "NUMBER",
+    "Core Law and Ethics are 3 hours each."
+   ]
+  }
+ },
+ {
+  "id": "Q0702-05",
+  "l": "L07-2",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "num": [
+   "N-064"
+  ],
+  "v": "V-58",
+  "q": "Under the FTC Telemarketing Sales Rule as amended in 2024, an established business relationship based on a consumer's inquiry lasts:",
+  "c": [
+   "30 days",
+   "90 days",
+   "540 days",
+   "18 months"
+  ],
+  "a": 1,
+  "ex": "FTC rule (since May 16, 2024): 540 days after a transaction, 90 days after an inquiry. The FCC rule still states 18 months and 3 months.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "It is 90 days."
+   ],
+   "2": [
+    "CONFUSED",
+    "540 days is the window after a purchase or transaction."
+   ],
+   "3": [
+    "CONFUSED",
+    "18 months is the FCC transaction window."
+   ]
+  }
+ },
+ {
+  "id": "Q0704-05",
+  "l": "L07-4",
+  "o": 3,
+  "d": 1,
+  "t": "mcq",
+  "num": [
+   "N-071"
+  ],
+  "v": "V-07",
+  "q": "A Tampa landlord is about to sign a 12-month residential lease. Under Florida law since October 2025, the landlord must:",
+  "c": [
+   "give the statutory flood disclosure at or before signing the lease",
+   "give a flood disclosure only if the unit is in a FEMA flood zone",
+   "deliver a flood disclosure within 30 days after the tenant moves in",
+   "do nothing, because flood disclosures apply only to sales of homes"
+  ],
+  "a": 0,
+  "ex": "s. 83.512: for a residential lease of 1 year or longer, the landlord gives the flood disclosure (a separate statutory form) at or before signing.",
+  "w": {
+   "1": [
+    "QUALIFIER",
+    "The duty does not depend on the flood zone."
+   ],
+   "2": [
+    "RULE",
+    "It is due at or before signing."
+   ],
+   "3": [
+    "RULE",
+    "Since October 2025 it also applies to leases of 1 year or more."
+   ]
+  }
+ },
+ {
+  "id": "Q0704-06",
+  "l": "L07-4",
+  "o": 3,
+  "d": 2,
+  "t": "mcq",
+  "num": [
+   "N-071"
+  ],
+  "v": "V-07",
+  "q": "Which of these residential rentals requires the landlord's flood disclosure under s. 83.512?",
+  "c": [
+   "A 6-month lease",
+   "A 12-month lease",
+   "A month-to-month tenancy",
+   "A 9-month seasonal lease"
+  ],
+  "a": 1,
+  "ex": "The disclosure applies to rental agreements for a term of 1 year or longer. Shorter terms are not covered.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "The threshold is a term of 1 year or longer."
+   ],
+   "2": [
+    "NUMBER",
+    "A month-to-month tenancy is not a 1-year term."
+   ],
+   "3": [
+    "NUMBER",
+    "9 months is less than 1 year."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-06",
+  "l": "L08-5",
+  "o": 1,
+  "d": 2,
+  "t": "scn",
+  "num": [
+   "N-081"
+  ],
+  "v": "V-08",
+  "q": "A buyer signs a contract for a resale condominium unit and receives the association documents the same day. The contract has the statutory cancellation clause. Under current Florida law, the buyer may cancel by written notice within:",
+  "c": [
+   "3 days, excluding Saturdays, Sundays and legal holidays",
+   "7 days, excluding Saturdays, Sundays and legal holidays",
+   "10 calendar days, including weekends and legal holidays",
+   "15 days, excluding Saturdays, Sundays and legal holidays"
+  ],
+  "a": 1,
+  "ex": "Since July 1, 2025 (ch. 2025-175), the resale period is 7 days excluding weekends and legal holidays, after signing and receiving the documents. Older books say 3 business days. Developer sales: 15 days. Timeshares: 10 days.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "3 days is the pre-2025 resale rule found in older books."
+   ],
+   "2": [
+    "CONFUSED",
+    "10 calendar days is the timeshare rule."
+   ],
+   "3": [
+    "CONFUSED",
+    "15 days is the developer sale rule."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-07",
+  "l": "L08-5",
+  "o": 2,
+  "d": 3,
+  "t": "scn",
+  "num": [
+   "N-083"
+  ],
+  "v": "V-65",
+  "q": "A buyer of a home in a mandatory HOA community did not receive the HOA disclosure summary before signing. The summary arrives 10 days before closing. The buyer may void the contract:",
+  "c": [
+   "within 3 days after receiving the summary, but not after closing",
+   "at any time before closing, because the summary arrived late",
+   "within 15 days after receiving the summary, as in a developer sale",
+   "only if the seller agrees in writing to release the buyer from it"
+  ],
+  "a": 0,
+  "ex": "s. 720.401: within 3 days after receiving the summary or before closing, whichever occurs first. Here the 3-day window ends first.",
+  "w": {
+   "1": [
+    "QUALIFIER",
+    "The right ends 3 days after receipt or at closing, whichever comes first."
+   ],
+   "2": [
+    "CONFUSED",
+    "15 days is the developer condominium rule."
+   ],
+   "3": [
+    "RULE",
+    "The statutory right does not need the seller's consent."
    ]
   }
  }

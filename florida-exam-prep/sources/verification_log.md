@@ -2,7 +2,7 @@
 
 # Verification log
 
-Checked on 2026-10-19. Method "official-excerpt" means the official page was located on its official domain and its content read through search excerpts; the container's network policy blocked full-page downloads from flsenate.gov, leg.state.fl.us, flrules.org and myfloridalicense.com. Treat these as strong but not final. "not-checked" items come from the study manual.
+Checked on 2026-10-19 and 2026-10-20. Method "official-excerpt" means the official page was located on its official domain and its content read through search excerpts; the container's network policy blocked full-page downloads from flsenate.gov, leg.state.fl.us, flrules.org and myfloridalicense.com. Treat these as strong but not final. "not-checked" items come from the study manual.
 
 ## V-01 · Exam format
 
@@ -15,12 +15,12 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 ## V-02 · Exam content weighting
 
-- **Status:** Unresolved (official-excerpt)
+- **Status:** Confirmed (official-excerpt, double-checked)
 - **Study manual says:** About 45 law, 45 principles and practices, 10 math.
-- **Finding:** The CIB lists a percentage for each of 19 content areas. Only fragments were extractable: The Real Estate Business 1%, License Law & Qualifications 6%, License Law & Commission Rules 2% (doubtful fragment), Authorized Relationships 7%, Property Rights 8%, Title/Deeds 7%, Legal Descriptions 5%, Contracts 12%, Residential Mortgages 9%, Computations 6%, Taxes 3%, Planning & Zoning 1%. A 2020 FREC rule document (61J2-2.029 amendment) describes a 45/45/10 split (law / principles & practices / math).
-- **Citation:** DBPR CIB (Jan 2025); FREC approved amendments to 61J2-2 (Sept 2020)
+- **Finding:** Candidate Information Booklet, Sales Associate (eff. January 2025), Examination Content Outline: I The Real Estate Business 1%; II License Law and Qualifications for Licensure 6%; III License Law and Commission Rules 2%; IV Authorized Relationships, Duties and Disclosure 7%; V Brokerage Activities and Procedures 12%; VI Violations of License Law, Penalties and Procedures 3%; VII Federal and State Laws 3%; VIII Property Rights 8%; IX Title, Deeds and Ownership Restrictions 7%; X Legal Descriptions 5%; XI Contracts 12%; XII Residential Mortgages 9%; XIII Types of Mortgages and Sources of Financing 4%; XIV Computations and Closing 6%; XV Markets and Analysis 1%; XVI Appraisal 8%; XVII Investments and Business Opportunity Brokerage 2%; XVIII Taxes 3%; XIX Planning and Zoning 1% (total 100%). 18 of the 19 figures appeared in official-domain excerpts of the booklet; Section I (1%) is derived from the 100% total. The Broker booklet uses different weights. A 2020 FREC rule document describes a 45/45/10 split (law / principles and practices / math).
+- **Citation:** DBPR Candidate Information Booklet, Real Estate Sales Associate Examination (eff. Jan 2025), Examination Content Outline
 - **Source:** https://www2.myfloridalicense.com/servop/testing/documents/RE_sales_cibs.pdf
-- **What we teach:** Use weights only as priority hints. Read the full CIB table when you can open it; the app's mock exam uses chapter weights marked 'approximate'.
+- **What we teach:** Weights per FREC section as listed. The biggest: Brokerage Activities 12%, Contracts 12%, Residential Mortgages 9%, Property Rights 8%, Appraisal 8%. The app's mock exam follows these weights.
 
 ## V-03 · Official course outline (FREC Course I)
 
@@ -60,21 +60,21 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 ## V-07 · Flood disclosure in residential leases
 
-- **Status:** Unresolved (official-excerpt)
+- **Status:** Gap filled (official-excerpt, double-checked)
 - **Study manual says:** Not mentioned.
-- **Finding:** A 2025 bill (CS/CS/HB 1015) proposed landlord flood disclosures. Passage and current s. 83.50 text not confirmed.
-- **Citation:** HB 1015 (2025) — status unknown
-- **Source:** https://www.flsenate.gov/Session/Bill/2025/1015/ByVersion
-- **What we teach:** Not taught as a rule until verified.
+- **Finding:** s. 83.512, F.S., created by ch. 2025-166, Laws of Fla. (CS/CS/SB 948, effective October 1, 2025), requires a landlord to give a prospective tenant a flood disclosure, as a separate document on the statutory form, at or before signing a residential rental agreement for a term of 1 year or longer. The form covers flood damage the landlord knows of during the landlord's ownership, flood insurance claims (including NFIP) and federal assistance (e.g., FEMA) received for flood damage, plus flood insurance notices. Remedy: if the landlord fails to comply and the tenant suffers a substantial loss of personal property from flooding (repair or replacement cost of 50% or more of its market value), the tenant may terminate the lease by written notice and surrender of possession within 30 days after the damage; prepaid rent for the period after termination is refunded. HB 1015 (2025) was laid on the table; its companion SB 948 was enacted and also amended the seller disclosure in s. 689.302.
+- **Citation:** s. 83.512, F.S. (2025; same core text 2026); ch. 2025-166, Laws of Fla. (CS/CS/SB 948)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0083.512
+- **What we teach:** Residential lease of 1 year or longer: landlord gives the flood disclosure at or before signing (since Oct 1, 2025). Shorter leases are not covered. Older books will not mention it.
 
 ## V-08 · Condominium resale cancellation period (s. 718.503)
 
-- **Status:** Unresolved (official-excerpt)
+- **Status:** Corrected (official-excerpt, double-checked)
 - **Study manual says:** 3 business days after receiving the documents on a resale.
-- **Finding:** Older texts (2002, 2012) show 3 days excluding weekends and legal holidays. Fragmentary 2025 excerpts show a 7-day cancellation right (excluding Saturdays, Sundays and legal holidays) for nondeveloper sales after receipt of the governing documents. Developer sales: 15 days.
-- **Citation:** s. 718.503, F.S. (2025)
+- **Finding:** Nondeveloper (resale) contracts for residential condominium units must say, in conspicuous type, either that the buyer received the declaration, articles, bylaws, rules and other documents more than 7 days (excluding Saturdays, Sundays and legal holidays) before signing, or that the agreement is voidable by the buyer by written notice within 7 days, excluding Saturdays, Sundays and legal holidays, after the buyer signs and receives the documents. A non-conforming contract is voidable by the buyer before closing; the right ends at closing. CS/CS/HB 913 (ch. 2025-175, effective July 1, 2025) extended this period from 3 days to 7 days; the 2024 text still read 3 days. Developer sales (unchanged): voidable within 15 days after the buyer signs and receives all required documents, and within 15 days after receiving an amendment that materially and adversely changes the offering; waivers are void; the right ends at closing.
+- **Citation:** s. 718.503(1)(a), (2), F.S. (2025; 7-day text also in 2026); ch. 2025-175, Laws of Fla. (CS/CS/HB 913); Senate 2025 Summary of Legislation Passed
 - **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0718.503
-- **What we teach:** Developer sale: 15 days. Resale: older textbooks say 3 business days; the 2025 statute appears to say 7 days (excluding weekends/holidays). Flagged until the full text is read.
+- **What we teach:** Developer sale: 15 days. Resale: 7 days, excluding Saturdays, Sundays and legal holidays, after signing and receiving the documents (since July 1, 2025; older books say 3 business days). Both rights end at closing.
 
 ## V-09 · Second homestead exemption indexed to inflation (s. 196.031)
 
@@ -107,19 +107,19 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 - **Status:** Confirmed (official-excerpt)
 - **Study manual says:** Unlicensed practice is a third-degree felony; most other criminal violations are misdemeanors.
-- **Finding:** Operating as a broker or sales associate without a valid and current active license: third-degree felony (s. 775.082/775.083). Older texts state other subsection (1) violations are second-degree misdemeanors; the current text's per-paragraph penalties were not fully visible.
-- **Citation:** s. 475.42, F.S. (2025, 2026)
+- **Finding:** s. 475.42(1)(a): operating as a broker or sales associate without a valid, current, active license is a third-degree felony. s. 475.42(2): any other violation of subsection (1) is a second-degree misdemeanor (s. 775.082 or 775.083), unless the chapter prescribes a different punishment.
+- **Citation:** s. 475.42(1)(a), (2), F.S. (2025; 2026 same structure)
 - **Source:** https://www.flsenate.gov/Laws/Statutes/2025/475.42
-- **What we teach:** Unlicensed activity = third-degree felony (up to 5 years and $5,000 under the general sentencing statutes). Most other s. 475.42 violations = second-degree misdemeanor (partially verified).
+- **What we teach:** Unlicensed activity = third-degree felony (up to 5 years and $5,000 under the general sentencing statutes). Other s. 475.42(1) violations = second-degree misdemeanor.
 
 ## V-13 · FREC composition (s. 475.02)
 
 - **Status:** Confirmed (official-excerpt)
 - **Study manual says:** 7 members, Governor appoints, Senate confirms, 4 brokers (5 yrs), 1 broker or sales associate (2 yrs), 2 consumers, one member 60+, 4-year terms, quorum 4, two-term limit.
-- **Finding:** Confirmed: 7 members appointed by the Governor subject to Senate confirmation; 4 licensed brokers with active licenses for the 5 preceding years; 1 broker or sales associate with an active license for the 2 preceding years; 2 members who are not and have never been brokers or sales associates; at least one member 60 or older; 4-year terms. Quorum and two-term limit not seen in excerpts.
-- **Citation:** s. 475.02, F.S.
+- **Finding:** Confirmed: 7 members appointed by the Governor subject to Senate confirmation; 4 licensed brokers with active licenses for the 5 preceding years; 1 broker or sales associate with an active license for the 2 preceding years; 2 members who are not and have never been brokers or sales associates; at least one member 60 or older; 4-year terms (s. 475.02). Quorum: 51% or more of the appointed members (s. 455.207) = 4 of 7; official action needs a majority of the quorum. Term limit (s. 20.165(5)): no member serves more than the remainder of a predecessor's term plus two consecutive 4-year terms; terms end October 31.
+- **Citation:** s. 475.02, F.S.; s. 455.207, F.S.; s. 20.165(5), F.S. (2025)
 - **Source:** https://www.flsenate.gov/Laws/Statutes/2023/0475.02
-- **What we teach:** As confirmed. Quorum and term limit: manual statements, not verified.
+- **What we teach:** 7 members (4 brokers, 1 broker or sales associate, 2 consumers; one 60+); 4-year terms; quorum 4; at most two consecutive full terms.
 
 ## V-14 · Exemptions from licensure (s. 475.011)
 
@@ -146,7 +146,7 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 - **Finding:** Statute: if a residential condominium buyer delivers written notice of intent to cancel under s. 718.503, or if a buyer in good faith fails to satisfy the terms of the financing clause, the licensee may return the escrowed property to the purchaser without notifying the commission or starting a settlement procedure. No HUD exception found in the excerpts.
 - **Citation:** s. 475.25(1)(d)1, F.S. (2025)
 - **Source:** https://www.flsenate.gov/Laws/statutes/2025/475.25
-- **What we teach:** Statutory exceptions: condo buyer cancels under 718.503; buyer's good-faith financing failure. When a title company or attorney holds the deposit, the broker is not the escrow holder (manual statement, not verified). 'HUD' removed pending verification.
+- **What we teach:** Statutory exceptions: condo buyer cancels under 718.503; buyer's good-faith financing failure. When a title company or attorney holds the deposit, the broker is not the escrow holder and follows the verification procedure in V-39. 'HUD' removed (no official source found).
 
 ## V-17 · Real Estate Recovery Fund (s. 475.484)
 
@@ -161,10 +161,10 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 - **Status:** Confirmed (official-excerpt)
 - **Study manual says:** Deed $0.70 per $100 (Miami-Dade $0.60 single-family, other property $0.60 + $0.45 surtax); note $0.35 per $100; round up to next $100.
-- **Finding:** Deeds: 70 cents on each $100 or portion thereof of the total consideration in all counties except Miami-Dade; Miami-Dade $0.60 per $100 (single-family residences) — surtax detail not seen in excerpts. Existing mortgage balance counts as consideration. Notes/written obligations: 35 cents per $100 or portion; capped at $2,450 only for unsecured documents; no cap for mortgage-secured obligations.
-- **Citation:** ss. 201.02, 201.08, F.S.; Fla. DOR documentary stamp tax page
+- **Finding:** Deeds: 70 cents on each $100 or portion thereof of the total consideration in all counties except Miami-Dade, where the rate is 60 cents per $100. Miami-Dade also levies a discretionary surtax of 45 cents per $100 (s. 201.031; s. 125.0167 limits it to Miami-Dade) on documents other than those involving only a single-family residence, for a combined $1.05 per $100. Existing mortgage balance counts as consideration. Notes/written obligations: 35 cents per $100 or portion; capped at $2,450 only for unsecured documents; no cap for mortgage-secured obligations.
+- **Citation:** ss. 201.02, 201.031, 201.08, F.S. (2026); Fla. DOR documentary stamp tax page and Form DR-228 instructions
 - **Source:** https://floridarevenue.com/taxes/taxesfees/Pages/doc_stamp.aspx
-- **What we teach:** Deed $0.70/$100 or portion (round UP), on the full price. Note $0.35/$100 or portion. Miami-Dade $0.60 single-family.
+- **What we teach:** Deed $0.70/$100 or portion (round UP), on the full price. Note $0.35/$100 or portion. Miami-Dade: $0.60 for a single-family residence; other property $0.60 + $0.45 surtax.
 
 ## V-19 · Nonrecurring intangible tax (s. 199.133)
 
@@ -188,19 +188,19 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 - **Status:** Confirmed (official-excerpt)
 - **Study manual says:** 75% refund if no rental obtained, demand within 30 days; full refund if list inaccurate; first-degree misdemeanor.
-- **Finding:** Contract/receipt must provide for repayment of any amount over 25% of the fee if no rental is obtained (i.e., 75% back); full refund if the information was not current or accurate in a material respect; demand within 30 days after the contract date. Violation exposes the license to suspension/revocation; 2010 text also made it a first-degree misdemeanor.
-- **Citation:** s. 475.453, F.S.
+- **Finding:** s. 475.453(1) (2025): a broker or sales associate who furnishes a rental information list for a fee paid by the prospective tenant must give a contract or receipt providing for repayment of any amount over 25% of the fee if no rental is obtained, and repayment of the full fee on demand if the information was not current or accurate in any material respect. s. 475.453(3)(a): violation is a first-degree misdemeanor; (3)(b): the license is also subject to suspension or revocation. The 30-day window for demanding the refund appears in the 2002/2005 editions; the 2025 excerpts did not show it.
+- **Citation:** s. 475.453(1), (3), F.S. (2025)
 - **Source:** https://www.flsenate.gov/Laws/Statutes/2023/0475.453
-- **What we teach:** 75% refund / full refund if inaccurate / demand within 30 days.
+- **What we teach:** 75% refund if no rental is obtained; full refund if the list was inaccurate; violation = first-degree misdemeanor plus license discipline. The 30-day demand window is from older editions (not re-confirmed).
 
 ## V-22 · Mutual recognition
 
-- **Status:** Unresolved (official-excerpt)
+- **Status:** Gap filled (official-excerpt, double-checked)
 - **Study manual says:** Agreements with several states; nonresidents only; 40-question Florida law exam, 30 correct.
-- **Finding:** Division home page lists 9 states (Alabama, Arkansas, Connecticut, Georgia, Kentucky, Mississippi, Nebraska, Rhode Island, West Virginia); another DBPR page lists Illinois instead of West Virginia; agreements ended with Colorado, Indiana, Oklahoma, Tennessee. Applicant must hold an active license in good standing from that state and must not be a Florida resident when applying. Rule 61J2-26.001 (older document): 40 questions, 30 to pass.
-- **Citation:** DBPR Division of Real Estate; Rule 61J2-26.001
-- **Source:** https://www2.myfloridalicense.com/real-estate-commission/mutual-recognition-states/
-- **What we teach:** Mechanism and 40/30 exam: teach. State list: official pages disagree — do not memorize.
+- **Finding:** DBPR's mutual recognition page and the Real Estate Laws and Rules candidate booklet: applicants from a state with a current agreement pass a 40-question Florida law exam, 30 or more correct. The applicant must not be a Florida resident when applying, and the other state's license must have been earned by education and exam there (not by reciprocity). Statutory basis s. 475.180. The Division home page lists 9 states (Alabama, Arkansas, Connecticut, Georgia, Kentucky, Mississippi, Nebraska, Rhode Island, West Virginia) and lists Illinois as 'Agreement Dissolved – December 31, 2025', along with Colorado (2009), Tennessee (2012), Indiana (2014) and Oklahoma (2016). A March 2025 FREC agenda item amended the West Virginia agreement. The Licensure Information page still listing Illinois appears out of date. Evidence: search excerpts only; the Illinois dissolution date appears on one page.
+- **Citation:** DBPR Division of Real Estate home page and mutual recognition page (2026 excerpts); RE_law_cibs.pdf; s. 475.180, F.S.
+- **Source:** https://www2.myfloridalicense.com/real-estate-commission/
+- **What we teach:** Mechanism and the 40/30 exam: know them. Current list (9): AL, AR, CT, GA, KY, MS, NE, RI, WV; Illinois ended December 31, 2025. The list changes; low exam priority.
 
 ## V-23 · Proposed homestead property-tax amendment (CS/HJR 1-F, 2026 Special Session)
 
@@ -221,16 +221,502 @@ Checked on 2026-10-19. Method "official-excerpt" means the official page was loc
 
 ## V-25 · Note stamps on assumed mortgages
 
-- **Status:** Unresolved (not-checked)
+- **Status:** Confirmed (official-excerpt, single-checked)
 - **Study manual says:** Note stamps apply to new and assumed mortgages; intangible tax only to new money.
-- **Finding:** Standard Florida prelicense convention, preserved from the manual. Statute excerpts confirmed the tax applies to written obligations to pay money, and that an existing mortgage balance is part of deed consideration; treatment of a pure assumption without a new note was not confirmed.
-- **Citation:** ss. 201.08, 199.133, F.S. (partial)
-- **What we teach:** For exam math follow the course convention: note stamps on new AND assumed; intangible on new only. Confirm against your textbook's Ch. 14.
+- **Finding:** Florida DOR lists 'mortgages and assumptions of mortgages' among obligations taxable when recorded, at 35 cents per $100 or portion (s. 201.08; no cap for recorded mortgages). DOR TAA 22B4-002: assuming a note and mortgage is a taxable renewal under s. 201.08(1), measured on the outstanding balance. Intangible tax: s. 199.145(3) — no additional nonrecurring tax is due when an obligation is assumed if the tax was paid before and the debt is unchanged; refinancing with the same lender is taxed only on new principal (s. 199.145(4)).
+- **Citation:** s. 201.08(1), F.S.; ss. 199.133, 199.145(3)-(4), F.S. (2025); Fla. DOR documentary stamp tax page; DOR TAA 22B4-002
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0199.145
+- **What we teach:** Note stamps ($0.35/$100) on new AND assumed mortgages. Intangible tax (2 mills) on new mortgages only — not again on an assumption when it was paid originally and the debt is unchanged.
 
-## V-26 · Manual statements not independently verified this session
+## V-26 · Statements still not independently verified
 
 - **Status:** Not verified (not-checked)
-- **Study manual says:** Escrow next-business-day / third-business-day deposit rule (61J2-14.008/.009); $1,000/$5,000 broker funds (61J2-14.010); $5,000 fine and 10-year suspension (475.25); 30-day conviction reporting; 10-day address change; 45-hour post-license; 14-hour CE; 72-hour broker course; 60-hour broker post-license; 24 months in 5 years; RESPA/TILA timings; landlord deposit 15/30/15 days (83.49); Do Not Call windows; developer condo 15 days; timeshare 10 days; adverse possession 7 years; prescription 20 years; statute of limitations 5/4 years; listing copy 24 hours; satisfaction 60 days; usury 18%/25%; homestead 1/2 acre / 160 acres; Save Our Homes 3%/CPI; depreciation 27.5/39; $250k/$500k exclusion; lead paint 10 days; tax calendar.
-- **Finding:** These match standard Florida prelicense content as the instructor knows it, but were not checked against an official source in this session.
+- **Study manual says:** Minimum age, education and SSN for applicants; reapplying 2 years after a denial for dishonesty; the 3/7/9 brokerage duty lists (s. 475.278); statute of frauds; qualifying ratios 28/36 and 31/43; PMI above 80% LTV; FHA 3.5% down; points ≈ 1/8% yield; reverse mortgage age 62; Florida meridian intersection in Tallahassee; measurement constants (acre, mile, square yard, township, section).
+- **Finding:** The 2026-10-19/20 verification passes checked the other manual statements (V-27 to V-80). These remain from the study manual. Measurement constants are standard definitions; ratios, PMI, points and FHA figures are course conventions or program rules that change over time.
 - **Citation:** Study manual
-- **What we teach:** Taught as stated, labelled 'not yet verified'. Priority list for the next verification pass.
+- **What we teach:** Taught as stated, labelled 'not yet verified'. Next verification pass: s. 475.278 duty lists and s. 475.17(1) applicant requirements.
+
+## V-27 · Sales associate post-licensing education (s. 475.17(3))
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Sales associates must complete 45 hours of post-licensing education before the first renewal; otherwise the license becomes null and void and the person must requalify [s. 475.17(3), F.S.; Rule 61J2-3.020, F.A.C.]
+- **Finding:** s. 475.17(3)(a) lets the Commission prescribe postlicensure education for a sales associate to keep a valid license. The cap is 45 classroom hours of 50 minutes each, including the exam, and it is due before the first renewal after initial licensure. It is delivered as one or more Commission-approved courses totaling at least 45 hours, by classroom or approved distance learning (distance courses need a passed timed exam). A completion notice is withheld if absences exceed 10% of classroom hours. If the requirement is not done before the first renewal, the license 'shall be considered null and void.' To operate again the person must requalify by completing the sales associate prelicensure course and passing the state exam. Exceptions: the Commission may allow an extra 6 months for an individual physical hardship defined by rule, and holders of a 4-year or higher degree in real estate are exempt. Attorneys are NOT exempt from post-licensing, per DBPR. DBPR's current 2026 renewal notices still list 45 hours for sales associates. Rule 61J2-3.020 says the same, but the only rule text seen was a 2017 FREC meeting copy, so the current rule text was not read directly.
+- **Citation:** s. 475.17(3)(a),(c), F.S. (2025 and 2026 editions); Rule 61J2-3.020, F.A.C.; DBPR Division of Real Estate 2026 renewal notice (SL AC Grp 1)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2026/475.17
+- **What we teach:** 45 hours before the first renewal. Missed → license null and void → retake the 63-hour course and pass the state exam again. Exempt: holders of a 4-year (or higher) degree in real estate. Attorneys are NOT exempt. FREC may allow 6 more months for a physical hardship.
+
+## V-28 · Continuing education (s. 475.182; Rule 61J2-3.009)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** After the first renewal, 14 hours of continuing education (including core law) each 2-year renewal period, for active and inactive licensees [s. 475.182, F.S.; Rule 61J2-3.009]
+- **Finding:** s. 475.182(1): the renewal application for an active broker, broker associate or sales associate license must include proof of at least 14 classroom hours (50-minute hours) of continuing education in each biennium of the license period. Approved distance learning is allowed. Sales associates and brokers do not have to meet the 14-hour requirement before the first renewal after initial licensure, because postlicensure education applies then. Rule 61J2-3.009 is titled 'Continuing Education for Active and Inactive Broker and Sales Associate Licensees.' It requires every active or inactive licensee to complete at least 14 hours (50-minute hours) per renewal period, excluding the first renewal period. As amended, the 14 hours are 3 hours Core Law, 3 hours Ethics and Business Practices, and 8 hours specialty education. This split is mandatory for licenses expiring on or after March 31, 2025. Core Law must be taken at least once per renewal period. Other points: Florida Bar members in good standing are exempt from CE under this rule. Once per renewal cycle, attending one FREC legal agenda session may substitute for 3 hours, with 7 days' notice, but not when attending as a party to a disciplinary action. Note that the manual's 'including core law' is now more specific: 3 Core Law + 3 Ethics + 8 specialty.
+- **Citation:** s. 475.182(1), F.S. (2025/2026 editions); Rule 61J2-3.009, F.A.C. (current); FREC education page; DBPR 2025/2026 renewal notices
+- **Source:** https://flrules.org/gateway/RuleNo.asp?ID=61J2-3.009
+- **What we teach:** 14 hours in each 2-year renewal period after the first renewal, for active and inactive licensees: 3 hours Core Law + 3 hours Ethics and Business Practices + 8 hours specialty. Florida Bar members are exempt from CE. Once per cycle, attending a FREC legal agenda session can replace 3 hours.
+
+## V-29 · Broker licence: experience and pre-licence course (s. 475.17(1)-(2))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Broker applicant must have held an active sales associate license for 24 months during the preceding 5 years and complete a 72-hour broker course [s. 475.17(2), F.S.; Rule 61J2-3.008]
+- **Finding:** Experience: a person may not be licensed as a broker unless one of three things holds during the preceding 5 years, each for at least 24 months. (1) They held an active sales associate license in the office of one or more brokers licensed in Florida, another US state, territory or jurisdiction, or a foreign national jurisdiction. (2) They held a current, valid sales associate license while employed by a governmental agency for a salary, performing licensee duties. (3) They held a current, valid broker license in another US state, territory or jurisdiction, or a foreign jurisdiction. Anyone licensed as a Florida sales associate in the preceding 5 years must also have completed the sales associate postlicensure education. Course: the broker prelicensure course may not exceed 72 classroom hours (50-minute hours) including the exam (FREC Course II), versus 63 hours for sales associates. A completion notice is withheld if absences exceed 8 classroom hours. Citation note: the 72-hour course is in s. 475.17(2)(a)1. The 24-month experience rule is in subsection (1) of s. 475.17, which excerpts label (1)(b), with the postlicensure prerequisite at (1)(c); it is not in (2). The 2026 text matches 2025.
+- **Citation:** s. 475.17(1)(b)-(c) and (2)(a)1., F.S. (2025 and 2026 editions); Rule 61J2-3.008, F.A.C. (amended 7/8/2022)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/475.17
+- **What we teach:** 24 months of experience in the preceding 5 years: as an active sales associate under a broker (Florida, another state or a foreign jurisdiction), as a salaried government employee holding a sales associate licence, or as a broker licensed elsewhere. Sales associate post-licensing must be complete. Then the 72-hour broker course (FREC Course II) and the broker exam.
+
+## V-30 · Broker post-licensing education (s. 475.17(4))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Brokers must complete 60 hours of post-licensing education before the first broker renewal (two 30-hour courses); otherwise the broker license is void [s. 475.17(3), F.S.; Rule 61J2-3.020]
+- **Finding:** s. 475.17(4)(a): the Commission may prescribe postlicensure education for a broker to keep a valid license. The cap is 60 classroom hours of 50 minutes each, including the exam, due before the first renewal after initial licensure, as Commission-approved courses totaling at least 60 hours. s. 475.17(4)(c): the license of any broker who does not complete it before the first renewal 'shall be considered null and void.' DBPR guidance: the 60 hours may be taken as two 30-hour courses, Broker Investment and Broker Management, by classroom or distance education. The only exemption is a 4-year degree in real estate; attorneys are not exempt. Re-entry, from the statute and law book (not confirmed in the current subsection text): a former broker whose license became void may get a sales associate license by completing the 14-hour CE course within 6 months after the broker license expired. To be a broker again, they must retake the broker prelicensure course and pass the broker exam. Citation note: the broker provision is s. 475.17(4); (3) is the sales associate provision.
+- **Citation:** s. 475.17(4)(a),(c), F.S. (2025/2026 editions); Rule 61J2-3.020, F.A.C.; DBPR Division of Real Estate home page and broker guidance
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2026/475.17
+- **What we teach:** 60 hours before the first broker renewal (usually two 30-hour courses). Missed → broker licence null and void.
+
+## V-31 · Validity of the pre-licence course completion (s. 475.181(2))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Completion of the 63-hour sales associate pre-license course is valid for 2 years for purposes of taking the state exam [s. 475.17, F.S.; Rule 61J2-3.008]
+- **Finding:** s. 475.181(2): if an applicant does not pass the licensing exam within 2 years after the successful course completion date, the course completion is invalid for licensure. DBPR's sales associate requirements sheet says the 63-hour prelicensing course is valid for licensure for 2 years after completion; the broker sheet says the same of the 72-hour course. The candidate booklet says an expired course completion is not accepted at the test site, and the course completion certificate must be shown at every exam attempt. Florida Bar members in good standing are exempt from the sales associate prelicense course. Citation correction: the 2-year rule is in s. 475.181(2), F.S., not s. 475.17 or Rule 61J2-3.008. Note also that the rule turns on PASSING the exam within 2 years, not merely taking it.
+- **Citation:** s. 475.181(2), F.S. (2026 edition; same in 2015-2025); DBPR 'Real Estate Associate Requirements for licensure' (RESLRequirements.pdf); DBPR Sales Associate Candidate Information Booklet
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0475%2FSections%2F0475.181.html
+- **What we teach:** The course completion is invalid if the state exam is not PASSED within 2 years after completing the course.
+
+## V-32 · Validity of the licence application (s. 475.181(2))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** An application for licensure remains valid for 2 years [Rule 61J2-2 / 61J2-3, F.A.C.]
+- **Finding:** s. 475.181(2): 'The application shall expire 2 years after the date received if the applicant does not pass the appropriate examination.' The window was 1 year in the 2002 statute and has been 2 years since at least the 2005/2009 editions; the 2026 text keeps it. Clarifications: the 2 years run from the date DBPR receives the application, and the rule is that the application expires if the exam is not passed in that time. It is separate from the 2-year course-completion validity in the same subsection. Citation correction: the source is the statute, s. 475.181(2), F.S., not Rule 61J2-2 or 61J2-3.
+- **Citation:** s. 475.181(2), F.S. (2026 edition)
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0475%2FSections%2F0475.181.html
+- **What we teach:** The application expires 2 years after DBPR receives it if the applicant has not passed the exam.
+
+## V-33 · Length of the first renewal period
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** The first renewal falls 18-24 months after initial licensure [Rule 61J2-1.008 or 61J2-3.020, F.A.C.]
+- **Finding:** The DBPR Division of Real Estate educational requirements sheet (rev. 06/2018) says the first renewal period is 18-24 months and the 2nd and later renewal periods are 24 months. Postlicensure education must be finished before that first renewal: 45 hours for sales associates, 60 for brokers. DBPR renewal pages say all real estate licenses expire at midnight Eastern on March 31 or September 30; that is why the first period varies from 18 to 24 months. Caveats: no official source was found stating the 18-24 month rule in Rule 61J2-1.008 or 61J2-3.020, so the manual's rule citation is unverified. The confirming document is an official 2018 DBPR sheet; nothing current contradicts it, but no current-year restatement was found.
+- **Citation:** DBPR Division of Real Estate, 'Real Estate (FREC) Educational Requirements' (rev. 06/2018); DBPR renewal notices 2025/2026
+- **Source:** https://www2.myfloridalicense.com/re/documents/real_estate_ed_requirements.pdf
+- **What we teach:** First renewal falls 18–24 months after licensure, because all real estate licences expire on March 31 or September 30; later periods are 24 months. (Source: DBPR education sheet; the rule number was not located.)
+
+## V-34 · Change of mailing or e-mail address (Rule 61J2-10.038; s. 455.275)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Licensees must notify DBPR/FREC of a change of mailing address within 10 days [Rule 61J2-10.038, F.A.C.; s. 475.23 or s. 455.275, F.S.]
+- **Finding:** Statute: s. 455.275(1) makes each DBPR licensee solely responsible for notifying the department in writing of their current mailing address, e-mail address and place of practice. Failing to report a change is a violation and can lead to discipline. Rule: Rule 61J2-10.038, 'Mailing Address: Place of Practice: Requirement for Notification', implements s. 455.275(1) and s. 475.05. The 2020 FREC-approved text requires each licensee and permit holder to notify the Department in writing of the current mailing and e-mail address, and any change to either, within 10 days after the change. A first violation gets a citation; repeat violations lead to disciplinary proceedings. The rule was amended again effective 7/18/2024. Per the DBPR annual report, that amendment changed the definition of 'current mailing address' (striking 'residential' so the brokerage office's physical location can serve). The 2024 text itself was not read, so whether the 10-day period survived is inferred, not directly seen. Related: s. 475.23 separately requires notice within 10 days of a change of business address or employing broker, on a Commission form. A resident licensee who becomes a nonresident must notify the Commission within 60 days.
+- **Citation:** Rule 61J2-10.038, F.A.C. (amended 12/8/2020 and 7/18/2024); s. 455.275(1), F.S. (2025); s. 475.23, F.S.
+- **Source:** https://flrules.org/gateway/ruleno.asp?id=61J2-10.038&Section=0
+- **What we teach:** Notify DBPR in writing within 10 days of a change of mailing or e-mail address. Change of employing broker or business address: within 10 days (s. 475.23). The 10-day period is confirmed in the 2020 rule text; the July 2024 amendment was not read directly.
+
+## V-35 · Reporting crimes: convictions and pleas (s. 455.227(1)(t); s. 475.25(1)(p))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Licensees must report a conviction, guilty plea or nolo contendere plea to a crime within 30 days, whether or not adjudication is withheld [s. 475.25(1)(p), F.S.; s. 455.227(1)(t), F.S.]
+- **Finding:** s. 455.227(1)(t), which applies to all DBPR licensees including real estate, makes it a ground for discipline to fail to report in writing to the board (here FREC), or to DBPR if there is no board, within 30 days after being convicted or found guilty of, or pleading nolo contendere or guilty to, a crime in any jurisdiction, regardless of adjudication. s. 475.25(1)(p) (2025) is narrower: discipline for failing to inform the Commission in writing within 30 days after pleading guilty or nolo contendere to, or being convicted or found guilty of, any FELONY. The manual's combined rule (any crime, regardless of adjudication) is correct through s. 455.227(1)(t); the chapter 475 provision alone covers only felonies.
+- **Citation:** s. 455.227(1)(t), F.S. (2026 edition); s. 475.25(1)(p), F.S. (2025 edition)
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0455%2FSections%2F0455.227.html
+- **What we teach:** Report in writing within 30 days any conviction or finding of guilt, or plea of guilty or nolo contendere, to ANY crime in any jurisdiction, regardless of adjudication (s. 455.227). Chapter 475 alone covers felonies.
+
+## V-36 · Sales associate delivers deposits to the broker (Rule 61J2-14.009)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** A sales associate must deliver a deposit to the employing broker no later than the end of the next business day [Rule 61J2-14.009, F.A.C.]
+- **Finding:** Every sales associate who receives any deposit (as defined in Rule 61J2-14.008) must deliver it to the broker or employer no later than the end of the next business day following receipt of the item to be deposited. Saturdays, Sundays and legal holidays are not business days. Rulemaking authority is s. 475.05, F.S., and it implements s. 475.25(1)(k), F.S. The broker's own escrow deadline in 61J2-14.008 ('immediately', 3 business days) is a separate, longer rule.
+- **Citation:** Rule 61J2-14.009, F.A.C. (current text on flrules.org; last substantive amendment 2-5-04 per search excerpt); s. 475.25(1)(k), F.S. (2025)
+- **Source:** https://flrules.org/gateway/ruleNo.asp?id=61J2-14.009
+- **What we teach:** By the end of the next business day after receipt (weekends and legal holidays are not business days).
+
+## V-37 · Broker deposits escrow funds 'immediately' (Rule 61J2-14.008)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** 'Immediately' means the broker places escrow funds in an escrow account no later than the end of the third business day following receipt [Rule 61J2-14.008, F.A.C.]
+- **Finding:** Rule 61J2-14.008 defines 'immediately' as placing a deposit in an escrow account no later than the end of the third business day following receipt of the item to be deposited. Saturdays, Sundays and legal holidays are not business days. The DBPR Bureau of Enforcement FAQ gives the same definition. The rule's history reads 'Amended 7-5-95, 7-4-06, 12-6-07, 6-21-10', and the excerpts show no later amendment.
+- **Citation:** Rule 61J2-14.008, F.A.C. (Definitions; effective 6-21-2010, current); implements s. 475.25(1)(k), F.S. (2025)
+- **Source:** https://flrules.org/gateway/ruleno.asp?id=61J2-14.008
+- **What we teach:** By the end of the third business day after receipt; weekends and legal holidays excluded. Received Monday → deposited by the end of Thursday.
+
+## V-38 · Broker's own money in escrow accounts (Rule 61J2-14.010; s. 475.25(1)(k))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** A broker may keep up to $1,000 of personal or brokerage funds in a sales escrow account and up to $5,000 in a property management escrow account [Rule 61J2-14.010, F.A.C.]
+- **Finding:** Rule 61J2-14.010(2): a broker may place and maintain up to $1,000 of personal or brokerage funds per sales escrow account and up to $5,000 per property management escrow account. The 2025 text of s. 475.25(1)(k), F.S. says the same: up to $5,000 in the property management escrow account and up to $1,000 in the sales escrow account. The statute adds that a broker gets a reasonable time to correct escrow errors when there is no shortage of funds and no significant threat of economic harm to the public, and that the Legislature intends disbursement of escrowed funds not to be delayed by a dispute over the personal or brokerage funds. One scraped copy of the rule also contained a general '$5,000 per account' sentence. The account-specific $1,000 sales cap governs and matches the statute.
+- **Citation:** Rule 61J2-14.010(2), F.A.C. (current); s. 475.25(1)(k), F.S. (2025)
+- **Source:** https://www.flsenate.gov/Laws/statutes/2025/475.25
+- **What we teach:** Up to $1,000 in a sales escrow account; up to $5,000 in a property management escrow account.
+
+## V-39 · Deposits held by a title company or attorney (Rule 61J2-14.008(2)(b))
+
+- **Status:** Corrected (official-excerpt, double-checked)
+- **Study manual says:** When a deposit is held by a title company or attorney, the broker is not the escrow holder; the broker must obtain written verification of the deposit (manual: request a written statement and give it to the seller within 10 business days) [Rule 61J2-14.008, F.A.C.; s. 475.25(1)(d), F.S.]
+- **Finding:** The current rule has two separate 10-business-day steps plus an exception. (1) The licensee who prepared or presented the sales contract must put the title company's or attorney's name, address and telephone number on the contract. (2) Within 10 business days after each deposit is due under the sales contract, the licensee's broker must make a written request to the title company or attorney for written verification that the deposit was received. This step is not required if the seller or seller's agent nominated the title company or attorney in writing. (3) Within 10 business days of the date of that request, the broker must give the seller's broker (or the seller, if unrepresented) either a copy of the verification or written notice that no verification was received. What changed: before the 6-21-2010 amendment, the request was due within 3 business days after the deposit was due. The 2009 F.A.W. notice and an older rule file show the 3-day text; the current Chapter 61J2-14 compilation and FREC citation documents show 10 days. The manual's single 'give it to the seller within 10 business days' merges the two windows, leaves out the seller-nominated exception and the contract-disclosure duty, and names the seller instead of the seller's broker. The verification duty comes from the rule, not s. 475.25(1)(d); s. 475.25(1)(k) is what allows deposits to be held by a title company.
+- **Citation:** Rule 61J2-14.008(2)(b), F.A.C. (as amended 6-21-2010, current); s. 475.25(1)(k), F.S. (2025)
+- **Source:** https://flrules.org/gateway/ruleno.asp?id=61J2-14.008
+- **What we teach:** The contract names the title company or attorney (name, address, phone). Within 10 business days after each deposit is due, the broker asks the holder in writing to verify receipt (not required if the seller or seller's agent nominated the holder in writing). Within 10 business days of that request, the broker gives the seller's broker (or the seller, if unrepresented) the verification or a notice that none was received.
+
+## V-40 · Brokerage records (s. 475.5015)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Brokers must keep books, accounts and records (including escrow records and disclosures) for at least 5 years; if litigation is involved, at least 2 years after it concludes [Rule 61J2-14.012, F.A.C.; s. 475.5015, F.S.]
+- **Finding:** s. 475.5015, F.S.: each broker must keep at least one legible copy of all books, accounts and records of the brokerage business for at least 5 years. The 5 years run from receipt of any entrusted money, fund, deposit, check or draft or, if no funds were entrusted, from the date any party signs the listing agreement, offer to purchase, rental property management agreement, lease or other agreement engaging the broker. If a document is the subject of litigation or used as evidence in it, the relevant records must be kept at least 2 years after the civil action or any appellate proceeding concludes, whichever is later, and never less than 5 years in total. Rule 61J2-14.012 separately requires the broker to preserve deposit slips, depository statements and the parties' agreements and make them available to the Department. It also requires an accurate account of each deposit and each bank account, plus monthly reconciliations. The retention periods themselves come from the statute, not the rule excerpt.
+- **Citation:** s. 475.5015, F.S. (2025; same in 2024); Rule 61J2-14.012, F.A.C.
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0475.5015
+- **What we teach:** Keep at least 5 years (from receipt of funds or, if none, from signing of the listing, offer, lease or other agreement). In litigation: at least 2 years after the case and any appeal end, and never less than 5 years in total.
+
+## V-41 · FREC penalties (s. 475.25(1))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** FREC may impose an administrative fine of up to $5,000 per count and suspend a license for up to 10 years [s. 475.25(1), F.S.]
+- **Finding:** s. 475.25(1), F.S.: the Commission may deny an application or renewal, place a licensee on probation, suspend a license, registration or permit for up to 10 years, revoke it, impose an administrative fine of up to $5,000 for each count or separate offense, and issue a reprimand, on the listed grounds. Wording is identical in the 2024 and 2025 editions. The cap was $1,000 per count in the 2002 edition and was $5,000 by the 2010 edition. The 2026 edition is listed on the official site; the excerpts showed no change, but its subsection (1) penalty text was not retrieved.
+- **Citation:** s. 475.25(1), F.S. (2025)
+- **Source:** https://www.flsenate.gov/Laws/statutes/2025/475.25
+- **What we teach:** Fine up to $5,000 per count; suspension up to 10 years; also denial, probation, revocation and reprimand.
+
+## V-42 · Probable cause panel (s. 455.225(4); Rule 61J2-20.009)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** The probable cause panel for real estate is composed of two members, at least one a current FREC member (other may be a former member) [s. 455.225(4), F.S.; s. 475.021?]
+- **Finding:** s. 455.225(4), F.S.: probable cause is decided by majority vote of a board's probable cause panel. A board may set up by rule multiple panels of at least two members, and one or more panel members may be former board members. Every panel must include a present board member and a former or present professional member, and a former professional member must hold an active valid license. It must also include a former or present consumer member if one is available, willing to serve and authorized by the chair. FREC Rule 61J2-20.009 (effective 11-8-2012): per FREC 2016/2019 rule documents, the panel must include at least one present Commission member, and one member may be a former Commission member, as s. 455.225(4) allows. A 2012 FREC meeting copy of the rule read 'two current members of the Commission,' appointed by the chair. The exact panel size in the current rule text was not seen directly, but a two-member panel fits both the statute and the rule. The authority is s. 455.225(4) and Rule 61J2-20.009, not s. 475.021.
+- **Citation:** s. 455.225(4), F.S. (2025; same in 2024); Rule 61J2-20.009, F.A.C. (eff. 11-8-2012)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0455.225
+- **What we teach:** At least two members, including a present FREC member; a former member may serve. Probable cause is decided by majority vote. (Current rule wording on size seen only in fragments.)
+
+## V-43 · Appeal of a final order (s. 120.68)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** A licensee may appeal a final order to the District Court of Appeal within 30 days [s. 120.68, F.S.; Fla. R. App. P. 9.110]
+- **Finding:** s. 120.68, F.S.: a party adversely affected by final agency action may seek judicial review. All proceedings start by filing a notice of appeal or petition for review under the Florida Rules of Appellate Procedure within 30 days after rendition of the order appealed. Review is in the appellate district where the agency has its headquarters or where a party resides, or as otherwise provided by law. Fla. R. App. P. 9.110(c): for appeals of final orders of lower administrative tribunals, the notice is filed with the agency clerk within 30 days of rendition, and a copy with filing fees goes to the court clerk. Missing the 30-day notice is an irremediable jurisdictional defect.
+- **Citation:** s. 120.68(1)(a), (2)(a), F.S. (2025; 2026 edition excerpt identical); Fla. R. App. P. 9.110(c)
+- **Source:** https://flsenate.gov/Laws/Statutes/2025/120.68
+- **What we teach:** Notice of appeal within 30 days after the final order is rendered, to the District Court of Appeal.
+
+## V-44 · Advertising and team names (Rules 61J2-10.025, 61J2-10.026)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** All licensee advertising must include the licensed name of the brokerage firm (blind ad otherwise); rules for team names and internet ads (firm name placement) [Rule 61J2-10.025, F.A.C.]
+- **Finding:** Confirmed, but the team-name rules are in a different rule than the manual says. Rule 61J2-10.025(1) says all advertising must let reasonable people know they are dealing with a real estate licensee, and every real estate advertisement must include the licensed name of the brokerage firm. Ads may not be fraudulent, false, deceptive or misleading. (2): if the licensee's personal name appears, at least the last name must be used as registered with the Commission. (3)(a), internet ads: the brokerage firm name must be placed next to, or directly above or below, the 'point of contact information'. That term means any way to contact the brokerage or the licensee: mailing or street address, email, telephone or fax. The flrules chapter index still lists 2/5/2007 as the effective date. An amendment proposed in 2018-2019 (licensee name no larger than the brokerage name; individual licensees barred from words like 'Brokerage', 'Brokers', 'Company') was not confirmed as adopted, so treat it as unverified. TEAM NAMES are in Rule 61J2-10.026 (Team or Group Advertising, effective 11/1/2021), not 10.025: (a) the team must work under the same broker and file a designated licensee with the broker; (b) the broker keeps a written roster of team members, updated at least monthly; (c) team names may include 'team' or 'group' but not 'Brokerage', 'Realty', 'Real Estate', 'Properties', 'Company' or similar words suggesting a separate brokerage; (d) ads with the team name may not be in larger print than the registered brokerage's name or logo; (e) ads must make clear to reasonable people that they are dealing with a team or group. Failing to include the registered brokerage name can be cited under Rule 61J2-24.002.
+- **Citation:** Rule 61J2-10.025(1)-(3), F.A.C. (eff. 2/5/2007, current per flrules chapter index, 2026); Rule 61J2-10.026, F.A.C. (eff. 11/1/2021) for team or group advertising
+- **Source:** https://flrules.org/gateway/RuleNo.asp?ID=61J2-10.025
+- **What we teach:** Every ad includes the licensed brokerage name (otherwise it is a blind ad). A licensee's own name: at least the last name as registered. Internet ads: brokerage name next to, above or below the contact information. Team names may use 'team' or 'group' but not 'Brokerage', 'Realty', 'Real Estate', 'Properties', 'Company' or similar, and may not appear larger than the brokerage name.
+
+## V-45 · Office entrance sign (s. 475.22(1))
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Broker's office entrance sign must show the broker's name, trade name if any, and 'Licensed Real Estate Broker' or 'Lic. Real Estate Broker' [Rule 61J2-10.024, F.A.C.]
+- **Finding:** Confirmed. The operative requirement is in statute s. 475.22(1), F.S. (2025). Each active broker must keep a sign on or about the entrance of the principal office and each branch office, where anyone about to enter can easily see and read it. The sign must contain the broker's name together with the trade name, if any. For a partnership or corporation, it must show the firm's name or trade name and the name of at least one active broker. At a minimum, the words 'licensed real estate broker' or 'lic. real estate broker' must appear on office entrance signs. Rule 61J2-10.024 (Office Entrance Signs) still appears on flrules. A repeal was proposed in January 2006 on the ground that it only duplicates Chapter 475, but flrules marks it 'Not Adopted by FAC Yet'. Whether or not the rule stands, the statute imposes the same requirement. Older versions (2002/2010) said the Commission set the sign's form and minimum dimensions; the 2025 excerpt does not show that language.
+- **Citation:** s. 475.22(1), F.S. (2025; the 2026 edition carries the same section heading); Rule 61J2-10.024, F.A.C. (2006 proposed repeal not adopted)
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0475%2FSections%2F0475.22.html
+- **What we teach:** At the entrance of the main office and each branch: the broker's name and any trade name (a firm: its name plus at least one broker) and the words 'Licensed Real Estate Broker' or 'Lic. Real Estate Broker'.
+
+## V-46 · Designated sales associates (s. 475.2755)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Designated sales associates allowed only in nonresidential transactions where buyer and seller each have assets of $1 million or more and request it in writing [s. 475.2755, F.S.]
+- **Finding:** Confirmed. In a real estate transaction other than a 'residential sale' as defined in s. 475.278(5)(a), a broker may, at the customers' request, designate sales associates to act as single agents for different customers in the same transaction. This is allowed only where the buyer and seller have assets of $1 million or more. A 'residential sale' is improved residential property of four units or fewer, unimproved residential property intended for four units or fewer, or agricultural property of 10 acres or fewer. The buyer and seller must both sign disclosures stating that their assets meet the threshold and asking the broker to use the designated sales associate form of representation. Designated sales associates have a single agent's duties under s. 475.278(3), including the (3)(b)-(c) disclosure requirements. They may not disclose confidential customer information except to the broker or persons the broker specifies (or as the law permits or requires). The broker must keep that information confidential and may not use it to the detriment of the other party. The $1 million figure is unchanged from the 2000/2002 editions through the 2024 and 2026 editions.
+- **Citation:** s. 475.2755, F.S. (2026 ed.; same text in 2024); s. 475.278(5)(a), F.S. for 'residential sale'
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0475%2FSections%2F0475.2755.html
+- **What we teach:** Only in nonresidential transactions; buyer and seller each have assets of $1 million or more and sign disclosures requesting it. Each designated associate has a single agent's duties.
+
+## V-47 · Stigmatized property (s. 689.25)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** The fact that a property was the site of a homicide, suicide or death, or that an occupant had HIV/AIDS, is not a material fact that must be disclosed [s. 689.25, F.S.]
+- **Finding:** Confirmed. s. 689.25(1)(a): the fact that an occupant of real property is or has been infected with HIV, or diagnosed with AIDS, is not a material fact that must be disclosed in a real estate transaction. (1)(b): the fact that a property was, or was at any time suspected to have been, the site of a homicide, suicide or death is not a material fact that must be disclosed in a real estate transaction. (2): no cause of action arises against an owner, the owner's agent, a transferee's agent, or a person licensed under chapter 475 for failing to disclose these facts. The 2001 version covered only HIV/AIDS; the homicide, suicide and death language was added later and is in the 2010 through 2025 text. The 2026 index still lists s. 689.25 under the same title ('Failure to disclose homicide, suicide, deaths, or diagnosis of HIV or AIDS infection in an occupant of real property').
+- **Citation:** s. 689.25(1)(a)-(b), (2), F.S. (2025; listed unchanged in the 2026 index)
+- **Source:** https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699%2F0689%2FSections%2F0689.25.html
+- **What we teach:** That a homicide, suicide or death occurred on the property, or that an occupant had HIV/AIDS, is not a material fact that must be disclosed.
+
+## V-48 · Timing of brokerage relationship notices (s. 475.278(3)-(4))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Single agent notice: before or at the time of entering a listing/representation agreement or before showing property, whichever occurs first; No brokerage relationship notice: before showing; consent to transition before the change [s. 475.278(3)-(4), F.S.]
+- **Finding:** Confirmed. s. 475.278(3)(b): a single agent's duties must be fully described and disclosed in writing to the buyer or seller. This can be a separate document or part of another document such as a listing or representation agreement. The disclosure must be made before, or at the time of, entering into a listing agreement or an agreement for representation, or before the showing of property, whichever occurs first. If included in another document, the notice must be at least as large as the other provisions and conspicuously placed, with the first sentence in uppercase bold type, using the prescribed 'SINGLE AGENT NOTICE' form. s. 475.278(3)(c): a single agent may transition to transaction broker only if the principal gives written consent before the change in relationship, using the prescribed Consent to Transition to Transaction Broker notice. s. 475.278(4): a licensee with no brokerage relationship must disclose its duties in writing before the showing of property, using the prescribed notice. These disclosure requirements apply only to residential sales (s. 475.274, s. 475.278(5)). They do not apply to nonresidential transactions, most rentals or leases, bona fide open houses or model home showings that involve no eliciting of confidential information or negotiation, or when the licensee knows the party is already represented by a single agent or transaction broker.
+- **Citation:** s. 475.278(3)(b)-(c), (4), (5), F.S. (2026 ed.; same text in 2025)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2026/475.278
+- **What we teach:** Single agent notice: before or at the time of a listing or representation agreement, or before showing property, whichever comes first. No brokerage relationship notice: before showing property. Single agent → transaction broker: the principal's written consent before the change.
+
+## V-49 · Written listing agreements (s. 475.25(1)(r))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Written listing agreements must have a definite expiration date, description, price and terms, fee, signatures; no automatic renewal; copy delivered to the person signing within 24 hours [s. 475.25(1)(r), F.S.]
+- **Finding:** Confirmed, with one note on wording. Under s. 475.25(1)(r), the Commission may discipline a licensee who fails to include required terms in a written listing agreement or to deliver a copy on time. Each written listing agreement must contain a definite expiration date, a description of the property, price and terms, the fee or commission, and the signature of the principal(s). A copy must be given to the person signing within 24 hours of obtaining the written listing agreement. The statute does not use the words 'automatic renewal'. Instead it says a written listing agreement may contain no provision requiring the person signing to notify the broker of an intention to cancel after the definite expiration date. In effect, that bars self-renewing listings that need a cancellation notice. The provision applies to written listing agreements; it does not require every listing to be in writing.
+- **Citation:** s. 475.25(1)(r), F.S. (2026 ed.; same core text in 2025, 2022, 2020, 2012, 2010)
+- **Source:** https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0475%2FSections%2F0475.25.html
+- **What we teach:** Definite expiration date, property description, price and terms, fee, principal's signature; copy to the signer within 24 hours; no clause requiring the seller to give notice to cancel after the expiration date (no automatic renewal).
+
+## V-50 · TRID disclosure timing (12 CFR 1026.19(e)-(f))
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Loan Estimate delivered within 3 business days after receiving the application [12 CFR 1026.19(e)] / Closing Disclosure received at least 3 business days before consummation [12 CFR 1026.19(f)]
+- **Finding:** The creditor must deliver or mail the Loan Estimate no later than the third business day after it receives the consumer's application, as defined in 1026.2(a)(3). The clock starts once the six application items in 1026.2(a)(3)(ii) are received. For this deadline, 'business day' has the general meaning: a day the creditor's offices are open to the public for carrying on substantially all of its business functions. Separately, 1026.19(e)(1)(iii)(B) requires the Loan Estimate to be delivered or mailed no later than the seventh business day before consummation, and for that rule a business day is every calendar day except Sundays and federal legal public holidays. Mailed or emailed Loan Estimates are treated as received 3 business days after delivery or mailing. If the creditor denies the application, or the consumer withdraws it, within the 3-day window, no Loan Estimate is required. No 2025 or 2026 final rule changing this timing was found; a July 9, 2026 CFPB request for information only asks for comment. Under 1026.19(f)(1)(ii)(A), the creditor must ensure the consumer receives the Closing Disclosure no later than three business days before consummation. Exceptions are listed in (f)(1)(ii)(B) (timeshares: by consummation) and in (f)(2). Disclosures not handed over in person are treated as received 3 business days after delivery or mailing. For this rule, a business day is every calendar day except Sundays and federal legal public holidays, so Saturdays count. A consumer may waive the waiting period only for a bona fide personal financial emergency, and only after receiving the disclosures. Under (f)(2)(ii), a corrected Closing Disclosure starts a new 3-business-day waiting period if the APR becomes inaccurate, the loan product changes, or a prepayment penalty is added. No 2025 or 2026 timing amendment was found.
+- **Citation:** 12 CFR 1026.19(e)(1)(iii)(A)-(B) and 1026.2(a)(6), Regulation Z (eCFR current text, 2026; official comment 19(e)(1)(iii)); 12 CFR 1026.19(f)(1)(ii)(A), (f)(1)(iii)-(iv), (f)(2)(ii), Regulation Z (eCFR current text, 2026)
+- **Source:** https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-C/section-1026.19
+- **What we teach:** Loan Estimate: delivered or mailed within 3 business days after the application. Closing Disclosure: received at least 3 business days before consummation; a new 3-day wait only if the APR becomes inaccurate, the loan product changes or a prepayment penalty is added.
+
+## V-51 · TILA right of rescission (12 CFR 1026.23)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** TILA right of rescission: 3 business days for credit secured by the consumer's principal dwelling; not for residential mortgage transactions (purchase money) [12 CFR 1026.23]
+- **Finding:** Under 1026.23(a)(1), in a credit transaction where a security interest is or will be retained or acquired in a consumer's principal dwelling, each consumer whose ownership interest is or will be subject to it has the right to rescind. The right runs until midnight of the third business day after the latest of three events: consummation, delivery of the rescission notice, or delivery of all material disclosures. If the notice or material disclosures are never delivered, the right expires 3 years after consummation, or earlier on transfer of all the consumer's interest or on sale of the property. For rescission, business days include Saturdays but not Sundays or federal legal public holidays. Under 1026.23(f), the right does not apply to (1) a residential mortgage transaction, meaning credit to finance the purchase or initial construction of the principal dwelling, or (2) a refinancing by the same creditor, except to the extent the new amount financed exceeds the unpaid principal, earned unpaid finance charges and refinancing costs. If the consumer rescinds, the security interest becomes void and the consumer owes no finance charge.
+- **Citation:** 12 CFR 1026.23(a)(1), (a)(3), (d)(1), (f) and 1026.2(a)(6), Regulation Z (eCFR current text; CFR 2025 edition, govinfo)
+- **Source:** https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-C/section-1026.23
+- **What we teach:** 3 business days (Saturdays count) for credit secured by the borrower's principal dwelling, such as a home equity loan or a refinance with a new lender. Not for loans to buy or build the home.
+
+## V-52 · Credit advertising trigger terms (12 CFR 1026.24(d))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Advertising trigger terms: amount or percentage of down payment, number of payments or period of repayment, amount of any payment, amount of any finance charge [12 CFR 1026.24(d)]
+- **Finding:** For closed-end credit, 1026.24(d)(1) lists four triggering terms: (i) the amount or percentage of any downpayment; (ii) the number of payments or period of repayment; (iii) the amount of any payment; (iv) the amount of any finance charge. An ad that states any one of them must also state the items in (d)(2): the downpayment amount or percentage, the terms of repayment (including any balloon payment), and the APR, with a note if the rate may increase after consummation. The official commentary adds four points. Implied terms count; for example, '80 percent financing' implies a 20% downpayment. 'No downpayment' is not a trigger. Vague phrases such as 'monthly payments to suit your needs' are not statements of a payment amount. Stating the APR, or that there is no particular charge (for example 'no closing costs'), is not a trigger.
+- **Citation:** 12 CFR 1026.24(d)(1)-(2), Regulation Z (eCFR current text, 2026), and Supplement I comment 24(d)(1)
+- **Source:** https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-C/section-1026.24
+- **What we teach:** Triggers: down payment amount or percentage, number of payments or repayment period, payment amount, finance charge amount. Using one requires the down payment, repayment terms and APR. The APR alone, 'no down payment' and 'no closing costs' are not triggers.
+
+## V-53 · RESPA scope, Section 8 and Section 9
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** RESPA applies to federally related mortgage loans on 1-4 family residential property; Section 8 prohibits kickbacks and unearned fees; Section 9 bars sellers from requiring a particular title insurer [12 USC 2602, 2607, 2608; 12 CFR 1024]
+- **Finding:** Scope: under 12 USC 2602(1), a 'federally related mortgage loan' is a loan, other than temporary financing such as a construction loan, that is secured by a first or subordinate lien on residential real property designed principally for one to four families, including condominium and cooperative units. The loan must also have a federal connection, for example a federally insured or regulated lender, a federally related program, or intended sale to Fannie Mae, Ginnie Mae or Freddie Mac. Regulation X (12 CFR 1024.2) adds that a loan secured by property outside a State is not covered. Section 8, 12 USC 2607: (a) no person may give or accept any fee, kickback or thing of value under an agreement to refer settlement-service business; (b) no person may give or accept any portion, split or percentage of a settlement-service charge other than for services actually performed. Under 12 CFR 1024.14, a charge for no or nominal services, or a duplicative fee, is an unearned fee. Freeman v. Quicken Loans (2012) limits 2607(b) to fees split between two or more persons. Section 9, 12 USC 2608(a): a seller of property bought with a federally related mortgage loan may not require, directly or indirectly as a condition of sale, that the buyer purchase title insurance from a particular title company. Under 2608(b), a violating seller owes the buyer 3 times all title insurance charges. 12 CFR 1024.16 restates this rule.
+- **Citation:** 12 USC 2602(1), 2607(a)-(b), 2608(a)-(b) (U.S. Code, 2023 edition, govinfo); 12 CFR 1024.2, 1024.14, 1024.16 (Regulation X, current)
+- **Source:** https://www.law.cornell.edu/uscode/text/12/2608
+- **What we teach:** Federally related mortgage loans on 1–4 family residential property. Section 8: no kickbacks or unearned fees for referrals. Section 9: a seller may not require the buyer to use a particular title insurer (liable for 3 times the title charges).
+
+## V-54 · Fair Housing Act exemptions (42 USC 3603(b), 3607)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Fair Housing Act exemptions: owner of no more than 3 single-family houses selling/renting without a broker and without discriminatory ads (one sale per 24 months if not the occupant); owner-occupied dwellings of no more than 4 units; religious organizations; private clubs [42 USC 3603(b), 3607]
+- **Finding:** 3603(b)(1): section 3604 does not apply to a single-family house sold or rented by a private owner, but only if four conditions are met. (1) The owner does not own more than three such houses at one time, and does not own an interest in or receive proceeds from more than three at once. (2) An owner who was not living in the house, or was not its most recent occupant, gets the exemption for only one such sale in any 24-month period. (3) No broker, agent or salesperson, and no person in the business of selling or renting dwellings, is used. (4) No advertising that violates 3604(c) is published. Under 3603(c), a person is 'in the business' if, in the preceding 12 months, they acted as principal in 3 or more dwelling transactions or as agent in 2 or more. 3603(b)(2): rooms or units in a dwelling with living quarters for no more than four families living independently are exempt if the owner actually lives in one of them. 3607(a): a religious organization, or a nonprofit it operates, supervises or controls, may limit sale, rental or occupancy of dwellings it owns or operates for a noncommercial purpose to members of the same religion, or give them preference, unless membership in the religion is restricted by race, color or national origin. A private club not in fact open to the public may limit lodgings it provides as an incidental, noncommercial part of its purpose to its members, or give them preference. 24 CFR Part 100 repeats both exemptions.
+- **Citation:** 42 USC 3603(b)-(c) and 3607(a) (U.S. Code, 2023/2024 editions, govinfo)
+- **Source:** https://www.law.cornell.edu/uscode/text/42/3603
+- **What we teach:** Private owner of no more than 3 single-family homes, no broker, no discriminatory ads (one sale per 24 months if not the occupant); owner-occupied building with no more than 4 units; religious organizations; private clubs (members, non-commercial lodging).
+
+## V-55 · Housing for older persons (42 USC 3607(b))
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Housing for older persons: 55+ with at least 80% of occupied units having at least one person 55+; or 62+ for all occupants [42 USC 3607(b); 24 CFR 100.304-305]
+- **Finding:** The familial status protections do not apply to 'housing for older persons'. 42 USC 3607(b)(2) defines that housing three ways: (A) housing provided under a qualifying state or federal elderly program; (B) housing intended for, and solely occupied by, persons 62 or older; (C) housing intended and operated for persons 55 or older. Under (C), at least 80% of occupied units must have at least one person 55 or older, and the facility must publish and follow policies showing that intent and comply with HUD's age-verification rules. The Housing for Older Persons Act of 1995 (Pub. L. 104-76) added the 80% test, which replaced the old 'one person 55+ per unit' wording. HUD rules are as follows. 24 CFR 100.303: 62+ housing must be solely occupied by persons 62 or older; exceptions cover residents who were under 62 on Sept. 13, 1988 (if all new occupants are 62+) and vacant units reserved for persons 62+. 24 CFR 100.304-305: the 80% is measured on occupied units only; a temporarily vacant unit counts as occupied if the primary occupant lived there in the past year and intends to return; fractions round up; new construction need not comply until 25% of units are occupied; HUD says the other 20% need not be occupied by people under 55. 24 CFR 100.306-307 require published policies and verification by reliable surveys and affidavits.
+- **Citation:** 42 USC 3607(b)(1)-(2) (U.S. Code, 2023 edition); 24 CFR 100.303-100.307 (CFR 2025 edition / eCFR current)
+- **Source:** https://www.ecfr.gov/current/title-24/subtitle-B/chapter-I/part-100/subpart-E
+- **What we teach:** 62+: all occupants 62 or older. 55+: at least 80% of occupied units have at least one person 55 or older, with published policies and age verification.
+
+## V-56 · Fair housing protected classes by year (42 USC 3604)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Sex added to the Fair Housing Act in 1974; familial status and handicap added in 1988 [HUD / 42 USC 3604 history]
+- **Finding:** The U.S. Code amendment notes to 42 USC 3604 say Pub. L. 93-383, the Housing and Community Development Act of 1974 (section 808), inserted ', sex' after 'religion' throughout 3604(a)-(e). The Fair Housing Amendments Act of 1988 (Pub. L. 100-430, enacted Sept. 13, 1988, effective 180 days later) did three things. It added 'familial status' to 3604(a)-(b). It added 'handicap, familial status' to 3604(c)-(e). It added 3604(f), which bars discrimination because of handicap. The 1968 Act originally covered race, color, religion and national origin. Current protected classes: race, color, religion, sex, familial status, national origin and handicap (HUD rules now say 'disability').
+- **Citation:** 42 USC 3604, Amendments notes (U.S. Code 2023 edition, govinfo); Pub. L. 93-383 sec. 808 (1974); Pub. L. 100-430, 102 Stat. 1619 (1988)
+- **Source:** https://www.govinfo.gov/content/pkg/USCODE-2023-title42/html/USCODE-2023-title42-chap45-subchapI-sec3604.htm
+- **What we teach:** 1968: race, color, religion, national origin. 1974: sex. 1988: familial status and handicap (disability).
+
+## V-57 · Fair housing complaint deadlines (42 USC 3610, 3613)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Fair housing complaint to HUD within 1 year of the discriminatory act; civil action within 2 years [42 USC 3610(a), 3613(a)]
+- **Finding:** 42 USC 3610(a)(1)(A)(i): an aggrieved person may file a complaint with the HUD Secretary no later than one year after an alleged discriminatory housing practice occurred or terminated. 42 USC 3613(a)(1)(A): a civil action in federal or state court must be filed no later than 2 years after the practice occurred or terminated, or after breach of a conciliation agreement, whichever is later. Under 3613(a)(1)(B), the 2-year period does not run while a HUD administrative proceeding on the same practice is pending; this tolling does not apply to suits for breach of a conciliation agreement. Under 3613(a)(2), a person may sue whether or not a HUD complaint was filed. For comparison, Attorney General suits on referred matters under 3614(b)(1)(B) have an 18-month limit.
+- **Citation:** 42 USC 3610(a)(1)(A)(i) and 3613(a)(1)(A)-(B) (U.S. Code, 2020/2021 editions, govinfo)
+- **Source:** https://www.law.cornell.edu/uscode/text/42/3613
+- **What we teach:** HUD complaint within 1 year; civil lawsuit within 2 years (the clock stops while a HUD proceeding is pending).
+
+## V-58 · Do Not Call: established business relationship (16 CFR 310.2; 47 CFR 64.1200)
+
+- **Status:** Corrected (official-excerpt, double-checked)
+- **Study manual says:** Do Not Call established business relationship: up to 18 months after the consumer's last purchase/transaction and up to 3 months after an inquiry [16 CFR 310.2; 47 CFR 64.1200]
+- **Finding:** The FTC rule's wording has changed, while the FCC rule's wording has not. FTC Telemarketing Sales Rule, 16 CFR 310.2(q), as amended by the final rule published April 16, 2024 (89 FR, doc. 2024-07180) and effective May 16, 2024, defines an established business relationship as either (1) a purchase, rental, lease or financial transaction with the seller within the 540 days before the telemarketing call, or (2) an inquiry or application about the seller's goods or services within the 90 days before the call. The 2024 rule replaced '18 months' with 540 days and 'three months' with 90 days. Sellers relying on the inquiry prong must keep records under 310.5. The FCC rule, 47 CFR 64.1200(f)(5) (current eCFR), still uses 18 months after a purchase or transaction and 3 months after an inquiry or application. Under the FCC rule, the relationship must come from a voluntary two-way communication and must not have been ended by either party; a company-specific do-not-call request ends it for telemarketing purposes. Exam answer: '18 months / 3 months' is still literally correct under the FCC rule. The TSR now says 540 days / 90 days, which is roughly but not exactly the same.
+- **Citation:** 16 CFR 310.2(q) (as amended eff. May 16, 2024; eCFR current 2026); 47 CFR 64.1200(f)(5) (eCFR current)
+- **Source:** https://www.federalregister.gov/documents/2024/04/16/2024-07180/telemarketing-sales-rule
+- **What we teach:** FCC rule: 18 months after a purchase or transaction, 3 months after an inquiry. FTC rule since May 16, 2024: 540 days and 90 days. Exam answer: 18 months / 3 months, unless the question uses days.
+
+## V-59 · CAN-SPAM (15 USC 7704; 16 CFR 316)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** CAN-SPAM opt-out requests must be honored within 10 business days; email must include a valid physical postal address [15 USC 7704; 16 CFR 316]
+- **Finding:** 15 USC 7704(a)(4)(A): once a recipient opts out, the sender, and anyone acting on its behalf, may not send that recipient commercial email more than 10 business days after receiving the request. The sender also may not sell or transfer the address. The FTC's 2008 rulemaking considered cutting this to 3 days and kept 10 business days; its 2019 review kept the Rule without changes. Under 7704(a)(3), the opt-out mechanism must keep working for at least 30 days after the message is sent. Under 16 CFR 316.5, the sender may not charge a fee or require more than an email address, a reply email, or a visit to a single web page to opt out. 15 USC 7704(a)(5)(A)(iii): every commercial email must include the sender's valid physical postal address. 16 CFR 316.2 defines this as a current street address, a registered USPS Post Office box, or a private mailbox registered with a commercial mail receiving agency.
+- **Citation:** 15 USC 7704(a)(3)-(5) (U.S. Code 2020 edition, govinfo); 16 CFR 316.2, 316.5 (CAN-SPAM Rule, current)
+- **Source:** https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+- **What we teach:** Honor opt-outs within 10 business days; include a valid physical postal address; the opt-out must keep working for at least 30 days after sending.
+
+## V-60 · Lead-based paint disclosure (40 CFR 745 Subpart F)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Housing built before 1978: disclose known lead-based paint hazards, provide the EPA pamphlet, give buyers a 10-day opportunity to inspect (may be waived); applies to sales and leases [40 CFR 745 Subpart F; 24 CFR 35]
+- **Finding:** The rule covers target housing, defined in 40 CFR 745.103 as housing built before 1978. Excluded are housing for the elderly or persons with disabilities and 0-bedroom dwellings, unless a child under 6 lives or is expected to live there. Sellers and lessors must, under 745.107: give an EPA-approved pamphlet such as 'Protect Your Family From Lead in Your Home'; disclose known lead-based paint and hazards; provide available records and reports; and disclose the same to each agent. If disclosure comes after an offer, it must be made before the seller or lessor accepts it. Under 745.113, contracts and leases must include the Lead Warning Statement and signed acknowledgments. 10-day rule (745.110): before a purchaser is bound by the contract, the seller must allow 10 days for a risk assessment or inspection, unless the parties agree in writing on a different period. The purchaser may waive the opportunity in writing. The 10-day opportunity applies to sales only; EPA says lessees get disclosure but not this period. Exemptions in 745.101 include foreclosure sales, leases of 100 days or less with no renewal, leases of housing certified lead-free, and renewals where disclosure was already made. HUD's identical rule is 24 CFR Part 35, Subpart A. Agents must ensure compliance under 745.115.
+- **Citation:** 40 CFR 745.101, 745.103, 745.107, 745.110, 745.113 (Subpart F; CFR 2025 edition / eCFR current); 24 CFR Part 35 Subpart A
+- **Source:** https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-F
+- **What we teach:** Housing built before 1978: EPA pamphlet, disclosure of known lead paint and hazards and of available reports, Lead Warning Statement. Buyers get a 10-day inspection opportunity (may be waived or changed in writing). Tenants get the disclosure but not the 10-day period.
+
+## V-61 · ECOA protected bases (15 USC 1691)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** ECOA prohibits credit discrimination based on race, color, religion, national origin, sex, marital status, age (if able to contract), or receipt of public assistance income [15 USC 1691]
+- **Finding:** 15 USC 1691(a) makes it unlawful for a creditor to discriminate against any applicant in any aspect of a credit transaction on three grounds: (1) race, color, religion, national origin, sex, marital status, or age, provided the applicant can contract; (2) because all or part of the applicant's income comes from a public assistance program; (3) because the applicant has in good faith exercised a right under the Consumer Credit Protection Act. The manual's list leaves out ground (3). Under 1691(b), creditors may ask about age or public assistance income to judge the amount and likely continuance of income, among other permitted uses. Regulation B (12 CFR 1002.2(z)) defines 'prohibited basis' the same way. A CFPB final rule published April 22, 2026 and effective July 21, 2026 removed the disparate-impact 'effects test' from 1002.6(a) and narrowed discouragement under 1002.4(b) to statements of intent to discriminate. It did not change the protected bases.
+- **Citation:** 15 USC 1691(a)-(b) (U.S. Code, 2020 edition, govinfo); 12 CFR 1002.2(z), Regulation B (as amended eff. July 21, 2026)
+- **Source:** https://www.govinfo.gov/content/pkg/USCODE-2020-title15/pdf/USCODE-2020-title15-chap41-subchapIV-sec1691.pdf
+- **What we teach:** Race, color, religion, national origin, sex, marital status, age (if able to contract), receipt of public assistance income, and good-faith exercise of consumer credit rights.
+
+## V-62 · Security deposit: disclosure of how it is held (s. 83.49(2))
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Landlord must give the tenant written notice of how the security deposit is held within 30 days of receipt [s. 83.49(2), F.S.]
+- **Finding:** Confirmed, with qualifications. The landlord must give the tenant written notice disclosing the advance rent or security deposit either IN THE LEASE AGREEMENT or within 30 days after receiving it. The notice must: (a) be given in person or by mail, or by e-mail under s. 83.505 (e-mail added effective 7/1/2025, ch. 2025-16, and only allowed if both parties signed an e-mail addendum); (b) give the name and address of the depository holding the funds, or state that a surety bond was posted; (c) say whether the tenant is entitled to interest; and (d) contain the statutory disclosure. If the landlord later changes how or where the deposit is held, the tenant must be told within 30 days after the change. EXCEPTION: this subsection does not apply to a landlord who rents fewer than five individual dwelling units. Failure to give this notice is not a defense to paying rent when due. The older wording 'manner in which the landlord is holding' (2011 text) was replaced by the 'in the lease or within 30 days' disclosure.
+- **Citation:** s. 83.49(2), Fla. Stat. (2025; same structure in 2026 edition); s. 83.505, Fla. Stat. (2025), created by ch. 2025-16, Laws of Fla. (CS/CS/CS/HB 615)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2026/0083.49
+- **What we teach:** In the lease or within 30 days of receipt: where the deposit is held (or that a surety bond was posted) and whether interest is paid. Not required for landlords who rent fewer than 5 units.
+
+## V-63 · Security deposit after the tenancy ends (s. 83.49(3))
+
+- **Status:** Corrected (official-excerpt, double-checked)
+- **Study manual says:** After move-out: return deposit within 15 days if no claim; otherwise certified-mail notice of intent to impose a claim within 30 days; tenant has 15 days to object; failing the 30-day notice forfeits the claim [s. 83.49(3), F.S.]
+- **Finding:** The deadlines are unchanged, but the notice method has been widened. (a) If the landlord does not intend to claim against the deposit, it must be returned, with interest if required, within 15 days after the rental agreement ends. (b) If the landlord intends to impose a claim, written notice must be given within 30 days after the agreement ends, stating the reason. It goes by certified mail to the tenant's last known mailing address OR, since 7/1/2025, by e-mail under s. 83.505 (only if both parties signed the statutory e-mail addendum and gave e-mail addresses). (c) Unless the tenant objects within 15 days after receiving the notice, the landlord may deduct the claim and must send the balance within 30 days after the date of the notice. (d) If the landlord misses the 30-day notice, the landlord forfeits the right to claim against the deposit and may not seek a setoff against it, but may sue for damages after returning the deposit. What changed: HB 615 (ch. 2025-16, effective 7/1/2025) added the e-mail option. Certified mail is no longer the only valid method.
+- **Citation:** s. 83.49(3)(a)-(c), Fla. Stat. (2025); s. 83.505, Fla. Stat. (2025); ch. 2025-16, Laws of Fla. (CS/CS/CS/HB 615, approved 5/1/2025, eff. 7/1/2025)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0083.49
+- **What we teach:** 15 days to return it if there is no claim; 30 days to send notice of a claim by certified mail, or by e-mail if both parties signed the e-mail addendum (s. 83.505, since July 1, 2025); the tenant has 15 days to object; missing the 30-day notice forfeits the claim.
+
+## V-64 · Timeshare cancellation (s. 721.10)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Timeshare purchaser may cancel within 10 days; the right cannot be waived [s. 721.10, F.S.]
+- **Finding:** The purchaser may cancel the contract until midnight of the 10th CALENDAR day after the later of (a) the date the contract is signed or (b) the date the purchaser receives the last of the documents the developer must provide. No purchaser, and no one acting for the purchaser, may waive this right. Trying to obtain a waiver, or holding a closing before the cancellation period ends, is unlawful, and such a closing is voidable at the purchaser's option. The excerpts disagree on how long it stays voidable (1 year versus 5 years); this does not affect the 10-day rule.
+- **Citation:** s. 721.10(1), Fla. Stat. (2025)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/721.10
+- **What we teach:** Until midnight of the 10th calendar day after the later of signing the contract or receiving the last required document. Cannot be waived.
+
+## V-65 · HOA disclosure summary (s. 720.401)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** HOA disclosure summary must be provided before contract execution; if not, the buyer may void the contract within 3 days after receipt or before closing [s. 720.401, F.S.]
+- **Finding:** Confirmed, with an added qualifier. A prospective buyer of a parcel in a community subject to a mandatory homeowners' association must receive the disclosure summary before signing the contract. If it was not provided first, the buyer may void the contract by written notice to the seller or the seller's agent within 3 days after receiving the disclosure summary or before closing, WHICHEVER OCCURS FIRST. The buyer may not waive this right, but it ends at closing. Each covered sale contract must contain a conspicuous clause describing this right. The section does not apply to associations regulated under chapters 718, 719, 721 or 723.
+- **Citation:** s. 720.401(1), Fla. Stat. (2025/2026)
+- **Source:** https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0720%2FSections%2F0720.401.html
+- **What we teach:** Given before the contract is signed. If not, the buyer may void the contract within 3 days after receiving it or before closing, whichever occurs first. Not waivable; ends at closing.
+
+## V-66 · Homestead protection from creditors (Art. X, s. 4, Fla. Const.)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Homestead creditor protection: 1/2 acre contiguous within a municipality, 160 contiguous acres outside; exceptions for taxes and assessments, obligations for purchase, improvement or repair, and labor on the realty [Art. X, s. 4, Fla. Const.]
+- **Finding:** Homestead owned by a natural person is exempt from forced sale under court process, and no judgment, decree or execution is a lien on it. The limits: outside a municipality, up to 160 acres of contiguous land plus improvements, which cannot be reduced without the owner's consent if the land is later brought into a municipality; inside a municipality, up to one-half acre of contiguous land, with the exemption limited to the residence of the owner or the owner's family. Exceptions: taxes and assessments on the property; obligations contracted for its purchase, improvement or repair; and obligations for house, field or other labor performed on the realty. Section 222.01(5), F.S. restates the same exceptions, citing Art. X, s. 4. The section also exempts $1,000 of personal property, and the exemptions pass to the surviving spouse or heirs (s. 4(b)).
+- **Citation:** Art. X, s. 4(a)-(b), Fla. Const. (current, as published by the Florida Senate); s. 222.01(5), Fla. Stat. (2025)
+- **Source:** https://www.flsenate.gov/laws/constitution
+- **What we teach:** Inside a municipality: 1/2 acre of contiguous land (residence only). Outside: 160 contiguous acres. No protection against property taxes and assessments, debts for purchase, improvement or repair, or labor performed on the property.
+
+## V-67 · Save Our Homes cap and portability (Art. VII, s. 4(d); s. 193.155)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Save Our Homes: homestead assessment increases capped at the lesser of 3% or CPI change; benefit portable to a new Florida homestead (limits, e.g. up to $500,000, within a set number of years) [Art. VII, s. 4, Fla. Const.; s. 193.155, F.S.]
+- **Finding:** Current law as of 2026-10-20. After the January 1 reassessment, the annual change in a homestead's assessed value may not exceed the lower of 3% of the prior year's assessed value or the percentage change in the CPI for All Urban Consumers (U.S. City Average) for the preceding calendar year. Portability: an owner who sets up a new Florida homestead may transfer the accrued SOH benefit (just value minus assessed value), up to $500,000. The new homestead must be established within 3 years after January 1 of the year the prior homestead was abandoned, and the owner must have had a homestead exemption as of January 1 of any of the 3 preceding years. The 3-year window replaced 2 years from 2021. The transfer is claimed on Form DR-501T with the homestead application. PENDING CHANGE: CS/HJR 1-F (2026 Special Session F) is on the November 3, 2026 ballot. If at least 60% of voters approve, it takes effect January 1, 2027 and would, among other things, let the full accrued SOH benefit transfer for non-school levies (no $500,000 cap for those levies). Until then, the $500,000 cap and the 3%/CPI cap remain current. A 2026 House analysis of HB 7031 also mentions possible changes to which prior homestead can be ported from; its enactment status was not verified.
+- **Citation:** Art. VII, s. 4(d), Fla. Const.; s. 193.155(1) and (8), Fla. Stat. (2026); Fla. Dept. of Revenue brochure PT-112; CS/HJR 1-F (2026F) staff analysis
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2026/193.155
+- **What we teach:** Homestead assessed value rises no more than 3% or the CPI change, whichever is lower. Portability: up to $500,000 of the benefit moves to a new Florida homestead established within 3 years after January 1 of the year the old one was abandoned. A November 2026 ballot measure (V-23) could change this from 2027.
+
+## V-68 · Adverse possession (ss. 95.16, 95.18)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Adverse possession in Florida: 7 years of continuous possession under color of title, or without color of title with payment of taxes and a return filed with the property appraiser [ss. 95.16, 95.18, F.S.]
+- **Finding:** WITH COLOR OF TITLE (s. 95.16): the possessor entered under a claim of title founded on a written instrument (a conveyance), decree or judgment, and has been in continued possession for 7 years of the property included in it. For possession beginning after December 31, 1945, the instrument must be recorded with the clerk of the circuit court in the county where the land lies. Land counts as possessed if it is usually cultivated or improved, or protected by a substantial enclosure. WITHOUT COLOR OF TITLE (s. 95.18): 7 years of actual continued possession under a claim of title exclusive of any other right, not founded on a written instrument. The possessor must: (a) pay all outstanding taxes and matured installments of special improvement liens within 1 year after entering possession; (b) file a return with the county property appraiser within 30 days after making that payment, on the DOR form with a legal description and a notarized attestation; and (c) keep paying all taxes and liens for the rest of the 7-year period. Only the land actually possessed (enclosed, cultivated, maintained or improved) is held adversely.
+- **Citation:** ss. 95.16 and 95.18, Fla. Stat. (2025; 95.18 also shown in 2026 edition)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/95.18
+- **What we teach:** 7 years of continuous possession. With color of title: under a recorded written instrument. Without color of title: pay the taxes within 1 year of entering, file a return with the property appraiser within 30 days after paying, and keep paying the taxes.
+
+## V-69 · Prescriptive easement (Florida case law)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** A prescriptive easement in Florida requires 20 years of continuous, open, adverse use [Florida case law / s. 95.14?]
+- **Finding:** Confirmed as case law; no statute sets this period, and s. 95.14 is not the source. Official Florida legislative staff analyses state that a prescriptive easement requires: actual, continuous and uninterrupted use of a limited and defined area of land for 20 years; use under a claim of right that conflicts with the owner's use, without the owner's consent; and the owner's actual knowledge, or use so open, notorious and visible that knowledge is imputed. A 2013 House analysis notes that when the adverse possession period was cut to 7 years, the prescriptive easement period stayed at 20 years. Florida courts disfavor acquiring rights by prescription and resolve doubts in the owner's favor. The leading case usually cited is Downing v. Bird, 100 So. 2d 57 (Fla. 1958), but its holding was not read directly.
+- **Citation:** Florida common law, as summarized in the Fla. House staff analysis of HB 799 (2024); Fla. Senate analysis of SB 1142 (2011); House final analysis of HB 903 (2013)
+- **Source:** https://www.flsenate.gov/Session/Bill/2024/799/Analyses/h0799e.JDC.PDF
+- **What we teach:** 20 years of continuous, open, adverse use without the owner's consent. This comes from case law, not a statute.
+
+## V-70 · Statute of limitations on contracts (s. 95.11)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Statute of limitations: action on a written contract 5 years; oral contract 4 years [s. 95.11(2)(b), (3), F.S.]
+- **Finding:** WITHIN 5 YEARS (s. 95.11(2)(b)): a legal or equitable action on a contract, obligation or liability founded on a written instrument. Exceptions: claims on payment bonds follow their own provisions, and deficiency judgments are governed by a separate paragraph. WITHIN 4 YEARS (s. 95.11(3)): a legal or equitable action on a contract, obligation or liability NOT founded on a written instrument, including actions for the sale and delivery of goods, wares and merchandise, and on store accounts. This is paragraph (3)(j) in the 2025 compilation according to the search excerpt; the lettering changed after 2023 amendments, so cite only subsection (3) unless verified.
+- **Citation:** s. 95.11(2)(b) and (3), Fla. Stat. (2025/2026)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0095.11
+- **What we teach:** Written contract: 5 years. Oral contract: 4 years.
+
+## V-71 · Satisfaction of mortgage (s. 701.04)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Mortgagee must record a satisfaction within 60 days after full payment [s. 701.04, F.S.]
+- **Finding:** Within 60 days after receiving full payment of the mortgage (current text also covers payment of the payoff amount in an estoppel letter), the mortgagee, holder or servicer must: sign a written satisfaction or release; have it acknowledged; record it in the county official records; and send the recorded satisfaction to the mortgagor or record owner. The prevailing party in a suit to enforce this recovers attorney fees and costs. Subsection (3) sets a parallel 60-day duty to record satisfactions of liens and judgments after full payment.
+- **Citation:** s. 701.04(2)-(3), Fla. Stat. (2025/2026)
+- **Source:** https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0701%2FSections%2F0701.04.html
+- **What we teach:** The lender records the satisfaction within 60 days after full payment and sends it to the borrower.
+
+## V-72 · Usury (ss. 687.02, 687.03, 687.071)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Usury: 18% per annum simple interest on loans of $500,000 or less; 25% on larger loans; criminal usury above 25% (45% felony) [ss. 687.02, 687.03, 687.071, F.S.]
+- **Finding:** Interest above the equivalent of 18% per annum simple interest is usurious and unlawful (ss. 687.02(1), 687.03(1)). For a loan, advance, line of credit or forbearance over $500,000, interest is not usurious unless it exceeds the rate in s. 687.071, which in effect makes the ceiling 25%. A loan counts as over $500,000 if the principal initially exceeds that amount or may reasonably be expected to exceed it during the term (s. 687.03(3)). CRIMINAL USURY (s. 687.071), unless otherwise allowed by law: willfully and knowingly charging more than 25% but not more than 45% per annum is a second-degree misdemeanor (subs. (2)); more than 45% per annum is a third-degree felony (subs. (3)); knowingly making an extortionate extension of credit is a second-degree felony (subs. (4)). Credit extended in violation of s. 687.071 is not an enforceable debt in Florida. The 2026 edition shows the same subsection (2) wording.
+- **Citation:** ss. 687.02(1), 687.03(1) and (3), 687.071(2)-(4), Fla. Stat. (2025; 2026 unchanged per excerpt)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/687.071
+- **What we teach:** 18% simple interest for loans of $500,000 or less; 25% for larger loans. Criminal usury: more than 25% up to 45% = misdemeanor; more than 45% = felony.
+
+## V-73 · Radon gas notification (s. 404.056(5))
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Radon gas notification must be provided at or before contract for sale or rental of any building [s. 404.056(5), F.S.]
+- **Finding:** Under the heading 'Notification on real estate documents,' the notice must appear on at least one document, form, or application signed at or before the contract for sale and purchase of any building, or at or before signing a rental agreement for any building. The statute sets the exact notice wording: radon is a naturally occurring radioactive gas that can present health risks when it builds up in a building in sufficient quantities over time; radon levels above federal and state guidelines have been found in Florida buildings; more information on radon and radon testing is available from the county health department. Use the statutory text word for word, not a paraphrase. The leg.state.fl.us page labeled 2026 carries this subsection (5) text. The 2025 flsenate.gov excerpt was cut off before subsection (5), but the 2010, 2014, and 2026 texts are the same.
+- **Citation:** s. 404.056(5), Florida Statutes (2026 edition on Online Sunshine; 2025 edition on flsenate.gov)
+- **Source:** https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499%2F0404%2FSections%2F0404.056.html
+- **What we teach:** The statutory radon notice appears on at least one document signed at or before a sale contract or rental agreement for any building.
+
+## V-74 · Energy-efficiency rating information (s. 553.996)
+
+- **Status:** Confirmed (official-excerpt, double-checked)
+- **Study manual says:** Prospective purchaser of real property with a building for occupancy must receive the energy-efficiency rating information brochure at or before contract [s. 553.996, F.S.]
+- **Finding:** The current s. 553.996 is titled 'Energy-efficiency information provided by building energy-efficiency rating systems providers.' It requires that a prospective purchaser of real property with a building for occupancy on it be given energy-efficiency information at or before signing the contract for sale and purchase. The information tells the buyer of the option to have the building's energy-efficiency rated. Its content covers how to analyze the rating, comparisons to statewide averages for new and existing construction of that class, and ways to improve the rating. For residential buyers it adds a notice that a rating may qualify them for an energy-efficient mortgage from lending institutions. Qualification on wording: the timing rule ('at or before' the contract) and the trigger are the same as before. The current statute says 'information' prepared and distributed by building energy-efficiency rating system providers, not a free 'information brochure' prepared by the department as in older editions (e.g., 2012). The 2021 and 2025 texts already use the provider wording. Calling it a 'brochure' is outdated terminology, but the operative rule is unchanged.
+- **Citation:** s. 553.996, Florida Statutes (2025; also 2021 edition)
+- **Source:** https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599%2F0553%2FSections%2F0553.996.html
+- **What we teach:** The buyer of a building receives information on the option of an energy-efficiency rating at or before signing the contract. Older books call it a 'brochure'.
+
+## V-75 · Property tax disclosure summary (s. 689.261)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Property tax disclosure summary required in residential sale contracts: buyer should not rely on seller's current taxes [s. 689.261, F.S.]
+- **Finding:** s. 689.261(1): a prospective purchaser of residential property must be given a disclosure summary at or before signing the contract for sale. The summary may be separate or included in the contract, and either way must be substantially similar to the statutory 'PROPERTY TAX DISCLOSURE SUMMARY.' That form warns the buyer not to rely on the seller's current property taxes as the amount the buyer will owe in the year after purchase, and states that a change of ownership or property improvements triggers reassessments that could result in higher property taxes. Unless the summary is included in the contract, the seller must provide it. If it is not in the contract, the contract must refer to it and incorporate it by reference, and must say in prominent language that the buyer should not sign the contract until reading the summary. 2026 update (does not change this rule): the 2026 Florida Statutes text of s. 689.261, from 2026 CS/SB 856, adds listing-platform rules. Beginning February 1, 2027, any residential property shown on an online listing platform must include estimated ad valorem taxes, calculated by DOR formula or the countywide average millage rate, with a disclaimer. Such platforms may not show the current owner's taxes unless they use a qualifying estimator, and must link to the property appraiser's estimator. The current owner's taxes may not appear in printed listing materials.
+- **Citation:** s. 689.261, Florida Statutes (2025; 2026 edition adds new listing-platform subsection effective Feb. 1, 2027)
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/689.261
+- **What we teach:** Buyer of residential property receives the summary at or before contract: do not rely on the seller's current taxes; a sale or improvements can raise the assessment.
+
+## V-76 · Property tax calendar (ss. 192.042, 200.065, 197.162, 197.333)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Assessment date January 1; TRIM notice in August; tax bills from November 1 with 4/3/2/1% discounts Nov-Feb; delinquent April 1 [ss. 192.042, 200.069, 197.162, 197.333, F.S.]
+- **Finding:** Assessment: real property is assessed as of January 1 each year. Improvements not substantially completed on January 1 get no value (s. 192.042(1), 2025; same in the 2026 text). TRIM: the property appraiser must mail the Notice of Proposed Property Taxes (TRIM notice, form under s. 200.069) within 55 days after certification of value (s. 200.065(2)(b)). With the usual July 1 certification, DOR's calendars set the deadline at August 24. A state of emergency allows a 30-day extension. Note that the timing rule is in s. 200.065(2)(b); s. 200.069 sets the notice's content. Due date: taxes are due and payable November 1, or as soon after as the tax collector receives the certified roll (s. 197.333). Discounts (s. 197.162): 4% in November or within 30 days after the original tax notice is sent; 3% in December; 2% in January; 1% in February; 0% in March. A period ending on a weekend or holiday extends to the next working day. Delinquency: taxes become delinquent April 1 of the year after assessment, or 60 days after the original tax notice was mailed, whichever is later (s. 197.333).
+- **Citation:** ss. 192.042(1), 200.065(2)(b), 200.069, 197.162(1), 197.333, Florida Statutes (2025; 2026 text same for 192.042, 197.162 and 197.333); Fla. DOR Property Appraiser and TRIM calendars
+- **Source:** https://www.flsenate.gov/Laws/Statutes/2025/0197.333
+- **What we teach:** Assessed as of January 1; TRIM notice mailed within 55 days after certification (usually August); due November 1; discounts 4% / 3% / 2% / 1% in November–February; delinquent April 1 (or 60 days after the bill was mailed, if later).
+
+## V-77 · Depreciation periods (26 USC 168; IRS Pub. 946)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Straight-line recovery periods: residential rental property 27.5 years, nonresidential real property 39 years; land not depreciable [IRS Publication 946; 26 USC 168]
+- **Finding:** Under GDS (MACRS), the recovery period is 27.5 years for residential rental property and 39 years for nonresidential real property. Both use the straight-line method and the mid-month convention (26 U.S.C. 168(b)(3), (c), (d)(2); IRS Pub. 946 (2025)). Residential rental property means a building where 80% or more of gross rental income comes from dwelling units. Nonresidential real property is section 1250 property that is neither residential rental property nor property with a class life under 27.5 years. The 39-year period replaced 31.5 years in 1993 (Pub. L. 103-66). Under ADS the periods are 30 years (residential rental) and 40 years (nonresidential). Pub. 946 says land is not depreciable because it does not wear out, become obsolete, or get used up, so only the building's cost goes into the depreciable basis.
+- **Citation:** 26 U.S.C. 168(c) (U.S. Code 2024 ed., govinfo); IRS Publication 946 (2025), How To Depreciate Property; Instructions for Form 4562 (2025)
+- **Source:** https://www.irs.gov/publications/p946
+- **What we teach:** Residential rental: 27.5 years. Nonresidential: 39 years. Straight-line. Land is never depreciated.
+
+## V-78 · Home sale gain exclusion (26 USC 121; IRS Pub. 523)
+
+- **Status:** Confirmed (official-excerpt, single-checked)
+- **Study manual says:** Exclusion of gain on sale of principal residence: $250,000 single, $500,000 married filing jointly, if owned and used as main home 2 of the last 5 years [IRS Publication 523; 26 USC 121]
+- **Finding:** IRS Pub. 523 (2025) and Topic No. 701: a seller can exclude up to $250,000 of gain, or up to $500,000 for married filing jointly, if they owned and used the home as their principal residence for at least 2 of the 5 years before the sale (24 full months or 730 days; the periods need not be continuous). Qualifications: (1) the exclusion is generally not available if the seller excluded gain on another home sold within the 2 years before this sale; (2) for the $500,000 joint amount, at least one spouse must meet the ownership test and both must meet the use test and the look-back rule; otherwise each spouse is tested separately; (3) a partial exclusion may apply if the tests are failed for qualifying reasons (work, health, unforeseen circumstances); (4) gain equal to depreciation claimed or allowable after May 6, 1997 cannot be excluded; (5) a surviving spouse may use $500,000 if the sale is within 2 years of the spouse's death and other conditions are met. The search budget ran out before I could pull the 26 U.S.C. 121 statutory text directly. This confirmation rests on the official IRS publication excerpts, and I could not check for any 2026 statutory change.
+- **Citation:** IRS Publication 523 (2025), Selling Your Home; IRS Tax Topic No. 701; 26 U.S.C. 121(a)-(b)
+- **Source:** https://www.irs.gov/publications/p523
+- **What we teach:** $250,000 single, $500,000 married filing jointly; owned and used as the main home 2 of the 5 years before the sale; generally not if used on another home within the last 2 years.
+
+## V-79 · Proration conventions (365-day year; who owns the closing day)
+
+- **Status:** Unresolved (searched: no official source exists, double-checked)
+- **Study manual says:** Florida prelicense convention: 365-day year and buyer responsible for the day of closing (the FR/BAR contract prorates through the day prior to closing) [FR/BAR contract; not a statute (report as unresolved if no official source)]
+- **Finding:** No official government source was found or checked. This is a private-contract and course convention: the Florida Realtors/Florida Bar (FR/BAR) contract is a privately published form, not a statute or FAC rule, so no official domain would state it as law. The 365-day-year method and buyer-owns-closing-day convention can only be verified against the current FR/BAR contract text, which is not on an allowed official domain. The shared web-search budget also ran out before any search for this item could run. Keep it labeled as a course and contract convention, not a legal rule.
+- **Citation:** None (FR/BAR 'AS IS' Residential Contract for Sale and Purchase is a private form; no Florida Statute or FAC rule identified)
+- **What we teach:** No statute or rule sets these; they come from the contract and the course. Follow the method the question gives; otherwise use the course convention (365-day year, buyer owns the day of closing). The FREC syllabus expects both the 360- and 365-day methods.
+
+## V-80 · Exam retakes, reviews and pilot questions
+
+- **Status:** Unresolved (official-excerpt, double-checked)
+- **Study manual says:** Retake and scheduling rules for the sales associate exam (waiting period, fees), and whether the exam includes unscored pretest items
+- **Finding:** PARTLY CONFIRMED. (1) Pretest items: the January 2025 Sales Associate booklet says pilot (experimental) questions may be included. If they are, they are NOT counted toward the score, and candidates get extra time to answer them. They are used to build the question bank for future exams. (2) Passing: graded on 100 points; 75 or higher passes. (3) Scheduling: to cancel, candidates must contact Pearson VUE at least 2 days before the appointment. Cancelling later or not showing up can forfeit exam fees. (4) Review: a failed candidate may review the questions they missed at a Pearson VUE center, usually with half the exam time. The request must come within 21 days of the grade release, and only the most recent failed exam qualifies. A candidate who files a challenge must wait until the challenge results are official before taking another exam. (5) Time limits: the s. 475.175, F.S. excerpts seen (2024 and 2026 compilations; 2025 wording not retrieved separately) say the application expires 2 years after receipt if the applicant has not passed the exam. They also say the course completion becomes invalid for licensure if the exam is not passed within 2 years of completing the course. UNRESOLVED: (a) Waiting period: no official source states a mandatory waiting period between state-exam attempts or a cap on attempts. The only 30-day wait found applies to the prelicense end-of-course exam (Rule 61J2-3.008, from 2017 FREC meeting material), not the state exam. (b) Fees: the 2016 DBPR CBT fee table lists Real Estate Sales Associate at 3.5 hours, with a $36.75 Pearson VUE administration fee and a $35.00 review fee. The booklet says CBT exam fees went up effective January 3, 2023, and links to an updated fee table that could not be retrieved, so the current retake fee is unverified. The statute caps the initial application-plus-exam fee at $100 (s. 475.125). No Pearson VUE page was checked because pearsonvue.com is not on the allowed official-domain list.
+- **Citation:** Florida DBPR, Candidate Information Booklet: Real Estate Sales Associate Examination (eff. Jan 2025); DBPR CBT Examination Administration and Review Fees (2016); s. 475.175, Fla. Stat. (2024/2026 compilations); DBPR Examination Reviews and Hearings page
+- **Source:** https://www2.myfloridalicense.com/servop/testing/documents/RE_sales_cibs.pdf
+- **What we teach:** Pilot questions may appear; they are not scored and come with extra time. Cancel at least 2 days before the appointment. Review of a failed exam: request within 21 days. No official waiting period or attempt limit was found; the current retake fee was not verified.

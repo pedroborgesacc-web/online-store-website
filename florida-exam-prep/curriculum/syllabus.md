@@ -101,10 +101,10 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Prerequisites: L03-2
 - Objectives:
   - O-L03-3-1 (recall) State the 45-hour post-license requirement and the consequence of missing it (license null and void).
-  - O-L03-3-2 (recall) State the 14-hour CE requirement per 2-year renewal and the consequence of missing renewal (involuntary inactive).
+  - O-L03-3-2 (recall) State the 14-hour CE requirement per 2-year renewal (3 Core Law + 3 Ethics + 8 specialty) and the consequence of missing renewal (involuntary inactive).
   - O-L03-3-3 (recall) State the reactivation rules: ≤12 months 14 hours; 12–24 months 28-hour course; >24 months void.
   - O-L03-3-4 (understand) Distinguish active, voluntary inactive, involuntary inactive, suspended, revoked, null and void, and ineffective.
-- Practice questions: 5 · Numbers: N-008, N-009, N-010, N-011
+- Practice questions: 6 · Numbers: N-008, N-009, N-010, N-011
 
 ### L03-4 · Licensee duties to the DBPR: address, convictions, changing brokers
 
@@ -169,7 +169,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 5. Brokerage Activities and Procedures
 
-*Section 5 · Manual: M3 (book Ch. 5) · Exam weight: 7% (est.)*
+*Section 5 · Manual: M3 (book Ch. 5) · Exam weight: 12%*
 
 ### L05-1 · Escrow accounts and the deposit clock
 
@@ -217,7 +217,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 6. Violations, Penalties and Procedures
 
-*Section 6 · Manual: M4 (book Ch. 6) · Exam weight: 5% (est.)*
+*Section 6 · Manual: M4 (book Ch. 6) · Exam weight: 3%*
 
 ### L06-1 · The complaint process
 
@@ -255,7 +255,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 7. Federal and State Laws Pertaining to Real Estate
 
-*Section 7 · Manual: M5 (book Ch. 7) · Exam weight: 7% (est.)*
+*Section 7 · Manual: M5 (book Ch. 7) · Exam weight: 3%*
 
 ### L07-1 · Fair housing
 
@@ -276,9 +276,9 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Prerequisites: L07-1
 - Objectives:
   - O-L07-2-1 (understand) Match ADA, ECOA, HMDA and fair housing to their subject (public accommodation, credit, lending data, housing).
-  - O-L07-2-2 (recall) State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry).
+  - O-L07-2-2 (recall) State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry; the FTC rule now says 540 / 90 days).
   - O-L07-2-3 (recall) State the CAN-SPAM opt-out rule (honored within 10 business days).
-- Practice questions: 4 · Numbers: N-064, N-065
+- Practice questions: 5 · Numbers: N-064, N-065
 
 ### L07-3 · RESPA and TILA (TRID)
 
@@ -298,9 +298,10 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Prerequisites: L07-1
 - Objectives:
   - O-L07-4-1 (recall) State how security deposits may be held and the 30-day notice of how they are held.
-  - O-L07-4-2 (recall) State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail, 15 days for the tenant to object.
+  - O-L07-4-2 (recall) State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail (or e-mail with a signed addendum), 15 days for the tenant to object.
   - O-L07-4-3 (recall) State the termination notices for tenancies without a specific term: 60 / 30 / 30 / 7 days (current law).
-- Practice questions: 4 · Numbers: N-068, N-069, N-070
+  - O-L07-4-4 (recall) State the landlord's flood disclosure duty for residential leases of 1 year or longer (s. 83.512, since October 2025).
+- Practice questions: 6 · Numbers: N-068, N-069, N-070, N-071
 
 ## 8. Property Rights: Estates, Tenancies, Condos, Co-ops, HOAs, Timeshares
 
@@ -357,9 +358,9 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Prerequisites: L08-1
 - Objectives:
   - O-L08-5-1 (understand) Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property).
-  - O-L08-5-2 (recall) State the cancellation periods: developer condo 15 days; resale condo (flagged: 3 business days in older texts, 7 days in 2025 text); timeshare 10 days.
-  - O-L08-5-3 (recall) State that an HOA disclosure summary must be given before contract.
-- Practice questions: 5 · Numbers: N-081, N-082
+  - O-L08-5-2 (recall) State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days.
+  - O-L08-5-3 (recall) State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not.
+- Practice questions: 7 · Numbers: N-081, N-082, N-083
 
 ## 9. Title, Deeds and Ownership Restrictions
 
@@ -530,7 +531,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 13. Types of Mortgages and Sources of Financing
 
-*Section 13 · Manual: M9 (book Ch. 13) · Exam weight: 5% (est.)*
+*Section 13 · Manual: M9 (book Ch. 13) · Exam weight: 4%*
 
 ### L13-1 · FHA, VA and conventional loans
 
@@ -654,7 +655,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 15. The Real Estate Market and Analysis
 
-*Section 15 · Manual: M11 (book Ch. 15) · Exam weight: 1% (est.)*
+*Section 15 · Manual: M11 (book Ch. 15) · Exam weight: 1%*
 
 ### L15-1 · Real estate markets, supply and demand, and pricing tools
 
@@ -668,7 +669,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 16. Real Estate Appraisal
 
-*Section 16 · Manual: M11 (book Ch. 16) · Exam weight: 5% (est.)*
+*Section 16 · Manual: M11 (book Ch. 16) · Exam weight: 8%*
 
 ### L16-1 · Value: characteristics and principles
 
@@ -713,7 +714,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ## 17. Investments and Business Opportunity Brokerage
 
-*Section 17 · Manual: M12 (book Ch. 17) · Exam weight: 3% (est.)*
+*Section 17 · Manual: M12 (book Ch. 17) · Exam weight: 2%*
 
 ### L17-1 · Investment analysis
 

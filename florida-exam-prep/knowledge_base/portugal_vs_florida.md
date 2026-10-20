@@ -536,21 +536,21 @@ At least 30 days before the end of the quarter.
 
 **Portuguese context.** An energy certificate (certificado energético) is required to sell or rent; requires verification.
 
-**Florida context.** Florida requires that buyers receive an energy-efficiency rating information brochure at or before contract — information, not a property rating.
+**Florida context.** Florida requires that buyers of a building receive information about the option of an energy-efficiency rating at or before contract — information, not a property rating (s. 553.996; older books call it a 'brochure').
 
-**The important difference.** Florida's requirement is a brochure, not a rating of the specific property.
+**The important difference.** Florida's requirement is information about an optional rating, not a rating of the specific property.
 
-**Practical example.** The FR/BAR contract includes a clause acknowledging receipt of the energy brochure.
+**Practical example.** The FR/BAR contract includes a clause acknowledging receipt of the energy-efficiency information.
 
 **Examination implication.** Required for sales of buildings for occupancy.
 
-**Memory aid.** Florida: brochure, not certificate.
+**Memory aid.** Florida: information, not certificate.
 
 **Practice question.** Is a Florida seller required to obtain an energy rating of the home before listing?
 
 <details><summary>Answer</summary>
 
-No. The requirement is to provide the energy-efficiency information brochure to the buyer.
+No. The requirement is to give the buyer the energy-efficiency rating information at or before contract.
 
 </details>
 

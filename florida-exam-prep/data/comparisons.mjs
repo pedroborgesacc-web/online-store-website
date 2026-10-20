@@ -275,13 +275,13 @@ export const comparisons = [
   {
     id: "PT-23", concept: "Energy disclosures", l: ["L11-4"],
     pt: "An energy certificate (certificado energético) is required to sell or rent; requires verification.",
-    fl: "Florida requires that buyers receive an energy-efficiency rating information brochure at or before contract — information, not a property rating.",
-    diff: "Florida's requirement is a brochure, not a rating of the specific property.",
-    ex: "The FR/BAR contract includes a clause acknowledging receipt of the energy brochure.",
+    fl: "Florida requires that buyers of a building receive information about the option of an energy-efficiency rating at or before contract — information, not a property rating (s. 553.996; older books call it a 'brochure').",
+    diff: "Florida's requirement is information about an optional rating, not a rating of the specific property.",
+    ex: "The FR/BAR contract includes a clause acknowledging receipt of the energy-efficiency information.",
     exam: "Required for sales of buildings for occupancy.",
-    aid: "Florida: brochure, not certificate.",
+    aid: "Florida: information, not certificate.",
     pq: "Is a Florida seller required to obtain an energy rating of the home before listing?",
-    pa: "No. The requirement is to provide the energy-efficiency information brochure to the buyer.",
+    pa: "No. The requirement is to give the buyer the energy-efficiency rating information at or before contract.",
     ptv: "requires verification",
   },
 ];

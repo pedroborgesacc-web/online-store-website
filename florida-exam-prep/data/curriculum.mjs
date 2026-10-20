@@ -6,27 +6,27 @@
 // Lesson types: bridge (prerequisite for a Portugal-trained learner, not a
 // textbook section), legal, conceptual, calculation.
 // Objective kinds: recall (exact memorization), understand, apply, calculate.
-// examPct: CIB weight where extracted (V-02, low confidence); est: true marks
-// an estimate used only to weight mock exams.
+// examPct: weight from the Candidate Information Booklet content outline (V-02;
+// section 1 derived from the 100% total); est: true would mark an estimate.
 
 export const chapters = [
   { id: "ch01", n: 1, title: "The Real Estate Business", frec: "Section 1: Course Overview — The Real Estate Business", manual: "Not covered by the manual (it maps book chapters 2–19 only)", examPct: 1, est: false },
   { id: "ch02", n: 2, title: "License Law and Qualifications for Licensure", frec: "Section 2", manual: "M1 (book Ch. 2–3)", examPct: 6, est: false },
   { id: "ch03", n: 3, title: "License Law and Commission Rules", frec: "Section 3", manual: "M1 (book Ch. 2–3)", examPct: 2, est: false },
   { id: "ch04", n: 4, title: "Authorized Relationships, Duties and Disclosure", frec: "Section 4", manual: "M2 (book Ch. 4)", examPct: 7, est: false },
-  { id: "ch05", n: 5, title: "Brokerage Activities and Procedures", frec: "Section 5", manual: "M3 (book Ch. 5)", examPct: 7, est: true },
-  { id: "ch06", n: 6, title: "Violations, Penalties and Procedures", frec: "Section 6", manual: "M4 (book Ch. 6)", examPct: 5, est: true },
-  { id: "ch07", n: 7, title: "Federal and State Laws Pertaining to Real Estate", frec: "Section 7", manual: "M5 (book Ch. 7)", examPct: 7, est: true },
+  { id: "ch05", n: 5, title: "Brokerage Activities and Procedures", frec: "Section 5", manual: "M3 (book Ch. 5)", examPct: 12, est: false },
+  { id: "ch06", n: 6, title: "Violations, Penalties and Procedures", frec: "Section 6", manual: "M4 (book Ch. 6)", examPct: 3, est: false },
+  { id: "ch07", n: 7, title: "Federal and State Laws Pertaining to Real Estate", frec: "Section 7", manual: "M5 (book Ch. 7)", examPct: 3, est: false },
   { id: "ch08", n: 8, title: "Property Rights: Estates, Tenancies, Condos, Co-ops, HOAs, Timeshares", frec: "Section 8", manual: "M6 (book Ch. 8)", examPct: 8, est: false },
   { id: "ch09", n: 9, title: "Title, Deeds and Ownership Restrictions", frec: "Section 9", manual: "M7 (book Ch. 9)", examPct: 7, est: false },
   { id: "ch10", n: 10, title: "Legal Descriptions", frec: "Section 10", manual: "M7 §Legal descriptions (book Ch. 10)", examPct: 5, est: false },
   { id: "ch11", n: 11, title: "Real Estate Contracts", frec: "Section 11", manual: "M8 (book Ch. 11)", examPct: 12, est: false },
   { id: "ch12", n: 12, title: "Residential Mortgages", frec: "Section 12", manual: "M9 (book Ch. 12)", examPct: 9, est: false },
-  { id: "ch13", n: 13, title: "Types of Mortgages and Sources of Financing", frec: "Section 13", manual: "M9 (book Ch. 13)", examPct: 5, est: true },
+  { id: "ch13", n: 13, title: "Types of Mortgages and Sources of Financing", frec: "Section 13", manual: "M9 (book Ch. 13)", examPct: 4, est: false },
   { id: "ch14", n: 14, title: "Real Estate Computations and Closing of Transactions", frec: "Section 14", manual: "M10 (book Ch. 14)", examPct: 6, est: false },
-  { id: "ch15", n: 15, title: "The Real Estate Market and Analysis", frec: "Section 15", manual: "M11 (book Ch. 15)", examPct: 1, est: true },
-  { id: "ch16", n: 16, title: "Real Estate Appraisal", frec: "Section 16", manual: "M11 (book Ch. 16)", examPct: 5, est: true },
-  { id: "ch17", n: 17, title: "Investments and Business Opportunity Brokerage", frec: "Section 17", manual: "M12 (book Ch. 17)", examPct: 3, est: true },
+  { id: "ch15", n: 15, title: "The Real Estate Market and Analysis", frec: "Section 15", manual: "M11 (book Ch. 15)", examPct: 1, est: false },
+  { id: "ch16", n: 16, title: "Real Estate Appraisal", frec: "Section 16", manual: "M11 (book Ch. 16)", examPct: 8, est: false },
+  { id: "ch17", n: 17, title: "Investments and Business Opportunity Brokerage", frec: "Section 17", manual: "M12 (book Ch. 17)", examPct: 2, est: false },
   { id: "ch18", n: 18, title: "Taxes Affecting Real Estate", frec: "Section 18", manual: "M12 (book Ch. 18)", examPct: 3, est: false },
   { id: "ch19", n: 19, title: "Planning and Zoning", frec: "Section 19", manual: "M12 (book Ch. 19)", examPct: 1, est: false },
 ];
@@ -69,7 +69,7 @@ export const lessons = [
         ["recall", "State the broker path: 24 months active in the preceding 5 years, 72-hour course, broker exam, 60 hours post-license."]] },
   { id: "L03-3", ch: "ch03", title: "Keeping the license: post-license, renewal, CE and license status", type: "legal", pri: "high", min: 35, manual: "M1 §Keeping the license alive; §Status map", pre: ["L03-2"],
     o: [["recall", "State the 45-hour post-license requirement and the consequence of missing it (license null and void)."],
-        ["recall", "State the 14-hour CE requirement per 2-year renewal and the consequence of missing renewal (involuntary inactive)."],
+        ["recall", "State the 14-hour CE requirement per 2-year renewal (3 Core Law + 3 Ethics + 8 specialty) and the consequence of missing renewal (involuntary inactive)."],
         ["recall", "State the reactivation rules: ≤12 months 14 hours; 12–24 months 28-hour course; >24 months void."],
         ["understand", "Distinguish active, voluntary inactive, involuntary inactive, suspended, revoked, null and void, and ineffective."]] },
   { id: "L03-4", ch: "ch03", title: "Licensee duties to the DBPR: address, convictions, changing brokers", type: "legal", pri: "high", min: 20, manual: "M1 §Keeping the license alive; §Status map", pre: ["L03-3"],
@@ -138,7 +138,7 @@ export const lessons = [
         ["understand", "Distinguish reasonable modifications from reasonable accommodations."]] },
   { id: "L07-2", ch: "ch07", title: "ADA, ECOA, HMDA and marketing rules (Do Not Call, CAN-SPAM, fax)", type: "legal", pri: "medium", min: 25, manual: "M5 §Telemarketing; §ECOA, ADA", pre: ["L07-1"],
     o: [["understand", "Match ADA, ECOA, HMDA and fair housing to their subject (public accommodation, credit, lending data, housing)."],
-        ["recall", "State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry)."],
+        ["recall", "State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry; the FTC rule now says 540 / 90 days)."],
         ["recall", "State the CAN-SPAM opt-out rule (honored within 10 business days)."]] },
   { id: "L07-3", ch: "ch07", title: "RESPA and TILA (TRID)", type: "legal", pri: "high", min: 30, manual: "M5 §RESPA and TILA", pre: ["L07-1"],
     o: [["recall", "State RESPA's scope (federally related loans, 1–4 residential units) and its kickback prohibition."],
@@ -146,8 +146,9 @@ export const lessons = [
         ["apply", "Identify TILA advertising trigger terms and the 3-business-day right of rescission (refinance/home equity on principal residence, not purchase loans)."]] },
   { id: "L07-4", ch: "ch07", title: "Florida Residential Landlord and Tenant Act", type: "legal", pri: "high", min: 25, manual: "M5 §Florida Residential Landlord and Tenant Act", pre: ["L07-1"],
     o: [["recall", "State how security deposits may be held and the 30-day notice of how they are held."],
-        ["recall", "State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail, 15 days for the tenant to object."],
-        ["recall", "State the termination notices for tenancies without a specific term: 60 / 30 / 30 / 7 days (current law)."]] },
+        ["recall", "State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail (or e-mail with a signed addendum), 15 days for the tenant to object."],
+        ["recall", "State the termination notices for tenancies without a specific term: 60 / 30 / 30 / 7 days (current law)."],
+        ["recall", "State the landlord's flood disclosure duty for residential leases of 1 year or longer (s. 83.512, since October 2025)."]] },
 
   // ── Chapter 8 ──
   { id: "L08-1", ch: "ch08", title: "Freehold estates and the bundle of rights", type: "conceptual", pri: "high", min: 30, manual: "M6 §Freehold estates; M7 §bundle of rights", pre: ["L01-1"],
@@ -168,8 +169,8 @@ export const lessons = [
         ["understand", "Explain the spouse/minor-child protections (spouse joins in deeds and mortgages; devise restrictions)."]] },
   { id: "L08-5", ch: "ch08", title: "Condominiums, cooperatives, timeshares, HOAs and CDDs", type: "legal", pri: "high", min: 30, manual: "M6 §Condominiums, cooperatives, timeshares, HOAs", pre: ["L08-1"],
     o: [["understand", "Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property)."],
-        ["recall", "State the cancellation periods: developer condo 15 days; resale condo (flagged: 3 business days in older texts, 7 days in 2025 text); timeshare 10 days."],
-        ["recall", "State that an HOA disclosure summary must be given before contract."]] },
+        ["recall", "State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days."],
+        ["recall", "State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not."]] },
 
   // ── Chapter 9 ──
   { id: "L09-1", ch: "ch09", title: "Acquiring and losing title", type: "legal", pri: "medium", min: 25, manual: "M7 §Acquiring and conveying title; §Wills", pre: ["L08-1"],

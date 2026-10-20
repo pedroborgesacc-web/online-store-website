@@ -41,7 +41,7 @@ export const glossary = [
   ["Null and void", "The license has ceased to exist; the person must requalify.", "L03-3", ""],
   ["Ineffective license", "A license that exists but cannot be used, e.g., a sales associate with no employing broker.", "L03-4", ""],
   ["Post-licensing education", "45-hour course a sales associate must complete before the first renewal.", "L03-3", ""],
-  ["Continuing education (CE)", "14 hours every renewal period after the first.", "L03-3", ""],
+  ["Continuing education (CE)", "14 hours every 2-year renewal period after the first: 3 Core Law + 3 Ethics and Business Practices + 8 specialty.", "L03-3", ""],
 
   // Ch4
   ["Transaction broker", "A licensee providing limited representation to a buyer, seller or both; not a fiduciary. Presumed in Florida.", "L04-1", ""],
@@ -95,7 +95,7 @@ export const glossary = [
   ["APR", "Annual percentage rate: the yearly cost of credit including interest and certain fees.", "L07-3", ""],
   ["Trigger term", "Specific credit term in an ad (down payment amount, payment amount, number of payments, finance charge) that requires full disclosure.", "L07-3", ""],
   ["TRID", "TILA-RESPA Integrated Disclosure rule: Loan Estimate and Closing Disclosure.", "L07-3", ""],
-  ["ECOA", "Equal Credit Opportunity Act: no credit discrimination by race, color, religion, national origin, sex, marital status, age, or public assistance income.", "L07-2", ""],
+  ["ECOA", "Equal Credit Opportunity Act: no credit discrimination by race, color, religion, national origin, sex, marital status, age (if able to contract), public assistance income, or good-faith exercise of consumer credit rights.", "L07-2", ""],
   ["ADA", "Americans with Disabilities Act: accessibility of public accommodations and commercial facilities.", "L07-2", ""],
   ["HMDA", "Home Mortgage Disclosure Act: lenders report lending data that reveals patterns like redlining.", "L07-2", ""],
 

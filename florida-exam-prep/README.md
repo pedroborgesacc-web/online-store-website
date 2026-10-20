@@ -30,7 +30,7 @@ Validation fails the build on: unknown references, duplicate ids, prerequisite c
 | `data/curriculum.mjs` | 19 chapters, 66 lessons, 187 objectives, prerequisites, manual mapping | yes |
 | `data/verification.mjs` | Verification log entries (V-01 …) | yes |
 | `data/numbers.mjs` | Exact-recall facts with conditions, exceptions, memory aids | yes |
-| `data/questions_*.mjs` | 261 original practice questions with misconception-tagged distractors | yes |
+| `data/questions_*.mjs` | Original practice questions (267) with misconception-tagged distractors | yes |
 | `data/flashcards.mjs` | Hand-written cards (more are derived at build time) | yes |
 | `data/comparisons.mjs`, `data/glossary.mjs` | Portugal-vs-Florida knowledge base, glossary | yes |
 | `lessons/chNN.md` | Lesson text (full 14-section lessons and core notes) | yes |
@@ -44,5 +44,5 @@ Personal progress data is never committed: this repository is public.
 
 - The Gold Coast textbook was not supplied. Coverage is mapped from the study manual and the official FREC section titles.
 - All questions are original practice questions, not official exam questions.
-- Rules marked "not yet verified" come from the study manual and still need an official check.
+- Most rules were checked against official sources on 2026-10-19/20 (80 verification entries; independent re-checks marked "double-checked"). Official pages could only be read through search excerpts. A short list (V-26) still comes from the study manual alone and is labelled "not yet verified".
 - No practice score guarantees an exam result.

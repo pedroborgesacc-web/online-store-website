@@ -187,12 +187,12 @@ export const questions = [
   { id: "Q0702-02", l: "L07-2", o: 1, d: 2, t: "scn", num: ["N-064"],
     q: "Which call to a number on the National Do Not Call Registry is permitted?",
     c: ["Calling an expired listing of another brokerage", "Calling a customer who closed a purchase with you 14 months ago", "Calling someone who inquired about a listing 6 months ago", "Calling a FSBO seller you have never met"],
-    a: 1, ex: "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry.",
+    a: 1, ex: "An established business relationship lasts 18 months after a transaction and 3 months after an inquiry (FCC rule; since May 2024 the FTC rule states the same windows as 540 days and 90 days).",
     w: { 0: ["RULE", "You have no business relationship with another brokerage's expired listing."], 2: ["NUMBER", "An inquiry creates a relationship for only 3 months."], 3: ["RULE", "No relationship or permission exists."] } },
   { id: "Q0702-03", l: "L07-2", o: 0, d: 2, t: "mcq",
     q: "Under ECOA, a lender may NOT deny credit because the applicant:",
     c: ["has insufficient income to repay the loan","receives public assistance income","has a poor history of paying debts on time","lacks funds for the required down payment"],
-    a: 1, ex: "ECOA prohibits discrimination based on race, color, religion, national origin, sex, marital status, age, or receipt of public assistance income.",
+    a: 1, ex: "ECOA prohibits discrimination based on race, color, religion, national origin, sex, marital status, age (if able to contract), receipt of public assistance income, or good-faith exercise of consumer credit rights.",
     w: { 0: ["RULE", "Insufficient income is a legitimate credit factor."], 2: ["RULE", "Payment history is a legitimate factor."], 3: ["RULE", "Lack of funds is a legitimate factor."] } },
 
   // ── L07-3 RESPA / TILA ──
@@ -221,7 +221,7 @@ export const questions = [
   { id: "Q0704-01", l: "L07-4", o: 1, d: 1, t: "mcq", num: ["N-069"],
     q: "A landlord intends to keep part of a tenant's security deposit. Within how many days after the tenant moves out must the landlord send notice by certified mail?",
     c: ["7", "15", "30", "60"],
-    a: 2, ex: "Return within 15 days if no claim; send certified-mail notice of a claim within 30 days; the tenant has 15 days to object.",
+    a: 2, ex: "Return within 15 days if no claim; send notice of a claim within 30 days (by certified mail, or by e-mail if both parties signed the e-mail addendum, since July 1, 2025); the tenant has 15 days to object.",
     w: { 0: ["NUMBER", "It is 30 days."], 1: ["CONFUSED", "15 days is the return deadline when no claim is made, and the tenant's objection window."], 3: ["NUMBER", "It is 30 days."] } },
   { id: "Q0704-02", l: "L07-4", o: 2, d: 2, t: "mcq", num: ["N-070"], v: "V-04",
     q: "Under current s. 83.57, how much written notice is required to end a month-to-month tenancy that has no specific term?",

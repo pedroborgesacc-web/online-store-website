@@ -803,7 +803,7 @@ VIEWS.exam = (arg) => {
     return `
     <div><div class="eyebrow">Mode H</div><h1>Timed mock exam</h1></div>
     <div class="panel"><dl class="kv"><dt>Format</dt><dd>100 questions · 3 hours 30 minutes · pass with 75 correct (official Candidate Information Booklet, Jan 2025 — ${vChip("V-01")})</dd>
-    <dt>Weighting</dt><dd>By chapter, using the low-confidence weights in the syllabus (V-02)</dd>
+    <dt>Weighting</dt><dd>By chapter, using the official content-outline weights (${vChip("V-02")}); a chapter with too few questions is topped up from the rest of the bank</dd>
     <dt>Feedback</dt><dd>None until you submit; flag questions and move freely</dd>
     <dt>Limits</dt><dd>The bank has ${DATA.questions.length} original questions, so mocks overlap. Use mocks sparingly and mainly in the final weeks; a mock score does not guarantee an exam result.</dd></dl>
     <div class="row">${live?.kind === "exam" && !live.done ? `<a class="btn primary" href="#exam~run">Resume mock in progress</a><button class="btn" id="startexam">Discard it and start a new mock</button>` : `<button class="btn primary" id="startexam">Start a 100-question mock</button>`}</div></div>
@@ -920,12 +920,12 @@ VIEWS.sources = () => `
     <p><b>Structure authority:</b> the official FREC Course I syllabus (19 sections, eff. 1/1/2023) and the DBPR Candidate Information Booklet (Jan 2025).</p>
     <p><b>Legal verification:</b> official Florida statute and rule pages located on official domains; full pages could not be downloaded from this environment, so entries are marked with how they were checked.</p></div>
   <div class="panel"><h3>Verification log (${DATA.verification.length} entries, checked ${esc(DATA.meta.checkedOn)})</h3><div class="list">${DATA.verification.map((v) => `<details id="${v.id}"><summary class="row"><span class="mono small muted">${v.id}</span><b style="flex:1;min-width:0">${esc(v.topic)}</b>${chip(V_LABEL[v.status], "v-" + v.status)}</summary>
-    <dl class="kv small" style="padding:8px 0"><dt>Manual says</dt><dd>${esc(v.manual)}</dd><dt>Finding</dt><dd>${esc(v.finding)}</dd><dt>Citation</dt><dd>${esc(v.citation)}</dd>${v.url ? `<dt>Source</dt><dd><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.url)}</a></dd>` : ""}<dt>Method</dt><dd>${esc(v.method)}</dd><dt>We teach</dt><dd>${esc(v.teach)}</dd></dl></details>`).join("")}</div></div>
+    <dl class="kv small" style="padding:8px 0"><dt>Manual says</dt><dd>${esc(v.manual)}</dd><dt>Finding</dt><dd>${esc(v.finding)}</dd><dt>Citation</dt><dd>${esc(v.citation)}</dd>${v.url ? `<dt>Source</dt><dd><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.url)}</a></dd>` : ""}<dt>Method</dt><dd>${esc(v.method)}${v.checks ? ` · ${esc(v.checks)}` : ""}</dd><dt>We teach</dt><dd>${esc(v.teach)}</dd></dl></details>`).join("")}</div></div>
   <div class="panel"><h3>Manual coverage</h3><div class="tablewrap"><table><tbody>${DATA.manualCoverage.map(([a, b]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join("")}</tbody></table></div></div>
   <div class="panel"><h3>Known limitations</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">
     <li>The Gold Coast textbook is missing; topics that appear only in the book (and not in the manual) may be absent. Uploading the book would allow a full coverage check.</li>
-    <li>Per-section FREC learning objectives and exact exam weights could not be read in full.</li>
-    <li>${DATA.lessons.filter((l) => l.status === "core").length} of ${DATA.lessons.length} lessons are core notes; full lessons are written as tutoring reaches them.</li>
+    <li>Per-section FREC learning objectives could not be read in full. Exam weights come from search excerpts of the Candidate Information Booklet (section 1 is derived from the 100% total).</li>
+    <li>${DATA.lessons.some((l) => l.status === "core") ? `${DATA.lessons.filter((l) => l.status === "core").length} of ${DATA.lessons.length} lessons are core notes; full lessons are written as tutoring reaches them.` : `All ${DATA.lessons.length} lessons are full lessons. Each was checked by an independent AI reviewer against the manual, the numbers database and the verification log; none has been reviewed by a licensed Florida instructor.`}</li>
     <li>Rules marked "Not yet verified" come from the study manual and are on the next verification list.</li>
     <li>Practice questions are original and not official exam questions.</li></ul></div>`;
 VIEWS.source = (id) => { setTimeout(() => { const d = document.getElementById(id); if (d) { d.open = true; d.scrollIntoView({ block: "start" }); } }, 30); return VIEWS.sources(); };

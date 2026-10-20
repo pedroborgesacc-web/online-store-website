@@ -27,7 +27,7 @@
 | O-L03-2-2 | understand | Distinguish licensure from registration, and group licenses from multiple licenses. | 1 |
 | O-L03-2-3 | recall | State the broker path: 24 months active in the preceding 5 years, 72-hour course, broker exam, 60 hours post-license. | 1 |
 | O-L03-3-1 | recall | State the 45-hour post-license requirement and the consequence of missing it (license null and void). | 1 |
-| O-L03-3-2 | recall | State the 14-hour CE requirement per 2-year renewal and the consequence of missing renewal (involuntary inactive). | 1 |
+| O-L03-3-2 | recall | State the 14-hour CE requirement per 2-year renewal (3 Core Law + 3 Ethics + 8 specialty) and the consequence of missing renewal (involuntary inactive). | 2 |
 | O-L03-3-3 | recall | State the reactivation rules: ≤12 months 14 hours; 12–24 months 28-hour course; >24 months void. | 1 |
 | O-L03-3-4 | understand | Distinguish active, voluntary inactive, involuntary inactive, suspended, revoked, null and void, and ineffective. | 2 |
 | O-L03-4-1 | recall | State the 10-day address-change notice and the 30-day duty to report a conviction or plea (including nolo contendere). | 2 |
@@ -74,14 +74,15 @@
 | O-L07-1-3 | apply | Apply the exemptions and when they are lost (broker used, discriminatory ad; never for race). | 2 |
 | O-L07-1-4 | understand | Distinguish reasonable modifications from reasonable accommodations. | 1 |
 | O-L07-2-1 | understand | Match ADA, ECOA, HMDA and fair housing to their subject (public accommodation, credit, lending data, housing). | 2 |
-| O-L07-2-2 | recall | State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry). | 1 |
+| O-L07-2-2 | recall | State the Do Not Call established-business-relationship windows (18 months after a transaction, 3 months after an inquiry; the FTC rule now says 540 / 90 days). | 2 |
 | O-L07-2-3 | recall | State the CAN-SPAM opt-out rule (honored within 10 business days). | 1 |
 | O-L07-3-1 | recall | State RESPA's scope (federally related loans, 1–4 residential units) and its kickback prohibition. | 1 |
 | O-L07-3-2 | recall | State TRID timing: Loan Estimate within 3 business days of application; Closing Disclosure at least 3 business days before closing. | 1 |
 | O-L07-3-3 | apply | Identify TILA advertising trigger terms and the 3-business-day right of rescission (refinance/home equity on principal residence, not purchase loans). | 2 |
 | O-L07-4-1 | recall | State how security deposits may be held and the 30-day notice of how they are held. | 1 |
-| O-L07-4-2 | recall | State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail, 15 days for the tenant to object. | 2 |
+| O-L07-4-2 | recall | State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail (or e-mail with a signed addendum), 15 days for the tenant to object. | 2 |
 | O-L07-4-3 | recall | State the termination notices for tenancies without a specific term: 60 / 30 / 30 / 7 days (current law). | 1 |
+| O-L07-4-4 | recall | State the landlord's flood disclosure duty for residential leases of 1 year or longer (s. 83.512, since October 2025). | 2 |
 | O-L08-1-1 | recall | Name the rights in the bundle (possession, control, enjoyment, exclusion, disposition). | 1 |
 | O-L08-1-2 | understand | Distinguish fee simple absolute, fee simple defeasible and life estates. | 1 |
 | O-L08-1-3 | understand | Explain the life tenant's rights and duties (waste) and distinguish remainder from reversion. | 2 |
@@ -95,8 +96,8 @@
 | O-L08-4-2 | recall | List the claims that can still reach a homestead (taxes and assessments, purchase or improvement debt, construction liens; federal liens). | 1 |
 | O-L08-4-3 | understand | Explain the spouse/minor-child protections (spouse joins in deeds and mortgages; devise restrictions). | 1 |
 | O-L08-5-1 | understand | Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property). | 2 |
-| O-L08-5-2 | recall | State the cancellation periods: developer condo 15 days; resale condo (flagged: 3 business days in older texts, 7 days in 2025 text); timeshare 10 days. | 2 |
-| O-L08-5-3 | recall | State that an HOA disclosure summary must be given before contract. | 1 |
+| O-L08-5-2 | recall | State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days. | 3 |
+| O-L08-5-3 | recall | State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not. | 2 |
 | O-L09-1-1 | understand | Distinguish voluntary transfer (deed, will) from involuntary transfer (descent, escheat, eminent domain, foreclosure, adverse possession). | 1 |
 | O-L09-1-2 | recall | State Florida adverse possession: 7 years, open, notorious, hostile, continuous, plus color of title or payment of taxes. | 1 |
 | O-L09-1-3 | understand | Distinguish testate and intestate, devise and descent. | 1 |

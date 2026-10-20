@@ -76,12 +76,12 @@
 |---|---|---|---|
 | 1. The Real Estate Business | L01-1, L01-2 | 2/2 | 7 |
 | 2. License Law and Qualifications for Licensure | L02-1, L02-2, L02-3 | 3/3 | 12 |
-| 3. License Law and Commission Rules | L03-1, L03-2, L03-3, L03-4 | 0/4 | 16 |
+| 3. License Law and Commission Rules | L03-1, L03-2, L03-3, L03-4 | 0/4 | 17 |
 | 4. Authorized Relationships, Duties and Disclosure | L04-1, L04-2, L04-3, L04-4 | 0/4 | 18 |
 | 5. Brokerage Activities and Procedures | L05-1, L05-2, L05-3, L05-4 | 0/4 | 16 |
 | 6. Violations, Penalties and Procedures | L06-1, L06-2, L06-3 | 0/3 | 11 |
-| 7. Federal and State Laws Pertaining to Real Estate | L07-1, L07-2, L07-3, L07-4 | 0/4 | 17 |
-| 8. Property Rights: Estates, Tenancies, Condos, Co-ops, HOAs, Timeshares | L08-1, L08-2, L08-3, L08-4, L08-5 | 0/5 | 20 |
+| 7. Federal and State Laws Pertaining to Real Estate | L07-1, L07-2, L07-3, L07-4 | 0/4 | 20 |
+| 8. Property Rights: Estates, Tenancies, Condos, Co-ops, HOAs, Timeshares | L08-1, L08-2, L08-3, L08-4, L08-5 | 0/5 | 22 |
 | 9. Title, Deeds and Ownership Restrictions | L09-1, L09-2, L09-3, L09-4, L09-5 | 0/5 | 17 |
 | 10. Legal Descriptions | L10-1, L10-2 | 0/2 | 8 |
 | 11. Real Estate Contracts | L11-1, L11-2, L11-3, L11-4 | 0/4 | 19 |

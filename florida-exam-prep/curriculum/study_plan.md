@@ -32,7 +32,7 @@ Take a short break between steps 3 and 4 if attention drops. Do not add more tha
   4. Medium and low-priority lessons.
 
   The app will say plainly that coverage is incomplete. A compressed plan does not guarantee mastery.
-- **Mock exams:** at most one or two per week in the final phase. The bank has 261 questions, so mocks overlap; review every miss the same day.
+- **Mock exams:** at most one or two per week in the final phase. The bank has 267 questions, so mocks overlap; review every miss the same day.
 
 ## Evidence base, stated honestly
 

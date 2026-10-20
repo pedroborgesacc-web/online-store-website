@@ -68,7 +68,7 @@
   "l": "L03-4",
   "t": "trigger",
   "f": "What event starts a 10-day clock and what event starts a 30-day clock for a licensee's duty to notify DBPR?",
-  "b": "10 days: change of mailing address. 30 days: conviction, guilty plea or nolo contendere plea."
+  "b": "10 days: change of mailing or e-mail address (also a change of employing broker). 30 days: conviction, finding of guilt, or guilty or nolo contendere plea to any crime."
  },
  {
   "id": "F-009",
@@ -540,7 +540,7 @@
   "t": "number",
   "src": "N-001",
   "f": "Pre-license course (sales associate) — state the exact rule.",
-  "b": "63 hours (50-minute hours), including the end-of-course exam\nConditions: Course completion is valid for 2 years for purposes of taking the state exam.\nQualifications: Mutual-recognition nonresidents skip the course (see N-007)."
+  "b": "63 hours (50-minute hours), including the end-of-course exam\nConditions: The course completion becomes invalid if the state exam is not PASSED within 2 years after completing the course (V-31).\nQualifications: Mutual-recognition nonresidents skip the course (see N-007)."
  },
  {
   "id": "F-N-002",
@@ -548,7 +548,7 @@
   "t": "number",
   "src": "N-002",
   "f": "Applicant minimum age / education — state the exact rule.",
-  "b": "18 years old; high school diploma or equivalent; U.S. Social Security number\nQualifications: U.S. citizenship and Florida residency are NOT required."
+  "b": "18 years old; high school diploma or equivalent; U.S. Social Security number\nQualifications: U.S. citizenship and Florida residency are NOT required. Florida Bar members are exempt from the pre-license course (V-31)."
  },
  {
   "id": "F-N-003",
@@ -572,7 +572,7 @@
   "t": "number",
   "src": "N-005",
   "f": "Application validity — state the exact rule.",
-  "b": "2 years"
+  "b": "Expires 2 years after DBPR receives it if the applicant has not passed the exam"
  },
  {
   "id": "F-N-006",
@@ -588,7 +588,7 @@
   "t": "number",
   "src": "N-007",
   "f": "Mutual recognition law exam — state the exact rule.",
-  "b": "40 questions; 30 correct to pass (75%)\nConditions: Must hold an active license in good standing in that state.\nQualifications: Florida residents cannot use mutual recognition. Official lists of states disagree — do not memorize the list (V-22)."
+  "b": "40 questions; 30 correct to pass (75%)\nConditions: Must hold an active license in good standing in that state.\nQualifications: Florida residents cannot use mutual recognition. The other state's license must have been earned by its own course and exam. Current states (9): AL, AR, CT, GA, KY, MS, NE, RI, WV; Illinois ended Dec 31, 2025 (V-22)."
  },
  {
   "id": "F-N-008",
@@ -596,7 +596,7 @@
   "t": "number",
   "src": "N-008",
   "f": "Post-license education (sales associate) — state the exact rule.",
-  "b": "45 hours, completed before the FIRST renewal\nQualifications: Missing it makes the license NULL AND VOID; must requalify from the 63-hour course."
+  "b": "45 hours, completed before the FIRST renewal\nQualifications: Missing it makes the license NULL AND VOID; must requalify (63-hour course and state exam). Exempt: 4-year degree in real estate. Attorneys are NOT exempt. FREC may allow 6 more months for physical hardship."
  },
  {
   "id": "F-N-009",
@@ -604,7 +604,7 @@
   "t": "number",
   "src": "N-009",
   "f": "Continuing education — state the exact rule.",
-  "b": "14 hours per 2-year renewal period (after the first renewal)\nConditions: Applies to active and voluntary-inactive licensees.\nQualifications: Missing renewal → involuntary inactive (not void)."
+  "b": "14 hours per 2-year renewal period (after the first renewal): 3 hours Core Law + 3 hours Ethics and Business Practices + 8 hours specialty\nConditions: Applies to active and voluntary-inactive licensees.\nQualifications: Missing renewal → involuntary inactive (not void). Florida Bar members are exempt from CE."
  },
  {
   "id": "F-N-010",
@@ -612,7 +612,7 @@
   "t": "number",
   "src": "N-010",
   "f": "First renewal timing — state the exact rule.",
-  "b": "18–24 months after initial licensure"
+  "b": "18–24 months after initial licensure\nConditions: Later renewal periods are 24 months."
  },
  {
   "id": "F-N-011",
@@ -627,16 +627,16 @@
   "l": "L03-4",
   "t": "number",
   "src": "N-012",
-  "f": "Change of mailing address — state the exact rule.",
-  "b": "Notify DBPR within 10 days"
+  "f": "Change of mailing or e-mail address — state the exact rule.",
+  "b": "Notify DBPR in writing within 10 days"
  },
  {
   "id": "F-N-013",
   "l": "L03-4",
   "t": "number",
   "src": "N-013",
-  "f": "Reporting a conviction or plea — state the exact rule.",
-  "b": "Within 30 days, including pleas of guilty or nolo contendere\nConditions: Applies whether or not adjudication is withheld."
+  "f": "Reporting a crime (conviction, finding of guilt or plea) — state the exact rule.",
+  "b": "Within 30 days, in writing, including pleas of guilty or nolo contendere, to any crime in any jurisdiction\nConditions: Applies whether or not adjudication is withheld."
  },
  {
   "id": "F-N-014",
@@ -644,7 +644,7 @@
   "t": "number",
   "src": "N-014",
   "f": "Broker license prerequisites — state the exact rule.",
-  "b": "24 months active sales associate license during the preceding 5 years; 72-hour broker course; broker exam"
+  "b": "24 months active sales associate license during the preceding 5 years; 72-hour broker course; broker exam\nConditions: Alternatives to the 24 months as a sales associate: salaried government employee holding a sales associate license, or broker licensed in another jurisdiction (same 24 months in 5 years). Sales associate post-licensing must be complete."
  },
  {
   "id": "F-N-015",
@@ -667,8 +667,8 @@
   "l": "L03-1",
   "t": "number",
   "src": "N-021",
-  "f": "FREC terms — state the exact rule.",
-  "b": "4-year terms (manual: maximum two consecutive terms; quorum 4 — not verified)"
+  "f": "FREC terms and quorum — state the exact rule.",
+  "b": "4-year terms; at most two consecutive terms (plus the rest of a predecessor's term); quorum 4 (51% of 7)"
  },
  {
   "id": "F-N-030",
@@ -772,7 +772,7 @@
   "t": "number",
   "src": "N-047",
   "f": "Rental information for a fee: refunds — state the exact rule.",
-  "b": "75% back if no rental obtained; 100% back if the information was not current or accurate; demand within 30 days of the contract"
+  "b": "Keep at most 25%: refund 75% if no rental is obtained; refund 100% if the information was not current or accurate\nQualifications: Violation: first-degree misdemeanor and license discipline. Older editions: demand within 30 days (not re-confirmed in the current text)."
  },
  {
   "id": "F-N-048",
@@ -780,7 +780,7 @@
   "t": "number",
   "src": "N-048",
   "f": "Record keeping — state the exact rule.",
-  "b": "Brokers keep books, records and escrow records for at least 5 years; if litigation, at least 2 years after it ends (manual statement)"
+  "b": "At least 5 years; if the records are involved in litigation, at least 2 years after the case and any appeal end (never less than 5 years in total)"
  },
  {
   "id": "F-N-050",
@@ -812,7 +812,7 @@
   "t": "number",
   "src": "N-053",
   "f": "Appeal of a final order — state the exact rule.",
-  "b": "Within 30 days to the District Court of Appeal"
+  "b": "Notice of appeal within 30 days after the final order, to the District Court of Appeal"
  },
  {
   "id": "F-N-054",
@@ -828,7 +828,7 @@
   "t": "number",
   "src": "N-060",
   "f": "Fair housing protected classes — state the exact rule.",
-  "b": "1866: race (all property, no exceptions). 1968: race, color, religion, national origin. 1974: sex. 1988: familial status and handicap."
+  "b": "1866: race (all property, no exceptions). 1968: race, color, religion, national origin. 1974: sex. 1988: familial status and handicap (disability)."
  },
  {
   "id": "F-N-061",
@@ -836,7 +836,7 @@
   "t": "number",
   "src": "N-061",
   "f": "Housing for older persons — state the exact rule.",
-  "b": "55+: at least 80% of units occupied by at least one person 55 or older; or 62+: all occupants 62 or older"
+  "b": "55+: at least 80% of occupied units have at least one person 55 or older (with published policies and age verification); or 62+: all occupants 62 or older"
  },
  {
   "id": "F-N-062",
@@ -844,7 +844,7 @@
   "t": "number",
   "src": "N-062",
   "f": "Fair housing exemptions — state the exact rule.",
-  "b": "Owner of no more than 3 single-family homes selling/renting without a broker or discriminatory ads; owner-occupied building of no more than 4 units ('Mrs. Murphy'); religious organizations and private clubs (members, non-commercial)\nConditions: Lost if a broker is used or a discriminatory ad is published.\nQualifications: Never for race (1866 Act)."
+  "b": "Private owner of no more than 3 single-family homes selling/renting without a broker or discriminatory ads (one sale per 24 months if not the occupant); owner-occupied building of no more than 4 units ('Mrs. Murphy'); religious organizations and private clubs (members, non-commercial)\nConditions: Lost if a broker is used or a discriminatory ad is published.\nQualifications: Never for race (1866 Act)."
  },
  {
   "id": "F-N-063",
@@ -852,7 +852,7 @@
   "t": "number",
   "src": "N-063",
   "f": "Fair housing complaints — state the exact rule.",
-  "b": "To HUD within 1 year (manual); court action also possible"
+  "b": "HUD complaint within 1 year; lawsuit within 2 years"
  },
  {
   "id": "F-N-064",
@@ -860,7 +860,7 @@
   "t": "number",
   "src": "N-064",
   "f": "Do Not Call established business relationship — state the exact rule.",
-  "b": "Up to 18 months after a purchase/transaction; up to 3 months after an inquiry\nConditions: A specific request not to be called overrides it.\nQualifications: Written permission also allows calls."
+  "b": "FCC rule: up to 18 months after a purchase/transaction; up to 3 months after an inquiry. FTC rule (since May 16, 2024): 540 days / 90 days.\nConditions: A specific request not to be called overrides it.\nQualifications: Written permission also allows calls."
  },
  {
   "id": "F-N-065",
@@ -868,7 +868,7 @@
   "t": "number",
   "src": "N-065",
   "f": "CAN-SPAM opt-out — state the exact rule.",
-  "b": "Honored within 10 business days"
+  "b": "Honored within 10 business days\nQualifications: Every commercial email needs a valid physical postal address."
  },
  {
   "id": "F-N-066",
@@ -876,7 +876,7 @@
   "t": "number",
   "src": "N-066",
   "f": "TRID timing — state the exact rule.",
-  "b": "Loan Estimate within 3 business days of application; Closing Disclosure at least 3 business days before closing"
+  "b": "Loan Estimate within 3 business days after the application; Closing Disclosure received at least 3 business days before consummation (closing)\nQualifications: A corrected Closing Disclosure restarts the 3 days only if the APR becomes inaccurate, the loan product changes, or a prepayment penalty is added."
  },
  {
   "id": "F-N-067",
@@ -892,7 +892,7 @@
   "t": "number",
   "src": "N-068",
   "f": "Security deposit: notice of how held — state the exact rule.",
-  "b": "Within 30 days of receipt"
+  "b": "In the lease or within 30 days of receipt\nQualifications: Not required for landlords who rent fewer than 5 units."
  },
  {
   "id": "F-N-069",
@@ -900,7 +900,7 @@
   "t": "number",
   "src": "N-069",
   "f": "Security deposit after move-out — state the exact rule.",
-  "b": "Return within 15 days if no claim; otherwise certified-mail notice of claim within 30 days; tenant has 15 days to object\nQualifications: Missing the 30-day notice forfeits the right to impose a claim."
+  "b": "Return within 15 days if no claim; otherwise notice of claim within 30 days by certified mail (or by e-mail if both signed the e-mail addendum, since July 1, 2025); tenant has 15 days to object\nQualifications: Missing the 30-day notice forfeits the right to impose a claim."
  },
  {
   "id": "F-N-070",
@@ -911,12 +911,20 @@
   "b": "Year-to-year 60 days; quarter-to-quarter 30 days; month-to-month 30 days; week-to-week 7 days\nConditions: Written notice before the end of the period.\nQualifications: Manual and older books: month 15 days, quarter 45 days — outdated/incorrect (V-04)."
  },
  {
+  "id": "F-N-071",
+  "l": "L07-4",
+  "t": "number",
+  "src": "N-071",
+  "f": "Flood disclosure for residential leases — state the exact rule.",
+  "b": "At or before signing a residential lease of 1 year or longer\nQualifications: Leases shorter than 1 year are not covered. If the landlord fails to disclose and the tenant's belongings suffer a substantial flood loss, the tenant may terminate within 30 days after the damage."
+ },
+ {
   "id": "F-N-080",
   "l": "L08-4",
   "t": "number",
   "src": "N-080",
   "f": "Homestead size (creditor protection) — state the exact rule.",
-  "b": "1/2 acre of contiguous land within a municipality; 160 contiguous acres outside a municipality"
+  "b": "1/2 acre of contiguous land within a municipality; 160 contiguous acres outside a municipality\nQualifications: No protection against property taxes and assessments, debts for purchase, improvement or repair, or labor on the property."
  },
  {
   "id": "F-N-081",
@@ -924,7 +932,7 @@
   "t": "number",
   "src": "N-081",
   "f": "Condominium cancellation rights — state the exact rule.",
-  "b": "Developer sale: 15 days. Resale: 3 business days (older texts) — 2025 statute text appears to say 7 days excluding weekends/holidays (unresolved)."
+  "b": "Developer sale: 15 days. Resale: 7 days, excluding Saturdays, Sundays and legal holidays, after signing and receiving the documents (since July 1, 2025; older books: 3 business days).\nConditions: Both rights end at closing."
  },
  {
   "id": "F-N-082",
@@ -932,7 +940,15 @@
   "t": "number",
   "src": "N-082",
   "f": "Timeshare cancellation — state the exact rule.",
-  "b": "10 days; cannot be waived"
+  "b": "Until midnight of the 10th calendar day after the later of signing or receiving the last required document; cannot be waived"
+ },
+ {
+  "id": "F-N-083",
+  "l": "L08-5",
+  "t": "number",
+  "src": "N-083",
+  "f": "HOA disclosure summary — state the exact rule.",
+  "b": "Buyer may void the contract within 3 days after receiving the summary or before closing, whichever occurs first\nQualifications: Not waivable; ends at closing. Not for condominiums, co-ops or timeshares."
  },
  {
   "id": "F-N-090",
@@ -940,7 +956,7 @@
   "t": "number",
   "src": "N-090",
   "f": "Adverse possession (Florida) — state the exact rule.",
-  "b": "7 years of open, notorious, continuous, hostile possession plus color of title OR payment of taxes"
+  "b": "7 years of continuous possession, either under color of title (recorded written instrument) or without color of title if the possessor pays the taxes within 1 year of entering and files a return with the property appraiser within 30 days after paying"
  },
  {
   "id": "F-N-091",
@@ -1028,7 +1044,7 @@
   "t": "number",
   "src": "N-112",
   "f": "Written listing agreement rules — state the exact rule.",
-  "b": "Definite expiration date; no automatic renewal; copy to the person signing within 24 hours"
+  "b": "Definite expiration date; property description, price and terms, fee, principal's signature; no clause requiring the seller to give notice to cancel after expiration (no automatic renewal); copy to the person signing within 24 hours"
  },
  {
   "id": "F-N-113",
@@ -1036,7 +1052,7 @@
   "t": "number",
   "src": "N-113",
   "f": "Lead-based paint — state the exact rule.",
-  "b": "Housing built before 1978: disclose known hazards, give EPA pamphlet, 10-day inspection opportunity (buyer may waive)"
+  "b": "Housing built before 1978: disclose known lead paint and hazards, give the EPA pamphlet; buyers get a 10-day inspection opportunity (may be waived or changed in writing)\nQualifications: Tenants get the disclosure but not the 10-day period."
  },
  {
   "id": "F-N-120",
@@ -1052,7 +1068,7 @@
   "t": "number",
   "src": "N-121",
   "f": "Florida usury — state the exact rule.",
-  "b": "18% per year simple interest on loans of $500,000 or less; 25% on larger loans; above 25% is criminal usury"
+  "b": "18% per year simple interest on loans of $500,000 or less; 25% on larger loans. Criminal usury: over 25% up to 45% = misdemeanor; over 45% = felony."
  },
  {
   "id": "F-N-122",
@@ -1100,7 +1116,7 @@
   "t": "number",
   "src": "N-130",
   "f": "Documentary stamp tax on deeds — state the exact rule.",
-  "b": "$0.70 per $100 or portion thereof of total consideration (round UP to the next $100); Miami-Dade: $0.60 per $100 for single-family residences (other property: $0.60 + $0.45 surtax, manual)"
+  "b": "$0.70 per $100 or portion thereof of total consideration (round UP to the next $100); Miami-Dade: $0.60 per $100 for single-family residences, other property $0.60 + $0.45 surtax"
  },
  {
   "id": "F-N-131",
@@ -1116,7 +1132,7 @@
   "t": "number",
   "src": "N-132",
   "f": "Nonrecurring intangible tax — state the exact rule.",
-  "b": "2 mills (0.002) × the amount of the NEW mortgage; no rounding\nQualifications: Not on assumed mortgages."
+  "b": "2 mills (0.002) × the amount of the NEW mortgage; no rounding\nQualifications: Not due again on an assumed mortgage when it was paid originally and the debt is unchanged (s. 199.145(3), V-25)."
  },
  {
   "id": "F-N-133",
@@ -1124,7 +1140,7 @@
   "t": "number",
   "src": "N-133",
   "f": "Proration conventions (Florida course) — state the exact rule.",
-  "b": "365-day year (actual days in each month); the buyer is responsible for the day of closing\nConditions: Follow the question if it states another method."
+  "b": "365-day year (actual days in each month); the buyer is responsible for the day of closing\nConditions: Follow the question if it states another method. No statute or rule sets these; they come from the contract and the course."
  },
  {
   "id": "F-N-140",
@@ -1148,7 +1164,7 @@
   "t": "number",
   "src": "N-142",
   "f": "Save Our Homes cap — state the exact rule.",
-  "b": "Assessed value of a homestead rises no more than 3% per year or the CPI change, whichever is less; benefit portable to a new Florida homestead (limits apply)\nQualifications: Resets to just value on change of ownership."
+  "b": "Assessed value of a homestead rises no more than 3% per year or the CPI change, whichever is less; portability: up to $500,000 of the benefit moves to a new Florida homestead established within 3 years\nQualifications: Resets to just value on change of ownership. November 2026 ballot measure may change it from 2027 (V-23)."
  },
  {
   "id": "F-N-143",
@@ -1156,7 +1172,7 @@
   "t": "number",
   "src": "N-143",
   "f": "Property tax calendar — state the exact rule.",
-  "b": "Assessment date January 1; TRIM notice in August; bills from November 1 with discounts of 4% (Nov), 3% (Dec), 2% (Jan), 1% (Feb); delinquent April 1"
+  "b": "Assessment date January 1; TRIM notice within 55 days after certification (usually August); due November 1 with discounts of 4% (Nov), 3% (Dec), 2% (Jan), 1% (Feb); delinquent April 1 (or 60 days after the bill was mailed, if later)"
  },
  {
   "id": "F-N-144",
@@ -1180,7 +1196,7 @@
   "t": "number",
   "src": "N-146",
   "f": "Principal residence gain exclusion — state the exact rule.",
-  "b": "$250,000 single; $500,000 married filing jointly; owned and used as main home 2 of the last 5 years"
+  "b": "$250,000 single; $500,000 married filing jointly; owned and used as main home 2 of the last 5 years\nConditions: Generally not available if the exclusion was used on another home sold within the previous 2 years."
  },
  {
   "id": "F-G001",
@@ -1439,7 +1455,7 @@
   "l": "L03-3",
   "t": "term-def",
   "f": "Define: Continuing education (CE)",
-  "b": "14 hours every renewal period after the first."
+  "b": "14 hours every 2-year renewal period after the first: 3 Core Law + 3 Ethics and Business Practices + 8 specialty."
  },
  {
   "id": "F-G038",
@@ -1761,7 +1777,7 @@
   "l": "L07-2",
   "t": "term-def",
   "f": "Define: ECOA",
-  "b": "Equal Credit Opportunity Act: no credit discrimination by race, color, religion, national origin, sex, marital status, age, or public assistance income."
+  "b": "Equal Credit Opportunity Act: no credit discrimination by race, color, religion, national origin, sex, marital status, age (if able to contract), public assistance income, or good-faith exercise of consumer credit rights."
  },
  {
   "id": "F-G084",
@@ -3212,6 +3228,6 @@
   "t": "pt-fl",
   "src": "PT-23",
   "f": "Is a Florida seller required to obtain an energy rating of the home before listing?",
-  "b": "No. The requirement is to provide the energy-efficiency information brochure to the buyer."
+  "b": "No. The requirement is to give the buyer the energy-efficiency rating information at or before contract."
  }
 ]
