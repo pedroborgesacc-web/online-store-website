@@ -19,8 +19,8 @@ const VSCHEMA = { type: 'object', properties: { items: { type: 'array', items: {
   finding: { type: 'string' }, citation: { type: 'string' }, url: { type: 'string' }, method: { type: 'string' } },
   required: ['key', 'status', 'finding', 'citation', 'url', 'method'] } } }, required: ['items'] }
 const SKSCHEMA = { type: 'object', properties: { items: { type: 'array', items: { type: 'object', properties: {
-  key: { type: 'string' }, agree: { type: 'boolean' }, note: { type: 'string' }, url: { type: 'string' } },
-  required: ['key', 'agree', 'note'] } } }, required: ['items'] }
+  key: { type: 'string' }, agree: { type: 'boolean' }, checked: { type: 'boolean' }, note: { type: 'string' }, url: { type: 'string' } },
+  required: ['key', 'agree', 'checked', 'note'] } } }, required: ['items'] }
 const WSCHEMA = { type: 'object', properties: { written: { type: 'array', items: { type: 'string' } },
   manualOnlyFacts: { type: 'array', items: { type: 'string' } }, notes: { type: 'string' } }, required: ['written', 'notes'] }
 const RSCHEMA = { type: 'object', properties: { issues: { type: 'array', items: { type: 'object', properties: {
@@ -44,19 +44,26 @@ function verifyPrompt(b) {
     'Items (key: manual claim [where to look]):',
     b.items.map(i => '- ' + i.key + ': ' + i.claim + ' [' + i.where + ']').join('\n'),
     'Return one entry per item key, including manualClaim.',
-  ].join('\n')
+  ].concat(b.name === 'exam-specs' ? ['RETRY: the first attempt ran after the shared search budget (200 WebSearch calls per turn, shared by all agents) was exhausted. Use at most 20 WebSearch calls. Search myfloridalicense.com for the Sales Associate Candidate Information Booklet content outline (all 19 percentages), retake/waiting rules and fees, and whether unscored pretest items are included; also flrules.org Rule 61J2-2 and flsenate.gov s. 475.17/475.181 for retake provisions.'] : []).join('\n')
+}
+function skepticTargets(r) {
+  const nonConfirmed = r.items.filter(i => i.status !== 'confirmed')
+  const confirmedSample = r.items.filter(i => i.status === 'confirmed').slice(0, 2)
+  return nonConfirmed.concat(confirmedSample)
 }
 function skepticPrompt(b, r) {
   return [
-    'You are an independent skeptic checking another researcher\'s verdicts on Florida real estate exam rules (check date ' + A.checkedOn + '). Try to REFUTE each verdict.',
-    'Load WebSearch with ToolSearch and search only official domains: ' + OFFICIAL + '.',
-    'Rules: for a verdict of "corrected", you must independently find official support for the new rule; if you cannot, set agree=false. For "confirmed", set agree=false only if you find official evidence of a different current rule, or the cited source clearly does not support the claim. For "unresolved", set agree=true unless you can find a clear official answer (then agree=false and give it in note with url).',
-    'Verdicts to check:',
-    JSON.stringify(r.items, null, 1),
+    'You are an independent skeptic re-checking another researcher\'s verdicts on Florida real estate exam rules (check date ' + A.checkedOn + '). Try to REFUTE each verdict using official sources, not memory.',
+    'Load WebSearch with ToolSearch and search only official domains: ' + OFFICIAL + '. Web searches are limited to 200 per turn SHARED by all agents: use at most 12 WebSearch calls in total. Direct fetches of Florida government hosts are usually blocked by the network policy; try once at most.',
+    'For each verdict set checked=true only if you actually found and read an official-domain source (search excerpt or page) about that rule in this session; otherwise checked=false (then agree=true, and say "not independently checked" in note). Never claim a check you could not run.',
+    'When checked=true: for "corrected", agree only if the official source supports the new rule; for "confirmed", disagree only on official evidence of a different current rule; for "unresolved", disagree only if you found a clear official answer (give it in note with url).',
+    'Verdicts to check (' + skepticTargets(r).length + ' of ' + r.items.length + ' in this batch; the rest are single-checked):',
+    JSON.stringify(skepticTargets(r), null, 1),
   ].join('\n')
 }
 
 const SOURCES = (b, V) => [
+  'Do NOT use WebSearch or WebFetch: work only from the files and the verification results below.',
   'Project root: ' + ROOT,
   'Read first:',
   '1. ' + ROOT + '/lessons/ch01.md and ' + ROOT + '/lessons/ch02.md: the format and tone exemplars (full lessons; L01-1 and L02-3 are the best models).',
@@ -122,16 +129,17 @@ for (const v of verified) {
   if (!v || !v.items) { failedVerify.push(v ? v.batch : 'unknown'); continue }
   for (const it of v.items) {
     const sk = (v.skeptic || []).find(s => s.key === it.key)
-    const disputed = sk && !sk.agree
+    const disputed = sk && sk.checked && !sk.agree
     finalV.push(Object.assign({}, it, {
       finalStatus: disputed ? 'unresolved' : it.status,
-      skepticNote: sk ? sk.note : 'skeptic unavailable',
+      checks: sk && sk.checked ? 'double-checked' : 'single-checked',
+      skepticNote: sk ? sk.note : 'not selected for re-check',
       skepticUrl: sk && sk.url ? sk.url : '',
     }))
   }
 }
 log('Verification: ' + finalV.length + ' items; corrected ' + finalV.filter(x => x.finalStatus === 'corrected').length + ', confirmed ' + finalV.filter(x => x.finalStatus === 'confirmed').length + ', unresolved ' + finalV.filter(x => x.finalStatus === 'unresolved').length + (failedVerify.length ? '; failed batches: ' + failedVerify.join(', ') : ''))
-const V = JSON.stringify(finalV.map(x => ({ key: x.key, status: x.finalStatus, rule: x.finding, citation: x.citation, manualClaim: x.manualClaim })), null, 1)
+const V = JSON.stringify(finalV.map(x => ({ key: x.key, status: x.finalStatus, checks: x.checks, rule: x.finding, citation: x.citation, manualClaim: x.manualClaim })), null, 1)
 
 // ── Phase 2: lessons — write → review → fix → re-review ──
 const lessonResults = await pipeline(A.lessonBatches,
