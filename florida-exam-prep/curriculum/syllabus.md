@@ -535,7 +535,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L13-1 · FHA, VA and conventional loans
 
-- Type: conceptual · Priority: high · ~25 min · Content: core
+- Type: conceptual · Priority: high · ~25 min · Content: full
 - Manual: M9 §Government programs
 - Prerequisites: L12-1
 - Objectives:
@@ -545,7 +545,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L13-2 · Loan types by repayment and purpose
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M9 §Government programs and loan types
 - Prerequisites: L13-1
 - Objectives:
@@ -555,7 +555,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L13-3 · Primary and secondary markets, the Fed, and discount points
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M9 §Markets, the Fed
 - Prerequisites: L13-1
 - Objectives:

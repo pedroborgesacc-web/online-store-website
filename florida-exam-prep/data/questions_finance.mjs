@@ -66,7 +66,7 @@ export const questions = [
   { id: "Q1203-04", l: "L12-3", o: 2, d: 2, t: "mcq", num: ["N-121"],
     q: "Under Florida law, the maximum interest rate on a loan of $400,000 (without triggering civil usury) is:",
     c: ["10% per year simple interest","18% per year simple interest","25% per year simple interest","No limit for loans of this size"],
-    a: 1, ex: "18% per year simple interest for loans of $500,000 or less; 25% for larger loans; above 25% is criminal usury.",
+    a: 1, ex: "18% per year simple interest for loans of $500,000 or less; 25% for larger loans. Willfully and knowingly charging more than 25% is criminal usury (s. 687.071), unless otherwise allowed by law.",
     w: { 0: ["NUMBER", "It is 18%."], 2: ["CONFUSED", "25% applies to loans over $500,000."], 3: ["RULE", "Florida has usury limits."] } },
 
   // ── L13-1 FHA / VA / conventional ──

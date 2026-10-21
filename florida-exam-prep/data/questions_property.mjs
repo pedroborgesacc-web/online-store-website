@@ -26,8 +26,8 @@ export const questions = [
 
   // ── L08-2 Leaseholds ──
   { id: "Q0802-01", l: "L08-2", o: 0, d: 2, t: "mcq",
-    q: "A lease for 6 months with a definite end date is an:",
-    c: ["estate for years", "estate at will", "periodic tenancy", "estate at sufferance"],
+    q: "A lease for 6 months with a definite end date is classified as:",
+    c: ["an estate for years", "an estate at will", "a periodic tenancy", "an estate at sufferance"],
     a: 0, ex: "Any lease with a definite beginning and end, even shorter than a year, is an estate for years. It ends automatically without notice.",
     w: { 1: ["CONFUSED", "A tenancy at will has no fixed term."], 2: ["CONFUSED", "A periodic tenancy renews period to period."], 3: ["CONFUSED", "Sufferance is a holdover without consent."] } },
   { id: "Q0802-02", l: "L08-2", o: 2, d: 2, t: "scn",

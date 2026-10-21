@@ -2886,7 +2886,7 @@
   "num": [
    "N-069"
   ],
-  "q": "A landlord forgets to send the notice of claim and sends it 35 days after the tenant left. What is the result?",
+  "q": "A landlord forgets to send the notice of claim and sends it 35 days after the rental agreement ended. What is the result?",
   "c": [
    "The claim is still valid, because the damage to the unit is real",
    "The landlord forfeits the right to impose a claim on the deposit",
@@ -3036,12 +3036,12 @@
   "o": 0,
   "d": 2,
   "t": "mcq",
-  "q": "A lease for 6 months with a definite end date is an:",
+  "q": "A lease for 6 months with a definite end date is classified as:",
   "c": [
-   "estate for years",
-   "estate at will",
-   "periodic tenancy",
-   "estate at sufferance"
+   "an estate for years",
+   "an estate at will",
+   "a periodic tenancy",
+   "an estate at sufferance"
   ],
   "a": 0,
   "ex": "Any lease with a definite beginning and end, even shorter than a year, is an estate for years. It ends automatically without notice.",
@@ -5066,7 +5066,7 @@
    "No limit for loans of this size"
   ],
   "a": 1,
-  "ex": "18% per year simple interest for loans of $500,000 or less; 25% for larger loans; above 25% is criminal usury.",
+  "ex": "18% per year simple interest for loans of $500,000 or less; 25% for larger loans. Willfully and knowingly charging more than 25% is criminal usury (s. 687.071), unless otherwise allowed by law.",
   "w": {
    "0": [
     "NUMBER",

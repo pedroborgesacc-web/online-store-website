@@ -229,7 +229,7 @@ export const questions = [
     a: 2, ex: "Current law: month-to-month and quarter-to-quarter 30 days; year-to-year 60 days; week-to-week 7 days. (Older texts said 15 days for month-to-month.)",
     w: { 0: ["CONFUSED", "7 days is week-to-week."], 1: ["NUMBER", "15 days is the pre-change rule found in older books."], 3: ["CONFUSED", "60 days is year-to-year."] } },
   { id: "Q0704-03", l: "L07-4", o: 1, d: 2, t: "scn", num: ["N-069"],
-    q: "A landlord forgets to send the notice of claim and sends it 35 days after the tenant left. What is the result?",
+    q: "A landlord forgets to send the notice of claim and sends it 35 days after the rental agreement ended. What is the result?",
     c: ["The claim is still valid, because the damage to the unit is real","The landlord forfeits the right to impose a claim on the deposit","The landlord may keep half of the deposit as a late-notice penalty","The tenant must still object within 15 days or lose the deposit"],
     a: 1, ex: "A landlord who fails to give the 30-day notice forfeits the right to impose a claim on the deposit.",
     w: { 0: ["RULE", "Missing the deadline forfeits the claim against the deposit."], 2: ["RULE", "No partial keeping is allowed."], 3: ["MISREAD", "The objection window matters only if the notice was timely."] } },

@@ -1,5 +1,6 @@
 // Replaces lesson blocks in lessons/chNN.md with full lessons from staging/<LessonId>.md.
-// Usage: node scripts/integrate_staging.mjs [--dry] [--only L03-1,L03-2,...]
+// Usage: node scripts/integrate_staging.mjs [--dry] [--force] [--only L03-1,L03-2,...]
+// --force also replaces lessons that are already full (e.g. after a second review pass).
 // A staged file must start with "<!-- lesson: <id> | content: full -->" and is only
 // used when the lesson currently exists in a chapter file.
 import fs from "node:fs";
@@ -7,6 +8,7 @@ import path from "node:path";
 
 const ROOT = path.dirname(path.dirname(new URL(import.meta.url).pathname));
 const dry = process.argv.includes("--dry");
+const force = process.argv.includes("--force");
 const oi = process.argv.indexOf("--only");
 const only = oi > 0 ? new Set(process.argv[oi + 1].split(",")) : null;
 const MARK = /<!--\s*lesson:\s*([A-Z0-9-]+)\s*\|\s*content:\s*(full|core)\s*-->/g;
@@ -31,7 +33,7 @@ for (const f of fs.readdirSync(path.join(ROOT, "lessons")).filter((x) => /^ch\d\
   marks.forEach((m, i) => {
     const end = i + 1 < marks.length ? marks[i + 1].index : src.length;
     const id = m[1];
-    if (staged.has(id) && m[2] === "core") { out += staged.get(id) + "\n\n"; replaced++; console.log(`${f}: ${id} core → full`); }
+    if (staged.has(id) && (m[2] === "core" || force)) { out += staged.get(id) + "\n\n"; replaced++; console.log(`${f}: ${id} ${m[2]} → full`); }
     else out += src.slice(m.index, end);
   });
   if (!dry) fs.writeFileSync(p, out.replace(/\n{3,}$/, "\n").replace(/\s*$/, "\n"));
