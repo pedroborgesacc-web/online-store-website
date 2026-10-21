@@ -11,7 +11,7 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 - [x] **3. Integrate.** Apply verification results to `data/verification.mjs` (new V-entries) and `data/numbers.mjs`; update any question or lesson that a correction affects; replace the core lessons in `lessons/chNN.md` with the staged full lessons.
 - [x] **4. Validate.** `node scripts/build.mjs` and `node tests/app.test.mjs` must both pass.
 - [x] **5. Publish.** Republish the artifact from `dist/artifact.html` (same URL); commit and push.
-- [ ] **6. Close.** Disable the hourly routine and send the learner a short summary.
+- [x] **6. Close.** Disable the hourly routine and send the learner a short summary.
 
 ## Run log
 
@@ -34,6 +34,7 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 | 2026-10-21 04:10 | Fresh run `wf_b7dfc0fe-241` (task `w657j8xw3`) with ONLY those 5 batches (same script, no resume). Second-pass lessons for 14 batches (45 lessons, incl. ch13) re-integrated with `integrate_staging.mjs --force --only …`; 3 more question fixes. Build and 24 tests pass; artifact republished. |
 | 2026-10-21 ~04:25 | Run `wf_b7dfc0fe-241` finished: the last 5 batches (ch14b, ch15-17, ch16, ch18, ch19) reviewed and fact-audited (892 facts; 1 blocker, 14 majors fixed). All 61 lessons integrated: 66 of 66 lessons are full. |
 | 2026-10-21 ~04:40 | Found and fixed a rendering bug: pandoc read text between two dollar amounts as TeX math (230 spans in earlier builds); now `gfm-tex_math_dollars`, and the build fails if math appears. Fixed lesson cards widening past phone width (grid column `minmax(0, 1fr)`). New test opens every lesson at 390px. Build and 25/25 tests pass; artifact republished. Steps 2–5 ticked. |
+| 2026-10-21 04:26 | Hourly routine `trig_01JxxExmx4TmaxfNt7GUBUtr` disabled. All steps complete. |
 
 ## Resume rules
 
