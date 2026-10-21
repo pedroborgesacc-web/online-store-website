@@ -7,10 +7,10 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 ## Steps
 
 - [x] **1. Verification sweep.** Check every rule still marked "not yet verified" (V-26 list) plus the unresolved entries V-02, V-07, V-08, V-22 and V-25 against official sources, with an independent skeptic re-check of each result.
-- [ ] **2. Full lessons.** Expand the 61 core lessons (L03-1 … L19-2) into full 14-section lessons. Each one is written, adversarially reviewed against the manual, the numbers database and the verification log, then fixed. Output: `staging/<LessonId>.md`.
-- [ ] **3. Integrate.** Apply verification results to `data/verification.mjs` (new V-entries) and `data/numbers.mjs`; update any question or lesson that a correction affects; replace the core lessons in `lessons/chNN.md` with the staged full lessons.
-- [ ] **4. Validate.** `node scripts/build.mjs` and `node tests/app.test.mjs` must both pass.
-- [ ] **5. Publish.** Republish the artifact from `dist/artifact.html` (same URL); commit and push.
+- [x] **2. Full lessons.** Expand the 61 core lessons (L03-1 … L19-2) into full 14-section lessons. Each one is written, adversarially reviewed against the manual, the numbers database and the verification log, then fixed. Output: `staging/<LessonId>.md`.
+- [x] **3. Integrate.** Apply verification results to `data/verification.mjs` (new V-entries) and `data/numbers.mjs`; update any question or lesson that a correction affects; replace the core lessons in `lessons/chNN.md` with the staged full lessons.
+- [x] **4. Validate.** `node scripts/build.mjs` and `node tests/app.test.mjs` must both pass.
+- [x] **5. Publish.** Republish the artifact from `dist/artifact.html` (same URL); commit and push.
 - [ ] **6. Close.** Disable the hourly routine and send the learner a short summary.
 
 ## Run log
@@ -32,6 +32,8 @@ Branch: `claude/intelligent-gauss-j3ghht` · Published app: the private artifact
 | 2026-10-20 23:10 | Resumed as task `wg40hwqsl` for the 6 remaining reviews. The 42 reviewed lessons were integrated into `lessons/` (`integrate_staging.mjs --only …`); 17 question/comparison problems reported by reviewers were fixed in `data/` (four calculation questions got new numbers so they no longer repeat the lessons' worked examples). Build and all 24 browser tests pass; artifact republished. |
 | 2026-10-21 ~00:00 | Task `wg40hwqsl` stopped on the session limit (reset 04:00 UTC). Resuming did NOT reuse the cached reviews: it re-reviewed the 13 finished batches (second pass: 0 blockers, 15 majors fixed) and reviewed ch13. Still unreviewed: ch14b, ch15-17, ch16, ch18, ch19. |
 | 2026-10-21 04:10 | Fresh run `wf_b7dfc0fe-241` (task `w657j8xw3`) with ONLY those 5 batches (same script, no resume). Second-pass lessons for 14 batches (45 lessons, incl. ch13) re-integrated with `integrate_staging.mjs --force --only …`; 3 more question fixes. Build and 24 tests pass; artifact republished. |
+| 2026-10-21 ~04:25 | Run `wf_b7dfc0fe-241` finished: the last 5 batches (ch14b, ch15-17, ch16, ch18, ch19) reviewed and fact-audited (892 facts; 1 blocker, 14 majors fixed). All 61 lessons integrated: 66 of 66 lessons are full. |
+| 2026-10-21 ~04:40 | Found and fixed a rendering bug: pandoc read text between two dollar amounts as TeX math (230 spans in earlier builds); now `gfm-tex_math_dollars`, and the build fails if math appears. Fixed lesson cards widening past phone width (grid column `minmax(0, 1fr)`). New test opens every lesson at 390px. Build and 25/25 tests pass; artifact republished. Steps 2–5 ticked. |
 
 ## Resume rules
 

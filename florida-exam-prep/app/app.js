@@ -267,7 +267,12 @@ const legend = () => `<div class="legend">${STATUS.map((s) => `<span><i class="b
 // ═════════════════════════════════════════════════════════════════════
 // Recording answers
 // ═════════════════════════════════════════════════════════════════════
-function correctText(q) { if (q.t !== "num") return q.c[q.a]; const n = Number(q.ans).toLocaleString("en-US", { maximumFractionDigits: 4 }); return q.unit === "$" ? `$${n}` : `${n} ${q.unit}`.trim(); }
+function correctText(q) {
+  if (q.t !== "num") return q.c[q.a];
+  const v = Number(q.ans);
+  if (q.unit === "$") return "$" + v.toLocaleString("en-US", Number.isInteger(v) ? {} : { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return `${v.toLocaleString("en-US", { maximumFractionDigits: 4 })} ${q.unit}`.trim();
+}
 function numCategory(q, given) {
   if (!isFinite(given)) return "MISREAD";
   const r = Math.abs(given - q.ans) / Math.max(1e-9, Math.abs(q.ans));

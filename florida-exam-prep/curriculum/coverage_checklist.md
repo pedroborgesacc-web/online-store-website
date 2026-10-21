@@ -87,16 +87,16 @@
 | 11. Real Estate Contracts | L11-1, L11-2, L11-3, L11-4 | 4/4 | 19 |
 | 12. Residential Mortgages | L12-1, L12-2, L12-3 | 3/3 | 13 |
 | 13. Types of Mortgages and Sources of Financing | L13-1, L13-2, L13-3 | 3/3 | 10 |
-| 14. Real Estate Computations and Closing of Transactions | L14-1, L14-2, L14-3, L14-4, L14-5, L14-6, L14-7, L14-8 | 4/8 | 37 |
-| 15. The Real Estate Market and Analysis | L15-1 | 0/1 | 3 |
-| 16. Real Estate Appraisal | L16-1, L16-2, L16-3, L16-4 | 0/4 | 14 |
-| 17. Investments and Business Opportunity Brokerage | L17-1, L17-2 | 0/2 | 5 |
-| 18. Taxes Affecting Real Estate | L18-1, L18-2, L18-3 | 0/3 | 11 |
-| 19. Planning and Zoning | L19-1, L19-2 | 0/2 | 7 |
+| 14. Real Estate Computations and Closing of Transactions | L14-1, L14-2, L14-3, L14-4, L14-5, L14-6, L14-7, L14-8 | 8/8 | 37 |
+| 15. The Real Estate Market and Analysis | L15-1 | 1/1 | 3 |
+| 16. Real Estate Appraisal | L16-1, L16-2, L16-3, L16-4 | 4/4 | 14 |
+| 17. Investments and Business Opportunity Brokerage | L17-1, L17-2 | 2/2 | 5 |
+| 18. Taxes Affecting Real Estate | L18-1, L18-2, L18-3 | 3/3 | 11 |
+| 19. Planning and Zoning | L19-1, L19-2 | 2/2 | 7 |
 
 ## Known gaps
 
 - The Gold Coast textbook itself is not among the supplied files. Coverage is mapped from the study manual (which references book chapters 2–19) and the official FREC syllabus section titles. Detailed FREC learning objectives per section could not be read (network policy), so sub-topics present only in the textbook may be missing.
 - Book Chapter 1 (The Real Estate Business) is not covered by the manual; L01-2 was written from general knowledge and the FREC section title.
 - Objectives with no practice question: none.
-- Lessons with core notes only (full 14-section lesson pending): 16.
+- Lessons with core notes only (full 14-section lesson pending): 0.

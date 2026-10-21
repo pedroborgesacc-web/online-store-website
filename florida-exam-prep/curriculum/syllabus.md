@@ -611,7 +611,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-5 · Interest, amortization, LTV and points
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M10 §patterns 5–7, 12
 - Prerequisites: L14-1
 - Objectives:
@@ -622,7 +622,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-6 · Florida transfer taxes: documentary stamps and intangible tax
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M10 §Florida's three transfer taxes
 - Prerequisites: L14-1
 - Objectives:
@@ -634,7 +634,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-7 · Prorations
 
-- Type: calculation · Priority: high · ~40 min · Content: core
+- Type: calculation · Priority: high · ~40 min · Content: full
 - Manual: M10 §Prorations; §Interest proration
 - Prerequisites: L14-1
 - Objectives:
@@ -645,7 +645,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L14-8 · The closing statement: debits and credits
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M10 §The closing statement
 - Prerequisites: L14-6, L14-7
 - Objectives:
@@ -659,7 +659,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L15-1 · Real estate markets, supply and demand, and pricing tools
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M11 §Market characteristics; §CMA vs BPO
 - Prerequisites: L01-2
 - Objectives:
@@ -673,7 +673,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L16-1 · Value: characteristics and principles
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M11 §Market characteristics and value
 - Prerequisites: L15-1
 - Objectives:
@@ -683,7 +683,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L16-2 · Sales comparison approach
 
-- Type: calculation · Priority: high · ~30 min · Content: core
+- Type: calculation · Priority: high · ~30 min · Content: full
 - Manual: M11 §The three approaches; §adjustment grid
 - Prerequisites: L16-1
 - Objectives:
@@ -693,7 +693,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L16-3 · Cost approach and depreciation
 
-- Type: calculation · Priority: high · ~30 min · Content: core
+- Type: calculation · Priority: high · ~30 min · Content: full
 - Manual: M11 §The three approaches (cost)
 - Prerequisites: L16-1
 - Objectives:
@@ -703,7 +703,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L16-4 · Income approach, reconciliation and who may appraise
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M11 §The three approaches (income); §Who may appraise
 - Prerequisites: L16-1
 - Objectives:
@@ -718,7 +718,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L17-1 · Investment analysis
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M12 §Investment analysis
 - Prerequisites: L16-4
 - Objectives:
@@ -728,7 +728,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L17-2 · Business opportunity brokerage
 
-- Type: conceptual · Priority: low · ~15 min · Content: core
+- Type: conceptual · Priority: low · ~15 min · Content: full
 - Manual: M12 §Investment analysis and business brokerage
 - Prerequisites: L17-1
 - Objectives:
@@ -741,7 +741,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L18-1 · Florida property taxation: process and calendar
 
-- Type: legal · Priority: medium · ~25 min · Content: core
+- Type: legal · Priority: medium · ~25 min · Content: full
 - Manual: M12 §Property taxation in Florida
 - Prerequisites: L08-4
 - Objectives:
@@ -751,7 +751,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L18-2 · Exemptions, Save Our Homes and tax computation
 
-- Type: calculation · Priority: high · ~35 min · Content: core
+- Type: calculation · Priority: high · ~35 min · Content: full
 - Manual: M12 §Property taxation in Florida (exemptions, millage)
 - Prerequisites: L18-1, L14-1
 - Objectives:
@@ -762,7 +762,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L18-3 · Income taxes and real estate
 
-- Type: conceptual · Priority: medium · ~25 min · Content: core
+- Type: conceptual · Priority: medium · ~25 min · Content: full
 - Manual: M12 §Installment sales, boot; §Investment analysis (tax shelter)
 - Prerequisites: L17-1
 - Objectives:
@@ -777,7 +777,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L19-1 · Planning, zoning and land-use controls
 
-- Type: legal · Priority: medium · ~25 min · Content: core
+- Type: legal · Priority: medium · ~25 min · Content: full
 - Manual: M12 §Planning, zoning, and building
 - Prerequisites: L09-4
 - Objectives:
@@ -788,7 +788,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 
 ### L19-2 · Environmental hazards and regulation
 
-- Type: legal · Priority: medium · ~20 min · Content: core
+- Type: legal · Priority: medium · ~20 min · Content: full
 - Manual: M12 §Environmental law
 - Prerequisites: L19-1
 - Objectives:

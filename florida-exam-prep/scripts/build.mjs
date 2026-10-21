@@ -92,9 +92,10 @@ for (const file of readdirSync(join(ROOT, "lessons")).filter((f) => f.endsWith("
     const id = parts[i], status = parts[i + 1], md = parts[i + 2].trim();
     if (!lessonById.has(id)) { err(`${file}: lesson ${id} not in curriculum`); continue; }
     if (lessonContent.has(id)) err(`${file}: lesson ${id} defined twice`);
-    const r = spawnSync("pandoc", ["-f", "gfm", "-t", "html5", "--wrap=none"], { input: md, encoding: "utf8" });
+    const r = spawnSync("pandoc", ["-f", "gfm-tex_math_dollars", "-t", "html5", "--wrap=none"], { input: md, encoding: "utf8" });
     if (r.status !== 0) { err(`${id}: pandoc failed: ${r.stderr}`); continue; }
     lessonContent.set(id, { status, html: r.stdout, md });
+    if (/class="math/.test(r.stdout)) err(`${id}: Markdown produced TeX math (check $ signs)`);
     if (status === "full") {
       for (const h of ["## 2.", "## 3.", "## 4.", "## 5.", "## 6.", "## 7.", "## 8.", "## 9.", "## 10."]) {
         if (!md.includes(h)) err(`${id}: full lesson missing section "${h}"`);

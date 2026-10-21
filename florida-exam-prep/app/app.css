@@ -197,6 +197,7 @@ details.chapter .chapter-body { padding: 0 0 12px 38px; }
 .lesson ul, .lesson ol { padding-left: 22px; margin: 8px 0; }
 .lesson li { margin: 4px 0; }
 .lesson table { margin: 10px 0; display: block; overflow-x: auto; max-width: 100%; }
+.panel.lesson { grid-template-columns: minmax(0, 1fr); }
 .lesson strong { font-weight: 700; }
 .lesson .stack { display: grid; gap: 4px; margin: 12px 0; max-width: 640px; }
 .lesson .stack-row { display: grid; grid-template-columns: minmax(130px, 34%) 1fr; gap: 10px; padding: 9px 12px; border-radius: 6px; background: var(--sunk); border-left: 4px solid var(--accent); font-size: 14px; }

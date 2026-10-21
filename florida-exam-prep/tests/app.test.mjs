@@ -255,6 +255,23 @@ await test("phone (390px) and tablet (820px): no horizontal page scroll", async 
   await page.setViewportSize({ width: 1280, height: 900 });
 });
 
+await test("every lesson at phone width: no overflow, no unrendered Markdown or HTML", async () => {
+  await page.setViewportSize({ width: 390, height: 840 });
+  for (const l of DATA.lessons) {
+    await nav("lesson~" + l.id);
+    const r = await page.evaluate(() => ({
+      over: document.scrollingElement.scrollWidth - window.innerWidth,
+      text: document.querySelector("main").innerText,
+      math: document.querySelectorAll("main .math").length,
+    }));
+    assert(r.over <= 1, `horizontal overflow ${r.over}px on ${l.id}`);
+    assert(!r.math, `${l.id}: text rendered as TeX math`);
+    const lit = r.text.match(/\*\*[^*\n]{1,60}\*\*|<\/?(div|details|summary|span|b)\b[^>]*>/);
+    assert(!lit, `${l.id}: unrendered markup "${lit && lit[0]}"`);
+  }
+  await page.setViewportSize({ width: 1280, height: 900 });
+});
+
 await test("dark mode renders with dark background", async () => {
   await page.emulateMedia({ colorScheme: "dark" });
   await nav("home");
