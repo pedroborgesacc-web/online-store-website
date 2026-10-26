@@ -5,8 +5,15 @@
 //
 //   node scripts/build.mjs          build + validate (fails on errors)
 //   node scripts/build.mjs --check  validate only
+//   node scripts/build.mjs --plan <file> --out <dir>
+//                                   also build a personal copy with a study plan
+//
+// A personal study plan (exam date, daily time, lessons per day) is kept out of
+// this public repository: if personal/plan.json exists (git-ignored), the build
+// also writes dist/personal/artifact.html and dist/personal/study-app.html with
+// the plan embedded. The public outputs in dist/ never contain a plan.
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -26,6 +33,9 @@ import { questions as qx } from "../data/questions_extra.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK_ONLY = process.argv.includes("--check");
+const argOf = (name) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
+const PLAN_FILE = argOf("--plan") || (existsSync(join(ROOT, "personal", "plan.json")) ? join(ROOT, "personal", "plan.json") : null);
+const PLAN_OUT = argOf("--out") || join(ROOT, "dist", "personal");
 const errors = [];
 const warnings = [];
 const err = (m) => errors.push(m);
@@ -214,6 +224,35 @@ const summary = {
   answerPositions: answerPos,
   lengthLeakPct: Math.round(longPct * 100),
 };
+// ── Personal study plan (optional, never committed) ──────────────────
+let plan = null;
+if (PLAN_FILE) {
+  try { plan = JSON.parse(readFileSync(PLAN_FILE, "utf8")); } catch (e) { err(`plan: cannot read ${PLAN_FILE}: ${e.message}`); }
+  if (plan) {
+    const isDate = (d) => /^\d{4}-\d{2}-\d{2}$/.test(d || "");
+    if (!isDate(plan.examDate)) err("plan: examDate must be YYYY-MM-DD");
+    if (!Array.isArray(plan.days) || !plan.days.length) err("plan: days missing");
+    const seen = new Map();
+    let prev = "";
+    (plan.days || []).forEach((d, i) => {
+      if (!isDate(d.date)) err(`plan: day ${i} has no valid date`);
+      if (d.date <= prev) err(`plan: day ${d.date} is out of order`);
+      prev = d.date;
+      for (const id of d.lessons || []) {
+        if (!lessonById.has(id)) err(`plan: ${d.date}: unknown lesson ${id}`);
+        if (seen.has(id)) err(`plan: ${id} scheduled twice (${seen.get(id)} and ${d.date})`);
+        seen.set(id, d.date);
+      }
+    });
+    for (const id of plan.fast || []) if (!lessonById.has(id)) err(`plan: unknown fast lesson ${id}`);
+    for (const l of lessonDefs) {
+      if (!seen.has(l.id)) warn(`plan: ${l.id} is not scheduled`);
+      for (const p of l.pre) if (seen.has(l.id) && seen.has(p) && seen.get(p) > seen.get(l.id)) warn(`plan: ${l.id} (${seen.get(l.id)}) comes before its prerequisite ${p} (${seen.get(p)})`);
+    }
+    if (plan.days?.length && plan.days[plan.days.length - 1].date > plan.examDate) err("plan: a day falls after the exam date");
+  }
+}
+
 console.log("Summary:", JSON.stringify(summary));
 if (warnings.length) console.log(`\n${warnings.length} warning(s):\n  ` + warnings.join("\n  "));
 if (errors.length) {
@@ -252,15 +291,19 @@ mkdirSync(join(ROOT, "dist"), { recursive: true });
 const css = readFileSync(join(ROOT, "app", "app.css"), "utf8");
 const js = readFileSync(join(ROOT, "app", "app.js"), "utf8");
 const body = readFileSync(join(ROOT, "app", "body.html"), "utf8");
-const dataJson = JSON.stringify(data).replace(/</g, "\\u003c");
 const head = `<title>FL Exam Coach</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">\n<style>\n${css}\n</style>`;
-const scripts = `<script id="app-data" type="application/json">${dataJson}</script>\n<script>\n${js}\n</script>`;
-
-// artifact fragment: the publisher wraps it in a document skeleton
-writeFileSync(join(ROOT, "dist", "artifact.html"), `${head}\n${body}\n${scripts}\n`);
-// standalone document for local use (open the file in any browser)
-writeFileSync(join(ROOT, "dist", "study-app.html"),
-  `<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n${head}\n</head>\n<body>\n${body}\n${scripts}\n</body>\n</html>\n`);
+function writeApp(dir, withPlan) {
+  mkdirSync(dir, { recursive: true });
+  const dataJson = JSON.stringify({ ...data, plan: withPlan || null }).replace(/</g, "\\u003c");
+  const scripts = `<script id="app-data" type="application/json">${dataJson}</script>\n<script>\n${js}\n</script>`;
+  // artifact fragment: the publisher wraps it in a document skeleton
+  writeFileSync(join(dir, "artifact.html"), `${head}\n${body}\n${scripts}\n`);
+  // standalone document for local use (open the file in any browser)
+  writeFileSync(join(dir, "study-app.html"),
+    `<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n${head}\n</head>\n<body>\n${body}\n${scripts}\n</body>\n</html>\n`);
+}
+writeApp(join(ROOT, "dist"), null);
+if (plan) { writeApp(PLAN_OUT, plan); console.log(`Wrote personal build with study plan to ${PLAN_OUT}`); }
 writeFileSync(join(ROOT, "dist", "data.json"), JSON.stringify(data, null, 1));
 
 // ── Generated Markdown documents ──────────────────────────────────────

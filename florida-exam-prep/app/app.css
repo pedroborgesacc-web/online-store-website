@@ -285,3 +285,9 @@ label.field { display: grid; gap: 4px; font-size: 13px; font-weight: 600; color:
 .spark { display: flex; align-items: flex-end; gap: 2px; height: 48px; }
 .spark i { flex: 1; background: var(--accent); opacity: .75; border-radius: 2px 2px 0 0; min-height: 1px; }
 mark { background: var(--warn-soft); color: inherit; padding: 0 2px; border-radius: 2px; }
+
+/* personal study plan */
+.plan-day { padding-left: 10px; border-left: 3px solid transparent; }
+.plan-day.today { border-left-color: var(--accent); background: var(--accent-soft); padding: 10px; border-radius: 6px; }
+.plan-day.past { opacity: .8; }
+.plan-today h3 { margin-top: 4px; }

@@ -1,0 +1,19 @@
+{
+  "title": "Sample plan (test fixture)",
+  "examDate": "2030-03-08",
+  "dailyMinutes": 240,
+  "created": "2030-03-01",
+  "blocks": [
+    { "name": "Block 1", "min": "40 min", "text": "Review due items and open mistakes.", "href": "review" },
+    { "name": "Block 2", "min": "90 min", "text": "Full lessons." }
+  ],
+  "modes": { "full": "Full lesson: read sections 3, 5, 7, 8, 9.", "fast": "Fast lesson: read sections 7, 9 and 10, then the quiz.", "calc": "Calculation: work the guided practice by hand." },
+  "rules": ["Fast lessons move first when a day overruns."],
+  "fast": ["L01-2"],
+  "days": [
+    { "date": "2030-03-01", "lessons": ["L01-1", "L01-2"] },
+    { "date": "2030-03-02", "lessons": ["L02-1", "L14-1"] },
+    { "date": "2030-03-03", "kind": "mock", "title": "Mock 1", "lessons": [], "tasks": [{ "text": "Mock exam", "href": "exam" }] },
+    { "date": "2030-03-08", "kind": "exam", "title": "Exam", "lessons": [], "tasks": [{ "text": "Exam day" }] }
+  ]
+}

@@ -44,6 +44,12 @@ const MODES = {
 };
 const MIXED_MODES = new Set(["C", "D", "G", "H", "R"]);
 
+// Personal study plan: only present in the learner's own build (never in the public files).
+const PLAN = DATA.plan || null;
+const PLAN_FAST = new Set(PLAN?.fast || []);
+const PLAN_DAY_OF = new Map(); // lesson id → planned date (YYYY-MM-DD)
+if (PLAN) for (const d of PLAN.days) for (const id of d.lessons || []) PLAN_DAY_OF.set(id, d.date);
+
 // ═════════════════════════════════════════════════════════════════════
 // Utilities
 // ═════════════════════════════════════════════════════════════════════
@@ -188,7 +194,11 @@ function paintStore() {
 // Scheduling (spaced repetition) & mastery
 // ═════════════════════════════════════════════════════════════════════
 const STEPS = [10 / 1440, 1, 3, 7, 14, 30, 60]; // days: same session, 1, 3, 7, 14, 30, 60
-function daysToExam() { const d = S.settings.examDate; if (!d) return null; return Math.ceil((new Date(d + "T09:00:00").getTime() - now()) / DAY); }
+// A personal plan sets the exam date and daily time, unless the learner saved other values after the plan was made.
+const planRules = () => PLAN && !((S.settings.savedAt || "") >= PLAN.created);
+const examDateSet = () => (planRules() ? PLAN.examDate : S.settings.examDate) || "";
+const dailyMinSet = () => (planRules() ? PLAN.dailyMinutes : S.settings.dailyMinutes) || "";
+function daysToExam() { const d = examDateSet(); if (!d) return null; return Math.ceil((new Date(d + "T09:00:00").getTime() - now()) / DAY); }
 function capInterval(ivl) { const left = daysToExam(); if (left && left > 0) return Math.min(ivl, Math.max(1, Math.floor(left / 2))); return ivl; }
 function schedule(id, result) {
   const it = S.items[id] || { step: -1, reps: 0, lapses: 0, hist: [] };
@@ -389,6 +399,41 @@ const bind = {};
 // ═════════════════════════════════════════════════════════════════════
 // Dashboard
 // ═════════════════════════════════════════════════════════════════════
+const WEEKDAY_PT = ["dom", "seg", "ter", "qua", "qui", "sex", "sáb"];
+const fmtPlanDate = (k) => { const [y, m, d] = k.split("-").map(Number); return `${WEEKDAY_PT[new Date(y, m - 1, d).getDay()]} ${d}/${m}`; };
+const planToday = () => (PLAN ? PLAN.days.find((d) => d.date === dayKey()) || null : null);
+const isRead = (id) => !!S.lessons[id]?.read;
+function planBacklog() { const k = dayKey(); return PLAN ? PLAN.days.filter((d) => d.date < k).flatMap((d) => (d.lessons || []).filter((id) => !isRead(id))) : []; }
+function planNextLesson() { // earliest unstudied lesson scheduled up to today
+  if (!PLAN) return null; const k = dayKey();
+  for (const d of PLAN.days) { if (d.date > k) break; const id = (d.lessons || []).find((x) => !isRead(x)); if (id) return id; }
+  return null;
+}
+function planAhead() { const k = dayKey(); for (const d of PLAN?.days || []) if (d.date > k) { const id = (d.lessons || []).find((x) => !isRead(x)); if (id) return id; } return null; }
+const lessonMode = (id) => (PLAN_FAST.has(id) ? "fast" : LS_.get(id)?.type === "calculation" ? "calc" : "full");
+const modeChip = (id) => ({ fast: chip("Rápida (R)", "st-DEVELOPING"), calc: chip("Completa · cálculo", "full"), full: chip("Completa", "full") })[lessonMode(id)];
+const modeText = (id) => lessonMode(id) === "fast" ? PLAN.modes.fast : PLAN.modes.full + (lessonMode(id) === "calc" ? " " + PLAN.modes.calc : "");
+const taskList = (tasks) => `<ol class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">${tasks.map((t) => `<li>${t.href ? `<a href="#${t.href}">${esc(t.text)}</a>` : esc(t.text)}</li>`).join("")}</ol>`;
+function planPanelHtml() {
+  if (!PLAN) return "";
+  const k = dayKey(), today = planToday(), back = planBacklog(), left = daysToExam();
+  const row = (id, late) => `<a class="lesson-row" href="#lesson~${id}"><span class="lr-id">${id}</span><span class="lr-title">${esc(LS_.get(id)?.title)}</span>${modeChip(id)}${late ? chip("Em atraso", "st-NEEDS_REVIEW") : ""}${isRead(id) ? chip("Estudada ✓", "st-PROFICIENT") : ""}</a>`;
+  let body = "";
+  if (k < PLAN.days[0].date) body = `<p class="small">O plano começa ${fmtPlanDate(PLAN.days[0].date)}.</p>`;
+  else if (k > PLAN.examDate) body = `<p class="small">O plano terminou no dia do exame (${fmtPlanDate(PLAN.examDate)}).</p>`;
+  else {
+    if (back.length) body += `<div class="note">${back.length === 1 ? "1 lição de um dia anterior está" : back.length + " lições de dias anteriores estão"} por estudar. Faça-as primeiro; se faltar tempo, adie as lições R, nunca as dos capítulos 4, 5, 8, 9, 11, 12 e 16 nem a matemática.</div><div class="list">${back.slice(0, 3).map((id) => row(id, true)).join("")}</div>${back.length > 3 ? `<details><summary class="small">Mais ${back.length - 3} em atraso</summary><div class="list">${back.slice(3).map((id) => row(id, true)).join("")}</div></details>` : ""}`;
+    const ls = today?.lessons || [];
+    if (ls.length) body += `<h3>Lições de hoje · ${ls.filter(isRead).length}/${ls.length} estudadas</h3><div class="list">${ls.map((id) => row(id, false)).join("")}</div>`;
+    if (today?.tasks?.length) body += `<h3>${esc(today.title || "Também hoje")}</h3>${taskList(today.tasks)}`;
+    if (!today) body += `<p class="small">Hoje não há nada marcado no plano.</p>`;
+  }
+  return `<div class="panel plan-today">
+    <div class="panel-head"><div><div class="eyebrow">O seu plano · ${fmtPlanDate(k)}${left > 0 ? ` · faltam ${left} dias para o exame` : ""}</div><h2>${today?.kind === "exam" ? "Dia do exame" : "Hoje"}</h2></div><a class="small" href="#plan">Plano completo</a></div>
+    ${body}
+    <p class="small muted">Comece sempre pelo Bloco 1: revisão do dia e erros abertos. Ao fim do dia, releia os Memory sheets das lições estudadas.</p>
+  </div>`;
+}
 function nextLesson() {
   const studied = new Set(studiedLessons());
   return DATA.order.map((id) => LS_.get(id)).find((l) => !studied.has(l.id) && l.pre.every((p) => studied.has(p))) || DATA.order.map((id) => LS_.get(id)).find((l) => !studied.has(l.id));
@@ -398,7 +443,18 @@ function recommendation() {
   const dq = dueQuestions().length, dc = dueCards();
   if (dq + dc.due.length >= 5) return { text: `Review ${dq + dc.due.length} due items`, href: dq ? "quiz~R" : "cards~due", why: "Retrieval at the scheduled time is the most efficient study you can do today." };
   const open = Object.values(S.mistakes).filter((m) => m.status === "open").length;
-  if (open >= 3) return { text: `Weakness training (${open} open mistakes)`, href: "quiz~D", why: "Several recent errors are not yet corrected." };
+  const didToday = (m) => S.sessions.some((x) => x.mode === m && dayKey(x.started) === dayKey());
+  if (open >= 3 && !(PLAN && didToday("D"))) return { text: `Weakness training (${open} open mistakes)`, href: "quiz~D", why: "Several recent errors are not yet corrected." };
+  if (PLAN) {
+    const t = planToday();
+    if (t?.kind === "mock" && !didToday("H")) return { text: `${t.title}: exame simulado de 100 perguntas`, href: "exam", why: "Dia de simulado no seu plano: 3h30 de seguida, como no exame." };
+    const pl = planNextLesson();
+    if (pl) return { text: `Estudar ${pl}: ${LS_.get(pl).title}`, href: "lesson~" + pl, why: PLAN_DAY_OF.get(pl) < dayKey() ? `Em atraso no seu plano (era para ${fmtPlanDate(PLAN_DAY_OF.get(pl))}).` : `Do seu plano de hoje · ${lessonMode(pl) === "fast" ? "lição rápida (R)" : "lição completa"}.` };
+    const task = (t?.tasks || []).find((x) => x.href);
+    if (task) return { text: task.text, href: task.href, why: "Do seu plano de hoje." };
+    const ah = planAhead();
+    if (ah) return { text: `Adiantar ${ah}: ${LS_.get(ah).title}`, href: "lesson~" + ah, why: `As lições de hoje estão feitas. Faça o Bloco 4 (Memory sheets) e, se tiver tempo, adiante a lição de ${fmtPlanDate(PLAN_DAY_OF.get(ah))}.` };
+  }
   const nl = nextLesson();
   if (nl) return { text: `Study ${nl.id}: ${nl.title}`, href: "lesson~" + nl.id, why: "Next lesson in prerequisite order." };
   return { text: "Mixed exam practice", href: "quiz~G", why: "All lessons studied — keep mixing topics." };
@@ -413,11 +469,12 @@ VIEWS.home = () => {
   const open = Object.values(S.mistakes).filter((m) => m.status !== "resolved");
   const readyW = DATA.chapters.reduce((s, c) => { const objs = DATA.objectives.filter((o) => chOfLesson(o.l) === c.id); const r = objs.filter((o) => objStatus(o.id) === "EXAM_READY").length; return s + (objs.length ? (c.examPct * r) / objs.length : 0); }, 0);
   const totalW = DATA.chapters.reduce((s, c) => s + c.examPct, 0);
-  const setup = !S.settings.examDate || !S.settings.dailyMinutes;
+  const setup = !examDateSet() || !dailyMinSet();
   return `
   <div class="panel-head"><div><div class="eyebrow">Florida Real Estate Sales Associate</div><h1>Study dashboard</h1></div>
     <div class="muted small">${left === null ? "Exam date not set" : left > 0 ? `${left} days to your exam` : left === 0 ? "Exam day" : "Exam date has passed — update it in Settings"}</div></div>
   ${setup ? `<div class="note info">Set your exam date and daily study time in <a href="#settings">Settings</a> to get a paced study plan. You can start studying without it.</div>` : ""}
+  ${planPanelHtml()}
   <div class="panel">
     <div class="eyebrow">Recommended next</div>
     <div class="row"><a class="btn primary" href="#${rec.href}">${esc(rec.text)}</a><span class="muted small">${esc(rec.why)}</span></div>
@@ -439,13 +496,13 @@ VIEWS.home = () => {
       const att = S.attempts.filter((a) => chOfLesson(Q.get(a.q)?.l) === c.id);
       return `<tr><td><a href="#syllabus~${c.id}">${c.n}. ${esc(c.title)}</a></td><td style="min-width:140px">${statusBar(statusCounts(objs))}</td><td class="num mono">${att.length ? pct(att.filter((a) => a.ok).length, att.length) + "%" : "—"}</td><td class="num mono">${c.examPct}%${c.est ? "*" : ""}</td></tr>`;
     }).join("")}</tbody></table></div>
-    <p class="muted small">Weights are fragments read from the official Candidate Information Booklet (low confidence); * = estimate. See <a href="#source~V-02">V-02</a>.</p>
+    <p class="muted small">Weights from the content outline of the official Candidate Information Booklet (Jan 2025). See <a href="#source~V-02">V-02</a>.</p>
   </div>
   <div class="grid2">
     <div class="panel"><div class="panel-head"><h3>Recent mistakes</h3><a href="#mistakes" class="small">Mistake log</a></div>
       ${open.length ? `<div class="list">${open.sort((a, b) => b.last - a.last).slice(0, 5).map((m) => `<div><div class="row"><span class="mono small muted">${m.qid}</span>${chip(CAT_LABEL[m.cat] || m.cat)}${m.confident ? chip("Confident error", "st-NEEDS_REVIEW") : ""}</div><div class="small">${esc(Q.get(m.qid)?.q.slice(0, 110))}…</div></div>`).join("")}</div>` : `<div class="empty">No mistakes yet. They will appear here and drive your weakness training.</div>`}
     </div>
-    <div class="panel"><h3>Today's session (about ${S.settings.dailyMinutes || 45} min)</h3>
+    ${PLAN ? `<div class="panel"><h3>Os blocos do dia (${dailyMinSet()} min)</h3>${taskList(PLAN.blocks.map((b) => ({ text: `${b.name} · ${b.min}: ${b.text}`, href: b.href })))}${studyPlanHtml()}</div>` : `<div class="panel"><h3>Today's session (about ${dailyMinSet() || 45} min)</h3>
       <ol class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">
         <li>Warm-up retrieval: ${Math.min(dq, 10) || "a few"} due questions (Review)</li>
         <li>Flashcards: ${dc.due.length} due + ${dc.fresh.length} new</li>
@@ -454,11 +511,16 @@ VIEWS.home = () => {
         <li>Short cumulative quiz once 3+ lessons are studied</li>
       </ol>
       ${studyPlanHtml()}
-    </div>
+    </div>`}
   </div>`;
 };
 function studyPlanHtml() {
-  const left = daysToExam(); const mins = Number(S.settings.dailyMinutes);
+  if (PLAN) {
+    const k = dayKey(), ids = [...PLAN_DAY_OF.keys()];
+    const due = ids.filter((id) => PLAN_DAY_OF.get(id) <= k), late = due.filter((id) => !isRead(id));
+    return `<div class="note ${late.length ? "" : "good"}"><b>Plano:</b> ${ids.filter(isRead).length} de ${ids.length} lições estudadas; ${due.length} previstas até hoje${late.length ? `, ${late.length} por fazer` : ", em dia"}.${location.hash.startsWith("#plan") ? "" : ` <a href="#plan">Ver plano</a>`}</div>`;
+  }
+  const left = daysToExam(); const mins = Number(dailyMinSet());
   if (!left || !mins) return "";
   if (left <= 0) return `<div class="note">Your saved exam date has passed. Update it in Settings so the plan and review intervals are correct.</div>`;
   const remaining = DATA.lessons.filter((l) => !S.lessons[l.id]?.read);
@@ -474,7 +536,7 @@ function studyPlanHtml() {
 // ═════════════════════════════════════════════════════════════════════
 VIEWS.syllabus = (open) => `
   <div><div class="eyebrow">19 sections of the official FREC Course I syllabus</div><h1>Syllabus</h1></div>
-  <p class="muted prose">Each chapter follows an official course section. "Full" lessons have all 14 sections; "core" lessons carry the essential rules now and will be expanded during tutoring. Questions, mastery and reviews work for every lesson.</p>
+  <p class="muted prose">Each chapter follows an official course section. Every lesson is a full lesson: the text covers sections 2–10, and the app adds objectives, active recall, mastery and review.</p>
   <div class="panel">${DATA.chapters.map((c) => {
     const ls = lessonsByCh.get(c.id) || [];
     const objs = DATA.objectives.filter((o) => chOfLesson(o.l) === c.id);
@@ -496,6 +558,7 @@ VIEWS.lesson = (id) => {
   return `
   <div><div class="eyebrow">Chapter ${c.n} · ${esc(c.title)}</div><h1>${esc(l.title)}</h1>
   <div class="row small" style="margin-top:6px">${chip(l.id)}${chip(l.type)}${chip(`~${l.min} min`)}${chip(l.status === "full" ? "Full lesson" : "Core notes", l.status === "full" ? "full" : "")}${l.pre.length ? `<span class="muted">Before this: ${l.pre.map((p) => `<a href="#lesson~${p}">${p}</a>`).join(", ")}</span>` : ""}</div></div>
+  ${PLAN_DAY_OF.has(id) ? `<div class="note info"><b>Plano · ${fmtPlanDate(PLAN_DAY_OF.get(id))} · ${lessonMode(id) === "fast" ? "lição rápida (R)" : "lição completa"}.</b> ${esc(modeText(id))}</div>` : ""}
   <div class="panel"><h2>1. Learning objectives</h2>
     <ul class="objectives">${objs.map((o) => `<li>${statusChip(objStatus(o.id))}<span>${esc(o.text)} <span class="muted small">(${o.kind})</span></span></li>`).join("")}</ul>
   </div>
@@ -1007,13 +1070,34 @@ bind.search = () => {
 };
 
 // ═════════════════════════════════════════════════════════════════════
+// Study plan
+// ═════════════════════════════════════════════════════════════════════
+VIEWS.plan = () => {
+  if (!PLAN) return `<div><div class="eyebrow">Your plan</div><h1>Study plan</h1></div><div class="panel">${studyPlanHtml() || `<div class="empty">Set your exam date and daily study time in <a href="#settings">Settings</a> to see your pace.</div>`}</div>`;
+  const k = dayKey(), ids = [...PLAN_DAY_OF.keys()];
+  return `
+  <div><div class="eyebrow">O seu plano</div><h1>${esc(PLAN.title)}</h1>
+    <p class="muted small">Exame: ${fmtPlanDate(PLAN.examDate)} · ${PLAN.dailyMinutes} min por dia · ${ids.filter(isRead).length} de ${ids.length} lições estudadas</p></div>
+  ${studyPlanHtml()}
+  <div class="panel"><h3>Os blocos do dia</h3>${taskList(PLAN.blocks.map((b) => ({ text: `${b.name} · ${b.min}: ${b.text}`, href: b.href })))}</div>
+  <div class="panel"><h3>Dois tipos de lição</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px"><li>${esc(PLAN.modes.full)}</li><li>${esc(PLAN.modes.fast)}</li><li>${esc(PLAN.modes.calc)}</li></ul>
+    <h3>Regras</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">${PLAN.rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></div>
+  <div class="panel"><h3>Calendário</h3><div class="list">${PLAN.days.map((d) => `<div class="plan-day${d.date === k ? " today" : d.date < k ? " past" : ""}">
+    <div class="row"><b>${fmtPlanDate(d.date)}</b>${d.title ? chip(d.title, d.kind === "exam" ? "st-NEEDS_REVIEW" : "full") : ""}${d.date === k ? chip("Hoje", "st-INTRODUCED") : ""}</div>
+    ${(d.lessons || []).length ? `<div class="row small" style="margin-top:6px">${d.lessons.map((id) => `<a href="#lesson~${id}" class="chip ${isRead(id) ? "st-PROFICIENT" : d.date < k ? "st-NEEDS_REVIEW" : ""}" title="${esc(LS_.get(id)?.title)}">${id}${PLAN_FAST.has(id) ? " R" : ""}${isRead(id) ? " ✓" : ""}</a>`).join("")}</div>` : ""}
+    ${(d.tasks || []).length ? `<div style="margin-top:6px">${taskList(d.tasks)}</div>` : ""}
+  </div>`).join("")}</div>
+  <p class="small muted">R = lição rápida. Verde = estudada. Vermelho = em atraso.</p></div>`;
+};
+
+// ═════════════════════════════════════════════════════════════════════
 // Settings: exam date, export / import, reset
 // ═════════════════════════════════════════════════════════════════════
 VIEWS.settings = () => `
   <div><div class="eyebrow">Your plan and your data</div><h1>Settings</h1></div>
   <div class="panel"><h3>Study plan</h3>
-    <div class="grid2"><label class="field">Exam date<input type="date" id="set-date" value="${esc(S.settings.examDate)}"></label>
-    <label class="field">Realistic study time per day (minutes)<input type="number" id="set-min" min="10" max="600" step="5" value="${esc(S.settings.dailyMinutes)}" placeholder="e.g. 60"></label>
+    <div class="grid2"><label class="field">Exam date<input type="date" id="set-date" value="${esc(examDateSet())}"></label>
+    <label class="field">Realistic study time per day (minutes)<input type="number" id="set-min" min="10" max="600" step="5" value="${esc(dailyMinSet())}" placeholder="e.g. 60"></label>
     <label class="field">New flashcards per day<input type="number" id="set-new" min="0" max="100" value="${esc(S.settings.newCardsPerDay)}"></label></div>
     <button class="btn primary" id="save-set">Save plan</button>${studyPlanHtml()}</div>
   <div class="panel"><h3>Where your progress is saved</h3>
@@ -1026,7 +1110,7 @@ VIEWS.settings = () => `
     <div id="resetconfirm" hidden class="row"><span class="small">This cannot be undone.</span><button class="btn danger" id="resetyes">Yes, delete my progress</button><button class="btn" id="resetno">Cancel</button></div></div>`;
 bind.settings = () => {
   $("#save-set").addEventListener("click", () => {
-    S.settings.examDate = $("#set-date").value; S.settings.dailyMinutes = $("#set-min").value; S.settings.newCardsPerDay = Number($("#set-new").value) || 15;
+    S.settings.examDate = $("#set-date").value; S.settings.dailyMinutes = $("#set-min").value; S.settings.newCardsPerDay = Number($("#set-new").value) || 15; S.settings.savedAt = dayKey();
     Store.touch("core"); toast("Plan saved"); route();
   });
   const backup = () => JSON.stringify({ app: "fl-exam-coach", exported: new Date().toISOString(), state: S }, null, 1);
