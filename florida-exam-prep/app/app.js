@@ -44,11 +44,16 @@ const MODES = {
 };
 const MIXED_MODES = new Set(["C", "D", "G", "H", "R"]);
 
-// Personal study plan: only present in the learner's own build (never in the public files).
-const PLAN = DATA.plan || null;
-const PLAN_FAST = new Set(PLAN?.fast || []);
-const PLAN_DAY_OF = new Map(); // lesson id → planned date (YYYY-MM-DD)
-if (PLAN) for (const d of PLAN.days) for (const id of d.lessons || []) PLAN_DAY_OF.set(id, d.date);
+// Personal study plan: the built-in plan exists only in the learner's own build (never in
+// the public files); a plan rebuilt in the app is saved with the learner's progress and wins.
+const BASE_PLAN = DATA.plan || null;
+let PLAN = null, PLAN_FAST = new Set(), PLAN_DAY_OF = new Map(); // lesson id → planned date (YYYY-MM-DD)
+function syncPlan() {
+  const p = S.settings.plan || BASE_PLAN;
+  if (p === PLAN) return;
+  PLAN = p; PLAN_FAST = new Set(p?.fast || []); PLAN_DAY_OF = new Map();
+  if (p) for (const d of p.days) for (const id of d.lessons || []) PLAN_DAY_OF.set(id, d.date);
+}
 
 // ═════════════════════════════════════════════════════════════════════
 // Utilities
@@ -195,7 +200,7 @@ function paintStore() {
 // ═════════════════════════════════════════════════════════════════════
 const STEPS = [10 / 1440, 1, 3, 7, 14, 30, 60]; // days: same session, 1, 3, 7, 14, 30, 60
 // A personal plan sets the exam date and daily time, unless the learner saved other values after the plan was made.
-const planRules = () => PLAN && !((S.settings.savedAt || "") >= PLAN.created);
+const planRules = () => PLAN && (PLAN === S.settings.plan || !((S.settings.savedAt || "") >= PLAN.created));
 const examDateSet = () => (planRules() ? PLAN.examDate : S.settings.examDate) || "";
 const dailyMinSet = () => (planRules() ? PLAN.dailyMinutes : S.settings.dailyMinutes) || "";
 function daysToExam() { const d = examDateSet(); if (!d) return null; return Math.ceil((new Date(d + "T09:00:00").getTime() - now()) / DAY); }
@@ -382,6 +387,7 @@ function buildQueue(mode, arg) {
 const VIEWS = {};
 function go(hash) { if (location.hash === "#" + hash) route(); else location.hash = hash; }
 function route() {
+  syncPlan();
   const [v, arg] = (location.hash.slice(1) || "home").split("~");
   const fn = VIEWS[v] || VIEWS.home;
   $$("#nav a").forEach((a) => a.classList.toggle("on", a.dataset.v === v || (v === "lesson" && a.dataset.v === "syllabus") || (v === "quiz" && a.dataset.v === "practice") || (v === "source" && a.dataset.v === "sources")));
@@ -422,9 +428,9 @@ function planPanelHtml() {
   if (k < PLAN.days[0].date) body = `<p class="small">O plano começa ${fmtPlanDate(PLAN.days[0].date)}.</p>`;
   else if (k > PLAN.examDate) body = `<p class="small">O plano terminou no dia do exame (${fmtPlanDate(PLAN.examDate)}).</p>`;
   else {
-    if (back.length) body += `<div class="note">${back.length === 1 ? "1 lição de um dia anterior está" : back.length + " lições de dias anteriores estão"} por estudar. Faça-as primeiro; se faltar tempo, adie as lições R, nunca as dos capítulos 4, 5, 8, 9, 11, 12 e 16 nem a matemática.</div><div class="list">${back.slice(0, 3).map((id) => row(id, true)).join("")}</div>${back.length > 3 ? `<details><summary class="small">Mais ${back.length - 3} em atraso</summary><div class="list">${back.slice(3).map((id) => row(id, true)).join("")}</div></details>` : ""}`;
+    if (back.length) body += `<div class="note">${back.length === 1 ? "1 lição de um dia anterior está" : back.length + " lições de dias anteriores estão"} por estudar. Faça-as primeiro; se faltar tempo, adie as lições R, nunca as dos capítulos 4, 5, 8, 9, 11, 12 e 16 nem a matemática.</div><div class="row"><button class="btn sm" data-replan="today">Replan from today</button><button class="btn sm ghost" data-replan="tomorrow">Replan from tomorrow</button></div><div class="list">${back.slice(0, 3).map((id) => row(id, true)).join("")}</div>${back.length > 3 ? `<details><summary class="small">Mais ${back.length - 3} em atraso</summary><div class="list">${back.slice(3).map((id) => row(id, true)).join("")}</div></details>` : ""}`;
     const ls = today?.lessons || [];
-    if (ls.length) body += `<h3>Lições de hoje · ${ls.filter(isRead).length}/${ls.length} estudadas</h3><div class="list">${ls.map((id) => row(id, false)).join("")}</div>`;
+    if (ls.length) body += `<h3>Lições de hoje · ${ls.filter(isRead).length}/${ls.length} estudadas${today.min ? ` · ≈ ${fmtMin(today.min)}` : ""}</h3><div class="list">${ls.map((id) => row(id, false)).join("")}</div>`;
     if (today?.tasks?.length) body += `<h3>${esc(today.title || "Também hoje")}</h3>${taskList(today.tasks)}`;
     if (!today) body += `<p class="small">Hoje não há nada marcado no plano.</p>`;
   }
@@ -433,6 +439,24 @@ function planPanelHtml() {
     ${body}
     <p class="small muted">Comece sempre pelo Bloco 1: revisão do dia e erros abertos. Ao fim do dia, releia os Memory sheets das lições estudadas.</p>
   </div>`;
+}
+const fmtMin = (m) => `${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, "0")}`;
+// Rebuild the plan from a start date: unstudied lessons keep the current plan's order and
+// fast-track choices and are spread evenly (by estimated minutes) up to the final week.
+function rebuildPlan(start, exam) {
+  const base = PLAN || BASE_PLAN;
+  const order = uniq([...(base ? base.days.flatMap((d) => d.lessons || []) : []), ...DATA.order]);
+  const fast = new Set(base?.fast || []);
+  const lessons = order.filter((id) => !isRead(id)).map((id) => {
+    const l = LS_.get(id);
+    return { id, min: FLPlanner.lessonMinutes({ words: FLPlanner.wordsOf(l.html), questions: (qByLesson.get(id) || []).length, type: l.type, fast: fast.has(id) }) };
+  });
+  const sat = (base?.days || []).find((d) => (d.lessons || []).length && d.tasks?.length)?.tasks[0];
+  return FLPlanner.build({ start, exam, lessons, base, fast: [...fast], saturdayTask: sat ? { ...sat, min: 30 } : { text: "30-minute mixed quiz on everything studied so far", href: "quiz~C", min: 30 } });
+}
+function applyPlan(p) {
+  S.settings.plan = p; S.settings.examDate = p.examDate; S.settings.dailyMinutes = String(p.dailyMinutes); S.settings.savedAt = dayKey();
+  Store.touch("core"); syncPlan();
 }
 function nextLesson() {
   const studied = new Set(studiedLessons());
@@ -1072,23 +1096,51 @@ bind.search = () => {
 // ═════════════════════════════════════════════════════════════════════
 // Study plan
 // ═════════════════════════════════════════════════════════════════════
+const replanPanel = () => `<div class="panel"><h3>${PLAN ? "Change the plan" : "Create a day-by-day plan"}</h3>
+    <p class="small muted">Builds the calendar from a start date. Lessons already marked as studied are left out; the rest keep their order and are spread evenly (by estimated time) up to the final week of mocks and review.</p>
+    <div class="grid2"><label class="field">Start studying on<input type="date" id="pl-start" value="${dayKey()}"></label>
+    <label class="field">Exam date<input type="date" id="pl-exam" value="${esc(examDateSet())}"></label></div>
+    <div id="pl-preview" class="small"></div>
+    <div class="row"><button class="btn primary" id="pl-apply">Rebuild plan</button>${S.settings.plan && BASE_PLAN ? `<button class="btn ghost" id="pl-reset">Back to the original plan</button>` : ""}</div></div>`;
 VIEWS.plan = () => {
-  if (!PLAN) return `<div><div class="eyebrow">Your plan</div><h1>Study plan</h1></div><div class="panel">${studyPlanHtml() || `<div class="empty">Set your exam date and daily study time in <a href="#settings">Settings</a> to see your pace.</div>`}</div>`;
+  if (!PLAN) return `<div><div class="eyebrow">Your plan</div><h1>Study plan</h1></div>${studyPlanHtml()}${replanPanel()}`;
   const k = dayKey(), ids = [...PLAN_DAY_OF.keys()];
+  const study = PLAN.days.filter((d) => (d.lessons || []).length && d.min);
+  const avg = study.length ? study.reduce((a, d) => a + d.min, 0) / study.length : 0;
   return `
   <div><div class="eyebrow">O seu plano</div><h1>${esc(PLAN.title)}</h1>
-    <p class="muted small">Exame: ${fmtPlanDate(PLAN.examDate)} · ${PLAN.dailyMinutes} min por dia · ${ids.filter(isRead).length} de ${ids.length} lições estudadas</p></div>
+    <p class="muted small">Exame: ${fmtPlanDate(PLAN.examDate)}${avg ? ` · ≈ ${fmtMin(avg)} por dia de lições` : ` · ${PLAN.dailyMinutes} min por dia`} · ${ids.filter(isRead).length} de ${ids.length} lições estudadas</p></div>
   ${studyPlanHtml()}
-  <div class="panel"><h3>Os blocos do dia</h3>${taskList(PLAN.blocks.map((b) => ({ text: `${b.name} · ${b.min}: ${b.text}`, href: b.href })))}</div>
+  ${replanPanel()}
+  ${PLAN.blocks.length ? `<div class="panel"><h3>Os blocos do dia</h3>${taskList(PLAN.blocks.map((b) => ({ text: `${b.name} · ${b.min}: ${b.text}`, href: b.href })))}</div>` : ""}
   <div class="panel"><h3>Dois tipos de lição</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px"><li>${esc(PLAN.modes.full)}</li><li>${esc(PLAN.modes.fast)}</li><li>${esc(PLAN.modes.calc)}</li></ul>
-    <h3>Regras</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">${PLAN.rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></div>
+    ${PLAN.rules.length ? `<h3>Regras</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">${PLAN.rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}</div>
   <div class="panel"><h3>Calendário</h3><div class="list">${PLAN.days.map((d) => `<div class="plan-day${d.date === k ? " today" : d.date < k ? " past" : ""}">
-    <div class="row"><b>${fmtPlanDate(d.date)}</b>${d.title ? chip(d.title, d.kind === "exam" ? "st-NEEDS_REVIEW" : "full") : ""}${d.date === k ? chip("Hoje", "st-INTRODUCED") : ""}</div>
+    <div class="row"><b>${fmtPlanDate(d.date)}</b>${d.title ? chip(d.title, d.kind === "exam" ? "st-NEEDS_REVIEW" : "full") : ""}${d.date === k ? chip("Hoje", "st-INTRODUCED") : ""}${d.min ? `<span class="muted small">≈ ${fmtMin(d.min)}</span>` : ""}</div>
     ${(d.lessons || []).length ? `<div class="row small" style="margin-top:6px">${d.lessons.map((id) => `<a href="#lesson~${id}" class="chip ${isRead(id) ? "st-PROFICIENT" : d.date < k ? "st-NEEDS_REVIEW" : ""}" title="${esc(LS_.get(id)?.title)}">${id}${PLAN_FAST.has(id) ? " R" : ""}${isRead(id) ? " ✓" : ""}</a>`).join("")}</div>` : ""}
     ${(d.tasks || []).length ? `<div style="margin-top:6px">${taskList(d.tasks)}</div>` : ""}
   </div>`).join("")}</div>
-  <p class="small muted">R = lição rápida. Verde = estudada. Vermelho = em atraso.</p></div>`;
+  <p class="small muted">R = lição rápida. Verde = estudada. Vermelho = em atraso. Os tempos são estimativas (leitura com pausas para recordar, quiz e Memory sheet; mais 1 h por dia para os blocos 1 e 4).</p></div>`;
 };
+bind.plan = () => {
+  const preview = () => {
+    const st = $("#pl-start").value, ex = $("#pl-exam").value;
+    try {
+      const p = rebuildPlan(st, ex); const study = p.days.filter((d) => d.lessons.length);
+      const left = DATA.lessons.filter((l) => !isRead(l.id)).length;
+      $("#pl-preview").innerHTML = `<div class="note info">${left} lessons over ${study.length} study day${study.length === 1 ? "" : "s"} (${fmtPlanDate(st)} to ${fmtPlanDate(study.length ? study[study.length - 1].date : st)}): about <b>${fmtMin(p.dailyMinutes)}</b> per study day, peak ${fmtMin(p.peakMinutes)}. Then ${p.days.length - study.length - 1} day${p.days.length - study.length - 1 === 1 ? "" : "s"} of mocks and review before the exam on ${fmtPlanDate(ex)}.</div>`;
+      $("#pl-apply").disabled = false;
+    } catch (e) { $("#pl-preview").innerHTML = `<div class="note">${esc(e.message)}</div>`; $("#pl-apply").disabled = true; }
+  };
+  $("#pl-start").addEventListener("change", preview); $("#pl-exam").addEventListener("change", preview); preview();
+  $("#pl-apply").addEventListener("click", () => { try { applyPlan(rebuildPlan($("#pl-start").value, $("#pl-exam").value)); toast("Plan rebuilt"); route(); } catch (e) { toast(e.message); } });
+  $("#pl-reset")?.addEventListener("click", () => { delete S.settings.plan; S.settings.savedAt = ""; Store.touch("core"); syncPlan(); toast("Original plan restored"); route(); });
+};
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-replan]"); if (!b) return;
+  const start = b.dataset.replan === "tomorrow" ? FLPlanner.addDays(dayKey(), 1) : dayKey();
+  try { applyPlan(rebuildPlan(start, examDateSet())); toast(`Plan rebuilt from ${fmtPlanDate(start)}`); route(); } catch (err) { toast(err.message); }
+});
 
 // ═════════════════════════════════════════════════════════════════════
 // Settings: exam date, export / import, reset
@@ -1100,6 +1152,8 @@ VIEWS.settings = () => `
     <label class="field">Realistic study time per day (minutes)<input type="number" id="set-min" min="10" max="600" step="5" value="${esc(dailyMinSet())}" placeholder="e.g. 60"></label>
     <label class="field">New flashcards per day<input type="number" id="set-new" min="0" max="100" value="${esc(S.settings.newCardsPerDay)}"></label></div>
     <button class="btn primary" id="save-set">Save plan</button>${studyPlanHtml()}</div>
+  <div class="panel"><h3>Using the app offline</h3>
+    <p class="small">The offline copy is a single file, <span class="mono">study-app.html</span>, that opens in any browser without internet: save it on your computer (or Android phone) and open it. It keeps its own progress in that browser. To move progress between the offline copy and this page, use <b>Export backup</b> on one and <b>Import</b> on the other: import merges, nothing is lost.</p></div>
   <div class="panel"><h3>Where your progress is saved</h3>
     <p class="small">${Store.mode === "cloud" ? "Your progress is saved to your account through this page, so it follows you across devices. A copy is also kept in this browser." : Store.mode === "local" ? "Your progress is saved in this browser only. Export a backup regularly, especially before clearing browser data or switching devices." : "This browser is not allowing storage. Export a backup before closing the page."}</p></div>
   <div class="panel"><h3>Backup</h3><p class="small muted">Export everything (progress, mistakes, flashcard schedule, history) as a JSON file. Import merges a backup into your current progress.</p>

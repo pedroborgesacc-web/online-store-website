@@ -9,7 +9,9 @@ A curriculum, knowledge base, question bank and study app for the Florida Sales 
 - **Online:** the app is published as a private artifact on the learner's claude.ai account. Progress is saved to that account (readable only by its owner) and mirrored in the browser.
 - **Offline / local:** open `dist/study-app.html` in any modern browser. Progress is saved in that browser; use Settings → Export backup to keep a copy or move it.
 
-**Personal study plan (optional).** A day-by-day plan (exam date, daily time, lessons per day, fast vs full lessons, mock days) can be kept in `personal/plan.json`, which is git-ignored because this repository is public. When it exists, the build also writes `dist/personal/artifact.html` and `dist/personal/study-app.html` with the plan embedded: the dashboard then shows today's lessons and any backlog, recommendations follow the plan, each lesson says how to study it, and a Plan page shows the whole calendar. The public files in `dist/` never contain a plan. If `personal/plan.json` is lost, recover it from the published artifact (the `plan` field of its embedded data). See `tests/fixtures/plan.sample.json` for the format.
+**Personal study plan (optional).** A day-by-day plan (exam date, daily time, lessons per day, fast vs full lessons, mock days) can be kept in `personal/plan.json`, which is git-ignored because this repository is public. When it exists, the build also writes `dist/personal/artifact.html` and `dist/personal/study-app.html` with the plan embedded: the dashboard then shows today's lessons and any backlog, recommendations follow the plan, each lesson says how to study it, and a Plan page shows the whole calendar. The public files in `dist/` never contain a plan. If `personal/plan.json` is lost, recover it from the published artifact (the `plan` field of its embedded data). See `tests/fixtures/plan.sample.json` for the format. The learner can also rebuild the plan inside the app (Plan page, or "Replan from today" when lessons are overdue): unstudied lessons keep their order and are spread evenly by estimated time (`app/planner.js`) up to the final week of mocks; the rebuilt plan is saved with the learner's progress.
+
+**Offline.** `dist/study-app.html` (or `dist/personal/study-app.html`) is one self-contained file that runs without internet in any browser; it keeps its own progress in that browser, and Settings → Export/Import moves progress between copies.
 
 Features: dashboard with recommended next step, syllabus with mastery per objective, lessons, eight practice modes (A–H plus spaced review) with confidence ratings and corrective feedback, flashcards with spaced repetition, review queue, calculation training, a 100-question timed mock exam, law-and-numbers reference with verification status, Portugal-vs-Florida comparisons, mistake log, analytics, search, and backup export/import.
 
@@ -22,6 +24,8 @@ node scripts/build.mjs           # validate data, re-check every numeric answer,
 node scripts/build.mjs --check   # validation only
 node tests/app.test.mjs          # end-to-end browser tests (needs Playwright + Chromium)
 node tests/plan.test.mjs         # personal study plan tests (fixture plan, fixed clock)
+node tests/planner.test.mjs      # unit tests for the plan builder (app/planner.js)
+node scripts/make_plan.mjs --start YYYY-MM-DD   # rebuild personal/plan.json from a new start date
 ```
 
 Validation fails the build on: unknown references, duplicate ids, prerequisite cycles, missing lesson sections, numeric answer keys that disagree with an independent calculation, and objectives with no practice question. It warns when a correct choice is noticeably longer than its distractors (answer leak). The app shuffles choices at display time, or sorts them when they are all numbers.

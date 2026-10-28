@@ -289,7 +289,7 @@ const data = {
 
 mkdirSync(join(ROOT, "dist"), { recursive: true });
 const css = readFileSync(join(ROOT, "app", "app.css"), "utf8");
-const js = readFileSync(join(ROOT, "app", "app.js"), "utf8");
+const js = readFileSync(join(ROOT, "app", "planner.js"), "utf8") + "\n" + readFileSync(join(ROOT, "app", "app.js"), "utf8");
 const body = readFileSync(join(ROOT, "app", "body.html"), "utf8");
 const head = `<title>FL Exam Coach</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">\n<style>\n${css}\n</style>`;
 function writeApp(dir, withPlan) {
