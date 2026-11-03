@@ -145,6 +145,31 @@ await test("plan page: new start date shows the hours needed, rebuilds, survives
   await ctx.close();
 });
 
+await test("task-only plan: the main task leads the dashboard, with the plan's own footer and title", async () => {
+  const out2 = mkdtempSync(join(tmpdir(), "flplan-tasks-"));
+  const b2 = spawnSync("node", [join(ROOT, "scripts", "build.mjs"), "--plan", join(ROOT, "tests", "fixtures", "plan.tasks.json"), "--out", out2], { encoding: "utf8" });
+  assert(b2.status === 0, "build with the task-only plan failed");
+  try {
+    for (const [day, want, href] of [["2030-03-01", "Printed summary pp. 6-39", "#lesson~L01-1"], ["2030-03-02", "Printed mock exam A", "#plan"]]) {
+      const ctx = await browser.newContext({ viewport: { width: 390, height: 900 } });
+      const page = await ctx.newPage();
+      page.on("pageerror", (e) => errors.push(String(e)));
+      await page.clock.setFixedTime(new Date(day + "T10:00:00"));
+      await page.goto("file://" + join(out2, "study-app.html"));
+      await page.waitForSelector("h1");
+      const rec = page.locator(".btn.primary").first();
+      assert((await rec.textContent()).includes(want), `${day}: recommendation should be the main task, got ${await rec.textContent()}`);
+      assert((await rec.getAttribute("href")) === href, `${day}: recommendation should link to ${href}`);
+      const t = await text(page);
+      assert(t.includes("fixture footer"), `${day}: plan footer missing`);
+      assert(!t.includes("Comece sempre pelo Bloco 1"), `${day}: default footer shown instead of the plan's`);
+      await nav(page, "plan");
+      assert((await text(page)).includes("Printed summary plan (test fixture)"), "plan note should name a task-only plan");
+      await ctx.close();
+    }
+  } finally { rmSync(out2, { recursive: true, force: true }); }
+});
+
 await test("no uncaught errors", async () => { assert(!errors.length, errors.join(" | ")); });
 
 await browser.close();

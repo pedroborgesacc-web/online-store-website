@@ -1,0 +1,16 @@
+{
+  "title": "Printed summary plan (test fixture)",
+  "examDate": "2030-03-08",
+  "dailyMinutes": 240,
+  "created": "2030-03-01",
+  "blocks": [{ "name": "Block 1", "min": "150 min", "text": "Read the day's pages of the printed summary." }],
+  "modes": { "full": "Full lesson.", "fast": "Fast lesson.", "calc": "Calculation." },
+  "rules": ["Finish yesterday's pages first."],
+  "footer": "Read with three highlighters (fixture footer).",
+  "fast": [],
+  "days": [
+    { "date": "2030-03-01", "kind": "read", "title": "Reading 1/2", "lessons": [], "tasks": [{ "text": "Printed summary pp. 6-39", "href": "lesson~L01-1", "main": true }, { "text": "Memory sheets aloud" }] },
+    { "date": "2030-03-02", "kind": "mock", "title": "Mock A", "lessons": [], "tasks": [{ "text": "Printed mock exam A, 3 h 30", "main": true }, { "text": "Numbers table", "href": "numbers" }] },
+    { "date": "2030-03-08", "kind": "exam", "title": "Exam", "lessons": [], "tasks": [{ "text": "Exam day" }] }
+  ]
+}

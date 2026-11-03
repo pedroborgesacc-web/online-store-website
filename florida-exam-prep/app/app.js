@@ -437,7 +437,7 @@ function planPanelHtml() {
   return `<div class="panel plan-today">
     <div class="panel-head"><div><div class="eyebrow">O seu plano · ${fmtPlanDate(k)}${left > 0 ? ` · faltam ${left} dias para o exame` : ""}</div><h2>${today?.kind === "exam" ? "Dia do exame" : "Hoje"}</h2></div><a class="small" href="#plan">Plano completo</a></div>
     ${body}
-    <p class="small muted">Comece sempre pelo Bloco 1: revisão do dia e erros abertos. Ao fim do dia, releia os Memory sheets das lições estudadas.</p>
+    <p class="small muted">${esc(PLAN.footer || "Comece sempre pelo Bloco 1: revisão do dia e erros abertos. Ao fim do dia, releia os Memory sheets das lições estudadas.")}</p>
   </div>`;
 }
 const fmtMin = (m) => `${Math.floor(m / 60)} h ${String(Math.round(m % 60)).padStart(2, "0")}`;
@@ -471,6 +471,8 @@ function recommendation() {
   if (open >= 3 && !(PLAN && didToday("D"))) return { text: `Weakness training (${open} open mistakes)`, href: "quiz~D", why: "Several recent errors are not yet corrected." };
   if (PLAN) {
     const t = planToday();
+    const main = (t?.tasks || []).find((x) => x.main); // e.g. a printed mock exam, which the app cannot track
+    if (main) return { text: main.text, href: main.href || "plan", why: "A tarefa principal do seu plano de hoje." };
     if (t?.kind === "mock" && !didToday("H")) return { text: `${t.title}: exame simulado de 100 perguntas`, href: "exam", why: "Dia de simulado no seu plano: 3h30 de seguida, como no exame." };
     const pl = planNextLesson();
     if (pl) return { text: `Estudar ${pl}: ${LS_.get(pl).title}`, href: "lesson~" + pl, why: PLAN_DAY_OF.get(pl) < dayKey() ? `Em atraso no seu plano (era para ${fmtPlanDate(PLAN_DAY_OF.get(pl))}).` : `Do seu plano de hoje · ${lessonMode(pl) === "fast" ? "lição rápida (R)" : "lição completa"}.` };
@@ -541,6 +543,7 @@ VIEWS.home = () => {
 function studyPlanHtml() {
   if (PLAN) {
     const k = dayKey(), ids = [...PLAN_DAY_OF.keys()];
+    if (!ids.length) return `<div class="note"><b>Plano:</b> ${esc(PLAN.title)}. Exame ${fmtPlanDate(PLAN.examDate)}.${location.hash.startsWith("#plan") ? "" : ` <a href="#plan">Ver plano</a>`}</div>`; // a plan of tasks only
     const due = ids.filter((id) => PLAN_DAY_OF.get(id) <= k), late = due.filter((id) => !isRead(id));
     return `<div class="note ${late.length ? "" : "good"}"><b>Plano:</b> ${ids.filter(isRead).length} de ${ids.length} lições estudadas; ${due.length} previstas até hoje${late.length ? `, ${late.length} por fazer` : ", em dia"}.${location.hash.startsWith("#plan") ? "" : ` <a href="#plan">Ver plano</a>`}</div>`;
   }
@@ -1096,12 +1099,17 @@ bind.search = () => {
 // ═════════════════════════════════════════════════════════════════════
 // Study plan
 // ═════════════════════════════════════════════════════════════════════
-const replanPanel = () => `<div class="panel"><h3>${PLAN ? "Change the plan" : "Create a day-by-day plan"}</h3>
-    <p class="small muted">Builds the calendar from a start date. Lessons already marked as studied are left out; the rest keep their order and are spread evenly (by estimated time) up to the final week of mocks and review.</p>
+const replanPanel = () => {
+  const tasksOnly = PLAN && !PLAN_DAY_OF.size; // e.g. a plan of printed pages: keep the lesson rebuild out of the way
+  const inner = `<p class="small muted">${tasksOnly ? "Your current plan follows printed pages, not the app's lessons. This replaces it with a lesson-by-lesson plan in the app. " : ""}Builds the calendar from a start date. Lessons already marked as studied are left out; the rest keep their order and are spread evenly (by estimated time) up to the final week of mocks and review.</p>
     <div class="grid2"><label class="field">Start studying on<input type="date" id="pl-start" value="${dayKey()}"></label>
     <label class="field">Exam date<input type="date" id="pl-exam" value="${esc(examDateSet())}"></label></div>
     <div id="pl-preview" class="small"></div>
-    <div class="row"><button class="btn primary" id="pl-apply">Rebuild plan</button>${S.settings.plan && BASE_PLAN ? `<button class="btn ghost" id="pl-reset">Back to the original plan</button>` : ""}</div></div>`;
+    <div class="row"><button class="btn primary" id="pl-apply">Rebuild plan</button>${S.settings.plan && BASE_PLAN ? `<button class="btn ghost" id="pl-reset">Back to the original plan</button>` : ""}</div>`;
+  return tasksOnly ? `<details class="panel"><summary><b>Switch to a lesson-by-lesson plan</b></summary>${inner}</details>`
+    : `<div class="panel"><h3>${PLAN ? "Change the plan" : "Create a day-by-day plan"}</h3>
+    ${inner}</div>`;
+};
 VIEWS.plan = () => {
   if (!PLAN) return `<div><div class="eyebrow">Your plan</div><h1>Study plan</h1></div>${studyPlanHtml()}${replanPanel()}`;
   const k = dayKey(), ids = [...PLAN_DAY_OF.keys()];
@@ -1109,18 +1117,18 @@ VIEWS.plan = () => {
   const avg = study.length ? study.reduce((a, d) => a + d.min, 0) / study.length : 0;
   return `
   <div><div class="eyebrow">O seu plano</div><h1>${esc(PLAN.title)}</h1>
-    <p class="muted small">Exame: ${fmtPlanDate(PLAN.examDate)}${avg ? ` · ≈ ${fmtMin(avg)} por dia de lições` : ` · ${PLAN.dailyMinutes} min por dia`} · ${ids.filter(isRead).length} de ${ids.length} lições estudadas</p></div>
+    <p class="muted small">Exame: ${fmtPlanDate(PLAN.examDate)}${avg ? ` · ≈ ${fmtMin(avg)} por dia de lições` : ` · ${PLAN.dailyMinutes} min por dia`}${ids.length ? ` · ${ids.filter(isRead).length} de ${ids.length} lições estudadas` : ""}</p></div>
   ${studyPlanHtml()}
   ${replanPanel()}
   ${PLAN.blocks.length ? `<div class="panel"><h3>Os blocos do dia</h3>${taskList(PLAN.blocks.map((b) => ({ text: `${b.name} · ${b.min}: ${b.text}`, href: b.href })))}</div>` : ""}
-  <div class="panel"><h3>Dois tipos de lição</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px"><li>${esc(PLAN.modes.full)}</li><li>${esc(PLAN.modes.fast)}</li><li>${esc(PLAN.modes.calc)}</li></ul>
+  <div class="panel">${ids.length ? `<h3>Dois tipos de lição</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px"><li>${esc(PLAN.modes.full)}</li><li>${esc(PLAN.modes.fast)}</li><li>${esc(PLAN.modes.calc)}</li></ul>` : ""}
     ${PLAN.rules.length ? `<h3>Regras</h3><ul class="small" style="margin:0;padding-left:20px;display:grid;gap:4px">${PLAN.rules.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}</div>
   <div class="panel"><h3>Calendário</h3><div class="list">${PLAN.days.map((d) => `<div class="plan-day${d.date === k ? " today" : d.date < k ? " past" : ""}">
     <div class="row"><b>${fmtPlanDate(d.date)}</b>${d.title ? chip(d.title, d.kind === "exam" ? "st-NEEDS_REVIEW" : "full") : ""}${d.date === k ? chip("Hoje", "st-INTRODUCED") : ""}${d.min ? `<span class="muted small">≈ ${fmtMin(d.min)}</span>` : ""}</div>
     ${(d.lessons || []).length ? `<div class="row small" style="margin-top:6px">${d.lessons.map((id) => `<a href="#lesson~${id}" class="chip ${isRead(id) ? "st-PROFICIENT" : d.date < k ? "st-NEEDS_REVIEW" : ""}" title="${esc(LS_.get(id)?.title)}">${id}${PLAN_FAST.has(id) ? " R" : ""}${isRead(id) ? " ✓" : ""}</a>`).join("")}</div>` : ""}
     ${(d.tasks || []).length ? `<div style="margin-top:6px">${taskList(d.tasks)}</div>` : ""}
   </div>`).join("")}</div>
-  <p class="small muted">R = lição rápida. Verde = estudada. Vermelho = em atraso. Os tempos são estimativas (leitura com pausas para recordar, quiz e Memory sheet; mais 1 h por dia para os blocos 1 e 4).</p></div>`;
+  ${ids.length ? `<p class="small muted">R = lição rápida. Verde = estudada. Vermelho = em atraso. Os tempos são estimativas (leitura com pausas para recordar, quiz e Memory sheet; mais 1 h por dia para os blocos 1 e 4).</p>` : `<p class="small muted">Os tempos são estimativas: cerca de 4,5 min por página impressa, com marcadores e pausas para recordar.</p>`}</div>`;
 };
 bind.plan = () => {
   const preview = () => {

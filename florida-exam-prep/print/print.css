@@ -1,0 +1,87 @@
+/* Print layout for scripts/print_guide.mjs. Page size and margins come from the PDF call. */
+:root { --ink: #151515; --muted: #5b5b5b; --rule: #b9b9b9; --soft: #f1f1ef; --accent: #1d4e89; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; color: var(--ink); background: #fff; font: 10.2pt/1.45 "Bitstream Charter", "DejaVu Serif", serif; hyphens: auto; }
+h1, h2, h3, h4, .kicker, .ch-kicker, .l-meta, .ch-meta, th, .toc-row, .facts, .small, .ref, .aid, dt { font-family: Inter, "DejaVu Sans", sans-serif; }
+h1, h2, h3, h4 { break-after: avoid; line-height: 1.2; }
+p, li { orphans: 3; widows: 3; }
+p { margin: 0 0 5pt; }
+ul, ol { margin: 0 0 6pt; padding-left: 16pt; }
+li { margin-bottom: 2pt; }
+a { color: inherit; text-decoration: none; }
+strong, b { font-weight: 700; }
+blockquote { margin: 6pt 0; padding: 3pt 10pt; border-left: 2.5pt solid var(--rule); background: var(--soft); }
+blockquote p:last-child { margin-bottom: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 4pt 0 8pt; font-size: 8.8pt; line-height: 1.32; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th, td { border: 0.5pt solid var(--rule); padding: 2.5pt 4.5pt; text-align: left; vertical-align: top; }
+th { background: #e6e6e3; font-weight: 600; font-size: 8.4pt; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+p.caption { font-size: 8.5pt; color: var(--muted); }
+.small { font-size: 8pt; color: var(--muted); }
+
+/* Cover */
+.cover { height: 235mm; display: flex; flex-direction: column; justify-content: center; break-after: page; }
+.cover .kicker { font-size: 12pt; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.cover h1 { font-size: 34pt; margin: 6pt 0 10pt; }
+.cover .sub { font-size: 13pt; color: var(--muted); }
+.cover .facts { list-style: none; padding: 0; display: flex; gap: 22pt; margin: 22pt 0; font-size: 12pt; }
+.cover .facts b { font-size: 20pt; display: block; color: var(--accent); }
+.cover .note { max-width: 120mm; color: var(--muted); font-size: 9.5pt; }
+
+/* Front matter */
+.front h2, .toc h2 { font-size: 15pt; margin: 14pt 0 6pt; color: var(--accent); }
+.front h2:first-child, .toc h2 { margin-top: 0; }
+.how li { margin-bottom: 4pt; }
+.hl { padding: 0 3pt; border-radius: 2pt; }
+.hl.y { background: #fff176; } .hl.o { background: #ffbe8a; } .hl.g { background: #b7ef9d; }
+.plan td:first-child { white-space: nowrap; }
+.weights td { padding-top: 1.5pt; padding-bottom: 1.5pt; }
+.weights .barcell { width: 32%; }
+.weights .bar { display: inline-block; height: 7pt; background: #b9b9b5; vertical-align: middle; }
+.weights tr.big .bar { background: var(--accent); }
+.weights tr.big td:nth-child(2) { font-weight: 700; }
+.toc { break-before: page; }
+.toc-row { display: flex; align-items: baseline; font-size: 8.6pt; line-height: 1.5; padding-left: 12pt; }
+.toc-row.ch { font-weight: 700; font-size: 9.2pt; padding-left: 0; margin-top: 4pt; }
+.toc-row .dots { flex: 1; border-bottom: 0.8pt dotted #9a9a9a; margin: 0 4pt 2.5pt; min-width: 10pt; }
+.toc-row .pct { color: var(--muted); font-weight: 400; }
+
+/* Chapters and lessons */
+.chapter { break-before: page; }
+.ch-head { border-bottom: 2pt solid var(--accent); padding-bottom: 6pt; margin-bottom: 8pt; }
+.ch-kicker { font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.ch-head h1 { font-size: 19pt; margin: 3pt 0 4pt; }
+.ch-meta { font-size: 9pt; color: var(--muted); margin: 0 0 4pt; }
+.ch-lessons { font-size: 9pt; margin: 0; }
+.lesson { margin-top: 14pt; }
+.l-title { font-size: 13.5pt; margin: 0; padding-top: 5pt; border-top: 1.2pt solid var(--ink); }
+.l-meta { font-size: 8pt; color: var(--muted); margin: 2pt 0 6pt; text-transform: uppercase; letter-spacing: .05em; }
+.part-h { font-size: 8.8pt; text-transform: uppercase; letter-spacing: .07em; color: var(--accent); margin: 10pt 0 4pt; }
+h4 { font-size: 10.2pt; margin: 8pt 0 3pt; }
+.answer { margin: -2pt 0 6pt 14pt; padding: 2pt 7pt; font-size: 9.2pt; border-left: 1.5pt solid var(--rule); }
+.answer::before { content: "Answer"; display: block; font: 600 7.5pt Inter, sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.answer p { margin-bottom: 2pt; }
+.traps { border-left: 2.5pt solid #9e2a2b; padding-left: 9pt; margin: 8pt 0; }
+.traps .part-h { color: #9e2a2b; margin-top: 0; padding-top: 2pt; }
+.memory { border: 1.2pt solid var(--ink); background: var(--soft); padding: 2pt 10pt 4pt; margin: 10pt 0 4pt; break-inside: avoid; }
+.memory .part-h { color: var(--ink); }
+.memory ul { margin-bottom: 2pt; }
+
+/* Back matter */
+.back { break-before: page; }
+.back > h1 { font-size: 19pt; margin: 0 0 8pt; padding-bottom: 6pt; border-bottom: 2pt solid var(--accent); }
+.back h3 { font-size: 11.5pt; margin: 12pt 0 4pt; }
+.numbers td:nth-child(1) { width: 22%; }
+.numbers td:nth-child(2) { width: 34%; }
+.numbers td.ref { width: 9%; font-size: 7.6pt; color: var(--muted); }
+.numbers tr.group td { background: #e6e6e3; font: 700 8.6pt Inter, sans-serif; }
+.numbers .aid { font-size: 7.8pt; color: var(--muted); font-style: italic; margin-top: 1.5pt; }
+.gloss { columns: 2; column-gap: 14pt; margin: 0; font-size: 8.8pt; line-height: 1.35; }
+.gloss > div { break-inside: avoid; margin-bottom: 4pt; }
+.gloss dt { font-weight: 700; font-size: 8.6pt; }
+.gloss dd { margin: 0; }
+.front h2.glance { break-before: page; margin-top: 0; }

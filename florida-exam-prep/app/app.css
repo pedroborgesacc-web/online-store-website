@@ -187,6 +187,8 @@ details.chapter > summary::-webkit-details-marker { display: none; }
 details.chapter > summary .ch-n { font: 600 13px var(--font-mono); color: var(--accent); min-width: 28px; }
 details.chapter > summary h3 { flex: 1 1 260px; }
 details.chapter .chapter-body { padding: 0 0 12px 38px; }
+details.panel > summary { cursor: pointer; }
+details.panel[open] > summary { margin-bottom: 10px; }
 
 /* Lesson content */
 .lesson { font-size: 16px; line-height: 1.65; }
