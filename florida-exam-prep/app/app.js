@@ -168,7 +168,7 @@ const Store = {
       if (this.busy.has(k)) continue; // one write at a time per document
       this.dirty.delete(k); this.busy.add(k);
       const body = this.payload(k);
-      try { if (body) await this.db.doc(this.path(k)).set(body); }
+      try { if (body) await Promise.race([this.db.doc(this.path(k)).set(body), new Promise((_, no) => setTimeout(() => no({ code: "unavailable", message: "save timed out" }), 20000))]); }
       catch (e) {
         console.warn("save failed", k, e);
         if (e?.code === "unavailable") this.dirty.add(k);
@@ -391,15 +391,46 @@ function route() {
   const [v, arg] = (location.hash.slice(1) || "home").split("~");
   const fn = VIEWS[v] || VIEWS.home;
   $$("#nav a").forEach((a) => a.classList.toggle("on", a.dataset.v === v || (v === "lesson" && a.dataset.v === "syllabus") || (v === "quiz" && a.dataset.v === "practice") || (v === "source" && a.dataset.v === "sources")));
-  const due = dueQuestions().length + dueCards().due.length;
-  const b = $("#due-badge"); b.hidden = !due; b.textContent = due;
-  $("#view").innerHTML = fn(arg) || "";
-  bind[v]?.(arg);
+  try {
+    const due = dueQuestions().length + dueCards().due.length;
+    const b = $("#due-badge"); b.hidden = !due; b.textContent = due;
+    $("#view").innerHTML = fn(arg) || "";
+    bind[v]?.(arg);
+  } catch (err) { reportError(err, "view " + v); }
   if (!keepScroll) window.scrollTo(0, 0);
   keepScroll = false;
 }
 let keepScroll = false;
 window.addEventListener("hashchange", route);
+
+// Error recovery: a screen or button that fails shows a way out instead of freezing. The last
+// errors are kept in this browser and, when signed in, in the cloud store (diag/errors) for diagnosis.
+const ERR_KEY = LS_KEY + ".errors";
+let errSavedAt = 0;
+function reportError(err, where) {
+  const msg = String(err?.message || err || "unknown error");
+  if (/ResizeObserver loop/.test(msg)) return; // benign browser notice
+  const e = { t: now(), where, msg: msg.slice(0, 300), stack: String(err?.stack || "").split("\n").slice(0, 4).join(" | ").slice(0, 600),
+    hash: location.hash, live: live ? `${live.kind}:${live.mode || ""}:${live.idx}/${live.queue?.length}` : "", ua: navigator.userAgent.slice(0, 160) };
+  let list = []; try { list = JSON.parse(lsGet(ERR_KEY) || "[]"); } catch { list = []; }
+  list = [...list, e].slice(-20); lsSet(ERR_KEY, JSON.stringify(list));
+  if (Store.db && now() - errSavedAt > 5000) { errSavedAt = now(); Promise.resolve().then(() => Store.db.doc("diag/errors").set({ list })).catch(() => {}); }
+  if (msg !== "Script error.") showRecovery(e);
+}
+function showRecovery(e) {
+  if ($("#recover")) return;
+  const d = document.createElement("div"); d.id = "recover"; d.className = "recover"; d.setAttribute("role", "alert");
+  d.innerHTML = `<b>Something went wrong on this screen.</b><span class="small">${esc(e.msg)}</span>
+    <div class="row"><button class="btn sm primary" id="rc-end">End this session and go to the dashboard</button><button class="btn sm" id="rc-close">Dismiss</button></div>`;
+  document.body.appendChild(d);
+  $("#rc-end").addEventListener("click", () => {
+    try { if (live?.kind === "quiz" && !live.done && live.answers?.length) finishQuiz(); } catch { /* keep going: the answers are already recorded */ }
+    live = null; Store.saveLive(); d.remove(); go("home");
+  });
+  $("#rc-close").addEventListener("click", () => d.remove());
+}
+window.addEventListener("error", (ev) => reportError(ev.error || ev.message, "window"));
+window.addEventListener("unhandledrejection", (ev) => reportError(ev.reason, "promise"));
 const bind = {};
 
 // ═════════════════════════════════════════════════════════════════════

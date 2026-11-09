@@ -289,6 +289,20 @@ await test("reset requires in-page confirmation and clears progress", async () =
   assert((await state()).attempts.length === 0, "progress not cleared");
 });
 
+await test("a broken quiz session shows a way out and clears itself", async () => {
+  // a saved session pointing at a question that no longer exists used to leave the screen frozen
+  await page.evaluate(() => localStorage.setItem("flexam.v1.live", JSON.stringify({ kind: "quiz", id: "broken", mode: "C", arg: "", title: "Broken session", queue: ["Q9999-99"], orders: {}, idx: 0, answers: [], retested: [], started: Date.now(), shownAt: Date.now(), fb: null, done: false })));
+  await page.evaluate(() => { location.hash = "quiz"; }); await page.reload(); // reload so the saved session is read
+  await page.waitForSelector("#recover", { timeout: 5000 });
+  await page.click("#rc-end");
+  await page.waitForFunction(() => location.hash === "#home");
+  assert(!(await page.locator("#recover").count()), "recovery banner still shown");
+  assert(!(await page.evaluate(() => localStorage.getItem("flexam.v1.live"))), "broken session not cleared");
+  const log = await page.evaluate(() => JSON.parse(localStorage.getItem("flexam.v1.errors") || "[]"));
+  assert(log.length && log.at(-1).where === "view quiz", "error not logged: " + JSON.stringify(log.at(-1)));
+  consoleErrors.length = 0; // the error above was provoked on purpose
+});
+
 await test("no uncaught errors during the whole run", async () => { assert(!consoleErrors.length, consoleErrors.slice(0, 3).join(" | ")); });
 
 await ctx.close();
