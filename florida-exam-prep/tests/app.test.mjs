@@ -289,6 +289,19 @@ await test("reset requires in-page confirmation and clears progress", async () =
   assert((await state()).attempts.length === 0, "progress not cleared");
 });
 
+await test("practice hub: sections by value, and a high-value drill drawn from the top sections", async () => {
+  await nav("practice");
+  assert((await page.textContent("#view")).includes("Exam sections by value"), "value panel missing");
+  const first = (await page.locator(".value-table tbody tr").first().textContent()).trim();
+  assert(/^★ (5|11)\./.test(first), "a 12% section should come first: " + first.slice(0, 40));
+  await nav("quiz~T");
+  const top = new Set(DATA.chapters.filter((c) => c.examPct >= 7).map((c) => c.id)); const chOf = new Map(DATA.lessons.map((l) => [l.id, l.ch]));
+  const live = await page.evaluate(() => JSON.parse(localStorage.getItem("flexam.v1.live")));
+  assert(live.queue.length === 30, "drill should have 30 questions, has " + live.queue.length);
+  assert(live.queue.every((id) => top.has(chOf.get(Q.get(id).l))), "drill left the top sections");
+  await page.click("#quit");
+});
+
 await test("a broken quiz session shows a way out and clears itself", async () => {
   // a saved session pointing at a question that no longer exists used to leave the screen frozen
   await page.evaluate(() => localStorage.setItem("flexam.v1.live", JSON.stringify({ kind: "quiz", id: "broken", mode: "C", arg: "", title: "Broken session", queue: ["Q9999-99"], orders: {}, idx: 0, answers: [], retested: [], started: Date.now(), shownAt: Date.now(), fb: null, done: false })));

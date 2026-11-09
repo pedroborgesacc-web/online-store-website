@@ -180,7 +180,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L05-1-1 (recall) State where escrow may be held and the interest-bearing account consent rule.
   - O-L05-1-2 (calculate) Compute the sales associate's and broker's deposit deadlines (next business day; end of third business day) from a receipt date.
   - O-L05-1-3 (recall) State the broker's personal-funds limits ($1,000 sales; $5,000 property management) and define commingling and conversion.
-- Practice questions: 4 · Numbers: N-040, N-041, N-042
+- Practice questions: 14 · Numbers: N-040, N-041, N-042
 
 ### L05-2 · Conflicting demands and settlement procedures
 
@@ -191,7 +191,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L05-2-1 (recall) State the 15-business-day notice and 30-business-day procedure deadlines, and the 90-day mediation limit.
   - O-L05-2-2 (recall) Name the four settlement procedures and when an EDO is available.
   - O-L05-2-3 (apply) Recognize the statutory exceptions (condo buyer cancellation; good-faith financing failure).
-- Practice questions: 4 · Numbers: N-043, N-044, N-045, N-046
+- Practice questions: 14 · Numbers: N-043, N-044, N-045, N-046
 
 ### L05-3 · Advertising rules
 
@@ -201,7 +201,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L05-3-1 (recall) State that every advertisement must include the registered brokerage name; define a blind ad.
   - O-L05-3-2 (apply) Decide whether an ad (sign, social media, website, team ad) complies.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 8 · Numbers: —
 
 ### L05-4 · Offices, signs, compensation, kickbacks and rental lists
 
@@ -213,7 +213,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L05-4-2 (apply) Decide whether a payment is lawful (unlicensed assistant, gift from customer, rebate to a party, referral between licensees).
   - O-L05-4-3 (recall) State the rental-list refund rules (75% if no rental, full if inaccurate, demand within 30 days).
   - O-L05-4-4 (understand) Explain why commission rates must be negotiated individually (antitrust/price fixing).
-- Practice questions: 5 · Numbers: N-047
+- Practice questions: 15 · Numbers: N-047
 
 ## 6. Violations, Penalties and Procedures
 
@@ -457,7 +457,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L11-1-1 (recall) List the essential elements of a valid contract (competent parties, offer and acceptance, legal purpose, consideration).
   - O-L11-1-2 (understand) Distinguish bilateral/unilateral, executory/executed, express/implied; and void/voidable/unenforceable.
   - O-L11-1-3 (recall) State the statute of frauds and the statute of limitations (5 years written, 4 years oral).
-- Practice questions: 5 · Numbers: N-110, N-111
+- Practice questions: 17 · Numbers: N-110, N-111
 
 ### L11-2 · Offers, counteroffers, options, equitable title and remedies
 
@@ -468,7 +468,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L11-2-1 (apply) Trace whether a contract exists after offers, revocations, counteroffers and rejections.
   - O-L11-2-2 (understand) Explain option contracts (optionor/optionee) and equitable title.
   - O-L11-2-3 (understand) Distinguish the remedies for breach (specific performance, liquidated damages, rescission, compensatory damages).
-- Practice questions: 4 · Numbers: —
+- Practice questions: 16 · Numbers: —
 
 ### L11-3 · Listing agreements
 
@@ -479,7 +479,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L11-3-1 (understand) Distinguish open, exclusive agency, exclusive right of sale and net listings and when commission is earned.
   - O-L11-3-2 (recall) State the Florida written-listing rules: definite expiration date, no automatic renewal, copy to the seller within 24 hours.
   - O-L11-3-3 (understand) State how listings terminate.
-- Practice questions: 5 · Numbers: N-112
+- Practice questions: 16 · Numbers: N-112
 
 ### L11-4 · Florida contract forms and required disclosures
 
@@ -490,7 +490,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L11-4-1 (understand) Explain the 'AS IS' contract, the effective date and 'time is of the essence'.
   - O-L11-4-2 (recall) List the required disclosures: radon, lead-based paint (pre-1978), property-tax disclosure, energy-efficiency brochure, flood disclosure (s. 689.302), condo/HOA documents.
   - O-L11-4-3 (apply) Apply Johnson v. Davis: known latent defects must be disclosed even in an AS IS sale.
-- Practice questions: 5 · Numbers: —
+- Practice questions: 20 · Numbers: —
 
 ## 12. Residential Mortgages
 

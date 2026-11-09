@@ -41,6 +41,7 @@ const MODES = {
   G: { name: "Mixed exam practice", desc: "25 questions across the syllabus, weighted like the exam." },
   H: { name: "Timed mock exam", desc: "100 questions · 3.5 hours · 75 to pass. No feedback until the end." },
   R: { name: "Spaced review", desc: "Questions whose review date has arrived." },
+  T: { name: "High-value drill", desc: "30 questions from the highest-weight exam sections, new questions first." },
 };
 const MIXED_MODES = new Set(["C", "D", "G", "H", "R"]);
 
@@ -351,7 +352,9 @@ function weightedSample(pool, n) {
 function buildQueue(mode, arg) {
   const studied = new Set(studiedLessons());
   const studiedPool = DATA.questions.filter((q) => studied.has(q.l) || S.items[q.id]);
-  const pool = studiedPool.length >= 10 ? studiedPool : DATA.questions;
+  // Mixed modes stay inside what was studied in the app. With no lesson marked as studied
+  // (e.g. studying from the printed summary) they draw on the whole bank.
+  const pool = studied.size && studiedPool.length >= 10 ? studiedPool : DATA.questions;
   switch (mode) {
     case "A": { const qs = qByLesson.get(arg) || []; return [1, 2, 3].flatMap((d) => shuffle(qs.filter((q) => q.d === d))); }
     case "B": return pickFresh(DATA.questions.filter((q) => chOfLesson(q.l) === arg), 20);
@@ -379,6 +382,7 @@ function buildQueue(mode, arg) {
     case "G": return weightedSample(pool, 25);
     case "H": return weightedSample(DATA.questions, 100);
     case "R": return dueQuestions().slice(0, 30);
+    case "T": { const top = new Set(topChapters().map((c) => c.id)); return weightedSample(DATA.questions.filter((q) => top.has(chOfLesson(q.l))), 30); }
   }
   return [];
 }
@@ -646,11 +650,29 @@ bind.lesson = (id) => {
 // ═════════════════════════════════════════════════════════════════════
 // Practice hub & quiz runner
 // ═════════════════════════════════════════════════════════════════════
+// Sections worth the most exam questions (official outline weights).
+const TOP_PCT = 7;
+const topChapters = () => DATA.chapters.filter((c) => c.examPct >= TOP_PCT);
+function valuePanelHtml() {
+  const acc = new Map(); // chapter → [correct, answered] over every recorded answer
+  for (const a of S.attempts) { const q = Q.get(a.q); if (!q) continue; const k = chOfLesson(q.l); const v = acc.get(k) || [0, 0]; v[1]++; if (a.ok) v[0]++; acc.set(k, v); }
+  const byCh = group(DATA.questions, (q) => chOfLesson(q.l));
+  const top = topChapters(), topSum = top.reduce((n, c) => n + c.examPct, 0);
+  const rows = [...DATA.chapters].sort((a, b) => b.examPct - a.examPct || a.n - b.n).map((c) => {
+    const qs = byCh.get(c.id) || [], [ok, n] = acc.get(c.id) || [0, 0];
+    return `<tr><td>${c.examPct >= TOP_PCT ? "★ " : ""}${c.n}. ${esc(c.title)}</td><td class="num mono">${c.examPct}</td><td class="num mono">${qs.length}</td><td class="num mono">${qs.filter((q) => !S.items[q.id]).length}</td><td class="num mono">${n ? `${pct(ok, n)}% <span class="muted">(${ok}/${n})</span>` : "–"}</td><td><a class="btn sm" href="#quiz~B~${c.id}">Practice</a></td></tr>`;
+  }).join("");
+  return `<div class="panel"><h3>Exam sections by value</h3>
+    <p class="small muted">Value = how many of the 100 exam questions come from the section (official content outline). ★ = the ${top.length} sections that carry ${topSum} of the 100 questions. "New" = questions you have not answered yet.</p>
+    <div class="row"><a class="btn primary" href="#quiz~T">High-value drill: 30 questions from the ★ sections</a></div>
+    <div class="tablewrap"><table class="value-table"><thead><tr><th>Section</th><th class="num">Value</th><th class="num">Questions</th><th class="num">New</th><th class="num">Your score</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+}
 VIEWS.practice = () => {
   const studied = studiedLessons();
   return `
   <div><div class="eyebrow">Practice modes</div><h1>Practice</h1></div>
   <p class="muted prose">All questions are original practice questions written for this curriculum — not official exam questions. Answer, then say how sure you were: confidence changes how soon you see the question again and what counts as mastery.</p>
+  ${valuePanelHtml()}
   <div class="grid2">
     <div class="panel"><h3>A · ${MODES.A.name}</h3><p class="small muted">${MODES.A.desc}</p>
       <select id="pick-lesson">${DATA.lessons.map((l) => `<option value="${l.id}" ${l.id === (nextLesson()?.id) ? "selected" : ""}>${l.id} · ${esc(l.title)}</option>`).join("")}</select>

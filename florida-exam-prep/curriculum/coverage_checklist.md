@@ -78,13 +78,13 @@
 | 2. License Law and Qualifications for Licensure | L02-1, L02-2, L02-3 | 3/3 | 12 |
 | 3. License Law and Commission Rules | L03-1, L03-2, L03-3, L03-4 | 4/4 | 17 |
 | 4. Authorized Relationships, Duties and Disclosure | L04-1, L04-2, L04-3, L04-4 | 4/4 | 18 |
-| 5. Brokerage Activities and Procedures | L05-1, L05-2, L05-3, L05-4 | 4/4 | 16 |
+| 5. Brokerage Activities and Procedures | L05-1, L05-2, L05-3, L05-4 | 4/4 | 51 |
 | 6. Violations, Penalties and Procedures | L06-1, L06-2, L06-3 | 3/3 | 11 |
 | 7. Federal and State Laws Pertaining to Real Estate | L07-1, L07-2, L07-3, L07-4 | 4/4 | 20 |
 | 8. Property Rights: Estates, Tenancies, Condos, Co-ops, HOAs, Timeshares | L08-1, L08-2, L08-3, L08-4, L08-5 | 5/5 | 22 |
 | 9. Title, Deeds and Ownership Restrictions | L09-1, L09-2, L09-3, L09-4, L09-5 | 5/5 | 17 |
 | 10. Legal Descriptions | L10-1, L10-2 | 2/2 | 8 |
-| 11. Real Estate Contracts | L11-1, L11-2, L11-3, L11-4 | 4/4 | 19 |
+| 11. Real Estate Contracts | L11-1, L11-2, L11-3, L11-4 | 4/4 | 69 |
 | 12. Residential Mortgages | L12-1, L12-2, L12-3 | 3/3 | 13 |
 | 13. Types of Mortgages and Sources of Financing | L13-1, L13-2, L13-3 | 3/3 | 10 |
 | 14. Real Estate Computations and Closing of Transactions | L14-1, L14-2, L14-3, L14-4, L14-5, L14-6, L14-7, L14-8 | 8/8 | 37 |

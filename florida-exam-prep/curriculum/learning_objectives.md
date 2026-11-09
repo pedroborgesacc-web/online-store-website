@@ -47,18 +47,18 @@
 | O-L04-4-1 | apply | Decide whether a fact must be disclosed (latent material defect vs stigma such as death or HIV status). | 2 |
 | O-L04-4-2 | recall | State the designated sales associate conditions: nonresidential, buyer and seller each with assets of $1 million or more, written request/disclosures. | 1 |
 | O-L04-4-3 | understand | List how brokerage relationships end and which duties survive termination. | 1 |
-| O-L05-1-1 | recall | State where escrow may be held and the interest-bearing account consent rule. | 1 |
-| O-L05-1-2 | calculate | Compute the sales associate's and broker's deposit deadlines (next business day; end of third business day) from a receipt date. | 1 |
-| O-L05-1-3 | recall | State the broker's personal-funds limits ($1,000 sales; $5,000 property management) and define commingling and conversion. | 2 |
-| O-L05-2-1 | recall | State the 15-business-day notice and 30-business-day procedure deadlines, and the 90-day mediation limit. | 2 |
-| O-L05-2-2 | recall | Name the four settlement procedures and when an EDO is available. | 1 |
-| O-L05-2-3 | apply | Recognize the statutory exceptions (condo buyer cancellation; good-faith financing failure). | 1 |
-| O-L05-3-1 | recall | State that every advertisement must include the registered brokerage name; define a blind ad. | 1 |
-| O-L05-3-2 | apply | Decide whether an ad (sign, social media, website, team ad) complies. | 2 |
-| O-L05-4-1 | recall | State the office and entrance-sign requirements ('Licensed Real Estate Broker'). | 1 |
-| O-L05-4-2 | apply | Decide whether a payment is lawful (unlicensed assistant, gift from customer, rebate to a party, referral between licensees). | 2 |
-| O-L05-4-3 | recall | State the rental-list refund rules (75% if no rental, full if inaccurate, demand within 30 days). | 1 |
-| O-L05-4-4 | understand | Explain why commission rates must be negotiated individually (antitrust/price fixing). | 1 |
+| O-L05-1-1 | recall | State where escrow may be held and the interest-bearing account consent rule. | 3 |
+| O-L05-1-2 | calculate | Compute the sales associate's and broker's deposit deadlines (next business day; end of third business day) from a receipt date. | 6 |
+| O-L05-1-3 | recall | State the broker's personal-funds limits ($1,000 sales; $5,000 property management) and define commingling and conversion. | 5 |
+| O-L05-2-1 | recall | State the 15-business-day notice and 30-business-day procedure deadlines, and the 90-day mediation limit. | 6 |
+| O-L05-2-2 | recall | Name the four settlement procedures and when an EDO is available. | 5 |
+| O-L05-2-3 | apply | Recognize the statutory exceptions (condo buyer cancellation; good-faith financing failure). | 3 |
+| O-L05-3-1 | recall | State that every advertisement must include the registered brokerage name; define a blind ad. | 3 |
+| O-L05-3-2 | apply | Decide whether an ad (sign, social media, website, team ad) complies. | 5 |
+| O-L05-4-1 | recall | State the office and entrance-sign requirements ('Licensed Real Estate Broker'). | 3 |
+| O-L05-4-2 | apply | Decide whether a payment is lawful (unlicensed assistant, gift from customer, rebate to a party, referral between licensees). | 6 |
+| O-L05-4-3 | recall | State the rental-list refund rules (75% if no rental, full if inaccurate, demand within 30 days). | 4 |
+| O-L05-4-4 | understand | Explain why commission rates must be negotiated individually (antitrust/price fixing). | 2 |
 | O-L06-1-1 | recall | Put the steps in order: complaint → investigation → probable cause → formal complaint → hearing → final order → appeal. | 1 |
 | O-L06-1-2 | understand | Distinguish informal and formal hearings and who presides. | 1 |
 | O-L06-1-3 | recall | State the 30-day appeal window to the District Court of Appeal. | 1 |
@@ -116,18 +116,18 @@
 | O-L10-2-1 | recall | State township and section facts: 6 × 6 miles, 36 sections, 640 acres per section, section 1 in the northeast corner, serpentine numbering. | 1 |
 | O-L10-2-2 | calculate | Compute the acreage of an aliquot-part description, including 'and' descriptions. | 3 |
 | O-L10-2-3 | calculate | Convert between square feet, acres, square miles, feet and miles (43,560 sq ft; 5,280 ft). | 1 |
-| O-L11-1-1 | recall | List the essential elements of a valid contract (competent parties, offer and acceptance, legal purpose, consideration). | 1 |
-| O-L11-1-2 | understand | Distinguish bilateral/unilateral, executory/executed, express/implied; and void/voidable/unenforceable. | 2 |
-| O-L11-1-3 | recall | State the statute of frauds and the statute of limitations (5 years written, 4 years oral). | 2 |
-| O-L11-2-1 | apply | Trace whether a contract exists after offers, revocations, counteroffers and rejections. | 1 |
-| O-L11-2-2 | understand | Explain option contracts (optionor/optionee) and equitable title. | 2 |
-| O-L11-2-3 | understand | Distinguish the remedies for breach (specific performance, liquidated damages, rescission, compensatory damages). | 1 |
-| O-L11-3-1 | understand | Distinguish open, exclusive agency, exclusive right of sale and net listings and when commission is earned. | 2 |
-| O-L11-3-2 | recall | State the Florida written-listing rules: definite expiration date, no automatic renewal, copy to the seller within 24 hours. | 2 |
-| O-L11-3-3 | understand | State how listings terminate. | 1 |
-| O-L11-4-1 | understand | Explain the 'AS IS' contract, the effective date and 'time is of the essence'. | 1 |
-| O-L11-4-2 | recall | List the required disclosures: radon, lead-based paint (pre-1978), property-tax disclosure, energy-efficiency brochure, flood disclosure (s. 689.302), condo/HOA documents. | 3 |
-| O-L11-4-3 | apply | Apply Johnson v. Davis: known latent defects must be disclosed even in an AS IS sale. | 1 |
+| O-L11-1-1 | recall | List the essential elements of a valid contract (competent parties, offer and acceptance, legal purpose, consideration). | 2 |
+| O-L11-1-2 | understand | Distinguish bilateral/unilateral, executory/executed, express/implied; and void/voidable/unenforceable. | 9 |
+| O-L11-1-3 | recall | State the statute of frauds and the statute of limitations (5 years written, 4 years oral). | 6 |
+| O-L11-2-1 | apply | Trace whether a contract exists after offers, revocations, counteroffers and rejections. | 6 |
+| O-L11-2-2 | understand | Explain option contracts (optionor/optionee) and equitable title. | 6 |
+| O-L11-2-3 | understand | Distinguish the remedies for breach (specific performance, liquidated damages, rescission, compensatory damages). | 4 |
+| O-L11-3-1 | understand | Distinguish open, exclusive agency, exclusive right of sale and net listings and when commission is earned. | 7 |
+| O-L11-3-2 | recall | State the Florida written-listing rules: definite expiration date, no automatic renewal, copy to the seller within 24 hours. | 5 |
+| O-L11-3-3 | understand | State how listings terminate. | 4 |
+| O-L11-4-1 | understand | Explain the 'AS IS' contract, the effective date and 'time is of the essence'. | 4 |
+| O-L11-4-2 | recall | List the required disclosures: radon, lead-based paint (pre-1978), property-tax disclosure, energy-efficiency brochure, flood disclosure (s. 689.302), condo/HOA documents. | 13 |
+| O-L11-4-3 | apply | Apply Johnson v. Davis: known latent defects must be disclosed even in an AS IS sale. | 3 |
 | O-L12-1-1 | understand | Distinguish the promissory note from the mortgage; mortgagor from mortgagee. | 1 |
 | O-L12-1-2 | recall | State that Florida is a lien-theory state and the 60-day satisfaction rule. | 2 |
 | O-L12-1-3 | understand | Define the common clauses (acceleration, due-on-sale, prepayment, defeasance, subordination, release, exculpatory). | 1 |
