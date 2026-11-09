@@ -128,13 +128,15 @@ const Store = {
   async loadRemote(db) {
     const [core, iq, ifc, mk] = await Promise.all(["progress/core", "progress/itemsQ", "progress/itemsF", "progress/mistakes"].map((p) => db.doc(p).get()));
     const [att, ses] = await Promise.all([db.collection("attempts").get(), db.collection("sessions").get()]);
+    // The store hands back read-only objects; copy them so answers can update schedules and mistakes.
+    const copyOf = (snap) => JSON.parse(JSON.stringify(snap.data() ?? {}));
     const remote = blank();
-    if (core.exists) Object.assign(remote, core.data(), { items: {}, mistakes: {}, attempts: [], sessions: [] });
-    if (iq.exists) Object.assign(remote.items, iq.data().items || {});
-    if (ifc.exists) Object.assign(remote.items, ifc.data().items || {});
-    if (mk.exists) remote.mistakes = { ...(mk.data().mistakes || {}) };
-    for (const d of att.docs) remote.attempts.push(...((d.data().list) || []));
-    for (const d of ses.docs) remote.sessions.push(d.data());
+    if (core.exists) Object.assign(remote, copyOf(core), { items: {}, mistakes: {}, attempts: [], sessions: [] });
+    if (iq.exists) Object.assign(remote.items, copyOf(iq).items || {});
+    if (ifc.exists) Object.assign(remote.items, copyOf(ifc).items || {});
+    if (mk.exists) remote.mistakes = copyOf(mk).mistakes || {};
+    for (const d of att.docs) remote.attempts.push(...(copyOf(d).list || []));
+    for (const d of ses.docs) remote.sessions.push(copyOf(d));
     const hadLocal = S.attempts.length || Object.keys(S.lessons).length;
     S = mergeState(remote, S);
     if (hadLocal || !core.exists) {

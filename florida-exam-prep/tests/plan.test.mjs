@@ -170,6 +170,40 @@ await test("task-only plan: the main task leads the dashboard, with the plan's o
   } finally { rmSync(out2, { recursive: true, force: true }); }
 });
 
+await test("cloud progress: re-answering a question saved in the account works (the store's data is read-only)", async () => {
+  const t0 = new Date("2030-03-01T10:00:00").getTime(), D = 86400000;
+  const docs = {
+    "progress/core": { v: 1, settings: { examDate: "2030-03-08", dailyMinutes: "240", newCardsPerDay: 15 }, lessons: {}, days: { "2030-02-27": 1 }, updated: t0 - 2 * D },
+    "progress/itemsQ": { items: { "Q0101-01": { step: 0, reps: 1, lapses: 1, hist: [[t0 - 2 * D, "wrong"]], first: t0 - 2 * D, last: t0 - 2 * D, due: t0 - D } } },
+    "progress/mistakes": { mistakes: { "Q0101-02": { qid: "Q0101-02", lesson: "L01-1", ch: "ch01", obj: "O-L01-1-2", first: t0 - 2 * D, last: t0 - 2 * D, cat: "RULE", status: "open", wins: 0, winDays: [], errors: 1 } } },
+  };
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 900 } });
+  await ctx.addInitScript((docs) => {
+    const freeze = (o) => { if (o && typeof o === "object") { Object.values(o).forEach(freeze); Object.freeze(o); } return o; };
+    const store = new Map(Object.entries(docs).map(([k, v]) => [k, freeze(v)]));
+    window.__writes = [];
+    const db = {
+      doc: (k) => ({ get: async () => ({ exists: store.has(k), data: () => store.get(k) }), set: async (v) => { window.__writes.push(k); store.set(k, freeze(JSON.parse(JSON.stringify(v)))); } }),
+      collection: (c) => ({ get: async () => ({ docs: [...store.keys()].filter((k) => k.startsWith(c + "/")).map((k) => ({ id: k.split("/")[1], data: () => store.get(k) })) }) }),
+    };
+    window.claude = { use: async (n) => (n === "db" ? db : null) };
+  }, docs);
+  const page = await ctx.newPage();
+  const errs = []; page.on("pageerror", (e) => errs.push(String(e)));
+  await page.clock.setFixedTime(new Date(t0));
+  await page.goto("file://" + join(out, "study-app.html"));
+  await page.waitForFunction(() => document.querySelector("#store")?.textContent.includes("account"));
+  await nav(page, "quiz~R");
+  assert((await page.locator(".qmeta .chip").first().textContent()).trim() === "Q0101-01", "the due question should come first");
+  await page.locator('.choice[data-ci="0"]').click();
+  await page.locator('[data-conf="s"]').click();
+  await page.waitForSelector(".feedback", { timeout: 3000 });
+  assert(!(await page.locator("#recover").count()), "error banner shown: " + (await page.locator("#recover").textContent().catch(() => "")));
+  await page.waitForFunction(() => window.__writes.includes("progress/itemsQ"), null, { timeout: 5000 });
+  assert(!errs.length, errs.join(" | "));
+  await ctx.close();
+});
+
 await test("no uncaught errors", async () => { assert(!errors.length, errors.join(" | ")); });
 
 await browser.close();
