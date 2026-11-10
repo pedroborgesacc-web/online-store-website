@@ -316,7 +316,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L08-1-1 (recall) Name the rights in the bundle (possession, control, enjoyment, exclusion, disposition).
   - O-L08-1-2 (understand) Distinguish fee simple absolute, fee simple defeasible and life estates.
   - O-L08-1-3 (understand) Explain the life tenant's rights and duties (waste) and distinguish remainder from reversion.
-- Practice questions: 4 · Numbers: —
+- Practice questions: 11 · Numbers: —
 
 ### L08-2 · Leasehold estates, lease types, assignment and sublease
 
@@ -327,7 +327,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L08-2-1 (understand) Distinguish estate for years, periodic tenancy, tenancy at will and tenancy at sufferance.
   - O-L08-2-2 (understand) Distinguish gross, net, percentage, ground, graduated and index leases.
   - O-L08-2-3 (apply) Decide whether a transfer is an assignment or a sublease and who remains liable.
-- Practice questions: 4 · Numbers: —
+- Practice questions: 15 · Numbers: —
 
 ### L08-3 · Co-ownership: tenancy in common, joint tenancy, tenancy by the entireties
 
@@ -338,7 +338,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L08-3-1 (recall) State Florida's defaults: unmarried co-owners with a silent deed = tenancy in common; married couple = tenancy by the entireties.
   - O-L08-3-2 (recall) State the four unities (PITT) and the express survivorship language Florida requires for joint tenancy.
   - O-L08-3-3 (apply) Determine who owns a property after a co-owner dies.
-- Practice questions: 4 · Numbers: —
+- Practice questions: 12 · Numbers: —
 
 ### L08-4 · Florida homestead: creditor protection and transfer restrictions
 
@@ -349,7 +349,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L08-4-1 (recall) State the size limits (1/2 acre within a municipality; 160 contiguous acres outside).
   - O-L08-4-2 (recall) List the claims that can still reach a homestead (taxes and assessments, purchase or improvement debt, construction liens; federal liens).
   - O-L08-4-3 (understand) Explain the spouse/minor-child protections (spouse joins in deeds and mortgages; devise restrictions).
-- Practice questions: 3 · Numbers: N-080
+- Practice questions: 8 · Numbers: N-080
 
 ### L08-5 · Condominiums, cooperatives, timeshares, HOAs and CDDs
 
@@ -360,7 +360,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L08-5-1 (understand) Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property).
   - O-L08-5-2 (recall) State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days.
   - O-L08-5-3 (recall) State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not.
-- Practice questions: 7 · Numbers: N-081, N-082, N-083
+- Practice questions: 14 · Numbers: N-081, N-082, N-083
 
 ## 9. Title, Deeds and Ownership Restrictions
 
@@ -505,7 +505,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L12-1-1 (understand) Distinguish the promissory note from the mortgage; mortgagor from mortgagee.
   - O-L12-1-2 (recall) State that Florida is a lien-theory state and the 60-day satisfaction rule.
   - O-L12-1-3 (understand) Define the common clauses (acceleration, due-on-sale, prepayment, defeasance, subordination, release, exculpatory).
-- Practice questions: 4 · Numbers: N-120
+- Practice questions: 16 · Numbers: N-120
 
 ### L12-2 · Assumption, default and foreclosure
 
@@ -516,7 +516,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L12-2-1 (understand) Distinguish assumption (with or without novation) from taking 'subject to' a mortgage.
   - O-L12-2-2 (recall) State that Florida foreclosure is judicial, equity of redemption ends at the sale, and there is no statutory redemption.
   - O-L12-2-3 (understand) Compare short sale and deed in lieu of foreclosure (junior liens survive a deed in lieu).
-- Practice questions: 4 · Numbers: —
+- Practice questions: 15 · Numbers: —
 
 ### L12-3 · Qualifying the borrower, usury and predatory lending
 
@@ -527,7 +527,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L12-3-1 (calculate) Compute housing-expense and total-obligation ratios using gross monthly income and PITI.
   - O-L12-3-2 (recall) State the usual benchmarks (conventional 28/36; FHA 31/43) as course conventions.
   - O-L12-3-3 (recall) State Florida usury limits (18% simple on loans of $500,000 or less; 25% above) and name predatory practices.
-- Practice questions: 5 · Numbers: N-121, N-122
+- Practice questions: 17 · Numbers: N-121, N-122
 
 ## 13. Types of Mortgages and Sources of Financing
 

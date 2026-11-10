@@ -10386,5 +10386,2213 @@
     "The notice is required whether or not radon has been found."
    ]
   }
+ },
+ {
+  "id": "Q1201-21",
+  "l": "L12-1",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "The document in which the borrower personally promises to repay the debt is the:",
+  "c": [
+   "mortgage",
+   "promissory note",
+   "warranty deed",
+   "satisfaction"
+  ],
+  "a": 1,
+  "ex": "The promissory note is the debt: the borrower's personal written promise to repay. The mortgage is the security instrument that pledges the property.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "The mortgage pledges the property. The promise to pay is in the note."
+   ],
+   "2": [
+    "CONFUSED",
+    "A deed transfers title."
+   ],
+   "3": [
+    "CONFUSED",
+    "A satisfaction is recorded after the loan is paid off."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-22",
+  "l": "L12-1",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "In a mortgage loan, the mortgagee is the:",
+  "c": [
+   "borrower",
+   "lender",
+   "seller",
+   "title company"
+  ],
+  "a": 1,
+  "ex": "The borrower gives the mortgage, so the borrower is the mortgagor. The lender receives it and is the mortgagee. '-or gives, -ee receives.'",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "The borrower is the mortgagor."
+   ],
+   "2": [
+    "RULE",
+    "The seller is not a party to the mortgage unless the seller is financing the sale."
+   ],
+   "3": [
+    "RULE",
+    "The title company is not a party to the mortgage."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-23",
+  "l": "L12-1",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which document pledges the property as security for the debt?",
+  "c": [
+   "The promissory note",
+   "The mortgage",
+   "The sale contract",
+   "The closing statement"
+  ],
+  "a": 1,
+  "ex": "The mortgage is the security instrument: it pledges the property as collateral for the note.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "The note is the personal promise to pay."
+   ],
+   "2": [
+    "RULE",
+    "The sale contract is between buyer and seller."
+   ],
+   "3": [
+    "RULE",
+    "The closing statement lists the money, it pledges nothing."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-24",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which clause lets the lender demand the full balance if the owner transfers the property without the lender's consent?",
+  "c": [
+   "Acceleration clause",
+   "Due-on-sale clause",
+   "Defeasance clause",
+   "Subordination clause"
+  ],
+  "a": 1,
+  "ex": "A due-on-sale (alienation) clause makes the balance due when the property is transferred. It blocks an assumption without the lender's consent.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Acceleration is triggered by default, not by a transfer."
+   ],
+   "2": [
+    "CONFUSED",
+    "Defeasance ends the lien when the loan is paid in full."
+   ],
+   "3": [
+    "CONFUSED",
+    "Subordination changes the priority of liens."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-25",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A developer has one mortgage covering 40 lots. Which clause lets him free each lot from the mortgage as it is sold?",
+  "c": [
+   "Release clause",
+   "Exculpatory clause",
+   "Prepayment clause",
+   "Receivership clause"
+  ],
+  "a": 0,
+  "ex": "A release clause frees individual parcels from a blanket mortgage, which is one mortgage covering several parcels.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "An exculpatory clause removes the borrower's personal liability."
+   ],
+   "2": [
+    "CONFUSED",
+    "A prepayment clause deals with paying the loan early."
+   ],
+   "3": [
+    "CONFUSED",
+    "A receivership clause lets a receiver collect rents during foreclosure."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-26",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A land seller who took back a mortgage agrees that the buyer's later construction loan will have first priority. This is done with a:",
+  "c": [
+   "release clause",
+   "defeasance clause",
+   "subordination clause",
+   "due-on-sale clause"
+  ],
+  "a": 2,
+  "ex": "In a subordination clause a lien agrees to take a junior (lower-priority) position, here behind the construction lender.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "A release clause frees parcels from a blanket mortgage."
+   ],
+   "1": [
+    "CONFUSED",
+    "Defeasance ends the lien on full payment."
+   ],
+   "3": [
+    "CONFUSED",
+    "Due-on-sale makes the balance due on a transfer."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-27",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "A mortgage says the borrower has no personal liability and the lender may look only to the property. This is:",
+  "c": [
+   "an acceleration clause",
+   "a defeasance clause",
+   "a prepayment clause",
+   "an exculpatory clause"
+  ],
+  "a": 3,
+  "ex": "With an exculpatory clause the lender's only recourse is the property. If a foreclosure sale falls short, there is no deficiency claim against the borrower.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Acceleration makes the whole balance due on default."
+   ],
+   "1": [
+    "CONFUSED",
+    "Defeasance ends the lien on full payment."
+   ],
+   "2": [
+    "CONFUSED",
+    "Prepayment deals with paying early."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-28",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which clause provides that the lender's lien ends when the loan is paid in full?",
+  "c": [
+   "Defeasance clause",
+   "Acceleration clause",
+   "Release clause",
+   "Subordination clause"
+  ],
+  "a": 0,
+  "ex": "The defeasance clause is the promise that the lien is defeated on full payment. The recorded satisfaction is the proof.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "Acceleration makes the whole balance due on default."
+   ],
+   "2": [
+    "CONFUSED",
+    "A release clause frees single parcels from a blanket mortgage."
+   ],
+   "3": [
+    "CONFUSED",
+    "Subordination changes lien priority."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-29",
+  "l": "L12-1",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-71",
+  "q": "After a mortgage loan is paid in full, who must have the satisfaction of mortgage recorded?",
+  "c": [
+   "The borrower",
+   "The mortgagee (lender or its servicer)",
+   "The closing agent who handled the purchase",
+   "The county property appraiser"
+  ],
+  "a": 1,
+  "ex": "Within 60 days after receiving full payment, the mortgagee (or the holder or servicer) must sign a satisfaction, have it acknowledged, record it, and send the recorded satisfaction to the borrower.",
+  "w": {
+   "0": [
+    "RULE",
+    "The duty is on the lender, not the borrower."
+   ],
+   "2": [
+    "RULE",
+    "The duty is on the lender."
+   ],
+   "3": [
+    "RULE",
+    "The property appraiser values property for taxes."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-30",
+  "l": "L12-1",
+  "o": 2,
+  "d": 3,
+  "t": "mcq",
+  "q": "Acceleration and due-on-sale clauses both make the whole balance due. What triggers each one?",
+  "c": [
+   "Acceleration: a transfer. Due-on-sale: a default",
+   "Acceleration: a default. Due-on-sale: a transfer",
+   "Both are triggered only by a default",
+   "Both are triggered only by full payment"
+  ],
+  "a": 1,
+  "ex": "Acceleration is triggered by the borrower's default. Due-on-sale is triggered by a transfer of the property.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "The triggers are reversed."
+   ],
+   "2": [
+    "QUALIFIER",
+    "Due-on-sale is triggered by a transfer."
+   ],
+   "3": [
+    "RULE",
+    "Full payment ends the loan. It triggers neither clause."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-31",
+  "l": "L12-1",
+  "o": 1,
+  "d": 2,
+  "t": "scn",
+  "q": "A buyer finances a home in Florida with a bank loan. After closing, who holds legal title to the home?",
+  "c": [
+   "The bank, until the loan is paid",
+   "A trustee, under a deed of trust",
+   "The buyer",
+   "The bank and the buyer jointly"
+  ],
+  "a": 2,
+  "ex": "Florida is a lien-theory state. The borrower holds legal title and the lender holds a lien on the property as security.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "That describes a title-theory state."
+   ],
+   "1": [
+    "CONFUSED",
+    "Deeds of trust are used in title-theory states."
+   ],
+   "3": [
+    "RULE",
+    "The lender holds a lien, not title."
+   ]
+  }
+ },
+ {
+  "id": "Q1201-32",
+  "l": "L12-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which clause deals with the borrower's right to pay the loan off early, or a penalty for doing so?",
+  "c": [
+   "Prepayment clause",
+   "Defeasance clause",
+   "Exculpatory clause",
+   "Acceleration clause"
+  ],
+  "a": 0,
+  "ex": "A prepayment clause gives a right to pay early or sets a penalty for doing so.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "Defeasance ends the lien when the loan is fully paid."
+   ],
+   "2": [
+    "CONFUSED",
+    "Exculpatory removes personal liability."
+   ],
+   "3": [
+    "CONFUSED",
+    "Acceleration is the lender's right on default."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-21",
+  "l": "L12-2",
+  "o": 0,
+  "d": 2,
+  "t": "scn",
+  "q": "A buyer assumes the seller's mortgage. The lender does not agree to a novation. The buyer later defaults and the foreclosure sale leaves a deficiency. Who may be liable?",
+  "c": [
+   "The buyer only, as the new owner",
+   "The seller only, as the original borrower",
+   "Both the buyer and the seller",
+   "Neither, because the loan was assumed"
+  ],
+  "a": 2,
+  "ex": "A buyer who assumes a loan becomes personally liable. Without a novation the seller stays secondarily liable, so the lender can look to both.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "Without a novation the seller is still liable."
+   ],
+   "1": [
+    "CONFUSED",
+    "That is the result when the buyer takes 'subject to' the mortgage."
+   ],
+   "3": [
+    "RULE",
+    "Both made, or kept, a promise to pay."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-22",
+  "l": "L12-2",
+  "o": 1,
+  "d": 1,
+  "t": "mcq",
+  "q": "Mortgage foreclosure in Florida is:",
+  "c": [
+   "nonjudicial, under a power of sale",
+   "judicial: a court action ending in a public sale",
+   "carried out by a trustee under a deed of trust",
+   "an administrative process run by the DBPR"
+  ],
+  "a": 1,
+  "ex": "Florida foreclosure is judicial. The lender must file a court action, which ends in a public sale.",
+  "w": {
+   "0": [
+    "RULE",
+    "Florida lenders cannot foreclose without a court."
+   ],
+   "2": [
+    "CONFUSED",
+    "Trustee sales belong to title-theory states."
+   ],
+   "3": [
+    "RULE",
+    "The DBPR has no role in foreclosure."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-23",
+  "l": "L12-2",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "After a Florida foreclosure sale, how long does the former owner have to redeem the property?",
+  "c": [
+   "10 days from the date of the sale",
+   "30 days from the date of the sale",
+   "1 year from the date of the sale",
+   "No time: the right ends at the sale"
+  ],
+  "a": 3,
+  "ex": "The equity of redemption lasts until the foreclosure sale. Florida has no statutory right of redemption after the sale.",
+  "w": {
+   "0": [
+    "RULE",
+    "Florida gives no redemption period after the sale."
+   ],
+   "1": [
+    "RULE",
+    "Florida gives no redemption period after the sale."
+   ],
+   "2": [
+    "RULE",
+    "Some states allow this. Florida does not."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-24",
+  "l": "L12-2",
+  "o": 1,
+  "d": 3,
+  "t": "scn",
+  "q": "A foreclosure sale brings $30,000 more than the first mortgage debt and costs. There is also a $20,000 second mortgage on the property. Who receives the surplus?",
+  "c": [
+   "The borrower receives all $30,000",
+   "The first lender keeps all $30,000",
+   "The second lender receives $20,000 and the borrower $10,000",
+   "The second lender and the borrower each receive $15,000"
+  ],
+  "a": 2,
+  "ex": "A surplus goes to the junior lienors first, then to the borrower. The second mortgagee is paid its $20,000 and the remaining $10,000 goes to the borrower.",
+  "w": {
+   "0": [
+    "RULE",
+    "Junior lienors are paid before the borrower."
+   ],
+   "1": [
+    "RULE",
+    "The first lender is entitled only to its debt and costs."
+   ],
+   "3": [
+    "RULE",
+    "The surplus is not split equally."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-25",
+  "l": "L12-2",
+  "o": 2,
+  "d": 1,
+  "t": "mcq",
+  "q": "A lender agrees to let a homeowner sell for less than the loan balance and to accept the sale proceeds. This is a:",
+  "c": [
+   "deed in lieu of foreclosure",
+   "short sale",
+   "novation",
+   "judicial foreclosure"
+  ],
+  "a": 1,
+  "ex": "In a short sale the property is sold and the lender agrees to accept less than the amount owed.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "In a deed in lieu the borrower deeds the property to the lender."
+   ],
+   "2": [
+    "CONFUSED",
+    "A novation substitutes a new borrower and releases the old one."
+   ],
+   "3": [
+    "CONFUSED",
+    "A foreclosure is a court action, not an agreed sale."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-26",
+  "l": "L12-2",
+  "o": 2,
+  "d": 3,
+  "t": "scn",
+  "q": "A borrower in default offers the first lender a deed in lieu of foreclosure. The property also has a second mortgage. Why might the first lender prefer to foreclose?",
+  "c": [
+   "A deed in lieu always takes longer than a court foreclosure",
+   "With a deed in lieu the lender takes title subject to the second mortgage",
+   "A deed in lieu must first be approved by the FREC",
+   "A deed in lieu gives the borrower one year to redeem the home"
+  ],
+  "a": 1,
+  "ex": "A deed in lieu is faster, but the lender takes title subject to junior liens. A foreclosure can eliminate them.",
+  "w": {
+   "0": [
+    "RULE",
+    "A deed in lieu is faster."
+   ],
+   "2": [
+    "RULE",
+    "The FREC has no role."
+   ],
+   "3": [
+    "RULE",
+    "No redemption period follows a deed in lieu."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-27",
+  "l": "L12-2",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-24",
+  "q": "On the closing statement, a mortgage assumed by the buyer is entered as a:",
+  "c": [
+   "credit to the seller and a debit to the buyer",
+   "debit to the seller and a credit to the buyer",
+   "debit to both the seller and the buyer",
+   "credit to the buyer only"
+  ],
+  "a": 1,
+  "ex": "The buyer takes over the seller's debt, so the seller is charged (debit) and the buyer is given credit toward the price.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "The entries are reversed."
+   ],
+   "2": [
+    "RULE",
+    "The buyer is credited, not debited."
+   ],
+   "3": [
+    "QUALIFIER",
+    "There is also a debit to the seller."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-28",
+  "l": "L12-2",
+  "o": 0,
+  "d": 3,
+  "t": "scn",
+  "v": "V-25",
+  "q": "A buyer assumes an existing $150,000 mortgage. The intangible tax was paid when the loan was made and the debt is unchanged. Which taxes are due on the assumed loan?",
+  "c": [
+   "Documentary stamps on the note only",
+   "Intangible tax only",
+   "Both note stamps and intangible tax",
+   "Neither tax"
+  ],
+  "a": 0,
+  "ex": "Note stamps ($0.35 per $100) are due on new and assumed mortgages. The intangible tax (2 mills) applies to new mortgages only.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "The intangible tax is for new mortgages only."
+   ],
+   "2": [
+    "QUALIFIER",
+    "The intangible tax is not charged again on an assumption."
+   ],
+   "3": [
+    "RULE",
+    "Note stamps are due on an assumed mortgage."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-29",
+  "l": "L12-2",
+  "o": 1,
+  "d": 2,
+  "t": "scn",
+  "q": "A lender has accelerated the loan and filed for foreclosure. To redeem before the sale, the borrower must pay:",
+  "c": [
+   "the missed payments only",
+   "the entire balance of the debt",
+   "half of the balance, with a payment plan",
+   "the missed payments plus one extra payment"
+  ],
+  "a": 1,
+  "ex": "The equity of redemption lets the borrower stop the foreclosure by paying in full. After acceleration, 'in full' means the whole debt.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "After acceleration the whole balance is due."
+   ],
+   "2": [
+    "RULE",
+    "Redemption requires payment in full."
+   ],
+   "3": [
+    "RULE",
+    "Redemption requires payment in full."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-30",
+  "l": "L12-2",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "A buyer who takes title 'subject to' the seller's existing mortgage:",
+  "c": [
+   "becomes personally liable for the debt",
+   "has no personal liability for the debt",
+   "releases the seller from the debt",
+   "must obtain a novation from the lender"
+  ],
+  "a": 1,
+  "ex": "A 'subject to' buyer makes the payments but promises the lender nothing. If the loan goes into default, only the original borrower faces a deficiency.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "That describes an assumption."
+   ],
+   "2": [
+    "CONFUSED",
+    "Only a novation releases the seller."
+   ],
+   "3": [
+    "RULE",
+    "A novation belongs to an assumption with a release."
+   ]
+  }
+ },
+ {
+  "id": "Q1202-31",
+  "l": "L12-2",
+  "o": 1,
+  "d": 1,
+  "t": "mcq",
+  "q": "A foreclosure sale brings less than the amount owed. The court judgment for the unpaid balance is a:",
+  "c": [
+   "deficiency judgment",
+   "satisfaction of mortgage",
+   "lis pendens",
+   "novation"
+  ],
+  "a": 0,
+  "ex": "A deficiency judgment is a judgment for the unpaid balance against the parties who are personally liable on the note.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "A satisfaction records that a loan was paid in full."
+   ],
+   "2": [
+    "CONFUSED",
+    "A lis pendens is a notice of a pending lawsuit."
+   ],
+   "3": [
+    "CONFUSED",
+    "A novation substitutes a new borrower."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-21",
+  "l": "L12-3",
+  "o": 0,
+  "d": 2,
+  "t": "scn",
+  "q": "Gross monthly income is $6,000. Principal and interest are $1,300 a month, property taxes $2,400 a year and insurance $1,200 a year. What is the housing expense ratio?",
+  "c": [
+   "2.2%",
+   "21.7%",
+   "25.0%",
+   "26.7%"
+  ],
+  "a": 3,
+  "ex": "Taxes: 2,400 ÷ 12 = $200. Insurance: 1,200 ÷ 12 = $100. PITI = 1,300 + 200 + 100 = $1,600. 1,600 ÷ 6,000 = 26.7%.",
+  "w": {
+   "0": [
+    "UNITS",
+    "That divides by annual income ($72,000). Use monthly income."
+   ],
+   "1": [
+    "FORMULA",
+    "That uses principal and interest only. PITI includes taxes and insurance."
+   ],
+   "2": [
+    "FORMULA",
+    "That leaves out the insurance."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-22",
+  "l": "L12-3",
+  "o": 0,
+  "d": 3,
+  "t": "scn",
+  "q": "Using the 28% / 36% benchmarks, a borrower has gross monthly income of $7,000 and other monthly debts of $700. What is the maximum PITI?",
+  "c": [
+   "$1,260",
+   "$1,820",
+   "$1,960",
+   "$2,520"
+  ],
+  "a": 1,
+  "ex": "Housing limit: 28% × 7,000 = $1,960. Total limit: 36% × 7,000 = $2,520, minus $700 of debts = $1,820. The maximum PITI is the lower of the two: $1,820.",
+  "w": {
+   "0": [
+    "FORMULA",
+    "The debts are subtracted from the 36% limit, not from the 28% limit."
+   ],
+   "2": [
+    "QUALIFIER",
+    "$1,960 passes the housing ratio but fails the total ratio."
+   ],
+   "3": [
+    "FORMULA",
+    "$2,520 is the total limit before subtracting the other debts."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-23",
+  "l": "L12-3",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "Which income figure do the qualifying ratios use?",
+  "c": [
+   "Net (take-home) monthly income",
+   "Gross monthly income",
+   "Net annual income",
+   "Taxable income after deductions"
+  ],
+  "a": 1,
+  "ex": "Both ratios divide by gross monthly income, the income before taxes and deductions.",
+  "w": {
+   "0": [
+    "PT",
+    "Take-home pay is the Portuguese habit. Florida exam ratios use gross income."
+   ],
+   "2": [
+    "RULE",
+    "The ratios use gross monthly income."
+   ],
+   "3": [
+    "RULE",
+    "The ratios use gross monthly income."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-24",
+  "l": "L12-3",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "In the housing expense ratio, PITI stands for principal, interest:",
+  "c": [
+   "title insurance and inspections",
+   "taxes and insurance",
+   "term and index",
+   "taxes and interest-only payments"
+  ],
+  "a": 1,
+  "ex": "PITI is principal, interest, property taxes and homeowner's insurance.",
+  "w": {
+   "0": [
+    "RULE",
+    "T and I are property taxes and homeowner's insurance."
+   ],
+   "2": [
+    "RULE",
+    "T and I are property taxes and homeowner's insurance."
+   ],
+   "3": [
+    "RULE",
+    "T and I are property taxes and homeowner's insurance."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-25",
+  "l": "L12-3",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "Under the course's benchmarks, a conventional borrower's housing and total obligations ratios should not exceed:",
+  "c": [
+   "25% and 33%",
+   "28% and 36%",
+   "31% and 43%",
+   "36% and 28%"
+  ],
+  "a": 1,
+  "ex": "Conventional: 28% housing and 36% total. FHA: 31% and 43%. These are course conventions, not statutes.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "The conventional benchmarks are 28% and 36%."
+   ],
+   "2": [
+    "CONFUSED",
+    "31% and 43% are the FHA benchmarks."
+   ],
+   "3": [
+    "CONFUSED",
+    "The order is reversed. Housing is the smaller number."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-26",
+  "l": "L12-3",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-72",
+  "q": "On a loan of $600,000, interest is not usurious under Florida law unless it exceeds:",
+  "c": [
+   "10% a year",
+   "18% a year",
+   "25% a year",
+   "45% a year"
+  ],
+  "a": 2,
+  "ex": "The 18% simple-interest ceiling applies to loans of $500,000 or less. For loans over $500,000 the ceiling is in effect 25%.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "10% is not a Florida usury ceiling."
+   ],
+   "1": [
+    "QUALIFIER",
+    "18% applies to loans of $500,000 or less."
+   ],
+   "3": [
+    "CONFUSED",
+    "45% is where criminal usury becomes a felony."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-27",
+  "l": "L12-3",
+  "o": 2,
+  "d": 3,
+  "t": "mcq",
+  "v": "V-72",
+  "q": "Willfully and knowingly charging interest of 50% a year on a loan, where no other law allows it, is:",
+  "c": [
+   "lawful if the borrower agrees in writing",
+   "a second-degree misdemeanor",
+   "a third-degree felony",
+   "a civil matter only"
+  ],
+  "a": 2,
+  "ex": "Criminal usury: more than 25% and up to 45% a year is a second-degree misdemeanor. More than 45% is a third-degree felony.",
+  "w": {
+   "0": [
+    "RULE",
+    "The borrower's agreement does not legalize usury."
+   ],
+   "1": [
+    "NUMBER",
+    "The misdemeanor tier is above 25% up to 45%."
+   ],
+   "3": [
+    "RULE",
+    "Above 25% the criminal tiers apply."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-28",
+  "l": "L12-3",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A lender persuades a homeowner to refinance four times in three years, collecting new fees each time, with no real benefit to the borrower. This practice is:",
+  "c": [
+   "equity stripping",
+   "loan flipping",
+   "packing",
+   "balloon abuse"
+  ],
+  "a": 1,
+  "ex": "Loan flipping is repeated refinancing to collect fees.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Equity stripping is lending that drains the owner's equity."
+   ],
+   "2": [
+    "CONFUSED",
+    "Packing is adding hidden add-on products."
+   ],
+   "3": [
+    "CONFUSED",
+    "Balloon abuse is the misuse of a lump final payment."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-29",
+  "l": "L12-3",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "Adding hidden, unneeded products such as extra insurance to a loan is the predatory practice called:",
+  "c": [
+   "packing",
+   "loan flipping",
+   "equity stripping",
+   "steering"
+  ],
+  "a": 0,
+  "ex": "Packing means loading a loan with hidden add-on products.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "Loan flipping is repeated refinancing for fees."
+   ],
+   "2": [
+    "CONFUSED",
+    "Equity stripping drains the owner's equity."
+   ],
+   "3": [
+    "CONFUSED",
+    "Steering is a fair housing violation."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-30",
+  "l": "L12-3",
+  "o": 2,
+  "d": 3,
+  "t": "scn",
+  "v": "V-72",
+  "q": "A private lender makes a $300,000 loan at 22% a year simple interest. No other law allows that rate. The loan is:",
+  "c": [
+   "lawful, because the rate is under 25%",
+   "usurious, but not criminal usury",
+   "criminal usury, a second-degree misdemeanor",
+   "criminal usury, a third-degree felony"
+  ],
+  "a": 1,
+  "ex": "The loan is $500,000 or less, so the ceiling is 18% and 22% is usurious. Criminal usury begins only above 25%.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "The 25% ceiling is for loans over $500,000."
+   ],
+   "2": [
+    "NUMBER",
+    "The misdemeanor tier starts above 25%."
+   ],
+   "3": [
+    "NUMBER",
+    "The felony tier starts above 45%."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-31",
+  "l": "L12-3",
+  "o": 1,
+  "d": 3,
+  "t": "scn",
+  "q": "Gross monthly income is $7,500, PITI is $2,025 and other monthly debts are $675. Under the 28% / 36% benchmarks, does the borrower qualify?",
+  "c": [
+   "No, the housing ratio is above its benchmark",
+   "No, the total ratio is above its benchmark",
+   "Yes, both ratios are within the benchmarks",
+   "Only if the other debts are ignored"
+  ],
+  "a": 2,
+  "ex": "Housing: 2,025 ÷ 7,500 = 27%. Total: (2,025 + 675) ÷ 7,500 = 36%. A ratio exactly at the benchmark passes, because the limit is 'should not exceed'.",
+  "w": {
+   "0": [
+    "ARITH",
+    "The housing ratio is 27%, under 28%."
+   ],
+   "1": [
+    "QUALIFIER",
+    "The total ratio is exactly 36%, which passes."
+   ],
+   "3": [
+    "RULE",
+    "Both ratios pass with the debts included."
+   ]
+  }
+ },
+ {
+  "id": "Q1203-32",
+  "l": "L12-3",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "The SAFE Act requires which people to be licensed and registered through the NMLS?",
+  "c": [
+   "Real estate sales associates",
+   "Mortgage loan originators",
+   "Real estate appraisers",
+   "Title insurance agents"
+  ],
+  "a": 1,
+  "ex": "The SAFE Act requires mortgage loan originators to be licensed and registered through the Nationwide Multistate Licensing System (NMLS).",
+  "w": {
+   "0": [
+    "RULE",
+    "Sales associates are licensed under Chapter 475."
+   ],
+   "2": [
+    "RULE",
+    "Appraisers are regulated separately."
+   ],
+   "3": [
+    "RULE",
+    "The SAFE Act covers mortgage loan originators."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-21",
+  "l": "L08-1",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "The owner's right to sell, give away or leave the property by will is the right of:",
+  "c": [
+   "possession",
+   "exclusion",
+   "enjoyment",
+   "disposition"
+  ],
+  "a": 3,
+  "ex": "Disposition is the right to transfer the property. The bundle of rights is possession, control, enjoyment, exclusion and disposition.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Possession is the right to occupy."
+   ],
+   "1": [
+    "CONFUSED",
+    "Exclusion is the right to keep others out."
+   ],
+   "2": [
+    "CONFUSED",
+    "Enjoyment is the right to use the property without interference."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-22",
+  "l": "L08-1",
+  "o": 1,
+  "d": 2,
+  "t": "scn",
+  "q": "An owner deeds land to a church 'so long as it is used for church purposes'. The church holds a:",
+  "c": [
+   "fee simple absolute",
+   "fee simple defeasible",
+   "life estate",
+   "leasehold estate"
+  ],
+  "a": 1,
+  "ex": "A fee simple defeasible can be lost if a stated condition occurs or is broken. A fee simple absolute has no conditions.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "A fee simple absolute has no conditions."
+   ],
+   "2": [
+    "CONFUSED",
+    "A life estate is measured by a life."
+   ],
+   "3": [
+    "CONFUSED",
+    "A leasehold is possession under a lease, not ownership."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-23",
+  "l": "L08-1",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "Ana deeds her house 'to Bruno for life' and says nothing more. At Bruno's death the house returns to Ana or her heirs. Ana's interest is a:",
+  "c": [
+   "remainder",
+   "reversion",
+   "life estate",
+   "leasehold"
+  ],
+  "a": 1,
+  "ex": "When the property comes back to the grantor or the grantor's heirs, the future interest is a reversion. A remainder goes forward to a third person.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "A remainder goes to a third person named in the deed."
+   ],
+   "2": [
+    "CONFUSED",
+    "Bruno holds the life estate."
+   ],
+   "3": [
+    "CONFUSED",
+    "No lease is involved."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-24",
+  "l": "L08-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "A deed gives property 'to Bruno for the life of Carla'. Bruno's estate is a:",
+  "c": [
+   "life estate pur autre vie",
+   "fee simple defeasible",
+   "tenancy at will",
+   "remainder"
+  ],
+  "a": 0,
+  "ex": "A life estate measured by another person's life is a life estate pur autre vie. It ends when Carla dies.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "A defeasible fee depends on a condition, not a life."
+   ],
+   "2": [
+    "CONFUSED",
+    "A tenancy at will is a leasehold."
+   ],
+   "3": [
+    "CONFUSED",
+    "A remainder is the future interest that follows a life estate."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-25",
+  "l": "L08-1",
+  "o": 2,
+  "d": 3,
+  "t": "scn",
+  "q": "A life tenant leases the house to a tenant for five years. Two years later the life tenant dies. The lease:",
+  "c": [
+   "continues for the three years that remain",
+   "ends, because the life tenant could not lease more than she had",
+   "becomes a month-to-month tenancy with the remainderman",
+   "binds the remainderman if it was recorded"
+  ],
+  "a": 1,
+  "ex": "A life tenant may sell or lease her interest, but a sale or lease by the life tenant ends at the measuring death.",
+  "w": {
+   "0": [
+    "RULE",
+    "The lease ends with the life estate."
+   ],
+   "2": [
+    "RULE",
+    "The lease does not convert. It ends."
+   ],
+   "3": [
+    "RULE",
+    "Recording does not extend the life tenant's interest."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-26",
+  "l": "L08-1",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "q": "During a life estate, who pays the property taxes and the upkeep?",
+  "c": [
+   "The remainderman",
+   "The grantor",
+   "The life tenant",
+   "The remainderman and the life tenant equally"
+  ],
+  "a": 2,
+  "ex": "The life tenant enjoys the property, so she pays the taxes and upkeep and must not commit waste.",
+  "w": {
+   "0": [
+    "RULE",
+    "The remainderman's ownership begins later."
+   ],
+   "1": [
+    "RULE",
+    "The grantor has given the life estate away."
+   ],
+   "3": [
+    "RULE",
+    "The life tenant alone carries these costs."
+   ]
+  }
+ },
+ {
+  "id": "Q0801-27",
+  "l": "L08-1",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which of the following is a freehold estate?",
+  "c": [
+   "An estate for years",
+   "A tenancy at will",
+   "A life estate",
+   "A tenancy at sufferance"
+  ],
+  "a": 2,
+  "ex": "Freehold estates are ownership estates of indefinite duration: fee simple absolute, fee simple defeasible and the life estate. The others are leaseholds.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "An estate for years is a leasehold with a fixed term."
+   ],
+   "1": [
+    "CONFUSED",
+    "A tenancy at will is a leasehold."
+   ],
+   "3": [
+    "CONFUSED",
+    "A tenancy at sufferance is a holdover leasehold."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-21",
+  "l": "L08-2",
+  "o": 0,
+  "d": 2,
+  "t": "scn",
+  "q": "A tenant's lease expires. She stays in the apartment without the landlord's consent. Her tenancy is now:",
+  "c": [
+   "an estate for years",
+   "a periodic tenancy",
+   "a tenancy at will",
+   "a tenancy at sufferance"
+  ],
+  "a": 3,
+  "ex": "A holdover tenant who stays without the landlord's consent has a tenancy at sufferance.",
+  "w": {
+   "0": [
+    "RULE",
+    "The fixed term has ended."
+   ],
+   "1": [
+    "QUALIFIER",
+    "A periodic tenancy renews with the landlord's agreement."
+   ],
+   "2": [
+    "QUALIFIER",
+    "A tenancy at will exists with the landlord's consent."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-22",
+  "l": "L08-2",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-04",
+  "q": "Under current Florida law, how much written notice is needed to end a month-to-month residential tenancy?",
+  "c": [
+   "7 days",
+   "15 days",
+   "30 days",
+   "60 days"
+  ],
+  "a": 2,
+  "ex": "Current s. 83.57: year to year 60 days, quarter to quarter 30, month to month 30, week to week 7. The old 15-day rule for month to month is outdated.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Seven days is for a week-to-week tenancy."
+   ],
+   "1": [
+    "NUMBER",
+    "Fifteen days is the old rule. It is now 30."
+   ],
+   "3": [
+    "CONFUSED",
+    "Sixty days is for a year-to-year tenancy."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-23",
+  "l": "L08-2",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-04",
+  "q": "How much written notice is needed to end a year-to-year residential tenancy in Florida?",
+  "c": [
+   "15 days",
+   "30 days",
+   "60 days",
+   "90 days"
+  ],
+  "a": 2,
+  "ex": "Year to year 60 days, quarter to quarter 30, month to month 30, week to week 7.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "Fifteen days is an outdated month-to-month figure."
+   ],
+   "1": [
+    "CONFUSED",
+    "Thirty days is for quarter-to-quarter and month-to-month tenancies."
+   ],
+   "3": [
+    "NUMBER",
+    "The period is 60 days."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-24",
+  "l": "L08-2",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "v": "V-04",
+  "q": "How much written notice is needed to end a week-to-week residential tenancy in Florida?",
+  "c": [
+   "3 days",
+   "7 days",
+   "15 days",
+   "30 days"
+  ],
+  "a": 1,
+  "ex": "Week to week needs 7 days' written notice before the end of a period.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "The period is 7 days."
+   ],
+   "2": [
+    "NUMBER",
+    "Fifteen days is an outdated month-to-month figure."
+   ],
+   "3": [
+    "CONFUSED",
+    "Thirty days is for month-to-month and quarter-to-quarter tenancies."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-25",
+  "l": "L08-2",
+  "o": 0,
+  "d": 2,
+  "t": "scn",
+  "q": "A written lease runs from June 1 to August 31. What must the landlord do for it to end on August 31?",
+  "c": [
+   "Nothing: it ends automatically",
+   "Give 7 days' written notice",
+   "Give 15 days' written notice",
+   "Give 30 days' written notice"
+  ],
+  "a": 0,
+  "ex": "A lease with a fixed term is an estate for years. It ends automatically on its end date, without notice.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "Notice periods apply to periodic tenancies."
+   ],
+   "2": [
+    "CONFUSED",
+    "Notice periods apply to periodic tenancies."
+   ],
+   "3": [
+    "CONFUSED",
+    "Notice periods apply to periodic tenancies."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-26",
+  "l": "L08-2",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "A tenant pays a fixed rent and the landlord pays the property taxes, insurance and maintenance. This is a:",
+  "c": [
+   "gross lease",
+   "net lease",
+   "percentage lease",
+   "ground lease"
+  ],
+  "a": 0,
+  "ex": "In a gross lease the tenant pays fixed rent and the landlord pays the property's expenses.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "In a net lease the tenant pays some or all of the expenses."
+   ],
+   "2": [
+    "CONFUSED",
+    "A percentage lease adds a share of sales."
+   ],
+   "3": [
+    "CONFUSED",
+    "A ground lease is a lease of land on which the tenant builds."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-27",
+  "l": "L08-2",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "A lease states that rent will rise by a set amount on each anniversary. This is a:",
+  "c": [
+   "graduated lease",
+   "index lease",
+   "percentage lease",
+   "gross lease"
+  ],
+  "a": 0,
+  "ex": "A graduated (step-up) lease raises the rent on a schedule written in the lease. An index lease ties the rent to an index such as the CPI.",
+  "w": {
+   "1": [
+    "CONFUSED",
+    "An index lease follows an outside index such as the CPI."
+   ],
+   "2": [
+    "CONFUSED",
+    "A percentage lease depends on the tenant's sales."
+   ],
+   "3": [
+    "CONFUSED",
+    "A gross lease describes who pays the expenses."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-28",
+  "l": "L08-2",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A tenant with 14 months left on her lease lets a friend take the apartment for 6 months. The friend pays the tenant, who keeps paying the landlord. This is:",
+  "c": [
+   "an assignment",
+   "a sublease",
+   "a novation",
+   "a tenancy at sufferance"
+  ],
+  "a": 1,
+  "ex": "A sublease transfers part of the remaining term or space. The subtenant pays the tenant, who stays primarily liable to the landlord.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "An assignment transfers the entire remaining term."
+   ],
+   "2": [
+    "CONFUSED",
+    "A novation substitutes a new party and releases the old one."
+   ],
+   "3": [
+    "CONFUSED",
+    "A tenancy at sufferance is a holdover without consent."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-29",
+  "l": "L08-2",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A tenant assigns her lease. The landlord does not release her. The assignee stops paying rent. The original tenant is:",
+  "c": [
+   "free of all liability",
+   "secondarily liable for the rent",
+   "primarily liable, as in a sublease",
+   "liable only for damage to the unit"
+  ],
+  "a": 1,
+  "ex": "After an assignment the assignee pays the landlord, but the original tenant stays secondarily liable unless the landlord releases her.",
+  "w": {
+   "0": [
+    "RULE",
+    "She stays liable unless released."
+   ],
+   "2": [
+    "CONFUSED",
+    "Primary liability is the rule in a sublease."
+   ],
+   "3": [
+    "RULE",
+    "Her liability covers the rent."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-30",
+  "l": "L08-2",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-05",
+  "q": "A two-year residential lease in Florida:",
+  "c": [
+   "must be in writing and signed before two witnesses",
+   "must be in writing, with no witnesses required",
+   "may be oral if the rent is paid monthly",
+   "must be notarized and recorded to be valid"
+  ],
+  "a": 1,
+  "ex": "A lease for more than one year must be in writing. Leases need no subscribing witnesses. Deeds still need two.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "The two-witness rule for leases is outdated."
+   ],
+   "2": [
+    "RULE",
+    "Only a lease of one year or less may be oral."
+   ],
+   "3": [
+    "RULE",
+    "Notarizing and recording are not required for validity."
+   ]
+  }
+ },
+ {
+  "id": "Q0802-31",
+  "l": "L08-2",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "An apartment building is sold while its tenants' leases are still running. The leases:",
+  "c": [
+   "end automatically on the day of closing",
+   "continue: the buyer takes title subject to them",
+   "end 30 days after the day of closing",
+   "continue only if the buyer agrees in writing"
+  ],
+  "a": 1,
+  "ex": "A lease survives the sale of the property. The buyer takes title subject to the existing leases.",
+  "w": {
+   "0": [
+    "RULE",
+    "A sale does not end the leases."
+   ],
+   "2": [
+    "RULE",
+    "No 30-day rule ends them."
+   ],
+   "3": [
+    "RULE",
+    "The buyer's agreement is not needed."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-21",
+  "l": "L08-3",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "q": "A deed names 'John Smith and Mary Smith, husband and wife' as grantees and says nothing else. In Florida they hold title as:",
+  "c": [
+   "tenants in common",
+   "joint tenants",
+   "tenants by the entireties",
+   "community property owners"
+  ],
+  "a": 2,
+  "ex": "A deed to a married couple is presumed to create a tenancy by the entireties. Florida is not a community-property state.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "That is the default for unmarried co-owners."
+   ],
+   "1": [
+    "QUALIFIER",
+    "Joint tenancy needs express survivorship words."
+   ],
+   "3": [
+    "RULE",
+    "Florida is not a community-property state."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-22",
+  "l": "L08-3",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "q": "To create a joint tenancy with right of survivorship in Florida, the deed must:",
+  "c": [
+   "name the owners in alphabetical order",
+   "expressly state the right of survivorship",
+   "be signed by all the grantees",
+   "give the owners unequal shares"
+  ],
+  "a": 1,
+  "ex": "Florida requires the four unities (possession, interest, time, title) plus express survivorship language. Without it, unmarried co-owners are tenants in common.",
+  "w": {
+   "0": [
+    "RULE",
+    "The order of names has no effect."
+   ],
+   "2": [
+    "RULE",
+    "Grantees do not sign the deed."
+   ],
+   "3": [
+    "RULE",
+    "Joint tenants hold equal interests."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-23",
+  "l": "L08-3",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "Ana, Bruno and Carla own a lot as joint tenants with right of survivorship. Carla dies, leaving a will that gives everything to her son. Carla's interest passes to:",
+  "c": [
+   "her son, under the will",
+   "Ana and Bruno",
+   "the State of Florida",
+   "her son and Ana and Bruno in equal shares"
+  ],
+  "a": 1,
+  "ex": "At a joint tenant's death her share passes to the surviving joint tenants, outside probate. A will cannot change that.",
+  "w": {
+   "0": [
+    "RULE",
+    "Survivorship overrides the will."
+   ],
+   "2": [
+    "CONFUSED",
+    "Escheat applies only when there is no will and no heirs."
+   ],
+   "3": [
+    "RULE",
+    "The son receives nothing from this property."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-24",
+  "l": "L08-3",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A husband and wife own their home as tenants by the entireties. The husband dies, leaving a will that gives all his property to his brother. Who owns the home?",
+  "c": [
+   "The wife alone",
+   "The wife and the brother as tenants in common",
+   "The brother alone",
+   "The husband's estate"
+  ],
+  "a": 0,
+  "ex": "Tenancy by the entireties has automatic survivorship. The surviving spouse owns the whole property, whatever the will says.",
+  "w": {
+   "1": [
+    "RULE",
+    "Survivorship gives the whole to the wife."
+   ],
+   "2": [
+    "RULE",
+    "The will cannot pass entireties property."
+   ],
+   "3": [
+    "RULE",
+    "The home passes outside the estate."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-25",
+  "l": "L08-3",
+  "o": 1,
+  "d": 1,
+  "t": "mcq",
+  "q": "Which form of co-ownership is available only to a married couple?",
+  "c": [
+   "Tenancy in common",
+   "Joint tenancy with survivorship",
+   "Tenancy by the entireties",
+   "Tenancy at will"
+  ],
+  "a": 2,
+  "ex": "Only a married couple can hold as tenants by the entireties.",
+  "w": {
+   "0": [
+    "RULE",
+    "Anyone may be tenants in common."
+   ],
+   "1": [
+    "RULE",
+    "Joint tenancy is not limited to spouses."
+   ],
+   "3": [
+    "CONFUSED",
+    "A tenancy at will is a leasehold."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-26",
+  "l": "L08-3",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "One of three tenants in common wants to end the co-ownership. The other two refuse to buy her share or to sell. She may:",
+  "c": [
+   "do nothing until the others agree",
+   "sue for partition",
+   "record a quitclaim deed for the whole property",
+   "ask the FREC to order a sale"
+  ],
+  "a": 1,
+  "ex": "Any co-tenant may sue for partition, asking the court to divide the property or order its sale.",
+  "w": {
+   "0": [
+    "RULE",
+    "She does not need the others' agreement."
+   ],
+   "2": [
+    "RULE",
+    "She can convey only her own share."
+   ],
+   "3": [
+    "RULE",
+    "The FREC has no power over co-owners' property."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-27",
+  "l": "L08-3",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "Which statement about tenants in common is correct?",
+  "c": [
+   "They must hold equal shares",
+   "A deceased owner's share passes to the surviving owners",
+   "Each may sell or will her own share without the others' consent",
+   "Only married couples may hold title this way"
+  ],
+  "a": 2,
+  "ex": "Tenants in common may hold unequal shares. Each may sell, mortgage or will her own share, and there is no survivorship.",
+  "w": {
+   "0": [
+    "RULE",
+    "Shares may be unequal."
+   ],
+   "1": [
+    "CONFUSED",
+    "Survivorship belongs to joint tenancy and entireties."
+   ],
+   "3": [
+    "CONFUSED",
+    "That describes tenancy by the entireties."
+   ]
+  }
+ },
+ {
+  "id": "Q0803-28",
+  "l": "L08-3",
+  "o": 1,
+  "d": 3,
+  "t": "scn",
+  "q": "A couple owns a house as tenants by the entireties. The husband signs a deed selling it to a buyer. The wife refuses to sign. The deed:",
+  "c": [
+   "conveys the whole property to the buyer",
+   "conveys the husband's half to the buyer",
+   "conveys nothing: neither spouse can convey alone",
+   "is valid if it is recorded before she objects"
+  ],
+  "a": 2,
+  "ex": "In a tenancy by the entireties neither spouse holds a separate half, and neither can convey alone.",
+  "w": {
+   "0": [
+    "RULE",
+    "One spouse cannot convey entireties property."
+   ],
+   "1": [
+    "RULE",
+    "There is no separate half to convey."
+   ],
+   "3": [
+    "RULE",
+    "Recording does not cure the missing signature."
+   ]
+  }
+ },
+ {
+  "id": "Q0804-21",
+  "l": "L08-4",
+  "o": 0,
+  "d": 1,
+  "t": "mcq",
+  "v": "V-66",
+  "q": "Outside a municipality, Florida's constitutional homestead protection covers contiguous land of up to:",
+  "c": [
+   "1/2 acre",
+   "10 acres",
+   "40 acres",
+   "160 acres"
+  ],
+  "a": 3,
+  "ex": "The homestead protected from forced sale is up to 160 contiguous acres outside a municipality and 1/2 acre inside one.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "1/2 acre is the limit inside a municipality."
+   ],
+   "1": [
+    "NUMBER",
+    "The limit is 160 contiguous acres."
+   ],
+   "2": [
+    "NUMBER",
+    "The limit is 160 contiguous acres."
+   ]
+  }
+ },
+ {
+  "id": "Q0804-22",
+  "l": "L08-4",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-66",
+  "q": "Which creditor can NOT force the sale of a Florida homestead?",
+  "c": [
+   "The county, for unpaid property taxes",
+   "The lender that financed the purchase of the home",
+   "A roofer who was not paid for repairing the home's roof",
+   "A credit-card company holding a court judgment"
+  ],
+  "a": 3,
+  "ex": "The homestead is exempt from forced sale by ordinary judgment creditors. Claims tied to the house get through: taxes and assessments, purchase money, and improvement, repair and labor on the property.",
+  "w": {
+   "0": [
+    "MISREAD",
+    "Property taxes can reach the homestead. The question asks who cannot."
+   ],
+   "1": [
+    "MISREAD",
+    "The purchase mortgage can be foreclosed. The question asks who cannot."
+   ],
+   "2": [
+    "MISREAD",
+    "Repair and labor claims on the property get through. The question asks who cannot."
+   ]
+  }
+ },
+ {
+  "id": "Q0804-23",
+  "l": "L08-4",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-66",
+  "q": "Florida's homestead protection from forced sale is limited by:",
+  "c": [
+   "value: the first $25,000 of the home's assessed value",
+   "value: the first $50,000 of the home's assessed value",
+   "land area: 1/2 acre in a municipality or 160 acres outside",
+   "price: the amount the owner originally paid for the home"
+  ],
+  "a": 2,
+  "ex": "The creditor shield is measured in land, not dollars. The $25,000 figures belong to the homestead tax exemption, a different rule.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "$25,000 is the tax exemption."
+   ],
+   "1": [
+    "CONFUSED",
+    "$50,000 is the total of the two tax exemptions."
+   ],
+   "3": [
+    "RULE",
+    "The purchase price is not the test."
+   ]
+  }
+ },
+ {
+  "id": "Q0804-24",
+  "l": "L08-4",
+  "o": 2,
+  "d": 2,
+  "t": "scn",
+  "q": "A married woman holds title to the couple's homestead in her name alone. To sell it:",
+  "c": [
+   "she may sign the deed alone",
+   "her husband must join in the deed",
+   "she needs a court order",
+   "she must first record a declaration of homestead"
+  ],
+  "a": 1,
+  "ex": "The spouse must join in any deed or mortgage of the homestead, even when title is in one name.",
+  "w": {
+   "0": [
+    "RULE",
+    "Title in one name does not let her convey the homestead alone."
+   ],
+   "2": [
+    "RULE",
+    "No court order is needed. The spouse's signature is."
+   ],
+   "3": [
+    "RULE",
+    "No declaration is required to sell."
+   ]
+  }
+ },
+ {
+  "id": "Q0804-25",
+  "l": "L08-4",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-66",
+  "q": "Besides the homestead, the Florida Constitution exempts how much personal property from forced sale?",
+  "c": [
+   "$500",
+   "$1,000",
+   "$5,000",
+   "$25,000"
+  ],
+  "a": 1,
+  "ex": "Article X, section 4 exempts $1,000 of personal property. It is not a land or tax figure.",
+  "w": {
+   "0": [
+    "NUMBER",
+    "The figure is $1,000."
+   ],
+   "2": [
+    "CONFUSED",
+    "$5,000 is a property tax exemption figure and an escrow limit."
+   ],
+   "3": [
+    "CONFUSED",
+    "$25,000 is the homestead tax exemption."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-21",
+  "l": "L08-5",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "The owner of a condominium unit holds:",
+  "c": [
+   "shares in a corporation and a proprietary lease",
+   "fee simple title to the unit and an undivided share of the common elements",
+   "a leasehold in the unit for 99 years",
+   "fee simple title to the unit and to the land beneath it only"
+  ],
+  "a": 1,
+  "ex": "A condominium unit is real property: the owner holds the unit in fee simple plus an inseparable undivided share of the common elements.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "That describes a cooperative."
+   ],
+   "2": [
+    "RULE",
+    "A condominium unit is owned, not leased."
+   ],
+   "3": [
+    "RULE",
+    "The owner shares the common elements with the other owners."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-22",
+  "l": "L08-5",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "A buyer's interest in a cooperative apartment is:",
+  "c": [
+   "real property held in fee simple",
+   "personal property",
+   "a life estate",
+   "a tenancy by the entireties"
+  ],
+  "a": 1,
+  "ex": "A cooperative buyer receives shares in the corporation that owns the building and a proprietary lease. That interest is personal property.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "That describes a condominium unit."
+   ],
+   "2": [
+    "RULE",
+    "No life estate is created."
+   ],
+   "3": [
+    "CONFUSED",
+    "That is a form of co-ownership for married couples."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-23",
+  "l": "L08-5",
+  "o": 1,
+  "d": 3,
+  "t": "scn",
+  "v": "V-64",
+  "q": "A timeshare buyer signs the contract on March 1 and receives the last required document on March 4. The right to cancel lasts until midnight of:",
+  "c": [
+   "March 11",
+   "March 14",
+   "March 18",
+   "March 19"
+  ],
+  "a": 1,
+  "ex": "A timeshare buyer may cancel until midnight of the 10th calendar day after the later of signing or receiving the last required document. March 4 + 10 days = March 14.",
+  "w": {
+   "0": [
+    "QUALIFIER",
+    "March 11 counts from signing. Count from the later date, March 4."
+   ],
+   "2": [
+    "UNITS",
+    "The days are calendar days, not business days."
+   ],
+   "3": [
+    "CONFUSED",
+    "Fifteen days is the developer condominium period."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-24",
+  "l": "L08-5",
+  "o": 1,
+  "d": 2,
+  "t": "scn",
+  "v": "V-64",
+  "q": "A timeshare buyer wants to close in three days and offers to sign a waiver of the cancellation period. The waiver is:",
+  "c": [
+   "valid, if it is in writing and signed",
+   "valid, if the developer agrees to it",
+   "not allowed: the right cannot be waived",
+   "valid, if a notary witnesses it"
+  ],
+  "a": 2,
+  "ex": "The timeshare cancellation right cannot be waived, and closing before the period ends is unlawful.",
+  "w": {
+   "0": [
+    "RULE",
+    "A written waiver is still void."
+   ],
+   "1": [
+    "RULE",
+    "The developer's agreement does not matter."
+   ],
+   "3": [
+    "RULE",
+    "A notary cannot make the waiver valid."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-25",
+  "l": "L08-5",
+  "o": 2,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-65",
+  "q": "Which buyer must receive the HOA disclosure summary?",
+  "c": [
+   "The buyer of a condominium unit",
+   "The buyer of a cooperative apartment",
+   "The buyer of a timeshare interest",
+   "The buyer of a house in a mandatory HOA"
+  ],
+  "a": 3,
+  "ex": "The HOA disclosure summary is for parcels in homeowners' association communities. It does not apply to condominiums, cooperatives or timeshares, which have their own rules.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "Condominiums have their own disclosure and cancellation rules."
+   ],
+   "1": [
+    "CONFUSED",
+    "The HOA rule does not cover cooperatives."
+   ],
+   "2": [
+    "CONFUSED",
+    "Timeshares have their own 10-day rule."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-26",
+  "l": "L08-5",
+  "o": 0,
+  "d": 2,
+  "t": "mcq",
+  "q": "A special-purpose unit of local government that finances a community's roads and utilities through assessments on the owners is a:",
+  "c": [
+   "mandatory homeowners' association",
+   "community development district",
+   "cooperative",
+   "condominium association"
+  ],
+  "a": 1,
+  "ex": "A community development district (CDD) is a special-purpose local government that finances infrastructure through assessments. An HOA is an owners' association, not a government.",
+  "w": {
+   "0": [
+    "CONFUSED",
+    "An HOA is a private owners' association."
+   ],
+   "2": [
+    "CONFUSED",
+    "A cooperative is a form of ownership."
+   ],
+   "3": [
+    "CONFUSED",
+    "A condominium association is a private owners' association."
+   ]
+  }
+ },
+ {
+  "id": "Q0805-27",
+  "l": "L08-5",
+  "o": 1,
+  "d": 2,
+  "t": "mcq",
+  "v": "V-08",
+  "q": "A condominium buyer's statutory right to cancel the contract ends:",
+  "c": [
+   "at closing",
+   "30 days after closing",
+   "one year after closing",
+   "when the deed is recorded"
+  ],
+  "a": 0,
+  "ex": "The condominium cancellation rights (15 days from a developer, 7 days on a resale) end at closing. So does the HOA right.",
+  "w": {
+   "1": [
+    "RULE",
+    "The right does not survive closing."
+   ],
+   "2": [
+    "RULE",
+    "The right does not survive closing."
+   ],
+   "3": [
+    "QUALIFIER",
+    "The right ends at closing, not at recording."
+   ]
+  }
  }
 ]

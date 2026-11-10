@@ -83,21 +83,21 @@
 | O-L07-4-2 | recall | State the move-out timeline: 15 days to return, 30 days to send a claim by certified mail (or e-mail with a signed addendum), 15 days for the tenant to object. | 2 |
 | O-L07-4-3 | recall | State the termination notices for tenancies without a specific term: 60 / 30 / 30 / 7 days (current law). | 1 |
 | O-L07-4-4 | recall | State the landlord's flood disclosure duty for residential leases of 1 year or longer (s. 83.512, since October 2025). | 2 |
-| O-L08-1-1 | recall | Name the rights in the bundle (possession, control, enjoyment, exclusion, disposition). | 1 |
-| O-L08-1-2 | understand | Distinguish fee simple absolute, fee simple defeasible and life estates. | 1 |
-| O-L08-1-3 | understand | Explain the life tenant's rights and duties (waste) and distinguish remainder from reversion. | 2 |
-| O-L08-2-1 | understand | Distinguish estate for years, periodic tenancy, tenancy at will and tenancy at sufferance. | 1 |
-| O-L08-2-2 | understand | Distinguish gross, net, percentage, ground, graduated and index leases. | 2 |
-| O-L08-2-3 | apply | Decide whether a transfer is an assignment or a sublease and who remains liable. | 1 |
-| O-L08-3-1 | recall | State Florida's defaults: unmarried co-owners with a silent deed = tenancy in common; married couple = tenancy by the entireties. | 1 |
-| O-L08-3-2 | recall | State the four unities (PITT) and the express survivorship language Florida requires for joint tenancy. | 1 |
-| O-L08-3-3 | apply | Determine who owns a property after a co-owner dies. | 2 |
-| O-L08-4-1 | recall | State the size limits (1/2 acre within a municipality; 160 contiguous acres outside). | 1 |
-| O-L08-4-2 | recall | List the claims that can still reach a homestead (taxes and assessments, purchase or improvement debt, construction liens; federal liens). | 1 |
-| O-L08-4-3 | understand | Explain the spouse/minor-child protections (spouse joins in deeds and mortgages; devise restrictions). | 1 |
-| O-L08-5-1 | understand | Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property). | 2 |
-| O-L08-5-2 | recall | State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days. | 3 |
-| O-L08-5-3 | recall | State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not. | 2 |
+| O-L08-1-1 | recall | Name the rights in the bundle (possession, control, enjoyment, exclusion, disposition). | 2 |
+| O-L08-1-2 | understand | Distinguish fee simple absolute, fee simple defeasible and life estates. | 3 |
+| O-L08-1-3 | understand | Explain the life tenant's rights and duties (waste) and distinguish remainder from reversion. | 6 |
+| O-L08-2-1 | understand | Distinguish estate for years, periodic tenancy, tenancy at will and tenancy at sufferance. | 7 |
+| O-L08-2-2 | understand | Distinguish gross, net, percentage, ground, graduated and index leases. | 4 |
+| O-L08-2-3 | apply | Decide whether a transfer is an assignment or a sublease and who remains liable. | 4 |
+| O-L08-3-1 | recall | State Florida's defaults: unmarried co-owners with a silent deed = tenancy in common; married couple = tenancy by the entireties. | 3 |
+| O-L08-3-2 | recall | State the four unities (PITT) and the express survivorship language Florida requires for joint tenancy. | 4 |
+| O-L08-3-3 | apply | Determine who owns a property after a co-owner dies. | 5 |
+| O-L08-4-1 | recall | State the size limits (1/2 acre within a municipality; 160 contiguous acres outside). | 4 |
+| O-L08-4-2 | recall | List the claims that can still reach a homestead (taxes and assessments, purchase or improvement debt, construction liens; federal liens). | 2 |
+| O-L08-4-3 | understand | Explain the spouse/minor-child protections (spouse joins in deeds and mortgages; devise restrictions). | 2 |
+| O-L08-5-1 | understand | Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property). | 5 |
+| O-L08-5-2 | recall | State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days. | 6 |
+| O-L08-5-3 | recall | State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not. | 3 |
 | O-L09-1-1 | understand | Distinguish voluntary transfer (deed, will) from involuntary transfer (descent, escheat, eminent domain, foreclosure, adverse possession). | 1 |
 | O-L09-1-2 | recall | State Florida adverse possession: 7 years, open, notorious, hostile, continuous, plus color of title or payment of taxes. | 1 |
 | O-L09-1-3 | understand | Distinguish testate and intestate, devise and descent. | 1 |
@@ -128,15 +128,15 @@
 | O-L11-4-1 | understand | Explain the 'AS IS' contract, the effective date and 'time is of the essence'. | 4 |
 | O-L11-4-2 | recall | List the required disclosures: radon, lead-based paint (pre-1978), property-tax disclosure, energy-efficiency brochure, flood disclosure (s. 689.302), condo/HOA documents. | 13 |
 | O-L11-4-3 | apply | Apply Johnson v. Davis: known latent defects must be disclosed even in an AS IS sale. | 3 |
-| O-L12-1-1 | understand | Distinguish the promissory note from the mortgage; mortgagor from mortgagee. | 1 |
-| O-L12-1-2 | recall | State that Florida is a lien-theory state and the 60-day satisfaction rule. | 2 |
-| O-L12-1-3 | understand | Define the common clauses (acceleration, due-on-sale, prepayment, defeasance, subordination, release, exculpatory). | 1 |
-| O-L12-2-1 | understand | Distinguish assumption (with or without novation) from taking 'subject to' a mortgage. | 2 |
-| O-L12-2-2 | recall | State that Florida foreclosure is judicial, equity of redemption ends at the sale, and there is no statutory redemption. | 1 |
-| O-L12-2-3 | understand | Compare short sale and deed in lieu of foreclosure (junior liens survive a deed in lieu). | 1 |
-| O-L12-3-1 | calculate | Compute housing-expense and total-obligation ratios using gross monthly income and PITI. | 3 |
-| O-L12-3-2 | recall | State the usual benchmarks (conventional 28/36; FHA 31/43) as course conventions. | 1 |
-| O-L12-3-3 | recall | State Florida usury limits (18% simple on loans of $500,000 or less; 25% above) and name predatory practices. | 1 |
+| O-L12-1-1 | understand | Distinguish the promissory note from the mortgage; mortgagor from mortgagee. | 4 |
+| O-L12-1-2 | recall | State that Florida is a lien-theory state and the 60-day satisfaction rule. | 4 |
+| O-L12-1-3 | understand | Define the common clauses (acceleration, due-on-sale, prepayment, defeasance, subordination, release, exculpatory). | 8 |
+| O-L12-2-1 | understand | Distinguish assumption (with or without novation) from taking 'subject to' a mortgage. | 6 |
+| O-L12-2-2 | recall | State that Florida foreclosure is judicial, equity of redemption ends at the sale, and there is no statutory redemption. | 6 |
+| O-L12-2-3 | understand | Compare short sale and deed in lieu of foreclosure (junior liens survive a deed in lieu). | 3 |
+| O-L12-3-1 | calculate | Compute housing-expense and total-obligation ratios using gross monthly income and PITI. | 7 |
+| O-L12-3-2 | recall | State the usual benchmarks (conventional 28/36; FHA 31/43) as course conventions. | 3 |
+| O-L12-3-3 | recall | State Florida usury limits (18% simple on loans of $500,000 or less; 25% above) and name predatory practices. | 7 |
 | O-L13-1-1 | understand | State that FHA insures, VA guarantees, and neither lends; private lenders lend. | 1 |
 | O-L13-1-2 | recall | State FHA's MIP and 3.5% minimum down payment, VA's funding fee and CRV, and PMI above 80% LTV. | 2 |
 | O-L13-2-1 | understand | Distinguish amortized, partially amortized (balloon), interest-only and adjustable-rate loans (index + margin, caps). | 1 |

@@ -31,6 +31,7 @@ import { questions as qf } from "../data/questions_finance.mjs";
 import { questions as qv } from "../data/questions_valuation.mjs";
 import { questions as qx } from "../data/questions_extra.mjs";
 import { questions as qba } from "../data/questions_boost_a.mjs";
+import { questions as qbb } from "../data/questions_boost_b.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK_ONLY = process.argv.includes("--check");
@@ -43,7 +44,7 @@ const err = (m) => errors.push(m);
 const warn = (m) => warnings.push(m);
 
 // ── Index ─────────────────────────────────────────────────────────────
-const questions = [...qa, ...qb, ...qp, ...qf, ...qv, ...qx, ...qba];
+const questions = [...qa, ...qb, ...qp, ...qf, ...qv, ...qx, ...qba, ...qbb];
 const chapterById = new Map(chapters.map((c) => [c.id, c]));
 const lessonById = new Map(lessonDefs.map((l) => [l.id, l]));
 const vById = new Map(verification.map((v) => [v.id, v]));
