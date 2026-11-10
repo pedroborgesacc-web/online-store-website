@@ -11,15 +11,15 @@
 | O-L01-2-1 | recall | List the five categories of real property use (residential, commercial, industrial, agricultural, special-purpose) and classify examples. | 1 |
 | O-L01-2-2 | understand | Describe the main real estate specializations (brokerage, appraisal, property management, financing, development/construction, counseling). | 1 |
 | O-L01-2-3 | recall | Explain that REALTOR® is a trademark of NAR membership, not a license, and distinguish it from the state license. | 1 |
-| O-L02-1-1 | recall | State the three elements that require a license: a real estate service, for another, for compensation. | 1 |
-| O-L02-1-2 | recall | List the real estate services named in Chapter 475 (A BAR SALE and related acts). | 1 |
-| O-L02-1-3 | apply | Decide whether a person in a scenario needs a license, paying attention to how they are paid. | 1 |
-| O-L02-2-1 | recall | List the statutory exemptions in s. 475.011. | 2 |
-| O-L02-2-2 | apply | Recognize when a change in compensation or role removes an exemption (salary vs per-transaction pay; attorney earning a commission). | 2 |
-| O-L02-3-1 | recall | State the applicant requirements (age 18, high school diploma or equivalent, SSN) and what is NOT required (citizenship, Florida residency). | 1 |
-| O-L02-3-2 | recall | State the 63-hour course, its 2-year validity for taking the exam, and the 75/100 passing score. | 1 |
-| O-L02-3-3 | understand | Explain how criminal history and false applications are treated, and what happens after a denial. | 1 |
-| O-L02-3-4 | apply | Apply the mutual recognition rules (nonresident at application, 40-question law exam, 30 to pass). | 2 |
+| O-L02-1-1 | recall | State the three elements that require a license: a real estate service, for another, for compensation. | 2 |
+| O-L02-1-2 | recall | List the real estate services named in Chapter 475 (A BAR SALE and related acts). | 2 |
+| O-L02-1-3 | apply | Decide whether a person in a scenario needs a license, paying attention to how they are paid. | 3 |
+| O-L02-2-1 | recall | List the statutory exemptions in s. 475.011. | 4 |
+| O-L02-2-2 | apply | Recognize when a change in compensation or role removes an exemption (salary vs per-transaction pay; attorney earning a commission). | 4 |
+| O-L02-3-1 | recall | State the applicant requirements (age 18, high school diploma or equivalent, SSN) and what is NOT required (citizenship, Florida residency). | 3 |
+| O-L02-3-2 | recall | State the 63-hour course, its 2-year validity for taking the exam, and the 75/100 passing score. | 4 |
+| O-L02-3-3 | understand | Explain how criminal history and false applications are treated, and what happens after a denial. | 2 |
+| O-L02-3-4 | apply | Apply the mutual recognition rules (nonresident at application, 40-question law exam, 30 to pass). | 3 |
 | O-L03-1-1 | recall | State FREC composition: 7 members, Governor + Senate, 4 brokers (5 yrs), 1 broker or sales associate (2 yrs), 2 consumer members, one member 60+, 4-year terms. | 2 |
 | O-L03-1-2 | understand | Distinguish quasi-legislative, quasi-judicial and executive/administrative powers, and which body exercises each. | 1 |
 | O-L03-1-3 | apply | Answer 'which body does X' questions: DBPR investigates; FREC disciplines; courts imprison and award damages. | 1 |
@@ -59,15 +59,15 @@
 | O-L05-4-2 | apply | Decide whether a payment is lawful (unlicensed assistant, gift from customer, rebate to a party, referral between licensees). | 6 |
 | O-L05-4-3 | recall | State the rental-list refund rules (75% if no rental, full if inaccurate, demand within 30 days). | 4 |
 | O-L05-4-4 | understand | Explain why commission rates must be negotiated individually (antitrust/price fixing). | 2 |
-| O-L06-1-1 | recall | Put the steps in order: complaint → investigation → probable cause → formal complaint → hearing → final order → appeal. | 1 |
-| O-L06-1-2 | understand | Distinguish informal and formal hearings and who presides. | 1 |
+| O-L06-1-1 | recall | Put the steps in order: complaint → investigation → probable cause → formal complaint → hearing → final order → appeal. | 4 |
+| O-L06-1-2 | understand | Distinguish informal and formal hearings and who presides. | 2 |
 | O-L06-1-3 | recall | State the 30-day appeal window to the District Court of Appeal. | 1 |
-| O-L06-2-1 | recall | State the administrative penalties and limits ($5,000 per violation; suspension up to 10 years; revocation). | 1 |
-| O-L06-2-2 | recall | State the criminal classifications (unlicensed practice: third-degree felony). | 1 |
-| O-L06-2-3 | understand | Distinguish fraud, misrepresentation, concealment, false promises, culpable negligence and breach of trust. | 2 |
+| O-L06-2-1 | recall | State the administrative penalties and limits ($5,000 per violation; suspension up to 10 years; revocation). | 4 |
+| O-L06-2-2 | recall | State the criminal classifications (unlicensed practice: third-degree felony). | 2 |
+| O-L06-2-3 | understand | Distinguish fraud, misrepresentation, concealment, false promises, culpable negligence and breach of trust. | 3 |
 | O-L06-2-4 | recall | State the 5-year record-keeping rule. | 1 |
-| O-L06-3-1 | recall | State the caps ($50,000 per transaction; $150,000 per licensee) and what is not paid. | 1 |
-| O-L06-3-2 | apply | Decide who may and may not recover from the Fund. | 1 |
+| O-L06-3-1 | recall | State the caps ($50,000 per transaction; $150,000 per licensee) and what is not paid. | 3 |
+| O-L06-3-2 | apply | Decide who may and may not recover from the Fund. | 2 |
 | O-L06-3-3 | recall | State the consequence for the licensee (automatic suspension until repaid with interest). | 1 |
 | O-L07-1-1 | recall | State the protected classes and when each was added (1866 race; 1968; sex 1974; familial status and handicap 1988). | 1 |
 | O-L07-1-2 | understand | Define blockbusting, steering and redlining and other prohibited practices. | 1 |
@@ -111,11 +111,11 @@
 | O-L09-4-3 | understand | Define encroachment and deed restriction. | 3 |
 | O-L09-5-1 | apply | Apply the fixture tests (intent, method of annexation, adaptation, relationship) and the trade-fixture rule. | 5 |
 | O-L09-5-2 | understand | Distinguish riparian and littoral rights, and accretion, erosion and avulsion. | 6 |
-| O-L10-1-1 | understand | Describe metes and bounds (POB, courses and distances), lot and block (recorded plat) and the government survey. | 2 |
-| O-L10-1-2 | recall | State that Florida's principal meridian and base line intersect in Tallahassee; a street address is not a legal description. | 1 |
-| O-L10-2-1 | recall | State township and section facts: 6 × 6 miles, 36 sections, 640 acres per section, section 1 in the northeast corner, serpentine numbering. | 1 |
-| O-L10-2-2 | calculate | Compute the acreage of an aliquot-part description, including 'and' descriptions. | 3 |
-| O-L10-2-3 | calculate | Convert between square feet, acres, square miles, feet and miles (43,560 sq ft; 5,280 ft). | 1 |
+| O-L10-1-1 | understand | Describe metes and bounds (POB, courses and distances), lot and block (recorded plat) and the government survey. | 6 |
+| O-L10-1-2 | recall | State that Florida's principal meridian and base line intersect in Tallahassee; a street address is not a legal description. | 2 |
+| O-L10-2-1 | recall | State township and section facts: 6 × 6 miles, 36 sections, 640 acres per section, section 1 in the northeast corner, serpentine numbering. | 5 |
+| O-L10-2-2 | calculate | Compute the acreage of an aliquot-part description, including 'and' descriptions. | 6 |
+| O-L10-2-3 | calculate | Convert between square feet, acres, square miles, feet and miles (43,560 sq ft; 5,280 ft). | 3 |
 | O-L11-1-1 | recall | List the essential elements of a valid contract (competent parties, offer and acceptance, legal purpose, consideration). | 2 |
 | O-L11-1-2 | understand | Distinguish bilateral/unilateral, executory/executed, express/implied; and void/voidable/unenforceable. | 9 |
 | O-L11-1-3 | recall | State the statute of frauds and the statute of limitations (5 years written, 4 years oral). | 6 |
@@ -137,34 +137,34 @@
 | O-L12-3-1 | calculate | Compute housing-expense and total-obligation ratios using gross monthly income and PITI. | 7 |
 | O-L12-3-2 | recall | State the usual benchmarks (conventional 28/36; FHA 31/43) as course conventions. | 3 |
 | O-L12-3-3 | recall | State Florida usury limits (18% simple on loans of $500,000 or less; 25% above) and name predatory practices. | 7 |
-| O-L13-1-1 | understand | State that FHA insures, VA guarantees, and neither lends; private lenders lend. | 1 |
-| O-L13-1-2 | recall | State FHA's MIP and 3.5% minimum down payment, VA's funding fee and CRV, and PMI above 80% LTV. | 2 |
-| O-L13-2-1 | understand | Distinguish amortized, partially amortized (balloon), interest-only and adjustable-rate loans (index + margin, caps). | 1 |
-| O-L13-2-2 | understand | Distinguish package, blanket, wraparound, purchase-money, home equity, reverse and construction loans. | 3 |
-| O-L13-3-1 | understand | Sort lenders and agencies into primary vs secondary market (Fannie Mae, Freddie Mac, Ginnie Mae). | 1 |
-| O-L13-3-2 | understand | Name the Fed's tools and their effect on credit. | 1 |
-| O-L13-3-3 | calculate | Compute the cost of points (1 point = 1% of the loan) and the approximate yield effect (1/8% per point, course rule of thumb). | 1 |
+| O-L13-1-1 | understand | State that FHA insures, VA guarantees, and neither lends; private lenders lend. | 2 |
+| O-L13-1-2 | recall | State FHA's MIP and 3.5% minimum down payment, VA's funding fee and CRV, and PMI above 80% LTV. | 6 |
+| O-L13-2-1 | understand | Distinguish amortized, partially amortized (balloon), interest-only and adjustable-rate loans (index + margin, caps). | 4 |
+| O-L13-2-2 | understand | Distinguish package, blanket, wraparound, purchase-money, home equity, reverse and construction loans. | 7 |
+| O-L13-3-1 | understand | Sort lenders and agencies into primary vs secondary market (Fannie Mae, Freddie Mac, Ginnie Mae). | 5 |
+| O-L13-3-2 | understand | Name the Fed's tools and their effect on credit. | 2 |
+| O-L13-3-3 | calculate | Compute the cost of points (1 point = 1% of the loan) and the approximate yield effect (1/8% per point, course rule of thumb). | 2 |
 | O-L14-1-1 | calculate | Convert between fractions, decimals and percentages without errors in decimal placement. | 1 |
-| O-L14-1-2 | calculate | Solve Part = Total × Rate for any one unknown. | 1 |
-| O-L14-1-3 | calculate | Compute percentage change using the original value as the base. | 2 |
+| O-L14-1-2 | calculate | Solve Part = Total × Rate for any one unknown. | 2 |
+| O-L14-1-3 | calculate | Compute percentage change using the original value as the base. | 3 |
 | O-L14-2-1 | calculate | Compute area of rectangles, triangles and composite shapes in square feet. | 3 |
-| O-L14-2-2 | calculate | Convert square feet ↔ square yards ↔ acres and feet ↔ yards ↔ miles; compute price per front foot. | 2 |
-| O-L14-3-1 | calculate | Compute total commission and each party's share through a chain of splits. | 2 |
-| O-L14-3-2 | calculate | Compute the sale price needed to net the seller a target amount: Price = Net ÷ (1 − rate). | 2 |
-| O-L14-4-1 | calculate | Compute profit or loss percentage on cost. | 1 |
-| O-L14-4-2 | calculate | Recover the original cost from a sale price and a profit or loss percentage (divide, do not multiply). | 2 |
-| O-L14-5-1 | calculate | Compute simple interest (I = P × R × T) and the interest/principal split of a monthly payment. | 2 |
-| O-L14-5-2 | calculate | Compute LTV using the lesser of price or appraised value, and the down payment. | 1 |
+| O-L14-2-2 | calculate | Convert square feet ↔ square yards ↔ acres and feet ↔ yards ↔ miles; compute price per front foot. | 4 |
+| O-L14-3-1 | calculate | Compute total commission and each party's share through a chain of splits. | 3 |
+| O-L14-3-2 | calculate | Compute the sale price needed to net the seller a target amount: Price = Net ÷ (1 − rate). | 3 |
+| O-L14-4-1 | calculate | Compute profit or loss percentage on cost. | 2 |
+| O-L14-4-2 | calculate | Recover the original cost from a sale price and a profit or loss percentage (divide, do not multiply). | 3 |
+| O-L14-5-1 | calculate | Compute simple interest (I = P × R × T) and the interest/principal split of a monthly payment. | 3 |
+| O-L14-5-2 | calculate | Compute LTV using the lesser of price or appraised value, and the down payment. | 2 |
 | O-L14-5-3 | calculate | Compute the cost of discount points. | 1 |
-| O-L14-6-1 | calculate | Compute deed stamps ($0.70 per $100 or portion, on the full price; Miami-Dade single-family $0.60). | 3 |
+| O-L14-6-1 | calculate | Compute deed stamps ($0.70 per $100 or portion, on the full price; Miami-Dade single-family $0.60). | 4 |
 | O-L14-6-2 | calculate | Compute note stamps ($0.35 per $100 or portion) on new and assumed mortgages (course convention). | 2 |
-| O-L14-6-3 | calculate | Compute intangible tax (0.002 × new mortgage only). | 1 |
-| O-L14-6-4 | recall | State who customarily pays each tax. | 1 |
-| O-L14-7-1 | calculate | Prorate an annual expense with the 365-day method, the buyer owning the day of closing. | 1 |
-| O-L14-7-2 | understand | Decide which party is debited and credited for items paid in arrears vs in advance. | 2 |
+| O-L14-6-3 | calculate | Compute intangible tax (0.002 × new mortgage only). | 2 |
+| O-L14-6-4 | recall | State who customarily pays each tax. | 2 |
+| O-L14-7-1 | calculate | Prorate an annual expense with the 365-day method, the buyer owning the day of closing. | 2 |
+| O-L14-7-2 | understand | Decide which party is debited and credited for items paid in arrears vs in advance. | 3 |
 | O-L14-7-3 | calculate | Prorate rent and mortgage interest. | 2 |
-| O-L14-8-1 | apply | Place each closing item as debit/credit for buyer and/or seller (single vs double entry). | 3 |
-| O-L14-8-2 | calculate | Compute the cash due from the buyer and to the seller. | 2 |
+| O-L14-8-1 | apply | Place each closing item as debit/credit for buyer and/or seller (single vs double entry). | 5 |
+| O-L14-8-2 | calculate | Compute the cash due from the buyer and to the seller. | 3 |
 | O-L15-1-1 | understand | Explain why real estate markets are local and slow to adjust; name the supply and demand factors. | 2 |
 | O-L15-1-2 | understand | Distinguish a CMA, a BPO and an appraisal, and what a licensee may charge for. | 1 |
 | O-L16-1-1 | recall | State the four elements of value (DUST) and distinguish market value, price, cost, assessed and insurable value. | 6 |
@@ -176,16 +176,16 @@
 | O-L16-4-1 | calculate | Build NOI (PGI − vacancy & collection loss − operating expenses) and apply IRV. | 8 |
 | O-L16-4-2 | calculate | Apply GRM (monthly) and GIM (annual). | 3 |
 | O-L16-4-3 | understand | Explain reconciliation and the federally related transaction rule (licensed/certified appraiser). | 5 |
-| O-L17-1-1 | understand | Explain leverage, liquidity and the types of risk. | 1 |
-| O-L17-1-2 | calculate | Compute cash flow (NOI − debt service) and cap rate. | 2 |
-| O-L17-2-1 | understand | Explain what a business brokerage transaction includes (going concern, goodwill, fixtures, inventory) and when a real estate license is needed. | 2 |
-| O-L18-1-1 | recall | State the January 1 assessment date, TRIM notice in August, VAB appeals, November bills with 4%→1% discounts, April 1 delinquency. | 2 |
+| O-L17-1-1 | understand | Explain leverage, liquidity and the types of risk. | 4 |
+| O-L17-1-2 | calculate | Compute cash flow (NOI − debt service) and cap rate. | 3 |
+| O-L17-2-1 | understand | Explain what a business brokerage transaction includes (going concern, goodwill, fixtures, inventory) and when a real estate license is needed. | 4 |
+| O-L18-1-1 | recall | State the January 1 assessment date, TRIM notice in August, VAB appeals, November bills with 4%→1% discounts, April 1 delinquency. | 6 |
 | O-L18-1-2 | understand | Explain ad valorem taxes vs special assessments and the role of tax certificates. | 1 |
-| O-L18-2-1 | recall | State the homestead exemptions ($25,000 all taxes + up to $25,000 CPI-indexed non-school above $50,000) and the $5,000 widow/blind/disabled exemption. | 2 |
-| O-L18-2-2 | recall | State the Save Our Homes cap (3% or CPI, whichever is less; portable). | 1 |
-| O-L18-2-3 | calculate | Compute a tax bill with separate school and non-school taxable values (1 mill = $1 per $1,000). | 1 |
-| O-L18-3-1 | recall | State depreciation periods (27.5 residential rental; 39 nonresidential; land never). | 1 |
-| O-L18-3-2 | understand | Distinguish a 1031 exchange (investment property, boot taxable) from the principal-residence exclusion ($250,000/$500,000; 2 of 5 years). | 2 |
+| O-L18-2-1 | recall | State the homestead exemptions ($25,000 all taxes + up to $25,000 CPI-indexed non-school above $50,000) and the $5,000 widow/blind/disabled exemption. | 3 |
+| O-L18-2-2 | recall | State the Save Our Homes cap (3% or CPI, whichever is less; portable). | 3 |
+| O-L18-2-3 | calculate | Compute a tax bill with separate school and non-school taxable values (1 mill = $1 per $1,000). | 3 |
+| O-L18-3-1 | recall | State depreciation periods (27.5 residential rental; 39 nonresidential; land never). | 3 |
+| O-L18-3-2 | understand | Distinguish a 1031 exchange (investment property, boot taxable) from the principal-residence exclusion ($250,000/$500,000; 2 of 5 years). | 4 |
 | O-L18-3-3 | understand | Explain basis, adjusted basis, capital gain and installment sales. | 1 |
 | O-L19-1-1 | understand | Distinguish police power from eminent domain (just compensation; inverse condemnation). | 1 |
 | O-L19-1-2 | understand | Distinguish variance, special exception, nonconforming use and rezoning; describe a PUD. | 2 |

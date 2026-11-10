@@ -46,7 +46,7 @@ Validation fails the build on: unknown references, duplicate ids, prerequisite c
 | `data/curriculum.mjs` | 19 chapters, 66 lessons, 187 objectives, prerequisites, manual mapping | yes |
 | `data/verification.mjs` | Verification log entries (V-01 …) | yes |
 | `data/numbers.mjs` | Exact-recall facts with conditions, exceptions, memory aids | yes |
-| `data/questions_*.mjs` | Original practice questions (267) with misconception-tagged distractors | yes |
+| `data/questions_*.mjs` | Original practice questions (627) with misconception-tagged distractors; `questions_boost_*.mjs` add 360 weighted toward the highest-value exam sections | yes |
 | `data/flashcards.mjs` | Hand-written cards (more are derived at build time) | yes |
 | `data/comparisons.mjs`, `data/glossary.mjs` | Portugal-vs-Florida knowledge base, glossary | yes |
 | `lessons/chNN.md` | Lesson text: 66 full lessons (sections 2–10 written; the app adds objectives, active recall, mastery and review) | yes |

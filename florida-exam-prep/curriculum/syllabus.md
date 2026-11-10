@@ -44,7 +44,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L02-1-1 (recall) State the three elements that require a license: a real estate service, for another, for compensation.
   - O-L02-1-2 (recall) List the real estate services named in Chapter 475 (A BAR SALE and related acts).
   - O-L02-1-3 (apply) Decide whether a person in a scenario needs a license, paying attention to how they are paid.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 7 · Numbers: —
 
 ### L02-2 · Exemptions from licensure
 
@@ -54,7 +54,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L02-2-1 (recall) List the statutory exemptions in s. 475.011.
   - O-L02-2-2 (apply) Recognize when a change in compensation or role removes an exemption (salary vs per-transaction pay; attorney earning a commission).
-- Practice questions: 4 · Numbers: —
+- Practice questions: 8 · Numbers: —
 
 ### L02-3 · Qualifying and applying for a sales associate license
 
@@ -66,7 +66,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L02-3-2 (recall) State the 63-hour course, its 2-year validity for taking the exam, and the 75/100 passing score.
   - O-L02-3-3 (understand) Explain how criminal history and false applications are treated, and what happens after a denial.
   - O-L02-3-4 (apply) Apply the mutual recognition rules (nonresident at application, 40-question law exam, 30 to pass).
-- Practice questions: 5 · Numbers: N-001, N-002, N-003, N-004, N-005, N-006, N-007
+- Practice questions: 12 · Numbers: N-001, N-002, N-003, N-004, N-005, N-006, N-007
 
 ## 3. License Law and Commission Rules
 
@@ -228,7 +228,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L06-1-1 (recall) Put the steps in order: complaint → investigation → probable cause → formal complaint → hearing → final order → appeal.
   - O-L06-1-2 (understand) Distinguish informal and formal hearings and who presides.
   - O-L06-1-3 (recall) State the 30-day appeal window to the District Court of Appeal.
-- Practice questions: 3 · Numbers: N-053
+- Practice questions: 7 · Numbers: N-053
 
 ### L06-2 · Penalties and the violation vocabulary
 
@@ -240,7 +240,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L06-2-2 (recall) State the criminal classifications (unlicensed practice: third-degree felony).
   - O-L06-2-3 (understand) Distinguish fraud, misrepresentation, concealment, false promises, culpable negligence and breach of trust.
   - O-L06-2-4 (recall) State the 5-year record-keeping rule.
-- Practice questions: 5 · Numbers: N-048, N-050, N-051, N-052
+- Practice questions: 10 · Numbers: N-048, N-050, N-051, N-052
 
 ### L06-3 · The Real Estate Recovery Fund
 
@@ -251,7 +251,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L06-3-1 (recall) State the caps ($50,000 per transaction; $150,000 per licensee) and what is not paid.
   - O-L06-3-2 (apply) Decide who may and may not recover from the Fund.
   - O-L06-3-3 (recall) State the consequence for the licensee (automatic suspension until repaid with interest).
-- Practice questions: 3 · Numbers: N-054
+- Practice questions: 6 · Numbers: N-054
 
 ## 7. Federal and State Laws Pertaining to Real Estate
 
@@ -431,7 +431,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L10-1-1 (understand) Describe metes and bounds (POB, courses and distances), lot and block (recorded plat) and the government survey.
   - O-L10-1-2 (recall) State that Florida's principal meridian and base line intersect in Tallahassee; a street address is not a legal description.
-- Practice questions: 3 · Numbers: N-105
+- Practice questions: 8 · Numbers: N-105
 
 ### L10-2 · Townships, sections and land measurement
 
@@ -442,7 +442,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L10-2-1 (recall) State township and section facts: 6 × 6 miles, 36 sections, 640 acres per section, section 1 in the northeast corner, serpentine numbering.
   - O-L10-2-2 (calculate) Compute the acreage of an aliquot-part description, including 'and' descriptions.
   - O-L10-2-3 (calculate) Convert between square feet, acres, square miles, feet and miles (43,560 sq ft; 5,280 ft).
-- Practice questions: 5 · Numbers: N-100, N-101
+- Practice questions: 14 · Numbers: N-100, N-101
 
 ## 11. Real Estate Contracts
 
@@ -541,7 +541,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L13-1-1 (understand) State that FHA insures, VA guarantees, and neither lends; private lenders lend.
   - O-L13-1-2 (recall) State FHA's MIP and 3.5% minimum down payment, VA's funding fee and CRV, and PMI above 80% LTV.
-- Practice questions: 3 · Numbers: N-123, N-124
+- Practice questions: 8 · Numbers: N-123, N-124
 
 ### L13-2 · Loan types by repayment and purpose
 
@@ -551,7 +551,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L13-2-1 (understand) Distinguish amortized, partially amortized (balloon), interest-only and adjustable-rate loans (index + margin, caps).
   - O-L13-2-2 (understand) Distinguish package, blanket, wraparound, purchase-money, home equity, reverse and construction loans.
-- Practice questions: 4 · Numbers: N-126
+- Practice questions: 11 · Numbers: N-126
 
 ### L13-3 · Primary and secondary markets, the Fed, and discount points
 
@@ -562,7 +562,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L13-3-1 (understand) Sort lenders and agencies into primary vs secondary market (Fannie Mae, Freddie Mac, Ginnie Mae).
   - O-L13-3-2 (understand) Name the Fed's tools and their effect on credit.
   - O-L13-3-3 (calculate) Compute the cost of points (1 point = 1% of the loan) and the approximate yield effect (1/8% per point, course rule of thumb).
-- Practice questions: 3 · Numbers: N-125
+- Practice questions: 9 · Numbers: N-125
 
 ## 14. Real Estate Computations and Closing of Transactions
 
@@ -577,7 +577,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L14-1-1 (calculate) Convert between fractions, decimals and percentages without errors in decimal placement.
   - O-L14-1-2 (calculate) Solve Part = Total × Rate for any one unknown.
   - O-L14-1-3 (calculate) Compute percentage change using the original value as the base.
-- Practice questions: 4 · Numbers: —
+- Practice questions: 6 · Numbers: —
 
 ### L14-2 · Area, perimeter and unit conversions
 
@@ -587,7 +587,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L14-2-1 (calculate) Compute area of rectangles, triangles and composite shapes in square feet.
   - O-L14-2-2 (calculate) Convert square feet ↔ square yards ↔ acres and feet ↔ yards ↔ miles; compute price per front foot.
-- Practice questions: 5 · Numbers: N-102, N-103, N-104
+- Practice questions: 7 · Numbers: N-102, N-103, N-104
 
 ### L14-3 · Commissions and net to seller
 
@@ -597,7 +597,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L14-3-1 (calculate) Compute total commission and each party's share through a chain of splits.
   - O-L14-3-2 (calculate) Compute the sale price needed to net the seller a target amount: Price = Net ÷ (1 − rate).
-- Practice questions: 4 · Numbers: —
+- Practice questions: 6 · Numbers: —
 
 ### L14-4 · Profit, loss and appreciation
 
@@ -607,7 +607,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L14-4-1 (calculate) Compute profit or loss percentage on cost.
   - O-L14-4-2 (calculate) Recover the original cost from a sale price and a profit or loss percentage (divide, do not multiply).
-- Practice questions: 3 · Numbers: —
+- Practice questions: 5 · Numbers: —
 
 ### L14-5 · Interest, amortization, LTV and points
 
@@ -618,7 +618,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L14-5-1 (calculate) Compute simple interest (I = P × R × T) and the interest/principal split of a monthly payment.
   - O-L14-5-2 (calculate) Compute LTV using the lesser of price or appraised value, and the down payment.
   - O-L14-5-3 (calculate) Compute the cost of discount points.
-- Practice questions: 4 · Numbers: —
+- Practice questions: 6 · Numbers: —
 
 ### L14-6 · Florida transfer taxes: documentary stamps and intangible tax
 
@@ -630,7 +630,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L14-6-2 (calculate) Compute note stamps ($0.35 per $100 or portion) on new and assumed mortgages (course convention).
   - O-L14-6-3 (calculate) Compute intangible tax (0.002 × new mortgage only).
   - O-L14-6-4 (recall) State who customarily pays each tax.
-- Practice questions: 7 · Numbers: N-130, N-131, N-132
+- Practice questions: 10 · Numbers: N-130, N-131, N-132
 
 ### L14-7 · Prorations
 
@@ -641,7 +641,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L14-7-1 (calculate) Prorate an annual expense with the 365-day method, the buyer owning the day of closing.
   - O-L14-7-2 (understand) Decide which party is debited and credited for items paid in arrears vs in advance.
   - O-L14-7-3 (calculate) Prorate rent and mortgage interest.
-- Practice questions: 5 · Numbers: N-133
+- Practice questions: 7 · Numbers: N-133
 
 ### L14-8 · The closing statement: debits and credits
 
@@ -651,7 +651,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L14-8-1 (apply) Place each closing item as debit/credit for buyer and/or seller (single vs double entry).
   - O-L14-8-2 (calculate) Compute the cash due from the buyer and to the seller.
-- Practice questions: 5 · Numbers: —
+- Practice questions: 8 · Numbers: —
 
 ## 15. The Real Estate Market and Analysis
 
@@ -724,7 +724,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L17-1-1 (understand) Explain leverage, liquidity and the types of risk.
   - O-L17-1-2 (calculate) Compute cash flow (NOI − debt service) and cap rate.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 7 · Numbers: —
 
 ### L17-2 · Business opportunity brokerage
 
@@ -733,7 +733,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Prerequisites: L17-1
 - Objectives:
   - O-L17-2-1 (understand) Explain what a business brokerage transaction includes (going concern, goodwill, fixtures, inventory) and when a real estate license is needed.
-- Practice questions: 2 · Numbers: —
+- Practice questions: 4 · Numbers: —
 
 ## 18. Taxes Affecting Real Estate
 
@@ -747,7 +747,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L18-1-1 (recall) State the January 1 assessment date, TRIM notice in August, VAB appeals, November bills with 4%→1% discounts, April 1 delinquency.
   - O-L18-1-2 (understand) Explain ad valorem taxes vs special assessments and the role of tax certificates.
-- Practice questions: 3 · Numbers: N-143
+- Practice questions: 7 · Numbers: N-143
 
 ### L18-2 · Exemptions, Save Our Homes and tax computation
 
@@ -758,7 +758,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L18-2-1 (recall) State the homestead exemptions ($25,000 all taxes + up to $25,000 CPI-indexed non-school above $50,000) and the $5,000 widow/blind/disabled exemption.
   - O-L18-2-2 (recall) State the Save Our Homes cap (3% or CPI, whichever is less; portable).
   - O-L18-2-3 (calculate) Compute a tax bill with separate school and non-school taxable values (1 mill = $1 per $1,000).
-- Practice questions: 4 · Numbers: N-140, N-141, N-142, N-144
+- Practice questions: 9 · Numbers: N-140, N-141, N-142, N-144
 
 ### L18-3 · Income taxes and real estate
 
@@ -769,7 +769,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L18-3-1 (recall) State depreciation periods (27.5 residential rental; 39 nonresidential; land never).
   - O-L18-3-2 (understand) Distinguish a 1031 exchange (investment property, boot taxable) from the principal-residence exclusion ($250,000/$500,000; 2 of 5 years).
   - O-L18-3-3 (understand) Explain basis, adjusted basis, capital gain and installment sales.
-- Practice questions: 4 · Numbers: N-145, N-146
+- Practice questions: 8 · Numbers: N-145, N-146
 
 ## 19. Planning and Zoning
 

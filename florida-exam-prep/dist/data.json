@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Florida Sales Associate Exam Prep",
-  "built": "2026-11-10T00:30:10.606Z",
+  "built": "2026-11-10T00:36:59.373Z",
   "checkedOn": "2026-10-19 and 2026-10-20",
   "summary": {
    "chapters": 19,
@@ -9,7 +9,7 @@
    "lessonsFull": 66,
    "objectives": 188,
    "objectivesWithoutQuestions": 0,
-   "questions": 531,
+   "questions": 627,
    "numeric": 44,
    "flashcards": 440,
    "numbers": 83,
@@ -17,10 +17,10 @@
    "comparisons": 23,
    "verification": 80,
    "answerPositions": [
-    63,
-    253,
-    146,
-    25
+    88,
+    294,
+    170,
+    31
    ],
    "lengthLeakPct": 0
   },
@@ -18072,6 +18072,2897 @@
     "3": [
      "CONFUSED",
      "Accession is how abandoned trade fixtures become the landlord's."
+    ]
+   }
+  },
+  {
+   "id": "Q0201-21",
+   "l": "L02-1",
+   "o": 1,
+   "d": 1,
+   "t": "mcq",
+   "q": "Which activity is NOT one of the real estate services named in Chapter 475?",
+   "c": [
+    "Auctioning real property for another",
+    "Exchanging real property for another",
+    "Repairing a house for its owner",
+    "Renting real property for another"
+   ],
+   "a": 2,
+   "ex": "The services are remembered as A BAR SALE: advertise, buy, appraise, rent, sell, auction, lease, exchange. Repair work is not a real estate service.",
+   "w": {
+    "0": [
+     "MISREAD",
+     "Auctioning is a real estate service. The question asks which is NOT."
+    ],
+    "1": [
+     "MISREAD",
+     "Exchanging is a real estate service. The question asks which is NOT."
+    ],
+    "3": [
+     "MISREAD",
+     "Renting is a real estate service. The question asks which is NOT."
+    ]
+   }
+  },
+  {
+   "id": "Q0201-22",
+   "l": "L02-1",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A homeowner advertises and sells her own house without a broker. Does she need a real estate license?",
+   "c": [
+    "Yes, because she advertised real property",
+    "Yes, because she received the sale price",
+    "No, because she is not acting for another person",
+    "No, but only if the price is under $100,000"
+   ],
+   "a": 2,
+   "ex": "A license is needed for a real estate service performed for another for compensation. An owner selling her own property is not acting for another.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "Advertising needs a license only when done for another for compensation."
+    ],
+    "1": [
+     "QUALIFIER",
+     "The price is not compensation for a service to another."
+    ],
+    "3": [
+     "RULE",
+     "No price limit applies."
+    ]
+   }
+  },
+  {
+   "id": "Q0201-23",
+   "l": "L02-1",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A man finds a buyer for his sister's condominium and negotiates the sale. He receives nothing of value and expects nothing. Does he need a license?",
+   "c": [
+    "Yes, because he negotiated a sale for another",
+    "Yes, because family members are never exempt",
+    "No, because there is no compensation",
+    "No, because condominiums are personal property"
+   ],
+   "a": 2,
+   "ex": "All three elements are required: a real estate service, for another, for compensation. Without compensation, paid or promised, no license is needed.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "Acting for another needs a license only when there is compensation."
+    ],
+    "1": [
+     "RULE",
+     "The missing element is compensation."
+    ],
+    "3": [
+     "RULE",
+     "A condominium unit is real property."
+    ]
+   }
+  },
+  {
+   "id": "Q0201-24",
+   "l": "L02-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "For licensing purposes, 'compensation' means:",
+   "c": [
+    "a commission paid in money only",
+    "anything of value, paid or promised",
+    "only amounts above $500",
+    "only payments made at closing"
+   ],
+   "a": 1,
+   "ex": "Compensation is anything of value, including something promised or expected, not only money received.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "Compensation is not limited to money."
+    ],
+    "2": [
+     "RULE",
+     "No minimum amount applies."
+    ],
+    "3": [
+     "RULE",
+     "The timing of the payment does not matter."
+    ]
+   }
+  },
+  {
+   "id": "Q0202-21",
+   "l": "L02-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A salaried manager of a condominium rents units for the owners for terms of six months. He holds no license. He is:",
+   "c": [
+    "exempt from licensure",
+    "in violation, because all rentals need a license",
+    "exempt only if he also owns a unit",
+    "in violation, unless a broker supervises him"
+   ],
+   "a": 0,
+   "ex": "Salaried managers of a condominium or cooperative are exempt when they rent units for terms of one year or less.",
+   "w": {
+    "1": [
+     "RULE",
+     "This is a statutory exemption."
+    ],
+    "2": [
+     "RULE",
+     "Owning a unit is not a condition."
+    ],
+    "3": [
+     "RULE",
+     "The exemption does not depend on a broker."
+    ]
+   }
+  },
+  {
+   "id": "Q0202-22",
+   "l": "L02-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "The same salaried condominium manager rents a unit for an owner for a term of two years. The exemption:",
+   "c": [
+    "still applies, because he is paid a fixed salary",
+    "does not apply, because the term is longer than one year",
+    "applies if the owner consents to it in writing",
+    "applies if the rent is paid monthly"
+   ],
+   "a": 1,
+   "ex": "The condominium and cooperative manager exemption covers rentals of one year or less only.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "Salary is one condition. The one-year limit is the other."
+    ],
+    "2": [
+     "RULE",
+     "Consent does not extend the exemption."
+    ],
+    "3": [
+     "RULE",
+     "How the rent is paid does not matter."
+    ]
+   }
+  },
+  {
+   "id": "Q0202-23",
+   "l": "L02-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A certified public accountant is exempt from real estate licensure when she:",
+   "c": [
+    "acts within the scope of her professional duties",
+    "sells clients' property for a commission",
+    "lists property for her firm's clients",
+    "has passed the CPA exam in any state"
+   ],
+   "a": 0,
+   "ex": "Attorneys and CPAs are exempt only while acting within their professional duties. Earning a brokerage commission requires a license.",
+   "w": {
+    "1": [
+     "RULE",
+     "Earning a commission for a sale is outside her professional duties."
+    ],
+    "2": [
+     "RULE",
+     "Listing property is a real estate service."
+    ],
+    "3": [
+     "RULE",
+     "The exemption depends on the activity, not the exam."
+    ]
+   }
+  },
+  {
+   "id": "Q0202-24",
+   "l": "L02-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "An 'attorney in fact' is:",
+   "c": [
+    "a lawyer admitted to The Florida Bar",
+    "any person acting under a power of attorney",
+    "a judge of the circuit court",
+    "a broker who holds a law degree"
+   ],
+   "a": 1,
+   "ex": "An attorney in fact is anyone holding a power of attorney. He or she is exempt only for executing contracts or conveyances for the owner.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "That is an attorney at law."
+    ],
+    "2": [
+     "RULE",
+     "A judge is not an attorney in fact."
+    ],
+    "3": [
+     "RULE",
+     "A law degree is not what defines it."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-21",
+   "l": "L02-3",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "What is the minimum age to be licensed as a Florida sales associate?",
+   "c": [
+    "16",
+    "18",
+    "19",
+    "21"
+   ],
+   "a": 1,
+   "ex": "An applicant must be at least 18, have a high school diploma or its equivalent, and have a Social Security number.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The minimum age is 18."
+    ],
+    "2": [
+     "NUMBER",
+     "The minimum age is 18."
+    ],
+    "3": [
+     "NUMBER",
+     "The minimum age is 18."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-22",
+   "l": "L02-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Must an applicant for a Florida sales associate license be a United States citizen?",
+   "c": [
+    "Yes, citizenship is required",
+    "Yes, or a resident of Florida for one year",
+    "No, citizenship is not required",
+    "No, but only citizens may become brokers"
+   ],
+   "a": 2,
+   "ex": "Neither U.S. citizenship nor Florida residency is required. A Social Security number is.",
+   "w": {
+    "0": [
+     "PT",
+     "Citizenship is not a requirement."
+    ],
+    "1": [
+     "RULE",
+     "Neither citizenship nor residency is required."
+    ],
+    "3": [
+     "RULE",
+     "There is no citizenship rule for brokers either."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-23",
+   "l": "L02-3",
+   "o": 1,
+   "d": 1,
+   "t": "mcq",
+   "q": "How long is the pre-license course for a sales associate?",
+   "c": [
+    "14 hours",
+    "45 hours",
+    "63 hours",
+    "72 hours"
+   ],
+   "a": 2,
+   "ex": "63 hours to get in, 45 hours of post-license education to stay in, 14 hours of continuing education every two years after that.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "14 hours is continuing education."
+    ],
+    "1": [
+     "CONFUSED",
+     "45 hours is the sales associate post-license course."
+    ],
+    "3": [
+     "NUMBER",
+     "The sales associate course is 63 hours."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-24",
+   "l": "L02-3",
+   "o": 1,
+   "d": 1,
+   "t": "mcq",
+   "q": "What score is needed to pass the sales associate state exam?",
+   "c": [
+    "70 out of 100",
+    "75 out of 100",
+    "80 out of 100",
+    "30 out of 40"
+   ],
+   "a": 1,
+   "ex": "The state exam has 100 questions and 75 correct answers pass.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The pass mark is 75."
+    ],
+    "2": [
+     "NUMBER",
+     "The pass mark is 75."
+    ],
+    "3": [
+     "CONFUSED",
+     "30 out of 40 is the mutual recognition law exam."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-25",
+   "l": "L02-3",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-32",
+   "q": "A sales associate application expires if the applicant has not passed the exam within:",
+   "c": [
+    "6 months after the DBPR receives it",
+    "1 year after the DBPR receives it",
+    "2 years after the DBPR receives it",
+    "5 years after the DBPR receives it"
+   ],
+   "a": 2,
+   "ex": "The application expires 2 years after the DBPR receives it if the applicant has not passed the exam. The course is also valid for 2 years.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The period is 2 years."
+    ],
+    "1": [
+     "NUMBER",
+     "The period is 2 years."
+    ],
+    "3": [
+     "CONFUSED",
+     "Five years is the record-keeping period."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-26",
+   "l": "L02-3",
+   "o": 3,
+   "d": 2,
+   "t": "mcq",
+   "q": "Mutual recognition is available to an applicant who is:",
+   "c": [
+    "a Florida resident who holds a license in any other state",
+    "a nonresident licensed in a state with a Florida agreement",
+    "any person licensed in another country",
+    "a Florida resident who failed the state exam"
+   ],
+   "a": 1,
+   "ex": "Mutual recognition is for nonresidents who hold a license in a state that has an agreement with Florida. They take a 40-question Florida law exam and need 30 correct.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "The applicant must be a nonresident when applying."
+    ],
+    "2": [
+     "RULE",
+     "The agreements are with certain U.S. states."
+    ],
+    "3": [
+     "RULE",
+     "It is not an alternative to the state exam for residents."
+    ]
+   }
+  },
+  {
+   "id": "Q0203-27",
+   "l": "L02-3",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A new sales associate has passed the exam and her license has been issued. She may start working with customers:",
+   "c": [
+    "immediately",
+    "after 30 days",
+    "once she is registered under an employing broker",
+    "once she has completed 45 hours of post-license education"
+   ],
+   "a": 2,
+   "ex": "A new license cannot be used until the associate is registered under an employing broker.",
+   "w": {
+    "0": [
+     "RULE",
+     "She must first be registered under a broker."
+    ],
+    "1": [
+     "RULE",
+     "There is no waiting period. Registration under a broker is the condition."
+    ],
+    "3": [
+     "CONFUSED",
+     "Post-license education is due before the first renewal."
+    ]
+   }
+  },
+  {
+   "id": "Q1001-21",
+   "l": "L10-1",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "In a metes-and-bounds description, POB stands for:",
+   "c": [
+    "plat of boundaries",
+    "point of beginning",
+    "parcel of the block",
+    "principal offset base"
+   ],
+   "a": 1,
+   "ex": "A metes-and-bounds description starts at the point of beginning, follows courses and distances around the parcel, and returns to the POB.",
+   "w": {
+    "0": [
+     "RULE",
+     "POB is the point of beginning."
+    ],
+    "2": [
+     "RULE",
+     "POB is the point of beginning."
+    ],
+    "3": [
+     "RULE",
+     "POB is the point of beginning."
+    ]
+   }
+  },
+  {
+   "id": "Q1001-22",
+   "l": "L10-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Which legal description is typically used for an irregularly shaped parcel?",
+   "c": [
+    "Lot and block",
+    "Metes and bounds",
+    "Street address",
+    "Tax folio number"
+   ],
+   "a": 1,
+   "ex": "Metes and bounds is used for irregular parcels. Lot and block is used in platted subdivisions.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Lot and block needs a recorded plat."
+    ],
+    "2": [
+     "RULE",
+     "A street address is never a legal description."
+    ],
+    "3": [
+     "RULE",
+     "A tax number is not one of the three legal description systems."
+    ]
+   }
+  },
+  {
+   "id": "Q1001-23",
+   "l": "L10-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "'Lot 7, Block 3, Sunny Acres, as recorded in Plat Book 12, Page 40' is a description by:",
+   "c": [
+    "metes and bounds",
+    "government survey",
+    "lot and block",
+    "monuments"
+   ],
+   "a": 2,
+   "ex": "A lot and block description refers to a lot number in a block on a recorded plat.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Metes and bounds uses a point of beginning, courses and distances."
+    ],
+    "1": [
+     "CONFUSED",
+     "The government survey uses townships and sections."
+    ],
+    "3": [
+     "RULE",
+     "The reference to a recorded plat makes it lot and block."
+    ]
+   }
+  },
+  {
+   "id": "Q1001-24",
+   "l": "L10-1",
+   "o": 1,
+   "d": 1,
+   "t": "mcq",
+   "q": "Which of the following is never an acceptable legal description?",
+   "c": [
+    "A metes-and-bounds description",
+    "A lot and block description",
+    "A street address",
+    "A government survey description"
+   ],
+   "a": 2,
+   "ex": "A street address is never a legal description. The three systems are metes and bounds, lot and block, and the government survey.",
+   "w": {
+    "0": [
+     "MISREAD",
+     "Metes and bounds is a legal description."
+    ],
+    "1": [
+     "MISREAD",
+     "Lot and block is a legal description."
+    ],
+    "3": [
+     "MISREAD",
+     "The government survey is a legal description."
+    ]
+   }
+  },
+  {
+   "id": "Q1001-25",
+   "l": "L10-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "The government survey system describes land by:",
+   "c": [
+    "courses and distances from a point of beginning",
+    "lot numbers on a recorded plat",
+    "townships and sections from a meridian and base line",
+    "street names and house numbers"
+   ],
+   "a": 2,
+   "ex": "The government (rectangular) survey uses townships and sections measured from a principal meridian and a base line. Florida's intersect in Tallahassee.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "That is metes and bounds."
+    ],
+    "1": [
+     "CONFUSED",
+     "That is lot and block."
+    ],
+    "3": [
+     "RULE",
+     "A street address is not a legal description."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-21",
+   "l": "L10-2",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "How many sections are in a township?",
+   "c": [
+    "6",
+    "16",
+    "36",
+    "640"
+   ],
+   "a": 2,
+   "ex": "A township is 6 miles by 6 miles: 36 square miles, or 36 sections.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Six miles is the length of each side."
+    ],
+    "1": [
+     "CONFUSED",
+     "Section 16 was traditionally the school section."
+    ],
+    "3": [
+     "CONFUSED",
+     "640 is the number of acres in a section."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-22",
+   "l": "L10-2",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "How many acres are in one section?",
+   "c": [
+    "36",
+    "160",
+    "640",
+    "43,560"
+   ],
+   "a": 2,
+   "ex": "A section is one mile by one mile: one square mile, or 640 acres.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "36 is the number of sections in a township."
+    ],
+    "1": [
+     "CONFUSED",
+     "160 acres is a quarter section."
+    ],
+    "3": [
+     "CONFUSED",
+     "43,560 is the number of square feet in an acre."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-23",
+   "l": "L10-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Section 36 of a township lies in which corner?",
+   "c": [
+    "Northeast",
+    "Northwest",
+    "Southeast",
+    "Southwest"
+   ],
+   "a": 2,
+   "ex": "Numbering starts with section 1 in the northeast corner, runs back and forth like a snake, and ends with section 36 in the southeast corner.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Section 1 is in the northeast."
+    ],
+    "1": [
+     "CONFUSED",
+     "Section 6 is in the northwest."
+    ],
+    "3": [
+     "CONFUSED",
+     "Section 31 is in the southwest."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-24",
+   "l": "L10-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "How many acres are in the S 1/2 of the NW 1/4 of a section?",
+   "c": [
+    "40 acres",
+    "80 acres",
+    "160 acres",
+    "320 acres"
+   ],
+   "a": 1,
+   "ex": "Divide 640 by each denominator: 640 ÷ 4 = 160, then 160 ÷ 2 = 80 acres.",
+   "w": {
+    "0": [
+     "ARITH",
+     "640 ÷ 4 ÷ 2 = 80, not 40."
+    ],
+    "2": [
+     "FORMULA",
+     "160 acres is the whole quarter. Take half of it."
+    ],
+    "3": [
+     "FORMULA",
+     "320 acres is half a section. Start from the quarter."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-25",
+   "l": "L10-2",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "How many acres are in 'the NE 1/4 of the NE 1/4 AND the S 1/2 of the SW 1/4' of a section?",
+   "c": [
+    "40 acres",
+    "80 acres",
+    "120 acres",
+    "240 acres"
+   ],
+   "a": 2,
+   "ex": "AND joins two parcels, so compute each and add. NE 1/4 of NE 1/4: 640 ÷ 4 ÷ 4 = 40. S 1/2 of SW 1/4: 640 ÷ 4 ÷ 2 = 80. Total 120 acres.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That is only the first parcel."
+    ],
+    "1": [
+     "FORMULA",
+     "That is only the second parcel."
+    ],
+    "3": [
+     "ARITH",
+     "40 + 80 = 120."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-26",
+   "l": "L10-2",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "How many square feet are in 2.5 acres?",
+   "c": [
+    "13,200",
+    "87,120",
+    "108,900",
+    "174,240"
+   ],
+   "a": 2,
+   "ex": "One acre is 43,560 square feet. 2.5 × 43,560 = 108,900.",
+   "w": {
+    "0": [
+     "UNITS",
+     "That multiplies by 5,280, the feet in a mile."
+    ],
+    "1": [
+     "ARITH",
+     "That is 2 acres."
+    ],
+    "3": [
+     "ARITH",
+     "That is 4 acres."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-27",
+   "l": "L10-2",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "A township measures:",
+   "c": [
+    "1 mile by 1 mile",
+    "6 miles by 6 miles",
+    "24 miles by 24 miles",
+    "36 miles by 36 miles"
+   ],
+   "a": 1,
+   "ex": "A township is 6 miles by 6 miles, which gives 36 sections of one square mile each.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "One mile by one mile is a section."
+    ],
+    "2": [
+     "NUMBER",
+     "A township is 6 miles on each side."
+    ],
+    "3": [
+     "CONFUSED",
+     "36 is the number of sections, not miles per side."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-28",
+   "l": "L10-2",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A rectangular parcel measures 660 feet by 1,320 feet. How many acres is it?",
+   "c": [
+    "10 acres",
+    "20 acres",
+    "40 acres",
+    "80 acres"
+   ],
+   "a": 1,
+   "ex": "660 × 1,320 = 871,200 square feet. 871,200 ÷ 43,560 = 20 acres.",
+   "w": {
+    "0": [
+     "ARITH",
+     "871,200 ÷ 43,560 = 20."
+    ],
+    "2": [
+     "ARITH",
+     "871,200 ÷ 43,560 = 20."
+    ],
+    "3": [
+     "ARITH",
+     "871,200 ÷ 43,560 = 20."
+    ]
+   }
+  },
+  {
+   "id": "Q1002-29",
+   "l": "L10-2",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "A buyer pays $5,000 per acre for the W 1/2 of the SE 1/4 of a section. What is the price?",
+   "c": [
+    "$200,000",
+    "$400,000",
+    "$800,000",
+    "$1,600,000"
+   ],
+   "a": 1,
+   "ex": "640 ÷ 4 ÷ 2 = 80 acres. 80 × $5,000 = $400,000.",
+   "w": {
+    "0": [
+     "ARITH",
+     "The parcel is 80 acres, not 40."
+    ],
+    "2": [
+     "FORMULA",
+     "That prices the whole quarter section (160 acres)."
+    ],
+    "3": [
+     "FORMULA",
+     "That prices half a section (320 acres)."
+    ]
+   }
+  },
+  {
+   "id": "Q1301-21",
+   "l": "L13-1",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "The VA's role in a VA loan is to:",
+   "c": [
+    "lend the money to the veteran",
+    "guarantee the loan made by a private lender",
+    "insure the loan with MIP",
+    "buy the loan in the secondary market"
+   ],
+   "a": 1,
+   "ex": "The FHA insures and the VA guarantees. Neither lends: the money comes from a private lender.",
+   "w": {
+    "0": [
+     "RULE",
+     "The VA does not lend."
+    ],
+    "2": [
+     "CONFUSED",
+     "Insurance with MIP is the FHA's program."
+    ],
+    "3": [
+     "CONFUSED",
+     "Fannie Mae and Freddie Mac buy loans."
+    ]
+   }
+  },
+  {
+   "id": "Q1301-22",
+   "l": "L13-1",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "Under the course figures, the minimum down payment on an FHA loan for a borrower with qualifying credit is:",
+   "c": [
+    "none (0%)",
+    "3.5%",
+    "10%",
+    "20%"
+   ],
+   "a": 1,
+   "ex": "The FHA minimum down payment is 3.5% with qualifying credit. A VA loan can have no down payment.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Zero down is possible on a VA loan."
+    ],
+    "2": [
+     "NUMBER",
+     "The course figure is 3.5%."
+    ],
+    "3": [
+     "CONFUSED",
+     "20% down avoids PMI on a conventional loan."
+    ]
+   }
+  },
+  {
+   "id": "Q1301-23",
+   "l": "L13-1",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "On a VA loan, the document that states the property's value is the:",
+   "c": [
+    "certificate of reasonable value (CRV)",
+    "mortgage insurance premium (MIP)",
+    "certificate of title",
+    "private mortgage insurance (PMI) binder"
+   ],
+   "a": 0,
+   "ex": "The VA sets value with the certificate of reasonable value. The VA now calls it a Notice of Value, but the exam answer is CRV.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "MIP is the FHA's insurance premium."
+    ],
+    "2": [
+     "RULE",
+     "A certificate of title concerns ownership, not value."
+    ],
+    "3": [
+     "CONFUSED",
+     "PMI belongs to conventional loans."
+    ]
+   }
+  },
+  {
+   "id": "Q1301-24",
+   "l": "L13-1",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "Private mortgage insurance (PMI) protects:",
+   "c": [
+    "the borrower, if she loses her job",
+    "the lender, if the borrower defaults",
+    "the seller, if the buyer does not close",
+    "the title company, against title defects"
+   ],
+   "a": 1,
+   "ex": "Mortgage insurance protects the lender against loss when a borrower defaults, even though the borrower pays for it.",
+   "w": {
+    "0": [
+     "RULE",
+     "PMI protects the lender."
+    ],
+    "2": [
+     "RULE",
+     "PMI protects the lender."
+    ],
+    "3": [
+     "CONFUSED",
+     "Title insurance covers title defects."
+    ]
+   }
+  },
+  {
+   "id": "Q1301-25",
+   "l": "L13-1",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "A buyer makes a 20% down payment on a conventional loan, so the loan-to-value ratio is exactly 80%. Under the course rule, PMI is:",
+   "c": [
+    "required, because the LTV has reached 80%",
+    "not required, because the LTV is not above 80%",
+    "required for the first five years",
+    "replaced by an FHA premium"
+   ],
+   "a": 1,
+   "ex": "PMI is required on a conventional loan when the LTV is above 80%. Exactly 80% does not trigger it.",
+   "w": {
+    "0": [
+     "QUALIFIER",
+     "The trigger is above 80%, not at 80%."
+    ],
+    "2": [
+     "RULE",
+     "No five-year rule applies."
+    ],
+    "3": [
+     "CONFUSED",
+     "FHA premiums belong to FHA loans."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-21",
+   "l": "L13-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A loan with level payments that repay the whole debt by the end of the term is:",
+   "c": [
+    "fully amortized",
+    "partially amortized",
+    "an interest-only loan",
+    "a balloon loan"
+   ],
+   "a": 0,
+   "ex": "In a fully amortized loan the payment is level. Each month the interest part falls and the principal part rises until the loan is repaid.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A partially amortized loan leaves a balloon at the end."
+    ],
+    "2": [
+     "CONFUSED",
+     "An interest-only loan leaves the whole principal due at the end."
+    ],
+    "3": [
+     "CONFUSED",
+     "A balloon loan ends with a large final payment."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-22",
+   "l": "L13-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A partially amortized loan ends with:",
+   "c": [
+    "a balloon payment",
+    "a prepayment penalty",
+    "a negative balance",
+    "a release of lien before payoff"
+   ],
+   "a": 0,
+   "ex": "The payments do not fully repay a partially amortized loan, so the remaining balance is due as a balloon payment.",
+   "w": {
+    "1": [
+     "RULE",
+     "A prepayment penalty concerns paying early."
+    ],
+    "2": [
+     "RULE",
+     "The balance is positive: it is what remains unpaid."
+    ],
+    "3": [
+     "RULE",
+     "The lien is released after payoff."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-23",
+   "l": "L13-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "In an adjustable-rate mortgage, which part stays fixed for the life of the loan?",
+   "c": [
+    "The index",
+    "The margin",
+    "The interest rate",
+    "The monthly payment"
+   ],
+   "a": 1,
+   "ex": "The ARM rate is the index plus the margin. The index moves with the market. The margin is fixed.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "The index is the part that moves."
+    ],
+    "2": [
+     "RULE",
+     "The rate changes whenever the index changes."
+    ],
+    "3": [
+     "RULE",
+     "The payment changes when the rate changes."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-24",
+   "l": "L13-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A seller agrees to take back a mortgage from the buyer for part of the purchase price. This is a:",
+   "c": [
+    "purchase-money mortgage",
+    "package mortgage",
+    "reverse mortgage",
+    "home equity line of credit"
+   ],
+   "a": 0,
+   "ex": "A purchase-money mortgage is seller financing: the seller takes back a mortgage for part of the price.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A package mortgage covers real and personal property."
+    ],
+    "2": [
+     "CONFUSED",
+     "A reverse mortgage pays an owner aged 62 or older."
+    ],
+    "3": [
+     "CONFUSED",
+     "A home equity line borrows against equity the owner already has."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-25",
+   "l": "L13-2",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "Money from a construction loan is normally paid out:",
+   "c": [
+    "in one sum at closing",
+    "in draws as the work progresses",
+    "only after the building is sold",
+    "monthly to the owner for life"
+   ],
+   "a": 1,
+   "ex": "A construction loan is paid out in draws as the work progresses. It is later replaced by permanent take-out financing.",
+   "w": {
+    "0": [
+     "RULE",
+     "Construction money is released in stages."
+    ],
+    "2": [
+     "RULE",
+     "The builder needs the money during construction."
+    ],
+    "3": [
+     "CONFUSED",
+     "That resembles a reverse mortgage."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-26",
+   "l": "L13-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "v": "V-51",
+   "q": "A homeowner signs for a home equity loan secured by her principal residence. She may rescind the loan within:",
+   "c": [
+    "24 hours",
+    "3 business days",
+    "7 calendar days",
+    "10 business days"
+   ],
+   "a": 1,
+   "ex": "A borrower has 3 business days to rescind credit secured by her principal dwelling, such as a home equity loan. The right does not apply to a loan to buy or build the home.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The period is 3 business days."
+    ],
+    "2": [
+     "NUMBER",
+     "The period is 3 business days."
+    ],
+    "3": [
+     "CONFUSED",
+     "Ten days belongs to other rules, such as the timeshare cancellation period."
+    ]
+   }
+  },
+  {
+   "id": "Q1302-27",
+   "l": "L13-2",
+   "o": 1,
+   "d": 3,
+   "t": "mcq",
+   "q": "A wraparound mortgage is workable only if the existing loan:",
+   "c": [
+    "has no due-on-sale clause",
+    "is insured by the FHA",
+    "has a balloon payment",
+    "is paid off at closing"
+   ],
+   "a": 0,
+   "ex": "A wraparound is a new junior loan that includes an existing loan, which stays in place. That works only if the existing loan has no due-on-sale clause.",
+   "w": {
+    "1": [
+     "RULE",
+     "FHA insurance is not the condition."
+    ],
+    "2": [
+     "RULE",
+     "A balloon is not the condition."
+    ],
+    "3": [
+     "RULE",
+     "In a wraparound the existing loan is not paid off."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-21",
+   "l": "L13-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Which of the following operates in the secondary mortgage market?",
+   "c": [
+    "A commercial bank",
+    "A credit union",
+    "A mortgage broker",
+    "Fannie Mae"
+   ],
+   "a": 3,
+   "ex": "Fannie Mae and Freddie Mac buy existing loans in the secondary market. Banks, credit unions, mortgage bankers and mortgage brokers deal with borrowers in the primary market.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "A bank lends to borrowers in the primary market."
+    ],
+    "1": [
+     "CONFUSED",
+     "A credit union lends in the primary market."
+    ],
+    "2": [
+     "CONFUSED",
+     "A mortgage broker arranges loans in the primary market."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-22",
+   "l": "L13-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A mortgage broker:",
+   "c": [
+    "lends its own money and then services the loans",
+    "arranges loans for borrowers but lends nothing itself",
+    "buys loans in the secondary market",
+    "guarantees FHA and VA securities"
+   ],
+   "a": 1,
+   "ex": "A mortgage broker arranges loans and lends nothing. A mortgage banker lends and often services the loans.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "That describes a mortgage banker."
+    ],
+    "2": [
+     "CONFUSED",
+     "That describes Fannie Mae and Freddie Mac."
+    ],
+    "3": [
+     "CONFUSED",
+     "That describes Ginnie Mae."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-23",
+   "l": "L13-3",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "When the Federal Reserve sells government securities, credit:",
+   "c": [
+    "becomes easier and rates tend to fall",
+    "becomes tighter and rates tend to rise",
+    "is not affected",
+    "is frozen by law"
+   ],
+   "a": 1,
+   "ex": "Selling securities takes money out of the banks, which tightens credit. Tight money means higher rates and slower real estate activity.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Buying securities eases credit. Selling tightens it."
+    ],
+    "2": [
+     "RULE",
+     "Open-market operations are the Fed's main tool."
+    ],
+    "3": [
+     "RULE",
+     "The Fed influences credit. It does not freeze it."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-24",
+   "l": "L13-3",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A buyer purchases a home for $300,000 with a $240,000 loan and pays 2 discount points. What do the points cost?",
+   "c": [
+    "$480",
+    "$2,400",
+    "$4,800",
+    "$6,000"
+   ],
+   "a": 2,
+   "ex": "One point is 1% of the loan amount. 2% × $240,000 = $4,800.",
+   "w": {
+    "0": [
+     "UNITS",
+     "2% is 0.02, not 0.002."
+    ],
+    "1": [
+     "ARITH",
+     "That is one point. The buyer pays two."
+    ],
+    "3": [
+     "FORMULA",
+     "That is 2% of the price. Points are based on the loan."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-25",
+   "l": "L13-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Ginnie Mae's function is to:",
+   "c": [
+    "make mortgage loans directly to veterans",
+    "guarantee securities backed by FHA and VA loans",
+    "set the discount rate charged to banks",
+    "license mortgage brokers"
+   ],
+   "a": 1,
+   "ex": "Ginnie Mae guarantees securities backed by FHA and VA loans. It does not lend to consumers.",
+   "w": {
+    "0": [
+     "RULE",
+     "Ginnie Mae does not lend to consumers."
+    ],
+    "2": [
+     "CONFUSED",
+     "The Federal Reserve sets the discount rate."
+    ],
+    "3": [
+     "RULE",
+     "Ginnie Mae does not license anyone."
+    ]
+   }
+  },
+  {
+   "id": "Q1303-26",
+   "l": "L13-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Disintermediation occurs when:",
+   "c": [
+    "depositors withdraw savings for better returns elsewhere",
+    "lenders sell their mortgage loans to Fannie Mae",
+    "the Fed lowers the banks' reserve requirements",
+    "a borrower refinances at a lower rate"
+   ],
+   "a": 0,
+   "ex": "Disintermediation means depositors pull money out of lending institutions for better returns, which leaves less money for mortgages.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "That is a secondary-market sale."
+    ],
+    "2": [
+     "CONFUSED",
+     "That is a Fed tool that eases credit."
+    ],
+    "3": [
+     "RULE",
+     "Refinancing is not disintermediation."
+    ]
+   }
+  },
+  {
+   "id": "Q1401-21",
+   "l": "L14-1",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A brokerage earned a commission of $7,200, which was 3% of the sale price. What was the sale price?",
+   "c": [
+    "$21,600",
+    "$216,000",
+    "$240,000",
+    "$2,400,000"
+   ],
+   "a": 2,
+   "ex": "Total = Part ÷ Rate = $7,200 ÷ 0.03 = $240,000.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That multiplies by 3. Divide the part by the rate."
+    ],
+    "1": [
+     "ARITH",
+     "7,200 ÷ 0.03 = 240,000."
+    ],
+    "3": [
+     "UNITS",
+     "3% is 0.03, not 0.003."
+    ]
+   }
+  },
+  {
+   "id": "Q1401-22",
+   "l": "L14-1",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A home bought for $250,000 is now worth $290,000. By what percentage has its value increased?",
+   "c": [
+    "13.8%",
+    "16%",
+    "40%",
+    "86.2%"
+   ],
+   "a": 1,
+   "ex": "Percentage change = change ÷ original value = $40,000 ÷ $250,000 = 16%.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That divides by the new value. Use the original value."
+    ],
+    "2": [
+     "UNITS",
+     "$40,000 is the change in dollars, not a percentage."
+    ],
+    "3": [
+     "FORMULA",
+     "That is the old value as a share of the new one."
+    ]
+   }
+  },
+  {
+   "id": "Q1402-21",
+   "l": "L14-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A room measures 18 feet by 24 feet. How many square yards of carpet does it need?",
+   "c": [
+    "16",
+    "48",
+    "144",
+    "432"
+   ],
+   "a": 1,
+   "ex": "18 × 24 = 432 square feet. 432 ÷ 9 = 48 square yards.",
+   "w": {
+    "0": [
+     "UNITS",
+     "A square yard is 9 square feet, not 27."
+    ],
+    "2": [
+     "UNITS",
+     "Divide by 9, not by 3."
+    ],
+    "3": [
+     "UNITS",
+     "432 is the area in square feet."
+    ]
+   }
+  },
+  {
+   "id": "Q1402-22",
+   "l": "L14-2",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A lot has 80 front feet and is 125 feet deep. It sells for $120,000. What is the price per front foot?",
+   "c": [
+    "$12",
+    "$960",
+    "$1,500",
+    "$10,000"
+   ],
+   "a": 2,
+   "ex": "Price per front foot = price ÷ front feet = $120,000 ÷ 80 = $1,500. The frontage is the first dimension given.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That is the price per square foot."
+    ],
+    "1": [
+     "FORMULA",
+     "That divides by the depth. Use the frontage."
+    ],
+    "3": [
+     "UNITS",
+     "10,000 is the lot's area in square feet."
+    ]
+   }
+  },
+  {
+   "id": "Q1403-21",
+   "l": "L14-3",
+   "o": 0,
+   "d": 2,
+   "t": "scn",
+   "q": "A house sells for $400,000 with a 5% commission. The two brokerages split it equally, and the selling sales associate receives 70% of her brokerage's share. How much does she earn?",
+   "c": [
+    "$7,000",
+    "$10,000",
+    "$14,000",
+    "$20,000"
+   ],
+   "a": 0,
+   "ex": "$400,000 × 5% = $20,000. Her brokerage's half is $10,000. 70% × $10,000 = $7,000.",
+   "w": {
+    "1": [
+     "FORMULA",
+     "That is her brokerage's share. She receives 70% of it."
+    ],
+    "2": [
+     "FORMULA",
+     "That is 70% of the whole commission. Her split applies to her brokerage's half."
+    ],
+    "3": [
+     "FORMULA",
+     "That is the total commission."
+    ]
+   }
+  },
+  {
+   "id": "Q1403-22",
+   "l": "L14-3",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "A seller wants to net $282,000 after paying a 6% commission. What is the lowest sale price that achieves this?",
+   "c": [
+    "$265,080",
+    "$298,920",
+    "$300,000",
+    "$316,000"
+   ],
+   "a": 2,
+   "ex": "Price = net ÷ (1 − rate) = $282,000 ÷ 0.94 = $300,000. Check: $300,000 − 6% = $282,000.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That subtracts 6% from the net."
+    ],
+    "1": [
+     "FORMULA",
+     "That adds 6% to the net. Divide by 0.94."
+    ],
+    "3": [
+     "ARITH",
+     "282,000 ÷ 0.94 = 300,000."
+    ]
+   }
+  },
+  {
+   "id": "Q1404-21",
+   "l": "L14-4",
+   "o": 0,
+   "d": 2,
+   "t": "scn",
+   "q": "An investor bought a lot for $80,000 and sold it for $100,000. What was the percentage of profit?",
+   "c": [
+    "20%",
+    "25%",
+    "80%",
+    "125%"
+   ],
+   "a": 1,
+   "ex": "Profit is measured on cost: ($100,000 − $80,000) ÷ $80,000 = 25%.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That divides by the sale price. Profit is measured on cost."
+    ],
+    "2": [
+     "FORMULA",
+     "That is cost as a share of the sale price."
+    ],
+    "3": [
+     "FORMULA",
+     "That is the sale price as a share of cost, not the profit."
+    ]
+   }
+  },
+  {
+   "id": "Q1404-22",
+   "l": "L14-4",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "A home sold for $345,000, which gave the seller a 15% profit over what she paid. What did she pay?",
+   "c": [
+    "$293,250",
+    "$300,000",
+    "$330,000",
+    "$396,750"
+   ],
+   "a": 1,
+   "ex": "Cost = sale price ÷ (1 + profit %) = $345,000 ÷ 1.15 = $300,000.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That takes 15% off the sale price. Divide by 1.15."
+    ],
+    "2": [
+     "ARITH",
+     "345,000 ÷ 1.15 = 300,000."
+    ],
+    "3": [
+     "FORMULA",
+     "That adds 15% to the sale price."
+    ]
+   }
+  },
+  {
+   "id": "Q1405-21",
+   "l": "L14-5",
+   "o": 0,
+   "d": 2,
+   "t": "scn",
+   "q": "A loan has a balance of $180,000 and an annual interest rate of 5%. How much interest is due for one month?",
+   "c": [
+    "$75",
+    "$750",
+    "$900",
+    "$9,000"
+   ],
+   "a": 1,
+   "ex": "One month's interest = balance × annual rate ÷ 12 = $180,000 × 0.05 ÷ 12 = $750.",
+   "w": {
+    "0": [
+     "UNITS",
+     "The decimal point is misplaced."
+    ],
+    "2": [
+     "ARITH",
+     "That uses 6%. The rate is 5%."
+    ],
+    "3": [
+     "UNITS",
+     "That is a full year's interest."
+    ]
+   }
+  },
+  {
+   "id": "Q1405-22",
+   "l": "L14-5",
+   "o": 1,
+   "d": 3,
+   "t": "scn",
+   "q": "A buyer agrees to pay $320,000 for a home that appraises at $300,000. The lender will lend 80% loan-to-value. How much cash must the buyer put down?",
+   "c": [
+    "$60,000",
+    "$64,000",
+    "$80,000",
+    "$240,000"
+   ],
+   "a": 2,
+   "ex": "The lender uses the lower of price and appraisal: 80% × $300,000 = $240,000. Down payment = price − loan = $320,000 − $240,000 = $80,000.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "That is 20% of the appraisal. The buyer must also cover the gap up to the price."
+    ],
+    "1": [
+     "FORMULA",
+     "That is 20% of the price. The loan is based on the lower appraisal."
+    ],
+    "3": [
+     "FORMULA",
+     "That is the loan amount."
+    ]
+   }
+  },
+  {
+   "id": "Q1406-21",
+   "l": "L14-6",
+   "o": 0,
+   "d": 2,
+   "t": "scn",
+   "v": "V-18",
+   "q": "A home outside Miami-Dade County sells for $318,450. What are the documentary stamps on the deed?",
+   "c": [
+    "$636.90",
+    "$1,114.75",
+    "$2,229.15",
+    "$2,229.50"
+   ],
+   "a": 3,
+   "ex": "Round the price up to the next $100: $318,500, which is 3,185 units. 3,185 × $0.70 = $2,229.50.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "That is the intangible tax rate (0.002)."
+    ],
+    "1": [
+     "CONFUSED",
+     "That uses the note rate of $0.35."
+    ],
+    "2": [
+     "FORMULA",
+     "The price was not rounded up to the next $100."
+    ]
+   }
+  },
+  {
+   "id": "Q1406-22",
+   "l": "L14-6",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "v": "V-19",
+   "q": "A buyer signs a new mortgage for $240,000. What is the intangible tax?",
+   "c": [
+    "$48",
+    "$480",
+    "$840",
+    "$1,680"
+   ],
+   "a": 1,
+   "ex": "Intangible tax = 0.002 × the new mortgage = 0.002 × $240,000 = $480.",
+   "w": {
+    "0": [
+     "UNITS",
+     "2 mills is 0.002, not 0.0002."
+    ],
+    "2": [
+     "CONFUSED",
+     "$840 is the note stamps at $0.35 per $100."
+    ],
+    "3": [
+     "CONFUSED",
+     "$1,680 uses the deed rate of $0.70 per $100."
+    ]
+   }
+  },
+  {
+   "id": "Q1406-23",
+   "l": "L14-6",
+   "o": 3,
+   "d": 1,
+   "t": "mcq",
+   "q": "By custom, who pays the documentary stamps on the deed?",
+   "c": [
+    "The buyer",
+    "The seller",
+    "The lender",
+    "The title company"
+   ],
+   "a": 1,
+   "ex": "By custom the seller pays the deed stamps, and the buyer pays the note stamps and the intangible tax. The contract can say otherwise.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "The buyer customarily pays the note stamps and the intangible tax."
+    ],
+    "2": [
+     "RULE",
+     "The lender does not pay the deed stamps."
+    ],
+    "3": [
+     "RULE",
+     "The title company collects the tax. It does not bear it."
+    ]
+   }
+  },
+  {
+   "id": "Q1407-21",
+   "l": "L14-7",
+   "o": 0,
+   "d": 3,
+   "t": "scn",
+   "v": "V-79",
+   "q": "Annual property taxes of $4,380 are unpaid. Closing is on June 10. Using a 365-day year, with the buyer owning the day of closing, what is the tax proration?",
+   "c": [
+    "$1,920: debit seller, credit buyer",
+    "$1,920: debit buyer, credit seller",
+    "$1,932: debit seller, credit buyer",
+    "$2,460: debit seller, credit buyer"
+   ],
+   "a": 0,
+   "ex": "Daily tax: $4,380 ÷ 365 = $12. Seller's days: January 1 to June 9 = 31 + 28 + 31 + 30 + 31 + 9 = 160. 160 × $12 = $1,920. Taxes are paid in arrears, so the seller owes the buyer.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "For unpaid taxes the seller is debited and the buyer credited."
+    ],
+    "2": [
+     "QUALIFIER",
+     "That charges the seller for June 10, which the buyer owns."
+    ],
+    "3": [
+     "FORMULA",
+     "That is the buyer's share of the year (205 days)."
+    ]
+   }
+  },
+  {
+   "id": "Q1407-22",
+   "l": "L14-7",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A duplex closes on the 16th. The seller already collected the whole month's rent from the tenant. On the closing statement, the rent for the rest of the month is a:",
+   "c": [
+    "debit to the seller and a credit to the buyer",
+    "debit to the buyer and a credit to the seller",
+    "credit to both parties",
+    "debit to the buyer only"
+   ],
+   "a": 0,
+   "ex": "Rent collected in advance belongs to the buyer for the days the buyer owns the property. The seller is debited and the buyer credited.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "The entries are reversed."
+    ],
+    "2": [
+     "RULE",
+     "A proration between the parties is a debit to one and a credit to the other."
+    ],
+    "3": [
+     "RULE",
+     "The seller, who holds the rent, is the one debited."
+    ]
+   }
+  },
+  {
+   "id": "Q1408-21",
+   "l": "L14-8",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "On the closing statement, the buyer's earnest money deposit appears as a:",
+   "c": [
+    "credit to the buyer only",
+    "debit to the buyer only",
+    "credit to the seller only",
+    "debit to the seller and a credit to the buyer"
+   ],
+   "a": 0,
+   "ex": "The deposit is money the buyer has already paid, so it is a credit to the buyer. It does not appear on the seller's side.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A debit is something the buyer owes. The deposit was already paid."
+    ],
+    "2": [
+     "RULE",
+     "The deposit is the buyer's credit."
+    ],
+    "3": [
+     "RULE",
+     "The deposit is a single entry: buyer credit only."
+    ]
+   }
+  },
+  {
+   "id": "Q1408-22",
+   "l": "L14-8",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "On the closing statement, the purchase price appears as a:",
+   "c": [
+    "debit to the buyer and a credit to the seller",
+    "credit to the buyer and a debit to the seller",
+    "debit to both parties",
+    "credit to the buyer only"
+   ],
+   "a": 0,
+   "ex": "The buyer owes the price (debit) and the seller receives it (credit).",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "The entries are reversed."
+    ],
+    "2": [
+     "RULE",
+     "The seller receives the price."
+    ],
+    "3": [
+     "RULE",
+     "The buyer owes the price."
+    ]
+   }
+  },
+  {
+   "id": "Q1408-23",
+   "l": "L14-8",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A buyer's debits on the closing statement total $312,000 and her credits total $262,000. How much cash must she bring to closing?",
+   "c": [
+    "$50,000",
+    "$262,000",
+    "$312,000",
+    "$574,000"
+   ],
+   "a": 0,
+   "ex": "Cash due from the buyer = buyer's debits − buyer's credits = $312,000 − $262,000 = $50,000.",
+   "w": {
+    "1": [
+     "FORMULA",
+     "That is her total credits."
+    ],
+    "2": [
+     "FORMULA",
+     "That is her total debits."
+    ],
+    "3": [
+     "FORMULA",
+     "Debits and credits are subtracted, not added."
+    ]
+   }
+  },
+  {
+   "id": "Q1801-21",
+   "l": "L18-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "The TRIM notice that property owners receive around August is:",
+   "c": [
+    "the annual tax bill",
+    "a notice of proposed property taxes",
+    "a notice that the taxes are delinquent",
+    "a tax certificate"
+   ],
+   "a": 1,
+   "ex": "The TRIM notice shows the proposed taxes and values. It is not a bill. The bills go out from November 1.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "The bill comes in November."
+    ],
+    "2": [
+     "CONFUSED",
+     "Taxes become delinquent on April 1."
+    ],
+    "3": [
+     "CONFUSED",
+     "A tax certificate is sold after taxes become delinquent."
+    ]
+   }
+  },
+  {
+   "id": "Q1801-22",
+   "l": "L18-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Unpaid Florida property taxes generally become delinquent on:",
+   "c": [
+    "January 1",
+    "March 31",
+    "April 1",
+    "November 1"
+   ],
+   "a": 2,
+   "ex": "Taxes are due November 1 and become delinquent on April 1 of the following year.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "January 1 is the assessment date."
+    ],
+    "1": [
+     "NUMBER",
+     "March 31 is the last day to pay without being delinquent."
+    ],
+    "3": [
+     "CONFUSED",
+     "November 1 is when taxes become due."
+    ]
+   }
+  },
+  {
+   "id": "Q1801-23",
+   "l": "L18-1",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "A homeowner pays the property tax bill in November. What discount does she receive?",
+   "c": [
+    "1%",
+    "2%",
+    "3%",
+    "4%"
+   ],
+   "a": 3,
+   "ex": "The discounts are 4% in November, 3% in December, 2% in January and 1% in February. There is no discount in March.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "1% is the February discount."
+    ],
+    "1": [
+     "CONFUSED",
+     "2% is the January discount."
+    ],
+    "2": [
+     "CONFUSED",
+     "3% is the December discount."
+    ]
+   }
+  },
+  {
+   "id": "Q1801-24",
+   "l": "L18-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "An owner who disagrees with the assessed value of her property may petition the:",
+   "c": [
+    "Florida Real Estate Commission",
+    "county value adjustment board",
+    "tax collector",
+    "DBPR"
+   ],
+   "a": 1,
+   "ex": "Assessment appeals are heard by the county value adjustment board (VAB).",
+   "w": {
+    "0": [
+     "RULE",
+     "The FREC regulates licensees."
+    ],
+    "2": [
+     "CONFUSED",
+     "The tax collector collects the tax. It does not hear appeals."
+    ],
+    "3": [
+     "RULE",
+     "The DBPR has no role in property assessments."
+    ]
+   }
+  },
+  {
+   "id": "Q1802-21",
+   "l": "L18-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "To receive the homestead tax exemption for a tax year, the owner must own and occupy the home as a permanent residence on:",
+   "c": [
+    "January 1",
+    "April 1",
+    "July 1",
+    "November 1"
+   ],
+   "a": 0,
+   "ex": "Homestead status is decided as of January 1 of the tax year.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "April 1 is the delinquency date."
+    ],
+    "2": [
+     "NUMBER",
+     "The date is January 1."
+    ],
+    "3": [
+     "CONFUSED",
+     "November 1 is when taxes become due."
+    ]
+   }
+  },
+  {
+   "id": "Q1802-22",
+   "l": "L18-2",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-67",
+   "q": "Under Save Our Homes, the assessed value of a homestead may rise each year by no more than:",
+   "c": [
+    "3% or the change in the CPI, whichever is less",
+    "3% or the change in the CPI, whichever is more",
+    "10%",
+    "the change in market value"
+   ],
+   "a": 0,
+   "ex": "The yearly increase in a homestead's assessed value is capped at 3% or the change in the CPI, whichever is less. A sale resets the assessment to just value.",
+   "w": {
+    "1": [
+     "QUALIFIER",
+     "It is the lower of the two."
+    ],
+    "2": [
+     "NUMBER",
+     "The homestead cap is 3% or the CPI change."
+    ],
+    "3": [
+     "RULE",
+     "The cap exists so the assessment does not follow market value."
+    ]
+   }
+  },
+  {
+   "id": "Q1802-23",
+   "l": "L18-2",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A property has a taxable value of $180,000 and the total millage rate is 20 mills. What is the annual tax?",
+   "c": [
+    "$360",
+    "$3,600",
+    "$9,000",
+    "$36,000"
+   ],
+   "a": 1,
+   "ex": "Tax = taxable value × mills ÷ 1,000 = $180,000 × 20 ÷ 1,000 = $3,600.",
+   "w": {
+    "0": [
+     "UNITS",
+     "One mill is $1 per $1,000, so divide by 1,000, not 10,000."
+    ],
+    "2": [
+     "ARITH",
+     "180,000 × 20 ÷ 1,000 = 3,600."
+    ],
+    "3": [
+     "UNITS",
+     "Divide by 1,000, not by 100."
+    ]
+   }
+  },
+  {
+   "id": "Q1802-24",
+   "l": "L18-2",
+   "o": 2,
+   "d": 3,
+   "t": "scn",
+   "q": "A homestead is assessed at $100,000. The school millage is 6 mills and the non-school millage is 10 mills. Using the $25,000 exemptions, what is the tax?",
+   "c": [
+    "$800",
+    "$950",
+    "$1,200",
+    "$1,600"
+   ],
+   "a": 1,
+   "ex": "School taxable value: $100,000 − $25,000 = $75,000; × 6 mills = $450. Non-school taxable value: $100,000 − $50,000 = $50,000; × 10 mills = $500. Total $950.",
+   "w": {
+    "0": [
+     "FORMULA",
+     "The second $25,000 exemption does not apply to school taxes."
+    ],
+    "2": [
+     "FORMULA",
+     "The second $25,000 exemption was left off the non-school taxes."
+    ],
+    "3": [
+     "FORMULA",
+     "No exemption was applied."
+    ]
+   }
+  },
+  {
+   "id": "Q1802-25",
+   "l": "L18-2",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "A homestead owner who moves may transfer the Save Our Homes benefit to a new Florida homestead if it is established within:",
+   "c": [
+    "1 year",
+    "2 years",
+    "3 years",
+    "5 years"
+   ],
+   "a": 2,
+   "ex": "The Save Our Homes benefit is portable: up to $500,000 may be transferred to a new homestead established within 3 years.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The period is 3 years."
+    ],
+    "1": [
+     "NUMBER",
+     "Two years is the old figure. It is now 3."
+    ],
+    "3": [
+     "NUMBER",
+     "The period is 3 years."
+    ]
+   }
+  },
+  {
+   "id": "Q1803-21",
+   "l": "L18-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-77",
+   "q": "For income tax purposes, a nonresidential building such as an office is depreciated over:",
+   "c": [
+    "15 years",
+    "27.5 years",
+    "31.5 years",
+    "39 years"
+   ],
+   "a": 3,
+   "ex": "Residential rental property is depreciated over 27.5 years and nonresidential property over 39 years, straight-line. Land is never depreciated.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The period is 39 years."
+    ],
+    "1": [
+     "CONFUSED",
+     "27.5 years is for residential rental property."
+    ],
+    "2": [
+     "NUMBER",
+     "31.5 years is an outdated figure."
+    ]
+   }
+  },
+  {
+   "id": "Q1803-22",
+   "l": "L18-3",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-78",
+   "q": "A single taxpayer who qualifies may exclude from income tax a gain on the sale of her principal residence of up to:",
+   "c": [
+    "$125,000",
+    "$250,000",
+    "$500,000",
+    "$1,000,000"
+   ],
+   "a": 1,
+   "ex": "The exclusion is $250,000 for a single taxpayer and $500,000 for a married couple filing jointly.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The figure is $250,000."
+    ],
+    "2": [
+     "CONFUSED",
+     "$500,000 is for a married couple filing jointly."
+    ],
+    "3": [
+     "NUMBER",
+     "The figure is $250,000."
+    ]
+   }
+  },
+  {
+   "id": "Q1803-23",
+   "l": "L18-3",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-78",
+   "q": "To use the principal-residence exclusion, the seller must have owned and lived in the home for at least:",
+   "c": [
+    "1 of the last 2 years",
+    "2 of the last 5 years",
+    "3 of the last 5 years",
+    "5 of the last 10 years"
+   ],
+   "a": 1,
+   "ex": "The seller must have owned and used the home as a principal residence for 2 of the 5 years before the sale.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The test is 2 of the last 5 years."
+    ],
+    "2": [
+     "NUMBER",
+     "The test is 2 of the last 5 years."
+    ],
+    "3": [
+     "NUMBER",
+     "The test is 2 of the last 5 years."
+    ]
+   }
+  },
+  {
+   "id": "Q1803-24",
+   "l": "L18-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-77",
+   "q": "For income tax depreciation, land is:",
+   "c": [
+    "depreciated over 27.5 years",
+    "depreciated over 39 years",
+    "never depreciated",
+    "depreciated only if it is vacant"
+   ],
+   "a": 2,
+   "ex": "Only improvements are depreciated. Land is never depreciated.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "27.5 years is for residential rental buildings."
+    ],
+    "1": [
+     "CONFUSED",
+     "39 years is for nonresidential buildings."
+    ],
+    "3": [
+     "RULE",
+     "Land is never depreciated."
+    ]
+   }
+  },
+  {
+   "id": "Q0601-21",
+   "l": "L06-1",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "Who investigates a complaint filed against a real estate licensee?",
+   "c": [
+    "The FREC",
+    "The DBPR",
+    "The local REALTOR association",
+    "The circuit court"
+   ],
+   "a": 1,
+   "ex": "The DBPR investigates, the probable cause panel screens, the FREC decides, and the court reviews on appeal.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "The FREC decides the case. It does not investigate."
+    ],
+    "2": [
+     "RULE",
+     "A trade association has no role in license discipline."
+    ],
+    "3": [
+     "RULE",
+     "The courts come in only on appeal."
+    ]
+   }
+  },
+  {
+   "id": "Q0601-22",
+   "l": "L06-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A probable cause panel must have at least:",
+   "c": [
+    "2 members, including at least 1 current FREC member",
+    "3 members, all of whom are current FREC members",
+    "5 members appointed by the Governor",
+    "7 members, the full Commission"
+   ],
+   "a": 0,
+   "ex": "The panel has at least 2 members, at least 1 of them a current FREC member, and decides by majority vote.",
+   "w": {
+    "1": [
+     "NUMBER",
+     "The minimum is 2 members, with at least 1 current FREC member."
+    ],
+    "2": [
+     "NUMBER",
+     "The minimum is 2 members."
+    ],
+    "3": [
+     "CONFUSED",
+     "Seven is the size of the whole FREC."
+    ]
+   }
+  },
+  {
+   "id": "Q0601-23",
+   "l": "L06-1",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A licensee receives a formal complaint and does not dispute the facts. The case is heard:",
+   "c": [
+    "at an informal hearing before the FREC",
+    "at a formal hearing before an administrative law judge",
+    "by a jury in circuit court",
+    "by the probable cause panel"
+   ],
+   "a": 0,
+   "ex": "If the facts are agreed, the case goes to an informal hearing before the FREC. If the facts are disputed, it goes to a formal hearing before an administrative law judge.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A formal hearing is for disputed facts."
+    ],
+    "2": [
+     "RULE",
+     "License discipline is administrative, not a jury matter."
+    ],
+    "3": [
+     "RULE",
+     "The panel has already done its work before the formal complaint."
+    ]
+   }
+  },
+  {
+   "id": "Q0601-24",
+   "l": "L06-1",
+   "o": 0,
+   "d": 2,
+   "t": "scn",
+   "q": "During an investigation, the person who filed the complaint withdraws it. The DBPR:",
+   "c": [
+    "must close the case at once",
+    "may continue the investigation",
+    "must refer the case to the circuit court",
+    "must pay the licensee's legal costs"
+   ],
+   "a": 1,
+   "ex": "A withdrawn complaint does not close the case. The DBPR may continue.",
+   "w": {
+    "0": [
+     "RULE",
+     "Withdrawal does not end the case."
+    ],
+    "2": [
+     "RULE",
+     "No referral to court is required."
+    ],
+    "3": [
+     "RULE",
+     "No such duty exists."
+    ]
+   }
+  },
+  {
+   "id": "Q0602-21",
+   "l": "L06-2",
+   "o": 0,
+   "d": 1,
+   "t": "mcq",
+   "q": "The longest period for which the FREC may suspend a license is:",
+   "c": [
+    "1 year",
+    "5 years",
+    "10 years",
+    "life"
+   ],
+   "a": 2,
+   "ex": "The FREC may fine up to $5,000 per violation, suspend a license for up to 10 years, or revoke it.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The maximum suspension is 10 years."
+    ],
+    "1": [
+     "CONFUSED",
+     "Five years is the record-keeping period."
+    ],
+    "3": [
+     "CONFUSED",
+     "A permanent loss of the license is a revocation, not a suspension."
+    ]
+   }
+  },
+  {
+   "id": "Q0602-22",
+   "l": "L06-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Which penalty can the FREC NOT impose?",
+   "c": [
+    "A fine of $5,000 per violation",
+    "Probation",
+    "A reprimand",
+    "Imprisonment"
+   ],
+   "a": 3,
+   "ex": "The FREC may deny, reprimand, fine, place on probation, suspend or revoke. Only a court can imprison or award damages.",
+   "w": {
+    "0": [
+     "MISREAD",
+     "The FREC may fine. The question asks what it can NOT do."
+    ],
+    "1": [
+     "MISREAD",
+     "The FREC may impose probation. The question asks what it can NOT do."
+    ],
+    "2": [
+     "MISREAD",
+     "The FREC may reprimand. The question asks what it can NOT do."
+    ]
+   }
+  },
+  {
+   "id": "Q0602-23",
+   "l": "L06-2",
+   "o": 2,
+   "d": 2,
+   "t": "scn",
+   "q": "A seller's licensee knows the roof leaks, paints over the water stains and says nothing to buyers. This is:",
+   "c": [
+    "concealment",
+    "a false promise",
+    "culpable negligence",
+    "puffing"
+   ],
+   "a": 0,
+   "ex": "Concealment is hiding a material fact. Misrepresentation is stating a false fact, and a false promise is a promise made to induce someone to act.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A false promise is a promise made to induce action."
+    ],
+    "2": [
+     "CONFUSED",
+     "Culpable negligence is reckless indifference."
+    ],
+    "3": [
+     "RULE",
+     "Hiding a known defect is not sales talk."
+    ]
+   }
+  },
+  {
+   "id": "Q0602-24",
+   "l": "L06-2",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "Apart from practicing without a license, most violations of s. 475.42(1) are:",
+   "c": [
+    "second-degree misdemeanors",
+    "first-degree misdemeanors",
+    "third-degree felonies",
+    "noncriminal infractions"
+   ],
+   "a": 0,
+   "ex": "Most s. 475.42(1) violations are second-degree misdemeanors. Unlicensed practice is a third-degree felony, and rental-list violations are first-degree misdemeanors.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "First-degree applies to rental-list violations."
+    ],
+    "2": [
+     "CONFUSED",
+     "A third-degree felony is the penalty for unlicensed practice."
+    ],
+    "3": [
+     "RULE",
+     "They are crimes."
+    ]
+   }
+  },
+  {
+   "id": "Q0602-25",
+   "l": "L06-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "v": "V-35",
+   "q": "A licensee who is convicted of a crime, or pleads guilty or nolo contendere to one, must report it within:",
+   "c": [
+    "10 days",
+    "30 days",
+    "60 days",
+    "90 days"
+   ],
+   "a": 1,
+   "ex": "A licensee must report a conviction, finding of guilt, or plea of guilty or nolo contendere to any crime within 30 days.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Ten days is the time to report a change of address."
+    ],
+    "2": [
+     "NUMBER",
+     "The period is 30 days."
+    ],
+    "3": [
+     "NUMBER",
+     "The period is 30 days."
+    ]
+   }
+  },
+  {
+   "id": "Q0603-21",
+   "l": "L06-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "The most the Real Estate Recovery Fund will pay for all claims against one licensee is:",
+   "c": [
+    "$25,000",
+    "$50,000",
+    "$100,000",
+    "$150,000"
+   ],
+   "a": 3,
+   "ex": "The Fund pays up to $50,000 per transaction and up to $150,000 for all claims against one licensee.",
+   "w": {
+    "0": [
+     "NUMBER",
+     "The per-licensee cap is $150,000."
+    ],
+    "1": [
+     "CONFUSED",
+     "$50,000 is the cap per transaction."
+    ],
+    "2": [
+     "NUMBER",
+     "The per-licensee cap is $150,000."
+    ]
+   }
+  },
+  {
+   "id": "Q0603-22",
+   "l": "L06-3",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "From the Real Estate Recovery Fund, a claimant may recover:",
+   "c": [
+    "actual or compensatory damages only",
+    "treble damages",
+    "attorney's fees and court costs",
+    "interest on the judgment"
+   ],
+   "a": 0,
+   "ex": "The Fund pays actual or compensatory damages only. It does not pay treble or punitive damages, attorney's fees, court costs or interest.",
+   "w": {
+    "1": [
+     "RULE",
+     "Treble damages are not paid."
+    ],
+    "2": [
+     "RULE",
+     "Fees and costs are not paid."
+    ],
+    "3": [
+     "RULE",
+     "Interest is not paid."
+    ]
+   }
+  },
+  {
+   "id": "Q0603-23",
+   "l": "L06-3",
+   "o": 1,
+   "d": 2,
+   "t": "mcq",
+   "q": "Before claiming from the Real Estate Recovery Fund, a member of the public must first:",
+   "c": [
+    "file a written complaint with the local REALTOR association",
+    "obtain a court judgment against the licensee and fail to collect it",
+    "wait at least five years from the date of the transaction",
+    "obtain an escrow disbursement order from the FREC"
+   ],
+   "a": 1,
+   "ex": "The claimant must first obtain a judgment against the licensee and be unable to collect it. Only then may she claim from the Fund.",
+   "w": {
+    "0": [
+     "RULE",
+     "A trade association is not part of the process."
+    ],
+    "2": [
+     "RULE",
+     "No five-year wait applies."
+    ],
+    "3": [
+     "CONFUSED",
+     "An EDO concerns disputed escrow deposits."
+    ]
+   }
+  },
+  {
+   "id": "Q1701-21",
+   "l": "L17-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "Real estate is called an illiquid investment because it:",
+   "c": [
+    "cannot be turned into cash quickly",
+    "pays no regular income to its owner",
+    "cannot be bought with borrowed money",
+    "is certain to lose value every year"
+   ],
+   "a": 0,
+   "ex": "Liquidity is how fast an asset can be turned into cash. Real estate takes time to sell, so it is illiquid.",
+   "w": {
+    "1": [
+     "RULE",
+     "Income is one of real estate's advantages."
+    ],
+    "2": [
+     "RULE",
+     "Real estate is commonly financed, which is leverage."
+    ],
+    "3": [
+     "RULE",
+     "Appreciation is one of its advantages."
+    ]
+   }
+  },
+  {
+   "id": "Q1701-22",
+   "l": "L17-1",
+   "o": 1,
+   "d": 2,
+   "t": "scn",
+   "q": "A property has net operating income of $90,000 and annual debt service of $62,000. What is the before-tax cash flow?",
+   "c": [
+    "$28,000",
+    "$62,000",
+    "$90,000",
+    "$152,000"
+   ],
+   "a": 0,
+   "ex": "Cash flow = NOI − debt service = $90,000 − $62,000 = $28,000.",
+   "w": {
+    "1": [
+     "FORMULA",
+     "That is the debt service."
+    ],
+    "2": [
+     "FORMULA",
+     "That is the NOI, before debt service."
+    ],
+    "3": [
+     "FORMULA",
+     "Debt service is subtracted, not added."
+    ]
+   }
+  },
+  {
+   "id": "Q1701-23",
+   "l": "L17-1",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "The risk that comes from using borrowed money to buy an investment is:",
+   "c": [
+    "business risk",
+    "financial risk",
+    "market risk",
+    "liquidity risk"
+   ],
+   "a": 1,
+   "ex": "Financial risk is the risk created by debt. The other risks are business, market, interest-rate and liquidity risk.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "Business risk comes from the property's own operations."
+    ],
+    "2": [
+     "CONFUSED",
+     "Market risk comes from changes in the market."
+    ],
+    "3": [
+     "CONFUSED",
+     "Liquidity risk is the difficulty of selling quickly."
+    ]
+   }
+  },
+  {
+   "id": "Q1701-24",
+   "l": "L17-1",
+   "o": 0,
+   "d": 3,
+   "t": "mcq",
+   "q": "Leverage is positive when:",
+   "c": [
+    "the property's return is higher than the loan's cost",
+    "the loan-to-value ratio is higher than 80%",
+    "the down payment is larger than the loan amount",
+    "the property has no vacancy"
+   ],
+   "a": 0,
+   "ex": "Leverage helps only if the property's percentage return (NOI ÷ price) is higher than the loan's percentage cost (debt service ÷ loan). Otherwise it works against the investor.",
+   "w": {
+    "1": [
+     "RULE",
+     "A high LTV does not make leverage positive."
+    ],
+    "2": [
+     "RULE",
+     "The size of the down payment is not the test."
+    ],
+    "3": [
+     "RULE",
+     "Vacancy is not the test."
+    ]
+   }
+  },
+  {
+   "id": "Q1702-21",
+   "l": "L17-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "In the sale of a business, the equipment and inventory are transferred by a:",
+   "c": [
+    "deed",
+    "bill of sale",
+    "lease",
+    "satisfaction"
+   ],
+   "a": 1,
+   "ex": "Real property is transferred by deed, equipment and inventory by a bill of sale, and a lease is assigned under its own terms.",
+   "w": {
+    "0": [
+     "CONFUSED",
+     "A deed transfers real property."
+    ],
+    "2": [
+     "CONFUSED",
+     "A lease gives possession. It does not transfer ownership of goods."
+    ],
+    "3": [
+     "CONFUSED",
+     "A satisfaction records the payoff of a mortgage."
+    ]
+   }
+  },
+  {
+   "id": "Q1702-22",
+   "l": "L17-2",
+   "o": 0,
+   "d": 2,
+   "t": "mcq",
+   "q": "A business sold as an operating enterprise, with its goodwill, fixtures, equipment and inventory, is sold as a:",
+   "c": [
+    "going concern",
+    "liquidation",
+    "net lease",
+    "joint venture"
+   ],
+   "a": 0,
+   "ex": "A going concern is an operating business: goodwill, fixtures, equipment and inventory, plus the real estate or the lease.",
+   "w": {
+    "1": [
+     "CONFUSED",
+     "A liquidation sells the assets of a business that is closing."
+    ],
+    "2": [
+     "CONFUSED",
+     "A net lease is a type of lease."
+    ],
+    "3": [
+     "CONFUSED",
+     "A joint venture is a form of co-investment."
     ]
    }
   }
