@@ -33,20 +33,20 @@
 | O-L03-4-1 | recall | State the 10-day address-change notice and the 30-day duty to report a conviction or plea (including nolo contendere). | 2 |
 | O-L03-4-2 | apply | Recognize that a sales associate cannot perform services between brokers until the change is registered. | 1 |
 | O-L03-4-3 | recall | State that a sales associate may hold only one license and work for one employer at a time. | 1 |
-| O-L04-1-1 | recall | Name the three authorized relationships and state that transaction broker is presumed unless another is established in writing. | 1 |
-| O-L04-1-2 | understand | Explain why dual agency is illegal in Florida and the lawful alternative for working both sides. | 1 |
-| O-L04-1-3 | understand | Distinguish a principal (single agent) from a customer (transaction broker / no relationship). | 1 |
-| O-L04-2-1 | recall | List the 3 duties owed with no brokerage relationship. | 1 |
-| O-L04-2-2 | recall | List the 7 transaction-broker duties, including what limited confidentiality protects. | 1 |
-| O-L04-2-3 | recall | List the 9 single-agent duties and the four that belong only to the single agent (loyalty, obedience, full confidentiality, full disclosure). | 2 |
-| O-L04-2-4 | apply | Match a described duty to the relationship that owes it. | 1 |
-| O-L04-3-1 | recall | State when the Single Agent Notice and the No Brokerage Relationship Notice must be given; transaction broker needs no notice. | 2 |
-| O-L04-3-2 | understand | Explain the Consent to Transition to Transaction Broker and when it is used. | 1 |
-| O-L04-3-3 | recall | Define 'residential sale' (≤4 units; unimproved for ≤4 units; agricultural ≤10 acres). | 1 |
-| O-L04-3-4 | apply | Identify situations where disclosure is not required (represented party, open house, casual encounter, general questions, auctions, appraisals, leases without option, business sales). | 2 |
-| O-L04-4-1 | apply | Decide whether a fact must be disclosed (latent material defect vs stigma such as death or HIV status). | 2 |
-| O-L04-4-2 | recall | State the designated sales associate conditions: nonresidential, buyer and seller each with assets of $1 million or more, written request/disclosures. | 1 |
-| O-L04-4-3 | understand | List how brokerage relationships end and which duties survive termination. | 1 |
+| O-L04-1-1 | recall | Name the three authorized relationships and state that transaction broker is presumed unless another is established in writing. | 3 |
+| O-L04-1-2 | understand | Explain why dual agency is illegal in Florida and the lawful alternative for working both sides. | 3 |
+| O-L04-1-3 | understand | Distinguish a principal (single agent) from a customer (transaction broker / no relationship). | 4 |
+| O-L04-2-1 | recall | List the 3 duties owed with no brokerage relationship. | 2 |
+| O-L04-2-2 | recall | List the 7 transaction-broker duties, including what limited confidentiality protects. | 5 |
+| O-L04-2-3 | recall | List the 9 single-agent duties and the four that belong only to the single agent (loyalty, obedience, full confidentiality, full disclosure). | 5 |
+| O-L04-2-4 | apply | Match a described duty to the relationship that owes it. | 3 |
+| O-L04-3-1 | recall | State when the Single Agent Notice and the No Brokerage Relationship Notice must be given; transaction broker needs no notice. | 4 |
+| O-L04-3-2 | understand | Explain the Consent to Transition to Transaction Broker and when it is used. | 2 |
+| O-L04-3-3 | recall | Define 'residential sale' (≤4 units; unimproved for ≤4 units; agricultural ≤10 acres). | 2 |
+| O-L04-3-4 | apply | Identify situations where disclosure is not required (represented party, open house, casual encounter, general questions, auctions, appraisals, leases without option, business sales). | 4 |
+| O-L04-4-1 | apply | Decide whether a fact must be disclosed (latent material defect vs stigma such as death or HIV status). | 3 |
+| O-L04-4-2 | recall | State the designated sales associate conditions: nonresidential, buyer and seller each with assets of $1 million or more, written request/disclosures. | 3 |
+| O-L04-4-3 | understand | List how brokerage relationships end and which duties survive termination. | 3 |
 | O-L05-1-1 | recall | State where escrow may be held and the interest-bearing account consent rule. | 3 |
 | O-L05-1-2 | calculate | Compute the sales associate's and broker's deposit deadlines (next business day; end of third business day) from a receipt date. | 6 |
 | O-L05-1-3 | recall | State the broker's personal-funds limits ($1,000 sales; $5,000 property management) and define commingling and conversion. | 5 |
@@ -98,19 +98,19 @@
 | O-L08-5-1 | understand | Distinguish condominium (real property, unit + undivided share) from cooperative (shares + proprietary lease = personal property). | 5 |
 | O-L08-5-2 | recall | State the cancellation periods: developer condo 15 days; resale condo 7 days excluding weekends and holidays (since July 2025; older texts 3 business days); timeshare 10 days. | 6 |
 | O-L08-5-3 | recall | State that an HOA disclosure summary must be given before contract, and the buyer's 3-day voiding right if it was not. | 3 |
-| O-L09-1-1 | understand | Distinguish voluntary transfer (deed, will) from involuntary transfer (descent, escheat, eminent domain, foreclosure, adverse possession). | 1 |
-| O-L09-1-2 | recall | State Florida adverse possession: 7 years, open, notorious, hostile, continuous, plus color of title or payment of taxes. | 1 |
-| O-L09-1-3 | understand | Distinguish testate and intestate, devise and descent. | 1 |
-| O-L09-2-1 | understand | Rank deeds by protection (general warranty, special warranty, bargain and sale, quitclaim) and state what each warrants. | 2 |
-| O-L09-2-2 | recall | List the requirements of a valid Florida deed, including two witnesses and delivery/acceptance. | 1 |
-| O-L09-2-3 | apply | Identify what is NOT required for validity (grantee signature, recording, acknowledgment). | 1 |
-| O-L09-3-1 | understand | Distinguish constructive and actual notice and explain why recording matters. | 1 |
-| O-L09-3-2 | understand | Compare abstract with attorney's opinion vs title insurance; owner's vs lender's policy. | 1 |
-| O-L09-4-1 | understand | Distinguish specific and general liens, and state lien priority (taxes and special assessments first, then recording order). | 2 |
-| O-L09-4-2 | understand | Distinguish easement appurtenant, in gross, by necessity and by prescription (20 years), and a license. | 2 |
-| O-L09-4-3 | understand | Define encroachment and deed restriction. | 1 |
-| O-L09-5-1 | apply | Apply the fixture tests (intent, method of annexation, adaptation, relationship) and the trade-fixture rule. | 1 |
-| O-L09-5-2 | understand | Distinguish riparian and littoral rights, and accretion, erosion and avulsion. | 2 |
+| O-L09-1-1 | understand | Distinguish voluntary transfer (deed, will) from involuntary transfer (descent, escheat, eminent domain, foreclosure, adverse possession). | 3 |
+| O-L09-1-2 | recall | State Florida adverse possession: 7 years, open, notorious, hostile, continuous, plus color of title or payment of taxes. | 2 |
+| O-L09-1-3 | understand | Distinguish testate and intestate, devise and descent. | 4 |
+| O-L09-2-1 | understand | Rank deeds by protection (general warranty, special warranty, bargain and sale, quitclaim) and state what each warrants. | 6 |
+| O-L09-2-2 | recall | List the requirements of a valid Florida deed, including two witnesses and delivery/acceptance. | 4 |
+| O-L09-2-3 | apply | Identify what is NOT required for validity (grantee signature, recording, acknowledgment). | 4 |
+| O-L09-3-1 | understand | Distinguish constructive and actual notice and explain why recording matters. | 3 |
+| O-L09-3-2 | understand | Compare abstract with attorney's opinion vs title insurance; owner's vs lender's policy. | 7 |
+| O-L09-4-1 | understand | Distinguish specific and general liens, and state lien priority (taxes and special assessments first, then recording order). | 5 |
+| O-L09-4-2 | understand | Distinguish easement appurtenant, in gross, by necessity and by prescription (20 years), and a license. | 6 |
+| O-L09-4-3 | understand | Define encroachment and deed restriction. | 3 |
+| O-L09-5-1 | apply | Apply the fixture tests (intent, method of annexation, adaptation, relationship) and the trade-fixture rule. | 5 |
+| O-L09-5-2 | understand | Distinguish riparian and littoral rights, and accretion, erosion and avulsion. | 6 |
 | O-L10-1-1 | understand | Describe metes and bounds (POB, courses and distances), lot and block (recorded plat) and the government survey. | 2 |
 | O-L10-1-2 | recall | State that Florida's principal meridian and base line intersect in Tallahassee; a street address is not a legal description. | 1 |
 | O-L10-2-1 | recall | State township and section facts: 6 × 6 miles, 36 sections, 640 acres per section, section 1 in the northeast corner, serpentine numbering. | 1 |
@@ -167,15 +167,15 @@
 | O-L14-8-2 | calculate | Compute the cash due from the buyer and to the seller. | 2 |
 | O-L15-1-1 | understand | Explain why real estate markets are local and slow to adjust; name the supply and demand factors. | 2 |
 | O-L15-1-2 | understand | Distinguish a CMA, a BPO and an appraisal, and what a licensee may charge for. | 1 |
-| O-L16-1-1 | recall | State the four elements of value (DUST) and distinguish market value, price, cost, assessed and insurable value. | 1 |
-| O-L16-1-2 | understand | Explain substitution, highest and best use, anticipation, contribution, conformity, progression/regression and plottage/assemblage. | 2 |
-| O-L16-2-1 | calculate | Adjust comparables (never the subject): comparable better → subtract; inferior → add. | 2 |
-| O-L16-2-2 | understand | Explain which comparable deserves the most weight. | 1 |
-| O-L16-3-1 | calculate | Compute value = land + cost new − accrued depreciation. | 1 |
-| O-L16-3-2 | understand | Distinguish reproduction from replacement cost and the three types of depreciation (external obsolescence always incurable). | 2 |
-| O-L16-4-1 | calculate | Build NOI (PGI − vacancy & collection loss − operating expenses) and apply IRV. | 2 |
-| O-L16-4-2 | calculate | Apply GRM (monthly) and GIM (annual). | 1 |
-| O-L16-4-3 | understand | Explain reconciliation and the federally related transaction rule (licensed/certified appraiser). | 2 |
+| O-L16-1-1 | recall | State the four elements of value (DUST) and distinguish market value, price, cost, assessed and insurable value. | 6 |
+| O-L16-1-2 | understand | Explain substitution, highest and best use, anticipation, contribution, conformity, progression/regression and plottage/assemblage. | 8 |
+| O-L16-2-1 | calculate | Adjust comparables (never the subject): comparable better → subtract; inferior → add. | 8 |
+| O-L16-2-2 | understand | Explain which comparable deserves the most weight. | 2 |
+| O-L16-3-1 | calculate | Compute value = land + cost new − accrued depreciation. | 4 |
+| O-L16-3-2 | understand | Distinguish reproduction from replacement cost and the three types of depreciation (external obsolescence always incurable). | 7 |
+| O-L16-4-1 | calculate | Build NOI (PGI − vacancy & collection loss − operating expenses) and apply IRV. | 8 |
+| O-L16-4-2 | calculate | Apply GRM (monthly) and GIM (annual). | 3 |
+| O-L16-4-3 | understand | Explain reconciliation and the federally related transaction rule (licensed/certified appraiser). | 5 |
 | O-L17-1-1 | understand | Explain leverage, liquidity and the types of risk. | 1 |
 | O-L17-1-2 | calculate | Compute cash flow (NOI − debt service) and cap rate. | 2 |
 | O-L17-2-1 | understand | Explain what a business brokerage transaction includes (going concern, goodwill, fixtures, inventory) and when a real estate license is needed. | 2 |

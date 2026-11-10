@@ -130,7 +130,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L04-1-1 (recall) Name the three authorized relationships and state that transaction broker is presumed unless another is established in writing.
   - O-L04-1-2 (understand) Explain why dual agency is illegal in Florida and the lawful alternative for working both sides.
   - O-L04-1-3 (understand) Distinguish a principal (single agent) from a customer (transaction broker / no relationship).
-- Practice questions: 3 · Numbers: —
+- Practice questions: 10 · Numbers: —
 
 ### L04-2 · The duty lists: 3, 7 and 9
 
@@ -142,7 +142,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L04-2-2 (recall) List the 7 transaction-broker duties, including what limited confidentiality protects.
   - O-L04-2-3 (recall) List the 9 single-agent duties and the four that belong only to the single agent (loyalty, obedience, full confidentiality, full disclosure).
   - O-L04-2-4 (apply) Match a described duty to the relationship that owes it.
-- Practice questions: 5 · Numbers: N-030, N-031, N-032
+- Practice questions: 15 · Numbers: N-030, N-031, N-032
 
 ### L04-3 · Disclosure notices: timing, transitions, scope and exceptions
 
@@ -154,7 +154,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L04-3-2 (understand) Explain the Consent to Transition to Transaction Broker and when it is used.
   - O-L04-3-3 (recall) Define 'residential sale' (≤4 units; unimproved for ≤4 units; agricultural ≤10 acres).
   - O-L04-3-4 (apply) Identify situations where disclosure is not required (represented party, open house, casual encounter, general questions, auctions, appraisals, leases without option, business sales).
-- Practice questions: 6 · Numbers: N-033
+- Practice questions: 12 · Numbers: N-033
 
 ### L04-4 · Material facts, designated sales associates, and ending relationships
 
@@ -165,7 +165,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L04-4-1 (apply) Decide whether a fact must be disclosed (latent material defect vs stigma such as death or HIV status).
   - O-L04-4-2 (recall) State the designated sales associate conditions: nonresidential, buyer and seller each with assets of $1 million or more, written request/disclosures.
   - O-L04-4-3 (understand) List how brokerage relationships end and which duties survive termination.
-- Practice questions: 4 · Numbers: N-034
+- Practice questions: 9 · Numbers: N-034
 
 ## 5. Brokerage Activities and Procedures
 
@@ -375,7 +375,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L09-1-1 (understand) Distinguish voluntary transfer (deed, will) from involuntary transfer (descent, escheat, eminent domain, foreclosure, adverse possession).
   - O-L09-1-2 (recall) State Florida adverse possession: 7 years, open, notorious, hostile, continuous, plus color of title or payment of taxes.
   - O-L09-1-3 (understand) Distinguish testate and intestate, devise and descent.
-- Practice questions: 3 · Numbers: N-090
+- Practice questions: 9 · Numbers: N-090
 
 ### L09-2 · Deeds: types and requirements
 
@@ -386,7 +386,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L09-2-1 (understand) Rank deeds by protection (general warranty, special warranty, bargain and sale, quitclaim) and state what each warrants.
   - O-L09-2-2 (recall) List the requirements of a valid Florida deed, including two witnesses and delivery/acceptance.
   - O-L09-2-3 (apply) Identify what is NOT required for validity (grantee signature, recording, acknowledgment).
-- Practice questions: 4 · Numbers: N-092
+- Practice questions: 14 · Numbers: N-092
 
 ### L09-3 · Notice, recording and title evidence
 
@@ -396,7 +396,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L09-3-1 (understand) Distinguish constructive and actual notice and explain why recording matters.
   - O-L09-3-2 (understand) Compare abstract with attorney's opinion vs title insurance; owner's vs lender's policy.
-- Practice questions: 2 · Numbers: —
+- Practice questions: 10 · Numbers: —
 
 ### L09-4 · Encumbrances: liens, easements, encroachments and restrictions
 
@@ -407,7 +407,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L09-4-1 (understand) Distinguish specific and general liens, and state lien priority (taxes and special assessments first, then recording order).
   - O-L09-4-2 (understand) Distinguish easement appurtenant, in gross, by necessity and by prescription (20 years), and a license.
   - O-L09-4-3 (understand) Define encroachment and deed restriction.
-- Practice questions: 5 · Numbers: N-091
+- Practice questions: 14 · Numbers: N-091
 
 ### L09-5 · Fixtures and water rights
 
@@ -417,7 +417,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L09-5-1 (apply) Apply the fixture tests (intent, method of annexation, adaptation, relationship) and the trade-fixture rule.
   - O-L09-5-2 (understand) Distinguish riparian and littoral rights, and accretion, erosion and avulsion.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 11 · Numbers: —
 
 ## 10. Legal Descriptions
 
@@ -679,7 +679,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L16-1-1 (recall) State the four elements of value (DUST) and distinguish market value, price, cost, assessed and insurable value.
   - O-L16-1-2 (understand) Explain substitution, highest and best use, anticipation, contribution, conformity, progression/regression and plottage/assemblage.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 14 · Numbers: —
 
 ### L16-2 · Sales comparison approach
 
@@ -689,7 +689,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L16-2-1 (calculate) Adjust comparables (never the subject): comparable better → subtract; inferior → add.
   - O-L16-2-2 (understand) Explain which comparable deserves the most weight.
-- Practice questions: 3 · Numbers: —
+- Practice questions: 10 · Numbers: —
 
 ### L16-3 · Cost approach and depreciation
 
@@ -699,7 +699,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
 - Objectives:
   - O-L16-3-1 (calculate) Compute value = land + cost new − accrued depreciation.
   - O-L16-3-2 (understand) Distinguish reproduction from replacement cost and the three types of depreciation (external obsolescence always incurable).
-- Practice questions: 3 · Numbers: —
+- Practice questions: 11 · Numbers: —
 
 ### L16-4 · Income approach, reconciliation and who may appraise
 
@@ -710,7 +710,7 @@ Structure: the 19 sections of the official FREC Course I syllabus (eff. 1/1/2023
   - O-L16-4-1 (calculate) Build NOI (PGI − vacancy & collection loss − operating expenses) and apply IRV.
   - O-L16-4-2 (calculate) Apply GRM (monthly) and GIM (annual).
   - O-L16-4-3 (understand) Explain reconciliation and the federally related transaction rule (licensed/certified appraiser).
-- Practice questions: 5 · Numbers: —
+- Practice questions: 16 · Numbers: —
 
 ## 17. Investments and Business Opportunity Brokerage
 
