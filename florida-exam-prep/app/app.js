@@ -719,37 +719,104 @@ VIEWS.quiz = (arg) => {
   if (live.done) return reportHtml(live);
   return quizCardHtml();
 };
+// ── Vocabulary help: English exam terms explained in Portuguese ──────────
+// Terms are underlined once per question; tapping one opens a sheet with the Portuguese
+// equivalent and a short explanation. Not used in the timed mock exam, as on the real exam.
+const VOCAB = (DATA.vocab || []).map(([forms, pt, def, l], i) => ({ i, forms: forms.split("|"), term: forms.split("|")[0], pt, def, l }));
+const VOCAB_FORM = new Map(); // lower-case form → { v, form, caps }
+for (const v of VOCAB) for (const f of v.forms) VOCAB_FORM.set(f.toLowerCase(), { v, form: f, caps: f === f.toUpperCase() && /[A-Z]/.test(f) });
+const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+// No lookbehind (older iPhones): the character before a term is captured in group 1 instead.
+const VOCAB_RE = VOCAB.length ? new RegExp(`(^|[^A-Za-z0-9])(${[...VOCAB_FORM.values()].map((x) => x.form).sort((a, b) => b.length - a.length).map(reEsc).join("|")})(?![A-Za-z0-9])`, "gi") : null;
+// Each known term in a text: { index, length, v }. Acronyms (FHA, ARM, AS IS) must be in capitals.
+function vocabMatches(text) {
+  const out = []; if (!VOCAB_RE || !text) return out;
+  VOCAB_RE.lastIndex = 0; let m;
+  while ((m = VOCAB_RE.exec(text))) {
+    const word = m[2], hit = VOCAB_FORM.get(word.toLowerCase());
+    if (hit && (!hit.caps || word === hit.form)) out.push({ index: m.index + m[1].length, length: word.length, v: hit.v });
+  }
+  return out;
+}
+// Escape a text and underline the first occurrence of each term not yet in `seen`.
+function vt(text, seen) {
+  text = String(text ?? ""); let html = "", at = 0;
+  for (const h of vocabMatches(text)) {
+    if (seen.has(h.v.i)) continue;
+    seen.add(h.v.i);
+    html += esc(text.slice(at, h.index)) + `<span class="term" role="button" tabindex="0" data-term="${h.v.i}">${esc(text.slice(h.index, h.index + h.length))}</span>`;
+    at = h.index + h.length;
+  }
+  return html + esc(text.slice(at));
+}
+const termsIn = (...texts) => uniq(texts.flatMap((t) => vocabMatches(String(t ?? "")).map((h) => h.v)));
+const termLine = (v) => `<li><span class="term" role="button" tabindex="0" data-term="${v.i}">${esc(v.term)}</span> → <b>${esc(v.pt)}</b></li>`;
+function showTerm(i) {
+  const v = VOCAB[i]; if (!v) return;
+  $("#termsheet")?.remove();
+  const d = document.createElement("div"); d.id = "termsheet"; d.className = "termsheet"; d.setAttribute("role", "dialog"); d.setAttribute("aria-label", v.term);
+  d.innerHTML = `<div class="ts-en">${esc(v.term)}</div><div class="ts-pt">${esc(v.pt)}</div><p>${esc(v.def)}</p>
+    <div class="row"><a class="small" href="#lesson~${v.l}">Lição ${v.l}: ${esc(LS_.get(v.l)?.title || "")}</a><span class="spacer"></span><button class="btn sm" id="ts-close">Fechar</button></div>`;
+  document.body.appendChild(d);
+  $("#ts-close").addEventListener("click", () => d.remove());
+  d.querySelector("a").addEventListener("click", () => d.remove());
+}
+// Answer choices are left plain, so a tap on a choice always chooses it; their terms are listed after answering.
+document.addEventListener("click", (e) => { const t = e.target.closest?.(".term"); if (!t) return; e.preventDefault(); e.stopPropagation(); showTerm(Number(t.dataset.term)); }, true);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") $("#termsheet")?.remove();
+  const t = e.target.closest?.(".term"); if (t && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); e.stopPropagation(); showTerm(Number(t.dataset.term)); }
+}, true);
+VIEWS.vocab = () => `<div><div class="eyebrow">Inglês → português</div><h1>Vocabulary</h1></div>
+  <p class="muted prose">${VOCAB.length} termos do exame, por secção (as que valem mais pontos primeiro). Nas perguntas, toque numa palavra sublinhada para ver o significado. Os equivalentes portugueses são aproximados: no exame só conta a lei da Florida.</p>
+  <input type="search" id="vq" placeholder="Procurar em inglês ou português, ex.: 'escrow', 'hipoteca', 'servidão'">
+  <div id="vres"></div>`;
+bind.vocab = () => {
+  const byCh = group(VOCAB, (v) => LS_.get(v.l)?.ch);
+  const render = () => {
+    const t = ($("#vq").value || "").trim().toLowerCase();
+    const hit = (v) => !t || [...v.forms, v.pt, v.def].some((x) => x.toLowerCase().includes(t));
+    $("#vres").innerHTML = [...DATA.chapters].sort((a, b) => b.examPct - a.examPct || a.n - b.n).map((c) => {
+      const vs = (byCh.get(c.id) || []).filter(hit); if (!vs.length) return "";
+      return `<div class="panel"><h3>${c.n}. ${esc(c.title)} <span class="muted small">· ${c.examPct} de 100 perguntas</span></h3><dl class="vocab">${vs.map((v) => `<div><dt>${esc(v.term)}${v.forms.length > 1 ? ` <span class="muted small">(${esc(v.forms.slice(1).join(", "))})</span>` : ""}</dt><dd><b>${esc(v.pt)}</b><br><span class="small">${esc(v.def)}</span></dd></div>`).join("")}</dl></div>`;
+    }).join("") || `<div class="empty">Nenhum termo encontrado.</div>`;
+  };
+  $("#vq").addEventListener("input", render); render();
+};
+
 function quizCardHtml() {
   const qid = live.queue[live.idx]; const q = Q.get(qid);
   if (!live.orders[qid]) live.orders[qid] = displayOrder(q);
   const order = live.orders[qid]; const fb = live.fb;
-  const l = LS_.get(q.l);
+  const l = LS_.get(q.l); const seen = new Set();
   const keys = ["A", "B", "C", "D"];
   return `
   <div class="row"><div><div class="eyebrow">${esc(live.title)}</div></div><span class="spacer"></span><span class="mono small muted">${live.idx + 1} / ${live.queue.length}</span><button class="btn sm ghost" id="quit">End session</button></div>
   <div class="progress"><i style="width:${(100 * live.idx) / live.queue.length}%"></i></div>
   <div class="panel qcard">
     <div class="qmeta">${chip(q.id)}${chip(`Lesson ${q.l}`)}${chip(["", "Basic", "Intermediate", "Hard"][q.d])}${q.t === "scn" ? chip("Scenario") : ""}${q.t === "num" ? chip("Calculation") : ""}</div>
-    <div class="stem">${esc(q.q)}</div>
+    <div class="stem">${vt(q.q, seen)}</div>
     ${q.t === "num" ? `<div class="numin"><input id="numans" inputmode="decimal" autocomplete="off" placeholder="Your answer" ${fb ? "disabled" : ""} value="${esc(fb?.given ?? "")}"><span class="muted">${esc(q.unit)}</span></div><p class="small muted">Numbers only; commas and $ are fine.</p>` :
     `<div class="choices">${order.map((ci, k) => {
       let cls = ""; if (fb) { if (ci === q.a) cls = "right"; else if (ci === fb.choice) cls = "wrong"; } else if (live.sel === ci) cls = "sel";
       return `<button class="choice ${cls}" data-ci="${ci}" ${fb ? "disabled" : ""}><span class="key">${keys[k]}</span><span>${esc(q.c[ci])}</span></button>`;
     }).join("")}</div>`}
-    ${fb ? feedbackHtml(q, fb) : `<div class="confbar"><span class="small muted" style="align-self:center">Submit with your confidence:</span>
+    ${fb ? feedbackHtml(q, fb, seen) : `<div class="confbar"><span class="small muted" style="align-self:center">Submit with your confidence:</span>
       <button class="btn primary" data-conf="s">Sure</button><button class="btn" data-conf="u">Unsure</button><button class="btn" data-conf="g">Guessing</button></div>`}
   </div>
-  <p class="small muted">Keyboard: 1–4 choose · S / U / G submit · Enter next. From ${esc(l.title)}.</p>`;
+  <p class="small muted">Keyboard: 1–4 choose · S / U / G submit · Enter next. From ${esc(l.title)}.${VOCAB.length ? " Toque numa palavra sublinhada para a ver em português." : ""}</p>`;
 }
-function feedbackHtml(q, fb) {
+function feedbackHtml(q, fb, seen = new Set()) {
   const m = S.mistakes[q.id];
   const wrongWhy = !fb.ok && q.t !== "num" ? q.w?.[fb.choice] : null;
+  const words = termsIn(q.q, ...(q.c || []), q.ex, wrongWhy?.[1]);
   return `<div class="feedback ${fb.ok ? "ok" : "no"}">
     <div class="verdict">${fb.ok ? (fb.conf === "g" ? "Correct — but a guess is not knowledge yet" : "Correct") : "Not correct"}</div>
-    ${!fb.ok ? `<div><b>Correct answer:</b> ${esc(correctText(q))}</div>` : ""}
+    ${!fb.ok ? `<div><b>Correct answer:</b> ${vt(correctText(q), seen)}</div>` : ""}
     ${q.t === "num" ? `<ol class="steps">${q.steps.map((s) => `<li>${esc(s)}</li>`).join("")}</ol>` : ""}
-    ${q.ex ? `<div>${esc(q.ex)}</div>` : ""}
-    ${wrongWhy ? `<div><b>Why your answer is wrong:</b> ${esc(wrongWhy[1])}</div>` : ""}
+    ${q.ex ? `<div>${vt(q.ex, seen)}</div>` : ""}
+    ${wrongWhy ? `<div><b>Why your answer is wrong:</b> ${vt(wrongWhy[1], seen)}</div>` : ""}
+    ${words.length ? `<details class="words"><summary>Palavras desta pergunta em português (${words.length})</summary><ul>${words.map(termLine).join("")}</ul></details>` : ""}
     ${(!fb.ok || fb.conf === "g") && m ? `<label class="field">Likely error type (change it if another fits better)
       <select id="cat">${Object.entries(CAT_LABEL).map(([k, v]) => `<option value="${k}" ${m.cat === k ? "selected" : ""}>${esc(v)}</option>`).join("")}</select></label>` : ""}
     ${!fb.ok || fb.conf !== "s" ? `<label class="field">In your own words: why is the correct answer right? (optional, strengthens recall)<textarea id="elab" placeholder="Type a one- or two-sentence explanation…">${esc(m?.note || "")}</textarea></label>` : ""}

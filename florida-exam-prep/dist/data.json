@@ -1,7 +1,7 @@
 {
  "meta": {
   "title": "Florida Sales Associate Exam Prep",
-  "built": "2026-11-10T00:36:59.373Z",
+  "built": "2026-11-11T01:11:44.909Z",
   "checkedOn": "2026-10-19 and 2026-10-20",
   "summary": {
    "chapters": 19,
@@ -27339,6 +27339,2738 @@
    "l": "L19-2",
    "note": ""
   }
+ ],
+ "vocab": [
+  [
+   "broker|brokers",
+   "broker (mediador responsável)",
+   "Licenciado que pode ter a sua própria mediadora e empregar sales associates.",
+   "L03-2"
+  ],
+  [
+   "sales associate|sales associates",
+   "consultor imobiliário (sales associate)",
+   "Licenciado que só trabalha registado com um broker e só pode ser pago por esse broker.",
+   "L03-2"
+  ],
+  [
+   "brokerage|brokerages",
+   "mediadora imobiliária (a empresa)",
+   "A empresa licenciada do broker. Os contratos de mediação pertencem à brokerage, não ao consultor.",
+   "L03-2"
+  ],
+  [
+   "licensee|licensees",
+   "licenciado",
+   "Pessoa com licença imobiliária: broker ou sales associate.",
+   "L02-1"
+  ],
+  [
+   "license|licenses",
+   "licença",
+   "1) Licença profissional imobiliária. 2) Em terrenos: autorização revogável para usar o terreno de outro (não é um direito real).",
+   "L02-1"
+  ],
+  [
+   "FREC|Florida Real Estate Commission",
+   "Comissão Imobiliária da Florida (FREC)",
+   "7 membros. Faz as regras e decide os castigos (multas, suspensão, revogação).",
+   "L03-1"
+  ],
+  [
+   "DBPR",
+   "Departamento de Regulação Profissional (DBPR)",
+   "Departamento estatal que trata das licenças e investiga queixas.",
+   "L03-1"
+  ],
+  [
+   "compensation",
+   "remuneração",
+   "Qualquer coisa de valor (dinheiro, carro, presente) recebida ou prometida por um serviço.",
+   "L02-1"
+  ],
+  [
+   "commission|commissions",
+   "comissão",
+   "Remuneração do broker, normalmente uma percentagem do preço. É sempre negociável.",
+   "L05-4"
+  ],
+  [
+   "unlicensed",
+   "sem licença",
+   "Exercer mediação por remuneração sem licença é crime grave (third-degree felony).",
+   "L02-1"
+  ],
+  [
+   "exempt|exemption|exemptions",
+   "isento / isenção",
+   "Situação em que a lei não exige licença (ou, nos impostos, uma dedução ao valor tributável).",
+   "L02-2"
+  ],
+  [
+   "attorney in fact",
+   "procurador",
+   "Qualquer pessoa com procuração. Não precisa de ser advogado.",
+   "L02-2"
+  ],
+  [
+   "power of attorney",
+   "procuração",
+   "Documento que autoriza alguém a agir em nome de outra pessoa.",
+   "L02-2"
+  ],
+  [
+   "attorney|attorneys|attorney at law",
+   "advogado",
+   "Advogado. Só está isento de licença quando atua dentro das suas funções de advogado.",
+   "L02-2"
+  ],
+  [
+   "mutual recognition",
+   "reconhecimento mútuo",
+   "Licenciados não residentes de certos estados fazem só um exame de lei da Florida (40 perguntas, 30 para passar).",
+   "L02-3"
+  ],
+  [
+   "pre-license course|pre-license",
+   "curso pré-licença",
+   "63 horas, antes do exame estadual.",
+   "L02-3"
+  ],
+  [
+   "post-license education|post-license",
+   "formação pós-licença",
+   "45 horas antes da primeira renovação; sem ela a licença fica nula (void).",
+   "L03-3"
+  ],
+  [
+   "continuing education",
+   "formação contínua",
+   "14 horas a cada 2 anos depois da primeira renovação.",
+   "L03-3"
+  ],
+  [
+   "employing broker",
+   "broker empregador",
+   "O broker com quem o sales associate está registado. Só ele lhe pode pagar.",
+   "L03-2"
+  ],
+  [
+   "inactive",
+   "inativa (licença)",
+   "Licença que existe mas não pode ser usada, por exemplo sem broker registado.",
+   "L03-3"
+  ],
+  [
+   "void|null and void",
+   "nulo",
+   "1) Contrato: nunca existiu. 2) Licença: deixa de existir (ex.: falta da formação pós-licença).",
+   "L11-1"
+  ],
+  [
+   "nolo contendere",
+   "não contestação",
+   "Declaração de não contestar a acusação. Para a licença conta como uma condenação.",
+   "L06-2"
+  ],
+  [
+   "felony|third-degree felony",
+   "crime grave (felony)",
+   "Crime mais grave. Exercer sem licença é third-degree felony.",
+   "L06-2"
+  ],
+  [
+   "misdemeanor|misdemeanors|second-degree misdemeanor|first-degree misdemeanor",
+   "delito menor (misdemeanor)",
+   "Crime menos grave. A maioria das violações do Capítulo 475 é second-degree misdemeanor.",
+   "L06-2"
+  ],
+  [
+   "REALTOR|REALTOR®|REALTORs",
+   "REALTOR® (membro de associação privada)",
+   "Marca de membros da NAR, uma associação privada. Não é uma licença.",
+   "L01-2"
+  ],
+  [
+   "statute|statutes|Florida Statutes",
+   "lei (estatuto)",
+   "Lei aprovada pelo parlamento da Florida.",
+   "L01-1"
+  ],
+  [
+   "rule|rules",
+   "regulamento",
+   "Regra administrativa (ex.: regras da FREC, capítulo 61J2). Tem força de lei.",
+   "L01-1"
+  ],
+  [
+   "case law",
+   "jurisprudência",
+   "Decisões dos tribunais que criam precedentes.",
+   "L01-1"
+  ],
+  [
+   "transaction broker|transaction brokers|transaction-broker",
+   "intermediário de transação (transaction broker)",
+   "Representação limitada do comprador, do vendedor ou de ambos. Não é fiduciário. É o regime presumido.",
+   "L04-1"
+  ],
+  [
+   "single agent|single agents|single-agent",
+   "agente exclusivo (single agent)",
+   "Representa uma só parte com dever de lealdade (fiduciário). A parte representada é o principal.",
+   "L04-1"
+  ],
+  [
+   "no brokerage relationship",
+   "sem relação de mediação",
+   "O licenciado não representa a parte, mas deve 3 deveres (honestidade, revelar factos materiais, prestar contas).",
+   "L04-1"
+  ],
+  [
+   "dual agent|dual agency",
+   "dupla representação (proibida)",
+   "Ser agente fiduciário do comprador e do vendedor no mesmo negócio. Proibido na Florida.",
+   "L04-1"
+  ],
+  [
+   "fiduciary",
+   "fiduciário",
+   "Quem tem de pôr os interesses do cliente acima dos seus (lealdade). Só o single agent.",
+   "L04-1"
+  ],
+  [
+   "principal|principals",
+   "1) mandante  2) capital",
+   "1) A pessoa representada por um single agent. 2) Num empréstimo: o capital em dívida (sem juros).",
+   "L04-1"
+  ],
+  [
+   "customer|customers",
+   "cliente não representado (customer)",
+   "Parte com quem o licenciado trabalha sem a representar como fiduciário.",
+   "L04-1"
+  ],
+  [
+   "presumed|presumption",
+   "presumido / presunção",
+   "O que a lei assume se nada for estabelecido por escrito: transaction broker.",
+   "L04-1"
+  ],
+  [
+   "designated sales associate|designated sales associates",
+   "consultores designados",
+   "Um para cada parte; só em negócios não residenciais com cada parte a ter ativos de $1 milhão ou mais.",
+   "L04-4"
+  ],
+  [
+   "consent to transition",
+   "consentimento para transição",
+   "Autorização escrita do principal, antes da mudança, para passar de single agent a transaction broker.",
+   "L04-3"
+  ],
+  [
+   "loyalty",
+   "lealdade",
+   "Dever só do single agent: pôr os interesses do principal em primeiro lugar.",
+   "L04-2"
+  ],
+  [
+   "obedience",
+   "obediência",
+   "Dever só do single agent: seguir as instruções LEGAIS do principal.",
+   "L04-2"
+  ],
+  [
+   "confidentiality|limited confidentiality",
+   "confidencialidade",
+   "Não revelar informação do cliente (ex.: preço mínimo). O transaction broker tem confidencialidade limitada.",
+   "L04-2"
+  ],
+  [
+   "full disclosure",
+   "divulgação total",
+   "Dever só do single agent: contar ao principal tudo o que sabe de relevante.",
+   "L04-2"
+  ],
+  [
+   "accounting",
+   "prestação de contas",
+   "Prestar contas de todo o dinheiro recebido. Devido em todas as relações.",
+   "L04-2"
+  ],
+  [
+   "skill, care and diligence|diligence",
+   "competência, cuidado e diligência",
+   "Dever do transaction broker e do single agent.",
+   "L04-2"
+  ],
+  [
+   "material fact|material facts|material",
+   "facto material (relevante)",
+   "Facto que afeta significativamente o valor. Se for conhecido e não visível, tem de ser revelado.",
+   "L04-4"
+  ],
+  [
+   "readily observable",
+   "facilmente visível",
+   "Que se vê numa visita normal. Os defeitos não visíveis e conhecidos têm de ser revelados.",
+   "L04-2"
+  ],
+  [
+   "residential sale",
+   "venda residencial",
+   "Imóvel até 4 frações, terreno para até 4 frações, ou agrícola até 10 acres.",
+   "L04-3"
+  ],
+  [
+   "open house",
+   "casa aberta (open house)",
+   "Visita aberta ao público. Se genuína e sem negociação, não exige aviso de relação.",
+   "L04-3"
+  ],
+  [
+   "notice|notices",
+   "aviso",
+   "Documento escrito exigido por lei (ex.: Single Agent Notice antes de mostrar o imóvel).",
+   "L04-3"
+  ],
+  [
+   "escrow|escrow account|escrow funds|trust account|trust funds",
+   "depósito à guarda / conta-cliente (escrow)",
+   "Dinheiro de terceiros (ex.: sinal do comprador) guardado numa conta separada. Não é do broker.",
+   "L05-1"
+  ],
+  [
+   "earnest money|binder|binder deposit|good-faith deposit",
+   "sinal (depósito de boa-fé)",
+   "Dinheiro do comprador ao assinar o contrato. Na Florida NÃO há a regra portuguesa do sinal em dobro.",
+   "L05-1"
+  ],
+  [
+   "deposit|deposits",
+   "depósito",
+   "Dinheiro entregue como garantia (sinal) ou colocado numa conta.",
+   "L05-1"
+  ],
+  [
+   "commingling",
+   "mistura de fundos",
+   "Juntar dinheiro próprio ao dinheiro dos clientes acima do permitido ($1.000 venda; $5.000 arrendamento).",
+   "L05-1"
+  ],
+  [
+   "conversion",
+   "apropriação indevida",
+   "Usar dinheiro dos clientes para fins próprios, mesmo que seja 'só por uns dias'.",
+   "L05-1"
+  ],
+  [
+   "business day|business days",
+   "dia útil",
+   "Qualquer dia menos sábado, domingo e feriado oficial. O dia em que se recebe não conta.",
+   "L05-1"
+  ],
+  [
+   "calendar day|calendar days",
+   "dia de calendário (corrido)",
+   "Todos os dias contam, incluindo fins de semana.",
+   "L08-5"
+  ],
+  [
+   "conflicting demands|conflicting demand",
+   "pedidos contraditórios",
+   "Comprador e vendedor exigem o mesmo depósito.",
+   "L05-2"
+  ],
+  [
+   "good-faith doubt|good faith",
+   "dúvida de boa-fé / boa-fé",
+   "Honestidade. Dúvida de boa-fé: o broker não sabe honestamente a quem pertence o depósito.",
+   "L05-2"
+  ],
+  [
+   "escrow disbursement order|EDO",
+   "ordem de entrega do depósito (EDO)",
+   "Decisão da FREC sobre quem recebe o depósito. Só quando é o broker que guarda o dinheiro.",
+   "L05-2"
+  ],
+  [
+   "mediation",
+   "mediação",
+   "Um terceiro neutro ajuda as partes a chegar a acordo. Não decide.",
+   "L05-2"
+  ],
+  [
+   "arbitration|arbitrator",
+   "arbitragem / árbitro",
+   "Um árbitro neutro decide e a decisão obriga as partes.",
+   "L05-2"
+  ],
+  [
+   "litigation",
+   "processo judicial",
+   "Levar o caso a tribunal.",
+   "L05-2"
+  ],
+  [
+   "interpleader",
+   "consignação em depósito (interpleader)",
+   "O broker entrega o dinheiro ao tribunal e pede-lhe que decida a quem pertence.",
+   "L05-2"
+  ],
+  [
+   "blind ad|blind advertisement",
+   "anúncio cego",
+   "Anúncio de um licenciado sem o nome registado da mediadora. É proibido.",
+   "L05-3"
+  ],
+  [
+   "advertisement|advertising|ad|ads",
+   "anúncio / publicidade",
+   "Qualquer anúncio de um licenciado tem de incluir o nome registado da brokerage.",
+   "L05-3"
+  ],
+  [
+   "entrance sign",
+   "letreiro (à entrada)",
+   "Letreiro obrigatório à entrada de cada escritório: nome + 'Licensed Real Estate Broker'.",
+   "L05-4"
+  ],
+  [
+   "branch office|branch",
+   "filial",
+   "Outro local onde o broker faz negócio. Precisa de registo e de letreiro.",
+   "L05-4"
+  ],
+  [
+   "kickback|kickbacks",
+   "luva (comissão ilegal)",
+   "Pagamento por encaminhar clientes. O RESPA proíbe-o mesmo com divulgação.",
+   "L05-4"
+  ],
+  [
+   "rebate",
+   "devolução de parte da comissão",
+   "O broker devolve parte da comissão ao comprador ou vendedor, com divulgação a todos.",
+   "L05-4"
+  ],
+  [
+   "referral fee|referral|referrals",
+   "comissão de referência",
+   "Pagamento por indicar um cliente. Entre brokers, nunca diretamente a um consultor.",
+   "L05-4"
+  ],
+  [
+   "price fixing",
+   "fixação de preços (cartel)",
+   "Concorrentes combinam comissões. Proibido pela lei da concorrência (antitrust).",
+   "L05-4"
+  ],
+  [
+   "antitrust",
+   "lei da concorrência (antitrust)",
+   "Lei que proíbe acordos entre concorrentes sobre preços ou mercados.",
+   "L05-4"
+  ],
+  [
+   "rental information list|rental list|rental-list",
+   "lista de imóveis para arrendar",
+   "Lista vendida a inquilinos. Sem arrendamento: devolve 75%. Lista errada: devolve 100%.",
+   "L05-4"
+  ],
+  [
+   "RESPA",
+   "RESPA (lei federal sobre o fecho)",
+   "Lei federal: proíbe kickbacks e impõe regras nos empréstimos para casas de 1 a 4 fogos.",
+   "L07-3"
+  ],
+  [
+   "title company|title companies",
+   "empresa de títulos",
+   "Verifica o título, emite seguro de título e muitas vezes faz o fecho e guarda depósitos.",
+   "L09-3"
+  ],
+  [
+   "complaint|formal complaint",
+   "queixa / acusação formal",
+   "Queixa contra um licenciado. A acusação formal surge depois de haver probable cause.",
+   "L06-1"
+  ],
+  [
+   "probable cause|probable cause panel",
+   "indícios suficientes",
+   "Decisão de que há base para avançar com uma acusação formal (painel de pelo menos 2 membros).",
+   "L06-1"
+  ],
+  [
+   "administrative law judge|ALJ",
+   "juiz administrativo",
+   "Preside à audiência formal quando os factos são contestados.",
+   "L06-1"
+  ],
+  [
+   "informal hearing|formal hearing|hearing",
+   "audiência",
+   "Informal: factos aceites, perante a FREC. Formal: factos contestados, perante um juiz administrativo.",
+   "L06-1"
+  ],
+  [
+   "final order",
+   "decisão final",
+   "Decisão da FREC. Pode recorrer-se no prazo de 30 dias.",
+   "L06-1"
+  ],
+  [
+   "District Court of Appeal",
+   "tribunal de recurso",
+   "Tribunal que revê as decisões finais da FREC.",
+   "L06-1"
+  ],
+  [
+   "citation",
+   "auto de contraordenação (citation)",
+   "Multa simples para infrações menores, sem processo completo.",
+   "L06-2"
+  ],
+  [
+   "reprimand",
+   "repreensão",
+   "Castigo escrito, sem multa.",
+   "L06-2"
+  ],
+  [
+   "probation",
+   "período probatório",
+   "O licenciado continua a trabalhar sob condições durante um período.",
+   "L06-2"
+  ],
+  [
+   "suspension|suspend|suspended",
+   "suspensão",
+   "A licença fica sem efeito por um período (máximo 10 anos).",
+   "L06-2"
+  ],
+  [
+   "revocation|revoke|revoked",
+   "revogação / cassação",
+   "Licença: retirada definitiva. Proposta: retirá-la antes da aceitação.",
+   "L06-2"
+  ],
+  [
+   "fraud",
+   "fraude (dolo)",
+   "Engano intencional para obter vantagem.",
+   "L06-2"
+  ],
+  [
+   "misrepresentation",
+   "declaração falsa",
+   "Afirmar como verdadeiro um facto falso.",
+   "L06-2"
+  ],
+  [
+   "concealment",
+   "ocultação",
+   "Esconder um facto material.",
+   "L06-2"
+  ],
+  [
+   "false promise",
+   "falsa promessa",
+   "Prometer algo para levar alguém a agir, sabendo que não vai acontecer.",
+   "L06-2"
+  ],
+  [
+   "culpable negligence",
+   "negligência grosseira",
+   "Descuido grave e indiferente às consequências.",
+   "L06-2"
+  ],
+  [
+   "breach of trust",
+   "abuso de confiança",
+   "Trair a confiança de quem confiou no licenciado.",
+   "L06-2"
+  ],
+  [
+   "puffing",
+   "exagero comercial",
+   "Opinião exagerada ('a melhor vista da cidade'). Não é uma afirmação de facto.",
+   "L06-2"
+  ],
+  [
+   "Recovery Fund|Real Estate Recovery Fund",
+   "Fundo de Recuperação",
+   "Indemniza o público que ganhou em tribunal contra um licenciado e não consegue cobrar.",
+   "L06-3"
+  ],
+  [
+   "judgment|judgments",
+   "sentença (condenação)",
+   "Decisão de um tribunal que condena a pagar.",
+   "L06-3"
+  ],
+  [
+   "treble damages",
+   "indemnização a triplicar",
+   "Três vezes o dano. O Fundo de Recuperação não paga.",
+   "L06-3"
+  ],
+  [
+   "fair housing|Fair Housing Act",
+   "lei de habitação justa",
+   "Proíbe discriminar na habitação por raça, cor, religião, origem, sexo, deficiência ou situação familiar.",
+   "L07-1"
+  ],
+  [
+   "protected class|protected classes",
+   "categoria protegida",
+   "Característica pela qual é proibido discriminar.",
+   "L07-1"
+  ],
+  [
+   "familial status",
+   "situação familiar",
+   "Ter filhos menores de 18 em casa ou estar grávida.",
+   "L07-1"
+  ],
+  [
+   "handicap",
+   "deficiência",
+   "Categoria protegida pela lei de habitação justa.",
+   "L07-1"
+  ],
+  [
+   "steering",
+   "encaminhamento discriminatório",
+   "Levar compradores só para certas zonas por causa da raça ou de outra categoria protegida.",
+   "L07-1"
+  ],
+  [
+   "blockbusting",
+   "provocar vendas em pânico",
+   "Assustar donos para venderem dizendo que 'certas pessoas' se estão a mudar para o bairro.",
+   "L07-1"
+  ],
+  [
+   "redlining",
+   "recusa de crédito por zona",
+   "O banco recusa empréstimos em certas zonas por discriminação.",
+   "L07-1"
+  ],
+  [
+   "reasonable accommodation|reasonable modification",
+   "adaptação razoável",
+   "Ajustar regras ou o imóvel para uma pessoa com deficiência.",
+   "L07-2"
+  ],
+  [
+   "ADA",
+   "lei dos americanos com deficiência (ADA)",
+   "Acessibilidade em espaços comerciais e públicos.",
+   "L07-2"
+  ],
+  [
+   "ECOA",
+   "lei de igualdade no crédito (ECOA)",
+   "Proíbe discriminar no crédito (inclui estado civil e idade).",
+   "L07-2"
+  ],
+  [
+   "TILA|Regulation Z|Truth in Lending",
+   "lei da verdade no crédito (TILA)",
+   "Obriga a divulgar o custo do crédito. Termos de publicidade 'trigger' exigem divulgação completa.",
+   "L07-3"
+  ],
+  [
+   "trigger terms|trigger term",
+   "termos que obrigam a divulgação",
+   "Num anúncio, falar de entrada, prestação ou nº de prestações obriga a mostrar todas as condições do crédito.",
+   "L07-3"
+  ],
+  [
+   "Do Not Call",
+   "lista de não telefonar",
+   "Lista nacional de números que não podem receber chamadas comerciais.",
+   "L07-2"
+  ],
+  [
+   "landlord|landlords",
+   "senhorio",
+   "O dono que arrenda o imóvel.",
+   "L07-4"
+  ],
+  [
+   "tenant|tenants",
+   "inquilino (arrendatário)",
+   "Quem arrenda. ATENÇÃO: em compropriedade (tenants in common, joint tenants) 'tenant' quer dizer co-proprietário.",
+   "L08-2"
+  ],
+  [
+   "security deposit",
+   "caução",
+   "Dinheiro que o inquilino entrega como garantia.",
+   "L07-4"
+  ],
+  [
+   "real property|real estate",
+   "bens imóveis",
+   "O terreno, o que está fixo nele e os direitos sobre ele.",
+   "L01-2"
+  ],
+  [
+   "personal property",
+   "bens móveis",
+   "Tudo o que não é imóvel (mobiliário, carro, ações de uma cooperativa).",
+   "L08-1"
+  ],
+  [
+   "bundle of rights",
+   "conjunto de direitos do proprietário",
+   "Posse, controlo, gozo, exclusão e disposição.",
+   "L08-1"
+  ],
+  [
+   "disposition",
+   "disposição",
+   "Direito de vender, doar ou deixar em testamento.",
+   "L08-1"
+  ],
+  [
+   "freehold",
+   "propriedade (freehold)",
+   "Direito de propriedade sem fim fixo: fee simple e life estate.",
+   "L08-1"
+  ],
+  [
+   "fee simple absolute|fee simple",
+   "propriedade plena",
+   "O máximo de direitos, sem condições, transmissível aos herdeiros.",
+   "L08-1"
+  ],
+  [
+   "fee simple defeasible|defeasible",
+   "propriedade resolúvel",
+   "Propriedade que se perde se uma condição for violada.",
+   "L08-1"
+  ],
+  [
+   "life estate|life estates",
+   "usufruto vitalício (life estate)",
+   "Direito durante a vida de uma pessoa. À morte passa ao remainderman ou volta ao doador.",
+   "L08-1"
+  ],
+  [
+   "life tenant",
+   "usufrutuário",
+   "Quem tem o life estate. Paga impostos e manutenção e não pode danificar (waste).",
+   "L08-1"
+  ],
+  [
+   "pur autre vie",
+   "pela vida de outra pessoa",
+   "Life estate medido pela vida de um terceiro.",
+   "L08-1"
+  ],
+  [
+   "remainder|remainderman",
+   "nu-proprietário / beneficiário final",
+   "Terceiro que fica com o imóvel quando o life estate termina.",
+   "L08-1"
+  ],
+  [
+   "reversion",
+   "reversão",
+   "O imóvel volta ao doador (ou aos herdeiros dele) quando o life estate termina.",
+   "L08-1"
+  ],
+  [
+   "waste",
+   "deterioração abusiva",
+   "O usufrutuário danifica o imóvel ou reduz o seu valor (ex.: corta a madeira para vender).",
+   "L08-1"
+  ],
+  [
+   "leasehold",
+   "direito de arrendatário",
+   "Posse sem propriedade, através de um contrato de arrendamento.",
+   "L08-2"
+  ],
+  [
+   "lease|leases",
+   "arrendamento (contrato)",
+   "Contrato de arrendamento. Com mais de 1 ano tem de ser escrito, mas não precisa de testemunhas.",
+   "L08-2"
+  ],
+  [
+   "lessor",
+   "senhorio",
+   "Quem dá de arrendamento.",
+   "L08-2"
+  ],
+  [
+   "lessee",
+   "arrendatário",
+   "Quem toma de arrendamento.",
+   "L08-2"
+  ],
+  [
+   "estate for years",
+   "arrendamento a prazo certo",
+   "Qualquer prazo fixo (até uma semana). Termina sozinho, sem aviso.",
+   "L08-2"
+  ],
+  [
+   "periodic tenancy|month-to-month|year-to-year|week-to-week|quarter-to-quarter",
+   "arrendamento renovável",
+   "Renova por períodos. Termina com aviso escrito: 60 dias (ano), 30 (trimestre), 30 (mês), 7 (semana).",
+   "L08-2"
+  ],
+  [
+   "tenancy at will",
+   "arrendamento sem prazo",
+   "Sem duração fixa, com consentimento do senhorio. Termina com aviso adequado.",
+   "L08-2"
+  ],
+  [
+   "tenancy at sufferance|holdover",
+   "ocupação sem título (após o fim do contrato)",
+   "Inquilino que fica depois do fim do arrendamento sem consentimento do senhorio.",
+   "L08-2"
+  ],
+  [
+   "gross lease",
+   "arrendamento com despesas incluídas",
+   "Renda fixa. O senhorio paga impostos, seguro e manutenção.",
+   "L08-2"
+  ],
+  [
+   "net lease|triple-net lease|triple net",
+   "arrendamento com despesas a cargo do inquilino",
+   "O inquilino paga renda e algumas ou todas as despesas. Triple net: impostos, seguro e manutenção.",
+   "L08-2"
+  ],
+  [
+   "percentage lease",
+   "renda com percentagem das vendas",
+   "Renda base + percentagem das vendas da loja.",
+   "L08-2"
+  ],
+  [
+   "ground lease",
+   "arrendamento de terreno",
+   "Arrenda-se só o terreno e o inquilino constrói.",
+   "L08-2"
+  ],
+  [
+   "graduated lease",
+   "renda escalonada",
+   "A renda sobe em datas fixadas no contrato.",
+   "L08-2"
+  ],
+  [
+   "index lease",
+   "renda indexada",
+   "A renda acompanha um índice (ex.: inflação/CPI).",
+   "L08-2"
+  ],
+  [
+   "sublease|subtenant",
+   "subarrendamento / subarrendatário",
+   "Transfere parte do prazo. O inquilino original continua responsável principal.",
+   "L08-2"
+  ],
+  [
+   "assignment|assign|assignee|assignable",
+   "cessão / cessionário",
+   "Transferir todos os direitos do contrato a outra pessoa. No arrendamento: todo o prazo que falta.",
+   "L08-2"
+  ],
+  [
+   "tenancy in common|tenants in common",
+   "compropriedade",
+   "Quotas podem ser desiguais. Sem direito de acrescer: a quota passa aos herdeiros.",
+   "L08-3"
+  ],
+  [
+   "joint tenancy|joint tenants",
+   "compropriedade com direito de acrescer",
+   "À morte, a parte passa aos outros donos. Exige as 4 unidades e palavras expressas no deed.",
+   "L08-3"
+  ],
+  [
+   "survivorship|right of survivorship",
+   "direito de acrescer",
+   "À morte de um co-proprietário, a parte dele passa aos que sobrevivem, fora do testamento.",
+   "L08-3"
+  ],
+  [
+   "tenancy by the entireties|entireties",
+   "propriedade conjunta dos cônjuges",
+   "Só casados. Nenhum vende sozinho. Os credores de só um cônjuge não chegam ao imóvel. Não existe em Portugal.",
+   "L08-3"
+  ],
+  [
+   "four unities|unities",
+   "as quatro unidades",
+   "Posse, interesse, tempo e título iguais (PITT). Exigidas na joint tenancy.",
+   "L08-3"
+  ],
+  [
+   "partition",
+   "divisão de coisa comum",
+   "Ação judicial para dividir ou vender o imóvel em compropriedade.",
+   "L08-3"
+  ],
+  [
+   "community property",
+   "comunhão de bens",
+   "Regime matrimonial que NÃO existe na Florida.",
+   "L08-3"
+  ],
+  [
+   "homestead",
+   "casa de morada de família (homestead)",
+   "Residência principal: protegida dos credores, limites para vender/testar e isenção de imposto. São 3 regras diferentes.",
+   "L08-4"
+  ],
+  [
+   "forced sale",
+   "venda forçada",
+   "Venda imposta por um credor (penhora).",
+   "L08-4"
+  ],
+  [
+   "municipality",
+   "município (cidade)",
+   "Dentro de um município a homestead protegida é 1/2 acre; fora, 160 acres.",
+   "L08-4"
+  ],
+  [
+   "creditor|creditors",
+   "credor",
+   "Quem tem dinheiro a receber.",
+   "L08-4"
+  ],
+  [
+   "condominium|condominiums|condo|condos",
+   "propriedade horizontal (condomínio)",
+   "Fração em propriedade plena + quota das partes comuns. É bem imóvel.",
+   "L08-5"
+  ],
+  [
+   "common elements",
+   "partes comuns",
+   "Partes do edifício que pertencem a todos os condóminos.",
+   "L08-5"
+  ],
+  [
+   "declaration of condominium|declaration",
+   "título constitutivo",
+   "Documento registado que cria a propriedade horizontal.",
+   "L08-5"
+  ],
+  [
+   "cooperative|co-op",
+   "cooperativa de habitação",
+   "Compra-se ações da sociedade + um arrendamento (proprietary lease). É bem MÓVEL.",
+   "L08-5"
+  ],
+  [
+   "proprietary lease",
+   "arrendamento ligado às ações",
+   "Direito de ocupar a fração numa cooperativa.",
+   "L08-5"
+  ],
+  [
+   "timeshare|timeshares",
+   "habitação periódica (timeshare)",
+   "Direito de usar um imóvel em certos períodos do ano. 10 dias de calendário para cancelar.",
+   "L08-5"
+  ],
+  [
+   "homeowners' association|HOA",
+   "associação de proprietários (HOA)",
+   "Associação obrigatória num bairro. O resumo HOA tem de ser entregue antes do contrato.",
+   "L08-5"
+  ],
+  [
+   "community development district|CDD",
+   "distrito de desenvolvimento (CDD)",
+   "Entidade pública local que paga infraestruturas com contribuições dos donos.",
+   "L08-5"
+  ],
+  [
+   "developer",
+   "promotor imobiliário",
+   "Quem constrói e vende pela primeira vez. Compra ao promotor: 15 dias para cancelar.",
+   "L08-5"
+  ],
+  [
+   "resale",
+   "revenda",
+   "Venda por um proprietário, não pelo promotor. Condomínio: 7 dias para cancelar.",
+   "L08-5"
+  ],
+  [
+   "title",
+   "título de propriedade",
+   "A propriedade em si e a prova dela.",
+   "L09-1"
+  ],
+  [
+   "legal title",
+   "propriedade (legal title)",
+   "Passa no fecho, com a entrega e aceitação do deed.",
+   "L11-2"
+  ],
+  [
+   "equitable title",
+   "direito a adquirir (equitable title)",
+   "Direito do comprador depois de assinar o contrato, antes do fecho.",
+   "L11-2"
+  ],
+  [
+   "deed|deeds",
+   "título de transmissão (deed)",
+   "Documento que transmite a propriedade. Só o vendedor assina, com 2 testemunhas. Vale com entrega e aceitação.",
+   "L09-2"
+  ],
+  [
+   "grantor|grantors",
+   "transmitente",
+   "Quem transmite (vende ou doa) pelo deed. Tem de ser capaz (18+).",
+   "L09-2"
+  ],
+  [
+   "grantee|grantees",
+   "adquirente",
+   "Quem recebe o imóvel pelo deed. Não assina. Pode ser menor.",
+   "L09-2"
+  ],
+  [
+   "general warranty deed|general warranty",
+   "deed com garantia total",
+   "O vendedor garante o título contra defeitos de todo o historial. A maior proteção.",
+   "L09-2"
+  ],
+  [
+   "special warranty deed|special warranty",
+   "deed com garantia limitada",
+   "Garante só contra defeitos do tempo em que o vendedor foi dono.",
+   "L09-2"
+  ],
+  [
+   "bargain and sale deed|bargain and sale",
+   "deed sem garantias",
+   "Implica que o vendedor é dono, mas não dá garantias.",
+   "L09-2"
+  ],
+  [
+   "quitclaim deed|quitclaim",
+   "deed de renúncia",
+   "Transmite o que o vendedor tiver, se tiver alguma coisa. Nenhuma garantia.",
+   "L09-2"
+  ],
+  [
+   "covenant|covenants",
+   "garantia / obrigação contratual",
+   "Promessa num deed (ex.: seisin, quiet enjoyment) ou restrição de uso.",
+   "L09-2"
+  ],
+  [
+   "seisin",
+   "garantia de propriedade (seisin)",
+   "O vendedor garante que é dono e pode vender.",
+   "L09-2"
+  ],
+  [
+   "quiet enjoyment",
+   "gozo pacífico",
+   "Garantia de que ninguém com melhor direito vai perturbar o comprador.",
+   "L09-2"
+  ],
+  [
+   "warranty|warranties",
+   "garantia",
+   "Promessa do vendedor sobre o título.",
+   "L09-2"
+  ],
+  [
+   "delivery and acceptance",
+   "entrega e aceitação",
+   "O deed só transmite a propriedade quando é entregue e aceite, em vida do vendedor.",
+   "L09-2"
+  ],
+  [
+   "acknowledgment",
+   "reconhecimento da assinatura",
+   "Declaração perante notário. Necessária para registar o deed, não para ele ser válido.",
+   "L09-2"
+  ],
+  [
+   "witness|witnesses|subscribing witnesses",
+   "testemunhas",
+   "O deed precisa de 2 testemunhas. O arrendamento não precisa.",
+   "L09-2"
+  ],
+  [
+   "notary|notary public",
+   "notário",
+   "Nos EUA certifica assinaturas. Não é o notário português que faz a escritura.",
+   "L09-2"
+  ],
+  [
+   "recording|recorded",
+   "registo",
+   "Inscrever o documento no registo público do condado. Dá conhecimento a todos.",
+   "L09-3"
+  ],
+  [
+   "constructive notice",
+   "conhecimento presumido",
+   "A lei presume que todos sabem o que está registado ou é visível no local.",
+   "L09-3"
+  ],
+  [
+   "actual notice",
+   "conhecimento efetivo",
+   "O que a pessoa sabe de facto.",
+   "L09-3"
+  ],
+  [
+   "abstract of title|abstract",
+   "resumo do historial registral",
+   "Resumo dos documentos registados. Um advogado dá parecer sobre ele.",
+   "L09-3"
+  ],
+  [
+   "title insurance",
+   "seguro de título",
+   "Cobre defeitos do título anteriores à apólice, mesmo desconhecidos. Não cobre danos físicos.",
+   "L09-3"
+  ],
+  [
+   "owner's policy",
+   "apólice do proprietário",
+   "Seguro de título pelo valor da compra. Não passa ao comprador seguinte.",
+   "L09-3"
+  ],
+  [
+   "lender's policy",
+   "apólice do banco",
+   "Seguro de título pelo valor do empréstimo. Protege o banco.",
+   "L09-3"
+  ],
+  [
+   "encumbrance|encumbrances",
+   "ónus / encargo",
+   "Qualquer direito de terceiro que limita a propriedade (hipoteca, servidão, restrição).",
+   "L09-4"
+  ],
+  [
+   "lien|liens",
+   "ónus / garantia (lien)",
+   "Direito de um credor sobre o imóvel até ser pago (hipoteca, imposto, penhora).",
+   "L09-4"
+  ],
+  [
+   "specific lien",
+   "ónus sobre um imóvel",
+   "Afeta só um imóvel (hipoteca, imposto predial, construção).",
+   "L09-4"
+  ],
+  [
+   "general lien",
+   "ónus sobre todos os bens",
+   "Afeta todos os bens do devedor (sentença, IRS federal).",
+   "L09-4"
+  ],
+  [
+   "judgment lien",
+   "penhora por sentença",
+   "Ónus geral criado por uma sentença.",
+   "L09-4"
+  ],
+  [
+   "construction lien|mechanic's lien",
+   "ónus do empreiteiro",
+   "Garantia de quem trabalhou ou forneceu materiais na obra.",
+   "L09-4"
+  ],
+  [
+   "notice of commencement",
+   "aviso de início de obra",
+   "Documento registado. O ónus de construção conta a partir dele.",
+   "L09-4"
+  ],
+  [
+   "special assessment|special assessments",
+   "contribuição especial",
+   "Cobrança única aos imóveis que beneficiam de uma obra pública (ex.: esgoto).",
+   "L18-1"
+  ],
+  [
+   "priority",
+   "prioridade (grau)",
+   "Ordem de pagamento dos credores. Impostos primeiro; depois a ordem do registo.",
+   "L09-4"
+  ],
+  [
+   "easement|easements",
+   "servidão",
+   "Direito de usar o terreno de outro (ex.: passagem, cabos).",
+   "L09-4"
+  ],
+  [
+   "easement appurtenant|appurtenant",
+   "servidão predial",
+   "Beneficia um terreno vizinho e passa com ele a cada novo dono.",
+   "L09-4"
+  ],
+  [
+   "easement in gross|in gross",
+   "servidão pessoal",
+   "Beneficia uma pessoa ou empresa (ex.: companhia elétrica), não um terreno.",
+   "L09-4"
+  ],
+  [
+   "easement by necessity|necessity|landlocked",
+   "servidão de passagem forçada / encravado",
+   "Prédio sem acesso à via pública tem direito a passar pelo vizinho.",
+   "L09-4"
+  ],
+  [
+   "prescription|prescriptive easement|easement by prescription",
+   "usucapião de servidão",
+   "Uso aberto, contínuo e sem autorização durante 20 anos dá direito a usar (não a propriedade).",
+   "L09-4"
+  ],
+  [
+   "dominant estate|dominant",
+   "prédio dominante",
+   "O terreno que beneficia da servidão.",
+   "L09-4"
+  ],
+  [
+   "servient estate|servient",
+   "prédio serviente",
+   "O terreno que suporta a servidão.",
+   "L09-4"
+  ],
+  [
+   "encroachment|encroachments",
+   "invasão do terreno vizinho",
+   "Construção (muro, garagem) que entra no terreno de outro. Descobre-se com um levantamento topográfico.",
+   "L09-4"
+  ],
+  [
+   "deed restriction|deed restrictions",
+   "restrição registada",
+   "Limite privado de uso escrito no deed ou no loteamento. Obriga os donos futuros.",
+   "L09-4"
+  ],
+  [
+   "survey",
+   "levantamento topográfico",
+   "Medição do terreno que mostra os limites e invasões.",
+   "L09-4"
+  ],
+  [
+   "voluntary alienation|voluntary",
+   "transmissão voluntária",
+   "Por vontade do dono: venda, doação, testamento.",
+   "L09-1"
+  ],
+  [
+   "involuntary alienation|involuntary",
+   "transmissão involuntária",
+   "Sem vontade do dono: sucessão legítima, reversão ao Estado, expropriação, execução, usucapião.",
+   "L09-1"
+  ],
+  [
+   "descent",
+   "sucessão legítima",
+   "Sem testamento, os bens passam aos herdeiros.",
+   "L09-1"
+  ],
+  [
+   "devise|devisee",
+   "legado de imóvel / legatário",
+   "Imóvel deixado em testamento e quem o recebe.",
+   "L09-1"
+  ],
+  [
+   "heir|heirs",
+   "herdeiros",
+   "Quem herda por lei.",
+   "L09-1"
+  ],
+  [
+   "testate",
+   "com testamento",
+   "Morreu com testamento válido.",
+   "L09-1"
+  ],
+  [
+   "intestate",
+   "sem testamento",
+   "Morreu sem testamento: os bens passam por sucessão legítima.",
+   "L09-1"
+  ],
+  [
+   "probate",
+   "processo de sucessão (inventário)",
+   "Processo judicial que confirma quem herda.",
+   "L09-1"
+  ],
+  [
+   "a will|wills|valid will",
+   "testamento",
+   "Só produz efeitos à morte. Pode ser revogado até lá.",
+   "L09-1"
+  ],
+  [
+   "escheat",
+   "reversão para o Estado",
+   "Sem testamento e sem herdeiros, os bens passam para o Estado.",
+   "L09-1"
+  ],
+  [
+   "eminent domain|condemnation",
+   "expropriação",
+   "O Estado toma o imóvel para uso público e paga uma indemnização justa.",
+   "L09-1"
+  ],
+  [
+   "adverse possession",
+   "usucapião",
+   "Na Florida: 7 anos de posse pública, hostil e contínua + título registado ou impostos pagos.",
+   "L09-1"
+  ],
+  [
+   "color of title",
+   "título aparente",
+   "Documento que parece dar a propriedade mas tem um defeito.",
+   "L09-1"
+  ],
+  [
+   "hostile",
+   "contra a vontade do dono",
+   "Posse sem autorização do dono.",
+   "L09-1"
+  ],
+  [
+   "fixture|fixtures",
+   "benfeitoria fixa (fixture)",
+   "Bem móvel que, ao ser fixado, passa a fazer parte do imóvel e é vendido com ele.",
+   "L09-5"
+  ],
+  [
+   "trade fixture|trade fixtures",
+   "equipamento comercial do inquilino",
+   "Continua a ser do inquilino comercial; tem de o levar até ao fim do arrendamento.",
+   "L09-5"
+  ],
+  [
+   "emblements",
+   "colheitas anuais",
+   "Culturas do trabalho do agricultor. São bens móveis.",
+   "L09-5"
+  ],
+  [
+   "accession",
+   "acessão",
+   "Aquilo que é deixado e se junta ao imóvel passa ao dono do imóvel.",
+   "L09-5"
+  ],
+  [
+   "riparian",
+   "ribeirinho (rios)",
+   "Direitos de quem tem terreno junto a um rio.",
+   "L09-5"
+  ],
+  [
+   "littoral",
+   "litoral (mar e lagos grandes)",
+   "Direitos de quem tem terreno junto ao mar ou a um lago grande.",
+   "L09-5"
+  ],
+  [
+   "accretion",
+   "aluvião (ganho gradual)",
+   "Terra que se acumula aos poucos junto à água. O limite do terreno muda.",
+   "L09-5"
+  ],
+  [
+   "erosion",
+   "erosão",
+   "Perda gradual de terra pela água. O limite do terreno muda.",
+   "L09-5"
+  ],
+  [
+   "avulsion",
+   "avulsão (mudança súbita)",
+   "Mudança repentina (ex.: furacão). O limite NÃO muda.",
+   "L09-5"
+  ],
+  [
+   "mean high-water line",
+   "linha média da preia-mar",
+   "Daí para o mar, a terra é do Estado da Florida.",
+   "L09-5"
+  ],
+  [
+   "legal description|legal descriptions",
+   "descrição legal do imóvel",
+   "Identificação exata do terreno. Uma morada NUNCA é uma descrição legal.",
+   "L10-1"
+  ],
+  [
+   "metes and bounds|metes-and-bounds",
+   "descrição por rumos e distâncias",
+   "Parte de um ponto inicial (POB), segue as estremas e volta ao mesmo ponto. Para terrenos irregulares.",
+   "L10-1"
+  ],
+  [
+   "point of beginning|POB",
+   "ponto de partida",
+   "Onde começa e acaba a descrição por rumos e distâncias.",
+   "L10-1"
+  ],
+  [
+   "lot and block",
+   "lote e quarteirão",
+   "Número do lote num quarteirão de uma planta de loteamento registada.",
+   "L10-1"
+  ],
+  [
+   "plat|plats",
+   "planta de loteamento",
+   "Mapa registado de um loteamento.",
+   "L10-1"
+  ],
+  [
+   "government survey|rectangular survey",
+   "levantamento governamental (grelha)",
+   "Sistema de townships e sections medido a partir de um meridiano e de uma linha base.",
+   "L10-1"
+  ],
+  [
+   "principal meridian|meridian",
+   "meridiano principal",
+   "Linha norte-sul de referência. Na Florida cruza a linha base em Tallahassee.",
+   "L10-1"
+  ],
+  [
+   "base line",
+   "linha base",
+   "Linha este-oeste de referência do levantamento.",
+   "L10-1"
+  ],
+  [
+   "township|townships",
+   "township (bloco de 6×6 milhas)",
+   "36 milhas quadradas = 36 sections.",
+   "L10-2"
+  ],
+  [
+   "acre|acres",
+   "acre",
+   "43.560 pés quadrados, cerca de 4.047 m².",
+   "L10-2"
+  ],
+  [
+   "front foot|front feet|frontage",
+   "pé de frente",
+   "Medida da frente do lote (rua ou água). É o primeiro número das dimensões.",
+   "L14-2"
+  ],
+  [
+   "square feet|square foot|sq ft",
+   "pés quadrados",
+   "1 pé quadrado ≈ 0,093 m². 1.000 pés² ≈ 93 m².",
+   "L14-2"
+  ],
+  [
+   "contract|contracts",
+   "contrato",
+   "Acordo que a lei faz cumprir: partes capazes, proposta e aceitação, fim legal e contrapartida.",
+   "L11-1"
+  ],
+  [
+   "consideration",
+   "contrapartida",
+   "Algo de valor trocado. Promessas mútuas bastam; não é preciso sinal.",
+   "L11-1"
+  ],
+  [
+   "competent parties|competent",
+   "partes capazes",
+   "Com idade (18+) e capacidade mental para contratar.",
+   "L11-1"
+  ],
+  [
+   "bilateral",
+   "bilateral",
+   "Promessa em troca de promessa (ex.: contrato de compra e venda).",
+   "L11-1"
+  ],
+  [
+   "unilateral",
+   "unilateral",
+   "Promessa em troca de um ato (ex.: opção de compra).",
+   "L11-1"
+  ],
+  [
+   "executory",
+   "por cumprir",
+   "Ainda há obrigações por cumprir (antes do fecho).",
+   "L11-1"
+  ],
+  [
+   "executed",
+   "cumprido / assinado",
+   "1) Contrato totalmente cumprido (depois do fecho). 2) Também pode querer dizer 'assinado'.",
+   "L11-1"
+  ],
+  [
+   "express",
+   "expresso",
+   "Termos ditos por palavras, oralmente ou por escrito.",
+   "L11-1"
+  ],
+  [
+   "implied",
+   "tácito",
+   "Acordo que resulta do comportamento das partes.",
+   "L11-1"
+  ],
+  [
+   "voidable",
+   "anulável",
+   "Válido até a parte protegida (menor, vítima de fraude ou coação) o anular.",
+   "L11-1"
+  ],
+  [
+   "unenforceable",
+   "não exigível em tribunal",
+   "Válido no conteúdo, mas o tribunal não o faz cumprir (falta escrito ou o prazo para processar acabou).",
+   "L11-1"
+  ],
+  [
+   "valid",
+   "válido",
+   "Tem todos os elementos e obriga as partes.",
+   "L11-1"
+  ],
+  [
+   "statute of frauds",
+   "exigência de forma escrita",
+   "Vendas de imóveis e contratos de mais de 1 ano têm de ser escritos e assinados por quem fica obrigado.",
+   "L11-1"
+  ],
+  [
+   "statute of limitations",
+   "prazo de prescrição",
+   "Prazo para processar: 5 anos contrato escrito, 4 anos contrato verbal.",
+   "L11-1"
+  ],
+  [
+   "party to be charged",
+   "parte obrigada",
+   "A pessoa a quem se exige o cumprimento. É ela que tem de ter assinado.",
+   "L11-1"
+  ],
+  [
+   "duress",
+   "coação",
+   "Ameaça ou pressão para obrigar a assinar. Torna o contrato anulável.",
+   "L11-1"
+  ],
+  [
+   "minor|minors",
+   "menor",
+   "Menor de 18 anos. O contrato é anulável só pelo menor.",
+   "L11-1"
+  ],
+  [
+   "offer",
+   "proposta",
+   "Proposta de contrato. Pode ser retirada antes de a aceitação ser comunicada.",
+   "L11-2"
+  ],
+  [
+   "offeror",
+   "proponente",
+   "Quem faz a proposta.",
+   "L11-2"
+  ],
+  [
+   "offeree",
+   "destinatário da proposta",
+   "Quem recebe a proposta.",
+   "L11-2"
+  ],
+  [
+   "counteroffer|counteroffers",
+   "contraproposta",
+   "Qualquer alteração à proposta: rejeita e extingue a proposta original.",
+   "L11-2"
+  ],
+  [
+   "option|options|option contract",
+   "opção de compra",
+   "O dono, pago para isso, promete vender a um preço fixo durante um prazo. O comprador escolhe se compra.",
+   "L11-2"
+  ],
+  [
+   "optionor",
+   "concedente da opção (o dono)",
+   "Fica obrigado a vender se a opção for exercida.",
+   "L11-2"
+  ],
+  [
+   "optionee",
+   "titular da opção",
+   "Pode escolher comprar ou não. Se não comprar, perde só o preço da opção.",
+   "L11-2"
+  ],
+  [
+   "breach",
+   "incumprimento",
+   "Não cumprir o que o contrato exige.",
+   "L11-2"
+  ],
+  [
+   "remedy|remedies",
+   "meio de reação",
+   "O que a parte lesada pode pedir quando a outra não cumpre.",
+   "L11-2"
+  ],
+  [
+   "specific performance",
+   "execução específica",
+   "O tribunal obriga a cumprir o contrato (ex.: vender a casa). A terra é única.",
+   "L11-2"
+  ],
+  [
+   "liquidated damages",
+   "indemnização pré-fixada",
+   "Montante acordado antecipadamente, normalmente o depósito.",
+   "L11-2"
+  ],
+  [
+   "compensatory damages|damages",
+   "indemnização por danos",
+   "Dinheiro para compensar o prejuízo.",
+   "L11-2"
+  ],
+  [
+   "rescission|rescind",
+   "resolução (desfazer o contrato)",
+   "Desfaz o contrato e repõe as partes como estavam.",
+   "L11-2"
+  ],
+  [
+   "listing|listings|listing agreement",
+   "contrato de mediação (angariação)",
+   "O vendedor contrata a mediadora para vender. Tem de ter data de fim; sem renovação automática.",
+   "L11-3"
+  ],
+  [
+   "open listing",
+   "mediação aberta (não exclusiva)",
+   "Vários brokers. Só ganha quem causou a venda. O dono pode vender sem pagar.",
+   "L11-3"
+  ],
+  [
+   "exclusive agency|exclusive-agency",
+   "exclusividade com reserva do dono",
+   "Um só broker, mas o dono pode vender por si sem pagar comissão.",
+   "L11-3"
+  ],
+  [
+   "exclusive right of sale",
+   "exclusividade total",
+   "Um só broker, que recebe a comissão seja quem for que venda (até o dono).",
+   "L11-3"
+  ],
+  [
+   "net listing",
+   "mediação pelo líquido",
+   "O broker fica com tudo o que exceder o valor líquido pedido pelo vendedor.",
+   "L11-3"
+  ],
+  [
+   "procuring cause",
+   "causa efetiva da venda",
+   "O broker cujo trabalho iniciou a cadeia de eventos que levou à venda.",
+   "L11-3"
+  ],
+  [
+   "expiration date|definite expiration date",
+   "data de termo",
+   "Data em que o contrato de mediação acaba. É obrigatória.",
+   "L11-3"
+  ],
+  [
+   "contingency|contingencies",
+   "condição (suspensiva)",
+   "Condição que tem de acontecer para o contrato avançar (financiamento, inspeção).",
+   "L11-4"
+  ],
+  [
+   "effective date",
+   "data de eficácia",
+   "Quando a última parte assina a última proposta ou contraproposta e é entregue. Os prazos contam daí.",
+   "L11-4"
+  ],
+  [
+   "time is of the essence",
+   "prazos essenciais",
+   "Cada prazo é estrito: falhar um dia é incumprimento.",
+   "L11-4"
+  ],
+  [
+   "AS IS",
+   "no estado em que se encontra",
+   "O vendedor não faz reparações, mas tem de revelar defeitos ocultos que conhece.",
+   "L11-4"
+  ],
+  [
+   "latent defect|latent defects|latent",
+   "defeito oculto",
+   "Defeito que não se vê numa visita normal.",
+   "L11-4"
+  ],
+  [
+   "disclosure|disclosures|disclose",
+   "divulgação obrigatória",
+   "Informação que a lei manda dar ao comprador ou inquilino.",
+   "L11-4"
+  ],
+  [
+   "radon",
+   "radão",
+   "Gás radioativo natural. Aviso obrigatório na venda ou arrendamento de qualquer edifício.",
+   "L11-4"
+  ],
+  [
+   "lead-based paint",
+   "tinta com chumbo",
+   "Divulgação obrigatória em habitações construídas antes de 1978.",
+   "L11-4"
+  ],
+  [
+   "due diligence",
+   "período de verificação",
+   "Tempo para o comprador inspecionar e decidir.",
+   "L11-4"
+  ],
+  [
+   "closing",
+   "fecho (escritura e pagamento)",
+   "Momento em que se paga o preço e se entrega o deed.",
+   "L14-8"
+  ],
+  [
+   "mortgage|mortgages",
+   "hipoteca",
+   "O documento que dá o imóvel como garantia. A dívida em si é a promissory note.",
+   "L12-1"
+  ],
+  [
+   "promissory note|note",
+   "livrança / título de dívida",
+   "Promessa pessoal e escrita de pagar o empréstimo.",
+   "L12-1"
+  ],
+  [
+   "mortgagor|mortgagors",
+   "devedor hipotecário (mutuário)",
+   "Quem pede o empréstimo e dá a hipoteca: o comprador. (-or dá, -ee recebe)",
+   "L12-1"
+  ],
+  [
+   "mortgagee|mortgagees",
+   "credor hipotecário (o banco)",
+   "Quem empresta e recebe a hipoteca.",
+   "L12-1"
+  ],
+  [
+   "borrower|borrowers",
+   "mutuário (quem pede emprestado)",
+   "Quem pede o empréstimo.",
+   "L12-1"
+  ],
+  [
+   "lender|lenders",
+   "banco / financiador",
+   "Quem empresta o dinheiro.",
+   "L12-1"
+  ],
+  [
+   "lien theory|lien-theory",
+   "teoria do ónus",
+   "Na Florida o devedor é dono; o banco só tem um ónus.",
+   "L12-1"
+  ],
+  [
+   "title theory|title-theory|deed of trust",
+   "teoria do título",
+   "Noutros estados o banco ou um fiduciário fica com o título até ao pagamento.",
+   "L12-1"
+  ],
+  [
+   "satisfaction|satisfaction of mortgage",
+   "distrate (cancelamento da hipoteca)",
+   "Documento registado que prova que a hipoteca foi paga. O banco tem 60 dias.",
+   "L12-1"
+  ],
+  [
+   "acceleration|acceleration clause",
+   "vencimento antecipado",
+   "Por falta de pagamento, toda a dívida fica imediatamente exigível.",
+   "L12-1"
+  ],
+  [
+   "due-on-sale|alienation clause",
+   "vencimento por venda",
+   "Se o imóvel for vendido, toda a dívida fica exigível. Impede a assunção sem autorização.",
+   "L12-1"
+  ],
+  [
+   "prepayment|prepayment clause",
+   "amortização antecipada",
+   "Pagar o empréstimo antes do prazo (pode haver penalização).",
+   "L12-1"
+  ],
+  [
+   "defeasance|defeasance clause",
+   "extinção da hipoteca",
+   "A hipoteca extingue-se quando a dívida é paga.",
+   "L12-1"
+  ],
+  [
+   "subordination|subordination clause|subordinate",
+   "subordinação",
+   "Um credor aceita ficar em grau inferior (segundo lugar).",
+   "L12-1"
+  ],
+  [
+   "release clause",
+   "cláusula de distrate parcial",
+   "Liberta lotes individuais de uma hipoteca que cobre vários.",
+   "L12-1"
+  ],
+  [
+   "blanket mortgage",
+   "hipoteca sobre vários imóveis",
+   "Uma só hipoteca sobre vários lotes.",
+   "L13-2"
+  ],
+  [
+   "exculpatory|exculpatory clause",
+   "cláusula de exoneração",
+   "O devedor não responde pessoalmente: o banco só pode ficar com o imóvel.",
+   "L12-1"
+  ],
+  [
+   "receivership",
+   "administração judicial",
+   "Um administrador recebe as rendas durante a execução.",
+   "L12-1"
+  ],
+  [
+   "assumption|assumes|assumed",
+   "assunção da dívida",
+   "O comprador assume pessoalmente o empréstimo do vendedor; o vendedor continua responsável em segundo lugar.",
+   "L12-2"
+  ],
+  [
+   "novation",
+   "novação",
+   "Troca do devedor: o banco aceita o novo e liberta o original.",
+   "L12-2"
+  ],
+  [
+   "subject to",
+   "sujeito a / 'subject to'",
+   "Em geral: 'sujeito a'. Em hipotecas: o comprador paga mas não assume a dívida; se falhar, só o vendedor responde.",
+   "L12-2"
+  ],
+  [
+   "default|defaults",
+   "incumprimento",
+   "Falta de pagamento ou de outra obrigação do empréstimo.",
+   "L12-2"
+  ],
+  [
+   "foreclosure|foreclose|forecloses|foreclosed",
+   "execução da hipoteca",
+   "Processo judicial em que o imóvel é vendido em hasta pública para pagar a dívida.",
+   "L12-2"
+  ],
+  [
+   "judicial",
+   "judicial",
+   "Feito através de tribunal. Na Florida a execução é sempre judicial.",
+   "L12-2"
+  ],
+  [
+   "equity of redemption|redeem|redemption",
+   "direito de remição",
+   "O devedor salva a casa pagando TUDO até ao momento da venda. Depois da venda não há prazo.",
+   "L12-2"
+  ],
+  [
+   "deficiency judgment|deficiency",
+   "condenação pelo remanescente",
+   "Sentença para pagar o que faltou depois da venda em execução.",
+   "L12-2"
+  ],
+  [
+   "surplus",
+   "excedente",
+   "O que sobra da venda. Paga primeiro os credores de grau inferior, depois o devedor.",
+   "L12-2"
+  ],
+  [
+   "junior lien|junior lienor|junior lienors|junior liens|junior",
+   "credor de grau inferior",
+   "Credor com prioridade mais baixa (ex.: segunda hipoteca).",
+   "L12-2"
+  ],
+  [
+   "short sale",
+   "venda abaixo da dívida",
+   "O banco aceita receber menos do que lhe é devido.",
+   "L12-2"
+  ],
+  [
+   "deed in lieu of foreclosure|deed in lieu",
+   "dação em pagamento",
+   "O devedor entrega o imóvel ao banco. Os ónus de grau inferior continuam.",
+   "L12-2"
+  ],
+  [
+   "PITI",
+   "prestação + imposto + seguro (PITI)",
+   "Capital, juros, imposto predial e seguro da casa, por mês.",
+   "L12-3"
+  ],
+  [
+   "housing expense ratio|housing ratio",
+   "taxa de esforço com a casa",
+   "PITI ÷ rendimento BRUTO mensal (convencional 28%, FHA 31%).",
+   "L12-3"
+  ],
+  [
+   "total obligations ratio|total ratio",
+   "taxa de esforço total",
+   "(PITI + outras dívidas) ÷ rendimento bruto (convencional 36%, FHA 43%).",
+   "L12-3"
+  ],
+  [
+   "gross income|gross monthly income",
+   "rendimento bruto",
+   "Antes de impostos e descontos. As taxas de esforço usam sempre o bruto.",
+   "L12-3"
+  ],
+  [
+   "usury|usurious",
+   "usura",
+   "Juros acima do máximo legal: 18% até $500.000; 25% acima.",
+   "L12-3"
+  ],
+  [
+   "predatory lending|predatory",
+   "crédito predatório",
+   "Práticas abusivas: equity stripping, loan flipping, packing, balloon abuse.",
+   "L12-3"
+  ],
+  [
+   "equity stripping",
+   "esvaziamento do capital",
+   "Empréstimo que consome o valor que o dono tem na casa.",
+   "L12-3"
+  ],
+  [
+   "loan flipping",
+   "refinanciamentos abusivos",
+   "Refinanciar repetidamente só para cobrar comissões.",
+   "L12-3"
+  ],
+  [
+   "packing",
+   "produtos escondidos",
+   "Juntar ao empréstimo produtos desnecessários (seguros extra).",
+   "L12-3"
+  ],
+  [
+   "SAFE Act|NMLS",
+   "registo de intermediários de crédito",
+   "Quem origina empréstimos tem de estar licenciado e registado no NMLS.",
+   "L12-3"
+  ],
+  [
+   "equity",
+   "capital próprio na casa",
+   "Valor do imóvel menos a dívida.",
+   "L12-3"
+  ],
+  [
+   "debt service",
+   "serviço da dívida",
+   "Prestações (capital + juros) pagas ao banco.",
+   "L17-1"
+  ],
+  [
+   "FHA",
+   "FHA (agência federal de seguros de crédito)",
+   "SEGURA (não empresta) empréstimos de bancos aprovados. Entrada mínima 3,5%.",
+   "L13-1"
+  ],
+  [
+   "VA",
+   "VA (Departamento dos Veteranos)",
+   "GARANTE (não empresta) empréstimos a veteranos. Pode ser sem entrada.",
+   "L13-1"
+  ],
+  [
+   "MIP",
+   "seguro hipotecário da FHA",
+   "Prémio pago pelo devedor FHA, inicial e anual.",
+   "L13-1"
+  ],
+  [
+   "PMI|private mortgage insurance",
+   "seguro de crédito privado",
+   "Protege o banco. Exigido em empréstimos convencionais com LTV acima de 80%.",
+   "L13-1"
+  ],
+  [
+   "CRV|certificate of reasonable value",
+   "certificado de valor (VA)",
+   "Documento da VA que fixa o valor do imóvel.",
+   "L13-1"
+  ],
+  [
+   "funding fee",
+   "comissão de financiamento VA",
+   "Taxa paga pelo veterano num empréstimo VA.",
+   "L13-1"
+  ],
+  [
+   "conventional|conventional loan",
+   "empréstimo convencional",
+   "Sem seguro nem garantia do Estado.",
+   "L13-1"
+  ],
+  [
+   "loan-to-value|LTV",
+   "rácio empréstimo/valor (LTV)",
+   "Empréstimo ÷ o MENOR entre preço e avaliação.",
+   "L14-5"
+  ],
+  [
+   "down payment",
+   "entrada",
+   "Parte do preço paga pelo comprador: preço − empréstimo.",
+   "L14-5"
+  ],
+  [
+   "amortized|fully amortized|amortization",
+   "amortizado",
+   "Prestações iguais que pagam juros e capital até a dívida acabar.",
+   "L13-2"
+  ],
+  [
+   "partially amortized",
+   "parcialmente amortizado",
+   "As prestações não pagam tudo: fica uma prestação final grande (balloon).",
+   "L13-2"
+  ],
+  [
+   "balloon|balloon payment",
+   "prestação final elevada (balão)",
+   "Grande pagamento final do capital que ficou por pagar.",
+   "L13-2"
+  ],
+  [
+   "interest-only",
+   "só juros",
+   "Paga-se só juros; o capital todo fica para o fim.",
+   "L13-2"
+  ],
+  [
+   "adjustable-rate mortgage|ARM",
+   "taxa variável",
+   "Taxa = indexante (varia) + margem/spread (fixa). Os limites (caps) controlam as subidas.",
+   "L13-2"
+  ],
+  [
+   "index",
+   "indexante",
+   "Taxa de referência que varia com o mercado.",
+   "L13-2"
+  ],
+  [
+   "margin",
+   "margem (spread)",
+   "Parte fixa somada ao indexante.",
+   "L13-2"
+  ],
+  [
+   "package mortgage",
+   "hipoteca imóvel + móveis",
+   "Cobre o imóvel e bens móveis (ex.: mobília).",
+   "L13-2"
+  ],
+  [
+   "wraparound|wraparound mortgage",
+   "hipoteca envolvente",
+   "Novo empréstimo que 'envolve' o antigo, que continua a existir.",
+   "L13-2"
+  ],
+  [
+   "purchase-money mortgage|purchase-money",
+   "financiamento pelo vendedor",
+   "O vendedor empresta parte do preço com hipoteca.",
+   "L13-2"
+  ],
+  [
+   "home equity loan|home equity|HELOC",
+   "crédito com garantia da casa",
+   "Empréstimo sobre o valor que o dono já tem na casa.",
+   "L13-2"
+  ],
+  [
+   "reverse mortgage",
+   "hipoteca inversa",
+   "O banco paga ao dono (62+ anos). Paga-se quando vende, sai ou morre.",
+   "L13-2"
+  ],
+  [
+   "construction loan",
+   "crédito à construção / tranches",
+   "Pago em tranches à medida que a obra avança.",
+   "L13-2"
+  ],
+  [
+   "primary market|primary mortgage market",
+   "mercado primário",
+   "Onde as pessoas pedem empréstimos (bancos, cooperativas de crédito).",
+   "L13-3"
+  ],
+  [
+   "secondary market|secondary mortgage market",
+   "mercado secundário",
+   "Onde se compram empréstimos já feitos (Fannie Mae, Freddie Mac).",
+   "L13-3"
+  ],
+  [
+   "Fannie Mae|Freddie Mac",
+   "Fannie Mae / Freddie Mac",
+   "Compram empréstimos no mercado secundário. Não emprestam a consumidores.",
+   "L13-3"
+  ],
+  [
+   "Ginnie Mae",
+   "Ginnie Mae",
+   "Garante títulos feitos com empréstimos FHA e VA.",
+   "L13-3"
+  ],
+  [
+   "mortgage broker",
+   "intermediário de crédito",
+   "Arranja o empréstimo mas não empresta dinheiro.",
+   "L13-3"
+  ],
+  [
+   "mortgage banker",
+   "instituição de crédito hipotecário",
+   "Empresta o seu dinheiro e muitas vezes gere os empréstimos.",
+   "L13-3"
+  ],
+  [
+   "disintermediation",
+   "desintermediação",
+   "Os depositantes retiram poupanças para ganhar mais; fica menos dinheiro para hipotecas.",
+   "L13-3"
+  ],
+  [
+   "Federal Reserve|the Fed|Fed",
+   "Reserva Federal (banco central)",
+   "Influencia o crédito: operações de mercado aberto, taxa de desconto, reservas obrigatórias.",
+   "L13-3"
+  ],
+  [
+   "open-market operations",
+   "operações de mercado aberto",
+   "Compra e venda de títulos pelo Fed. Vender títulos aperta o crédito.",
+   "L13-3"
+  ],
+  [
+   "discount rate",
+   "taxa de desconto (Fed)",
+   "Taxa que o Fed cobra aos bancos.",
+   "L13-3"
+  ],
+  [
+   "reserve requirements",
+   "reservas obrigatórias",
+   "Dinheiro que os bancos têm de guardar e não podem emprestar.",
+   "L13-3"
+  ],
+  [
+   "discount points|points",
+   "pontos (comissão inicial)",
+   "1 ponto = 1% do EMPRÉSTIMO, pago ao banco para baixar a taxa.",
+   "L13-3"
+  ],
+  [
+   "proration|prorate|prorated|prorations",
+   "rateio (divisão proporcional)",
+   "Dividir uma despesa entre vendedor e comprador pelos dias de cada um. O comprador fica com o dia do fecho.",
+   "L14-7"
+  ],
+  [
+   "closing statement",
+   "nota de liquidação do fecho",
+   "Lista do que cada parte deve (débitos) e recebe (créditos) no fecho.",
+   "L14-8"
+  ],
+  [
+   "debit|debits|debited",
+   "débito",
+   "No fecho: o que a parte DEVE pagar.",
+   "L14-8"
+  ],
+  [
+   "credit|credits|credited",
+   "crédito",
+   "No fecho: o que a parte RECEBE ou já pagou. (Também quer dizer 'crédito' = empréstimo.)",
+   "L14-8"
+  ],
+  [
+   "arrears|in arrears",
+   "pago no fim do período",
+   "Pago depois de usado (ex.: imposto predial). Se não pago: débito ao vendedor, crédito ao comprador.",
+   "L14-7"
+  ],
+  [
+   "documentary stamp tax|documentary stamps|doc stamps|deed stamps|stamps",
+   "imposto do selo (documentary stamps)",
+   "Deed: $0,70 por $100 (vendedor). Dívida: $0,35 por $100 (comprador). Arredonda-se aos $100 acima.",
+   "L14-6"
+  ],
+  [
+   "note stamps",
+   "selo sobre a dívida",
+   "$0,35 por $100 do empréstimo, novo ou assumido.",
+   "L14-6"
+  ],
+  [
+   "intangible tax",
+   "imposto sobre a hipoteca nova",
+   "0,002 (2 por mil) do valor da hipoteca NOVA. Não se arredonda.",
+   "L14-6"
+  ],
+  [
+   "mill|mills|millage",
+   "milésimo",
+   "1 mill = $1 por cada $1.000 de valor tributável.",
+   "L18-2"
+  ],
+  [
+   "net to seller",
+   "líquido para o vendedor",
+   "O que o vendedor recebe depois da comissão. Preço = líquido ÷ (1 − taxa).",
+   "L14-3"
+  ],
+  [
+   "split|splits",
+   "divisão da comissão",
+   "Repartição da comissão entre mediadoras e consultores.",
+   "L14-3"
+  ],
+  [
+   "appreciation",
+   "valorização",
+   "Aumento do valor ao longo do tempo.",
+   "L14-4"
+  ],
+  [
+   "supply and demand",
+   "oferta e procura",
+   "Mais oferta baixa os preços; mais procura sobe-os.",
+   "L15-1"
+  ],
+  [
+   "appraisal|appraisals",
+   "avaliação",
+   "Estimativa de valor feita por um avaliador.",
+   "L16-1"
+  ],
+  [
+   "appraiser|appraisers",
+   "avaliador (perito)",
+   "Em transações com financiamento federal tem de ser avaliador licenciado ou certificado.",
+   "L16-4"
+  ],
+  [
+   "market value",
+   "valor de mercado",
+   "O preço mais provável entre partes independentes, informadas e sem pressão.",
+   "L16-1"
+  ],
+  [
+   "assessed value",
+   "valor tributável (para impostos)",
+   "Valor fixado para o imposto predial.",
+   "L16-1"
+  ],
+  [
+   "insurable value",
+   "valor para seguro",
+   "Valor usado pelo seguro.",
+   "L16-1"
+  ],
+  [
+   "arm's-length|arm's length",
+   "entre partes independentes",
+   "Venda normal, sem relação especial entre comprador e vendedor.",
+   "L16-1"
+  ],
+  [
+   "highest and best use",
+   "melhor e mais rentável utilização",
+   "O uso legal, fisicamente possível, financeiramente viável e mais produtivo.",
+   "L16-1"
+  ],
+  [
+   "substitution",
+   "substituição",
+   "Ninguém paga mais do que custa um substituto igual. Base do método comparativo.",
+   "L16-1"
+  ],
+  [
+   "anticipation",
+   "antecipação",
+   "O valor reflete os benefícios futuros esperados. Base do método do rendimento.",
+   "L16-1"
+  ],
+  [
+   "contribution",
+   "contribuição",
+   "Um elemento vale o que acrescenta ao valor, não o que custou.",
+   "L16-1"
+  ],
+  [
+   "conformity",
+   "conformidade",
+   "O valor protege-se quando a casa é parecida com as vizinhas.",
+   "L16-1"
+  ],
+  [
+   "progression",
+   "progressão",
+   "Uma casa modesta valoriza ao lado de casas melhores.",
+   "L16-1"
+  ],
+  [
+   "regression",
+   "regressão",
+   "Uma casa superior desvaloriza ao lado de casas piores.",
+   "L16-1"
+  ],
+  [
+   "plottage",
+   "mais-valia do emparcelamento",
+   "Valor extra criado ao juntar lotes.",
+   "L16-1"
+  ],
+  [
+   "assemblage",
+   "emparcelamento",
+   "O ato de juntar lotes vizinhos.",
+   "L16-1"
+  ],
+  [
+   "sales comparison approach|sales comparison",
+   "método comparativo de mercado",
+   "Compara com vendas recentes de imóveis parecidos. Melhor para casas e terrenos.",
+   "L16-2"
+  ],
+  [
+   "comparable|comparables|comp|comps",
+   "comparável",
+   "Imóvel parecido vendido recentemente. Ajusta-se o comparável, nunca o imóvel avaliado.",
+   "L16-2"
+  ],
+  [
+   "subject property",
+   "imóvel avaliado",
+   "O imóvel que está a ser avaliado.",
+   "L16-2"
+  ],
+  [
+   "adjustment|adjustments|adjusted",
+   "ajuste",
+   "Comparável melhor: subtrai-se. Comparável pior: soma-se.",
+   "L16-2"
+  ],
+  [
+   "reconciliation",
+   "reconciliação",
+   "Ponderar os métodos pela fiabilidade. Nunca é uma simples média.",
+   "L16-4"
+  ],
+  [
+   "cost approach",
+   "método do custo",
+   "Terreno + custo novo − depreciação. Para casas novas e edifícios especiais (igrejas, escolas).",
+   "L16-3"
+  ],
+  [
+   "reproduction cost|reproduction",
+   "custo de reprodução",
+   "Custo de uma réplica exata.",
+   "L16-3"
+  ],
+  [
+   "replacement cost|replacement",
+   "custo de substituição",
+   "Custo de um edifício com a mesma utilidade e materiais atuais.",
+   "L16-3"
+  ],
+  [
+   "depreciation|accrued depreciation|depreciated|depreciates",
+   "depreciação",
+   "Avaliação: perda de valor (desgaste, desenho, causas externas). Impostos: dedução anual (27,5 ou 39 anos). O terreno nunca deprecia.",
+   "L16-3"
+  ],
+  [
+   "physical deterioration",
+   "deterioração física",
+   "Desgaste (pintura, telhado, alcatifa).",
+   "L16-3"
+  ],
+  [
+   "functional obsolescence",
+   "obsolescência funcional",
+   "Desenho ultrapassado (ex.: 5 quartos e 1 casa de banho).",
+   "L16-3"
+  ],
+  [
+   "external obsolescence|economic obsolescence|obsolescence",
+   "obsolescência externa",
+   "Causa fora do imóvel (aeroporto, economia). Sempre irrecuperável.",
+   "L16-3"
+  ],
+  [
+   "curable|incurable",
+   "recuperável / irrecuperável",
+   "Se compensa ou não corrigir o defeito.",
+   "L16-3"
+  ],
+  [
+   "income approach|income capitalization approach|income capitalization",
+   "método do rendimento",
+   "Valor = NOI ÷ taxa de capitalização. Para imóveis de rendimento.",
+   "L16-4"
+  ],
+  [
+   "net operating income|NOI",
+   "rendimento operacional líquido (NOI)",
+   "Rendas efetivas − despesas de exploração. Sem prestações do banco nem depreciação.",
+   "L16-4"
+  ],
+  [
+   "potential gross income|PGI",
+   "rendimento bruto potencial",
+   "Todas as rendas se o imóvel estivesse sempre ocupado.",
+   "L16-4"
+  ],
+  [
+   "effective gross income|EGI",
+   "rendimento bruto efetivo",
+   "Rendimento potencial menos desocupação e rendas não cobradas.",
+   "L16-4"
+  ],
+  [
+   "vacancy and collection loss|vacancy",
+   "perdas por desocupação e incobrança",
+   "Rendas perdidas por frações vazias ou inquilinos que não pagam.",
+   "L16-4"
+  ],
+  [
+   "operating expenses|operating expense",
+   "despesas de exploração",
+   "Despesas fixas, variáveis e reservas. NÃO incluem prestações do banco nem depreciação.",
+   "L16-4"
+  ],
+  [
+   "reserves|reserves for replacements",
+   "reservas para substituições",
+   "Dinheiro guardado para substituir equipamentos (telhado, ar condicionado).",
+   "L16-4"
+  ],
+  [
+   "capitalization rate|cap rate",
+   "taxa de capitalização (yield)",
+   "NOI ÷ preço. Taxa mais alta = valor mais baixo.",
+   "L16-4"
+  ],
+  [
+   "gross rent multiplier|GRM",
+   "multiplicador da renda mensal",
+   "Preço ÷ renda bruta MENSAL (casas, duplex).",
+   "L16-4"
+  ],
+  [
+   "gross income multiplier|GIM",
+   "multiplicador do rendimento anual",
+   "Preço ÷ rendimento bruto ANUAL.",
+   "L16-4"
+  ],
+  [
+   "USPAP",
+   "normas de avaliação (USPAP)",
+   "Normas profissionais que regem as avaliações.",
+   "L16-4"
+  ],
+  [
+   "comparative market analysis|CMA|CMAs",
+   "análise comparativa de mercado",
+   "Estudo de preço feito pelo mediador. Não é uma avaliação.",
+   "L16-4"
+  ],
+  [
+   "broker price opinion|BPO",
+   "opinião de preço do broker",
+   "Estimativa do broker. Pode cobrar, mas não lhe pode chamar avaliação.",
+   "L16-4"
+  ],
+  [
+   "federally related transaction",
+   "transação com envolvimento federal",
+   "Exige avaliador licenciado ou certificado.",
+   "L16-4"
+  ],
+  [
+   "special-purpose|special-purpose property",
+   "imóvel de uso específico",
+   "Igreja, escola, quartel de bombeiros. Avalia-se pelo método do custo.",
+   "L16-3"
+  ],
+  [
+   "leverage",
+   "alavancagem",
+   "Usar dinheiro emprestado para aumentar o retorno do dinheiro próprio.",
+   "L17-1"
+  ],
+  [
+   "liquidity|illiquid",
+   "liquidez / pouco líquido",
+   "Rapidez para transformar em dinheiro. O imobiliário é pouco líquido.",
+   "L17-1"
+  ],
+  [
+   "cash flow",
+   "fluxo de caixa",
+   "NOI − serviço da dívida.",
+   "L17-1"
+  ],
+  [
+   "goodwill",
+   "clientela (goodwill)",
+   "Valor da reputação e dos clientes de um negócio.",
+   "L17-2"
+  ],
+  [
+   "going concern",
+   "empresa em funcionamento",
+   "Negócio vendido a funcionar: clientela, equipamento, inventário.",
+   "L17-2"
+  ],
+  [
+   "bill of sale",
+   "documento de venda de bens móveis",
+   "Transmite equipamento e inventário (o imóvel passa por deed).",
+   "L17-2"
+  ],
+  [
+   "ad valorem",
+   "imposto sobre o valor (tipo IMI)",
+   "Imposto calculado sobre o valor do imóvel.",
+   "L18-1"
+  ],
+  [
+   "just value",
+   "valor justo (de mercado) para impostos",
+   "Valor fixado pelo avaliador do condado a 1 de janeiro.",
+   "L18-1"
+  ],
+  [
+   "property appraiser",
+   "avaliador fiscal do condado",
+   "Funcionário que fixa os valores para o imposto predial.",
+   "L18-1"
+  ],
+  [
+   "tax collector",
+   "cobrador de impostos do condado",
+   "Envia as contas e recebe o imposto.",
+   "L18-1"
+  ],
+  [
+   "TRIM notice|TRIM",
+   "aviso de impostos propostos (TRIM)",
+   "Chega em agosto. Mostra o valor e os impostos propostos. Não é a conta.",
+   "L18-1"
+  ],
+  [
+   "value adjustment board|VAB",
+   "comissão de recurso de avaliações",
+   "Onde o dono contesta o valor fixado para impostos.",
+   "L18-1"
+  ],
+  [
+   "delinquent",
+   "em atraso (incumprido)",
+   "Imposto predial não pago até 1 de abril.",
+   "L18-1"
+  ],
+  [
+   "tax certificate",
+   "certificado fiscal",
+   "Vendido a um investidor quando o imposto não é pago; pode levar a um tax deed.",
+   "L18-1"
+  ],
+  [
+   "tax deed",
+   "transmissão por dívida fiscal",
+   "Venda do imóvel por impostos não pagos.",
+   "L18-1"
+  ],
+  [
+   "Save Our Homes",
+   "limite de aumento 'Save Our Homes'",
+   "O valor tributável da homestead sobe no máximo 3% ou a inflação (o menor) por ano.",
+   "L18-2"
+  ],
+  [
+   "portability|portable",
+   "portabilidade",
+   "Levar o benefício Save Our Homes (até $500.000) para uma nova casa em 3 anos.",
+   "L18-2"
+  ],
+  [
+   "CPI|Consumer Price Index",
+   "índice de preços no consumidor",
+   "Medida da inflação.",
+   "L18-2"
+  ],
+  [
+   "taxable value",
+   "valor tributável",
+   "Valor sobre o qual se calcula o imposto, depois das isenções.",
+   "L18-2"
+  ],
+  [
+   "capital gain",
+   "mais-valia",
+   "Valor de venda − custo ajustado.",
+   "L18-3"
+  ],
+  [
+   "basis|adjusted basis|cost basis",
+   "custo fiscal (ajustado)",
+   "Custo + benfeitorias − depreciação.",
+   "L18-3"
+  ],
+  [
+   "boot",
+   "tornas",
+   "Dinheiro ou outros bens recebidos numa troca 1031. É tributado.",
+   "L18-3"
+  ],
+  [
+   "1031 exchange|like-kind",
+   "troca de imóveis de investimento",
+   "Trocar imóveis de investimento semelhantes adia o imposto sobre a mais-valia.",
+   "L18-3"
+  ],
+  [
+   "installment sale",
+   "venda a prestações",
+   "A mais-valia é tributada à medida que se recebe.",
+   "L18-3"
+  ],
+  [
+   "exclusion",
+   "exclusão",
+   "1) Direito de impedir outros de entrar (conjunto de direitos). 2) Impostos: mais-valia isenta na venda da habitação própria: até $250.000 (solteiro) ou $500.000 (casal), vivendo lá 2 dos últimos 5 anos.",
+   "L18-3"
+  ],
+  [
+   "zoning|zoned",
+   "zonamento",
+   "Regras municipais que dizem o que se pode construir e onde (tipo PDM).",
+   "L19-1"
+  ],
+  [
+   "comprehensive plan",
+   "plano diretor",
+   "Plano de ordenamento do município ou condado.",
+   "L19-1"
+  ],
+  [
+   "variance",
+   "exceção ao zonamento (variance)",
+   "Autorização para não cumprir uma regra por dificuldade especial do terreno.",
+   "L19-1"
+  ],
+  [
+   "special exception",
+   "uso condicionado",
+   "Uso permitido na zona só com autorização especial.",
+   "L19-1"
+  ],
+  [
+   "nonconforming use|nonconforming",
+   "uso não conforme",
+   "Uso que existia antes do zonamento e pode continuar.",
+   "L19-1"
+  ],
+  [
+   "setback|setbacks",
+   "afastamento obrigatório",
+   "Distância mínima entre o edifício e o limite do terreno.",
+   "L19-1"
+  ],
+  [
+   "building code|building codes",
+   "regulamento de construção",
+   "Normas técnicas de construção.",
+   "L19-2"
+  ],
+  [
+   "certificate of occupancy",
+   "licença de utilização",
+   "Autorização para ocupar um edifício novo.",
+   "L19-2"
+  ],
+  [
+   "impact fee|impact fees",
+   "taxa de urbanização",
+   "Pagamento ao município pelos custos de novas infraestruturas.",
+   "L19-2"
+  ]
  ],
  "verification": [
   {

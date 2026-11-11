@@ -302,6 +302,27 @@ await test("practice hub: sections by value, and a high-value drill drawn from t
   await page.click("#quit");
 });
 
+await test("vocabulary: underlined terms in the question open Portuguese; answer choices stay plain", async () => {
+  await nav("quiz~B~ch12");
+  for (let k = 0; k < 8 && !(await page.locator(".stem .term").count()); k++) { await answer(false, "u"); await page.click("#next"); }
+  const term = page.locator(".stem .term").first();
+  assert(await term.count(), "no underlined term in the mortgages questions");
+  assert(!(await page.locator(".choice .term").count()), "answer choices must stay plain so a tap always chooses");
+  await term.click();
+  await page.waitForSelector("#termsheet");
+  assert((await page.textContent("#termsheet .ts-pt")).trim().length > 2, "no Portuguese in the sheet");
+  await page.click("#ts-close");
+  assert(!(await page.locator("#termsheet").count()), "sheet did not close");
+  await answer(false, "u");
+  assert(await page.locator("details.words").count(), "no word list after answering");
+  await page.click("#quit");
+  await nav("vocab");
+  assert((await page.locator("dl.vocab dt").count()) > 300, "vocabulary page is short");
+  await page.fill("#vq", "hipoteca");
+  const shown = await page.locator("dl.vocab dt").allTextContents();
+  assert(shown.length && shown.length < 40 && shown.some((t) => /^mortgage/i.test(t)), "search for 'hipoteca' did not find 'mortgage': " + shown.slice(0, 5).join(", "));
+});
+
 await test("a broken quiz session shows a way out and clears itself", async () => {
   // a saved session pointing at a question that no longer exists used to leave the screen frozen
   await page.evaluate(() => localStorage.setItem("flexam.v1.live", JSON.stringify({ kind: "quiz", id: "broken", mode: "C", arg: "", title: "Broken session", queue: ["Q9999-99"], orders: {}, idx: 0, answers: [], retested: [], started: Date.now(), shownAt: Date.now(), fb: null, done: false })));

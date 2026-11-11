@@ -23,6 +23,7 @@ import { verification, CHECKED_ON } from "../data/verification.mjs";
 import { numbers } from "../data/numbers.mjs";
 import { comparisons } from "../data/comparisons.mjs";
 import { glossary } from "../data/glossary.mjs";
+import { vocab } from "../data/vocab_pt.mjs";
 import { flashcards as handCards } from "../data/flashcards.mjs";
 import { questions as qa } from "../data/questions_law_a.mjs";
 import { questions as qb } from "../data/questions_law_b.mjs";
@@ -126,6 +127,12 @@ for (const n of numbers) {
   if (!lessonById.has(n.l)) err(`${n.id}: unknown lesson ${n.l}`);
   if (!vById.has(n.v)) err(`${n.id}: unknown verification ${n.v}`);
   for (const c of n.conf) if (!numById.has(c)) err(`${n.id}: unknown confusable ${c}`);
+}
+const vocabForms = new Set();
+for (const [forms, pt, def, l] of vocab) {
+  if (!lessonById.has(l)) err(`vocab "${forms}": unknown lesson ${l}`);
+  if (!pt || !def) err(`vocab "${forms}": missing translation or explanation`);
+  for (const f of forms.split("|")) { const k = f.toLowerCase(); if (vocabForms.has(k)) err(`vocab: "${f}" listed twice`); vocabForms.add(k); }
 }
 for (const [term, def, l] of glossary) {
   if (!lessonById.has(l)) err(`glossary "${term}": unknown lesson ${l}`);
@@ -287,6 +294,7 @@ const data = {
   numbers,
   comparisons,
   glossary: glossary.map(([term, def, l, note]) => ({ term, def, l, note })),
+  vocab,
   verification,
   manualCoverage,
 };
